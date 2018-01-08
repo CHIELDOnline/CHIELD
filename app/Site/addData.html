@@ -1,0 +1,29 @@
+<html>
+<head>
+<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--<script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>-->
+<!--<script type="text/javascript" src="js/github/pushToRepo.js"></script>-->
+
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+ 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
+
+<script type="text/javascript" src="js/citation.js"></script>
+<script type="text/javascript" src="js/displayBibtex.js"></script>
+<script src="js/addData.js"></script>
+
+</head>
+<body>
+<div id="bibdiv">
+	<h4>Bibtex reference:</h4>
+	<textarea id="bibtexsource" class="form-control" rows="5"></textarea>
+	<div id="bibtexhtml"></div>
+</div>
+<div id="causal_links">
+	<div id="jsGrid"></div>
+</div>
+<button id="submitToGitHub" type="button">Submit</button>
+</body>
+</html>
