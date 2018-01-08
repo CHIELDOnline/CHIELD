@@ -132,6 +132,9 @@ function submitToGitHub(){
 
 	if(bib_key!=""){
 
+		$("#submissionResults").html("Submitting...");
+		$("#submitToGitHub").hide();
+
 		console.log("Submit");
 		var data = $('#jsGrid').jsGrid('option', 'data');
 		var csvtext = JSONToCSVConvertor(data, true);
@@ -158,16 +161,20 @@ function submitToGitHub(){
 		http.onreadystatechange = function() {
 		//Call a function when the state changes.
 			if(http.readyState == 4 && http.status == 200) {
-				console.log(http.responseText);
+				finishedSubmission(http.responseText);
 			}
 		}
 		http.send(params);
 	
+	} else{
+		$("#submissionResults").html("Error: There is something wrong with the bibtex file");
+		$("#submitToGitHub").show();
 	}
 }
 
 function updateBib(){
 	console.log("change");
+	$("#submissionResults").html("");
 	displayBibtex();
 	var bib = document.getElementById("bibtexsource").value;
 	var bib_object = bibtex2JSON(bib);
@@ -180,6 +187,19 @@ function updateBib(){
 		bib_year = bib_object[0].properties.year;
 		bib_key = bib_object[0].label;
 		bib_source = bib;
+	}
+}
+
+function finishedSubmission(link){
+	if(link.startsWith("https")){
+		$("#submissionResults").html(
+			'Data submitted.  <a href="'+link+'" target="_blank">View the pull request</a>.'
+			);
+	} else{
+		$("#submissionResults").html(
+			'There may be an error with the submission, please check data and try again.'
+			);
+		$("#submitToGitHub").show();
 	}
 }
 

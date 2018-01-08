@@ -1,16 +1,6 @@
+#!/usr/bin/python
+
 # TODO: make sure bibref has no illegal characters
-
-
-# TODO: get access token
-# TODO: make configurable: username, password, repo name  (use json.loads(string))
-# TODO: make sure config file is not committed to github repository
-# TODO: Add config spec to repo readme
-
-# TODO: create new github account
-# TODO: move development code to ~/Documents/Bristol
-# TODO: 
-# TODO: make deploy code
-
 
 from github import Github
 import json
@@ -63,14 +53,14 @@ def processFile(file):
 	# create unique branch name
 	branchName = "doc_"+bibref+str(int(round(time()*1000)))
 	
-	print(branchName)
-	print(githubFolder)
+	#print(branchName)
+	#print(githubFolder)
 	
-	print(bib_year)
+	#print(bib_year)
 	
-	print(contributor)
-	print(bib_source)
-	print(causal_links)
+	#print(contributor)
+	#print(bib_source)
+	#print(causal_links)
 	
 	createBranch(branchName)
 	
@@ -90,7 +80,7 @@ def processFile(file):
 	
 	# Copy php file to processed folder
 	copyfile(file_path, processed_file_path)
-	remove(file_path)
+	#remove(file_path)
 			
 			
 def getFolder(bibref,year):
@@ -117,7 +107,7 @@ def getFolder(bibref,year):
 def createBranch(target_branch):
 	sb = repo.get_branch("master")
 	repo.create_git_ref(ref='refs/heads/' + target_branch, sha=sb.commit.sha)
-	print("Created branch "+target_branch + ":" + sb.commit.sha)
+	#print("Created branch "+target_branch + ":" + sb.commit.sha)
 
 def createFile(file_path,commit_title,content, target_branch):
 	repo.create_file(file_path, commit_title, content, target_branch)
@@ -136,7 +126,7 @@ def createPullRequest(pull_title, pull_request_text,target_branch):
 
 files = findFilesToProcess()
 if len(files)>0:
-	print("processing:"+",".join(files))
+	#print("processing:"+",".join(files))
 	g = Github(githubUser, githubAccessToken)
 	repo = g.get_user().get_repo(githubRepoName)
 	
