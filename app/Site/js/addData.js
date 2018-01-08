@@ -32,7 +32,7 @@ var confirmTypes = [
 
 
 var dataHeaders = [
-            { label: "Variable1", name: "Var1", type: "text", width: 150 },
+            { name: "Var1", type: "text", width: 150 },
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150 },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
@@ -172,7 +172,9 @@ function submitToGitHub(){
 	
 		var data = contributor + "\n" + bibtex_data + csvtext;
 	
-		var params = "data="+data;
+		var params = "data="+encodeURIComponent(data);
+
+		
 
 		var http = new XMLHttpRequest();
 	//	var params = "lorem=ipsum&name=binny";
