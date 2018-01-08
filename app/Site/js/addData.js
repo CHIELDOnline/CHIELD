@@ -103,7 +103,7 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
             row += '"' + arrData[i][index] + '",';
         }
 
-        row.slice(0, row.length - 1);
+        row = row.slice(0, row.length - 1);
 
         //add a line break after each row
         CSV += row + '\n';
