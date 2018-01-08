@@ -1,5 +1,23 @@
 # CHIELD
 
+## The data cycle
+
+User content -> Server push -> GitHub Review -> Server pull -> Website
+
+-  User creates new data on the website
+-  User submits the data through AJAX to a php script which:
+  -  Writes the data to a file on the server side folder `data/newRecords`.
+  -  Calls the python file `sendToRepo.py`
+-  `sendToRepo.py` looks for files in the folder `data/newRecords` and:
+  -  Decodes the data into seperate bib and csv files
+  -  Creates the files on a new branch in the GitHub repository
+  -  Creates a pull request for the new branch
+-  The GitHub administrator reviews the pull request and merges it into the repository
+-  The server administrator periodically:
+  -  Pulls the changes to the repository to a local version
+  -  Calls the `deploy.sh` script to build the database and depoly the code to the web folder
+
+
 
 ## Configuring the server side
 
