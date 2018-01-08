@@ -16,6 +16,36 @@ var correlationTypes = [
 	{ Name: "neg", Id: "neg"}
 ];
 
+var stageTypes = [
+	{Name: "", Id: "none"},
+	{Name:"preadaptation", Id: "preadaptation"},
+	{Name:"coevolution", Id: "coevolution"},
+	{Name:"cultural evolution", Id: "cultural evolution"},
+	{Name:"language change", Id: "language change"}
+];
+
+var confirmTypes = [
+	{Name: "", Id: "none"},
+	{Name:"yes", Id: "yes"},
+	{Name:"no", Id: "no"}
+];
+
+
+var dataHeaders = [
+            { label: "Variable1", name: "Var1", type: "text", width: 150 },
+            { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
+            { name: "Var2", type: "text", width: 150 },
+            { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
+            { name: "Topic", type: "text", width: 150 },
+            { name: "Stage", type: "select", items: stageTypes, valueField:"Id", textField: "Name"},
+			{ name: "Type", type: "text", width: 150 },
+			{ name: "Confirmed", type: "select", items: confirmTypes, valueField: "Id", textField: "Name" },
+			{ name: "Notes", type: "text", width: 150 },
+            { type: "control" }
+        ]
+
+
+
 var bib_year = "";
 var bib_key = "";
 var bib_source = "";
@@ -35,13 +65,7 @@ function prepareTable(){
  
         data: [],
  
-        fields: [
-            { name: "Variable1", type: "text", width: 150 },
-            { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
-            { name: "Variable2", type: "text", width: 150 },
-            { name: "Correlation", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
-            { type: "control" }
-        ]
+        fields: dataHeaders
     });
 }
 
