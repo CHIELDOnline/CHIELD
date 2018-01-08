@@ -4,6 +4,12 @@ path_to_python="python"
 
 source deploy_config.sh
 
+# Re-create the database from the tree structure
+
+cd processing
+R -f TreeToDatabase.R
+cd ..
+
 # Copy the sqlite database and downloadable csv files to the local app:
 cp -R data/db/ app/data/db/
 

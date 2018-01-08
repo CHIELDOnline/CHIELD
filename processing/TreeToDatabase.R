@@ -4,10 +4,17 @@ library(dplyr)
 library(dbplyr)
 library(RSQLite)
 library(bibtex)
+library(readr)
 
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 treeBaseFolder = "../data/tree"
+
+causal_links_columns = 
+  c('bibref', 'Var1','Relation','Var2',
+    'Cor',"Process",
+    "Topic", "Stage", "Type",
+    "Subtype","Confirmed","Notes")
 
 # helper functions
 
@@ -47,6 +54,12 @@ for(f in list.dirs(treeBaseFolder)){
                      
     l = read.csv(paste0(f,"/",linkFile), stringsAsFactors = F)
     l = l[complete.cases(l[,c("Var1","Var2")]),]
+    for(colx in causal_links_columns){
+      if(!colx %in% names(l)){
+        l[,colx] = ""
+      }
+    }
+    l = l[,causal_links_columns]
     links = rbind(links,l)
   
     #b = readLines(paste0(f,"/",bibFile), warn = F)
@@ -105,11 +118,7 @@ processes = data.frame(
 
 # Causal links
 
-causal.links = links[,c("pk",'bibref',
-                        'Var1','Relation','Var2',
-                        'Cor',"Process",
-                        "Topic", "Stage", "Type",
-                        "Subtype","Confirmed","Notes")]
+causal.links = links[,c("pk",causal_links_columns)]
 
 causal.links$Var1 = variables[match(causal.links$Var1, variables$name),]$pk
 causal.links$Var2 = variables[match(causal.links$Var2, variables$name),]$pk

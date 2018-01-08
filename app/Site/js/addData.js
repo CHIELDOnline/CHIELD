@@ -1,5 +1,5 @@
 // TODO: autocomplete on jsgrid input tags: https://jqueryui.com/autocomplete/    
-
+// TODO: add process and subtype?
 
 var characterLengthLimit = 7800;
 
@@ -120,6 +120,10 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
 function submitToGitHub_viaLink(){
 	console.log("Submit");
 	var data = $('#jsGrid').jsGrid('option', 'data');
+	// Add the bibref to every line
+	for(var i=0; i < data.length; ++i){
+		data[i].bibref = bib_key;
+	}
 	var csvtext = JSONToCSVConvertor(data, true);
 	console.log(csvtext);
 	
@@ -153,6 +157,7 @@ function submitToGitHub_viaLink(){
 
 function submitToGitHub(){
 
+	updateBib();
 
 	if(bib_key!=""){
 
@@ -161,6 +166,10 @@ function submitToGitHub(){
 
 		console.log("Submit");
 		var data = $('#jsGrid').jsGrid('option', 'data');
+		// Add the bibref to every line
+		for(var i=0; i < data.length; ++i){
+			data[i].bibref = bib_key;
+		}
 		var csvtext = JSONToCSVConvertor(data, true);
 	
 		// TODO: Validate bib source
@@ -174,7 +183,7 @@ function submitToGitHub(){
 	
 		var params = "data="+encodeURIComponent(data);
 
-		
+
 
 		var http = new XMLHttpRequest();
 	//	var params = "lorem=ipsum&name=binny";
