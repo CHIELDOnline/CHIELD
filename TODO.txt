@@ -1,8 +1,9 @@
 python script:
 	Why is it not iterating over all files?
-	TEST
+
 
 Finish addData.js
+	*Add other columns
 	Add option to declare github name
 		Check github name
 		Store in cookie
@@ -18,11 +19,11 @@ Cookies:
 	Database: keep version number somewhere (plus stats?)
 
 Documents: 
-	TEST add list of links
+	
 
 Document:
 	Links table:
-		Find a way of shortening "Notes" entry (with button that expands?)
+		Find a way of shortening "Notes" entry (with button that shows (closable) Overlay div)
 		Find a way to change the column widths
 	If bibtex has an abstract field, display it.
 
@@ -38,7 +39,9 @@ Graphical display:
 	Add node
 	Expland node
 	Find shortest path between two links?
+		http://aprogrammerwrites.eu/?p=1391#.WlUQPUu3yRs
 	Find all paths between two links?
+
 
 Website:
 	Create header:
@@ -50,3 +53,5 @@ Website:
 Contributors:
 	Database: list contributors with number of documents covered and issues raised.
 	Contributor page shows ranked list of contributors
+
+Make Variables search page

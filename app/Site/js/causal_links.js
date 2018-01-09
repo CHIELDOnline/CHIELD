@@ -1,6 +1,12 @@
 // Causal links
 
 $(document).ready(function(){
+
+	$("#header").load("header.html", function(){
+		$("#CausalLinksHREF").addClass("active");
+	}); 
+	
+
 	console.log("Start");
 	
 	dtableConfig =  {

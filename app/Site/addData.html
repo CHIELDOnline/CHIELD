@@ -1,9 +1,8 @@
 <html>
 <head>
-<!--<script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<!--<script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>-->
-<!--<script type="text/javascript" src="js/github/pushToRepo.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
@@ -17,25 +16,47 @@
 </head>
 <body>
 
-<div id="contributor" class="container">
-<h4>Contributor</h4>
-<input id="contributorID"></input>
-</div>
+<div id="header"></div>
 
-<div id="bibDataSubmit" class="container">
-	<div id="bibdiv">
-		<h4>Bibtex reference:</h4>
-		<textarea id="bibtexsource" class="form-control" rows="5"></textarea>
-		<div id="bibtexhtml"></div>
+<div class="container">
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="#contributor" role="tab" data-toggle="tab">Contributor</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#bibDataSubmit" role="tab" data-toggle="tab">Reference</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#causal_links" role="tab" data-toggle="tab">Causal Links</a>
+  </li>
+</ul>
+
+
+<div class="tab-content">
+
+	<div id="contributor" role="tabpanel" class="tab-pane fade in active">
+	<h4>Contributor</h4>
+	<input id="contributorID"></input>
 	</div>
+
+	<div id="bibDataSubmit" role="tabpanel" class="tab-pane fade">
+		<div id="bibdiv">
+			<h4>Bibtex reference:</h4>
+			<textarea id="bibtexsource" class="form-control" rows="5"></textarea>
+			<div id="bibtexhtml"></div>
+		</div>
+	</div>
+
+	<div id="causal_links" role="tabpanel" class="tab-pane fade">
+		<div id="jsGrid"></div>
+	</div>
+
 </div>
 
-<div id="causal_links" class="container">
-	<div id="jsGrid"></div>
+<div id="submit" class="btn btn-success">
+	<button id="submitToGitHub" type="button">Submit</button>
+	<div id="submissionResults"></div>
 </div>
-<div id="submit">
-<button id="submitToGitHub" type="button">Submit</button>
-<div id="submissionResults"></div>
 </div>
 </body>
 </html>

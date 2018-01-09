@@ -41,6 +41,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 $(document).ready(function(){
+
+	$("#header").load("header.html", function(){
+		$("#DocumentsHREF").addClass("active");
+	}); 
+
 	var key = getUrlParameter('key');
 	if(key!=''){
 	requestRecord("php/getDoc.php", "key="+key,'bib');

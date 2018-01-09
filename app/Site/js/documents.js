@@ -18,6 +18,11 @@ dtableConfig =  {
 
 
 $(document).ready(function(){
+
+	$("#header").load("header.html", function(){
+		$("#DocumentsHREF").addClass("active");
+	}); 
+
 	preparePage("documents_table","php/getDocs.php");
     requestLinks(php_link);
 });

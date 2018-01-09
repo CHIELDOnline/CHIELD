@@ -247,6 +247,12 @@ function finishedSubmission(link){
 }
 
 $(document).ready(function(){
+
+
+	$("#header").load("header.html", function(){
+		$("#AddDataHREF").addClass("active");
+	}); 
+
 	// make causal links table
 	prepareTable();
 	// assign function to update bibtex
