@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-# TODO: make sure bibref has no illegal characters
+
 
 from github import Github
 import json
 from os import listdir, remove
 from math import floor
-from shutil import copyfile
+#from shutil import copyfile
 from time import time
 
 
@@ -16,6 +16,7 @@ githubUser = ""
 githubAccessToken = ""
 githubRepoName = ""
 
+# import configuration variables
 from githubConfig import *
 
 if githubUser=="":
@@ -79,8 +80,9 @@ def processFile(file):
 	print(pull_url)
 	
 	# Copy php file to processed folder
-	copyfile(file_path, processed_file_path)
-	#remove(file_path)
+	# NO: do this from the php file
+	# copyfile(file_path, processed_file_path)
+	# remove(file_path)
 			
 			
 def getFolder(bibref,year):

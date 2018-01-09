@@ -39,6 +39,36 @@ makePks = function(base){
   #1:length(base)
 }
 
+getShortCitation = function(b){
+  if(is.null(b$author)){
+    return("")
+  }
+  citationAndSep = " & "
+  citationEnd = ""
+  bAuthors = b$author
+  if(length(bAuthors)>4){
+    bAuthors = b$author[1:4]
+    citationAndSep = ", "
+    citationEnd = " et al."
+  }
+  bAuthors = sapply(b$author,function(X){X$family})
+  if(length(bAuthors)==1){
+    authorList = bAuthors[1]
+  } else{
+    authorList = paste0(
+      paste(bAuthors[1:(length(bAuthors)-1)],collapse=", "),
+      citationAndSep,
+      tail(bAuthors,1),
+      citationEnd
+    )
+  }
+  
+  bCitation = paste0(
+    authorList,
+    " (",bYear,")")
+  return(bCitation)
+}
+
 
 links = data.frame()
 bib = data.frame(pk = NA,author = NA,
@@ -70,9 +100,12 @@ for(f in list.dirs(treeBaseFolder)){
     bYear = b$year
     bTitle = b$title
     bRecord = paste(as.character(toBibtex(b)),collapse="\n")
-    bCitation = format(b, style = "html")
+    #bCitation = format(b, style = "html")
     # remove link text
-    bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
+    #bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
+    # Citation is now e.g. Ackley & Littman (1994)
+    bCitation = getShortCitation(b)
+    
     bib = rbind(bib,
                 c(bKey, bAuthor, bYear, bTitle,
                   bRecord, bCitation))

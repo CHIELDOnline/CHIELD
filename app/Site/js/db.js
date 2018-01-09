@@ -6,7 +6,9 @@ var dtable;
 
 function preparePage(tableIdX,php_linkX){
 	tableId = tableIdX;
-	php_link = php_linkX;
+	if(php_link!=""){
+		php_link = php_linkX;
+	}
 	// set up column searching
 	$('#'+tableId+' tfoot th').each( function () {
         var title = $(this).text();

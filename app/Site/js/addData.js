@@ -1,5 +1,10 @@
 // TODO: autocomplete on jsgrid input tags: https://jqueryui.com/autocomplete/    
 // TODO: add process and subtype?
+// TODO: make sure bibref has no illegal characters
+// TODO: check that JSONtoCSV actually works with escaping quotes
+// TODO: Sort styling of bibtex reference div
+// TODO: Start on graphical interface for links
+
 
 var characterLengthLimit = 7800;
 
@@ -178,8 +183,11 @@ function submitToGitHub(){
 		
 	
 		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source_processed+"\n";
-	
-		var data = contributor + "\n" + bibtex_data + csvtext;
+		
+		// TODO: add date
+		var contributor_data = contributor;
+
+		var data = contributor_data + "\n" + bibtex_data + csvtext;
 	
 		var params = "data="+encodeURIComponent(data);
 
