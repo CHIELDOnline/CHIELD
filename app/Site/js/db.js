@@ -58,7 +58,22 @@ function updateLinksTable(text){
     document.getElementById(tableId+'_filter').style.display = "none";
 }
 
+function recieveVariablesFromServer(response){
+	console.log("Override me");
+}
 
+function requestVariablesFromServer(php_link){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		   // Typical action to be performed when the document is ready:
+		   recieveVariablesFromServer(xhttp.responseText);
+	      // addSearchHeaders();
+		}
+	};
+	xhttp.open("GET", php_link, true);
+	xhttp.send();
+}
 
 function requestLinks(php_link, tableId){
 	var xhttp = new XMLHttpRequest();

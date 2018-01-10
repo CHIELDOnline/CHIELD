@@ -8,6 +8,8 @@
 
 var characterLengthLimit = 7800;
 
+var existingVariables = [];
+
 var relationTypes = [
 	{ Name: ">", Id: ">" },
 	{ Name: "<=>", Id: "<=>" },
@@ -246,8 +248,54 @@ function finishedSubmission(link){
 	}
 }
 
+function recieveVariablesFromServer(response){
+	var varObj = JSON.parse(response);
+	var vars = [];
+	for(var i = 0; i < varObj.length;++i){
+		vars.push(varObj[i].name);
+	}
+	//console.log("Variables");
+	//console.log(vars);
+
+	// TODO: add variables from cookie
+
+	existingVariables = vars;
+
+	// add suggestions to drop down:
+	var gridAddButton = document.getElementsByClassName("jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button")[0];
+	gridAddButton.onmouseup = function(){
+			// This is the Var1 input on the grid
+		$("#jsGrid")[0].getElementsByTagName("input")[8].id="Var1Autocomplete";
+		$("#Var1Autocomplete").autocomplete({
+			source:
+			function(request, response) {
+				// return top 8 hits
+		        var results = $.ui.autocomplete.filter(existingVariables, request.term);
+		        response(results.slice(0, 8));
+		    }
+		});
+		$("#jsGrid")[0].getElementsByTagName("input")[9].id="Var2Autocomplete";
+		$("#Var2Autocomplete").autocomplete({
+			source:
+			function(request, response) {
+				// return top 8 hits
+		        var results = $.ui.autocomplete.filter(existingVariables, request.term);
+		        response(results.slice(0, 8));
+		    }
+		});
+		//$("#ui-id-1")[0].style.background="blue";
+	};
+   // $( "#tags" ).autocomplete({
+   //   source: availableTags
+   // });
+	
+}
+
+
+
 $(document).ready(function(){
 
+	requestVariablesFromServer("php/getVariables");
 
 	$("#header").load("header.html", function(){
 		$("#AddDataHREF").addClass("active");
@@ -262,6 +310,9 @@ $(document).ready(function(){
 	$("#bibtexsource").keyup(function(){
     	updateBib();
 	}); 
+
+
+
 	$('#submitToGitHub').attr('onclick', 'submitToGitHub()');
 });
 

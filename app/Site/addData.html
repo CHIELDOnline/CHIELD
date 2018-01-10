@@ -1,7 +1,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
@@ -9,8 +12,11 @@
  
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 
+<link type="text/css" rel="stylesheet" href="css/addData.css" />
+
 <script type="text/javascript" src="js/citation.js"></script>
 <script type="text/javascript" src="js/displayBibtex.js"></script>
+<script src="js/db.js"></script>
 <script src="js/addData.js"></script>
 
 </head>
@@ -18,7 +24,7 @@
 
 <div id="header"></div>
 
-<div class="container">
+<div>
 <ul class="nav nav-tabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" href="#contributor" role="tab" data-toggle="tab">Contributor</a>
@@ -35,15 +41,17 @@
 <div class="tab-content">
 
 	<div id="contributor" role="tabpanel" class="tab-pane fade in active">
-	<h4>Contributor</h4>
-	<input id="contributorID"></input>
+		<div class="container">
+			<input id="contributorID"></input>
+		</div>
 	</div>
 
 	<div id="bibDataSubmit" role="tabpanel" class="tab-pane fade">
-		<div id="bibdiv">
+		<div id="bibdiv" class="container">
 			<h4>Bibtex reference:</h4>
 			<textarea id="bibtexsource" class="form-control" rows="5"></textarea>
-			<div id="bibtexhtml"></div>
+			<p>Formatted reference:
+			<div id="bibtexhtml" class="border border-primary rounded">No data</div>
 		</div>
 	</div>
 
@@ -53,8 +61,8 @@
 
 </div>
 
-<div id="submit" class="btn btn-success">
-	<button id="submitToGitHub" type="button">Submit</button>
+<div id="submit">
+	<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
 	<div id="submissionResults"></div>
 </div>
 </div>

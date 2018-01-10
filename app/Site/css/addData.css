@@ -1,0 +1,25 @@
+/* Submit button */
+
+#submitToGitHub {
+	left: 10px;
+	bottom: 10px;
+	position: absolute;
+}
+
+/* Autocomplete stuff */
+
+#ui-id-1 {
+    background: lightgray;
+    width: 40%;
+}
+#ui-id-2 {
+    background: lightgray;
+    width: 40%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+

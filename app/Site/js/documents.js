@@ -8,7 +8,7 @@ dtableConfig =  {
 				 // "data": "key",
 				  "render": function ( data, type, row, meta ) {
 				  if(type === 'display'){
-				     data =  '<a href="document.html?key='+data+'">Open</a>';
+				     data =  '<a href="variable.html?key='+data+'">Open</a>';
 				     }
 			      return(data);
 				  }
@@ -20,9 +20,9 @@ dtableConfig =  {
 $(document).ready(function(){
 
 	$("#header").load("header.html", function(){
-		$("#DocumentsHREF").addClass("active");
+		$("#VariablesHREF").addClass("active");
 	}); 
 
-	preparePage("documents_table","php/getDocs.php");
+	preparePage("documents_table","php/getVariables.php");
     requestLinks(php_link);
 });
