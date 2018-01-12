@@ -69,6 +69,12 @@ getShortCitation = function(b){
   return(bCitation)
 }
 
+getVersion = function(){
+  readLines()
+}
+
+#####
+
 
 links = data.frame()
 bib = data.frame(pk = NA,author = NA,

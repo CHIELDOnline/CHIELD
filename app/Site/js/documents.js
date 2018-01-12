@@ -3,6 +3,9 @@
 dtableConfig =  {
 		ordering: false,
         lengthChange: false,
+        //scrollY: '50vh',
+        //scrollCollapse: true,
+        pageLength: 8,
         "columnDefs": [
     			{ "targets": 3,
 				 // "data": "key",
@@ -20,9 +23,9 @@ dtableConfig =  {
 $(document).ready(function(){
 
 	$("#header").load("header.html", function(){
-		$("#VariablesHREF").addClass("active");
+		$("#DocumentsHREF").addClass("active");
 	}); 
 
-	preparePage("documents_table","php/getVariables.php");
+	preparePage("documents_table","php/getDocs.php");
     requestLinks(php_link);
 });

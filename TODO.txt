@@ -4,6 +4,8 @@ php:
 python script:
 	Why is it not iterating over all files?
 
+Deploy:
+	Should delete public files before moving
 
 Finish addData.js
 	*Add other columns
@@ -12,6 +14,10 @@ Finish addData.js
 		Store in cookie
 	Add date added? (so we can do recently added)
 		Add to contributor line in addData.js
+	Network:
+		TEST link searchVariablesToAdd to variable names autosuggest
+		Add button: warn if variable not in database?
+		Load data into network
 
 Cookies:
 	Store github name

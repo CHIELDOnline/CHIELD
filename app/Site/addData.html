@@ -2,6 +2,8 @@
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -18,6 +20,7 @@
 <script type="text/javascript" src="js/displayBibtex.js"></script>
 <script src="js/db.js"></script>
 <script src="js/addData.js"></script>
+<script src="js/visualisation/GUI_for_addData.js"></script>
 
 </head>
 <body>
@@ -56,6 +59,10 @@
 	</div>
 
 	<div id="causal_links" role="tabpanel" class="tab-pane fade">
+		<input id="searchVariablesToAdd"></input>
+		<button id="addVar" onclick="addVar()" class="btn btn-primary"> + </button>
+		<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>
+		<div id="mynetwork"></div>
 		<div id="jsGrid"></div>
 	</div>
 

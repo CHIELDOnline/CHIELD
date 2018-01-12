@@ -248,6 +248,12 @@ function finishedSubmission(link){
 	}
 }
 
+function filterWithMaxLengthLimit(request, response) {
+		// return top 8 hits
+        var results = $.ui.autocomplete.filter(existingVariables, request.term);
+        response(results.slice(0, 8));
+    }
+
 function recieveVariablesFromServer(response){
 	var varObj = JSON.parse(response);
 	var vars = [];
@@ -261,33 +267,26 @@ function recieveVariablesFromServer(response){
 
 	existingVariables = vars;
 
+	// Add suggestions to "add" input
+	$("#searchVariablesToAdd").autocomplete({
+			source:filterWithMaxLengthLimit
+		});
+
+
 	// add suggestions to drop down:
 	var gridAddButton = document.getElementsByClassName("jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button")[0];
 	gridAddButton.onmouseup = function(){
 			// This is the Var1 input on the grid
 		$("#jsGrid")[0].getElementsByTagName("input")[8].id="Var1Autocomplete";
 		$("#Var1Autocomplete").autocomplete({
-			source:
-			function(request, response) {
-				// return top 8 hits
-		        var results = $.ui.autocomplete.filter(existingVariables, request.term);
-		        response(results.slice(0, 8));
-		    }
-		});
+			source:filterWithMaxLengthLimit
+			});
 		$("#jsGrid")[0].getElementsByTagName("input")[9].id="Var2Autocomplete";
 		$("#Var2Autocomplete").autocomplete({
-			source:
-			function(request, response) {
-				// return top 8 hits
-		        var results = $.ui.autocomplete.filter(existingVariables, request.term);
-		        response(results.slice(0, 8));
-		    }
-		});
-		//$("#ui-id-1")[0].style.background="blue";
+			source:filterWithMaxLengthLimit
+			});
 	};
-   // $( "#tags" ).autocomplete({
-   //   source: availableTags
-   // });
+
 	
 }
 
@@ -311,8 +310,7 @@ $(document).ready(function(){
     	updateBib();
 	}); 
 
-
-
 	$('#submitToGitHub').attr('onclick', 'submitToGitHub()');
+	initialiseNetwork();
 });
 
