@@ -6,36 +6,40 @@ python script:
 
 Deploy:
 	Should delete public files before moving
+	Add option to skip R compile
 
 Finish addData.js
 	*Add other columns
-	Add option to declare github name
-		Check github name
-		Store in cookie
 	Add date added? (so we can do recently added)
 		Add to contributor line in addData.js
 	Network:
-		TEST link searchVariablesToAdd to variable names autosuggest
 		Add button: warn if variable not in database?
-		Load data into network
+	When grid is updated, update vis.js
+	Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
+	TEST Fix: When pressing enter on the input, hide the autofill
+	Add "no causal relation"
+	Clear bibtex reference on load
+	FIX: Why are two pull requests submitted?
 
 Cookies:
-	Store github name
-	Store temporary variable names
-	Store version number
-		Check if current version is greater than stored version
-			Clear cookies if so
-	Database: keep version number somewhere (plus stats?)
+	TEST Store temporary variable names
+	TEST Store version number
+	TEST	Check if current version is greater than stored version
+	TEST		Clear cookies if so
 
 Documents: 
-	
+
 
 Document:
+	Update links table (see causal_links)
+	If bibtex has an abstract field, display it.
+	Display causal links graph vis.js (use general function)
 	Links table:
 		Find a way of shortening "Notes" entry (with button that shows (closable) Overlay div)
 		Find a way to change the column widths
-	If bibtex has an abstract field, display it.
+		Add button to make change request via github
 
+causal_links
 
 Database:
 	Fix short citation: need to de-tex-ify special characters (see num 84)
@@ -50,13 +54,15 @@ Graphical display:
 	Find shortest path between two links?
 		http://aprogrammerwrites.eu/?p=1391#.WlUQPUu3yRs
 	Find all paths between two links?
+	General function to display causal links given a list of links
+		Plus option to focus/emphasise a particular variable
 
 
 Website:
 	Finish other pages
 
 Contributors:
-	Database: list contributors with number of documents covered and issues raised.
 	Contributor page shows ranked list of contributors
 
-Make Variables search page
+Variables:
+	Sort by alphabetical

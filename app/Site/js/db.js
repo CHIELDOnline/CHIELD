@@ -89,7 +89,24 @@ function requestLinks(php_link, tableId){
 }
 
 function updateRecord(response){
-	// overwrite this
+	// override this
+}
+
+function recieveVersion(response){
+	// override this
+}
+
+function getVersion(){
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		   // Typical action to be performed when the document is ready:
+		   recieveVersion(xhttp.responseText);
+	      // addSearchHeaders();
+		}
+	};
+	xhttp.open("GET", "php/getVersion.php", true);
+	xhttp.send();
 }
 
 

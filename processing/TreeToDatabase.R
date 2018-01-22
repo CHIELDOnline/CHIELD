@@ -10,6 +10,9 @@ try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 treeBaseFolder = "../data/tree"
 
+default_contributor = "seannyD"
+default_contributor_realname = "Seán Roberts"
+
 causal_links_columns = 
   c('bibref', 'Var1','Relation','Var2',
     'Cor',"Process",
@@ -70,7 +73,10 @@ getShortCitation = function(b){
 }
 
 getVersion = function(){
-  readLines()
+  gitRevision = system("git rev-parse HEAD",intern = T)
+  CHIELD.version = readLines("../version.txt")
+  return(data.frame(version=CHIELD.version,
+                    gitRevision = gitRevision))
 }
 
 #####
@@ -80,6 +86,12 @@ links = data.frame()
 bib = data.frame(pk = NA,author = NA,
         year = NA,title = NA,record = NA,
         citation=NA, stringsAsFactors = F)
+
+contributors = data.frame(
+  username = default_contributor,
+  realname = default_contributor_realname,
+  numDocs = 0
+)
 
 for(f in list.dirs(treeBaseFolder)){
   files = list.files(f)
@@ -115,13 +127,40 @@ for(f in list.dirs(treeBaseFolder)){
     bib = rbind(bib,
                 c(bKey, bAuthor, bYear, bTitle,
                   bRecord, bCitation))
+    
+    # Contributor
+    contributor.file = paste0(f,"/contributors.txt")
+    if(file.exists(contributor.file)){
+      print(f)
+      cx = read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F)
+      if(ncol(cx)==2){
+        names(cx) = c("username",'realname') 
+      } else{
+        names(cx) = "username"
+        cx$realname = cx$username
+      }
+      for(i in 1:nrow(cx)){
+        unx = cx[i,]$username
+        # If user exists, increment number of docs by 1
+        if(unx %in% contributors$username){
+          contributors[contributors$username==unx,]$numDocs = contributors[contributors$username==unx]$numDocs+1
+        } else{
+          # if they don't exist, add them
+          contributors = rbind(contributors,
+                               c(cx$username,cx$realname,1))
+        }
+      }
+    } else{
+      # By default, assume it's the default contributor
+      contributors[contributors$username==default_contributor,]$numDocs = contributors[contributors$username==default_contributor]$numDocs+1
+    }
   }
 }
 bib = bib[2:nrow(bib),]
 bib = bib[!is.na(bib$pk),]
 bib = bib[bib$pk!="",]
 rownames(bib) = bib$pk
-
+contributors = contributors[!is.na(contributors$username),]
 
 links$pk = makePks(links$bibref)
 
@@ -170,6 +209,11 @@ write.csv(causal.links,"../data/db/CausalLinks.csv", row.names = F)
 write.csv(variables,"../data/db/Variables.csv", row.names = F)
 write.csv(documents,"../data/db/Documents.csv", row.names = F)
 write.csv(processes,"../data/db/Processes.csv", row.names = F)
+write.csv(contributors,"../data/db/Contributors.csv", row.names = F)
+
+version = getVersion()
+
+write.csv(version, "../data/db/Version.csv", row.names = F)
 
 #db <- dbConnect(SQLite(), dbname="Test.sqlite")
 #dbWriteTable(conn = db, name = "Student", value = Student, row.names = FALSE)
@@ -185,6 +229,10 @@ documents = read_csv("../data/db/Documents.csv",
                      col_types = paste(rep("c",ncol(documents)),collapse=''))
 processes = read_csv("../data/db/Processes.csv",
                      col_types = paste(rep("c",ncol(processes)),collapse=''))
+contributors = read_csv("../data/db/Contributors.csv",
+                     col_types = "cci")
+version = read_csv("../data/db/Version.csv",
+                        col_types = "cc")
 
 my_db_file <- "../data/db/CHIELD.sqlite"
 my_db <- src_sqlite(my_db_file, create = TRUE)
@@ -193,5 +241,7 @@ dbWriteTable(my_db2, "causal_links",causal_links, overwrite=T)
 dbWriteTable(my_db2, "variables",variables, overwrite=T)
 dbWriteTable(my_db2, "documents",documents, overwrite=T)
 dbWriteTable(my_db2, "processes",processes, overwrite=T)
+dbWriteTable(my_db2, "contributors",contributors, overwrite=T)
+dbWriteTable(my_db2, "version",version, overwrite=T)
 dbDisconnect(my_db2)
 

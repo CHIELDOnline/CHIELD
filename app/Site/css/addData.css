@@ -28,3 +28,7 @@ ul {
     height: 300px;
 }
 
+#searchVariablesToAdd_dynamic {
+    position: absolute;
+    display: none;
+}
