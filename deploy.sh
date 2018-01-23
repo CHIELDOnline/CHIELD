@@ -4,6 +4,12 @@ path_to_python="python"
 
 source deploy_config.sh
 
+if [ -z "$server_public_folder" ]
+then
+	echo "Required variables were not set. Check deploy_config.sh."
+	exit 1
+fi
+
 # Re-create the database from the tree structure
 
 cd processing
@@ -12,6 +18,12 @@ cd ..
 
 # Copy the sqlite database and downloadable csv files to the local app:
 cp -R data/db/ app/data/db/
+
+# Zip the downloadable csv files to the public folder of the local app:
+zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
+
+# Zip the sqlite database and add to downloads
+zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
 
 # Copy the local app public folder to the server public folder:
 cp -R app/Site/ $server_public_folder

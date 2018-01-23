@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#header").load("header.html", function(){
+    $("#DownloadsHREF").addClass("active");
+  }); 
+
+});
+</script>
+
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="container">
+<h2>Downloads</h2>
+<p>Download as <a href="downloads/CHIELD_csv.zip">csv</a>.
+<p>Download as <a href="downloads/CHIELD.zip">SQLite database</a>.
+<p>Source code and archive available <a href="https://github.com/CHIELDOnline/CHIELD">via github</a>.
+</div>
+</html>

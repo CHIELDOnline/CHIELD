@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#header").load("header.html", function(){
+    $("#AboutHREF").addClass("active");
+  }); 
+
+});
+</script>
+
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="container">
+<h2>Causal Hypotheses in Evolutionary Linguistics Database</a>
+<p> CHIELD is a searchable database of causal hypotheses in evolutionary linguistics.  It is currently under development.
+<h4>Citation</h4>
+<p>If you use CHIELD, please cite:
+<p>Roberts, S. (2018) CHIELD: Causal hypotheses in evolutionary linguistics database. In Cuskley, C., Flaherty, M., Little, H., McCrohon, L., Ravignani, A., and Verhoef, T., editors, The Evolution of Language: Proceedings of the 12th International Conference.
+<h5>Bibtex source:</h5>
+<p><textarea style="width:100%" rows="4">
+@inproceedings{Roberts_CHIELD,
+  Author = {Sean G. Roberts},
+  Booktitle = {The Evolution of Language: Proceedings of the 12th International Conference},
+  Editor = {Cuskley, C and Flaherty, M and Little, H and McCrohon, L and Ravignani, A and Verhoef, T},
+  Title = {{CHIELD}: Causal hypotheses in evolutionary linguistics database},
+  Year = {2018}}
+</textarea>
+</div>
+</html>
