@@ -7,9 +7,36 @@ dtableConfig = {
 		ordering: false,
         lengthChange: false,
     	columnDefs: [
-            { width: 50, targets: 1 } //  try to change relation column width?
+            //{ width: "2%", targets: 1 }, //  try to change relation column width?
+            { targets: 8,
+				 // "data": "key",
+				  "render": function ( data, type, row, meta ) {
+				  if(type === 'display'){
+				  	 if(data!=null){
+					  	 // hide double quotes etc. and escape single quotes
+					  	 data = encodeURI(data).replace(/[']/g, escape);
+					  	 if(data.length>0){
+					     	data =  '<button class="btn btn-primary" onclick=\"openQuote(\'' + 
+					     									data + '\')\">Quote</button>';
+					 	 	} 
+					 	 }
+				     }
+			      return(data);
+				  }
+			  }
         ]
     };
+
+function openQuote(text){
+	text = decodeURI(text);
+	$("#quoteDivText").html(text);
+	$("#quoteDiv").show();
+}
+
+function closeQuote(){
+	$("#quoteDivText").html("");
+	$("#quoteDiv").hide();	
+}
 
 function updateRecord(response,type){
 	console.log("updateRecord "+type);
@@ -17,6 +44,7 @@ function updateRecord(response,type){
 		response = JSON.parse(response);
 		console.log(response[0].record + "TYPE:"+type);
 		document.getElementById('bibtexsource').value = response[0].record;
+		$("#documenShortCite").html(response[0].citation);
 		displayBibtex();
 	}
 	if(type=="links"){
@@ -41,14 +69,14 @@ var getUrlParameter = function getUrlParameter(sParam) {
 };
 
 $(document).ready(function(){
-
+	$("#quoteDiv").hide();	
 	$("#header").load("header.html", function(){
 		$("#DocumentsHREF").addClass("active");
 	}); 
 
 	var key = getUrlParameter('key');
 	if(key!=''){
-	requestRecord("php/getDoc.php", "key="+key,'bib');
+		requestRecord("php/getDoc.php", "key="+key,'bib');
 		preparePage(tableId,"");
 		requestRecord("php/getLinksForDoc.php", "key="+key,'links');
 	} else{

@@ -7,6 +7,7 @@ python script:
 Deploy:
 	Should delete public files before moving
 	Add option to skip R compile
+	
 
 Finish addData.js
 	*Add other columns
@@ -26,20 +27,24 @@ Cookies:
 	TEST Store version number
 	TEST	Check if current version is greater than stored version
 	TEST		Clear cookies if so
+	FIX: git version will update with app changes even if data hasn't changed.
+		SO: Rely on text version?
 
 Documents: 
 
 
 Document:
 	Update links table (see causal_links)
-	If bibtex has an abstract field, display it.
+	Hide bibtex source under button.
+	LOW If bibtex has an abstract field, display it.
 	Display causal links graph vis.js (use general function)
 	Links table:
-		Find a way of shortening "Notes" entry (with button that shows (closable) Overlay div)
 		Find a way to change the column widths
 		Add button to make change request via github
 
-causal_links
+
+causal_links:
+	FIX: Why is search not working properly? type "tem", but "temperature" does not appear.
 
 Database:
 	Fix short citation: need to de-tex-ify special characters (see num 84)

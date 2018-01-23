@@ -13,6 +13,7 @@ function preparePage(tableIdX,php_linkX){
 	$('#'+tableId+' tfoot th').each( function () {
         var title = $(this).text();
         $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+        //$(this).html( '<input type="text" placeholder="Search" />' );
     } );
 
 }
@@ -36,7 +37,9 @@ function updateLinksTable(text){
 	console.log(links2.slice(0,4));
 
 	links2 = editData(links2);
-	
+
+	console.log("post edit");
+	console.log(links2);	
 	
 	dtable_config = $.extend({data:links2},dtableConfig);
 	

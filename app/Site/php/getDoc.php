@@ -4,7 +4,7 @@ $key = $_POST['key'];
 
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
-$sql= "SELECT record FROM documents	WHERE pk='".$key."'";
+$sql= "SELECT record, citation FROM documents	WHERE pk='".$key."'";
 
 $statement=$pdo->prepare($sql);
 $statement->execute();
