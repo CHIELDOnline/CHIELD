@@ -1,3 +1,5 @@
+# Take the CHILED database in a directory tree format and build a SQL database
+
 library(digest)
 library(stringr)
 library(dplyr)

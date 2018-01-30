@@ -29,6 +29,7 @@ Cookies:
 	TEST		Clear cookies if so
 	FIX: git version will update with app changes even if data hasn't changed.
 		SO: Rely on text version?
+		NO: let's play it on the safe side
 
 Documents: 
 
@@ -71,3 +72,11 @@ Contributors:
 
 Variables:
 	Sort by alphabetical
+
+
+
+Coding:
+	Fix "tool use ~ imperative gestures"
+	Add important people: Kirby, Hurford etc.
+
+

@@ -1,8 +1,9 @@
 // Documents
 
 dtableConfig =  {
-		ordering: false,
+		ordering: true,
         lengthChange: false,
+        order: [[ 1, "desc" ], [0, "asc"]],
         //scrollY: '50vh',
         //scrollCollapse: true,
         pageLength: 8,

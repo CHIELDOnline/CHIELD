@@ -4,14 +4,17 @@
 
 tableId = "links_table";
 dtableConfig = {
-		ordering: false,
+		ordering: true,
         lengthChange: false
     };
 
 function updateRecord(response,type){
 	console.log(response);
 	if(type=='var'){
-		$("#variableTitle").html(response);
+		var info = JSON.parse(response);
+		var vname = info[0].name;
+		vname = vname.charAt(0).toUpperCase() + vname.slice(1).toLowerCase()
+		$("#variableTitle").html(vname);
 	}
 	if(type=="links"){
 		updateLinksTable(response);

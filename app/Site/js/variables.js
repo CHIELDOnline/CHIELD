@@ -1,14 +1,14 @@
 // Variables
 
 dtableConfig =  {
-		ordering: false,
+		ordering: true,
         lengthChange: false,
         order: [[ 0, "asc" ]],
         columns: [
         	//{ data: 0},
         	// Combine the reference and the citekey to make a link
         	{ data: null, render: function(data,type,row){
-        		return '<a href="document.html?key=' + data[1] +'">'+ data[0] + '</a>';
+        		return '<a href="variable.html?key=' + data[1] +'">'+ data[0] + '</a>';
         	}},
         	]
         };

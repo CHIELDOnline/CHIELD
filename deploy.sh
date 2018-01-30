@@ -1,8 +1,32 @@
 #!/bin/bash
+# Compile the database from the Github repository and deploy
+# to a location on the server (set in deploy_config.sh)
+# This will probably need to run with sudo access
+# Options:
+# --nocompile   Don't run the R script that compiles the SQL database
+# --nodelete    Don't delete the 
 
+
+# Default path to python (overwritten in deploy_config.sh)
 path_to_python="python"
 
 source deploy_config.sh
+
+
+# Set parameters
+compile=true
+remove_public_files_first=true
+
+while test $# -gt 0
+do
+	case "$1" in 
+		--nocompile) compile=false
+	;;
+		--nodelete) remove_public_files_first=false
+	;;
+esac
+shift
+done
 
 if [ -z "$server_public_folder" ]
 then
@@ -12,19 +36,32 @@ fi
 
 # Re-create the database from the tree structure
 
-cd processing
-R -f TreeToDatabase.R
-cd ..
+if [ "$compile" = true ]
+then
+	echo "Skipping database compilation ..."
+	cd processing
+	R -f TreeToDatabase.R
+	cd ..
+fi
 
 # Copy the sqlite database and downloadable csv files to the local app:
 cp -R data/db/ app/data/db/
 
-# Zip the downloadable csv files to the public folder of the local app:
+echo "Zipping publicly downloadable files ..."
+# Zip the downloadable csv files to the downloads folder
+# in the public folder of the local app:
 zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
 
 # Zip the sqlite database and add to downloads
 zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
 
+if [ "${remove_public_files_first}" = true ]
+then
+	echo "Deleting existing public files ..."
+	rm -R ${server_public_folder}*
+fi
+
+echo "Copying local files to server folder ..."
 # Copy the local app public folder to the server public folder:
 cp -R app/Site/ $server_public_folder
 

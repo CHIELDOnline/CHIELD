@@ -4,7 +4,7 @@ $key = $_POST['key'];
 
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
-$sql= "
+$sql= <<<EOT
 SELECT s.[name] variable1,
 	   Relation as relation,
        s2.[name] variable2,
@@ -18,9 +18,13 @@ SELECT s.[name] variable1,
     LEFT JOIN variables s ON l.Var1 = s.pk 
     LEFT JOIN variables s2 ON l.Var2 = s2.pk
     LEFT JOIN processes p ON l.Process = p.pk
-  WHERE l.bibref='".$key."'";
+  WHERE l.bibref=:key
+EOT;
+
+
 
 $statement=$pdo->prepare($sql);
+$statement->bindParam(':key', $key);
 $statement->execute();
 $results=$statement->fetchAll(PDO::FETCH_ASSOC);
 $json=json_encode($results);

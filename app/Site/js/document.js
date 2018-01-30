@@ -2,10 +2,13 @@
 
 // TODO: getLinksForDoc - prepare database
 
+var bibtexVisible = false;
+
 tableId = "links_table";
 dtableConfig = {
-		ordering: false,
+		ordering: true,
         lengthChange: false,
+
     	columnDefs: [
             //{ width: "2%", targets: 1 }, //  try to change relation column width?
             { targets: 8,
@@ -68,8 +71,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
+function revealBibtex(){
+	bibtexVisible = !bibtexVisible;
+	if(bibtexVisible){
+		$("#bibtexsource").show();
+	} else{
+		$("#bibtexsource").hide();
+	}
+}
+
 $(document).ready(function(){
-	$("#quoteDiv").hide();	
+	$("#quoteDiv").hide();
+	$("#bibtexsource").hide();	
 	$("#header").load("header.html", function(){
 		$("#DocumentsHREF").addClass("active");
 	}); 

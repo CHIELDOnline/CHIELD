@@ -10,8 +10,9 @@ $(document).ready(function(){
 	console.log("Start");
 	
 	dtableConfig =  {
-		ordering: false,
+		ordering: true,
         lengthChange: false,
+        order: [[ 3, "asc" ]],
         columns: [
         	{ data: 0},
         	{ data: 1},
