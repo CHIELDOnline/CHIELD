@@ -9,14 +9,15 @@ SELECT s.[name] variable1,
      Relation as relation,
        s2.[name] variable2,
        Cor,
-       Process,
+       p.[name] Process,
        Topic,
        Stage,
        Type,
        Notes
-  FROM causal_links l LEFT JOIN variables s 
-    ON l.Var1 = s.pk LEFT JOIN variables s2 
-    ON l.Var2 = s2.pk
+  FROM causal_links l 
+  LEFT JOIN variables s ON l.Var1 = s.pk 
+  LEFT JOIN variables s2 ON l.Var2 = s2.pk
+  LEFT JOIN processes p ON l.Process = p.pk
   WHERE s.[pk]=:key1 or s2.[pk]=:key2
 EOT;
 

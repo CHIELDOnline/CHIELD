@@ -1,13 +1,12 @@
 php:
-	sanitise sql parameters
+	In Variable, make sure process name is being passed correctly in the PHP
 
 python script:
 	Why is it not iterating over all files?
+		Maybe related to two pull requests?
 
 Deploy:
-	Should delete public files before moving
-	Add option to skip R compile
-	
+		
 
 Finish addData.js
 	*Add other columns
@@ -15,28 +14,19 @@ Finish addData.js
 		Add to contributor line in addData.js
 	Network:
 		Add button: warn if variable not in database?
-	When grid is updated, update vis.js
-	Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
+	TEST When grid is updated, update vis.js
+	TEST Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
 	TEST Fix: When pressing enter on the input, hide the autofill
-	Add "no causal relation"
-	Clear bibtex reference on load
 	FIX: Why are two pull requests submitted?
 
 Cookies:
-	TEST Store temporary variable names
+	TEST Store temporary variable names in cookie
 	TEST Store version number
-	TEST	Check if current version is greater than stored version
-	TEST		Clear cookies if so
-	FIX: git version will update with app changes even if data hasn't changed.
-		SO: Rely on text version?
-		NO: let's play it on the safe side
 
 Documents: 
 
 
 Document:
-	Update links table (see causal_links)
-	Hide bibtex source under button.
 	LOW If bibtex has an abstract field, display it.
 	Display causal links graph vis.js (use general function)
 	Links table:
@@ -51,32 +41,40 @@ Database:
 	Fix short citation: need to de-tex-ify special characters (see num 84)
 
 Link: 
-	Create page for link, add documents that relate to it
+	(Maybe not: just use Explore) Create page for link, add documents that relate to it
 
 
 Graphical display:
 	Add node
 	Expland node
-	Find shortest path between two links?
-		http://aprogrammerwrites.eu/?p=1391#.WlUQPUu3yRs
-	Find all paths between two links?
+	Colour edges by:
+		Evidence type, correltion direction
+		Number of edges
+	Find shortest/ all paths between two links?
+		This requires full SQL: http://aprogrammerwrites.eu/?p=1391#.WlUQPUu3yRs
+		So maybe output the database in a compact graph format, load with python and implement Dijkstra's algorithm for listing all paths?
 	General function to display causal links given a list of links
 		Plus option to focus/emphasise a particular variable
+	Find brokers
 
-
-Website:
-	Finish other pages
-
-Contributors:
-	Contributor page shows ranked list of contributors
-
-Variables:
-	Sort by alphabetical
-
+About:
+	Add license details
+	Contributors:
+		Contributor page shows ranked list of contributors
 
 
 Coding:
 	Fix "tool use ~ imperative gestures"
 	Add important people: Kirby, Hurford etc.
+	Fix measured by: decide on ~= or =~ 
 
+Document:
+	Colour stage cell by stage type (see variable.js): Probably need to make this not hard-coded (change css style with "addClass" or something?)
 
+Search by evolution stage
+
+Future:
+	List of academics, do academic network discovery
+
+Downloads:
+	Add license details

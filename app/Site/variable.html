@@ -14,6 +14,8 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>
 
+<link rel="stylesheet" type="text/css" href="css/variable.css"/>
+
 <script type="text/javascript" src="js/citation.js"></script>
 <script type="text/javascript" src="js/displayBibtex.js"></script>
 <script type="text/javascript" src="js/db.js"></script>
@@ -52,5 +54,12 @@
   <tbody>
   </tbody>
 </table>
+</div>
+<div id="quoteDiv" class="alert alert-info" role="alert">
+  <br />
+  <div id="quoteDivText"></div>
+  <button id="quoteDivClose" onclick="closeQuote()" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  <button>
 </div>
 </html>

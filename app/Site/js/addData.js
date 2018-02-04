@@ -15,7 +15,9 @@ var relationTypes = [
 	{ Name: ">", Id: ">" },
 	{ Name: "<=>", Id: "<=>" },
 	{ Name: "~=", Id: "~=" },
-	{ Name: ">>", Id: ">>" }
+	{ Name: ">>", Id: ">>" },
+	{ Name: "/=", Id: "/="},
+	{ Name: "~~", Id: "~~"}
 ];
 
 var correlationTypes = [
@@ -503,6 +505,9 @@ $(document).ready(function(){
 	$("#bibtexsource").keyup(function(){
     	updateBib();
 	}); 
+
+	// clear bibtex source
+	$("#bibtexsource").val("");
 
 	$('#submitToGitHub').attr('onclick', 'submitToGitHub()');
 	initialiseNetwork();

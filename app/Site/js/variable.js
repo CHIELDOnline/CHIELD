@@ -5,8 +5,59 @@
 tableId = "links_table";
 dtableConfig = {
 		ordering: true,
-        lengthChange: false
+        lengthChange: false,
+        columnDefs: [
+	        {
+	    		targets: 6,
+	    		createdCell: function (td, cellData, rowData, row, col) {
+	    			switch(cellData){
+	    				case "language change":
+	    					$(td).css('background-color', '#28A745');
+	    					break;
+	    				case "cultural evolution":
+	    					$(td).css('background-color', '#FFC107');
+	    					break;
+	    				case "coevolution":
+	    					$(td).css('background-color', '#FFAF00');
+	    					break;
+	    				case "preadaptation":
+	    					$(td).css('background-color', '#DC3545');
+	    					break;
+	    				default:
+	    					break;
+	    			}
+	    		}
+	  		},
+            { targets: 8,
+				 // Render the notes function as a button that reveals the
+				 // note in a seperate div
+				  "render": function ( data, type, row, meta ) {
+				  if(type === 'display'){
+				  	 if(data!=null){
+					  	 // hide double quotes etc. and escape single quotes
+					  	 data = encodeURI(data).replace(/[']/g, escape);
+					  	 if(data.length>0){
+					     	data =  '<button class="btn btn-primary" onclick=\"openQuote(\'' + 
+					     									data + '\')\">Quote</button>';
+					 	 	} 
+					 	 }
+				     }
+			      return(data);
+				  }
+			  }
+        ]
     };
+
+function openQuote(text){
+	text = decodeURI(text);
+	$("#quoteDivText").html(text);
+	$("#quoteDiv").show();
+}
+
+function closeQuote(){
+	$("#quoteDivText").html("");
+	$("#quoteDiv").hide();	
+}
 
 function updateRecord(response,type){
 	console.log(response);
