@@ -276,7 +276,7 @@ function networkUpdateNodeName(oldNodeName, newNodeName){
 	}
 }
 
-function functionnetwrokUpdateEdgeType(Var1, Var2, Relation){
+function netwrokUpdateEdgeType(Var1, Var2, Relation){
 
 }
 

@@ -91,7 +91,7 @@ function requestLinks(php_link, tableId){
 	xhttp.send();
 }
 
-function updateRecord(response){
+function updateRecord(response, type){
 	// override this
 }
 
@@ -127,7 +127,7 @@ function requestRecord(php_link,params, type){
 	http.onreadystatechange = function() {
 	//Call a function when the state changes.
 		if(http.readyState == 4 && http.status == 200) {
-			updateRecord(http.responseText,http.type);
+			updateRecord(http.responseText,  http.type);
 		}
 	}
 	http.send(params);
