@@ -1,253 +1,253 @@
 "pk","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Confirmed","Notes"
-"2200702495","wheeler1985loss","2183189957",">","1577536904","pos",NA,NA,NA,NA,NA,NA,NA
-"2200702495","wheeler1985loss","1577536904",">","947011756","pos",NA,NA,NA,NA,NA,NA,NA
-"2406921606","wheeler1985loss","1577536904",">>","1119490286","pos",NA,NA,NA,NA,NA,NA,NA
-"1662940147","elman90findingStructure","2160086331",">","287023677","pos",NA,"acquisition","preadaptation","simulation","neural network","yes",NA
-"1951356702","ackley94altruismIn","685617769","<=>","2797953716","pos",NA,"signalling","coevolution","simulation",NA,"yes",NA
-"3869156039","batali94innateBiases","3703421603",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
-"154439286","batali94innateBiases","2416492989",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
-"1957940244","batali94innateBiases","766158177",">","4058709162","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
-"3470333337","Isbell_Young_1996","2183189957",">","769810522","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"3318803935","Isbell_Young_1996","769810522",">","843580261","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"3470333337","Isbell_Young_1996","843580261",">","2469075885","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"1152365339","Isbell_Young_1996","843580261",">","1204873804","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"881317972","Isbell_Young_1996","2469075885","~~","1204873804","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"2922861739","Isbell_Young_1996","2469075885",">","4029894760","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"322743337","Isbell_Young_1996","1204873804",">","4029894760","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"3395463178","Isbell_Young_1996","1204873804",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
-"3318803935","Isbell_Young_1996","4029894760",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
-"3470333337","Isbell_Young_1996","4255839106",">","947011756","",NA,NA,"preadaptation",NA,NA,NA,NA
-"1498907921","deboer99selfOrganisation","513238399",">","1242158712","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"2494688661","deboer99selfOrganisation","513238399",">","813265570","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"3049481449","deboer99selfOrganisation","1242158712",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"1814215669","deboer99selfOrganisation","2622762551",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"613678496","deboer99selfOrganisation","813265570",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"3834103688","deboer99selfOrganisation","1242158712",">","823927421","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"1498907921","deboer99selfOrganisation","813265570",">","823927421","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"2494688661","deboer99selfOrganisation","2622762551",">","823927421","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"3049481449","deboer99selfOrganisation","3411000965",">","2454982401","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
-"1490579461","dipaolo99onThe","2055697070",">","3841646903","neg",NA,"signalling","cultural evolution","model","communication game","yes",NA
-"1416939352","dipaolo99onThe","3841646903",">","2454982401","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
-"1141366929","dipaolo99onThe","2565747591",">","3379990269","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
-"3823466314","macneilage00onThe","839963435",">","3695104492",NA,NA,NA,NA,NA,NA,NA,"In our view, the crossing of the Rubicon for true speech was not achieved by sudden genetic change. Instead, it was the result of a two-stage development. The first stage in- volved ancestral hominids borrowing simple available biomechanical properties of the sys- tem-the frame, together with static, nonresting tongue configurations-by means of classic Darwinian descent with modification, to give the three CV co-occurrence patterns. Then, an initial increase in intersyllabic serial complexity was achieved by means of the LC pattern, as a result of a self-organizational interaction of bi- omechanics, movement initiation constraints, and culturally mediated cognition (46-48)."
-"3255098775","cangelosi01howNouns","3710423933",">","3854077640","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","recognise different food types (visually)"
-"2478515698","cangelosi01howNouns","3576688052",">","3706449238","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","approach or avoid food"
-"2478515698","cangelosi01howNouns","3854077640",">","4220921069","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"3255098775","cangelosi01howNouns","3706449238",">","435539725","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"2411463604","cangelosi01howNouns","4220921069",">","4196262906","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"254571459","cangelosi01howNouns","435539725",">","2108824016","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"57076394","cangelosi01howNouns","4196262906",">","4220921069","pos",NA,"lexicon","coevolution","simulation","neural network","yes","What about link to syntax?"
-"4096483329","cangelosi01howNouns","2108824016",">","435539725","pos",NA,"lexicon","coevolution","simulation","neural network","yes",""
-"1248620900","akaishi03misperception","1637233137",">","2104942409","pos",NA,"signalling","coevolution","simulation","population","yes",NA
-"2016004880","akaishi03misperception","2104942409",">","2510090154","pos",NA,"signalling","coevolution","simulation","population","yes",NA
-"2664227703","akaishi03misperception","1124469996",">","2104942409","neg",NA,"signalling","coevolution","simulation","population","yes",NA
-"2605790512","vogt03ecal","2518302948",">","2022600518","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
-"1105403063","vogt03ecal","2518302948",">","2697997895","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
-"1806320952","ke04phd","4131751688",">","3449969516","pos",NA,NA,"preadaptation","review",NA,NA,NA
-"2253276571","ke04phd","3449969516",">","947011756","pos",NA,NA,"preadaptation","review",NA,NA,NA
-"609295548","macwhinney2005language","947011756",">","785671023","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"609162975","macwhinney2005language","947011756",">","3439569706","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"4290006504","wang05verticalAndHorizontalTransmission","1600990332",">","3052714695","pos",NA,"signalling","language change","statistical",NA,"yes",NA
-"1647363964","dallasta06languageGamesNetworks","2285639406",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
-"647166087","dallasta06languageGamesNetworks","1723623461",">","3491408888","pos",NA,"signalling","cultural evolution","model","mathematical","yes",NA
-"1192872944","dallasta06microscopicPatterns","2055697070",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
-"2454540954","nettle06costsAndBenefits","3012865586",">","813265570","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
-"792569775","nettle06costsAndBenefits","3012865586",">","2797953716","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
-"4293509914","nettle06costsAndBenefits","3012865586",">","4134557450","pos",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
-"686269099","Skoyles_2006","947011756",">","4098621742","pos",NA,NA,"preadaptation",NA,NA,NA,""
-"3593067629","Skoyles_2006","947011756",">","1846973273","pos",NA,NA,"preadaptation",NA,NA,NA,""
-"933045039","Skoyles_2006","947011756",">","692875938","neg",NA,NA,"preadaptation",NA,NA,NA,"i.e. foot area"
-"686269099","Skoyles_2006","4098621742",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
-"3593067629","Skoyles_2006","1846973273",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
-"686269099","Skoyles_2006","692875938",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
-"3593067629","Skoyles_2006","3517715418",">","1900134348","pos",NA,NA,"",NA,NA,NA,""
-"933045039","Skoyles_2006","1900134348",">","2464304524","",NA,NA,"",NA,NA,NA,""
-"1900226759","hunley07geneticCoevolution","1832537516",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
-"3808576939","hunley07geneticCoevolution","2730327821",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
-"3251335881","hunley07geneticCoevolution","1938667585",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
-"1233681814","selten07languageEmergencePNAS","301188837",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
-"3632314991","selten07languageEmergencePNAS","2622762551",">","2454982401","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
-"1233681814","selten07languageEmergencePNAS","3453219722",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
-"3632314991","selten07languageEmergencePNAS","591564753",">","2924403615","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
-"264921858","vogt07ECAL","2285639406",">","2924403615","pos",NA,"syntax","cultural evolution","model","mathematical?","",NA
-"664645134","vogt07ECAL","2924403615",">","2454982401","pos",NA,"signalling","cultural evolution","model","mathematical?","yes",NA
-"3352711694","minett04endangeredLanguage","1692382586",">","1271317287","pos",NA,NA,"language change","simulation","ising","yes",NA
-"4253595826","minett04endangeredLanguage","4233230905",">","1271317287","pos",NA,NA,"language change","simulation","ising","yes",NA
-"3376540931","lupyan2010language","2285639406",">","1184704463","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to (1) be nonnative speakers or have learned the language from nonnative speakers, "
-"3036685350","lupyan2010language","2285639406",">","614912974","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to ... (2) use the language to speak to outsiders—individuals from different ethnic and/or linguistic backgrounds."
-"3670670815","lupyan2010language","1184704463",">","2714772295","pos","3182098053","morphology","language change","review","",NA,"With increased geographic spread and an increasing speaker population, a language is more likely to be subjected to learnability biases and limitations of adult learners"
-"1254152803","lupyan2010language","2714772295",">","2004248785","neg","3182098053","morphology","language change","statistical","cross-linguistic",NA,"We tentatively propose that the level of morphological specification is a product of languages adapting to the learning constraints and the unique communicative needs of the speaker population. Complex morphological paradigms appear to present particular learning challenges for adult learners even when their native languages make use of similar paradigms [39]"
-"3376540931","lupyan2010language","614912974",">","2714772295","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"We tentatively propose that the level of morphological specification is a product of languages adapting to the learning constraints and the unique communicative needs of the speaker population. Complex morphological paradigms appear to present particular learning challenges for adult learners even when their native languages make use of similar paradigms [39]"
-"3036685350","lupyan2010language","614912974","~=","2277706846","pos",NA,"morphology","language change","statistical","cross-linguistic",NA,"Area (km2) for each language was calculated from data provided by Global Mapping International"
-"3670670815","lupyan2010language","614912974","~=","451003314","pos",NA,"morphology","language change","statistical","cross-linguistic",NA,"Inter-linguistic contact was calculated based on languages boundaries: for each language we counted the number of languages contained in, overlapping with, or contacting the area polygons of other languages"
-"1780475238","bentz2013languages","2004248785","=~","3408333286","pos",NA,"morphology","language change","statistical","typological",NA,""
-"1622984357","bentz2013languages","1184704463",">","2004248785","neg","3182098053","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
-"1163291512","thomas2014self","2240067140",">","3976025394","pos",NA,"transmission","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","1350438501",">","3976025394","pos",NA,"transmission","preadaptation",NA,NA,NA,""
-"2430654168","thomas2014self","3523182119",">","212369186","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","3523182119",">","2597040066","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","212369186",">","2240067140","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","2597040066",">","2240067140","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","212369186",">","1350438501","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","2597040066",">","1350438501","pos",NA,"learning","preadaptation",NA,NA,NA,""
-"223817833","thomas2014self","2578623562",">","569919396","pos","4178238124","genetics","preadaptation",NA,NA,NA,"Deacon"
-"223817833","thomas2014self","569919396",">","2060539517","pos","3798259010","genetics","preadaptation",NA,NA,NA,"Belyaev"
-"223817833","thomas2014self","2060539517",">","3523182119","pos","3798259010","genetics","preadaptation",NA,NA,NA,"Belyaev"
-"1224200761","bentz2016learning","2285639406",">","1184704463","",NA,"","","","",NA,""
-"1224200761","bentz2016learning","1184704463",">","2922377974","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
-"1224200761","bentz2016learning","2922377974",">","3909122418","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
-"799796139","bentz2016learning","3909122418",">","2004248785","pos","3635347570","morphology","language change","statistical","corpus",NA,""
-"4232066216","bentz2016learning","2004248785",">","640622280","neg",NA,"morphology","language change","statistical","corpus",NA,"morphological loss is the main driver for entropy reduction"
-"142937609","bentz2016learning","3909122418",">","2004248785","pos","3635347570","morphology","language change","experiment","iterated learning",NA,"In other words, the entropy drop in word forms over 10 generations of learning is mainly due to loss of morphological markers (e.g. losing plural marking -l , or agreement marking -o and -i ), rather than a change in the base vocabulary (e.g. replacing vocabulary or using the noun seg where fuv should actually be used) "
-"666283109","bentz2016learning","2004248785","=~","3044780967","pos",NA,"morphology","language change","statistical","corpus",NA,"To tease apart inflectional complexity ( C_infl ) we can estimate the difference in [lexical] entropy before ( H_raw ) and after lemmatization ( H_lem ):"
-"780070434","evolang11_101","3937837058",">","2875412348",NA,NA,NA,NA,"review","",NA,"Psycholinguistic research has linked de pendency length minimization to the ease of processing (Grodner & Gibson, 2005) and cross-linguistic investigations have found evidence for this preference at the level of language structure (Futrell, Mahowald, & Gibson, 2015) suggesting a correlation between processing performance and grammar. Prior work, however, has not directly tested the causality underlying this correlation."
-"3176056517","evolang11_101","2875412348",">","1510686666",NA,NA,NA,NA,"experiment","artificial language learning",NA,"In Experiment 1 , we directly probe the causal link between processing biases in individual language learners and the preference for shorter dependencies observed cross - linguistically. "
-"437717928","evolang11_119","3931142723",">","1376137206","neg",NA,"morphology","cultural evolution","simulation","communication game",NA,"Kirby, S. (2001). Spontaneous evolution of linguistic structure-an iterated learning model of the emergence of regularity and irregularity. IEEE Transactions on Evolutionary Computation, 5(2), 102-110."
-"2522293403","evolang11_119","2533465490",">","1376137206","pos",NA,"morphology","cultural evolution","simulation","communication game",NA,""
-"305353482","evolang11_119","636810828",">","3027291445","pos",NA,"morphology","language change","simulation","communication game",NA,"[Native speakers] extend inflections based on type frequency (i.e., apply the inflection used across most items in the vocabulary), while non-natives extend inflections based on token frequency (i.e., apply the inflection from the most frequent item in the vocabulary)"
-"437717928","evolang11_119","19303145",">","3027291445","pos",NA,"morphology","language change","simulation","communication game",NA,"Non-natives’ input is skewed towards irregular types with high token frequency, and thus they are more likely extend quasiregularity when inflecting novel forms, especially when novel forms exhibit phonological similarity with existing irregulars (Cuskley et al., 2015)"
-"2522293403","evolang11_119","1184704463",">","636810828","pos",NA,"morphology","language change","simulation","communication game",NA,"agent types have a first preference for extending inflections based on phonological similarity"
-"1762788456","evolang11_119","3027291445",">","1376137206","pos",NA,"morphology","language change","simulation","communication game",NA,""
-"3862936128","evolang11_119","1376137206",">","2004248785","neg",NA,"morphology","language change","simulation","communication game",NA,"Results from this framework support recent theories that the relative proportion of native and non-native speakers in a population has the potential to affect the structure of language"
-"2825154506","evolang11_132","4067614759",">","643645816","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
-"4123397462","evolang11_132","643645816",">","3390787455","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
-"87162237","evolang11_132","3390787455",">","2924403615","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
-"376253850","evolang11_133","3816444138",">","1923788590","pos",NA,"stories","language change","experiment","iterated learning",NA,"stories are subject to competing pressures for stability and conservation on the one hand, and innovation and novelty on the other."
-"2159946459","evolang11_133","2554131163",">","1923788590","pos",NA,"stories","language change","experiment","iterated learning",NA,""
-"4289732540","evolang11_146","72580433",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"2864891552","evolang11_146","72580433",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"2728442628","evolang11_146","1592193705",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"2041404750","evolang11_146","1573599243",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"3048804364","evolang11_146","1592193705",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"2927366583","evolang11_146","1573599243",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
-"138383773","evolang11_148","2778494698",">","1553307738","pos",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
-"47404828","evolang11_148","1136702946",">","1553307738","neg",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
-"2141282210","evolang11_165","2285639406",">","2142639155","pos",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
-"2794592557","evolang11_165","2142639155",">","2004248785","neg",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
-"3160873647","evolang11_166","3869615948",">","1712682558","neg",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
-"1326466415","evolang11_166","2355449044",">>","1712682558","pos",NA,"vocal learning","preadaptation","experiment","behavioural",NA,NA
-"1187184564","evolang11_166","4211885451",">","1712682558","pos",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
-"93810429","evolang11_19","1207990422",">","2454982401","neg",NA,"lexicon;morphology","language change","simulation","communication game",NA,"When the network is divided into groups within which agents strongly influence one another but between which influence is weak, small initial differences in behavior between the groups can be amplified into distinct stable dialects, as long as the disparity in influence between and within the groups is large. This is consistent with what was already observed by Dall’Asta et al. (2006). However, we find that multiple dialects also emerge when agents are embedded in space and interact only with their neighbors, even if the degree of influence between interacting agents is uniform."
-"334694165","evolang11_19","1207990422",">","2915709922","pos",NA,"lexicon;morphology","language change","simulation","communication game",NA,""
-"2359647942","evolang11_19","1021304418",">","161879901","pos","3491300429","lexicon;morphology","language change","simulation","communication game",NA,"regularization is a side-effect of variation in social influence between speakers"
-"1923996841","evolang11_19","161879901",">","3028727504","pos","3491300429","lexicon;morphology","language change","simulation","communication game",NA,""
-"680229435","evolang11_200","3457703189",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
-"2682178335","evolang11_200","3515162002",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
-"436375562","evolang11_200","3200778200",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
-"1970117934","evolang11_200","4211885451",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
-"1953513722","evolang11_200","4184839141",">","2459034178","pos","3519330814","music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
-"3349331140","evolang11_200","2459034178",">","1887924821","pos","3519330814","music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
-"218271974","evolang11_200","1887924821",">","2837888991","pos",NA,"music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
-"835528038","evolang11_203","3343760086",">","126939071","pos",NA,"speech production","coevolution","experiment","rating",NA,NA
-"4177959180","evolang11_203","3343760086",">","2895518141","pos",NA,"speech production","coevolution","experiment","rating",NA,NA
-"3305412627","evolang11_26","4066672304",">>","1304951816",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Emulation (ToM - 0) is when an individual copies the end - state or ‘goal’ that a conspecific has produced, without theorizing about the conspecific’s behaviour in production (Huang & Charman , 2005)."
-"3099804424","evolang11_27","3509619980",">>","2342921401",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Imitation ( ToM - 1 ) is process - oriented , and cop ies a conspecific’s behaviour in order to produce a goal (Tomasello , 1996). It requires theorizing a relationship between the intended a ctions and goal. "
-"1599269787","evolang11_28","3340438343",">>","3904191908",NA,NA,"cultural transmission","preadaptation","hypothesis",NA,NA,"Teaching ( ToM - 2 ) is the intentional conferring of knowledge to a conspecific. The author argues that it requires theorizing that another is capable of thinking about the teacher’s thoughts."
-"1822481119","evolang11_29","3509619980",">>","1918406898",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"ToM makes word reference possible, since it requires a shared knowledge of a linguistic symbol to be anchored to a referent. Identifying ToM - 1 in the archaeological record is theref ore argued to denote the ability for word reference. "
-"2999445648","evolang11_30","3340438343",">>","3979331600",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Mental - state verbs (such as ‘know’, ‘think’, ‘ remember’), as well as the complement structure to organize mental - state verbs, is key in ToM - 2 ’s maturation (de Villers , 2007 ) ; therefore , it is argued that ToM - 2 in the archaeological record denotes the presence of complementation and lexical items to describe mental states. "
-"2697586162","evolang11_31","3340438343",">>","2268658214",NA,NA,"cultural transmission","preadaptation","review",NA,NA,NA
-"556101782","evolang11_32","1304951816",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA
-"1077182219","evolang11_34","3904191908",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA
-"1969017730","evolang11_35","3997944784",">","2853076319",NA,NA,NA,NA,NA,NA,NA,"if language ability and ToM [Theory of Mind] ability are correlated, and ToM enables different CTs [Cultural Transmission modes] , and CTs impact rates of copy error in material culture, we can measure stone tool assemblage variability to deduce language ability amongst Palaeolithic stone tool makers."
-"3445211872","evolang11_37","1373634020","<=>","2224098184","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"2731868747","evolang11_37","1982824656",">","3727917250","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"2892345166","evolang11_37","1373634020",">","2518302948","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"1385915937","evolang11_37","2518302948",">","1255251378","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"1608200771","evolang11_37","1255251378",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"2007476830","evolang11_37","3727917250",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"951172530","evolang11_39","484020457",">","2189981363","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
-"4254569792","evolang11_39","2189981363",">","1905413856","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
-"1392282225","evolang11_39","1905413856",">","1249487448","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,"Greenberg universal 20"
-"794902333","evolang11_41","1036270633",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3576885168","evolang11_41","808886068",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2110792033","evolang11_41","1261768968",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"1964648534","evolang11_41","4021792953",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2090577098","evolang11_41","3522734729",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","1015227114",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3047842576",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","3394595869",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3293493018","evolang11_41","105253030",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"511560700","evolang11_41","2486391998",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"990949051","evolang11_41","4224058931",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2678567204","evolang11_41","3303216082",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"1678288566","evolang11_41","2731364060",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","474599636",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","2863513401",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","3279989926",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3293493018","evolang11_41","4202034973",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"511560700","evolang11_41","2635233818",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","1804664261",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","1036270633",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","808886068",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","1261768968",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3293493018","evolang11_41","4021792953",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3522734729",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","1015227114",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3047842576",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3394595869",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","105253030",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","2486391998",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","4224058931",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3303216082",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","2731364060",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","474599636",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","2863513401",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3279989926",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","4202034973",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3293493018","evolang11_41","2635233818",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"511560700","evolang11_41","1804664261",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"990949051","evolang11_41","345616669",">","2572585999","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,"clinical evidence suggests that deviations from this growth trajectory entail cognitive/language deficits (see, e.g., Knight et al. 2014).  See also Boeckx, C., & Benítez-Burraco, A. (2014). The shape of the human language-ready brain. Frontiers in Psychology, 5, 282. "
-"2678567204","evolang11_41","2917779155",">","2572585999","pos","390976112","genetics","coevolution","review","neuroscience; genetics",NA,"Wilkins, A. S, Wrangham, R., W & Fitch, W. T. (2014). The “domestication syndrome” in mammals: a unified explanation based on neural crest cell behavior and genetics. Genetics, 197, 795–808"
-"1678288566","evolang11_41","3523182119",">","1036270633","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"1588944553","evolang11_41","3523182119",">","808886068","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"4294369218","evolang11_41","3523182119",">","1261768968","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","4021792953","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3523182119",">","3522734729","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","1015227114","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3523182119",">","3047842576","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"368243274","evolang11_41","3523182119",">","3394595869","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"3293493018","evolang11_41","3523182119",">","105253030","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"511560700","evolang11_41","3523182119",">","2486391998","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"990949051","evolang11_41","3523182119",">","4224058931","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2678567204","evolang11_41","3523182119",">","3303216082","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","2731364060","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","474599636","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3523182119",">","2863513401","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","3279989926","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3523182119",">","4202034973","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2781008288","evolang11_41","3523182119",">","2635233818","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2768526644","evolang11_41","3523182119",">","1804664261","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"2834018398","evolang11_48","1184704463",">","3909122418","neg",NA,"morphology","language change","hypothesis","","",""
-"981298564","evolang11_48","3909122418",">","2004248785","neg",NA,"morphology","language change","experiment","artificial language learning","yes","We found that ‘non-native’ speakers (participants given less input data, which we use as a proxy for the reduced exposure characterising adult learning) produced simpler morphological systems"
-"2280235646","evolang11_48","2285639406",">","2834964719","pos",NA,"morphology","language change","hypothesis","","",""
-"981298564","evolang11_48","2834964719",">","2628501090","pos",NA,"morphology","language change","","","",""
-"2280235646","evolang11_48","2628501090",">","2004248785","neg",NA,"morphology","language change","experiment","artificial language learning","no","We found that mixing input from multiple speakers nullified the simplifications introduced by non-native learners in Experiment 1. While the output of individuals may be simplified, such simplifications tend to be idiosyncratic, and therefore mixing the output of one or more non-native speakers with the output of native speakers yields a system which is itself complex and variable, and which did not lead to the acquisition of a simpler language by our second generation."
-"2834018398","evolang11_48","2285639406",">","614912974","pos",NA,"morphology","language change","review","","yes",""
-"2985188738","evolang11_48","614912974",">","167674401","pos",NA,"morphology","language change","experiment","artificial language learning; communication game","yes","after training on a miniature language (which includes irregular forms for native learners but only regular forms for non-native learners), participants interact in pairs, taking turns to de- scribe scenes for each other. Our results show that a speaker who acquires a more complex language than their partner may simplify their output in interaction, in particular by using (inferred) regular forms instead of irregulars"
-"981298564","evolang11_48","1017828662",">","2004248785","neg","966690493","morphology","language change","experiment","artificial language learning; communication game","yes",""
-"660403446","evolang11_57","53652553",">","2622762551",NA,NA,"phonetics","language change","experiment","production","","the subtle details of how clicks are produced may indeed be driven by palate shape"
-"1398716260","evolang11_57","2622762551",">","1049899896",NA,NA,"phonetics","language change","experiment","production","no","The results indicate that the presence of an alveolar ridge certainly does not prevent an individual from learning to produce click sounds"
-"1606689552","evolang11_57","2622762551",">","2044020496",NA,NA,"phonetics","language change","experiment","production","","The aim of the click study was to ascertain whether and to what extent vocal tract morphology influences (1) the ability to learn to produce clicks and (2) the productions of those that successfully learn to produce these sounds"
-"2756111569","evolang11_57","813265570",">","2044020496",NA,NA,"phonetics","language change","experiment","production","",""
-"2319004427","evolang11_57","561682108",">","53652553",NA,NA,"phonetics","language change","review","","",""
-"157117493","evolang11_73","1230888143",">","2693415517","pos",NA,"vocalisation","preadaptation","observation",NA,NA,"functional flexibility, the capacity to produce vocalizations independent of a fixed function in order to express a full range of emotional content across different situations (Griebel & Oller, 2008)"
-"2952545986","evolang11_74","2005438220",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
-"3354869585","evolang11_74","2434667809",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
-"1475579990","evolang11_74","2005438220",">","1856200829","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
-"2216975239","evolang11_74","2434667809",">","1856200829","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
-"3481713511","evolang11_78","3680236172",">","303343750","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
-"2306349089","evolang11_78","303343750",">","2924403615","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
-"1078019954","evolang11_8","977882822",">","1125927664","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
-"2243202055","evolang11_8","3270367484",">","2005724460","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
-"3689595399","evolang11_85","2618783116",">","2004248785","neg",NA,"morphology","language change","statistical","corpus","yes",NA
-"1295471814","evolang11_93","614912974",">","2332726696","neg",NA,"lexicon","language change","statistical","mixed effects regression","yes",NA
-"3968703994","rogers2016stick","1620087140",">","2454982401","neg",NA,"signalling","cultural evolution","experiment","communication game","no","Participants’ communication behaviour was predicted by how informative they perc eived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
-"1189296858","rogers2016stick","4275555621",">","2454982401","pos",NA,"signalling","cultural evolution","experiment","communication game","yes","Participants’ communication behaviour was predicted by how informative they perceived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
-"2244657262","Blasi_Moran_SLE_2017","2075667518",">","2694032102","pos",NA,NA,"language change","review","",NA,NA
-"882411204","Blasi_Moran_SLE_2017","2075667518",">","3484515535","pos",NA,NA,"language change","review","",NA,NA
-"2244657262","Blasi_Moran_SLE_2017","2694032102",">","3663236917","pos",NA,NA,"language change","review","",NA,NA
-"882411204","Blasi_Moran_SLE_2017","3484515535",">","3663236917","pos",NA,NA,"language change","review","",NA,NA
-"2244657262","Blasi_Moran_SLE_2017","3663236917",">","783912639","pos",NA,NA,"language change","simulation","physical",NA,NA
-"2244657262","Blasi_Moran_SLE_2017","783912639",">","286823690","neg",NA,NA,"language change","statistical","cross-linguistic",NA,NA
-"3269937390","holler2017processing333","1965429846",">","1674748667","none",NA,"55555","none",NA,"","none",NA
-"3481922290","evolang11_33","2342921401",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA
+"2528373059","wheeler1985loss","2183189957",">","1577536904","pos",NA,NA,NA,NA,NA,NA,NA
+"436504285","wheeler1985loss","1577536904",">","947011756","pos",NA,NA,NA,NA,NA,NA,NA
+"2882668175","wheeler1985loss","1577536904",">>","1119490286","pos",NA,NA,NA,NA,NA,NA,NA
+"1666807356","elman90findingStructure","2160086331",">","287023677","pos",NA,"acquisition","preadaptation","simulation","neural network","yes",NA
+"2319337470","ackley94altruismIn","685617769","<=>","2797953716","pos",NA,"signalling","coevolution","simulation",NA,"yes",NA
+"104912941","batali94innateBiases","3703421603",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
+"112298744","batali94innateBiases","2416492989",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
+"1498935402","batali94innateBiases","766158177",">","4058709162","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
+"1335799695","Isbell_Young_1996","2183189957",">","769810522","neg",NA,NA,"preadaptation",NA,NA,NA,NA
+"4017546239","Isbell_Young_1996","769810522",">","843580261","neg",NA,NA,"preadaptation",NA,NA,NA,NA
+"1401533592","Isbell_Young_1996","843580261",">","2469075885","pos",NA,NA,"preadaptation",NA,NA,NA,NA
+"3068536770","Isbell_Young_1996","843580261",">","1204873804","pos",NA,NA,"preadaptation",NA,NA,NA,NA
+"490510179","Isbell_Young_1996","2469075885","~~","1204873804","neg",NA,NA,"preadaptation",NA,NA,NA,NA
+"2930404085","Isbell_Young_1996","2469075885",">","4029894760","neg",NA,NA,"preadaptation",NA,NA,NA,NA
+"2540646606","Isbell_Young_1996","1204873804",">","4029894760","pos",NA,NA,"preadaptation",NA,NA,NA,NA
+"3049530626","Isbell_Young_1996","1204873804",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
+"4158834566","Isbell_Young_1996","4029894760",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
+"3899251918","Isbell_Young_1996","4255839106",">","947011756","",NA,NA,"preadaptation",NA,NA,NA,NA
+"535537129","deboer99selfOrganisation","513238399",">","1242158712","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"483080152","deboer99selfOrganisation","513238399",">","813265570","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"1436194289","deboer99selfOrganisation","1242158712",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"4219649805","deboer99selfOrganisation","2622762551",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"3959153039","deboer99selfOrganisation","813265570",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"2782810197","deboer99selfOrganisation","1242158712",">","823927421","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"4116592250","deboer99selfOrganisation","813265570",">","823927421","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"600476277","deboer99selfOrganisation","2622762551",">","823927421","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"1598037936","deboer99selfOrganisation","3411000965",">","2454982401","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
+"1666910124","dipaolo99onThe","2055697070",">","3841646903","neg",NA,"signalling","cultural evolution","model","communication game","yes",NA
+"835461488","dipaolo99onThe","3841646903",">","2454982401","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
+"567250653","dipaolo99onThe","2565747591",">","3379990269","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
+"2042562812","macneilage00onThe","839963435",">","3695104492",NA,NA,NA,NA,NA,NA,NA,"In our view, the crossing of the Rubicon for true speech was not achieved by sudden genetic change. Instead, it was the result of a two-stage development. The first stage in- volved ancestral hominids borrowing simple available biomechanical properties of the sys- tem-the frame, together with static, nonresting tongue configurations-by means of classic Darwinian descent with modification, to give the three CV co-occurrence patterns. Then, an initial increase in intersyllabic serial complexity was achieved by means of the LC pattern, as a result of a self-organizational interaction of bi- omechanics, movement initiation constraints, and culturally mediated cognition (46-48)."
+"2996957467","cangelosi01howNouns","3710423933",">","3854077640","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","recognise different food types (visually)"
+"2091904821","cangelosi01howNouns","3576688052",">","3706449238","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","approach or avoid food"
+"3982791990","cangelosi01howNouns","3854077640",">","4220921069","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"2638632206","cangelosi01howNouns","3706449238",">","435539725","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"2231269594","cangelosi01howNouns","4220921069",">","4196262906","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"1845253026","cangelosi01howNouns","435539725",">","2108824016","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"204957853","cangelosi01howNouns","4196262906",">","4220921069","pos",NA,"lexicon","coevolution","simulation","neural network","yes","What about link to syntax?"
+"2104816744","cangelosi01howNouns","2108824016",">","435539725","pos",NA,"lexicon","coevolution","simulation","neural network","yes",""
+"630194761","akaishi03misperception","1637233137",">","2104942409","pos",NA,"signalling","coevolution","simulation","population","yes",NA
+"844713107","akaishi03misperception","2104942409",">","2510090154","pos",NA,"signalling","coevolution","simulation","population","yes",NA
+"809749780","akaishi03misperception","1124469996",">","2104942409","neg",NA,"signalling","coevolution","simulation","population","yes",NA
+"2302906819","vogt03ecal","2518302948",">","2022600518","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
+"1375663996","vogt03ecal","2518302948",">","2697997895","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
+"3548449579","ke04phd","4131751688",">","3449969516","pos",NA,NA,"preadaptation","review",NA,NA,NA
+"780860629","ke04phd","3449969516",">","947011756","pos",NA,NA,"preadaptation","review",NA,NA,NA
+"1680221452","macwhinney2005language","947011756",">","785671023","pos",NA,NA,"preadaptation",NA,NA,NA,NA
+"1397642543","macwhinney2005language","947011756",">","3439569706","pos",NA,NA,"preadaptation",NA,NA,NA,NA
+"2982522622","wang05verticalAndHorizontalTransmission","1600990332",">","3052714695","pos",NA,"signalling","language change","statistical",NA,"yes",NA
+"1339904395","dallasta06languageGamesNetworks","2285639406",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
+"1306128768","dallasta06languageGamesNetworks","1723623461",">","3491408888","pos",NA,"signalling","cultural evolution","model","mathematical","yes",NA
+"4278067289","dallasta06microscopicPatterns","2055697070",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
+"151807911","nettle06costsAndBenefits","3012865586",">","813265570","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
+"4014211774","nettle06costsAndBenefits","3012865586",">","2797953716","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
+"2374601156","nettle06costsAndBenefits","3012865586",">","4134557450","pos",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
+"2924676325","Skoyles_2006","947011756",">","4098621742","pos",NA,NA,"preadaptation",NA,NA,NA,""
+"2900640069","Skoyles_2006","947011756",">","1846973273","pos",NA,NA,"preadaptation",NA,NA,NA,""
+"2533735917","Skoyles_2006","947011756",">","692875938","neg",NA,NA,"preadaptation",NA,NA,NA,"i.e. foot area"
+"2618615473","Skoyles_2006","4098621742",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
+"3292911573","Skoyles_2006","1846973273",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
+"2643776882","Skoyles_2006","692875938",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
+"3303476926","Skoyles_2006","3517715418",">","1900134348","pos",NA,NA,"",NA,NA,NA,""
+"646881265","Skoyles_2006","1900134348",">","2464304524","",NA,NA,"",NA,NA,NA,""
+"1474681512","hunley07geneticCoevolution","1832537516",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
+"2261797828","hunley07geneticCoevolution","2730327821",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
+"2481921146","hunley07geneticCoevolution","1938667585",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
+"714774006","selten07languageEmergencePNAS","301188837",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
+"700715809","selten07languageEmergencePNAS","2622762551",">","2454982401","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
+"187529458","selten07languageEmergencePNAS","3453219722",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
+"2627499636","selten07languageEmergencePNAS","591564753",">","2924403615","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
+"2510489925","vogt07ECAL","2285639406",">","2924403615","pos",NA,"syntax","cultural evolution","model","mathematical?","",NA
+"3719210744","vogt07ECAL","2924403615",">","2454982401","pos",NA,"signalling","cultural evolution","model","mathematical?","yes",NA
+"3466738438","minett04endangeredLanguage","1692382586",">","1271317287","pos",NA,NA,"language change","simulation","ising","yes",NA
+"1577428212","minett04endangeredLanguage","4233230905",">","1271317287","pos",NA,NA,"language change","simulation","ising","yes",NA
+"3751223384","lupyan2010language","2285639406",">","1184704463","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to (1) be nonnative speakers or have learned the language from nonnative speakers, "
+"157158010","lupyan2010language","2285639406",">","614912974","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to ... (2) use the language to speak to outsiders—individuals from different ethnic and/or linguistic backgrounds."
+"952718248","lupyan2010language","1184704463",">","2714772295","pos","3182098053","morphology","language change","review","",NA,"With increased geographic spread and an increasing speaker population, a language is more likely to be subjected to learnability biases and limitations of adult learners"
+"2317940245","lupyan2010language","2714772295",">","2004248785","neg","3182098053","morphology","language change","statistical","cross-linguistic",NA,"We tentatively propose that the level of morphological specification is a product of languages adapting to the learning constraints and the unique communicative needs of the speaker population. Complex morphological paradigms appear to present particular learning challenges for adult learners even when their native languages make use of similar paradigms [39]"
+"836244022","lupyan2010language","614912974",">","2714772295","pos","3182098053","morphology","language change","statistical","cross-linguistic",NA,"We tentatively propose that the level of morphological specification is a product of languages adapting to the learning constraints and the unique communicative needs of the speaker population. Complex morphological paradigms appear to present particular learning challenges for adult learners even when their native languages make use of similar paradigms [39]"
+"2474072692","lupyan2010language","614912974","~=","2277706846","pos",NA,"morphology","language change","statistical","cross-linguistic",NA,"Area (km2) for each language was calculated from data provided by Global Mapping International"
+"619339459","lupyan2010language","614912974","~=","451003314","pos",NA,"morphology","language change","statistical","cross-linguistic",NA,"Inter-linguistic contact was calculated based on languages boundaries: for each language we counted the number of languages contained in, overlapping with, or contacting the area polygons of other languages"
+"339218416","bentz2013languages","2004248785","=~","3408333286","pos",NA,"morphology","language change","statistical","typological",NA,""
+"3983145718","bentz2013languages","1184704463",">","2004248785","neg","3182098053","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
+"3040730129","thomas2014self","2240067140",">","3976025394","pos",NA,"transmission","preadaptation",NA,NA,NA,""
+"30689725","thomas2014self","1350438501",">","3976025394","pos",NA,"transmission","preadaptation",NA,NA,NA,""
+"2314735535","thomas2014self","3523182119",">","212369186","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"3921542882","thomas2014self","3523182119",">","2597040066","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"3661252775","thomas2014self","212369186",">","2240067140","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"3918731222","thomas2014self","2597040066",">","2240067140","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"1712480462","thomas2014self","212369186",">","1350438501","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"1917463649","thomas2014self","2597040066",">","1350438501","pos",NA,"learning","preadaptation",NA,NA,NA,""
+"3741348577","thomas2014self","2578623562",">","569919396","pos","4178238124","genetics","preadaptation",NA,NA,NA,"Deacon"
+"291990599","thomas2014self","569919396",">","2060539517","pos","3798259010","genetics","preadaptation",NA,NA,NA,"Belyaev"
+"4286139402","thomas2014self","2060539517",">","3523182119","pos","3798259010","genetics","preadaptation",NA,NA,NA,"Belyaev"
+"180243208","bentz2016learning","2285639406",">","1184704463","",NA,"","","","",NA,""
+"1725024404","bentz2016learning","1184704463",">","2922377974","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
+"1999733918","bentz2016learning","2922377974",">","3909122418","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
+"77701035","bentz2016learning","3909122418",">","2004248785","pos","3635347570","morphology","language change","statistical","corpus",NA,""
+"1885162640","bentz2016learning","2004248785",">","640622280","neg",NA,"morphology","language change","statistical","corpus",NA,"morphological loss is the main driver for entropy reduction"
+"77701035","bentz2016learning","3909122418",">","2004248785","pos","3635347570","morphology","language change","experiment","iterated learning",NA,"In other words, the entropy drop in word forms over 10 generations of learning is mainly due to loss of morphological markers (e.g. losing plural marking -l , or agreement marking -o and -i ), rather than a change in the base vocabulary (e.g. replacing vocabulary or using the noun seg where fuv should actually be used) "
+"2664535130","bentz2016learning","2004248785","=~","3044780967","pos",NA,"morphology","language change","statistical","corpus",NA,"To tease apart inflectional complexity ( C_infl ) we can estimate the difference in [lexical] entropy before ( H_raw ) and after lemmatization ( H_lem ):"
+"3439043275","evolang11_101","3937837058",">","2875412348",NA,NA,NA,NA,"review","",NA,"Psycholinguistic research has linked de pendency length minimization to the ease of processing (Grodner & Gibson, 2005) and cross-linguistic investigations have found evidence for this preference at the level of language structure (Futrell, Mahowald, & Gibson, 2015) suggesting a correlation between processing performance and grammar. Prior work, however, has not directly tested the causality underlying this correlation."
+"1898075516","evolang11_101","2875412348",">","1510686666",NA,NA,NA,NA,"experiment","artificial language learning",NA,"In Experiment 1 , we directly probe the causal link between processing biases in individual language learners and the preference for shorter dependencies observed cross - linguistically. "
+"2956773791","evolang11_119","3931142723",">","1376137206","neg",NA,"morphology","cultural evolution","simulation","communication game",NA,"Kirby, S. (2001). Spontaneous evolution of linguistic structure-an iterated learning model of the emergence of regularity and irregularity. IEEE Transactions on Evolutionary Computation, 5(2), 102-110."
+"1630525721","evolang11_119","2533465490",">","1376137206","pos",NA,"morphology","cultural evolution","simulation","communication game",NA,""
+"1374596675","evolang11_119","636810828",">","3027291445","pos",NA,"morphology","language change","simulation","communication game",NA,"[Native speakers] extend inflections based on type frequency (i.e., apply the inflection used across most items in the vocabulary), while non-natives extend inflections based on token frequency (i.e., apply the inflection from the most frequent item in the vocabulary)"
+"2574019584","evolang11_119","19303145",">","3027291445","pos",NA,"morphology","language change","simulation","communication game",NA,"Non-natives’ input is skewed towards irregular types with high token frequency, and thus they are more likely extend quasiregularity when inflecting novel forms, especially when novel forms exhibit phonological similarity with existing irregulars (Cuskley et al., 2015)"
+"3487417775","evolang11_119","1184704463",">","636810828","pos",NA,"morphology","language change","simulation","communication game",NA,"agent types have a first preference for extending inflections based on phonological similarity"
+"2627790997","evolang11_119","3027291445",">","1376137206","pos",NA,"morphology","language change","simulation","communication game",NA,""
+"358248131","evolang11_119","1376137206",">","2004248785","neg",NA,"morphology","language change","simulation","communication game",NA,"Results from this framework support recent theories that the relative proportion of native and non-native speakers in a population has the potential to affect the structure of language"
+"4073053325","evolang11_132","4067614759",">","643645816","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
+"2110810757","evolang11_132","643645816",">","3390787455","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
+"1783062320","evolang11_132","3390787455",">","2924403615","pos",NA,"emotion","preadaptation","experiment","rating",NA,NA
+"1212939786","evolang11_133","3816444138",">","1923788590","pos",NA,"stories","language change","experiment","iterated learning",NA,"stories are subject to competing pressures for stability and conservation on the one hand, and innovation and novelty on the other."
+"589429546","evolang11_133","2554131163",">","1923788590","pos",NA,"stories","language change","experiment","iterated learning",NA,""
+"2777663702","evolang11_146","72580433",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"2153769483","evolang11_146","72580433",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"2086539663","evolang11_146","1592193705",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"4164224909","evolang11_146","1573599243",">","1610653855","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"264615684","evolang11_146","1592193705",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"1013522352","evolang11_146","1573599243",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
+"1047379760","evolang11_148","2778494698",">","1553307738","pos",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
+"1941632163","evolang11_148","1136702946",">","1553307738","neg",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
+"4123509569","evolang11_165","2285639406",">","2142639155","pos",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
+"3237020366","evolang11_165","2142639155",">","2004248785","neg",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
+"2982361151","evolang11_166","3869615948",">","1712682558","neg",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
+"946594202","evolang11_166","2355449044",">>","1712682558","pos",NA,"vocal learning","preadaptation","experiment","behavioural",NA,NA
+"360453615","evolang11_166","4211885451",">","1712682558","pos",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
+"4216382936","evolang11_19","1207990422",">","2454982401","neg",NA,"lexicon;morphology","language change","simulation","communication game",NA,"When the network is divided into groups within which agents strongly influence one another but between which influence is weak, small initial differences in behavior between the groups can be amplified into distinct stable dialects, as long as the disparity in influence between and within the groups is large. This is consistent with what was already observed by Dall’Asta et al. (2006). However, we find that multiple dialects also emerge when agents are embedded in space and interact only with their neighbors, even if the degree of influence between interacting agents is uniform."
+"1041663777","evolang11_19","1207990422",">","2915709922","pos",NA,"lexicon;morphology","language change","simulation","communication game",NA,""
+"383362789","evolang11_19","1021304418",">","161879901","pos","3491300429","lexicon;morphology","language change","simulation","communication game",NA,"regularization is a side-effect of variation in social influence between speakers"
+"2253342879","evolang11_19","161879901",">","3028727504","pos","3491300429","lexicon;morphology","language change","simulation","communication game",NA,""
+"1136642926","evolang11_200","3457703189",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
+"3043170542","evolang11_200","3515162002",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
+"3424364724","evolang11_200","3200778200",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
+"2939651107","evolang11_200","4211885451",">","1887924821","pos",NA,"music","preadaptation","review","neuroscience",NA,""
+"3413259043","evolang11_200","4184839141",">","2459034178","pos","3519330814","music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
+"967745942","evolang11_200","2459034178",">","1887924821","pos","3519330814","music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
+"4162255489","evolang11_200","1887924821",">","2837888991","pos",NA,"music","preadaptation","review","neuroscience",NA,"Based on Fitch (2012)  The biology and evolution of rhythm: unravelling a paradox"
+"3443244285","evolang11_203","3343760086",">","126939071","pos",NA,"speech production","coevolution","experiment","rating",NA,NA
+"1456121436","evolang11_203","3343760086",">","2895518141","pos",NA,"speech production","coevolution","experiment","rating",NA,NA
+"1904015806","evolang11_26","4066672304",">>","1304951816",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Emulation (ToM - 0) is when an individual copies the end - state or ‘goal’ that a conspecific has produced, without theorizing about the conspecific’s behaviour in production (Huang & Charman , 2005)."
+"3705928370","evolang11_27","3509619980",">>","2342921401",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Imitation ( ToM - 1 ) is process - oriented , and cop ies a conspecific’s behaviour in order to produce a goal (Tomasello , 1996). It requires theorizing a relationship between the intended a ctions and goal. "
+"2431210965","evolang11_28","3340438343",">>","3904191908",NA,NA,"cultural transmission","preadaptation","hypothesis",NA,NA,"Teaching ( ToM - 2 ) is the intentional conferring of knowledge to a conspecific. The author argues that it requires theorizing that another is capable of thinking about the teacher’s thoughts."
+"440389129","evolang11_29","3509619980",">>","1918406898",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"ToM makes word reference possible, since it requires a shared knowledge of a linguistic symbol to be anchored to a referent. Identifying ToM - 1 in the archaeological record is theref ore argued to denote the ability for word reference. "
+"1136375408","evolang11_30","3340438343",">>","3979331600",NA,NA,"cultural transmission","preadaptation","review",NA,NA,"Mental - state verbs (such as ‘know’, ‘think’, ‘ remember’), as well as the complement structure to organize mental - state verbs, is key in ToM - 2 ’s maturation (de Villers , 2007 ) ; therefore , it is argued that ToM - 2 in the archaeological record denotes the presence of complementation and lexical items to describe mental states. "
+"4091219018","evolang11_31","3340438343",">>","2268658214",NA,NA,"cultural transmission","preadaptation","review",NA,NA,NA
+"2949072943","evolang11_32","1304951816",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA
+"86639381","evolang11_34","3904191908",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA
+"415319898","evolang11_35","3997944784",">","2853076319",NA,NA,NA,NA,NA,NA,NA,"if language ability and ToM [Theory of Mind] ability are correlated, and ToM enables different CTs [Cultural Transmission modes] , and CTs impact rates of copy error in material culture, we can measure stone tool assemblage variability to deduce language ability amongst Palaeolithic stone tool makers."
+"595826928","evolang11_37","1373634020","<=>","2224098184","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"572513926","evolang11_37","1982824656",">","3727917250","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"2425380828","evolang11_37","1373634020",">","2518302948","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"3749149320","evolang11_37","2518302948",">","1255251378","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"1510753605","evolang11_37","1255251378",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"3376322881","evolang11_37","3727917250",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"2568287507","evolang11_39","484020457",">","2189981363","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
+"287191374","evolang11_39","2189981363",">","1905413856","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
+"3322535006","evolang11_39","1905413856",">","1249487448","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,"Greenberg universal 20"
+"2705131473","evolang11_41","1036270633",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"240072886","evolang11_41","808886068",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3218273301","evolang11_41","1261768968",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1037356027","evolang11_41","4021792953",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"29324803","evolang11_41","3522734729",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1868363510","evolang11_41","1015227114",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2764615743","evolang11_41","3047842576",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3702607297","evolang11_41","3394595869",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"539767021","evolang11_41","105253030",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2098825958","evolang11_41","2486391998",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"805011697","evolang11_41","4224058931",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"504347234","evolang11_41","3303216082",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3134352983","evolang11_41","2731364060",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3133339868","evolang11_41","474599636",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1968681663","evolang11_41","2863513401",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3351893985","evolang11_41","3279989926",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"4111369609","evolang11_41","4202034973",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"951088041","evolang11_41","2635233818",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1545317383","evolang11_41","1804664261",">","2917779155","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1660180679","evolang11_41","1036270633",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"4228313155","evolang11_41","808886068",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2371512894","evolang11_41","1261768968",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1400398857","evolang11_41","4021792953",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3901228404","evolang11_41","3522734729",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"4043542656","evolang11_41","1015227114",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1100864224","evolang11_41","3047842576",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1651501578","evolang11_41","3394595869",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1562530729","evolang11_41","105253030",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2018002127","evolang11_41","2486391998",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3543242783","evolang11_41","4224058931",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2435365459","evolang11_41","3303216082",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2013166795","evolang11_41","2731364060",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2222340138","evolang11_41","474599636",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3273247262","evolang11_41","2863513401",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"478548019","evolang11_41","3279989926",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"866177588","evolang11_41","4202034973",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1936755732","evolang11_41","2635233818",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1787802156","evolang11_41","1804664261",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1797010622","evolang11_41","345616669",">","2572585999","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,"clinical evidence suggests that deviations from this growth trajectory entail cognitive/language deficits (see, e.g., Knight et al. 2014).  See also Boeckx, C., & Benítez-Burraco, A. (2014). The shape of the human language-ready brain. Frontiers in Psychology, 5, 282. "
+"935325830","evolang11_41","2917779155",">","2572585999","pos","390976112","genetics","coevolution","review","neuroscience; genetics",NA,"Wilkins, A. S, Wrangham, R., W & Fitch, W. T. (2014). The “domestication syndrome” in mammals: a unified explanation based on neural crest cell behavior and genetics. Genetics, 197, 795–808"
+"1308006679","evolang11_41","3523182119",">","1036270633","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1950361337","evolang11_41","3523182119",">","808886068","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3127621110","evolang11_41","3523182119",">","1261768968","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2373666355","evolang11_41","3523182119",">","4021792953","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3010357251","evolang11_41","3523182119",">","3522734729","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"99713157","evolang11_41","3523182119",">","1015227114","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2725633668","evolang11_41","3523182119",">","3047842576","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3656073627","evolang11_41","3523182119",">","3394595869","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"307208214","evolang11_41","3523182119",">","105253030","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1807981417","evolang11_41","3523182119",">","2486391998","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"4014630914","evolang11_41","3523182119",">","4224058931","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"4111141756","evolang11_41","3523182119",">","3303216082","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2818594588","evolang11_41","3523182119",">","2731364060","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3754639621","evolang11_41","3523182119",">","474599636","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"3983956407","evolang11_41","3523182119",">","2863513401","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1406181980","evolang11_41","3523182119",">","3279989926","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1895559938","evolang11_41","3523182119",">","4202034973","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"1129592608","evolang11_41","3523182119",">","2635233818","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"353051329","evolang11_41","3523182119",">","1804664261","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
+"2440954646","evolang11_48","1184704463",">","3909122418","neg",NA,"morphology","language change","hypothesis","","",""
+"867048946","evolang11_48","3909122418",">","2004248785","neg",NA,"morphology","language change","experiment","artificial language learning","yes","We found that ‘non-native’ speakers (participants given less input data, which we use as a proxy for the reduced exposure characterising adult learning) produced simpler morphological systems"
+"1916935727","evolang11_48","2285639406",">","2834964719","pos",NA,"morphology","language change","hypothesis","","",""
+"3503321912","evolang11_48","2834964719",">","2628501090","pos",NA,"morphology","language change","","","",""
+"129223677","evolang11_48","2628501090",">","2004248785","neg",NA,"morphology","language change","experiment","artificial language learning","no","We found that mixing input from multiple speakers nullified the simplifications introduced by non-native learners in Experiment 1. While the output of individuals may be simplified, such simplifications tend to be idiosyncratic, and therefore mixing the output of one or more non-native speakers with the output of native speakers yields a system which is itself complex and variable, and which did not lead to the acquisition of a simpler language by our second generation."
+"3512730096","evolang11_48","2285639406",">","614912974","pos",NA,"morphology","language change","review","","yes",""
+"2146476259","evolang11_48","614912974",">","167674401","pos",NA,"morphology","language change","experiment","artificial language learning; communication game","yes","after training on a miniature language (which includes irregular forms for native learners but only regular forms for non-native learners), participants interact in pairs, taking turns to de- scribe scenes for each other. Our results show that a speaker who acquires a more complex language than their partner may simplify their output in interaction, in particular by using (inferred) regular forms instead of irregulars"
+"625109967","evolang11_48","1017828662",">","2004248785","neg","966690493","morphology","language change","experiment","artificial language learning; communication game","yes",""
+"3006988295","evolang11_57","53652553",">","2622762551",NA,NA,"phonetics","language change","experiment","production","","the subtle details of how clicks are produced may indeed be driven by palate shape"
+"3228646707","evolang11_57","2622762551",">","1049899896",NA,NA,"phonetics","language change","experiment","production","no","The results indicate that the presence of an alveolar ridge certainly does not prevent an individual from learning to produce click sounds"
+"742082191","evolang11_57","2622762551",">","2044020496",NA,NA,"phonetics","language change","experiment","production","","The aim of the click study was to ascertain whether and to what extent vocal tract morphology influences (1) the ability to learn to produce clicks and (2) the productions of those that successfully learn to produce these sounds"
+"3251176398","evolang11_57","813265570",">","2044020496",NA,NA,"phonetics","language change","experiment","production","",""
+"2197481572","evolang11_57","561682108",">","53652553",NA,NA,"phonetics","language change","review","","",""
+"2929542837","evolang11_73","1230888143",">","2693415517","pos",NA,"vocalisation","preadaptation","observation",NA,NA,"functional flexibility, the capacity to produce vocalizations independent of a fixed function in order to express a full range of emotional content across different situations (Griebel & Oller, 2008)"
+"739132902","evolang11_74","2005438220",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
+"605136612","evolang11_74","2434667809",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
+"2938823290","evolang11_74","2005438220",">","1856200829","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
+"165547687","evolang11_74","2434667809",">","1856200829","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
+"3072916045","evolang11_78","3680236172",">","303343750","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
+"1637380503","evolang11_78","303343750",">","2924403615","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
+"152498801","evolang11_8","977882822",">","1125927664","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
+"1305150720","evolang11_8","3270367484",">","2005724460","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
+"2137122044","evolang11_85","2618783116",">","2004248785","neg",NA,"morphology","language change","statistical","corpus","yes",NA
+"1396883513","evolang11_93","614912974",">","2332726696","neg",NA,"lexicon","language change","statistical","mixed effects regression","yes",NA
+"2261670073","rogers2016stick","1620087140",">","2454982401","neg",NA,"signalling","cultural evolution","experiment","communication game","no","Participants’ communication behaviour was predicted by how informative they perc eived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
+"2246718713","rogers2016stick","4275555621",">","2454982401","pos",NA,"signalling","cultural evolution","experiment","communication game","yes","Participants’ communication behaviour was predicted by how informative they perceived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
+"620396626","Blasi_Moran_SLE_2017","2075667518",">","2694032102","pos",NA,NA,"language change","review","",NA,NA
+"428174725","Blasi_Moran_SLE_2017","2075667518",">","3484515535","pos",NA,NA,"language change","review","",NA,NA
+"3075255703","Blasi_Moran_SLE_2017","2694032102",">","3663236917","pos",NA,NA,"language change","review","",NA,NA
+"4073060511","Blasi_Moran_SLE_2017","3484515535",">","3663236917","pos",NA,NA,"language change","review","",NA,NA
+"1012255841","Blasi_Moran_SLE_2017","3663236917",">","783912639","pos",NA,NA,"language change","simulation","physical",NA,NA
+"725948981","Blasi_Moran_SLE_2017","783912639",">","286823690","neg",NA,NA,"language change","statistical","cross-linguistic",NA,NA
+"2602586920","holler2017processing333","1965429846",">","1674748667","none",NA,"55555","none",NA,"","none",NA
+"3672461185","evolang11_33","2342921401",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA

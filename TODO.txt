@@ -50,6 +50,7 @@ Link:
 Graphical display:
 	Add node
 	Expland node
+		Function addVar() actually expands a variable. Need to add function to just add node to vis.
 	Colour edges by:
 		Evidence type, correltion direction
 		Number of edges
@@ -59,6 +60,7 @@ Graphical display:
 	General function to display causal links given a list of links
 		Plus option to focus/emphasise a particular variable
 	Find brokers
+	Find bridging theories (References that nodes in two other references)
 
 About:
 	Add license details

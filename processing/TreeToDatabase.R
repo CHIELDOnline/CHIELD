@@ -110,6 +110,7 @@ for(f in list.dirs(treeBaseFolder)){
       }
     }
     l = l[,causal_links_columns]
+    # Add links to list of links
     links = rbind(links,l)
   
     #b = readLines(paste0(f,"/",bibFile), warn = F)
@@ -164,7 +165,7 @@ bib = bib[bib$pk!="",]
 rownames(bib) = bib$pk
 contributors = contributors[!is.na(contributors$username),]
 
-links$pk = makePks(links$bibref)
+links$pk = makePks(paste0(links$bibref,"#",links$Var1,"#",links$Var2))
 
 if(length(unique(links$pk))!=nrow(links)){
   print("Warning: Duplicate pks?")

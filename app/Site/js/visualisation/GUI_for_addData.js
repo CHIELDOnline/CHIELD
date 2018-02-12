@@ -71,7 +71,7 @@ function addVarByVarName(selectedVar,x=null,y=null){
 	newNode = {
 		id:selectedVar,
 		label:selectedVar
-		}
+		};
 	if(x!=null){
 		newNode.x = x
 	}
@@ -192,7 +192,7 @@ function initialiseNetwork(){
         });
     });
 
-  var dynamicSearchVariables = $("#searchVariablesToAdd_dynamic")
+  var dynamicSearchVariables = $("#searchVariablesToAdd_dynamic");
   $( "#searchVariablesToAdd_dynamic" ).keypress(function(event) {
   	if ( event.key == "Enter" || event.which==13 ) {
   		addVar_dynamic();

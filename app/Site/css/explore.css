@@ -1,0 +1,64 @@
+
+#mynetwork {
+	top: 5%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index:-10;
+}
+
+#links {
+	position: fixed;
+	bottom: 0;
+	left:2%;
+	right:2%;
+	background-color: white;
+	border-style: solid;
+}
+
+#links_table_container {
+	overflow-y: auto;
+	height: 100%;
+}
+
+.linkson {
+	top: 70%;
+}
+
+.linksoff {
+	top: 95%;
+}
+
+#toggleTableButton {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	z-index: 1;
+	width: 50px;
+}
+
+#controlPanel {
+	position: fixed;
+	left:0;
+	width: 100px;
+	
+}
+
+/* Autocomplete stuff */
+
+#ui-id-1 {
+    background: lightgray;
+    width: 40%;
+}
+#ui-id-2 {
+    background: lightgray;
+    width: 40%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ui-helper-hidden-accessible { display:none; }

@@ -508,13 +508,16 @@ $(document).ready(function(){
 
 	// clear bibtex source
 	$("#bibtexsource").val("");
-
+	// set function to submit to github on click
 	$('#submitToGitHub').attr('onclick', 'submitToGitHub()');
+
+	// Initialise the visual network
 	initialiseNetwork();
 
 	// Load username from cookie
 	checkGithubUserCookie();
 	
+	// swich to first tab (contributor ID)
 	$('#navTabs a:first').tab('show')
 
 });

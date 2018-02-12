@@ -1,5 +1,3 @@
-var php_link = "php/getLinksForExplore.php";
-
 var database_records = null;
 
 var network_nodes = null;
@@ -47,10 +45,11 @@ var network_options = {
 };
 
 
-function getEdgeSettings(Var1, Var2, Relation){
+function getEdgeSettings(edge_id, Var1, Var2, Relation){
 	// standard setting: ">"
 
 	var newEdge = {
+			id: edge_id,
 			from: Var1,
 	    	to: Var2,
 	    	arrows: {
@@ -134,66 +133,110 @@ function network_on_click (params) {
 }
 
 function redrawGUIfromObject(obj){
-	network_nodes = new vis.DataSet([]);
-  	network_edges = new vis.DataSet([]);
-
+	// obj is a list of edges
+  	console.log(obj);
   	var nodes = [];
 
+  	// For each edge
 	for(var row=0; row < obj.length; ++row){
-		
-		var this_var1 = obj[row].variable1;
+		// Get info
+		var this_var1 = obj[row].variable1;	
 		var this_var2 = obj[row].variable2;
 		var this_relation = obj[row].relation;
-		console.log(this_var1 + " " + this_var2);
+		var this_edge_id = obj[row].pk;
+		
+		// Add the variables to the list of nodes
 		if($.inArray(this_var1,nodes)==-1){
 			nodes.push(this_var1)
 		}
 		if($.inArray(this_var2,nodes)==-1){
 			nodes.push(this_var2)
 		}
-		// TODO:
-		// At the moment we're just adding lots of edges.
-		// We could add a single edge that has a list of references to the edges
-		var newEdge = getEdgeSettings(this_var1,this_var2,this_relation);
-		console.log(newEdge);
-		network_edges.add(newEdge);
-	}
-
-	for(var i=0; i < nodes.length; ++i){
-		var newNode = {
-			id:nodes[i],
-			label:nodes[i]
+		
+		// If the edge isn't yet part of the network:
+		if($.inArray(this_edge_id,network_edges.getIds())==-1){
+			// create a new edge
+			var newEdge = getEdgeSettings(
+			    this_edge_id,
+				findVariablePK(this_var1),
+				findVariablePK(this_var2),
+				this_relation);
+			// add it to the network
+			network_edges.add(newEdge);
 		}
-		network_nodes.add(newNode);
+	}
+	
+	// For each node
+	for(var i=0; i < nodes.length; ++i){
+		var npk = findVariablePK(nodes[i]);
+		// If the node is not yet in the network:
+		if($.inArray(npk,network_nodes.getIds())==-1){
+			// create a new node
+			var newNode = {
+				id:npk,
+				label:nodes[i]
+			}
+			// add it to the network
+			network_nodes.add(newNode);
+		}
 	}
 
 	// redraw network
-	initialiseNetwork();
+	//network.redraw();
+	network.fit();
 
 }
+
+
 
 function updateRecord(response, type){
 	var obj = JSON.parse(response);
 	// TODO: test if obj is correctly parsed.
 	database_records = obj;
-	console.log(database_records);
+	//console.log(database_records);
 	redrawGUIfromObject(database_records);
+	updateGrid(obj);
 }
 
-function getExploreLinks(){
-	// construct an SQL list
-	var keylist = network_nodes.join(",");
+
+function updateGrid(links){
+
+
+	var links2 = [];
+	for(i in links){
+		links2.push(Object.values(links[i]));
+	}
+
+	if(links2.length>0){
+
+		// TODO: go through each row and check that the pk
+		// isn't already included in the table
+		dtable.rows.add(links2);
+		
+		// Redraw the table to show the new data
+		dtable.draw();
+		$("#links_table").show();
+	} else{
+		$("#links_table").hide();
+	}
+}
+
+
+function expandVariable() {
+
+	var selectedNodes = network.getSelectedNodes();
+	var keylist = selectedNodes.join(",");
 	requestRecord(php_link,"keylist="+keylist,'links');
 }
 
-//network_nodes = ['1184704463','614912974'];
-//getExploreLinks()
-// 0: {…}
-// Cor: "pos"
-// Stage: "language change"
-// Type: "review"
-// bibref: "Lupyan & Dale (2010)"
-// citekey: "lupyan2010language"
-// relation: ">"
-// variable1: "proportion of adult learners"
-// variable2: "learning cost: morphology"
+function addVar(varname){
+	$("#searchVariablesToAdd").hide();
+	var pk = findVariablePK(varname);
+	if(pk!=null){
+		var newNode = {
+			id:pk,
+			label:varname
+			};
+		network_nodes.add(newNode);
+	}
+}
