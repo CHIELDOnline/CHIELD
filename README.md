@@ -52,14 +52,4 @@ Github access tokens can be generated [through GitHub](https://help.github.com/a
 
 The server side requires R for deployment and python for various database functions.
 
-Required R libraries include:
-
-```
-install.packages("digest")
-install.packages("stringr")
-install.packages("dplyr")
-install.packages("dbplyr")
-install.packages("RSQLite")
-install.packages("bibtex")
-install.packages("readr")
-```
+Required R libraries include: "digest", "stringr", "dplyr", "dbplyr", "RSQLite", "bibtex", "readr".
