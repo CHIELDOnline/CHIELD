@@ -72,5 +72,7 @@ cp -R app/data/* $server_private_folder
 chown _www ${server_private_folder}newRecords
 chown _www ${server_private_folder}processedRecords
 
+# sudo chmod 755 *.php
+
 # Need to update the python path for php to work
 sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewRecord.php
