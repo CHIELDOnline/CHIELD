@@ -63,10 +63,10 @@ fi
 
 echo "Copying local files to server folder ..."
 # Copy the local app public folder to the server public folder:
-cp -R app/Site/ $server_public_folder
+cp -R app/Site/* $server_public_folder
 
 # Copy the local app private folder to the server private folder:
-cp -R app/data/ $server_private_folder
+cp -R app/data/* $server_private_folder
 
 # Set the right permissions
 chown _www ${server_private_folder}newRecords
