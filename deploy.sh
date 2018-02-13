@@ -45,7 +45,7 @@ then
 fi
 
 # Copy the sqlite database and downloadable csv files to the local app:
-cp -R data/db/ app/data/db/
+cp -R data/db/* app/data/db/
 
 echo "Zipping publicly downloadable files ..."
 # Zip the downloadable csv files to the downloads folder
