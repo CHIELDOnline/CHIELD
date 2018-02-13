@@ -50,7 +50,7 @@ Link:
 Graphical display:
 	Add node
 	Expland node
-		Function addVar() actually expands a variable. Need to add function to just add node to vis.
+		updateGrid: Check we haven't already added the data.
 	Colour edges by:
 		Evidence type, correltion direction
 		Number of edges

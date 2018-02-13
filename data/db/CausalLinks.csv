@@ -196,8 +196,8 @@
 "866177588","evolang11_41","4202034973",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
 "1936755732","evolang11_41","2635233818",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
 "1787802156","evolang11_41","1804664261",">","345616669","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
-"1797010622","evolang11_41","345616669",">","2572585999","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,"clinical evidence suggests that deviations from this growth trajectory entail cognitive/language deficits (see, e.g., Knight et al. 2014).  See also Boeckx, C., & Benítez-Burraco, A. (2014). The shape of the human language-ready brain. Frontiers in Psychology, 5, 282. "
-"935325830","evolang11_41","2917779155",">","2572585999","pos","390976112","genetics","coevolution","review","neuroscience; genetics",NA,"Wilkins, A. S, Wrangham, R., W & Fitch, W. T. (2014). The “domestication syndrome” in mammals: a unified explanation based on neural crest cell behavior and genetics. Genetics, 197, 795–808"
+"4263558313","evolang11_41","345616669",">","2516845840","neg",NA,"genetics","coevolution","review","neuroscience; genetics",NA,"clinical evidence suggests that deviations from this growth trajectory entail cognitive/language deficits (see, e.g., Knight et al. 2014).  See also Boeckx, C., & Benítez-Burraco, A. (2014). The shape of the human language-ready brain. Frontiers in Psychology, 5, 282. "
+"2226698137","evolang11_41","2917779155",">","2516845840","neg","390976112","genetics","coevolution","review","neuroscience; genetics",NA,"Wilkins, A. S, Wrangham, R., W & Fitch, W. T. (2014). The “domestication syndrome” in mammals: a unified explanation based on neural crest cell behavior and genetics. Genetics, 197, 795–808"
 "1308006679","evolang11_41","3523182119",">","1036270633","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
 "1950361337","evolang11_41","3523182119",">","808886068","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
 "3127621110","evolang11_41","3523182119",">","1261768968","pos",NA,"genetics","coevolution","review","neuroscience; genetics",NA,""
@@ -230,7 +230,6 @@
 "742082191","evolang11_57","2622762551",">","2044020496",NA,NA,"phonetics","language change","experiment","production","","The aim of the click study was to ascertain whether and to what extent vocal tract morphology influences (1) the ability to learn to produce clicks and (2) the productions of those that successfully learn to produce these sounds"
 "3251176398","evolang11_57","813265570",">","2044020496",NA,NA,"phonetics","language change","experiment","production","",""
 "2197481572","evolang11_57","561682108",">","53652553",NA,NA,"phonetics","language change","review","","",""
-"2929542837","evolang11_73","1230888143",">","2693415517","pos",NA,"vocalisation","preadaptation","observation",NA,NA,"functional flexibility, the capacity to produce vocalizations independent of a fixed function in order to express a full range of emotional content across different situations (Griebel & Oller, 2008)"
 "739132902","evolang11_74","2005438220",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
 "605136612","evolang11_74","2434667809",">","2924403615","pos","3976025394","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
 "2938823290","evolang11_74","2005438220",">","1856200829","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
@@ -249,5 +248,4 @@
 "4073060511","Blasi_Moran_SLE_2017","3484515535",">","3663236917","pos",NA,NA,"language change","review","",NA,NA
 "1012255841","Blasi_Moran_SLE_2017","3663236917",">","783912639","pos",NA,NA,"language change","simulation","physical",NA,NA
 "725948981","Blasi_Moran_SLE_2017","783912639",">","286823690","neg",NA,NA,"language change","statistical","cross-linguistic",NA,NA
-"2602586920","holler2017processing333","1965429846",">","1674748667","none",NA,"55555","none",NA,"","none",NA
 "3672461185","evolang11_33","2342921401",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,NA

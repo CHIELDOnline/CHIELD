@@ -43,8 +43,23 @@ The file should set the following parameters:
 githubUser = "CHIELDOnline"
 githubAccessToken = "PasteYourGithubAccessTokenHere"
 githubRepoName = "CHIELD"
-repository_data_tree_folder = "/app/data/tree/documents/"
+repository_data_tree_folder = "/data/tree/documents/"
 ```
 
 Github access tokens can be generated [through GitHub](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
 
+## Dependencies
+
+The server side requires R for deployment and python for various database functions.
+
+Required R libraries include:
+
+```
+install.packages("digest")
+install.packages("stringr")
+install.packages("dplyr")
+install.packages("dbplyr")
+install.packages("RSQLite")
+install.packages("bibtex")
+install.packages("readr")
+```
