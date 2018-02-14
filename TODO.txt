@@ -1,3 +1,8 @@
+Online version:
+	Deploy:
+		Fix sed statement
+	Delete repostiory and re-install.
+
 php:
 	In Variable, make sure process name is being passed correctly in the PHP
 
@@ -83,3 +88,11 @@ Future:
 
 Downloads:
 	Add license details
+
+
+Cosmetic 
+	Pagiation (Next/Previous): fix to bottom of window?
+		#documents_table_paginate{
+			position: fixed;
+			bottom: 10px;
+			}

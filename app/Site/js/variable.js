@@ -44,7 +44,21 @@ dtableConfig = {
 				     }
 			      return(data);
 				  }
-			  }
+			  },
+        	{ targets: 9,
+        		// Combine reference and link
+        		render: function(data,type,row, meta){
+        			console.log(data);
+        			console.log(row);
+        			if(type==='display'){
+        				if(data!=null){
+        					return '<a href="document.html?key=' + row[10] +'">'+data + '</a>';
+        				}
+        			}
+        			return(null);
+        		}
+        	},
+        	{targets: 10, visible:false}
         ]
     };
 

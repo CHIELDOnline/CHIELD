@@ -16,8 +16,12 @@ function preparePage(tableIdX,php_linkX){
 	        if(title=="Cor" || title=="Relation"){
 	        	$(this).html( '<input type="text" placeholder="Search '+title+'" style="width:30px"/>' );
 	        } else{
-	        	$(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-	        	//$(this).html( '<input type="text" placeholder="Search" />' );
+	        	if(title=="Notes"){
+	        		$(this).html( '<input type="text" placeholder="Search '+title+'" style="width:50px"/>' );
+	        	} else{
+	        		$(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+	        		//$(this).html( '<input type="text" placeholder="Search" />' );
+	        	}
 	        }
 	    } );
 	}

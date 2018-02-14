@@ -13,11 +13,14 @@ SELECT s.[name] variable1,
        Topic,
        Stage,
        Type,
-       Notes
+       Notes,
+       d.[citation] bibref,
+       bibref as citekey
   FROM causal_links l 
   LEFT JOIN variables s ON l.Var1 = s.pk 
   LEFT JOIN variables s2 ON l.Var2 = s2.pk
   LEFT JOIN processes p ON l.Process = p.pk
+  LEFT JOIN documents d ON l.bibref = d.pk
   WHERE s.[pk]=:key1 or s2.[pk]=:key2
 EOT;
 
