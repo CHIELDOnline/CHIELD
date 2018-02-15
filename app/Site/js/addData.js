@@ -1,9 +1,5 @@
-// TODO: autocomplete on jsgrid input tags: https://jqueryui.com/autocomplete/    
-// TODO: add process and subtype?
 // TODO: make sure bibref has no illegal characters
 // TODO: check that JSONtoCSV actually works with escaping quotes
-// TODO: Sort styling of bibtex reference div
-// TODO: Start on graphical interface for links
 
 
 var characterLengthLimit = 7800;
@@ -484,6 +480,12 @@ function recieveVersion(response){
 
 
 $(document).ready(function(){
+
+	// If the user has stuff saved in a cookie, then hide the help alert
+	var cookie_user = Cookies.get('github.username');
+	if(cookie_user!=undefined){
+		$("#helpAlert").hide();
+	}
 
 	// getVersion checks whether cookies are up to date.
 	// if it is, then we load temp cookies from server

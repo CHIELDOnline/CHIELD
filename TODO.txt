@@ -1,7 +1,5 @@
 Online version:
-	Deploy:
-		Fix sed statement
-	Delete repostiory and re-install.
+
 
 php:
 	In Variable, make sure process name is being passed correctly in the PHP
@@ -14,7 +12,7 @@ Deploy:
 
 
 Variable:
-	Add link to reference.
+	
 
 Finish addData.js
 	*Add other columns
@@ -26,10 +24,12 @@ Finish addData.js
 	TEST Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
 	TEST Fix: When pressing enter on the input, hide the autofill
 	FIX: Why are two pull requests submitted?
+	If there are no cookies stored, offer to direct user to the help page.
 
 Cookies:
 	TEST Store temporary variable names in cookie
 	TEST Store version number
+
 
 Documents: 
 
@@ -43,7 +43,7 @@ Document:
 
 
 causal_links:
-	FIX: Why is search not working properly? type "tem", but "temperature" does not appear.
+
 
 Database:
 	Fix short citation: need to de-tex-ify special characters (see num 84)

@@ -4,7 +4,7 @@
 # This will probably need to run with sudo access
 # Options:
 # --nocompile   Don't run the R script that compiles the SQL database
-# --nodelete    Don't delete the 
+# --nodelete    Don't delete the exisitng server files
 # --nolocalcoyping  Don't copy files to the local directory.  
 #                   This means that the local git repository won't be changed
 
@@ -48,6 +48,8 @@ then
 	cd ..
 fi
 
+if [ "$copy_local_files" = true ]
+then
 # Copy the sqlite database and downloadable csv files to the local app:
 cp -R data/db/* app/data/db/
 
@@ -58,6 +60,7 @@ zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
 
 # Zip the sqlite database and add to downloads
 zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
+fi
 
 if [ "${remove_public_files_first}" = true ]
 then
@@ -65,21 +68,20 @@ then
 	rm -R ${server_public_folder}*
 fi
 
-if [ "$copy_local_files" = true ]
-then
-	echo "Copying local files to server folder ..."
-	# Copy the local app public folder to the server public folder:
-	cp -R app/Site/* $server_public_folder
 
-	# Copy the local app private folder to the server private folder:
-	cp -R app/data/* $server_private_folder
+echo "Copying local files to server folder ..."
+# Copy the local app public folder to the server public folder:
+cp -R app/Site/* $server_public_folder
 
-	# Set the right permissions
-	chown _www ${server_private_folder}newRecords
-	chown _www ${server_private_folder}processedRecords
+# Copy the local app private folder to the server private folder:
+cp -R app/data/* $server_private_folder
 
-	# sudo chmod 755 *.php
-fi
+# Set the right permissions
+chown _www ${server_private_folder}newRecords
+chown _www ${server_private_folder}processedRecords
+
+# sudo chmod 755 *.php
+
 
 # Need to update the python path for php to work
 sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewRecord.php

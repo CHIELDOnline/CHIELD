@@ -8,6 +8,8 @@ var currently_selected_node = null;
 var currently_selected_edge = null;
 var current_selection_mode = "start";
 
+var lastSelectedNodes = [];
+
 var currently_clicked_location = null;
 
 var current_relation_type = ">";
@@ -21,6 +23,7 @@ var network_options = {
 	//  }
 	interaction: {
  		//zoomView:false, // prevents user from zooming
+ 		multiselect: true
  	},
   	edges: {
     	smooth: false
@@ -121,14 +124,25 @@ function initialiseNetwork(){
 }
 
 function network_on_click (params) {
-	
+	console.log("CLICK");
+	console.log(params);
 	// // User clicked on node - select it
-	// if(params["nodes"].length > 0){
+	if(params["nodes"].length > 0){
 	// 	user_clicked_node(params["nodes"][0]);
-	// } else{
+		console.log(lastSelectedNodes);
+	   if(lastSelectedNodes.length >=2){
+	   	lastSelectedNodes.shift();
+	   }
+	   // Find the new node
+	   for(var i=0;i<params["nodes"].length;++i){
+	   	 if($.inArray(params["nodes"][i], lastSelectedNodes)==-1){
+			lastSelectedNodes.push(params["nodes"][i]);
+	   	 }
+	   }
+	} else{
 	// 	// User didn't click - unselect
-	// 	currently_selected_node = null;
-	// }
+	 	lastSelectedNodes = [];
+	}
 
 }
 
@@ -240,3 +254,25 @@ function addVar(varname){
 		network_nodes.add(newNode);
 	}
 }
+
+function findPaths(){
+	var selectedNodes = network.getSelectedNodes();
+	// selectedNodes returns the nodes that are currently selected,
+	// but not the order that the user selected them in
+	// so we keep track of order in lastSelectedNodes
+
+	// If we've only selected 2 nodes
+	// And there are 2 nodes in lastSelectedNodes
+	// And the nodes in lastSelectedNodes are in the set of selected nodes ...
+	if(selectedNodes.length==2 & 
+		lastSelectedNodes.length==2 & 
+		$.inArray(lastSelectedNodes[0], selectedNodes)>=0 &
+		$.inArray(lastSelectedNodes[1], selectedNodes)>=0){
+		// ... then request the links between them.
+		var var1 = lastSelectedNodes[0];
+		var var2 = lastSelectedNodes[1];
+		requestRecord("php/getPaths.php","var1="+var1+"&var2="+var2,'links');
+	}
+
+}
+

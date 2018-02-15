@@ -153,6 +153,7 @@ $(document).ready(function(){
 		});
 
 	$("#explandVariable").click(expandVariable);
+	$("#findPaths").click(findPaths);
 
 
 });
