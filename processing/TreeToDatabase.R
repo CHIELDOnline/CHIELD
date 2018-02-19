@@ -8,6 +8,8 @@ library(RSQLite)
 library(bibtex)
 library(readr)
 
+source("detexify.R")
+
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 treeBaseFolder = "../data/tree"
@@ -57,6 +59,7 @@ getShortCitation = function(b){
     citationEnd = " et al."
   }
   bAuthors = sapply(b$author,function(X){X$family})
+  bAuthors = detexify(bAuthors)
   if(length(bAuthors)==1){
     authorList = bAuthors[1]
   } else{
@@ -70,7 +73,7 @@ getShortCitation = function(b){
   
   bCitation = paste0(
     authorList,
-    " (",bYear,")")
+    " (",b$year,")")
   return(bCitation)
 }
 
@@ -117,9 +120,9 @@ for(f in list.dirs(treeBaseFolder)){
     b = read.bib(paste0(f,"/",bibFile))
     
     bKey = b$key
-    bAuthor = paste(b$author,collapse='; ')
+    bAuthor = paste(detexify(b$author),collapse='; ')
     bYear = b$year
-    bTitle = b$title
+    bTitle = detexify(b$title)
     bRecord = paste(as.character(toBibtex(b)),collapse="\n")
     #bCitation = format(b, style = "html")
     # remove link text

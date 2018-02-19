@@ -118,6 +118,7 @@ $(document).ready(function(){
 
 	// Initialise the visual graph component
 	initialiseNetwork();
+	network.on("click", network_on_click);
 
 	// Hide the table
 	toggleTableDisplay();
@@ -152,7 +153,7 @@ $(document).ready(function(){
 			"onSelect": addVar
 		});
 
-	$("#explandVariable").click(expandVariable);
+	$("#expandVariable").click(expandVariable);
 	$("#findPaths").click(findPaths);
 
 

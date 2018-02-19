@@ -516,6 +516,21 @@ $(document).ready(function(){
 	// Initialise the visual network
 	initialiseNetwork();
 
+	// Bind clicks to making list of variables appear
+	  $( "#searchVariablesToAdd_dynamic" ).keypress(function(event) {
+	  	if ( event.key == "Enter" || event.which==13 ) {
+	  		addVar_dynamic();
+	  		$("#searchVariablesToAdd_dynamic").hide();
+		} else{
+			if ( event.key == "Escape" || event.which==27 ) {
+				$("#searchVariablesToAdd_dynamic").hide();
+			}
+		}
+	  });
+	// Bind clicks to select network nodes
+	network.on("click", network_on_click);
+    network.on("doubleClick", network_on_double_click);
+
 	// Load username from cookie
 	checkGithubUserCookie();
 	

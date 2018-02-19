@@ -1,8 +1,4 @@
 
-var network_nodes = null;
-var network_edges = null;
-var network = null;
-
 var currently_selected_node = null;
 var currently_selected_edge = null;
 var current_selection_mode = "start";
@@ -14,36 +10,6 @@ var current_relation_type = ">";
 var network_last_click_time = 0;
 
 var network_container = null;
-var network_options = {
-	//layout:{
-	//	hierarchical: true
-	//  }
-	interaction: {
- 		//zoomView:false, // prevents user from zooming
- 	},
-  	edges: {
-    	smooth: false
-	},
-		physics: {
-// 			forceAtlas2Based: {
-// 				gravitationalConstant: -26,
-// 				centralGravity: 0.005,
-// 				springLength: 230,
-// 				springConstant: 0.18,
-// 				avoidOverlap: 1.5
-// 			},
-// 			maxVelocity: 146,
-// 			solver: 'forceAtlas2Based',
-// 			timestep: 0.35,
-		stabilization: {
-			enabled: true,
-			iterations: 1000,
-			//updateInterval: 25
-		}
-	}
-};
-
-
 
 
 function addVar(){
@@ -159,53 +125,6 @@ function delNetworkElement(){
 	}
 }
 
-function initialiseNetwork(){
-  if(network_nodes==null){
-  	// create empty network
-  	network_nodes = new vis.DataSet([]);
-  	network_edges = new vis.DataSet([]);
-  }
-
-  var data = {
-	nodes: network_nodes,
-	edges: network_edges
-  };
-
-  network_container = document.getElementById('mynetwork')
-
-  network = new vis.Network(network_container, data, network_options);
-  network.on("click", network_on_click);
-  network.on("doubleClick", network_on_double_click);
-
-  // After initial layout, turn off the physics for nodes so that 
-  // the user can drag things to custom places
-  network.on("stabilizationIterationsDone", function () {
-  		console.log("stabilization finished");
-        network.setOptions({
-//			nodes: {physics: false},
-            physics: {
-            	enabled: false,
-      //      	stabilization: {
-    //        		onlyDynamicEdges: true
-  //          	}
-            }
-        });
-    });
-
-  var dynamicSearchVariables = $("#searchVariablesToAdd_dynamic");
-  $( "#searchVariablesToAdd_dynamic" ).keypress(function(event) {
-  	if ( event.key == "Enter" || event.which==13 ) {
-  		addVar_dynamic();
-  		$("#searchVariablesToAdd_dynamic").hide();
-	} else{
-		if ( event.key == "Escape" || event.which==27 ) {
-			$("#searchVariablesToAdd_dynamic").hide();
-		}
-	}
-  });
-
-}
-
 function network_on_click (params) {
 	
 	// check that we're not recieving double-click
@@ -278,43 +197,6 @@ function networkUpdateNodeName(oldNodeName, newNodeName){
 
 function netwrokUpdateEdgeType(Var1, Var2, Relation){
 
-}
-
-function getEdgeSettings(Var1, Var2, Relation){
-	// standard setting: ">"
-
-	var newEdge = {
-			from: Var1,
-	    	to: Var2,
-	    	arrows: {
-	    		to: {
-	    			enabled:true,
-	    			type: "arrow"
-	    		},
-	    		from: {
-	    			enabled:false,
-	    			type: "arrow"
-	    		}
-	    	},
-	    	color: "black",
-	    	causal_relation: Relation
-		};
-
-	if(Relation=="<"){
-		newEdge.arrows.to.enabled = false;
-		newEdge.arrows.from.enabled  = true;
-	}
-	if(Relation==">>"){
-		newEdge.color = "red";
-	}
-	if(Relation=="<=>"){
-		//newEdge.arrows = "to;from";
-		newEdge.arrows.from.enabled  = true;
-	}
-	if(Relation=="~="){
-		newEdge.arrows.to["type"] = "circle";
-	}
-	return(newEdge);
 }
 
 function redrawGUIfromGrid(){

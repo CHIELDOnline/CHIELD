@@ -18,3 +18,9 @@
 #bibtexsource {
 	width: 60%;
 }
+
+#mynetwork{
+	border-style: solid;
+	border: "red";
+	height: 400px;
+}

@@ -73,8 +73,8 @@ function updateRecord(response,type){
 		displayBibtex();
 	}
 	if(type=="links"){
-
-		updateLinksTable(response);
+		updateLinksTable(response); // should pass string 
+		redrawGUIfromObject(JSON.parse(response)); //should pass object
 	}
 }
 
@@ -108,6 +108,20 @@ $(document).ready(function(){
 	$("#header").load("header.html", function(){
 		$("#DocumentsHREF").addClass("active");
 	}); 
+
+
+	network_options.layout = {
+                    hierarchical: {
+                        direction: "LR",
+                        sortMethod: "directed",
+                        levelSeparation: 250
+                    }
+                };
+    network_options.physics.hierarchicalRepulsion = {
+    	nodeDistance: 50
+    };
+
+    console.log(network_options);
 
 	initialiseNetwork();
 

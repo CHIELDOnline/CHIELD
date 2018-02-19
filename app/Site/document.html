@@ -13,6 +13,10 @@
  
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
 
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
 
 <link rel="stylesheet" type="text/css" href="css/document.css"/>
 
@@ -33,7 +37,7 @@
   <br />
 
   <div id="mynetwork"></div>
-  
+
   <h3>Causal links</h3>
   <br />
   <table id="links_table" class="table table-striped table-bordered">
@@ -68,6 +72,6 @@
   <div id="quoteDivText"></div>
   <button id="quoteDivClose" onclick="closeQuote()" class="close" aria-label="Close">
     <span aria-hidden="true">&times;</span>
-  <button>
+  </button>
 </div>
 </html>
