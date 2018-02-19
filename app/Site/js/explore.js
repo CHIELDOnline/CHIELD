@@ -16,7 +16,7 @@ var existingVariables_pk = [];
 dtableConfig =  {
 		ordering: true,
         lengthChange: false,
-        order: [[ 0, "asc" ], [2, "asc"]],
+        order: [[7, "asc"], [ 0, "asc" ], [2, "asc"]],
         //scrollY: "300px",
         //scrollCollapse: true,
         paging: false,

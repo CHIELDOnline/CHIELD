@@ -4,7 +4,7 @@ $var1 = $_POST['var1'];
 $var2 = $_POST['var2'];
 
 $command = escapeshellcmd('python ../../data/getPaths.py '.escapeshellarg($var1)." ".escapeshellarg($var2));
-$output = shell_exec($command);
+$output = exec($command);
 
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 

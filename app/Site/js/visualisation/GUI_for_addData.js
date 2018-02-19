@@ -40,7 +40,7 @@ var network_options = {
 			iterations: 1000,
 			//updateInterval: 25
 		}
-		}
+	}
 };
 
 

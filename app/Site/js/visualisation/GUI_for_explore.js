@@ -44,7 +44,19 @@ var network_options = {
 			iterations: 1000,
 			//updateInterval: 25
 		}
-		}
+	},
+	  nodes: {
+     	 color: {
+     	 	border: "#e92b2b",
+     	 	background: "#ffd2d2",
+     	 	highlight:{
+     	 		border: "#e92b2b",
+     	 		background: "#ffd2d2"},
+     	 	hover: {
+     	 		border: "#e92b2b",
+     	 		background: "#ffd2d2"}
+     	 }
+    }
 };
 
 
@@ -231,6 +243,7 @@ function updateGrid(links){
 		dtable.draw();
 		$("#links_table").show();
 	} else{
+		alert("No causal links found");
 		$("#links_table").hide();
 	}
 }

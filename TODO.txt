@@ -3,12 +3,21 @@ Online version:
 
 php:
 	In Variable, make sure process name is being passed correctly in the PHP
+	Fix list binding in SQL statements
 
 python script:
 	Why is it not iterating over all files?
 		Maybe related to two pull requests?
 
 Deploy:
+
+
+Explore:
+	TODO: go through each row and check that the pk isn't already included in the table
+	Allow changing of network layout
+	Colour edges by: type, Cor, Stage
+	When node or edge is highlighted, filter datatable
+
 
 
 Variable:
@@ -24,7 +33,6 @@ Finish addData.js
 	TEST Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
 	TEST Fix: When pressing enter on the input, hide the autofill
 	FIX: Why are two pull requests submitted?
-	If there are no cookies stored, offer to direct user to the help page.
 
 Cookies:
 	TEST Store temporary variable names in cookie

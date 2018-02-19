@@ -109,6 +109,8 @@ $(document).ready(function(){
 		$("#DocumentsHREF").addClass("active");
 	}); 
 
+	initialiseNetwork();
+
 	var key = getUrlParameter('key');
 	if(key!=''){
 		requestRecord("php/getDoc.php", "key="+key,'bib');

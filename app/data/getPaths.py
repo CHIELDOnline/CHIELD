@@ -31,9 +31,11 @@ def find_all_paths(graph, start, end, path=[]):
 var1 = sys.argv[-2]
 var2 = sys.argv[-1]
 
-with open('db/CausalLinks.json', 'r') as f:
-	read_data = f.read()
-f.closed
+#  This will be called from Site/php, so make path relative:
+f = open('../../data/db/CausalLinks.json', 'r')
+read_data = f.read()
+f.close()
+
 
 graph = json.loads(read_data)
 
