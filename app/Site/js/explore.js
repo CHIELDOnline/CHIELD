@@ -93,7 +93,7 @@ $(document).ready(function(){
 	}); 
 
 	// Request full list of variables to suggest to user
-	requestVariablesFromServer("php/getVariables");
+	requestVariablesFromServer("php/getVariables.php");
 
 	// Prepare links table layout
 	preparePage("links_table","php/getLinksForExplore.php");
