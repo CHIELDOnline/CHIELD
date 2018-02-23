@@ -14,6 +14,9 @@ Deploy:
 
 Explore:
 	TODO: go through each row and check that the pk isn't already included in the table
+	When nodes are added, it's supplying the id as the name, not the pk.	
+		(changed in vis_network_utils)
+	Remove nodes
 	Allow changing of network layout
 	Colour edges by: type, Cor, Stage
 	When node or edge is highlighted, filter datatable
@@ -24,7 +27,19 @@ Variable:
 	
 
 Finish addData.js
-	*Add other columns
+	Move "submit" button to its own tab on the left (to avoid it covering stuff)
+	Display "Notes" as truncated, allow entry of notes through floating text box.
+	FIX: when merging labels (e.g. changing a typo from "pop sise" to "pop size"), the network doesn't update properly.
+
+	Add warning about leaving page
+
+	Repetitively add progress in grid to cookie so it can be recovered.
+		If cookie has data, offer to recover on page load.
+		Remove data when data has been successfully submitted
+
+	Add option to upload data from csv.
+		Offer template csv in help section.
+
 	Add date added? (so we can do recently added)
 		Add to contributor line in addData.js
 	Network:
@@ -33,6 +48,12 @@ Finish addData.js
 	TEST Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
 	TEST Fix: When pressing enter on the input, hide the autofill
 	FIX: Why are two pull requests submitted?
+
+	Add button to remove variable from network (see commented button delNetworkElement).
+		Should prob iterate through *grid*, then update network from grid.
+
+
+
 
 Cookies:
 	TEST Store temporary variable names in cookie
@@ -48,13 +69,15 @@ Document:
 	Links table:
 		Find a way to change the column widths
 		Add button to make change request via github
-
+	Add link to download raw data from github repository
 
 causal_links:
 
 
 Database:
-	Fix short citation: need to de-tex-ify special characters (see num 84)
+	"immitation" -> imitation
+	Include new table linking nodes to a date in time.
+	e.g. Control of fire: 1 million ya
 
 Link: 
 	(Maybe not: just use Explore) Create page for link, add documents that relate to it

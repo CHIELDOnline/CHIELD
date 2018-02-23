@@ -2,6 +2,8 @@ var network_nodes = null;
 var network_edges = null;
 var network = null;
 
+var convert_pks_to_string_ids = true;
+
 var network_options = {
   //layout:{
   //  hierarchical: true
@@ -31,10 +33,6 @@ var network_options = {
     }
   },
     nodes: {
-      fixed: {
-          y: false,
-          x: false
-        },
        color: {
         border: "#e92b2b",
         background: "#ffd2d2",
@@ -156,7 +154,7 @@ function redrawGUIfromObject(obj){
       // create a new edge
 
       // Are variables strings or pks?
-      if(isNumeric(this_var1)){
+      if(isNumeric(this_var1) && convert_pks_to_string_ids){
         // if it is a PK, then conver to variable name
         // (we assume that findVariablePK() is implemented, as in explore.js)
         this_var1 = findVariablePK(this_var1);
@@ -177,7 +175,7 @@ function redrawGUIfromObject(obj){
   // For each node
   for(var i=0; i < nodes.length; ++i){
     var npk = nodes[i];
-    if(isNumeric(npk)){
+    if(isNumeric(npk) && convert_pks_to_string_ids){
       npk = findVariablePK(npk);
     }
     // If the node is not yet in the network:

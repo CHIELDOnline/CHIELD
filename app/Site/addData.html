@@ -38,6 +38,11 @@
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Warning:</strong> This site uses cookies.
 </div>
+<div id="SavedDataAlert" class="alert alert-danger alert-dismissable">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  There is saved data available.
+  	<button class="btn btn-success" onclick="loadProgressCookie()">Load saved data</button>
+</div>
 
 <div>
 <ul id="navTabs" class="nav nav-tabs" role="tablist">
@@ -49,6 +54,9 @@
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#causal_links" role="tab" data-toggle="tab">Causal Links</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#submit" role="tab" data-toggle="tab">Submit</a>
   </li>
 </ul>
 
@@ -80,17 +88,23 @@
 		<input id="searchVariablesToAdd"></input>
 		<input id="searchVariablesToAdd_dynamic" autofocus></input>
 		<button id="addVar" onclick="addVar()" class="btn btn-primary"> + </button>
-		<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>
+		<!--<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>-->
 		<div id="mynetwork"></div>
 		<div id="jsGrid"></div>
 	</div>
 
+	<div id="submit" role="tabpanel" class="tab-pane fade">
+	<p>Press the button below to submit the record to the Github repository.  New records are reviewed before being added to the database.
+	<br />
+	<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
+	<br />
+	<div id="submissionResults"></div>
+
 </div>
 
-<div id="submit">
-	<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
-	<div id="submissionResults"></div>
 </div>
+
+
 </div>
 
 </body>

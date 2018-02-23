@@ -50,7 +50,7 @@ function addVarByVarName(selectedVar,x=null,y=null){
 		console.log(newNode);
 		network_nodes.add(newNode);
 		//network.redraw();
-		network.fit(animation=true)
+		network.fit();
 	}
 }
 
@@ -81,6 +81,7 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 		console.log("HERE");
 		network_edges.add(newEdge);
 		network.fit();
+		
 
 		// add data to grid
 		addEdgeToGrid(selectedVar1,causal_relation,selectedVar2);		
@@ -123,6 +124,7 @@ function delNetworkElement(){
 	for(var i=0; i< edgesToDel.length; ++i){
 		network_edges.remove(edgesToDel[i])
 	}
+	// TODO: Delete instances from the grid
 }
 
 function network_on_click (params) {
@@ -131,6 +133,7 @@ function network_on_click (params) {
 	var current_time = new Date().getTime();
 	var delay = current_time -network_last_click_time;
 	network_last_click_time = current_time;
+	console.log(delay);
 	if(delay >500){
 		// User clicked on node - select it
 		if(params["nodes"].length > 0){
@@ -217,8 +220,8 @@ function redrawGUIfromGrid(){
 		if($.inArray(this_var2,nodes)==-1){
 			nodes.push(this_var2)
 		}
-
-		var newEdge = getEdgeSettings(this_var1,this_var2,this_relation);
+		var id = this_var1+"#"+this_var2;
+		var newEdge = getEdgeSettings(id,this_var1,this_var2,this_relation);
 		console.log(newEdge);
 		network_edges.add(newEdge);
 	}
@@ -233,6 +236,10 @@ function redrawGUIfromGrid(){
 
 	// redraw network
 	initialiseNetwork();
+	network.on("click", network_on_click);
+    network.on("doubleClick", network_on_double_click);
 
+    // update progress
+    saveProgressCookie();
 }
 

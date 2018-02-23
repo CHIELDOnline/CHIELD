@@ -1,6 +1,7 @@
 // TODO: make sure bibref has no illegal characters
 // TODO: check that JSONtoCSV actually works with escaping quotes
 
+var submissionFinished = false;
 
 var characterLengthLimit = 7800;
 
@@ -19,7 +20,8 @@ var relationTypes = [
 var correlationTypes = [
 	{ Name: "", Id: "none"},
 	{ Name: "pos", Id: "pos"},
-	{ Name: "neg", Id: "neg"}
+	{ Name: "neg", Id: "neg"},
+	{ Name: "n-m", Id: "n-m"},
 ];
 
 var stageTypes = [
@@ -289,6 +291,11 @@ function finishedSubmission(link){
 		$("#submissionResults").html(
 			'Data submitted.  <a href="'+link+'" target="_blank">View the pull request</a>.'
 			);
+		submissionFinished = true;
+
+		// remove saved data
+		Cookies.remove("GridSaveData");
+		Cookies.remove("BibTexSaveData");
 	} else{
 		$("#submissionResults").html(
 			'There may be an error with the submission, please check data and try again.'
@@ -392,6 +399,8 @@ function gridUpdated(item){
 		redrawGUIfromGrid();
 	}
 
+	saveProgressCookie();
+
 }
 
 function variableAppearancesInGrid(varName){
@@ -462,6 +471,7 @@ function recieveVersion(response){
 	var cookieVersion = Cookies.get('CHIELDVersion');
 	
 	if(cookieVersion==versionObj[0].gitRevision){
+		// same version as before
 		loadTempVariablesFromCookie();
 	} else{
 		// there's a new version of the database since we last logged in.
@@ -472,11 +482,42 @@ function recieveVersion(response){
 	}
 	CHIELDVersion = versionObj[0].gitRevision;
 
-	// set the 
+	// set the version
 	if(cookieVersion===undefined){
 		Cookies.set("CHIELDVersion",versionObj[0].gitRevision);
 	}
 }
+
+// Keep copy of grid in cookie:
+function saveProgressCookie(){
+	var d = $("#jsGrid").data().JSGrid.data;
+	Cookies.set("GridSaveData",d);
+	Cookies.set("BibTexSaveData",$("#bibtexsource").val());
+}
+
+function loadProgressCookie(){
+	var d = Cookies.get("GridSaveData");
+	d = JSON.parse(d);
+	$("#jsGrid").jsGrid("option", "data", d);
+
+	var b = Cookies.get("BibTexSaveData");
+	$("#bibtexsource").val(b);
+	updateBib();
+	$("#SavedDataAlert").hide();
+
+}
+
+// Warn user before unloading
+
+window.addEventListener("beforeunload", function (e) {
+	if(!submissionFinished){
+	    var confirmationMessage = 'It looks like you have been editing something. '
+	                            + 'If you leave before saving, your changes will be lost.';
+
+	    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+	    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+	}
+});
 
 
 $(document).ready(function(){
@@ -485,6 +526,11 @@ $(document).ready(function(){
 	var cookie_user = Cookies.get('github.username');
 	if(cookie_user!=undefined){
 		$("#helpAlert").hide();
+	}
+
+	if(Cookies.get("GridSaveData")==undefined){
+		// Ask user if they want to load old data
+		$("#SavedDataAlert").hide();
 	}
 
 	// getVersion checks whether cookies are up to date.

@@ -117,6 +117,7 @@ $(document).ready(function(){
 	
 
 	// Initialise the visual graph component
+	convert_pks_to_string_ids = false;
 	initialiseNetwork();
 	network.on("click", network_on_click);
 
