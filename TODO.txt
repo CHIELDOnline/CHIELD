@@ -27,8 +27,7 @@ Variable:
 	
 
 Finish addData.js
-	FIX: When adding edge, updating from the grid gets rid of variables that are unconnected.
-
+	
 	Add date added? (so we can do recently added)
 		Add to contributor line in addData.js
 	Network:
@@ -54,7 +53,6 @@ Document:
 	LOW If bibtex has an abstract field, display it.
 	Display causal links graph vis.js (use general function)
 	Links table:
-		Find a way to change the column widths
 		Add button to make change request via github
 	Add link to download raw data from github repository
 
@@ -95,9 +93,6 @@ Coding:
 	Fix "tool use ~ imperative gestures"
 	Add important people: Kirby, Hurford etc.
 	Fix measured by: decide on ~= or =~ 
-
-Document:
-	Colour stage cell by stage type (see variable.js): Probably need to make this not hard-coded (change css style with "addClass" or something?)
 
 Search by evolution stage
 

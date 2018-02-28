@@ -4,6 +4,8 @@
 
 var bibtexVisible = false;
 
+var documentKey = "";
+
 tableId = "links_table";
 dtableConfig = {
 		ordering: true,
@@ -67,7 +69,7 @@ function updateRecord(response,type){
 	console.log("updateRecord "+type);
 	if(type=="bib"){
 		response = JSON.parse(response);
-		console.log(response[0].record + "TYPE:"+type);
+		console.log(response[0].record);
 		document.getElementById('bibtexsource').value = response[0].record;
 		$("#documenShortCite").html(response[0].citation);
 		displayBibtex();
@@ -102,6 +104,14 @@ function revealBibtex(){
 	}
 }
 
+function openSource(){
+	var documentYear = getYear();
+	var decade = (Math.floor(documentYear/10)*10)+"s";
+	var url = "https://github.com/CHIELDOnline/CHIELD/tree/master/data/tree/documents/" +
+		decade + "/" + documentYear + "/" + documentKey;
+	window.open(url);
+}
+
 $(document).ready(function(){
 	$("#quoteDiv").hide();
 	$("#bibtexsource").hide();	
@@ -125,11 +135,11 @@ $(document).ready(function(){
 
 	initialiseNetwork();
 
-	var key = getUrlParameter('key');
-	if(key!=''){
-		requestRecord("php/getDoc.php", "key="+key,'bib');
+	documentKey = getUrlParameter('key');
+	if(documentKey!=''){
+		requestRecord("php/getDoc.php", "key="+documentKey,'bib');
 		preparePage(tableId,"");
-		requestRecord("php/getLinksForDoc.php", "key="+key,'links');
+		requestRecord("php/getLinksForDoc.php", "key="+documentKey,'links');
 	} else{
 		// TODO: display no data message
 		console.log("no data");

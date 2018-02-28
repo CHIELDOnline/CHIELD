@@ -13,10 +13,16 @@ function displayBibtex(){
     cite.set($('#bibtexsource'));
     var result = $('#bibtexhtml').html(cite.get(bibopt));
     console.log("Result",result);
+    var bibtexButton = document.createElement("button");
+    bibtexButton.innerHTML = "Bibtex source";
+    bibtexButton.className = "btn btn-link";
+    bibtexButton.onclick = function(){revealBibtex();};
+    var bibtexHTML = document.getElementById('bibtexhtml');
+    bibtexHTML.children[0].children[0].appendChild(bibtexButton);
   }
   
 function getYear(){
-	cite.get()[0]["issued"]["date-parts"][0][0];
+	return(cite.get()[0]["issued"]["date-parts"][0][0]);
 }
 
 function bibtex2JSON(bib){
