@@ -27,33 +27,20 @@ Variable:
 	
 
 Finish addData.js
-	Move "submit" button to its own tab on the left (to avoid it covering stuff)
-	Display "Notes" as truncated, allow entry of notes through floating text box.
-	FIX: when merging labels (e.g. changing a typo from "pop sise" to "pop size"), the network doesn't update properly.
-
-	Add warning about leaving page
-
-	Repetitively add progress in grid to cookie so it can be recovered.
-		If cookie has data, offer to recover on page load.
-		Remove data when data has been successfully submitted
-
-	Add option to upload data from csv.
-		Offer template csv in help section.
+	FIX: When adding edge, updating from the grid gets rid of variables that are unconnected.
 
 	Add date added? (so we can do recently added)
 		Add to contributor line in addData.js
 	Network:
 		Add button: warn if variable not in database?
-	TEST When grid is updated, update vis.js
-	TEST Graph id property must stay the same, so check that sending data to grid is not using id, but "label"
-	TEST Fix: When pressing enter on the input, hide the autofill
-	FIX: Why are two pull requests submitted?
 
-	Add button to remove variable from network (see commented button delNetworkElement).
+	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
+		Not necessary right now
 
 
-
+Help:
+	Offer template csv in help section.
 
 Cookies:
 	TEST Store temporary variable names in cookie

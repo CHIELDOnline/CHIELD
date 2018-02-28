@@ -11,6 +11,8 @@ var network_last_click_time = 0;
 
 var network_container = null;
 
+var drawLinksWithClicks = true;
+
 
 function addVar(){
 	var selectedVar = document.getElementById("searchVariablesToAdd").value.trim();
@@ -67,8 +69,9 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 	// TODO: warn if adding edge back the other way?
 	var edgeExists = false;
 
+	var edgeids = network_edges.getIds();
 	for(var i=0; i<network_edges.length;++i){
-		var e = network_edges.get(network_edges.getIds[i]);
+		var e = network_edges.get(edgeids[i]);
 		if(e.from==selectedVar1 && e.to==selectedVar2){
 			edgeExists = true;
 		}
@@ -86,43 +89,22 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 		// add data to grid
 		addEdgeToGrid(selectedVar1,causal_relation,selectedVar2);		
 
-	} else{
-		currently_selected_node = null;
 	}
-}
-
-function addEdgeToGrid(selectedVar1,causal_relation,selectedVar2){
-
-
-	var rowData = {
-		Var1: selectedVar1,
-		Relation: causal_relation,
-		Var2: selectedVar2
-	};
-
-	var fieldNames = [];
-	var fields = $("#jsGrid").jsGrid().data().JSGrid.fields;
-	for(var i=3;i<fields.length;++i){
-		var fieldName = fields[i].name;
-		rowData[fieldName] = "";
-	}
+	currently_selected_node = null;
+	current_selection_mode = "start";
+	network.selectNodes([]);
+	network.selectEdges([]);
 	
-	
-
-	$("#jsGrid").jsGrid("insertItem", rowData).done(function() {
-   			 console.log("insertion completed");
-		});
-
 }
 
 function delNetworkElement(){
 	var nodesToDel = network.getSelectedNodes();
 	var edgesToDel = network.getSelectedEdges();
 	for(var i=0; i< nodesToDel.length; ++i){
-		network_nodes.remove(nodesToDel[i]);
+		console.log(nodesToDel);
 	}
 	for(var i=0; i< edgesToDel.length; ++i){
-		network_edges.remove(edgesToDel[i])
+		console.log(edgesToDel);
 	}
 	// TODO: Delete instances from the grid
 }
@@ -141,6 +123,7 @@ function network_on_click (params) {
 		} else{
 			// User didn't click - unselect
 			currently_selected_node = null;
+			current_selection_mode = "start";
 		}
 	}
 
@@ -151,6 +134,12 @@ function network_on_double_click(params){
 	
 	// Check we're not double-clicking on a node or edge
 	if((params["nodes"].length == 0) && (params["edges"].length == 0)){
+
+		currently_selected_node = null;
+		current_selection_mode = "start";
+		network.selectNodes([]);
+		network.selectEdges([]);
+
 		currently_clicked_location = params.pointer.canvas;
 
 		var setx = $("#mynetwork").position().left + params.pointer.DOM.x;
@@ -173,14 +162,36 @@ function user_clicked_node(node){
 		current_selection_mode = "end"
 	} else{
 		if(current_selection_mode=="end"){
-			addEdgeByVarName(currently_selected_node, node, current_relation_type);
-			current_selection_mode = "start"
+			if(drawLinksWithClicks){
+				addEdgeByVarName(currently_selected_node, node, current_relation_type);
+			}
+			current_selection_mode = "start";
 			currently_selected_node= null;
 		}
 	}
 	
 
 }
+
+
+function toggleDrawLinks(){
+	console.log(drawLinksWithClicks);
+	drawLinksWithClicks = !drawLinksWithClicks;
+	console.log(drawLinksWithClicks);
+	if(drawLinksWithClicks){
+		$('#drawLinks').removeClass("btn-secondary").addClass("btn-primary");
+	} else{
+		$('#drawLinks').removeClass("btn-primary").addClass("btn-secondary");
+	}
+	if(drawLinksWithClicks){
+		currently_selected_node = null;
+		current_selection_mode = "start";
+		// remove selections
+		network.selectNodes([]);
+		network.selectEdges([]);
+	}
+}
+
 
 function networkUpdateNodeName(oldNodeName, newNodeName){
 	// we can't rely on the id being the original id, 
@@ -203,9 +214,17 @@ function netwrokUpdateEdgeType(Var1, Var2, Relation){
 }
 
 function redrawGUIfromGrid(){
+
+	// find unconnected nodes in the GUI
+	// (these won't appear yet in the grid)
+	// so we can add them back later
+	var unconnectedNodes = findUnconnectedNodes();
+
 	network_nodes = new vis.DataSet([]);
   	network_edges = new vis.DataSet([]);
 
+
+  	// make a list of all nodes and edges in the grid
   	var nodes = [];
 
 	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
@@ -220,10 +239,16 @@ function redrawGUIfromGrid(){
 		if($.inArray(this_var2,nodes)==-1){
 			nodes.push(this_var2)
 		}
-		var id = this_var1+"#"+this_var2;
-		var newEdge = getEdgeSettings(id,this_var1,this_var2,this_relation);
-		console.log(newEdge);
-		network_edges.add(newEdge);
+		var id = this_var1+"#"+this_relation+"#"+this_var2;
+		// check we haven't added this data already
+		if($.inArray(id,network_edges.getIds())!=-1){
+			// id is already in the list of ids
+			alert("Duplicate data at row "+(row+1));
+		} else{
+			var newEdge = getEdgeSettings(id,this_var1,this_var2,this_relation);
+			console.log(newEdge);
+			network_edges.add(newEdge);
+		}
 	}
 
 	for(var i=0; i < nodes.length; ++i){
@@ -234,6 +259,12 @@ function redrawGUIfromGrid(){
 		network_nodes.add(newNode);
 	}
 
+
+	// draw the unconnected nodes back in
+	for(var i=0;i<unconnectedNodes.length;++i){
+		network_nodes.add(unconnectedNodes[i]);
+	}
+
 	// redraw network
 	initialiseNetwork();
 	network.on("click", network_on_click);
@@ -241,5 +272,19 @@ function redrawGUIfromGrid(){
 
     // update progress
     saveProgressCookie();
+}
+
+function findUnconnectedNodes(){
+	// Find nodes in the GUI that are not connected with edges
+	var allNodeIds = network_nodes.getIds();
+	var nodesWithEdges= [];
+	var allEdgeIds = network_edges.getIds();
+	for(var i=0;i<allEdgeIds.length;++i){
+		nodesWithEdges.push(network_edges.get(allEdgeIds[i]).from);
+		nodesWithEdges.push(network_edges.get(allEdgeIds[i]).to);
+	}
+
+	// diff now contains what is in allNodeIds that is not in allEdgeIds
+	return($(allNodeIds).not(nodesWithEdges).get());
 }
 

@@ -63,26 +63,6 @@ var contributor_realName = "Sean Roberts";
 
 var CHIELDVersion = "";
 
-function prepareTable(){
-
-    $("#jsGrid").jsGrid({
-        width: "100%",
-        height: "400px",
- 
-        inserting: true,
-        editing: true,
-        sorting: true,
-        paging: false,
- 
-        data: [],
- 
-        fields: dataHeaders,
-
-        onItemUpdated: gridUpdated,
-        onItemInserted: redrawGUIfromGrid,
-        onItemDeleted: redrawGUIfromGrid
-    });
-}
 
 function JSONToCSVConvertor(JSONData, ShowLabel) {
     //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
@@ -348,89 +328,7 @@ function recieveVariablesFromServer(response){
 	
 }
 
-function gridUpdated(item){
-	console.log(item);
-	// The only things that will affect the network are:
-	// Variable names
-	// Direction / type of arrow
 
-	
-	var newItem = item.item;
-	var oldItem = item.previousItem;
-
-	console.log(newItem.Var1);
-	console.log(oldItem.Var1);
-
-	// TODO: check that new var1 is not equal to new Var2 
-	// (i.e. we're not adding a link to itself)
-
-	var fields = ["Var1",'Var2'];
-	for(var i=0;i<fields.length;++i){
-		var field = fields[i];
-		// Check if node names have changed
-		if(newItem[field]!= oldItem[field]){
-			// Update the GUI
-			
-			
-			var numAppearancesOld = variableAppearancesInGrid(oldItem[field]);
-			var numAppearancesNew = variableAppearancesInGrid(newItem[field]);
-
-			if(numAppearancesOld==1 && numAppearancesNew==0){
-				// only one appearance, so just change the label
-				networkUpdateNodeName(oldItem[field], newItem[field]);
-			} else{
-				// We also need to change the node name in all the other entries
-				// Give option not to do this
-				if (confirm('Update variable change for all rows?')) {
-					updateGridVariables(oldItem[field], newItem[field]);
-					networkUpdateNodeName(oldItem[field], newItem[field]);
-				} else{
-					// we're not updating all entires of a variable, so actually we need to create a new node
-					// Maybe just compeletely re-draw the vis graph based on the current gridData.
-					redrawGUIfromGrid();
-				}
-			}
-		}
-	}
-	
-
-	if(newItem.Relation != oldItem.Relation){
-		// For now, just take the easy option:
-		redrawGUIfromGrid();
-	}
-
-	saveProgressCookie();
-
-}
-
-function variableAppearancesInGrid(varName){
-	var varCount = 0;
-	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
-		if($('#jsGrid').data().JSGrid.data[row].Var1==varName){
-			varCount += 1;
-		}
-		if($('#jsGrid').data().JSGrid.data[row].Var2==varName){
-			varCount += 1;
-		}
-	}
-	return(varCount);
-}
-
-
-function updateGridVariables(oldItem,newItem){
-	// go through data and change all instances
-
-	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
-		if($('#jsGrid').data().JSGrid.data[row].Var1==oldItem){
-			$('#jsGrid').data().JSGrid.data[row].Var1 = newItem;
-		}
-		if($('#jsGrid').data().JSGrid.data[row].Var2==oldItem){
-			$('#jsGrid').data().JSGrid.data[row].Var2 = newItem;
-		}
-	}
-	// update grid
-	$("#jsGrid").jsGrid("refresh");
-}
 
 // The autocomplete helps avoid errors, but new variables won't be included
 // in the database until it is updated.
@@ -567,12 +465,16 @@ $(document).ready(function(){
 	  	if ( event.key == "Enter" || event.which==13 ) {
 	  		addVar_dynamic();
 	  		$("#searchVariablesToAdd_dynamic").hide();
+	  		$("#ui-id-2").hide();
 		} else{
 			if ( event.key == "Escape" || event.which==27 ) {
 				$("#searchVariablesToAdd_dynamic").hide();
+				$("#ui-id-2").hide();
 			}
 		}
 	  });
+	$("#searchVariablesToAdd_dynamic").val("");
+	$("#searchVariablesToAdd").val("");
 	// Bind clicks to select network nodes
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
@@ -581,7 +483,11 @@ $(document).ready(function(){
 	checkGithubUserCookie();
 	
 	// swich to first tab (contributor ID)
-	$('#navTabs a:first').tab('show')
+	$('#navTabs a:first').tab('show');
+
+	initialiseFileUpload();
+
+	$("#drawLinks").attr("onclick","toggleDrawLinks()");
 
 });
 

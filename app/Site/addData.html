@@ -11,8 +11,10 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.css" />
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid-theme.min.css" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
  
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.5.3/jsgrid.min.js"></script>
 
@@ -22,8 +24,11 @@
 <script type="text/javascript" src="js/displayBibtex.js"></script>
 <script src="js/db.js"></script>
 <script src="js/addData.js"></script>
+<script src="js/visualisation/Grid_for_addData.js"></script>
 <script src="js/visualisation/GUI_for_addData.js"></script>
 <script src="js/github/githubUsernames.js"></script>
+<script src="js/util/jquery.csv.js"></script>
+<script src="js/util/fileUpload.js"></script>
 
 </head>
 <body>
@@ -64,42 +69,61 @@
 <div class="tab-content">
 
 	<div id="contributor" role="tabpanel" class="tab-pane fade in active">
-		<div class="container">
-			<h2>Contributor:</h2>
-				<h4 id="contributorRealName">No user set</h4>
-				<h6 id="contributorUserName"></h6>
-			<h2>Change contributor:</h2>
-				<p>Enter your github username (or <a href="http://github.com/">sign up here</a>)</p>
-				<input id="contributorID"></input>
-				<button id="githubUsernameButton" onclick="checkGithubUser()" class="btn btn-primary">Find User</button>
+		<div class="container">				
+			<div class="card">
+      			<h3 class="card-header">Contributor:</h3>
+      			<div class="card-block">
+					<h3 id="contributorRealName">No user set</h3>
+					<h3 id="contributorUserName"></h3>
+	  			</div>
+			</div>
+			<div class="card">
+      			<h3 class="card-header">Change contributor:</h3>
+      			<div class="card-block">
+					<p>Enter your github username (or <a href="http://github.com/">sign up here</a>)</p>
+					<input id="contributorID"></input>
+					<button id="githubUsernameButton" onclick="checkGithubUser()" class="btn btn-primary">Find User</button>
+	  			</div>
+			</div>
+			
 		</div>
 	</div>
 
 	<div id="bibDataSubmit" role="tabpanel" class="tab-pane fade">
 		<div id="bibdiv" class="container">
-			<h4>Bibtex reference:</h4>
+			<h3>Bibtex reference:</h3>
 			<textarea id="bibtexsource" class="form-control" rows="5"></textarea>
-			<p>Formatted reference:
-			<div id="bibtexhtml" class="border border-primary rounded">No data</div>
+			<div class="card">
+				<h3 class="card-header">Formatted Reference:</h3>
+				<div class="card-block">
+					<div id="bibtexhtml" class="border border-primary rounded">No data</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div id="causal_links" role="tabpanel" class="tab-pane fade">
 		<input id="searchVariablesToAdd"></input>
 		<input id="searchVariablesToAdd_dynamic" autofocus></input>
-		<button id="addVar" onclick="addVar()" class="btn btn-primary"> + </button>
+		<button id="addVar" onclick="addVar()" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
 		<!--<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>-->
+		<button id="drawLinks" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-right"></span></button>
+		<label id="uploadCSVButton" class="btn btn-primary">
+    	<!--<span class="glyphicon glyphicon-upload"></span>-->Upload csv<input type="file" name="File Upload" id="txtFileUpload" accept=".csv" hidden>
+		</label>
 		<div id="mynetwork"></div>
 		<div id="jsGrid"></div>
 	</div>
 
 	<div id="submit" role="tabpanel" class="tab-pane fade">
-	<p>Press the button below to submit the record to the Github repository.  New records are reviewed before being added to the database.
-	<br />
-	<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
-	<br />
-	<div id="submissionResults"></div>
-
+	<div class="container">
+		<p>Press the button below to submit the record to the Github repository. 
+		<p>New records are reviewed before being added to the database.
+		<br />
+		<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
+		<br /><br />
+		<div id="submissionResults"></div>
+	</div>
 </div>
 
 </div>

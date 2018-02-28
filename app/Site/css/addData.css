@@ -17,9 +17,13 @@ ul {
 }
 
 #mynetwork {
-    width: 100%;
+    width: 90%;
     height: 300px;
+    margin-left: 5%;
+    border: solid;
 }
+
+
 
 #searchVariablesToAdd_dynamic {
     position: absolute;
@@ -31,5 +35,9 @@ ul {
 .jsgrid-cell {
     overflow: hidden;
     white-space: nowrap;
+}
+
+#uploadCSVButton{
+    margin-top: 5px;
 }
 
