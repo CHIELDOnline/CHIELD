@@ -50,6 +50,9 @@ var network_options = {
 
 function findVariablePK(varname){
   // Return the variable pk given a string name
+  if (typeof existingVariables === 'undefined') {
+    return(varname);
+  }
   var foundVar = false;
     for(var i=0; i<existingVariables.length;++i){
       if(existingVariables[i]==varname){
@@ -63,6 +66,9 @@ function findVariablePK(varname){
 
 function findVariableName(pk){
   // Return the variable name given a pk
+  if (typeof existingVariables === 'undefined') {
+    return(pk);
+  }
   var foundVar = false;
     for(var i=0; i<existingVariables_pk.length;++i){
       if(existingVariables_pk[i]==pk){
