@@ -4,6 +4,8 @@ var network = null;
 
 var convert_pks_to_string_ids = true;
 
+// Default network options
+
 var network_options = {
   //layout:{
   //  hierarchical: true
@@ -45,6 +47,30 @@ var network_options = {
        }
     }
 };
+
+function findVariablePK(varname){
+  // Return the variable pk given a string name
+  var foundVar = false;
+    for(var i=0; i<existingVariables.length;++i){
+      if(existingVariables[i]==varname){
+        // TODO: check if network_nodes contains variable already
+        // Add pk to network_nodes
+        return(existingVariables_pk[i]);
+      }
+    }
+  return(null);
+}
+
+function findVariableName(pk){
+  // Return the variable name given a pk
+  var foundVar = false;
+    for(var i=0; i<existingVariables_pk.length;++i){
+      if(existingVariables_pk[i]==pk){
+        return(existingVariables[i]);
+      }
+    }
+  return(null);
+}
 
 
 function initialiseNetwork(){
@@ -128,8 +154,9 @@ function isNumeric(value){
   return !isNaN(value - parseFloat(value));
 }
 
-function redrawGUIfromObject(obj){
+/*function redrawGUIfromObject(obj){
   // obj is a list of edges
+  // Note that this adds nodes, it does not clear nodes before adding
     console.log(obj);
     var nodes = [];
 
@@ -141,14 +168,6 @@ function redrawGUIfromObject(obj){
     var this_relation = obj[row].relation;
     var this_edge_id = obj[row].pk;
     
-    // Add the variables to the list of nodes
-    if($.inArray(this_var1,nodes)==-1){
-      nodes.push(this_var1)
-    }
-    if($.inArray(this_var2,nodes)==-1){
-      nodes.push(this_var2)
-    }
-    
     // If the edge isn't yet part of the network:
     if($.inArray(this_edge_id,network_edges.getIds())==-1){
       // create a new edge
@@ -156,26 +175,38 @@ function redrawGUIfromObject(obj){
       // Are variables strings or pks?
       if(isNumeric(this_var1) && convert_pks_to_string_ids){
         // if it is a PK, then conver to variable name
-        // (we assume that findVariablePK() is implemented, as in explore.js)
-        this_var1 = findVariablePK(this_var1);
-        this_var2 = findVariablePK(this_var2);
+        this_var1 = findVariableName(this_var1);
+        this_var2 = findVariableName(this_var2);
       }
+      var this_var1_pk = findVariablePK(this_var1);
+      var this_var2_pk = findVariablePK(this_var2);
       // If not, just keep them as strings
 
+      // Node ids are pks, so 'from' and 'to' need to be pks
       var newEdge = getEdgeSettings(
         this_edge_id,
-        this_var1,
-        this_var2,
+        this_var1_pk,
+        this_var2_pk,
         this_relation);
       // add it to the network
       network_edges.add(newEdge);
+
+      // Add the variable labels to the list of nodes
+      if($.inArray(this_var1,nodes)==-1){
+        nodes.push(this_var1)
+      }
+      if($.inArray(this_var2,nodes)==-1){
+        nodes.push(this_var2)
+      }
+
+
     }
   }
   
   // For each node
   for(var i=0; i < nodes.length; ++i){
     var npk = nodes[i];
-    if(isNumeric(npk) && convert_pks_to_string_ids){
+    if(!isNumeric(npk)){
       npk = findVariablePK(npk);
     }
     // If the node is not yet in the network:
@@ -186,6 +217,85 @@ function redrawGUIfromObject(obj){
         label:nodes[i]
       }
       // add it to the network
+      network_nodes.add(newNode);
+    }
+  }
+
+  // redraw network
+  network.redraw();
+  network.fit();
+
+}*/
+
+
+
+
+function redrawGUIfromObject(obj){
+  // obj is a list of edges
+  // Note that this adds nodes, it does not clear nodes before adding
+  console.log(obj);
+  var new_nodes_names = [];
+  var new_nodes_pk = [];
+    // For each edge
+  for(var row=0; row < obj.length; ++row){
+    // Get info
+    var this_var1 = obj[row].variable1; 
+    var this_var2 = obj[row].variable2;
+    var this_relation = obj[row].relation;
+    var this_edge_id = obj[row].pk;
+
+    var this_var1_pk = this_var1;
+    var this_var2_pk = this_var2;
+    var this_var1_name = this_var1;
+    var this_var2_name = this_var2;
+
+    // Check we have the right formats
+    if(isNumeric(this_var1_name)){
+      this_var1_name = findVariableName(this_var1_name);
+    }
+    if(isNumeric(this_var2_name)){
+      this_var2_name = findVariableName(this_var2_name);
+    }
+
+    if(!isNumeric(this_var1_pk)){
+      this_var1_pk = findVariablePK(this_var1_pk);
+    }
+    if(!isNumeric(this_var2_pk)){
+      this_var2_pk = findVariablePK(this_var2_pk);
+    }
+    
+    // If the edge isn't yet part of the network:
+    if($.inArray(this_edge_id,network_edges.getIds())==-1){
+      // create a new edge
+
+      // Node ids are pks, so 'from' and 'to' need to be pks
+      var newEdge = getEdgeSettings(
+        this_edge_id,
+        this_var1_pk,
+        this_var2_pk,
+        this_relation);
+      // add it to the network
+      network_edges.add(newEdge);
+
+      if($.inArray(this_var1_pk,new_nodes_pk)==-1){
+        new_nodes_names.push(this_var1_name);
+        new_nodes_pk.push(this_var1_pk);
+      }
+      if($.inArray(this_var2_pk,new_nodes_pk)==-1){
+        new_nodes_names.push(this_var2_name);
+        new_nodes_pk.push(this_var2_pk);
+      }
+    }
+  }
+  console.log("PKs");
+  console.log(new_nodes_pk);
+  console.log(new_nodes_names);
+  for(var i=0; i<new_nodes_pk.length;++i){
+    if($.inArray(new_nodes_pk[i],network_nodes.getIds())==-1){
+      var newNode = {
+            id:new_nodes_pk[i],
+            label:new_nodes_names[i]
+          }
       network_nodes.add(newNode);
     }
   }

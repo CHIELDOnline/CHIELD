@@ -42,7 +42,8 @@ function toggleTableDisplay(){
 	if(displayDatatable){
 		$("#links_table").show();
 		$("#toggleTableButton").html('<span class="glyphicon glyphicon-chevron-down"></span>');
-		document.getElementById("links").style.top = "70%";
+		// TODO: Should probably change css style, not just property
+		document.getElementById("links").style.top = "50%";
 	} else{
 		$("#links_table").hide();
 		$("#toggleTableButton").html('<span class="glyphicon glyphicon-chevron-up"></span>');
@@ -69,20 +70,6 @@ function filterWithMaxLengthLimit(request, response) {
         var results = $.ui.autocomplete.filter(existingVariables, request.term);
         response(results.slice(0, 8));
     }
-
-function findVariablePK(varname){
-	var foundVar = false;
-		for(var i=0; i<existingVariables.length;++i){
-			if(existingVariables[i]==varname){
-				// TODO: check if network_nodes contains variable already
-				// Add pk to network_nodes
-				return(existingVariables_pk[i]);
-			}
-		}
-	return(null);
-}
-
-
 
 
 $(document).ready(function(){

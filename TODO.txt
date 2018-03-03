@@ -13,13 +13,23 @@ Deploy:
 
 
 Explore:
-	TODO: go through each row and check that the pk isn't already included in the table
-	When nodes are added, it's supplying the id as the name, not the pk.	
-		(changed in vis_network_utils)
-	Remove nodes
+	FIX: node appears offscreen sometimes
+	Remove nodes: DRAFTED removeVar, need to add button, test
+	
 	Allow changing of network layout
 	Colour edges by: type, Cor, Stage
 	When node or edge is highlighted, filter datatable
+
+	deselect nodes after drag/zoom
+
+	Tidy up "existing variables" code: should move to db,
+	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
+
+	Colour edges by:
+		Evidence type, correltion direction
+		Number of edges
+	Find brokers
+	Find bridging theories (References that nodes in two other references)
 
 
 
@@ -51,10 +61,8 @@ Documents:
 
 Document:
 	LOW If bibtex has an abstract field, display it.
-	Display causal links graph vis.js (use general function)
 	Links table:
 		Add button to make change request via github
-	Add link to download raw data from github repository
 
 causal_links:
 
@@ -66,22 +74,6 @@ Database:
 
 Link: 
 	(Maybe not: just use Explore) Create page for link, add documents that relate to it
-
-
-Graphical display:
-	Add node
-	Expland node
-		updateGrid: Check we haven't already added the data.
-	Colour edges by:
-		Evidence type, correltion direction
-		Number of edges
-	Find shortest/ all paths between two links?
-		This requires full SQL: http://aprogrammerwrites.eu/?p=1391#.WlUQPUu3yRs
-		So maybe output the database in a compact graph format, load with python and implement Dijkstra's algorithm for listing all paths?
-	General function to display causal links given a list of links
-		Plus option to focus/emphasise a particular variable
-	Find brokers
-	Find bridging theories (References that nodes in two other references)
 
 About:
 	Add license details

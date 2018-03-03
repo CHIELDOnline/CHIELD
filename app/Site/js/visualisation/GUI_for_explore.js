@@ -40,17 +40,40 @@ function network_on_click (params) {
 }
 
 function updateRecord(response, type){
+
 	var obj = JSON.parse(response);
 	// TODO: test if obj is correctly parsed.
-	database_records = obj;
-	//console.log(database_records);
-	redrawGUIfromObject(database_records);
-	updateGrid(obj);
+
+	if(database_records===null){
+		database_records = [];
+	}
+	// In explore, this can recieve multiple updates,
+	// So need to check we're not adding stuff twice
+	var newRecords = false;
+	var currentIds = network_edges.getIds();
+	for(var i=0; i<obj.length;++i){
+		if($.inArray(obj[i].pk,currentIds)==-1){
+			database_records.push(obj[i]);
+			newRecords = true;
+		}
+	}
+
+	if(newRecords){
+		//console.log(database_records);
+		network_nodes.clear();
+		network_edges.clear();
+		redrawGUIfromObject(database_records);
+		updateGrid(database_records);
+	} else{
+		alert("No new links found");
+	}
 }
 
 
 function updateGrid(links){
 
+	// Go through each row and check that the pk
+	// isn't already included in the table
 
 	var links2 = [];
 	for(i in links){
@@ -58,9 +81,6 @@ function updateGrid(links){
 	}
 
 	if(links2.length>0){
-
-		// TODO: go through each row and check that the pk
-		// isn't already included in the table
 		dtable.rows.add(links2);
 		
 		// Redraw the table to show the new data
@@ -84,12 +104,42 @@ function addVar(varname){
 	$("#searchVariablesToAdd").hide();
 	var pk = findVariablePK(varname);
 	if(pk!=null){
-		var newNode = {
-			id:pk,
-			label:varname
-			};
-		network_nodes.add(newNode);
+		// Check it's not already displayed
+		if($.inArray(pk,network_nodes.getIds())==-1){
+			// Add node
+			var newNode = {
+				id:pk,
+				label:varname
+				};
+			network_nodes.add(newNode);
+		}
 	}
+}
+
+function removeVar(pk){
+
+	// TODO: TEST
+	network_nodes.remove(pk);
+	for(i =0;i<network_edges.length;++i){
+		var edge = network_edges.get()[i]
+		if(edge.from==pk || edge.to==pk){
+			network_edges.remove(edge.id);
+		}
+	}
+	network.redraw();
+	var varName = findVariableName(pk);
+	removeVarFromDataTable(varname);
+
+}
+
+function removeVarFromDataTable(varname){
+  table.rows().nodes().each(function(a,b) {
+    if($(a).children().eq(0).text() == varname){
+       table.rows(a).remove();
+     }
+  } );
+  table.rows().invalidate();
+  table.draw();
 }
 
 function findPaths(){
@@ -103,8 +153,8 @@ function findPaths(){
 	// And the nodes in lastSelectedNodes are in the set of selected nodes ...
 	if(selectedNodes.length==2 & 
 		lastSelectedNodes.length==2 & 
-		$.inArray(lastSelectedNodes[0], selectedNodes)>=0 &
-		$.inArray(lastSelectedNodes[1], selectedNodes)>=0){
+		($.inArray(lastSelectedNodes[0], selectedNodes)>=0) &
+		($.inArray(lastSelectedNodes[1], selectedNodes)>=0)){
 		// ... then request the links between them.
 		var var1 = lastSelectedNodes[0];
 		var var2 = lastSelectedNodes[1];
