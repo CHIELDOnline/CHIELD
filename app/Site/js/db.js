@@ -71,10 +71,6 @@ function updateLinksTable(text){
     document.getElementById(tableId+'_filter').style.display = "none";
 }
 
-function recieveVariablesFromServer(response){
-	console.log("Override me");
-}
-
 function requestVariablesFromServer(php_link){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
@@ -86,6 +82,10 @@ function requestVariablesFromServer(php_link){
 	};
 	xhttp.open("GET", php_link, true);
 	xhttp.send();
+}
+
+function recieveVariablesFromServer(response){
+	console.log("Override me");
 }
 
 function requestLinks(php_link, tableId){

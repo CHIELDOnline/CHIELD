@@ -113,6 +113,9 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
 }
 
 function submitToGitHub_viaLink(){
+
+	// This function is not used if possible
+
 	console.log("Submit");
 	var data = $('#jsGrid').jsGrid('option', 'data');
 
@@ -145,7 +148,7 @@ function submitToGitHub_viaLink(){
 		csvtext = csvtext+"\n"+csvtext;
 	}
 	
-	var filename = "test5.txt";
+	var filename = bib_key;
 	var content = encodeURI(csvtext);
 	var message = "submit";
 	var description = "desc";
@@ -217,7 +220,8 @@ function submitToGitHub(){
 		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source_processed+"\n";
 		
 		// TODO: add date
-		var contributor_data = contributor+"\t"+contributor_realName;
+		var date = Date();
+		var contributor_data = contributor+"\t"+contributor_realName+"\t"+date;
 
 		var data = contributor_data + "\n" + bibtex_data + csvtext;
 	

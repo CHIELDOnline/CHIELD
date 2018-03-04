@@ -93,10 +93,13 @@ bib = data.frame(pk = NA,author = NA,
         citation=NA, stringsAsFactors = F)
 
 contributors = data.frame(
-  username = default_contributor,
-  realname = default_contributor_realname,
-  numDocs = 0
+  username = NA,
+  realname = NA,
+  date = NA,
+  bibref = NA,
+  stringsAsFactors = F
 )
+
 
 for(f in list.dirs(treeBaseFolder)){
   files = list.files(f)
@@ -135,31 +138,23 @@ for(f in list.dirs(treeBaseFolder)){
                   bRecord, bCitation))
     
     # Contributor
+    
+    newContributors= data.frame(
+      username=default_contributor,
+      realname=default_contributor_realname,
+      date = "",
+      bibref=bKey
+    )
+    
     contributor.file = paste0(f,"/contributors.txt")
     if(file.exists(contributor.file)){
       print(f)
       cx = read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F)
-      if(ncol(cx)==2){
-        names(cx) = c("username",'realname') 
-      } else{
-        names(cx) = "username"
-        cx$realname = cx$username
-      }
-      for(i in 1:nrow(cx)){
-        unx = cx[i,]$username
-        # If user exists, increment number of docs by 1
-        if(unx %in% contributors$username){
-          contributors[contributors$username==unx,]$numDocs = contributors[contributors$username==unx]$numDocs+1
-        } else{
-          # if they don't exist, add them
-          contributors = rbind(contributors,
-                               c(cx$username,cx$realname,1))
-        }
-      }
-    } else{
-      # By default, assume it's the default contributor
-      contributors[contributors$username==default_contributor,]$numDocs = contributors[contributors$username==default_contributor]$numDocs+1
-    }
+      names(cx)[1:3] = c("username",'realname','date') 
+      cx$bibref = bKey
+      newContributors = cx
+    } 
+    contributors = rbind(contributors,newContributors)
   }
 }
 bib = bib[2:nrow(bib),]
