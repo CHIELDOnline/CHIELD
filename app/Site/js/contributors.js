@@ -11,7 +11,13 @@ dtableConfig =  {
         columns: [
         	// Combine the reference and the citekey to make a link
         	{ data: null, render: function(data,type,row){
-        		return '<a href="https://github.com/' + data[0] +'">'+data[1] + '</a>';
+                var username = data[0];
+                var realname = data[1];
+                if(username.length>0){
+        		  return('<a href="https://github.com/' + username +'">'+realname + '</a>');
+                } else{
+                    return(realname)
+                }
         	}},
         	{data: 2}
         	]
