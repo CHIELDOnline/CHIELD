@@ -9,7 +9,7 @@ dtableConfig =  {
         	// Combine the reference and the citekey to make a link
         	{ data: null, render: function(data,type,row){
         		return '<a href="variable.html?key=' + data[1] +'">'+ data[0] + '</a>';
-        	}},
+        	}}
         	]
         };
 

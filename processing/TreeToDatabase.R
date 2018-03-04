@@ -231,7 +231,7 @@ documents = read_csv("../data/db/Documents.csv",
 processes = read_csv("../data/db/Processes.csv",
                      col_types = paste(rep("c",ncol(processes)),collapse=''))
 contributors = read_csv("../data/db/Contributors.csv",
-                     col_types = "cci")
+                     col_types = "cccc")
 version = read_csv("../data/db/Version.csv",
                         col_types = "cc")
 
