@@ -97,7 +97,7 @@ def getFolder(bibref,year):
 
 	try:
 		year_num = int(year)
-		decade = str(floor(year_num/10)*10) + "s"
+		decade = str(int(floor(year_num/10))*10) + "s"
 		folder = repository_data_tree_folder + decade + "/" + str(year) + "/" + bibref + "/"
 		
 	except:

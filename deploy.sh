@@ -5,7 +5,7 @@
 # Options:
 # --nocompile   Don't run the R script that compiles the SQL database
 # --nodelete    Don't delete the exisitng server files
-# --nolocalcoyping  Don't copy files to the local directory.  
+# --nolocalcopying  Don't copy files to the local directory.  
 #                   This means that the local git repository won't be changed
 
 
@@ -27,7 +27,7 @@ do
 	;;
 		--nodelete) remove_public_files_first=false
 	;;
-	    --nolocalcoyping) copy_local_files=false
+	    --nolocalcopying) copy_local_files=false
 esac
 shift
 done
