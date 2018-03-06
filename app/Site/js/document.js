@@ -5,6 +5,7 @@
 var bibtexVisible = false;
 
 var documentKey = "";
+var shortCite = "";
 
 tableId = "links_table";
 dtableConfig = {
@@ -71,12 +72,17 @@ function updateRecord(response,type){
 		response = JSON.parse(response);
 		console.log(response[0].record);
 		document.getElementById('bibtexsource').value = response[0].record;
-		$("#documenShortCite").html(response[0].citation);
+		shortCite = response[0].citation;
+		$("#documentShortCite").html(shortCite);
 		displayBibtex();
 	}
 	if(type=="links"){
 		updateLinksTable(response); // should pass string 
 		redrawGUIfromObject(JSON.parse(response)); //should pass object
+	}
+	if(type=="contributors"){
+		response = JSON.parse(response);
+		showContributors(response);
 	}
 }
 
@@ -112,6 +118,34 @@ function openSource(){
 	window.open(url);
 }
 
+
+function raiseIssue(){
+	var title = encodeURIComponent("Issue with "+shortCite);
+	var body = encodeURIComponent("Document Key:"+documentKey);
+	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body;
+	window.open(url);
+}
+
+function showContributors(obj){
+	console.log(obj);
+
+	var t = "Contributed to CHIELD by: ";
+
+	for(var i=0;i<obj.length;++i){
+		if(obj[i].username!=""){
+			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+		} else{
+			t += obj[i].realname;
+		}
+		if(i<(obj.length-1)){
+			t += "; ";
+		}
+	}
+	console.log(t);
+	$("#contributors").html(t);
+
+}
+
 $(document).ready(function(){
 	$("#quoteDiv").hide();
 	$("#bibtexsource").hide();	
@@ -140,6 +174,7 @@ $(document).ready(function(){
 		requestRecord("php/getDoc.php", "key="+documentKey,'bib');
 		preparePage(tableId,"");
 		requestRecord("php/getLinksForDoc.php", "key="+documentKey,'links');
+		requestRecord("php/getContributorsForDoc.php", "key="+documentKey,'contributors');
 	} else{
 		// TODO: display no data message
 		console.log("no data");

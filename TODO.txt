@@ -37,9 +37,6 @@ Variable:
 	
 
 Finish addData.js
-	
-	Add date added? (so we can do recently added)
-		Add to contributor line in addData.js
 	Network:
 		Add button: warn if variable not in database?
 
@@ -61,8 +58,7 @@ Documents:
 
 Document:
 	LOW If bibtex has an abstract field, display it.
-	Links table:
-		Add button to make change request via github
+	
 
 causal_links:
 
@@ -76,9 +72,10 @@ Link:
 	(Maybe not: just use Explore) Create page for link, add documents that relate to it
 
 About:
-	Add license details
-	Contributors:
-		Contributor page shows ranked list of contributors
+	
+
+Downloads:
+	
 
 
 Coding:
@@ -91,8 +88,7 @@ Search by evolution stage
 Future:
 	List of academics, do academic network discovery
 
-Downloads:
-	Add license details
+
 
 
 Cosmetic 
