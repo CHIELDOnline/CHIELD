@@ -223,6 +223,8 @@ function submitToGitHub(){
 		var date = Date();
 		var contributor_data = contributor+"\t"+contributor_realName+"\t"+date;
 
+		console.log([contributor_data,bibtex_data,csvtext]);
+
 		var data = contributor_data + "\n" + bibtex_data + csvtext;
 	
 		var params = "data="+encodeURIComponent(data);

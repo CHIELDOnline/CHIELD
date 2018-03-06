@@ -18,7 +18,9 @@ function displayBibtex(){
     bibtexButton.className = "btn btn-link";
     bibtexButton.onclick = function(){revealBibtex();};
     var bibtexHTML = document.getElementById('bibtexhtml');
-    bibtexHTML.children[0].children[0].appendChild(bibtexButton);
+    if(bibtexHTML.children.length>0){
+    	bibtexHTML.children[0].children[0].appendChild(bibtexButton);
+	}
   }
   
 function getYear(){
