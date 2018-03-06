@@ -15,7 +15,7 @@ try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 treeBaseFolder = "../data/tree"
 
 default_contributor = "seannyD"
-default_contributor_realname = "Seán Roberts"
+default_contributor_realname = "Sean Roberts"
 
 causal_links_columns = 
   c('bibref', 'Var1','Relation','Var2',

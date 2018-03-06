@@ -41,12 +41,12 @@ function toggleTableDisplay(){
 	displayDatatable = !displayDatatable;
 	if(displayDatatable){
 		$("#links_table").show();
-		$("#toggleTableButton").html('<span class="glyphicon glyphicon-chevron-down"></span>');
+		$("#toggleTableButton").html('<i class="fas fa-chevron-down"></i>');
 		// TODO: Should probably change css style, not just property
 		document.getElementById("links").style.top = "50%";
 	} else{
 		$("#links_table").hide();
-		$("#toggleTableButton").html('<span class="glyphicon glyphicon-chevron-up"></span>');
+		$("#toggleTableButton").html('<i class="fas fa-chevron-up"></i>');
 		document.getElementById("links").style.top = "98%";
 	}
 }

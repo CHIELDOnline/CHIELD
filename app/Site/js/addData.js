@@ -352,7 +352,7 @@ function loadTempVariablesFromCookie(){
 		}
 	}
 	// now we can request the full list of variables from the server.
-	requestVariablesFromServer("php/getVariables");
+	requestVariablesFromServer("php/getVariables.php");
 }
 function saveTempVariablesToCookie(newVars){
 
