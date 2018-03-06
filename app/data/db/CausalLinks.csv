@@ -29,6 +29,20 @@
 "1666910124","dipaolo99onThe","2055697070",">","3841646903","neg",NA,"signalling","cultural evolution","model","communication game","yes",NA
 "835461488","dipaolo99onThe","3841646903",">","2454982401","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
 "567250653","dipaolo99onThe","2565747591",">","3379990269","pos",NA,"signalling","cultural evolution","model","communication game","yes",NA
+"2042562812","macneilage00onThe","839963435",">","3695104492",NA,NA,NA,NA,NA,NA,NA,"In our view, the crossing of the Rubicon for true speech was not achieved by sudden genetic change. Instead, it was the result of a two-stage development. The first stage in- volved ancestral hominids borrowing simple available biomechanical properties of the sys- tem-the frame, together with static, nonresting tongue configurations-by means of classic Darwinian descent with modification, to give the three CV co-occurrence patterns. Then, an initial increase in intersyllabic serial complexity was achieved by means of the LC pattern, as a result of a self-organizational interaction of bi- omechanics, movement initiation constraints, and culturally mediated cognition (46-48)."
+"2996957467","cangelosi01howNouns","3710423933",">","3854077640","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","recognise different food types (visually)"
+"2091904821","cangelosi01howNouns","3576688052",">","3706449238","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","approach or avoid food"
+"3982791990","cangelosi01howNouns","3854077640",">","4220921069","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"2638632206","cangelosi01howNouns","3706449238",">","435539725","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"2231269594","cangelosi01howNouns","4220921069",">","4196262906","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"1845253026","cangelosi01howNouns","435539725",">","2108824016","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
+"204957853","cangelosi01howNouns","4196262906",">","4220921069","pos",NA,"lexicon","coevolution","simulation","neural network","yes","What about link to syntax?"
+"2104816744","cangelosi01howNouns","2108824016",">","435539725","pos",NA,"lexicon","coevolution","simulation","neural network","yes",""
+"630194761","akaishi03misperception","1637233137",">","2104942409","pos",NA,"signalling","coevolution","simulation","population","yes",NA
+"844713107","akaishi03misperception","2104942409",">","2510090154","pos",NA,"signalling","coevolution","simulation","population","yes",NA
+"809749780","akaishi03misperception","1124469996",">","2104942409","neg",NA,"signalling","coevolution","simulation","population","yes",NA
+"2302906819","vogt03ecal","2518302948",">","2022600518","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
+"1375663996","vogt03ecal","2518302948",">","2697997895","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "101992049","dunbar2004gossip","4029894760",">","3794328452","pos",NA,NA,"coevolution","review","",NA,"free riders become increasingly more intrusive as social group sizes increase or society becomes more dispersed, principally because under each of these conditions free riders benefit from having large numbers of naive individuals whom they can exploit (Enquist & Leimar, 1993)"
 "1477475717","dunbar2004gossip","2840444725",">","3794328452","neg",NA,NA,"coevolution","hypothesis","",NA,"The control of free riders is largely dependent on memory of past events (occasions on which they have cheated us or reneged on implicit contracts) and an appreciation of how they might afflict others (which depends on sophisticated cognitive abilities such as theory of mind)."
 "2742174742","dunbar2004gossip","3509619980",">","3794328452","neg",NA,NA,"coevolution","hypothesis","",NA,"The control of free riders is largely dependent on memory of past events (occasions on which they have cheated us or reneged on implicit contracts) and an appreciation of how they might afflict others (which depends on sophisticated cognitive abilities such as theory of mind)."
@@ -58,20 +72,6 @@
 "1954427255","dunbar2004gossip","79899092",">","139233165","neg",NA,NA,"coevolution","review","",NA,"But group living comes at a cost in terms of the stresses it imposes on the individual. ... Monkeys and apes solve this problem by forming alliances that buffer them against these costs, thus facilitating the cohesion of large social groups. "
 "990124007","dunbar2004gossip","2537621513","^","1947936968","pos",NA,NA,"coevolution","hypothesis","",NA,"the cognitive demands of gossip are the very reason why such large brains evolved in the human lineage."
 "4063338424","dunbar2004gossip","3794328452",">","769810522","neg",NA,NA,"coevolution","hypothesis","",NA,""
-"2042562812","macneilage00onThe","839963435",">","3695104492",NA,NA,NA,NA,NA,NA,NA,"In our view, the crossing of the Rubicon for true speech was not achieved by sudden genetic change. Instead, it was the result of a two-stage development. The first stage in- volved ancestral hominids borrowing simple available biomechanical properties of the sys- tem-the frame, together with static, nonresting tongue configurations-by means of classic Darwinian descent with modification, to give the three CV co-occurrence patterns. Then, an initial increase in intersyllabic serial complexity was achieved by means of the LC pattern, as a result of a self-organizational interaction of bi- omechanics, movement initiation constraints, and culturally mediated cognition (46-48)."
-"2996957467","cangelosi01howNouns","3710423933",">","3854077640","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","recognise different food types (visually)"
-"2091904821","cangelosi01howNouns","3576688052",">","3706449238","pos",NA,"lexicon","preadaptation","simulation","neural network","yes","approach or avoid food"
-"3982791990","cangelosi01howNouns","3854077640",">","4220921069","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"2638632206","cangelosi01howNouns","3706449238",">","435539725","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"2231269594","cangelosi01howNouns","4220921069",">","4196262906","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"1845253026","cangelosi01howNouns","435539725",">","2108824016","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
-"204957853","cangelosi01howNouns","4196262906",">","4220921069","pos",NA,"lexicon","coevolution","simulation","neural network","yes","What about link to syntax?"
-"2104816744","cangelosi01howNouns","2108824016",">","435539725","pos",NA,"lexicon","coevolution","simulation","neural network","yes",""
-"630194761","akaishi03misperception","1637233137",">","2104942409","pos",NA,"signalling","coevolution","simulation","population","yes",NA
-"844713107","akaishi03misperception","2104942409",">","2510090154","pos",NA,"signalling","coevolution","simulation","population","yes",NA
-"809749780","akaishi03misperception","1124469996",">","2104942409","neg",NA,"signalling","coevolution","simulation","population","yes",NA
-"2302906819","vogt03ecal","2518302948",">","2022600518","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
-"1375663996","vogt03ecal","2518302948",">","2697997895","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "3548449579","ke04phd","4131751688",">","3449969516","pos",NA,NA,"preadaptation","review",NA,NA,NA
 "780860629","ke04phd","3449969516",">","947011756","pos",NA,NA,"preadaptation","review",NA,NA,NA
 "1680221452","macwhinney2005language","947011756",">","785671023","pos",NA,NA,"preadaptation",NA,NA,NA,NA
