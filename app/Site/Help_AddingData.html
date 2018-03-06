@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>AddingData</title>
+
+
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<p><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"></p>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#header').load('header.html', function(){
+    $('#HelpHREF').addClass('active');
+  }); 
+});
+</script>
+
+<div id="header"></div>
+
+<h1 id="toc_0">Adding data</h1>
+
+<p>You can use the web application to add data to CHIELD.  See the instcutions below.</p>
+
+<p>Alternatively, if you are familiar with github, you can fork the <a href="https://github.com/CHIELDOnline/CHIELD">CHIELD repository</a> and add files to the folder <code>data/tree/documents/</code>.  Files for a document are stored in a folder named according to the bibtex reference for the document, within sub-folders corresponding to the decade and year of publication.  See the GitHub repository for examples.</p>
+
+<h1 id="toc_1">Adding data using the web application</h1>
+
+<p>Go to the <a href="addData.html">Add Data page</a>.  Creating new data is done in four steps:</p>
+
+<ul>
+<li> Set your GitHub contributor username</li>
+<li> Add the bibtex reference</li>
+<li> Add the causal links</li>
+<li> Submit your data</li>
+</ul>
+
+<h2 id="toc_2">Set your GitHub contributor username</h2>
+
+<p>To add data to CHIELD, you&#39;ll need a GitHub account.  You can get one for free at <a href="http://github.com/">http://github.com/</a>.</p>
+
+<p>In the &quot;Contributor&quot; tab, type in your GitHub username, and click &quot;Find User&quot;.  The &quot;Contributor&quot; panel above should then display your username and your real name.  You can set your real name by <a href="https://github.com/settings/profile">editing your github profile</a>.</p>
+
+<h2 id="toc_3">Add the bibtex reference</h2>
+
+<p>In the &quot;Reference&quot; tab, paste the bibtex reference for the document into the text box.  The reference must be formatted as a bibtex record.  You can download bibtex records for many publications through e.g. Google Scholar (click the &quot;cite&quot; button, then the &quot;BibTeX&quot; link at the bottom of the popup.  Or you can create your own with tools like <a href="https://bibdesk.sourceforge.io/">BibDesk</a> or an <a href="http://truben.no/latex/bibtex/">online bibtex editor</a>.</p>
+
+<p>You are encouraged to include the abstact in the bibtex record.</p>
+
+<h2 id="toc_4">Add the causal links</h2>
+
+<p>In the &quot;Causal Links&quot; tab, there are two ways to add links: through the graphical display and through the tabular display.</p>
+
+<h3 id="toc_5">Add causal links using the graphical network display</h3>
+
+<p>The black box at the top of the &quot;Causal Links&quot; tab is a graphical display for visualising the network.  Double click anywhere in the box to create a new variable.  A text box will appear where you can type the name of the variable.  A drop-down box of existing variables will help you make a choice, but you can add a new variable if you like.  Press &quot;Enter&quot; to create the variable.</p>
+
+<p>You can also add a variable by typing a variable name in the text box to the top right of the network display box, and then clicking the + icon.</p>
+
+<p>Draw causal links between variables by clicking on the source variable, then the destination variable.  You may need to click on the white space to deselect all variables first.  Adding links this way will only work when in <em>link drawing mode</em>.  To turn off link drawing mode, click the arrow symbol in the toolbar above the display box.</p>
+
+<p>Note that all links added via the graphical display will be direct causal effects (&quot;&gt;&quot;).  You can edit this and add other information using the tabular display.</p>
+
+<p>You can drag and drop variables in the display to help see what&#39;s going on.</p>
+
+<p>You can zoom in and out using the mouse&#39;s scroll wheel.</p>
+
+<h3 id="toc_6">Add causal links using the tabular display</h3>
+
+<p>At the bottom of the page is a table that lets you manually enter causal links.  Click the green &quot;+&quot; sign on the far right to add a new row.  You can enter the <a href="Help_CausalLinkSpecifications.html">causal link specifications</a> here.  When you&#39;ve finished entering the data for a row, click the green &quot;+&quot; icon in the last column of that row to add it to the table.</p>
+
+<p>You can edit cells of existing rows by clicking on the row, editing the cells, then clicking the green tick icon which appears on the right.  The graphical display will be updated.</p>
+
+<h3 id="toc_7">Add causal links from a csv file</h3>
+
+<p>You can download and fill out the <a href="">causal links template file</a>.  This is a csv file that has the same columns as the tabular display.  </p>
+
+<p>Upload your completed template file by clicking the &quot;Upload csv&quot; button in the toolbar above the display box.  The data in the template file will replace any current data.</p>
+
+<h2 id="toc_8">Submit your data</h2>
+
+<p>When you have finished creating the data, you can submit it to the github repository by going to the &quot;Submit&quot; tab, and clicking &quot;Submit&quot;.  After a moment, you&#39;ll be given a link to the GitHub pull request.  This is a request for your data to be added to the database.  After your data is reviewed by one of the database maintainers, your data will be available on CHIELD.</p>
+
+
+
+
+</body>
+
+</html>

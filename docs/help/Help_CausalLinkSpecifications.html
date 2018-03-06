@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>Help_CausalLinkSpecification</title>
+
+
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#header").load("header.html", function(){
+    $("#HelpHREF").addClass("active");
+    createExample1Network();
+  }); 
+});
+</script>
+
+<style type="text/css">
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+</style>
+
+<div id="header"></div>
+
+<h1 id="toc_0">Causal link specification</h1>
+
+<p>CHIELD is a database of causal links.  Each record in the database is a particular causal link between two variables which is taken from an academic document.</p>
+
+<p>Below is the specification of how data is stored in CHIELD.</p>
+
+<ul>
+<li> Bibtex file specifying the details of the document</li>
+<li> csv file specifying the causal links</li>
+<li> Contirbutors file specifying who contributed the data</li>
+</ul>
+
+<p>See the page on <a href="Help_AddingData.html">adding data to CHIELD</a> for information on how to create these formats.</p>
+
+<h1 id="toc_1">Documents</h1>
+
+<p>In CHIELD, Causal links are grouped under <strong>documents</strong>.  These will usually be published journal articles.  </p>
+
+<p>The condition for entry into the database is that the document proposed a hypothesis with causal claims that relates to some part of the evolution of communication and that it is published in a peer-reviewed publication.  This could be either biological or cultural evolution (or both) at any stage in history.</p>
+
+<p>Entry into the database does not mean that the hypothesis is correct nor widely accepted nor even empirically supported.  The aim is not that the database be a single coherent, consistent theory of the evolution of communication, but a reflection of the field.</p>
+
+<p>Potential sources for documents include:</p>
+
+<ul>
+<li> <a href="http://groups.lis.illinois.edu/amag/langev/">The Language Evolution and Computation Bibliography</a></li>
+<li> <a href="https://academic.oup.com/jole">The Journal of Language Evolution</a></li>
+<li> <a href="https://benjamins.com/#catalog/journals/is/main">Interaction studies</a></li>
+<li> <a href="http://evolang.org/">EvoLang conferences</a></li>
+</ul>
+
+<p>Details of documents are stored in CHIELD in BibTex format.</p>
+
+<h1 id="toc_2">Causal links</h1>
+
+<h2 id="toc_3">Example</h2>
+
+<p>Below is an example of a causal link specification for the claim that &quot;high temperatures cause more ice-cream consumption, and more ice-cream consumption leads to more shirt stains&quot;:</p>
+
+<table>
+<thead>
+<tr>
+<th>Var1</th>
+<th style="text-align: center">Relation</th>
+<th style="text-align: center">Var2</th>
+<th style="text-align: center">Cor</th>
+<th style="text-align: center">Topic</th>
+<th style="text-align: center">Stage</th>
+<th style="text-align: center">Type</th>
+<th style="text-align: center">Confirmed</th>
+<th style="text-align: center">Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>temperature</td>
+<td style="text-align: center">&gt;</td>
+<td style="text-align: center">ice-cream consumption</td>
+<td style="text-align: center">pos</td>
+<td style="text-align: center">food</td>
+<td style="text-align: center">language change</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">&quot;high temperatures cause more ice-cream consumption&quot;</td>
+</tr>
+<tr>
+<td>ice-cream consumption</td>
+<td style="text-align: center">&gt;</td>
+<td style="text-align: center">shirt stains</td>
+<td style="text-align: center">pos</td>
+<td style="text-align: center">food</td>
+<td style="text-align: center">language change</td>
+<td style="text-align: center"></td>
+<td style="text-align: center"></td>
+<td style="text-align: center">&quot;more ice-cream consumption leads to more shirt stains&quot;</td>
+</tr>
+</tbody>
+</table>
+
+<p>Note that the first node is &quot;temperature&quot;, not &quot;high temperature&quot;: we can specify the direction of causality in the &quot;Cor&quot; field.</p>
+
+<p>This is equivalent to this causal graph:</p>
+
+<div id="icecream"></div>
+
+<script type="text/javascript">
+      createExample1Network = function(){
+      // create an array with nodes
+      var nodes = new vis.DataSet([
+        {id: 1, label: 'temperature'},
+        {id: 2, label: 'ice-cream consumption'},
+        {id: 3, label: 'shirt stains'}
+      ]);
+      // create an array with edges
+      var edges = new vis.DataSet([
+        {from: 1, to: 2,
+        arrows: {
+          to: {
+            enabled:true,
+            type: "arrow"
+          }}},
+        {from: 2, to: 3,
+        arrows: {
+          to: {
+            enabled:true,
+            type: "arrow"
+          }}}
+      ]);
+      // create a network
+      var container = document.getElementById('icecream');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+        var network_options = {
+            edges: {smooth: false},
+            nodes: {
+               color: {
+                border: "#e92b2b",
+                background: "#ffd2d2",
+                highlight:{
+                  border: "#e92b2b",
+                  background: "#ffd2d2"},
+                hover: {
+                  border: "#e92b2b",
+                  background: "#ffd2d2"}
+               }
+            }
+        };
+      var network = new vis.Network(container, data, network_options);
+     }
+</script>
+
+<p>There are many more examples in the main CHIELD database if you view the details of a particular document.</p>
+
+<h2 id="toc_4">Specification</h2>
+
+<p>Data for all fields (except the &quot;notes&quot;) should be entered as lower-case.</p>
+
+<h3 id="toc_5">Source variable (Var 1)</h3>
+
+<p>The definition of variables is, at this point, left vague.  This is because they might include a number of different kinds of concepts, depending on the research topic.  For example, some variables might be concrete and measurable such as presence of a genetic allele, but others might represent higher-level concepts like a selection pressure for efficient communication.  Also, variables might measure concepts on different scales, such as the age of an individual or the size of a population.  While this is perhaps conceptually weak, in practice the interpretations are reasonably clear.</p>
+
+<p>Variables with colons will be interpreted as sub-variables of a higher-order variable.  For example, there is a general concept of theory of mind, which could be represented by the variable <code>theory of mind</code>.  However, some documents make specific proposals about different levels of theory of mind.  These could be entered as:</p>
+
+<ul>
+<li> <code>theory of mind: level 0</code></li>
+<li> <code>theory of mind: level 1</code></li>
+<li> <code>theory of mind: level 2</code></li>
+</ul>
+
+<p>The text before the colon must match the higher-order variable, but the text after can be anything (does not have to be &quot;level X&quot;).</p>
+
+<h3 id="toc_6">Destination variable (Var 2)</h3>
+
+<p>The same format as the source variable.  Note that the destination variable cannot be the same as the source variable.</p>
+
+<h3 id="toc_7">Relation</h3>
+
+<p>The relation between the source variable and the destination variable.</p>
+
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th style="text-align: center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>X &gt; Y</td>
+<td style="text-align: center">A change in X causes a change in Y</td>
+</tr>
+<tr>
+<td>X &lt;=&gt; Y</td>
+<td style="text-align: center">X and Y Co-evolve</td>
+</tr>
+<tr>
+<td>X ~~ Y</td>
+<td style="text-align: center">X and Y are correlated</td>
+</tr>
+<tr>
+<td>X /&gt; Y</td>
+<td style="text-align: center">X does not causally influence Y</td>
+</tr>
+<tr>
+<td>X &gt;&gt; Y</td>
+<td style="text-align: center">X is a necessary precondition for Y</td>
+</tr>
+<tr>
+<td>X ~= Y</td>
+<td style="text-align: center">X is an indicator of (measured by) Y</td>
+</tr>
+</tbody>
+</table>
+
+<p>Note that there are no &quot;left-facing&quot; arrows, but you can just swap the source and destination.</p>
+
+<h3 id="toc_8">Correlation direction (Cor)</h3>
+
+<p>The causal effect can be:</p>
+
+<table>
+<thead>
+<tr>
+<th>Cor</th>
+<th style="text-align: center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td></td>
+<td style="text-align: center">(blank): no specific direction</td>
+</tr>
+<tr>
+<td>pos</td>
+<td style="text-align: center">As X appears or increases, Y appears or increaes (possibly non-linearly)</td>
+</tr>
+<tr>
+<td>neg</td>
+<td style="text-align: center">As X appears or increases, Y appears or increaes (possibly non-linearly)</td>
+</tr>
+<tr>
+<td>nm</td>
+<td style="text-align: center">The relation between X and Y is non-monotonic</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_9">Topic</h3>
+
+<p>This relates to the topic of the hypothesis.  e.g. Syntax, Semantics, Phonetics, Genetics, Population dynamics ... You can check the currenly </p>
+
+<h3 id="toc_10">Stage</h3>
+
+<p>Following <a href="http://www.cell.com/trends/cognitive-sciences/abstract/S13646613(10)00140-3">Scott-Phillips &amp; Kirby (2010)</a>, causal links can be assigned to one of four evolutionary stages:</p>
+
+<ul>
+<li> preadaptation</li>
+<li> coevolution</li>
+<li> cultural evolution</li>
+<li> language change</li>
+</ul>
+
+<p>From Scott-Phillips &amp; Kirby (2010):</p>
+
+<blockquote>
+<p>&quot;We can characterise the study of language evolution as being concerned with the emergence of language out of non-language. This involves two main processes of information transmission and change: a biological one (shown here with solid arrows) and cultural one (shown here with dashed arrows). Prior to the existence of a culturally transmitted communication system, we can consider only the various preadaptations for language (e.g. vocal learning, conceptual structure; [47). Once cultural transmission is in place, then it might operate simultaneously with biological evolution in a co-evolutionary process and/or there might be cultural evolution alone [48. In either case, we urgently need a better general understanding of how cultural transmission and social coordination shape language if we are to achieve a complete picture of the evolution of language. Once language has emerged, further changes can and do occur. This is the domain of language change and historical linguistics.&quot;</p>
+</blockquote>
+
+<h3 id="toc_11">Type</h3>
+
+<p>The type of evidence </p>
+
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th style="text-align: center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>hypothesis</td>
+<td style="text-align: center">No quantitative evidence, but a predition or logical argument</td>
+</tr>
+<tr>
+<td>review</td>
+<td style="text-align: center">Evidence cited from other work</td>
+</tr>
+<tr>
+<td>statistical</td>
+<td style="text-align: center">Statistical analysis of data</td>
+</tr>
+<tr>
+<td>experiment</td>
+<td style="text-align: center">Quantitative experiment (with conditions and manipulation)</td>
+</tr>
+<tr>
+<td>model</td>
+<td style="text-align: center">Mathematical model</td>
+</tr>
+<tr>
+<td>simulation</td>
+<td style="text-align: center">Computational or experimental simulation</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_12">Confirmed</h3>
+
+<p>Optinally, you can add whether evidence for the causal link was confirmed.  By default the assumption is that the link is considered to be true.  To mark causal links that have been tested, but no evidence was found (e.g. no significant differences), set this field to &quot;no&quot;.  To specify causal links that were shown <em>not</em> to be true, set this field to &quot;refuted&quot; (though you can also use the &quot;/&gt;&quot; specification for the Relation field).</p>
+
+<h3 id="toc_13">Notes</h3>
+
+<p>This field is free text to help understand the causal link.  Ideally, this should be a clear causal statement from the document relating the two variables.  Definitions and citations to other work are also useful here, but readers should refer to the original document rather rely on extensive notes. It could also be a summary or clarification from the coder.</p>
+
+<h1 id="toc_14">Contributors</h1>
+
+<p>Each document is associated with a contributor file.  These files are used to attribute the contributors and to track changes in the data.  The web interface automatically creates this file, and these will usually only be changed by administrators of the GitHub repository.  This can be used to indicate that one person has created the data, but another (perhaps the original author) has confirmed that it is accurate.</p>
+
+<p>The file is a tab-delimited text files with the following columns (no header):</p>
+
+<ul>
+<li> Github username</li>
+<li> Real name</li>
+<li> Date (UTC format)</li>
+<li> Note (optional)</li>
+</ul>
+
+<p>For example:</p>
+
+<div><pre><code class="language-none">SeannyD Sean Roberts    Tue Mar 06 2018 14:03:49 GMT+0000 (GMT) Initial addition of data
+SeannyD Sean Roberts    Tue Mar 07 2018 10:13:22 GMT+0000 (GMT) Fixed causal link</code></pre></div>
+
+<p>In the GitHub repository, this file is called <code>contributors.txt</code> and is stored in the same folder as the document and causal links file.  </p>
+
+
+
+
+</body>
+
+</html>
