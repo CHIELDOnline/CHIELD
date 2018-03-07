@@ -180,11 +180,12 @@
 "3700094984","evolang11_26","3904191908",">","3997944784",NA,NA,"cultural transmission","preadaptation","stone tool knapping",NA,NA,""
 "3702240846","evolang11_26","3997944784",">","2853076319",NA,NA,"","","",NA,NA,"if language ability and ToM [Theory of Mind] ability are correlated, and ToM enables different CTs [Cultural Transmission modes] , and CTs impact rates of copy error in material culture, we can measure stone tool assemblage variability to deduce language ability amongst Palaeolithic stone tool makers."
 "595826928","evolang11_37","1373634020","<=>","2224098184","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
-"572513926","evolang11_37","1982824656",">","3727917250","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
 "2425380828","evolang11_37","1373634020",">","2518302948","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
 "3749149320","evolang11_37","2518302948",">","1255251378","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
 "1510753605","evolang11_37","1255251378",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
 "3376322881","evolang11_37","3727917250",">","1918406898","pos","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"575787280","evolang11_37","1373634020",">>","3727917250","","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
+"1501798635","evolang11_37","3917483275",">>","3727917250","","2773377262","symbolic communication","coevolution","hypothesis",NA,NA,NA
 "2568287507","evolang11_39","484020457",">","2189981363","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
 "287191374","evolang11_39","2189981363",">","1905413856","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,""
 "3322535006","evolang11_39","1905413856",">","1249487448","pos",NA,"syntax","cultural evolution","experiment","artificial language learning",NA,"Greenberg universal 20"

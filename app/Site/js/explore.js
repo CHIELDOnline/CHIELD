@@ -19,8 +19,8 @@ dtableConfig =  {
         order: [[7, "asc"], [ 0, "asc" ], [2, "asc"]],
         //scrollY: "300px",
         //scrollCollapse: true,
-        paging: false,
-        //pageLength: 8,
+        paging: true,
+        pageLength: 20,
         columns: [
         		{ data: 0, visible:false},
         		{ data: 1},
@@ -140,6 +140,8 @@ $(document).ready(function(){
 			source:filterWithMaxLengthLimit,
 			"onSelect": addVar
 		});
+
+	$("#removeVariable").click(removeVariableViaNetwork);
 
 	$("#expandVariable").click(expandVariable);
 	$("#findPaths").click(findPaths);

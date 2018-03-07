@@ -65,11 +65,13 @@ causal_links:
 
 
 Database:
+	Include "^" relation
 	"immitation" -> imitation
 	Include new table linking nodes to a date in time.
 		e.g. Control of fire: 1 million ya
 	Include "Theory" table:
 		A collection of causal link ids with a name
+
 
 Link: 
 	(Maybe not: just use Explore) Create page for link, add documents that relate to it

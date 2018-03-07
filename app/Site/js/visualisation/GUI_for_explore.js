@@ -116,9 +116,15 @@ function addVar(varname){
 	}
 }
 
+function removeVariableViaNetwork(){
+	var n = network.getSelectedNodes();
+	for(var i=0;i<n.length;++i){
+		removeVar(n);
+	}
+}
+
 function removeVar(pk){
 
-	// TODO: TEST
 	network_nodes.remove(pk);
 	for(i =0;i<network_edges.length;++i){
 		var edge = network_edges.get()[i]
@@ -128,13 +134,15 @@ function removeVar(pk){
 	}
 	network.redraw();
 	var varName = findVariableName(pk);
-	removeVarFromDataTable(varname);
+	removeVarFromDataTable(varName);
 
 }
 
 function removeVarFromDataTable(varname){
+  var table  = $("#links_table").DataTable();
   table.rows().nodes().each(function(a,b) {
-    if($(a).children().eq(0).text() == varname){
+    if($(a).children().eq(0).text() == varname ||
+       $(a).children().eq(2).text() == varname){
        table.rows(a).remove();
      }
   } );

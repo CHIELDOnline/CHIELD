@@ -92,6 +92,10 @@ bib = data.frame(pk = NA,author = NA,
         year = NA,title = NA,record = NA,
         citation=NA, stringsAsFactors = F)
 
+# Super bibtex file with all documents
+# (as vector of strings so we can order it later)
+bigBibtexFile = c()
+
 contributors = data.frame(
   username = NA,
   realname = NA,
@@ -121,6 +125,12 @@ for(f in list.dirs(treeBaseFolder)){
   
     #b = readLines(paste0(f,"/",bibFile), warn = F)
     b = read.bib(paste0(f,"/",bibFile))
+    
+    # Add to big list
+    
+    bigBibtexFile = c(bigBibtexFile,paste(toBibtex(b),collapse = "\n"))
+    
+    # Extract info
     
     bKey = b$key
     bAuthor = paste(detexify(b$author),collapse='; ')
@@ -161,7 +171,13 @@ bib = bib[2:nrow(bib),]
 bib = bib[!is.na(bib$pk),]
 bib = bib[bib$pk!="",]
 rownames(bib) = bib$pk
+
 contributors = contributors[!is.na(contributors$username),]
+
+# Write big bibtex file
+bigBibtexFile = sort(bigBibtexFile)
+cat(paste(bigBibtexFile,sep="\n\n"), file="../app/Site/downloads/CHIELD.bib")
+
 
 links$pk = makePks(paste0(links$bibref,"#",links$Var1,"#",links$Var2))
 

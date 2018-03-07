@@ -13,6 +13,7 @@ function preparePage(tableIdX,php_linkX){
 	if(true){
 		$('#'+tableId+' tfoot th').each( function () {
 	        var title = $(this).text();
+	        //$(this).attr("id","Search_"+title);
 	        if(title=="Cor" || title=="Relation"){
 	        	$(this).html( '<input type="text" placeholder="Search '+title+'" style="width:30px"/>' );
 	        } else{
