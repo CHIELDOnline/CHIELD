@@ -7,9 +7,9 @@ var convert_pks_to_string_ids = true;
 // Default network options
 
 var network_options = {
-  //layout:{
-  //  hierarchical: true
-  //  }
+  layout:{
+    hierarchical: false
+  },
   interaction: {
     //zoomView:false, // prevents user from zooming
     multiselect: true
@@ -18,20 +18,9 @@ var network_options = {
       smooth: false
   },
     physics: {
-//      forceAtlas2Based: {
-//        gravitationalConstant: -26,
-//        centralGravity: 0.005,
-//        springLength: 230,
-//        springConstant: 0.18,
-//        avoidOverlap: 1.5
-//      },
-//      maxVelocity: 146,
-//      solver: 'forceAtlas2Based',
-//      timestep: 0.35,
     stabilization: {
       enabled: true,
       iterations: 1000,
-      //updateInterval: 25
     }
   },
     nodes: {
@@ -47,6 +36,16 @@ var network_options = {
        }
     }
 };
+
+var network_options_configure = {
+  filter: function (option, path) {
+              if (path.indexOf('hierarchical') !== -1) {
+                  return true;
+              }
+              return false;
+          },
+          showButton:false
+}
 
 function findVariablePK(varname){
   // Return the variable pk given a string name
@@ -150,7 +149,7 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation){
     //newEdge.arrows = "to;from";
     newEdge.arrows.from.enabled  = true;
   }
-  if(Relation=="~="){
+  if(Relation=="~=" || Relation =="=~"){
     newEdge.arrows.to["type"] = "circle";
   }
   return(newEdge);
@@ -311,4 +310,41 @@ function redrawGUIfromObject(obj){
   network.fit();
 
 }
+
+
+//  Network layout
+
+var layoutPresets = {
+  hierarchical: {
+    layout : { hierarchical: {
+      direction: "LR",
+      sortMethod: "hubsize",
+      levelSeparation: 250
+    }
+  },
+    physics: {
+      hierarchicalRepulsion : {
+        nodeDistance: 50
+    }}
+  }
+}
+
+
+
+
+function changeNetworkLayout(type){
+
+  preset_options = layoutPresets[type];
+  if(Object.keys(preset_options).length>0){
+    // User Jquery extend to modify options from defaults
+    // Note: this might already happen with just `network.setOptions(preset_options)`
+    network.setOptions($.extend( {}, network_options, preset_options ));    
+  } else{
+    // restore defaults
+    network.setOptions(network_options);
+  }
+}
+
+
+
 

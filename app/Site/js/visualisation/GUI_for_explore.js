@@ -14,7 +14,7 @@ var network_last_click_time = 0;
 
 var network_container = null;
 
-
+var optionsVisible = false;
 
 function network_on_click (params) {
 	console.log("CLICK");
@@ -171,3 +171,20 @@ function findPaths(){
 
 }
 
+
+
+function toggleOptions(){
+
+	optionsVisible = !optionsVisible;
+	//var configWrapper = document.getElementsByClassName('vis-configuration-wrapper')[0];
+	//var nsettings = document.getElementById("networkSettings");
+	//nsettings.insertBefore(configWrapper,null);
+	if(optionsVisible){
+		$("#networkSettings").show()
+		$(".vis-configuration-wrapper").show()
+	} else{
+		$("#networkSettings").hide()
+		$(".vis-configuration-wrapper").hide()
+	}
+
+}

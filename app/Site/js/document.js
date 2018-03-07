@@ -55,6 +55,20 @@ dtableConfig = {
         ]
     };
 
+
+var document_network_layout_options = {
+	hierarchical: {
+	    direction: "LR",
+	    sortMethod: "directed",
+	    levelSeparation: 250
+		}
+	};
+var document_network_physics_options = {
+	hierarchicalRepulsion : {
+		nodeDistance: 50
+	}};
+
+
 function openQuote(text){
 	text = decodeURI(text);
 	$("#quoteDivText").html(text);
@@ -154,16 +168,8 @@ $(document).ready(function(){
 	}); 
 
 
-	network_options.layout = {
-                    hierarchical: {
-                        direction: "LR",
-                        sortMethod: "directed",
-                        levelSeparation: 250
-                    }
-                };
-    network_options.physics.hierarchicalRepulsion = {
-    	nodeDistance: 50
-    };
+	network_options.layout = document_network_layout_options;
+	network_options.physics = document_network_physics_options;
 
     console.log(network_options);
 

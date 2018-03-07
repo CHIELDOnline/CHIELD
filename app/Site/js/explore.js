@@ -146,5 +146,14 @@ $(document).ready(function(){
 	$("#expandVariable").click(expandVariable);
 	$("#findPaths").click(findPaths);
 
+	// Allow manual changes to options
+
+	$("#networkSettingsButton").click(toggleOptions);
+
+	network_options.configure = network_options_configure;
+	network.setOptions(network_options);
+
+	$(".vis-configuration-wrapper").hide();
+
 
 });

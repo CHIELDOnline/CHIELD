@@ -42,6 +42,38 @@
 	
 }
 
+
+.vis-configuration-wrapper{
+	position: fixed;
+	top: 29%;
+	right: 0px;
+	width: 30%;
+	z-index: 9;
+	background: white;
+	border-style:solid;
+	bottom: 10px;
+	overflow-y: auto;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#networkSettingsButton{
+	right: 2%;
+	position: fixed;
+	z-index: 10;
+}
+
+#networkSettings{
+	position: fixed;
+	top: 10%;
+	height: 20%;
+	right: 0px;
+	width: 30%;
+	border-style: solid;
+	background: white;
+	display: none;
+}
+
 /* Autocomplete stuff */
 
 #ui-id-1 {
