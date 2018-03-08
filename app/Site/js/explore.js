@@ -145,6 +145,9 @@ $(document).ready(function(){
 
 	$("#expandVariable").click(expandVariable);
 	$("#findPaths").click(findPaths);
+	$("#fit").click(function(){
+		network.fit()
+	})
 
 	// Allow manual changes to options
 

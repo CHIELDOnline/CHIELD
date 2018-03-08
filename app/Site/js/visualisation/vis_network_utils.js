@@ -114,6 +114,11 @@ function initialiseNetwork(){
         network.fit();
     });
 
+  // After dragging, deselect all nodes
+  // This means that the "onclick" method of keeping track of which
+  network.on("dragEnd", function(params){
+    network.selectNodes([]);
+  });
 
 }
 

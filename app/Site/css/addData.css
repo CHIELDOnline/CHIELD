@@ -23,7 +23,9 @@ ul {
     border: solid;
 }
 
-
+#searchVariablesToAdd{
+    margin-left: 5%;
+}
 
 #searchVariablesToAdd_dynamic {
     position: absolute;
@@ -38,6 +40,7 @@ ul {
 }
 
 #uploadCSVButton{
-    margin-top: 5px;
+    margin-top: 8px;
+    padding: 6px;
 }
 

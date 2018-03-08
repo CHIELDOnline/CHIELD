@@ -409,6 +409,10 @@ function loadProgressCookie(){
 	updateBib();
 	$("#SavedDataAlert").hide();
 
+	// Show the causal links tab
+	$('.nav-tabs a[href="#causal_links"]').tab('show');
+	redrawGUIfromGrid();
+
 }
 
 // Warn user before unloading

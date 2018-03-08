@@ -48,11 +48,11 @@ In the "Causal Links" tab, there are two ways to add links: through the graphica
 
 ###  Add causal links using the graphical network display
 
-The black box at the top of the "Causal Links" tab is a graphical display for visualising the network.  Double click anywhere in the box to create a new variable.  A text box will appear where you can type the name of the variable.  A drop-down box of existing variables will help you make a choice, but you can add a new variable if you like.  Press "Enter" to create the variable.
+The black box at the top of the "Causal Links" tab is a graphical display for visualising the network.  Double click anywhere in the box to **create a new variable**.  A text box will appear where you can type the name of the variable.  A drop-down box of existing variables will help you make a choice, but you can add a new variable if you like.  Press "Enter" to create the variable.
 
 You can also add a variable by typing a variable name in the text box to the top right of the network display box, and then clicking the + icon.
 
-Draw causal links between variables by clicking on the source variable, then the destination variable.  You may need to click on the white space to deselect all variables first.  Adding links this way will only work when in *link drawing mode*.  To turn off link drawing mode, click the arrow symbol in the toolbar above the display box.
+**Draw causal links** between variables by clicking on the source variable, then the destination variable.  You may need to click on the white space to deselect all variables first.  Adding links this way will only work when in *link drawing mode*.  To turn off link drawing mode, click the arrow symbol in the toolbar above the display box.
 
 Note that all links added via the graphical display will be direct causal effects (">").  You can edit this and add other information using the tabular display.
 
@@ -65,11 +65,13 @@ You can zoom in and out using the mouse's scroll wheel.
 
 At the bottom of the page is a table that lets you manually enter causal links.  Click the green "+" sign on the far right to add a new row.  You can enter the [causal link specifications](Help_CausalLinkSpecifications.html) here.  When you've finished entering the data for a row, click the green "+" icon in the last column of that row to add it to the table.
 
-You can edit cells of existing rows by clicking on the row, editing the cells, then clicking the green tick icon which appears on the right.  The graphical display will be updated.
+You can **edit cells** of existing rows by clicking on the row, editing the cells, then clicking the green tick icon which appears on the right.  The graphical display will be updated.
+
+You can **remove causal links** by clicking on a row in the table, then clicking the red X icon which appears on the right.
 
 ###  Add causal links from a csv file
 
-You can download and fill out the [causal links template file]().  This is a csv file that has the same columns as the tabular display.  
+You can download and fill out the [causal links template file](downloads/CausalLinks_Template.csv).  This is a csv file that has the same columns as the tabular display.  
 
 Upload your completed template file by clicking the "Upload csv" button in the toolbar above the display box.  The data in the template file will replace any current data.
 

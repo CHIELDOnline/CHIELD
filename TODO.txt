@@ -1,13 +1,16 @@
 Online version:
 
 
+Help
+	Add how to delete nodes in AddData.html
+	Offer template csv in help section.
+
 php:
 	In Variable, make sure process name is being passed correctly in the PHP
 	Fix list binding in SQL statements
 
 python script:
-	Why is it not iterating over all files?
-		Maybe related to two pull requests?
+	
 
 Deploy:
 
@@ -16,18 +19,16 @@ Explore:
 	FIX: node appears offscreen sometimes
 	Remove nodes: DRAFTED removeVar, need to add button, test
 	
-	Allow changing of network layout
-	Colour edges by: type, Cor, Stage
-	When node or edge is highlighted, filter datatable
+	Allow changing of network layout:
+		Colour edges by: type, Cor, Stage
+		FIX: Fix edge styles as curved:false
+		Display number of edges as thickness?
 
 	deselect nodes after drag/zoom
 
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
 
-	Colour edges by:
-		Evidence type, correltion direction
-		Number of edges
 	Find brokers
 	Find bridging theories (References that nodes in two other references)
 
@@ -37,20 +38,10 @@ Variable:
 	
 
 Finish addData.js
-	Network:
-		Add button: warn if variable not in database?
 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
-
-
-Help:
-	Offer template csv in help section.
-
-Cookies:
-	TEST Store temporary variable names in cookie
-	TEST Store version number
 
 
 Documents: 
@@ -71,6 +62,7 @@ Database:
 		e.g. Control of fire: 1 million ya
 	Include "Theory" table:
 		A collection of causal link ids with a name
+		Is this just the "Process" field?
 
 
 Link: 
@@ -80,7 +72,7 @@ About:
 	
 
 Downloads:
-	
+	Offer template csv.
 
 
 Coding:
@@ -90,10 +82,9 @@ Coding:
 
 Search by evolution stage
 
+
 Future:
 	List of academics, do academic network discovery
-
-
 
 
 Cosmetic 
