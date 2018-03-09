@@ -149,6 +149,11 @@ $(document).ready(function(){
 		network.fit()
 	})
 
+	$("#viewAll").click(function(){
+		showLoader();
+		requestRecord(php_link,"keylist=ALL",'links');
+	})
+
 	// Allow manual changes to options
 
 	$("#networkSettingsButton").click(toggleOptions);
@@ -157,6 +162,6 @@ $(document).ready(function(){
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();
-
+	hideLoader();
 
 });

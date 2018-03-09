@@ -67,6 +67,7 @@ function updateRecord(response, type){
 	} else{
 		alert("No new links found");
 	}
+	hideLoader();
 }
 
 
@@ -97,6 +98,7 @@ function expandVariable() {
 
 	var selectedNodes = network.getSelectedNodes();
 	var keylist = selectedNodes.join(",");
+	showLoader();
 	requestRecord(php_link,"keylist="+keylist,'links');
 }
 
@@ -166,6 +168,7 @@ function findPaths(){
 		// ... then request the links between them.
 		var var1 = lastSelectedNodes[0];
 		var var2 = lastSelectedNodes[1];
+		showLoader();
 		requestRecord("php/getPaths.php","var1="+var1+"&var2="+var2,'links');
 	}
 
@@ -187,4 +190,12 @@ function toggleOptions(){
 		$(".vis-configuration-wrapper").hide()
 	}
 
+}
+
+function showLoader(){
+	$(".loader").show();
+}
+
+function hideLoader(){
+	$(".loader").hide();
 }

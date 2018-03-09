@@ -2,12 +2,11 @@ Online version:
 
 
 Help
-	Add how to delete nodes in AddData.html
-	Offer template csv in help section.
+	Can include multiple topics seperated by ";"
+		
 
 php:
-	In Variable, make sure process name is being passed correctly in the PHP
-	Fix list binding in SQL statements
+	
 
 python script:
 	
@@ -16,15 +15,12 @@ Deploy:
 
 
 Explore:
-	FIX: node appears offscreen sometimes
-	Remove nodes: DRAFTED removeVar, need to add button, test
-	
+		
 	Allow changing of network layout:
 		Colour edges by: type, Cor, Stage
 		FIX: Fix edge styles as curved:false
 		Display number of edges as thickness?
-
-	deselect nodes after drag/zoom
+	After request, draw "loading" and remove "loading" when recieved data.
 
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
@@ -64,6 +60,8 @@ Database:
 		A collection of causal link ids with a name
 		Is this just the "Process" field?
 
+	Fix Hunley, Cabana, Merriwether & Long (2007)
+	Fix Dall'Asta, Baronchelli, Barrat & Loreto (2006)
 
 Link: 
 	(Maybe not: just use Explore) Create page for link, add documents that relate to it
