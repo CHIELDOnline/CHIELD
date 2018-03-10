@@ -13,6 +13,7 @@ SELECT s.[name] variable1,
        Topic,
        Stage,
        Type,
+       Confirmed,
        Notes
   FROM causal_links l
     LEFT JOIN variables s ON l.Var1 = s.pk 

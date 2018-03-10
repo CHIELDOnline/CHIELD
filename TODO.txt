@@ -3,6 +3,8 @@ Online version:
 
 Help
 	Can include multiple topics seperated by ";"
+	Edit help about removing rows in AddData: Click "bin" icon
+	Edit help about editing rows in AddData: Click pencil icon
 		
 
 php:
@@ -20,7 +22,7 @@ Explore:
 		Colour edges by: type, Cor, Stage
 		FIX: Fix edge styles as curved:false
 		Display number of edges as thickness?
-	After request, draw "loading" and remove "loading" when recieved data.
+
 
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
@@ -33,11 +35,12 @@ Explore:
 Variable:
 	
 
-Finish addData.js
+addData:
 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
+	
 
 
 Documents: 
@@ -46,6 +49,7 @@ Documents:
 Document:
 	Remove "Processes" field
 	LOW If bibtex has an abstract field, display it.
+	Freeze first three columns
 	
 
 causal_links:

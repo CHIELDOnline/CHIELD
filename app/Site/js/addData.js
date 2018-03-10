@@ -8,6 +8,8 @@ var characterLengthLimit = 7800;
 var existingVariables = [];
 var tmpVariables = []; // loaded from cookie
 
+var editingExistingData = false;
+
 var relationTypes = [
 	{ Name: ">", Id: ">" },
 	{ Name: "<=>", Id: "<=>" },
@@ -62,6 +64,24 @@ var contributor = "seannyD";
 var contributor_realName = "Sean Roberts";
 
 var CHIELDVersion = "";
+
+
+
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 
 function JSONToCSVConvertor(JSONData, ShowLabel) {
@@ -219,9 +239,12 @@ function submitToGitHub(){
 	
 		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source_processed+"\n";
 		
-		// TODO: add date
+		// Contributor data
 		var date = Date();
 		var contributor_data = contributor+"\t"+contributor_realName+"\t"+date;
+		if(editingExistingData){
+			contributor_data += "\tEDIT";
+		}
 
 		console.log([contributor_data,bibtex_data,csvtext]);
 
@@ -414,6 +437,43 @@ function loadProgressCookie(){
 	redrawGUIfromGrid();
 
 }
+
+// ------------------------------------------- //
+// Fill the grid with data from the database
+//  so the user can edit stuff
+function loadDataFromDocument(){
+	editingExistingData = true;
+	var documentKey = getUrlParameter('document');
+	console.log(documentKey);
+	if(documentKey!=''){
+		// request links
+		requestRecord("php/getLinksForDoc.php", "key="+documentKey,'links');
+		// request bib data
+		requestRecord("php/getDoc.php", "key="+documentKey,'bib');
+	}
+}
+
+function updateRecord(response, type){
+	console.log(type);
+	console.log(JSON.parse(response));
+	// override this
+	if(type=='bib'){
+		response = JSON.parse(response);
+		console.log(response[0].record);
+		document.getElementById('bibtexsource').value = response[0].record;
+	}
+	if(type=='links'){
+		response = JSON.parse(response);
+		for(var i=0;i<response.length;++i){
+			addRowToGrid(response[i]);
+		}
+		redrawGUIfromGrid();
+		network.fit();
+		$('.nav-tabs a[href="#causal_links"]').tab('show');
+	}
+}
+
+// ------------------------------------------- //
 
 // Warn user before unloading
 

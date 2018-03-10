@@ -70,10 +70,16 @@ def processFile(file):
 	# Causal links
 	createFile(githubFolder + bibref+"_links.csv","Add "+bibref, causal_links, branchName)
 	# Contributor
-	createFile(githubFolder + "contributors.txt", "Add contributors", contributor, branchName)
+	contributorFilename = "contributors.txt"
+	if contributor.count("EDIT")>0:
+		contributorFilename = "editor.txt"
+	createFile(githubFolder + contributorFilename, "Add contributors", contributor, branchName)
 	
 	# Create pull request
-	pull = createPullRequest("Add "+bibref, "Add "+bibref+" from "+contributor,branchName)
+	pullType = "Add "
+	if contributor.count("EDIT")>0:
+		pullType = "Edit "
+	pull = createPullRequest(pullType+bibref, pullType+bibref+" from "+contributor,branchName)
 	
 	pull_url = "https://github.com/"+githubUser + "/" + githubRepoName + "/pull/" + str(pull.number)
 	
