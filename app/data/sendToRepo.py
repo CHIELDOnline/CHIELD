@@ -68,7 +68,7 @@ def processFile(file):
 	# Bibtex file
 	createFile(githubFolder + bibref+".bib","Add "+bibref, bib_source, branchName)
 	# Causal links
-	createFile(githubFolder + bibref+"_links.csv","Add "+bibref, causal_links, branchName)
+	createFile(githubFolder + bibref+".csv","Add "+bibref, causal_links, branchName)
 	# Contributor
 	contributorFilename = "contributors.txt"
 	if contributor.count("EDIT")>0:
