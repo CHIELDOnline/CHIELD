@@ -118,7 +118,29 @@ def createBranch(target_branch):
 	#print("Created branch "+target_branch + ":" + sb.commit.sha)
 
 def createFile(file_path,commit_title,content, target_branch):
-	repo.create_file(file_path, commit_title, content, target_branch)
+	# Check if file exists
+	sha = get_file_sha(file_path)
+	if sha == "No existing file" or sha=="":
+		repo.create_file(file_path, commit_title, content, target_branch)
+	else:
+		repo.update_file(file_path, commit_title, content, sha, branch=target_branch)
+
+#e.g. https://api.github.com/repos/CHIELDOnline/CHIELD/git/trees/master:data/tree/documents/2010s/2017/Blasi_Moran_SLE_2017
+#repo._requester.requestJsonAndCheck("GET", repo.url + "/git/trees/master:"+"data/tree/documents/2010s/2017/Blasi_Moran_SLE_2017")
+def get_file_sha(file_path):	
+	file_folder = file_path[:file_path.rindex("/")]
+	if file_folder.startswith("/"):
+		file_folder= file_folder[1:]
+	file_name = file_path[(file_path.rindex("/")+1):]
+	header, resp = repo._requester.requestJsonAndCheck("GET", repo.url + "/git/trees/master:"+file_folder)
+	if not "tree" in resp.keys():
+		return("No existing file")
+	tree = resp["tree"]
+	for node in tree:
+		if node['path']==file_name:
+			return(node["sha"])
+	return("")
+
 
 def createPullRequest(pull_title, pull_request_text,target_branch):
 	pull = repo.create_pull(title=pull_title, body=pull_request_text, base="master",head=target_branch)
@@ -138,8 +160,8 @@ if len(files)>0:
 	g = Github(githubUser, githubAccessToken)
 	repo = g.get_user().get_repo(githubRepoName)
 	
-for file in files:
-	processFile(file)
+for f in files:
+	processFile(f)
 
 
 # Instance of github with authentication
