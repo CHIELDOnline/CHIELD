@@ -304,7 +304,8 @@ function redrawGUIfromObject(obj){
     if($.inArray(new_nodes_pk[i],network_nodes.getIds())==-1){
       var newNode = {
             id:new_nodes_pk[i],
-            label:new_nodes_names[i]
+            label:new_nodes_names[i],
+            supergroup:getSupergroup(new_nodes_names[i])
           }
       network_nodes.add(newNode);
     }
@@ -349,6 +350,82 @@ function changeNetworkLayout(type){
     network.setOptions(network_options);
   }
 }
+
+function findSupergroups(){
+  var n = network_nodes.get(network_nodes.getIds());
+  var supergroups = [];
+  for(var i=0; i<n.length;++i){
+    if(n[i].label.indexOf(":")>=0){
+      var sg = getSupergroup(n[i].label);
+      if($.inArray(sg,supergroups)==-1){
+        supergroups.push(sg)
+      }
+    }
+  }
+  return(supergroups);
+}
+
+function getSupergroup(varname){
+  if(varname==undefined){
+      return(varname);
+  }
+  // Change e.g. "population size: ancient" to "population size"
+  v1colpos = varname.indexOf(":");
+  if(v1colpos>=0){
+    return(varname.substring(0,v1colpos));
+  }
+  return(varname);
+}
+
+function variablesArePartOfSameSubgroup(varname1,varname2){
+  return(getSupergroup(varname1) === getSupergroup(varname2));
+}
+
+
+function clusterByGroup() {
+  // Copied from http://visjs.org/examples/network/other/clustering.html
+
+  // TODO: Set "supergroup" option for all nodes
+  // TODO: Find all supergroups
+  var supergroups = findSupergroups();
+
+  // Then iterate over them add cluster
+  for(var i=0;i<supergroups.length;++i){
+      var sg = supergroups[i];
+      var clusterOptionsByData = {
+              joinCondition: function (childOptions) {
+                  console.log(childOptions.supergroup);
+                  console.log(sg);
+                  return variablesArePartOfSameSubgroup(childOptions.supergroup,sg); 
+              },
+              /*processProperties: function (clusterOptions, childNodes, childEdges) {
+                  var totalMass = 0;
+                  for (var i = 0; i < childNodes.length; i++) {
+                      totalMass += childNodes[i].mass;
+                  }
+                  clusterOptions.mass = totalMass;
+                  return clusterOptions;
+              },*/
+              clusterNodeProperties: {
+                //id: 'cluster:' + color, 
+                borderWidth: 3, 
+                shape: 'database', 
+                //color:color, 
+                label:supergroups[i]
+              }
+          };
+      network.cluster(clusterOptionsByData);
+    }
+
+    // if we click on a node, and it's a cluster - open it
+    network.on("selectNode", function(params) {
+      if (params.nodes.length == 1) {
+          if (network.isCluster(params.nodes[0]) == true) {
+              network.openCluster(params.nodes[0]);
+          }
+      }
+    });
+  }
 
 
 

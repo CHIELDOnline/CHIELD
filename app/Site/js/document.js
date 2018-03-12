@@ -11,7 +11,7 @@ tableId = "links_table";
 dtableConfig = {
 		ordering: true,
         lengthChange: false,
-
+        //fixedColumns: {leftColumns: 3},
     	columnDefs: [
     		{
 	    		targets: 6,
@@ -158,6 +158,11 @@ function showContributors(obj){
 	console.log(t);
 	$("#contributors").html(t);
 
+}
+
+function editDocumentData(){
+	var url = "addData.html?document="+documentKey;
+	window.open(url);
 }
 
 $(document).ready(function(){

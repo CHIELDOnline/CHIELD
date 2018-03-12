@@ -32,6 +32,13 @@ function network_on_click (params) {
 			lastSelectedNodes.push(params["nodes"][i]);
 	   	 }
 	   }
+
+	   if (params.nodes.length == 1) {
+          if (network.isCluster(params.nodes[0]) == true) {
+              network.openCluster(params.nodes[0]);
+          }
+       }
+
 	} else{
 	// 	// User didn't click - unselect
 	 	lastSelectedNodes = [];

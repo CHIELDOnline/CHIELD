@@ -10,8 +10,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
- 
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.4/css/fixedColumns.dataTables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>-->
 
 <script type="text/javascript" src="js/visualisation/vis.js"></script>
 <link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
@@ -42,28 +44,27 @@
   <br />
   <h3>Causal links
     <button onclick="openSource()" class="btn btn-link">Source</button>
+    <button onclick="editDocumentData()" class="btn btn-primary">Edit data</button>
     <button onclick="raiseIssue()" class="btn btn-danger">Raise an issue</button>
   </h3>
   <div id="contributors"></div>
   <table id="links_table" class="table table-striped table-bordered">
     <thead>
-      <th>Variable 1</th>
-      <th>Relation</th>
-      <th>Variable 2</th>
-      <th>Cor</th>
-      <th>Process</th>
-      <th>Topic</th>
-      <th>Stage</th>
-      <th>Type</th>
-      <th>Confirmed</th>
-      <th>Notes</th>
+      <th data-toggle="tooltip" title="First variable">Variable 1</th>
+      <th data-toggle="tooltip" title="Type of causal relation">Relation</th>
+      <th data-toggle="tooltip" title="Second variable">Variable 2</th>
+      <th data-toggle="tooltip" title="Direction of the correlation (positive, negative ...)">Cor</th>
+      <th data-toggle="tooltip" title="Research topic">Topic</th>
+      <th data-toggle="tooltip" title="Stage of evolution">Stage</th>
+      <th data-toggle="tooltip" title="Study method type">Type</th>
+      <th data-toggle="tooltip" title="Did the study confirm the hypothesised link?">Confirmed</th>
+      <th data-toggle="tooltip" title="Notes (click to see)">Notes</th>
     </thead>
     <tfoot>
       <th>Variable 1</th>
       <th>Relation</th>
       <th>Variable 2</th>
       <th>Cor</th>
-      <th>Process</th>
       <th>Topic</th>
       <th>Stage</th>
       <th>Type</th>

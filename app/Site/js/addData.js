@@ -40,9 +40,29 @@ var confirmTypes = [
 	{Name:"no", Id: "no"}
 ];
 
+/* Attempt to add tooltips to jsgrid
+tooltipHeaders = {
+	Var1: "First variable",
+	Relation: "Type of relation between variables",
+	Var2: "Second variable",
+	Cor: "Direction of correlation",
+	Topic: "Research topic",
+	Stage: "Evolution stage",
+	Type: "Type of study (experiment, model ...)",
+	Confirmed: "Did the study confirm the hypothesis?",
+	Notes: "Quotes from the paper"
+}
+
+function headerTooltip(){ 
+	console.log(this.name);
+	console.log(tooltipHeaders[this.name]);
+	return $("<div>").prop("title", tooltipHeaders[this.name]).text(this.title); 
+}
+// Then add "headerTemplate: headerTooltip" to dataHeaders property
+*/
 
 var dataHeaders = [
-            { name: "Var1", type: "text", width: 150 },
+            { name: "Var1", type: "text", width: 150},
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150 },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
@@ -60,8 +80,8 @@ var bib_year = "";
 var bib_key = "";
 var bib_source = "";
 
-var contributor = "seannyD";
-var contributor_realName = "Sean Roberts";
+var contributor = "";
+var contributor_realName = "";
 
 var CHIELDVersion = "";
 
@@ -83,6 +103,12 @@ function getUrlParameter(sParam) {
     }
 };
 
+function showTab(id){
+	$('.nav-tabs a[href="#'+id+'"]').tab('show');
+	$("#ContributorAlert").hide();
+	$("#ReferenceAlert").hide();
+	$("#CausalLinksAlert").hide();
+}
 
 function JSONToCSVConvertor(JSONData, ShowLabel) {
     //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
@@ -191,12 +217,32 @@ function submitToGitHub_viaLink(){
 	
 }
 
+function validateSubmission(){
+	var valid = true;
+	if(contributor ==""){
+		$("#ContributorAlert").show();
+		valid = false;
+	}
+	if(!updateBib()){// also updates bib
+		$("#ReferenceAlert").show();
+		valid = false;
+	}
+	if($("#jsGrid").data().JSGrid.data.length==0){
+		$("#CausalLinksAlert").show();
+		valid = false;
+	}
+
+	return(valid);
+}
+
 
 function submitToGitHub(){
 
-	updateBib();
+	$("#ContributorAlert").hide();
+	$("#ReferenceAlert").hide();
+	$("#CausalLinksAlert").hide();
 
-	if(bib_key!=""){
+	if(validateSubmission()){// also updates bib
 
 		$("#submissionResults").html("Submitting...");
 		$("#submitToGitHub").hide();
@@ -271,9 +317,7 @@ function submitToGitHub(){
 		http.send(params);
 	
 	} else{
-		$("#submissionResults").html("Error: There is something wrong with the bibtex file");
 		$("#submitToGitHub").show();
-		// TODO: show bibtex tab
 	}
 }
 
@@ -284,14 +328,16 @@ function updateBib(){
 	var bib = document.getElementById("bibtexsource").value;
 	var bib_object = bibtex2JSON(bib);
 	if(bib_object=="Cannot parse bibtex file"){
-		document.getElementById("bibtexhtml").innerHTML = "Cannot parse bibtext file";
+		document.getElementById("bibtexhtml").innerHTML = "Cannot parse bibtex file";
 		bib_year = "";
 		bib_key = "";
 		bib_source = "";
+		return(false);
 	} else{
 		bib_year = bib_object[0].properties.year;
 		bib_key = bib_object[0].label;
 		bib_source = bib;
+		return(true);
 	}
 }
 
@@ -354,11 +400,14 @@ function recieveVariablesFromServer(response){
 			});
 	};
 
-	
+	// It's now safe to load other things, like for editing a document
+	// (loadDataFromDocument() does nothing if there is no url parameter "document")
+	loadDataFromDocument();
 }
 
 
-
+// ------------------------------------------- //
+//      COOKIES
 // The autocomplete helps avoid errors, but new variables won't be included
 // in the database until it is updated.
 // So we store newly created variables in a cookie, and add them to the 
@@ -438,14 +487,20 @@ function loadProgressCookie(){
 
 }
 
+function userAcceptCookies(){
+	Cookies.set("acceptCookies","YES");
+	$("#CookieAlert").hide();
+}
+
 // ------------------------------------------- //
 // Fill the grid with data from the database
 //  so the user can edit stuff
 function loadDataFromDocument(){
-	editingExistingData = true;
+	// Check if url parameter specifies document to add from
 	var documentKey = getUrlParameter('document');
 	console.log(documentKey);
-	if(documentKey!=''){
+	if((documentKey!==undefined) && (documentKey!='')){
+		editingExistingData = true;
 		// request links
 		requestRecord("php/getLinksForDoc.php", "key="+documentKey,'links');
 		// request bib data
@@ -468,8 +523,9 @@ function updateRecord(response, type){
 			addRowToGrid(response[i]);
 		}
 		redrawGUIfromGrid();
-		network.fit();
 		$('.nav-tabs a[href="#causal_links"]').tab('show');
+		$('#SavedDataAlert').hide();
+		network.fit();
 	}
 }
 
@@ -486,7 +542,7 @@ window.addEventListener("beforeunload", function (e) {
 	    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
 	}
 });
-
+// ------------------------------------------- //
 
 $(document).ready(function(){
 
@@ -500,6 +556,13 @@ $(document).ready(function(){
 		// Ask user if they want to load old data
 		$("#SavedDataAlert").hide();
 	}
+	if(Cookies.get("acceptCookies")!=undefined){
+		$("#CookieAlert").hide();
+	}
+
+	$("#ContributorAlert").hide();
+	$("#ReferenceAlert").hide();
+	$("#CausalLinksAlert").hide();
 
 	// getVersion checks whether cookies are up to date.
 	// if it is, then we load temp cookies from server

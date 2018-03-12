@@ -7,6 +7,8 @@ function recieveGithubUser(response){
 	if((user.length<3) || (user.login == undefined) || (user.login==null)){
 		$("#contributorRealName").html("No user found");
 		$("#contributorUserName").html("");
+		contributor = "";
+		contributor_realName = "";
 
 	} else{
 		var username = user.login;

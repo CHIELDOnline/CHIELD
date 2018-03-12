@@ -42,6 +42,7 @@
 <div id="CookieAlert" class="alert alert-warning alert-dismissable">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Warning:</strong> This site uses cookies.
+  <button class="btn btn-success" onclick="userAcceptCookies()">OK</button>
 </div>
 <div id="SavedDataAlert" class="alert alert-danger alert-dismissable">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -119,12 +120,16 @@
 
 	<div id="submit" role="tabpanel" class="tab-pane fade">
 	<div class="container">
+		<h3>Submission</h3>
 		<p>Press the button below to submit the record to the Github repository. 
 		<p>New records are reviewed before being added to the database.
-		<br />
+		<br /><br />
 		<button id="submitToGitHub" class="btn btn-success" type="button">Submit</button>
 		<br /><br />
 		<div id="submissionResults"></div>
+		<div id="ContributorAlert" class="alert alert-warning">You have not set the contributor ID <button onclick="showTab('contributor')" class="btn btn-warning">Fix</button></div>
+		<div id="ReferenceAlert" class="alert alert-warning">There is a problem with the reference <button onclick="showTab('bibDataSubmit')" class="btn btn-warning">Fix</button></div>
+		<div id="CausalLinksAlert" class="alert alert-warning">There are no causal links <button onclick="showTab('causal_links')" class="btn btn-warning">Fix</button></div>
 	</div>
 </div>
 
