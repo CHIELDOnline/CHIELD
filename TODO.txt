@@ -22,8 +22,7 @@ python script:
 	
 
 Deploy:
-	Check for no strange characters in text (especially Notes)
-	TEST make a simple -s option for server (--nocompile --nolocalcopying)
+	
 
 Explore:
 		
