@@ -17,7 +17,6 @@ SELECT s.[name] variable1,
   FROM causal_links l
     LEFT JOIN variables s ON l.Var1 = s.pk 
     LEFT JOIN variables s2 ON l.Var2 = s2.pk
-    LEFT JOIN processes p ON l.Process = p.pk
   WHERE l.bibref=:key
 EOT;
 

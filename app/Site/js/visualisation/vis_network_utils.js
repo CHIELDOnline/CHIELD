@@ -157,6 +157,17 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation){
   if(Relation=="~=" || Relation =="=~"){
     newEdge.arrows.to["type"] = "circle";
   }
+  if(Relation=="^"){
+      // Swap order
+      var tmp = newEdge.from
+      newEdge.from = newEdge.to;
+      newEdge.to = tmp;
+      newEdge.arrows.to.enabled = false;
+      newEdge.arrows.from.enabled  = true;
+      newEdge.dashes = true;
+      newEdge.color = "green";
+      newEdge.smooth = true;
+  }
   return(newEdge);
 }
 

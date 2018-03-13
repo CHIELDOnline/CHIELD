@@ -22,7 +22,8 @@ python script:
 	
 
 Deploy:
-	make a simple -s option for server (--nocompile --nolocalcopying)
+	Check for no strange characters in text (especially Notes)
+	TEST make a simple -s option for server (--nocompile --nolocalcopying)
 
 Explore:
 		
@@ -66,7 +67,7 @@ causal_links:
 
 
 Database:
-	Include "^" relation
+	Include "^" relation?
 
 	
 	"immitation" -> imitation
@@ -83,14 +84,11 @@ Database:
 	Fix measured by: decide on ~= or =~ 
 
 
-Link: 
-	(Maybe not: just use Explore) Create page for link, add documents that relate to it
-
 About:
 	
 
 Downloads:
-	Offer template csv.
+	
 
 Search by evolution stage
 

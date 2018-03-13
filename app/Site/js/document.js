@@ -14,7 +14,7 @@ dtableConfig = {
         //fixedColumns: {leftColumns: 3},
     	columnDefs: [
     		{
-	    		targets: 6,
+	    		targets: 5,
 	    		createdCell: function (td, cellData, rowData, row, col) {
 	    			switch(cellData){
 	    				case "language change":

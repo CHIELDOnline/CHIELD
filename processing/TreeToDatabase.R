@@ -1,12 +1,12 @@
-# Take the CHILED database in a directory tree format and build a SQL database
+# Take the CHILED database in a directory tree format and build an SQL database
 
-library(digest)
-library(stringr)
-library(dplyr)
-library(dbplyr)
-library(RSQLite)
-library(bibtex)
-library(readr)
+suppressWarnings(suppressMessages(library(digest)))
+suppressWarnings(suppressMessages(library(stringr)))
+suppressWarnings(suppressMessages(library(dplyr)))
+suppressWarnings(suppressMessages(library(dbplyr)))
+suppressWarnings(suppressMessages(library(RSQLite)))
+suppressWarnings(suppressMessages(library(bibtex)))
+suppressWarnings(suppressMessages(library(readr)))
 
 source("detexify.R")
 
@@ -33,6 +33,19 @@ hex_to_int = function(h) {
 
 str_to_int = function(s){
   hex_to_int(digest(s,algo='xxhash32'))
+}
+
+checkCharacters = function(X){
+  sapply(X,function(Z){
+    x = try(nchar(Z))
+    if(grepl("invalid multibyte string",x)){
+      print("WARNING: invalid multibyte string")
+      print(x)
+      print(Z)
+    }
+    
+  })
+  return("Finished Checking")
 }
 
 makePks = function(base){
@@ -112,59 +125,69 @@ for(f in list.dirs(treeBaseFolder)){
     linkFile = files[grepl("*.csv",files)][1]
     bibFile = files[grepl("*.bib",files)][1]
                      
-    l = read.csv(paste0(f,"/",linkFile), stringsAsFactors = F)
+    l = read.csv(paste0(f,"/",linkFile), stringsAsFactors = F, encoding = 'utf-8',fileEncoding = 'utf-8')
+    
+    # Remove rows without basic data
     l = l[complete.cases(l[,c("Var1","Var2")]),]
-    for(colx in causal_links_columns){
-      if(!colx %in% names(l)){
-        l[,colx] = ""
+    l$Var1[l$Var1==""] = NA
+    l$Var2[l$Var2==""] = NA
+    l = l[complete.cases(l[,c("Var1","Var2")]),]
+    
+    # Check if there is actually any data left
+    if(nrow(l)>0){
+      for(colx in causal_links_columns){
+        if(!colx %in% names(l)){
+          l[,colx] = ""
+        }
       }
+      l = l[,causal_links_columns]
+      # Add links to list of links
+      links = rbind(links,l)
+    
+      #b = readLines(paste0(f,"/",bibFile), warn = F)
+      b = read.bib(paste0(f,"/",bibFile),encoding = 'utf-8')
+      
+      checkCharacters(readLines(paste0(f,"/",bibFile),warn = F))
+      
+      # Add to big list
+      
+      bigBibtexFile = c(bigBibtexFile,paste(toBibtex(b),collapse = "\n"))
+      
+      # Extract info
+      
+      bKey = b$key
+      bAuthor = paste(detexify(b$author),collapse='; ')
+      bYear = b$year
+      bTitle = detexify(b$title)
+      bRecord = paste(as.character(toBibtex(b)),collapse="\n")
+      #bCitation = format(b, style = "html")
+      # remove link text
+      #bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
+      # Citation is now e.g. Ackley & Littman (1994)
+      bCitation = getShortCitation(b)
+      
+      bib = rbind(bib,
+                  c(bKey, bAuthor, bYear, bTitle,
+                    bRecord, bCitation))
+      
+      # Contributor
+      
+      newContributors= data.frame(
+        username=default_contributor,
+        realname=default_contributor_realname,
+        date = "",
+        bibref=bKey
+      )
+      
+      contributor.file = paste0(f,"/contributors.txt")
+      if(file.exists(contributor.file)){
+        cx = read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F)
+        names(cx)[1:3] = c("username",'realname','date') 
+        cx$bibref = bKey
+        newContributors = cx
+      } 
+      contributors = rbind(contributors,newContributors)
     }
-    l = l[,causal_links_columns]
-    # Add links to list of links
-    links = rbind(links,l)
-  
-    #b = readLines(paste0(f,"/",bibFile), warn = F)
-    b = read.bib(paste0(f,"/",bibFile))
-    
-    # Add to big list
-    
-    bigBibtexFile = c(bigBibtexFile,paste(toBibtex(b),collapse = "\n"))
-    
-    # Extract info
-    
-    bKey = b$key
-    bAuthor = paste(detexify(b$author),collapse='; ')
-    bYear = b$year
-    bTitle = detexify(b$title)
-    bRecord = paste(as.character(toBibtex(b)),collapse="\n")
-    #bCitation = format(b, style = "html")
-    # remove link text
-    #bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
-    # Citation is now e.g. Ackley & Littman (1994)
-    bCitation = getShortCitation(b)
-    
-    bib = rbind(bib,
-                c(bKey, bAuthor, bYear, bTitle,
-                  bRecord, bCitation))
-    
-    # Contributor
-    
-    newContributors= data.frame(
-      username=default_contributor,
-      realname=default_contributor_realname,
-      date = "",
-      bibref=bKey
-    )
-    
-    contributor.file = paste0(f,"/contributors.txt")
-    if(file.exists(contributor.file)){
-      print(f)
-      cx = read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F)
-      names(cx)[1:3] = c("username",'realname','date') 
-      cx$bibref = bKey
-      newContributors = cx
-    } 
-    contributors = rbind(contributors,newContributors)
   }
 }
 bib = bib[2:nrow(bib),]
@@ -181,10 +204,6 @@ cat(paste(bigBibtexFile,sep="\n\n"), file="../app/Site/downloads/CHIELD.bib")
 
 links$pk = makePks(paste0(links$bibref,"#",links$Var1,"#",links$Var2))
 
-if(length(unique(links$pk))!=nrow(links)){
-  print("Warning: Duplicate pks?")
-}
-
 # Documents
 
 documents = bib
@@ -199,7 +218,8 @@ variables = data.frame(
   pk = makePks(vars),
   name = vars
 )
-
+variables$pk = as.character(variables$pk)
+variables$name = as.character(variables$name)
 # Processes
 
 pro.names = unique(links$Process)
@@ -220,17 +240,20 @@ causal.links$Var2 = variables[match(causal.links$Var2, variables$name),]$pk
 
 causal.links$Process = processes[match(causal.links$Process, processes$name),]$pk
 
+print("Checking notes")
+checkCharacters(causal.links$Notes)
+
 # Write csv files
 
-write.csv(causal.links,"../data/db/CausalLinks.csv", row.names = F)
-write.csv(variables,"../data/db/Variables.csv", row.names = F)
-write.csv(documents,"../data/db/Documents.csv", row.names = F)
-write.csv(processes,"../data/db/Processes.csv", row.names = F)
-write.csv(contributors,"../data/db/Contributors.csv", row.names = F)
+write.csv(causal.links,"../data/db/CausalLinks.csv", row.names = F, fileEncoding = "utf-8")
+write.csv(variables,"../data/db/Variables.csv", row.names = F, fileEncoding = "utf-8")
+write.csv(documents,"../data/db/Documents.csv", row.names = F, fileEncoding = "utf-8")
+write.csv(processes,"../data/db/Processes.csv", row.names = F, fileEncoding = "utf-8")
+write.csv(contributors,"../data/db/Contributors.csv", row.names = F, fileEncoding = "utf-8")
 
 version = getVersion()
 
-write.csv(version, "../data/db/Version.csv", row.names = F)
+write.csv(version, "../data/db/Version.csv", row.names = F, fileEncoding = "utf-8")
 
 #db <- dbConnect(SQLite(), dbname="Test.sqlite")
 #dbWriteTable(conn = db, name = "Student", value = Student, row.names = FALSE)

@@ -5,8 +5,9 @@
 # Options:
 # --nocompile   Don't run the R script that compiles the SQL database
 # --nodelete    Don't delete the exisitng server files
-# --nolocalcopying  Don't copy files to the local directory.  
+# --nolocalcopying  Don't copy files to the local app directory (but do copy to server directory).  
 #                   This means that the local git repository won't be changed
+# -s			Shortcut for --nocompile --nolocalcopying 
 
 
 # Default path to python (overwritten in deploy_config.sh)
@@ -28,9 +29,15 @@ do
 		--nodelete) remove_public_files_first=false
 	;;
 	    --nolocalcopying) copy_local_files=false
+	;;
+		-s) 
+			compile=false
+			copy_local_files=false
+	;;
 esac
 shift
 done
+
 
 if [ -z "$server_public_folder" ]
 then
@@ -44,7 +51,7 @@ if [ "$compile" = true ]
 then
 	#echo "Skipping database compilation ..."
 	cd processing
-	R -f TreeToDatabase.R
+	R  --slave -f TreeToDatabase.R
 	cd ..
 fi
 
