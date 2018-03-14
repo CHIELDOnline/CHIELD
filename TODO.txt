@@ -2,7 +2,7 @@ Online version:
 
 
 Help
-	Re-render help
+
 	Add tips for coding causal links
 		Try to re-use variable names
 			Measurable things
@@ -22,8 +22,6 @@ Deploy:
 	
 
 Explore:
-
-	How to colour "~" node? (dashed?)
 		
 	Colour edges by: Publication
 
@@ -50,9 +48,7 @@ addData:
 
 	If problem with submission, offer to download csv file.
 
-	When editing, formatted bib reference does not update immediately.
-
-	Change arrows to be straight
+	Re-fit network after loading saved data
 
 	What if user loads saved data from cookie, but this is editing? 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
@@ -75,7 +71,6 @@ causal_links:
 
 Database:
 
-	Fix Hunley, Cabana, Merriwether & Long (2007)
 	Fix Dall'Asta, Baronchelli, Barrat & Loreto (2006)
 
 	Add important people: Kirby, Hurford etc.

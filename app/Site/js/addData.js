@@ -355,6 +355,18 @@ function updateBib(){
 	}
 }
 
+function offerCausalLinksAsCSV(){
+	var data = $('#jsGrid').jsGrid('option', 'data');
+	var csvData = JSONToCSVConvertor(data, true);
+	var link = document.createElement('a');
+	link.style.display = 'none';
+	link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(csvData);
+	link.download = "CausalLinks.csv"
+	document.body.appendChild(link);
+  	link.click();
+ 	document.body.removeChild(link);
+}
+
 function finishedSubmission(link){
 	if(link.startsWith("https")){
 		$("#submissionResults").html(
@@ -366,8 +378,9 @@ function finishedSubmission(link){
 		Cookies.remove("GridSaveData");
 		Cookies.remove("BibTexSaveData");
 	} else{
+
 		$("#submissionResults").html(
-			'There may be an error with the submission, please check data and try again.'
+			'<p>There may be an error with the submission, please check data and try again.</p><p>Or you can <a href="#" onclick="offerCausalLinksAsCSV()">Download the causal links as a csv file</a> in order to work offline.</p>'
 			);
 		$("#submitToGitHub").show();
 	}
@@ -506,7 +519,10 @@ function userAcceptCookies(){
 	$("#CookieAlert").hide();
 }
 
-// ------------------------------------------- //
+// ------------------- //
+//       Editing
+// ------------------- //
+
 // Fill the grid with data from the database
 //  so the user can edit stuff
 function loadDataFromDocument(){
@@ -523,21 +539,26 @@ function loadDataFromDocument(){
 }
 
 function updateRecord(response, type){
-	console.log(type);
-	console.log(JSON.parse(response));
-	// override this
 	if(type=='bib'){
+		// recieving bib details from server: 
+		//   add to bibtexsource
 		response = JSON.parse(response);
-		console.log(response[0].record);
 		document.getElementById('bibtexsource').value = response[0].record;
+		// Update bib and key variables
+		updateBib();
 	}
 	if(type=='links'){
+		// receiving causal links details from server
 		response = JSON.parse(response);
+		// Add row one at a time
 		for(var i=0;i<response.length;++i){
 			addRowToGrid(response[i]);
 		}
+		// Redraw grid
 		redrawGUIfromGrid();
+		// Show the causal links tab
 		$('.nav-tabs a[href="#causal_links"]').tab('show');
+		// Hide the saved data message
 		$('#SavedDataAlert').hide();
 		network.fit();
 	}
@@ -605,6 +626,7 @@ $(document).ready(function(){
 	$('#submitToGitHub').attr('onclick', 'submitToGitHub()');
 
 	// Initialise the visual network
+	network_options.edges.smooth = false;
 	initialiseNetwork();
 
 	// Bind clicks to making list of variables appear
