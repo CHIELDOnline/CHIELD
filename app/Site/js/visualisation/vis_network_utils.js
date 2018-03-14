@@ -195,6 +195,17 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
   if(Relation=="~=" || Relation =="=~"){
     newEdge.arrows.to["type"] = "circle";
   }
+
+  if(Relation=="~"){
+    newEdge.dashes = true;
+    newEdge.arrows.to.enabled = false;
+    newEdge.color = "#b3b6b7";
+  }
+
+  if(Relation=="/>"){
+    newEdge.arrows.to["type"] = "bar";
+  }
+
   if(Relation=="^"){
       // Swap order
       var tmp = newEdge.from
@@ -208,6 +219,7 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
       }
       newEdge.smooth = true;
   }
+  newEdge.causalColor = newEdge.color;
   return(newEdge);
 }
 
@@ -426,13 +438,14 @@ function applyNetworkColorScheme(scheme){
 function getEdgeColor(edge){
   // Causal colour scheme
   if(edge_colour_scheme=="causal"){
-    if(edge.causal_relation == ">>"){
+    /*if(edge.causal_relation == ">>"){
       return("red");
     }
     if(edge.causal_relation == "^"){
       return("green");
     }
-    return("black");
+    return("black");*/
+    return(edge.causalColor);
   }
 
   // Correlational colour scheme
