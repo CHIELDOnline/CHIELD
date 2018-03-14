@@ -22,6 +22,8 @@ Deploy:
 	
 
 Explore:
+
+	How to colour "~" node? (dashed?)
 		
 	Colour edges by: Publication
 
@@ -45,6 +47,9 @@ Variable:
 
 addData:
 	TEST: does adding new data still work?
+
+	When editing, formatted bib reference does not update.
+
 	What if user loads saved data from cookie, but this is editing? 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
@@ -65,11 +70,6 @@ causal_links:
 
 
 Database:
-
-	"~~" change to "~"
-	change all "=~" to "~="
-	
-	"immitation" -> imitation
 
 	Fix Hunley, Cabana, Merriwether & Long (2007)
 	Fix Dall'Asta, Baronchelli, Barrat & Loreto (2006)

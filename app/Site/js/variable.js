@@ -52,7 +52,7 @@ dtableConfig = {
         			console.log(row);
         			if(type==='display'){
         				if(data!=null){
-        					return '<a href="document.html?key=' + row[10] +'">'+data + '</a>';
+        					return '<a href="document.html?key=' + row[9] +'">'+data + '</a>';
         				}
         			}
         			return(null);

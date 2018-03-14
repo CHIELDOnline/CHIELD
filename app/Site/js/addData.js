@@ -28,6 +28,7 @@ var correlationTypes = [
 ];
 
 var studyTypeTypes = [
+	{ Name: "", Id: ""},
 	{ Name: "experiment", Id: "experiment"},
 	{ Name: "review", Id: "review"},
 	{ Name: "model", Id: "model"},
