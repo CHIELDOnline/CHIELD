@@ -14,13 +14,13 @@ function preparePage(tableIdX,php_linkX){
 		$('#'+tableId+' tfoot th').each( function () {
 	        var title = $(this).text();
 	        //$(this).attr("id","Search_"+title);
-	        if(title=="Cor" || title=="Relation"){
-	        	$(this).html( '<input type="text" placeholder="Search '+title+'" style="width:30px"/>' );
+	        if(title=="Cor" || title=="Relation" || title=="Confirmed"){
+	        	$(this).html( '<input type="text" placeholder="Search" style="width:50px"/>' );
 	        } else{
 	        	if(title=="Notes"){
-	        		$(this).html( '<input type="text" placeholder="Search '+title+'" style="width:50px"/>' );
+	        		$(this).html( '<input type="text" placeholder="Search" style="width:100%"/>' );
 	        	} else{
-	        		$(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+	        		$(this).html( '<input type="text" placeholder="Search" style="width:100%"/>' );
 	        		//$(this).html( '<input type="text" placeholder="Search" />' );
 	        	}
 	        }

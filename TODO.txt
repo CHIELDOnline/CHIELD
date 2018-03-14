@@ -24,9 +24,11 @@ Deploy:
 Explore:
 		
 	Allow changing of network layout:
-		Colour edges by: type, Cor, Stage
-		FIX: Fix edge styles as curved:false
-		Display number of edges as thickness?
+		Colour edges by: Publication
+
+	Add button to find all direct links between two nodes
+
+	Somehow link edges to data
 
 
 	Tidy up "existing variables" code: should move to db,

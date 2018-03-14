@@ -76,7 +76,7 @@ $(document).ready(function(){
 	// Add the header
 	// TODO: Minimise or autohide this?
 	$("#header").load("header.html", function(){
-		$("#AddDataHREF").addClass("active");
+		$("#ExploreHREF").addClass("active");
 	}); 
 
 	// Request full list of variables to suggest to user

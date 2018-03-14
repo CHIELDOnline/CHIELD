@@ -11,6 +11,7 @@ tableId = "links_table";
 dtableConfig = {
 		ordering: true,
         lengthChange: false,
+        autoWidth: true,
         //fixedColumns: {leftColumns: 3},
     	columnDefs: [
     		{
