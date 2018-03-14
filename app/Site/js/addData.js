@@ -434,7 +434,8 @@ function recieveVariablesFromServer(response){
 
 
 // ------------------------------------------- //
-//      COOKIES
+//                  COOKIES
+// ------------------------------------------- //
 // The autocomplete helps avoid errors, but new variables won't be included
 // in the database until it is updated.
 // So we store newly created variables in a cookie, and add them to the 
@@ -481,7 +482,7 @@ function recieveVersion(response){
 		// clear variable list from cookies.
 		Cookies.set('tmp.variables', []);
 		// get list of variables from server
-		requestVariablesFromServer("php/getVariables");
+		requestVariablesFromServer("php/getVariables.php");
 	}
 	CHIELDVersion = versionObj[0].gitRevision;
 
@@ -496,6 +497,7 @@ function saveProgressCookie(){
 	var d = $("#jsGrid").data().JSGrid.data;
 	Cookies.set("GridSaveData",d);
 	Cookies.set("BibTexSaveData",$("#bibtexsource").val());
+	Cookies.set("editingExistingData",editingExistingData);
 }
 
 function loadProgressCookie(){
@@ -508,9 +510,12 @@ function loadProgressCookie(){
 	updateBib();
 	$("#SavedDataAlert").hide();
 
+	editingExistingData = Cookies.get("editingExistingData")=="true";
+
 	// Show the causal links tab
 	$('.nav-tabs a[href="#causal_links"]').tab('show');
 	redrawGUIfromGrid();
+	setTimeout("network.fit()",1000);
 
 }
 

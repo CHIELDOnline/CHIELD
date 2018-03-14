@@ -551,7 +551,7 @@ function getSupergroup(varname){
   // Change e.g. "population size: ancient" to "population size"
   v1colpos = varname.indexOf(":");
   if(v1colpos>=0){
-    return(varname.substring(0,v1colpos));
+    return(varname.substring(0,v1colpos).trim());
   }
   return(varname);
 }

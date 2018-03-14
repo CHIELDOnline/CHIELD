@@ -31,7 +31,6 @@ Explore:
 
 	Add edges by document
 
-
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
 
@@ -46,16 +45,9 @@ Variable:
 addData:
 	TEST: does adding new data still work?
 
-	If problem with submission, offer to download csv file.
-
-	Re-fit network after loading saved data
-
-	What if user loads saved data from cookie, but this is editing? 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
-
-
 
 Documents: 
 
