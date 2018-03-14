@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>Help_CausalLinkSpecification</title>
+<title>Help_CausalLinkSpecifications</title>
 
 
 
@@ -75,6 +75,8 @@ table {
 
 <p>See the page on <a href="Help_AddingData.html">adding data to CHIELD</a> for information on how to create these formats.</p>
 
+<p>If you think the specification could be improved, you could <a href="https://github.com/CHIELDOnline/CHIELD/issues/new">raise an issue</a> (requires a free GitHub account).</p>
+
 <h1 id="toc_1">Documents</h1>
 
 <p>In CHIELD, Causal links are grouped under <strong>documents</strong>.  These will usually be published journal articles.  </p>
@@ -98,7 +100,11 @@ table {
 
 <h2 id="toc_3">Example</h2>
 
-<p>Below is an example of a causal link specification for the claim that &quot;high temperatures cause more ice-cream consumption, and more ice-cream consumption leads to more shirt stains&quot;:</p>
+<p>Below is an example of a causal link specification for the following claim:</p>
+
+<blockquote>
+<p>&quot;We hypothesise that high temperatures cause more ice-cream consumption, and more ice-cream consumption leads to more shirt stains.&quot;:</p>
+</blockquote>
 
 <table>
 <thead>
@@ -122,8 +128,8 @@ table {
 <td style="text-align: center">ice-cream consumption</td>
 <td style="text-align: center">pos</td>
 <td style="text-align: center">food</td>
-<td style="text-align: center">language change</td>
 <td style="text-align: center"></td>
+<td style="text-align: center">hypothesis</td>
 <td style="text-align: center"></td>
 <td style="text-align: center">&quot;high temperatures cause more ice-cream consumption&quot;</td>
 </tr>
@@ -133,8 +139,8 @@ table {
 <td style="text-align: center">shirt stains</td>
 <td style="text-align: center">pos</td>
 <td style="text-align: center">food</td>
-<td style="text-align: center">language change</td>
 <td style="text-align: center"></td>
+<td style="text-align: center">hypothesis</td>
 <td style="text-align: center"></td>
 <td style="text-align: center">&quot;more ice-cream consumption leads to more shirt stains&quot;</td>
 </tr>
@@ -241,7 +247,7 @@ table {
 <td style="text-align: center">X and Y Co-evolve</td>
 </tr>
 <tr>
-<td>X ~~ Y</td>
+<td>X ~ Y</td>
 <td style="text-align: center">X and Y are correlated</td>
 </tr>
 <tr>
@@ -256,10 +262,18 @@ table {
 <td>X ~= Y</td>
 <td style="text-align: center">X is an indicator of (measured by) Y</td>
 </tr>
+<tr>
+<td>X ^ Y</td>
+<td style="text-align: center">X exerts an evolutionary selection pressure on Y</td>
+</tr>
 </tbody>
 </table>
 
 <p>Note that there are no &quot;left-facing&quot; arrows, but you can just swap the source and destination.</p>
+
+<p>Some of the syntax is borrowed from the <a href="http://lavaan.ugent.be/">lavaan</a> R package. This package uses &quot;=~&quot; for an <em>indicator</em> relationship, but this can cause problems when typing in some spreadsheet applications, so it has been reversed to &quot;~=&quot; (the meaning is the same).</p>
+
+<p>The <em>selection pressure</em> relation &quot;^&quot; is an experimental relation type.  It is included to support evolutionary hypotheses.  Often, causal relations apply to immediate or short-term consequences for individuals.  For example, <a href="http://localhost/CHIELD/Site/document.html?key=dunbar2004gossip">Dunbar (2004)</a> reviews work showing that grooming releases endorphins.  However, sometimes these don&#39;t capture the overall message of a theory.  For example, <a href="http://localhost/CHIELD/Site/document.html?key=dunbar2004gossip">Dunbar (2004)</a> suggests that &quot;the cognitive demands of gossip are the very reason why such large brains evolved in the human lineage&quot;.  The implication is not that if an individual gossips more, then their brain gets bigger.  Rather, gossip is useful for forming alliances, which has an effect on fitness.  As a consequence, evolution selects individuals with bigger brains to support more gossip.  This seems like a different kind of causal argument than, for example, grooming releasing endorphins.  Moreover, this seems like a central point for Dunbar, but it is not captured by any of the explicitly mentioned causal links.  The &quot;^&quot; relation is intended for these situations.</p>
 
 <h3 id="toc_8">Correlation direction (Cor)</h3>
 
@@ -284,7 +298,7 @@ table {
 </tr>
 <tr>
 <td>neg</td>
-<td style="text-align: center">As X appears or increases, Y appears or increaes (possibly non-linearly)</td>
+<td style="text-align: center">As X appears or increases, Y disappears or decreaes (possibly non-linearly)</td>
 </tr>
 <tr>
 <td>nm</td>
@@ -295,7 +309,7 @@ table {
 
 <h3 id="toc_9">Topic</h3>
 
-<p>This relates to the topic of the hypothesis.  e.g. Syntax, Semantics, Phonetics, Genetics, Population dynamics ... You can check the currenly </p>
+<p>This relates to the topic of the hypothesis (e.g. syntax, semantics, phonetics, genetics, population dynamics etc.).  Topics should be lower-case.  Multiple topics can be entered, seperated by a semicolon &quot;;&quot;.</p>
 
 <h3 id="toc_10">Stage</h3>
 
@@ -316,7 +330,7 @@ table {
 
 <h3 id="toc_11">Type</h3>
 
-<p>The type of evidence </p>
+<p>The type of evidence used to support the causal link.  This is important information for spotting where causal theories could be more robustly supported.  Note that it need not be supported by direct evidence.</p>
 
 <table>
 <thead>
@@ -328,20 +342,12 @@ table {
 
 <tbody>
 <tr>
-<td>hypothesis</td>
-<td style="text-align: center">No quantitative evidence, but a predition or logical argument</td>
+<td>experiment</td>
+<td style="text-align: center">Quantitative experiment (with conditions and manipulation)</td>
 </tr>
 <tr>
 <td>review</td>
 <td style="text-align: center">Evidence cited from other work</td>
-</tr>
-<tr>
-<td>statistical</td>
-<td style="text-align: center">Statistical analysis of data</td>
-</tr>
-<tr>
-<td>experiment</td>
-<td style="text-align: center">Quantitative experiment (with conditions and manipulation)</td>
 </tr>
 <tr>
 <td>model</td>
@@ -351,8 +357,30 @@ table {
 <td>simulation</td>
 <td style="text-align: center">Computational or experimental simulation</td>
 </tr>
+<tr>
+<td>statistical</td>
+<td style="text-align: center">Statistical analysis of data (e.g. cross-cultural typology, corpus, survey). Most often correlational, but could be causal depending on the methods.</td>
+</tr>
+<tr>
+<td>qualitative</td>
+<td style="text-align: center">Results of a qualitative study (interviews, observation etc.)</td>
+</tr>
+<tr>
+<td>logical</td>
+<td style="text-align: center">Argument based on logical statements (e.g. argument from first principles, mathematical proofs)</td>
+</tr>
+<tr>
+<td>hypothesis</td>
+<td style="text-align: center">No direct evidence, but a predition or suggestion</td>
+</tr>
+<tr>
+<td>other</td>
+<td style="text-align: center">Some other type of evidence</td>
+</tr>
 </tbody>
 </table>
+
+<p>This is a non-exhaustive list, so if you think other categories should be added, you could <a href="https://github.com/CHIELDOnline/CHIELD/issues/new">raise an issue</a>.</p>
 
 <h3 id="toc_12">Confirmed</h3>
 
@@ -364,7 +392,7 @@ table {
 
 <h1 id="toc_14">Contributors</h1>
 
-<p>Each document is associated with a contributor file.  These files are used to attribute the contributors and to track changes in the data.  The web interface automatically creates this file, and these will usually only be changed by administrators of the GitHub repository.  This can be used to indicate that one person has created the data, but another (perhaps the original author) has confirmed that it is accurate.</p>
+<p>Each document is associated with a contributor file.  These files are used to attribute the contributors and to track changes in the data.  The web interface automatically creates this file, and these will <strong>usually only be changed by administrators</strong> of the GitHub repository.  The file can be used to indicate that one person has created the data, but another (perhaps the original author) has confirmed that it is accurate.</p>
 
 <p>The file is a tab-delimited text files with the following columns (no header):</p>
 

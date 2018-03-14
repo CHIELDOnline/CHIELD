@@ -61,6 +61,12 @@ var document_network_physics_options = {
 
 function openQuote(text){
 	text = decodeURI(text);
+	if(!text.startsWith('"')){
+		text = '"'+text;
+	}
+	if(!text.endsWith('"')){
+		text += '"';
+	}
 	$("#quoteDivText").html(text);
 	$("#quoteDiv").show();
 }
@@ -126,7 +132,7 @@ function openSource(){
 function raiseIssue(){
 	var title = encodeURIComponent("Issue with "+shortCite);
 	var body = encodeURIComponent("Document Key:"+documentKey);
-	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body;
+	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body+"&labels=data";
 	window.open(url);
 }
 

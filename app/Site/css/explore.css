@@ -44,7 +44,7 @@
 
 #searchVariablesToAdd {
 	position:fixed;
-	
+
 }
 
 #legendButton{
@@ -94,6 +94,7 @@
 
 #networkSettingsButton{
 	right: 5px;
+	margin-top: 5px;
 	position: fixed;
 	z-index: 10;
 }

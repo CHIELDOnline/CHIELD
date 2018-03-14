@@ -70,6 +70,11 @@ var network_options_configure = {
               if (path.indexOf('hierarchical') !== -1) {
                   return true;
               }
+              console.log(option);
+              console.log(path);
+              if(path=="physics" && option =="enabled"){
+                  return true;
+              }
               return false;
           },
           showButton:false

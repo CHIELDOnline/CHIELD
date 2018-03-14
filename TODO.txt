@@ -23,12 +23,13 @@ Deploy:
 
 Explore:
 		
-	Allow changing of network layout:
-		Colour edges by: Publication
+	Colour edges by: Publication
 
 	Add button to find all direct links between two nodes
 
 	Somehow link edges to data
+
+	Add edges by document
 
 
 	Tidy up "existing variables" code: should move to db,
@@ -55,7 +56,6 @@ Documents:
 
 
 Document:
-	Surround quotes with quote marks
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
 		Doesn't seem to work.
@@ -65,17 +65,11 @@ causal_links:
 
 
 Database:
-	Include "^" relation?
 
 	"~~" change to "~"
 	change all "=~" to "~="
 	
 	"immitation" -> imitation
-	Include new table linking nodes to a date in time.
-		e.g. Control of fire: 1 million ya
-	Include "Theory" table:
-		A collection of causal link ids with a name
-		Is this just the "Process" field?
 
 	Fix Hunley, Cabana, Merriwether & Long (2007)
 	Fix Dall'Asta, Baronchelli, Barrat & Loreto (2006)
@@ -98,6 +92,12 @@ Search by evolution stage
 Future:
 	List of academics, do academic network discovery
 
+	Include new table linking nodes to a date in time.
+		e.g. Control of fire: 1 million ya
+		Could add as a timeline: http://visjs.org/timeline_examples.html
+	Include "Theory" table:
+		A collection of causal link ids with a name
+		Is this just the "Process" field?
 
 Cosmetic 
 	Pagiation (Next/Previous): fix to bottom of window?
