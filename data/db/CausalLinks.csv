@@ -91,9 +91,12 @@
 "2643776882","Skoyles_2006","692875938",">","3517715418","pos",NA,NA,"",NA,NA,NA,""
 "3303476926","Skoyles_2006","3517715418",">","1900134348","pos",NA,NA,"",NA,NA,NA,""
 "646881265","Skoyles_2006","1900134348",">","2464304524","",NA,NA,"",NA,NA,NA,""
-"1474681512","hunley07geneticCoevolution","1832537516",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
-"2261797828","hunley07geneticCoevolution","2730327821",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
-"2481921146","hunley07geneticCoevolution","1938667585",">","3685980462","pos",NA,"lexicon;genetics","language change","statistical",NA,"no",NA
+"2479856677","hunley07geneticCoevolution","1832537516",">","2731198799","pos",NA,"lexicon;genetics","language change","statistical","","null",NA
+"1127903985","hunley07geneticCoevolution","2730327821",">","2731198799","pos",NA,"lexicon;genetics","language change","statistical","","",NA
+"1255351677","hunley07geneticCoevolution","1938667585",">","2731198799","pos",NA,"lexicon;genetics","language change","statistical","","",NA
+"4034404872","hunley07geneticCoevolution","1832537516",">","1171882290","pos",NA,"genetics","language change","statistical","","none",NA
+"2916378691","hunley07geneticCoevolution","2730327821",">","1171882290","pos",NA,"genetics","language change","statistical","","none",NA
+"3372814618","hunley07geneticCoevolution","2731198799","~","1171882290","pos",NA,"lexicon;genetics","language change","statistical","","none",NA
 "714774006","selten07languageEmergencePNAS","301188837",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "700715809","selten07languageEmergencePNAS","2622762551",">","2454982401","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "187529458","selten07languageEmergencePNAS","3453219722",">","2454982401","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
