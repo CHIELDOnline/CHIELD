@@ -229,9 +229,11 @@ function redrawGUIfromGrid(){
 
 	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
 		
-		var this_var1 = $('#jsGrid').data().JSGrid.data[row].Var1;
-		var this_var2 = $('#jsGrid').data().JSGrid.data[row].Var2;
-		var this_relation = $('#jsGrid').data().JSGrid.data[row].Relation;
+		var objx = $('#jsGrid').data().JSGrid.data[row]
+		var this_var1 = objx.Var1;
+		var this_var2 = objx.Var2;
+		var this_relation = objx.Relation;
+		
 		console.log(this_var1 + " " + this_var2);
 		if($.inArray(this_var1,nodes)==-1){
 			nodes.push(this_var1)
@@ -245,7 +247,14 @@ function redrawGUIfromGrid(){
 			// id is already in the list of ids
 			alert("Duplicate data at row "+(row+1));
 		} else{
-			var newEdge = getEdgeSettings(id,this_var1,this_var2,this_relation);
+			var newEdge = getEdgeSettings(
+				id,
+				this_var1,
+				this_var2,
+				this_relation,
+				objx.Cor,
+		        objx.Type,
+		        objx.Stage);
 			console.log(newEdge);
 			network_edges.add(newEdge);
 		}

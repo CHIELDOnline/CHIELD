@@ -14,23 +14,12 @@ dtableConfig = {
         //fixedColumns: {leftColumns: 3},
     	columnDefs: [
     		{
+    			// Colour stage background (see vis_network_utils for `stageColours` definition)
 	    		targets: 5,
 	    		createdCell: function (td, cellData, rowData, row, col) {
-	    			switch(cellData){
-	    				case "language change":
-	    					$(td).css('background-color', '#28A745');
-	    					break;
-	    				case "cultural evolution":
-	    					$(td).css('background-color', '#FFC107');
-	    					break;
-	    				case "coevolution":
-	    					$(td).css('background-color', '#FFAF00');
-	    					break;
-	    				case "preadaptation":
-	    					$(td).css('background-color', '#DC3545');
-	    					break;
-	    				default:
-	    					break;
+	    			var stageCol = stageColours[cellData]
+	    			if(stageCol!==undefined){
+	    				$(td).css('background-color', stageCol);
 	    			}
 	    		}
 	  		},

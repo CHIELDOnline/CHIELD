@@ -16,7 +16,8 @@ var relationTypes = [
 	{ Name: "~=", Id: "~=" },
 	{ Name: ">>", Id: ">>" },
 	{ Name: "/=", Id: "/="},
-	{ Name: "~~", Id: "~~"}
+	{ Name: "~", Id: "~"},
+	{ Name: "^", Id: "^"}
 ];
 
 var correlationTypes = [
@@ -25,6 +26,18 @@ var correlationTypes = [
 	{ Name: "neg", Id: "neg"},
 	{ Name: "n-m", Id: "n-m"},
 ];
+
+var studyTypeTypes = [
+	{ Name: "experiment", Id: "experiment"},
+	{ Name: "review", Id: "review"},
+	{ Name: "model", Id: "model"},
+	{ Name: "simulation", Id: "simulation"},
+	{ Name: "statistical", Id: "statistical"},
+	{ Name: "qualitative", Id: "qualitative"},
+	{ Name: "logical", Id: "logical"},
+	{ Name: "hypothesis", Id: "hypothesis"},
+	{ Name: "other", Id: "other"}
+	];
 
 var stageTypes = [
 	{Name: "", Id: "none"},
@@ -68,7 +81,7 @@ var dataHeaders = [
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
             { name: "Topic", type: "text", width: 150 },
             { name: "Stage", type: "select", items: stageTypes, valueField:"Id", textField: "Name"},
-			{ name: "Type", type: "text", width: 150 },
+			{ name: "Type", type: "select", items: studyTypeTypes, valueField: "Id", textField: "Name", width: 150 },
 			{ name: "Confirmed", type: "select", items: confirmTypes, valueField: "Id", textField: "Name" },
 			{ name: "Notes", type: "text", width: 150 },
             { type: "control" }
@@ -291,6 +304,8 @@ function submitToGitHub(){
 		if(editingExistingData){
 			contributor_data += "\tEDIT";
 		}
+		// Complete final line
+		contributor_data += "\n"
 
 		console.log([contributor_data,bibtex_data,csvtext]);
 

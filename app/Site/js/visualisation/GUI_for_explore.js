@@ -71,6 +71,7 @@ function updateRecord(response, type){
 		network_edges.clear();
 		redrawGUIfromObject(database_records);
 		updateGrid(database_records);
+		changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
 	} else{
 		alert("No new links found");
 	}
@@ -99,6 +100,7 @@ function updateGrid(links){
 		$("#links_table").hide();
 	}
 }
+
 
 
 function expandVariable() {
@@ -192,12 +194,44 @@ function toggleOptions(){
 	if(optionsVisible){
 		$("#networkSettings").show()
 		$(".vis-configuration-wrapper").show()
+		hideLegend();
+		$("#legendButton").hide();
 	} else{
 		$("#networkSettings").hide()
 		$(".vis-configuration-wrapper").hide()
+		$("#legendButton").show();
 	}
 
 }
+
+// --------------------------
+// Legend and Colour Scheme
+// --------------------------
+function changeEdgeColourScheme(type){
+	applyNetworkColorScheme(type);
+	updateLegend();
+}
+
+function updateLegend(){
+	// from vis_network_utils.js
+	var legend = constructEdgeColourLegend(); 
+	$("#legendItems").html(legend);
+	// showLegend();
+}
+
+function showLegend(){
+	$("#legend").show();
+	$("#legendButton").hide();
+}
+
+function hideLegend(){
+	$("#legend").hide();
+	$("#legendButton").show();
+}
+
+// ----------
+//   Loader
+// ----------
 
 function showLoader(){
 	$(".loader").show();

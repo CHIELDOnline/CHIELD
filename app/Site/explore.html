@@ -37,13 +37,25 @@
 </button>
 <div id="networkSettings" class="container">
   <h5>Options</h4>
-  <button class="btn btn-danger" onclick="clusterByGroup()">Cluster</button>
+    <div class="btn-group">
+      <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Edge Colours
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('causal')">Causal</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('cor')">Correlation</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('type')">Type</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('stage')">Stage</a>
+        </div>
+      </div>
+      <button class="btn btn-danger" onclick="clusterByGroup()">Cluster</button>
+    </div>
 </div>
 
 <h3 id="exploreTitle">Explore</h3>
 
 <div id="mynetwork"></div>
-
 
 <div id="controlPanel">
   <button id="addVariable" class="btn btn-danger">
@@ -71,6 +83,17 @@
       ALL
   </button>
 </div>
+
+
+
+<div id="legend">
+  <h5 id="legendTitle">Legend</h5>
+  <a id="closeLegendButton" href="#" class="close" aria-label="close" onclick="hideLegend()">&times;</a>
+  <div id="legendItems"></div>
+</div>
+<button id="legendButton" class="btn btn-danger" onclick="showLegend()"><i class="fas fa-bars"></i></button>
+
+
 
 <div class="container-fluid" id="links">
   <button id="toggleTableButton" class="btn btn-danger">

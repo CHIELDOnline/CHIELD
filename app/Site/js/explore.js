@@ -134,8 +134,8 @@ $(document).ready(function(){
 		$("#searchVariablesToAdd").show();
 		$("#searchVariablesToAdd").focus();
 	});
-	$("#searchVariablesToAdd").hide();
 
+	$("#searchVariablesToAdd").hide();
 	$("#searchVariablesToAdd").autocomplete({
 			source:filterWithMaxLengthLimit,
 			"onSelect": addVar
@@ -153,6 +153,8 @@ $(document).ready(function(){
 		showLoader();
 		requestRecord(php_link,"keylist=ALL",'links');
 	})
+
+	hideLegend();
 
 	// Allow manual changes to options
 

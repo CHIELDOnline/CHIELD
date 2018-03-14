@@ -8,7 +8,7 @@ dtableConfig = {
         lengthChange: false,
         columnDefs: [
 	        {
-	    		targets: 6,
+	    		targets: 5,
 	    		createdCell: function (td, cellData, rowData, row, col) {
 	    			switch(cellData){
 	    				case "language change":
@@ -28,7 +28,7 @@ dtableConfig = {
 	    			}
 	    		}
 	  		},
-            { targets: 8,
+            { targets: 7,
 				 // Render the notes function as a button that reveals the
 				 // note in a seperate div
 				  "render": function ( data, type, row, meta ) {
@@ -45,7 +45,7 @@ dtableConfig = {
 			      return(data);
 				  }
 			  },
-        	{ targets: 9,
+        	{ targets: 8,
         		// Combine reference and link
         		render: function(data,type,row, meta){
         			console.log(data);
@@ -58,7 +58,7 @@ dtableConfig = {
         			return(null);
         		}
         	},
-        	{targets: 10, visible:false}
+        	{targets: 9, visible:false}
         ]
     };
 

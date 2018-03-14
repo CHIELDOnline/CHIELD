@@ -63,6 +63,8 @@ Below is the specification of how data is stored in CHIELD.
 
 See the page on [adding data to CHIELD](Help_AddingData.html) for information on how to create these formats.
 
+If you think the specification could be improved, you could [raise an issue](https://github.com/CHIELDOnline/CHIELD/issues/new) (requires a free GitHub account).
+
 # Documents
 
 In CHIELD, Causal links are grouped under **documents**.  These will usually be published journal articles.  
@@ -85,13 +87,15 @@ Details of documents are stored in CHIELD in BibTex format.
 
 ## Example
 
-Below is an example of a causal link specification for the claim that "high temperatures cause more ice-cream consumption, and more ice-cream consumption leads to more shirt stains":
+Below is an example of a causal link specification for the following claim:
+
+>  "We hypothesise that high temperatures cause more ice-cream consumption, and more ice-cream consumption leads to more shirt stains.":
 
 
 | Var1 | Relation | Var2 | Cor | Topic | Stage | Type | Confirmed | Notes|
 | -----|:--------:|:----:|:---:|:-----:|:-----:|:----:|:--------:|:-----:| 
-| temperature | > | ice-cream consumption | pos | food | language change |  |  | "high temperatures cause more ice-cream consumption"|
-| ice-cream consumption | > | shirt stains | pos | food | language change |  |  | "more ice-cream consumption leads to more shirt stains"|
+| temperature | > | ice-cream consumption | pos | food | | hypothesis |  | "high temperatures cause more ice-cream consumption"|
+| ice-cream consumption | > | shirt stains | pos | food | | hypothesis |  | "more ice-cream consumption leads to more shirt stains"|
 
 Note that the first node is "temperature", not "high temperature": we can specify the direction of causality in the "Cor" field.
 
@@ -174,31 +178,36 @@ The same format as the source variable.  Note that the destination variable cann
 
 The relation between the source variable and the destination variable.
 
-| Syntax | Meaning           |
-| -------|:-------------:| 
-| X > Y  | A change in X causes a change in Y | 
-| X <=> Y  | X and Y Co-evolve | 
-| X ~~ Y  | X and Y are correlated | 
+| Syntax  | Meaning           |
+| --------|:-------------:| 
+| X > Y   | A change in X causes a change in Y | 
+| X <=> Y | X and Y Co-evolve | 
+| X ~ Y   | X and Y are correlated | 
 | X /> Y  | X does not causally influence Y | 
 | X >> Y  | X is a necessary precondition for Y | 
 | X ~= Y  | X is an indicator of (measured by) Y | 
+| X ^ Y   | X exerts an evolutionary selection pressure on Y | 
 
 Note that there are no "left-facing" arrows, but you can just swap the source and destination.
+
+Some of the syntax is borrowed from the [lavaan](http://lavaan.ugent.be/) R package. This package uses "=~" for an *indicator* relationship, but this can cause problems when typing in some spreadsheet applications, so it has been reversed to "~=" (the meaning is the same).
+
+The *selection pressure* relation "^" is an experimental relation type.  It is included to support evolutionary hypotheses.  Often, causal relations apply to immediate or short-term consequences for individuals.  For example, [Dunbar (2004)](http://localhost/CHIELD/Site/document.html?key=dunbar2004gossip) reviews work showing that grooming releases endorphins.  However, sometimes these don't capture the overall message of a theory.  For example, [Dunbar (2004)](http://localhost/CHIELD/Site/document.html?key=dunbar2004gossip) suggests that "the cognitive demands of gossip are the very reason why such large brains evolved in the human lineage".  The implication is not that if an individual gossips more, then their brain gets bigger.  Rather, gossip is useful for forming alliances, which has an effect on fitness.  As a consequence, evolution selects individuals with bigger brains to support more gossip.  This seems like a different kind of causal argument than, for example, grooming releasing endorphins.  Moreover, this seems like a central point for Dunbar, but it is not captured by any of the explicitly mentioned causal links.  The "^" relation is intended for these situations.
 
 ### Correlation direction (Cor)
 
 The causal effect can be:
 
 | Cor | Meaning           |
-| -------|:-------------:| 
-|   | (blank): no specific direction | 
-| pos  | As X appears or increases, Y appears or increaes (possibly non-linearly) | 
-| neg  | As X appears or increases, Y appears or increaes (possibly non-linearly) | 
+| ----|:-------------:| 
+|     | (blank): no specific direction | 
+| pos | As X appears or increases, Y appears or increaes (possibly non-linearly) | 
+| neg | As X appears or increases, Y disappears or decreaes (possibly non-linearly) | 
 | nm  | The relation between X and Y is non-monotonic | 
 
 ### Topic
 
-This relates to the topic of the hypothesis.  e.g. Syntax, Semantics, Phonetics, Genetics, Population dynamics ... You can check the currenly 
+This relates to the topic of the hypothesis (e.g. syntax, semantics, phonetics, genetics, population dynamics etc.).  Topics should be lower-case.  Multiple topics can be entered, seperated by a semicolon ";".
 
 ###  Stage
 
@@ -216,17 +225,21 @@ From Scott-Phillips & Kirby (2010):
 	
 ### Type
 
-The type of evidence 
+The type of evidence used to support the causal link.  This is important information for spotting where causal theories could be more robustly supported.  Note that it need not be supported by direct evidence.
 
-| Type | Meaning           |
-| -------|:-------------:| 
-| hypothesis  | No quantitative evidence, but a predition or logical argument |
-| review | Evidence cited from other work |
-| statistical | Statistical analysis of data|
-| experiment | Quantitative experiment (with conditions and manipulation) |
-| model | Mathematical model |
-| simulation | Computational or experimental simulation |
+| Type        | Meaning           |
+| ------------|:-------------:| 
+| experiment  | Quantitative experiment (with conditions and manipulation) |
+| review      | Evidence cited from other work |
+| model       | Mathematical model |
+| simulation  | Computational or experimental simulation |
+| statistical | Statistical analysis of data (e.g. cross-cultural typology, corpus, survey). Most often correlational, but could be causal depending on the methods. |
+| qualitative | Results of a qualitative study (interviews, observation etc.) |
+| logical     | Argument based on logical statements (e.g. argument from first principles, mathematical proofs) |
+| hypothesis  | No direct evidence, but a predition or suggestion  |
+| other       | Some other type of evidence |
 
+This is a non-exhaustive list, so if you think other categories should be added, you could [raise an issue](https://github.com/CHIELDOnline/CHIELD/issues/new).
 
 ### Confirmed
 
@@ -239,7 +252,7 @@ This field is free text to help understand the causal link.  Ideally, this shoul
 
 # Contributors
 
-Each document is associated with a contributor file.  These files are used to attribute the contributors and to track changes in the data.  The web interface automatically creates this file, and these will usually only be changed by administrators of the GitHub repository.  This can be used to indicate that one person has created the data, but another (perhaps the original author) has confirmed that it is accurate.
+Each document is associated with a contributor file.  These files are used to attribute the contributors and to track changes in the data.  The web interface automatically creates this file, and these will **usually only be changed by administrators** of the GitHub repository.  The file can be used to indicate that one person has created the data, but another (perhaps the original author) has confirmed that it is accurate.
 
 The file is a tab-delimited text files with the following columns (no header):
 

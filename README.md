@@ -12,6 +12,7 @@ User content -> Server push -> GitHub Review -> Server pull -> Website
     -  Decodes the data into seperate bib and csv files
     -  Creates the files on a new branch in the GitHub repository
     -  Creates a pull request for the new branch
+    -  Moves files from `data/newRecords` to `data/processedRecords`
 -  The GitHub administrator reviews the pull request and merges it into the repository
 -  The server administrator periodically:
     -  Pulls the changes to the repository to a local version

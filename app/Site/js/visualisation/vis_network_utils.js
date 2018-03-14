@@ -6,6 +6,11 @@ var convert_pks_to_string_ids = true;
 
 // Default network options
 
+
+// Edge colour scheme
+// Currently supports causal, cor, type, stage
+var edge_colour_scheme = "causal";
+
 var network_options = {
   layout:{
     hierarchical: false
@@ -15,7 +20,7 @@ var network_options = {
     multiselect: true
   },
     edges: {
-      smooth: false
+      smooth: true
   },
     physics: {
     stabilization: {
@@ -36,6 +41,29 @@ var network_options = {
        }
     }
 };
+
+studyTypeColours = {
+  simulation: "#00e7d9", // light blue
+  model:      "#006de7", // dark blue
+  review:     "#a300e7", // purple
+  hypothesis: "#00e752", // green
+  statistical:"#e78900", // orange
+  experiment: "#e70000", // red
+  qualitative:"#bce700", // yellow
+  logical:    "#e700a3", // pink
+  other:      "#000000"  // black
+};
+
+stageColours = {
+  "language change":'#28A745',
+  "cultural evolution":'#FFC107',
+  "coevolution":'#FFAF00',
+  "preadaptation":'#DC3545'
+};
+
+
+
+
 
 var network_options_configure = {
   filter: function (option, path) {
@@ -122,7 +150,7 @@ function initialiseNetwork(){
 
 }
 
-function getEdgeSettings(edge_id, Var1, Var2, Relation){
+function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
   // standard setting: ">"
 
   var newEdge = {
@@ -140,7 +168,10 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation){
           }
         },
         color: "black",
-        causal_relation: Relation
+        causal_relation: Relation,
+        cor: Cor,
+        studyType: Type,
+        stage: Stage
     };
 
   if(Relation=="<"){
@@ -148,7 +179,9 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation){
     newEdge.arrows.from.enabled  = true;
   }
   if(Relation==">>"){
-    newEdge.color = "red";
+    if(edge_colour_scheme=="causal"){
+      newEdge.color = "red";
+    }
   }
   if(Relation=="<=>"){
     //newEdge.arrows = "to;from";
@@ -165,7 +198,9 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation){
       newEdge.arrows.to.enabled = false;
       newEdge.arrows.from.enabled  = true;
       newEdge.dashes = true;
-      newEdge.color = "green";
+      if(edge_colour_scheme=="causal"){
+        newEdge.color = "green";
+      }
       newEdge.smooth = true;
   }
   return(newEdge);
@@ -208,7 +243,10 @@ function isNumeric(value){
         this_edge_id,
         this_var1_pk,
         this_var2_pk,
-        this_relation);
+        this_relation,
+        obj[row].Cor,
+        obj[row].Type,
+        obj[row].Stage);
       // add it to the network
       network_edges.add(newEdge);
 
@@ -294,7 +332,10 @@ function redrawGUIfromObject(obj){
         this_edge_id,
         this_var1_pk,
         this_var2_pk,
-        this_relation);
+        this_relation,
+        obj[row].Cor,
+        obj[row].Type,
+        obj[row].Stage); 
       // add it to the network
       network_edges.add(newEdge);
 
@@ -329,7 +370,9 @@ function redrawGUIfromObject(obj){
 }
 
 
-//  Network layout
+// ------------------
+//   Network layout
+// ------------------
 
 var layoutPresets = {
   hierarchical: {
@@ -346,9 +389,6 @@ var layoutPresets = {
   }
 }
 
-
-
-
 function changeNetworkLayout(type){
 
   preset_options = layoutPresets[type];
@@ -361,6 +401,116 @@ function changeNetworkLayout(type){
     network.setOptions(network_options);
   }
 }
+
+function applyNetworkColorScheme(scheme){
+  edge_colour_scheme = scheme;
+
+  try{showLoader();} catch(err){}
+
+  var ids = network_edges.getIds();
+  for(var i=0; i<ids.length;++i){
+    network_edges.update({
+      id: ids[i], 
+      color: getEdgeColor(network_edges.get(ids[i]))
+    })
+  }
+  network.redraw();
+  try{hideLoader();} catch(err){}
+}
+
+function getEdgeColor(edge){
+  // Causal colour scheme
+  if(edge_colour_scheme=="causal"){
+    if(edge.causal_relation == ">>"){
+      return("red");
+    }
+    if(edge.causal_relation == "^"){
+      return("green");
+    }
+    return("black");
+  }
+
+  // Correlational colour scheme
+  if(edge_colour_scheme=="cor"){
+    if(edge.cor=="pos"){return('green');}
+    if(edge.cor=="neg"){return("red");  }
+    return("black")
+  }
+
+  // Type colour scheme
+  if(edge_colour_scheme=="type"){
+    var typeCol = studyTypeColours[edge.studyType];
+    if(typeCol===undefined){
+      return("black");
+    } else{
+      return(typeCol);
+    }
+  }
+
+  // Stage colour scheme
+  if(edge_colour_scheme=="stage"){
+    var stageCol = stageColours[edge.stage];
+    if(stageCol===undefined){
+      return("black");
+    } else{
+      return(stageCol);
+    }
+  }
+
+  return("black");
+}
+
+function constructEdgeColourLegend(){
+
+  // Iterate through edges, get all unique types
+  // Construct a colour legend
+
+
+  // get the relevant edge property according to the colour scheme
+  var itemProperty = {
+    stage: "stage",
+    type: "studyType",
+    cor: "cor",
+    causal: "causal_relation"
+  }[edge_colour_scheme];
+
+  if(itemProperty===undefined){
+    itemProperty = "causal_relation";
+  }
+
+  // Get unique colours
+  var items = [];
+  var colours = [];
+  var ids = network_edges.getIds();
+  for(var i=0; i<ids.length; ++i){
+    var edge = network_edges.get(ids[i]);
+    var prop = edge[itemProperty];
+    // If the edge property is new to the items list,
+    // Add the property and the corresponding colour
+    if((prop!==null) && $.inArray(prop,items)==-1){
+      items.push(prop);
+      colours.push(edge.color);
+    }
+  }
+
+  if(items.length>10){
+    items.slice(0,10);
+    colours.slice(0,10);
+  }
+
+  var legend = "";
+  for(var i=0;i<items.length;++i){
+    legend += 
+      '<span class="legendItem" style="color:'+colours[i]+'">'+items[i]+'</span>';
+  }
+  return(legend);
+}
+
+
+
+// ---------------------
+//       Clustering
+// ---------------------
 
 function findSupergroups(){
   var n = network_nodes.get(network_nodes.getIds());

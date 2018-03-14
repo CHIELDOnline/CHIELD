@@ -65,9 +65,9 @@ You can zoom in and out using the mouse's scroll wheel.
 
 At the bottom of the page is a table that lets you manually enter causal links.  Click the green "+" sign on the far right to add a new row.  You can enter the [causal link specifications](Help_CausalLinkSpecifications.html) here.  When you've finished entering the data for a row, click the green "+" icon in the last column of that row to add it to the table.
 
-You can **edit cells** of existing rows by clicking on the row, editing the cells, then clicking the green tick icon which appears on the right.  The graphical display will be updated.
+You can **edit cells** of existing rows by clicking on the cell, editing the contents, then clicking the green tick icon which appears on the right.  The graphical display will then be updated.  Note you can also open cells for editing by clicking the blue "pencil" icon in the rightmost column of the table.
 
-You can **remove causal links** by clicking on a row in the table, then clicking the red X icon which appears on the right.
+You can **remove causal links** by finding the relevant row in the table and clicking the red "bin" icon for that row.
 
 ###  Add causal links from a csv file
 

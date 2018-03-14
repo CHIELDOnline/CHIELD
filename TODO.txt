@@ -2,10 +2,7 @@ Online version:
 
 
 Help
-	Can include multiple topics seperated by ";"
-	Edit help about removing rows in AddData: Click "bin" icon
-	Edit help about editing rows in AddData: Click pencil icon
-		
+	Re-render help
 	Add tips for coding causal links
 		Try to re-use variable names
 			Measurable things
@@ -56,7 +53,7 @@ Documents:
 
 
 Document:
-	Remove "Processes" field?
+	Surround quotes with quote marks
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
 		Doesn't seem to work.
@@ -68,6 +65,8 @@ causal_links:
 Database:
 	Include "^" relation?
 
+	"~~" change to "~"
+	change all "=~" to "~="
 	
 	"immitation" -> imitation
 	Include new table linking nodes to a date in time.
@@ -81,6 +80,8 @@ Database:
 
 	Add important people: Kirby, Hurford etc.
 	Fix measured by: decide on ~= or =~ 
+
+	"Type" for evolang11_26 is "stone tool knapping"
 
 
 About:

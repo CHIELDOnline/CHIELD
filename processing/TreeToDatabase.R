@@ -145,7 +145,7 @@ for(f in list.dirs(treeBaseFolder)){
       links = rbind(links,l)
     
       #b = readLines(paste0(f,"/",bibFile), warn = F)
-      b = read.bib(paste0(f,"/",bibFile),encoding = 'utf-8')
+      b = read.bib(paste0(f,"/",bibFile))
       
       checkCharacters(readLines(paste0(f,"/",bibFile),warn = F))
       
