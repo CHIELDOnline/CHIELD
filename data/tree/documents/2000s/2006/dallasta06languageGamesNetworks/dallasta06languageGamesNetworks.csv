@@ -1,3 +1,4 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"40","","dallasta06languageGamesNetworks","population size",">","shared language","neg","","signalling","cultural evolution","model","mathematical","","","yes","","","","",""
-"41","","dallasta06languageGamesNetworks","memory capacity",">","social network average degree ~ shared language","pos","","signalling","cultural evolution","model","mathematical","","","yes","","","","",""
+Var1,Relation,Var2,Cor,Topic,Stage,Type,Confirmed,Notes,bibref
+"population size",">","shared language","neg","signalling","cultural evolution","simulation","null","","dallasta06languageGamesNetworks"
+"memory capacity",">","social network: average degree","pos","signalling","cultural evolution","simulation","null","","dallasta06languageGamesNetworks"
+"social network: average degree",">","shared language","pos","signalling","cultural evolution","simulation","none","","dallasta06languageGamesNetworks"
