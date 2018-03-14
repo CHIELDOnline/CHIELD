@@ -77,8 +77,9 @@
 "1680221452","macwhinney2005language","947011756",">","785671023","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "1397642543","macwhinney2005language","947011756",">","3439569706","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "2982522622","wang05verticalAndHorizontalTransmission","1600990332",">","3052714695","pos",NA,"signalling","language change","statistical",NA,"yes",NA
-"1339904395","dallasta06languageGamesNetworks","2285639406",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
-"1306128768","dallasta06languageGamesNetworks","1723623461",">","3491408888","pos",NA,"signalling","cultural evolution","model","mathematical","yes",NA
+"1339904395","dallasta06languageGamesNetworks","2285639406",">","2454982401","neg",NA,"signalling","cultural evolution","simulation","","null",NA
+"688305406","dallasta06languageGamesNetworks","1723623461",">","4275434177","pos",NA,"signalling","cultural evolution","simulation","","null",NA
+"2637330863","dallasta06languageGamesNetworks","4275434177",">","2454982401","pos",NA,"signalling","cultural evolution","simulation","","none",NA
 "4278067289","dallasta06microscopicPatterns","2055697070",">","2454982401","neg",NA,"signalling","cultural evolution","model","mathematical","yes",NA
 "151807911","nettle06costsAndBenefits","3012865586",">","813265570","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
 "4014211774","nettle06costsAndBenefits","3012865586",">","2797953716","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
