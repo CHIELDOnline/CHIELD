@@ -305,8 +305,6 @@ function submitToGitHub(){
 		if(editingExistingData){
 			contributor_data += "\tEDIT";
 		}
-		// Complete final line
-		contributor_data += "\n"
 
 		console.log([contributor_data,bibtex_data,csvtext]);
 

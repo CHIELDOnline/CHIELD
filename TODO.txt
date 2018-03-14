@@ -16,7 +16,7 @@ php:
 	
 
 python script:
-	
+	When editing, we can download the contents of the current contributor file, and automatically add the new line (instead of overwriting it).
 
 Deploy:
 	
@@ -48,7 +48,11 @@ Variable:
 addData:
 	TEST: does adding new data still work?
 
-	When editing, formatted bib reference does not update.
+	If problem with submission, offer to download csv file.
+
+	When editing, formatted bib reference does not update immediately.
+
+	Change arrows to be straight
 
 	What if user loads saved data from cookie, but this is editing? 
 	LOW Add button to remove variable from network (see commented button delNetworkElement).

@@ -43,7 +43,7 @@ def processFile(file):
 
 	data = data.split("\n")
 #	contributor + "\n" + bib_key+"\n"+bib_year+"\n"+bib_source_processed+"\n";
-	contributor = data[0]
+	contributor = data[0]+"\n"
 	bibref = data[1]
 	bib_year = data[2]
 	bib_source = data[3].replace('--newline--',"\n")
