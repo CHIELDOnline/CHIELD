@@ -1,4 +1,7 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"6","","hunley07geneticCoevolution","population fission",">","linguistic diversity ~ genetic diversity","pos","","lexicon;genetics","language change","statistical","","?","?","no","Central and South American","","","",""
-"7","","hunley07geneticCoevolution","population expansion into new territories",">","linguistic diversity ~ genetic diversity","pos","","lexicon;genetics","language change","statistical","","?","?","no","Central and South American","","","",""
-"8","","hunley07geneticCoevolution","isolation of descendent and ancestral groups",">","linguistic diversity ~ genetic diversity","pos","","lexicon;genetics","language change","statistical","","?","?","no","Central and South American","","","",""
+Var1,Relation,Var2,Cor,Topic,Stage,Type,Confirmed,Notes,bibref
+"population fission",">","linguistic diversity","pos","lexicon;genetics","language change","statistical","null","","hunley07geneticCoevolution"
+"population expansion into new territories",">","linguistic diversity","pos","lexicon;genetics","language change","statistical","","","hunley07geneticCoevolution"
+"isolation of descendent and ancestral groups",">","linguistic diversity","pos","lexicon;genetics","language change","statistical","","","hunley07geneticCoevolution"
+"population fission",">","genetic diversity","pos","genetics","language change","statistical","none","","hunley07geneticCoevolution"
+"population expansion into new territories",">","genetic diversity","pos","genetics","language change","statistical","none","","hunley07geneticCoevolution"
+"linguistic diversity","~","genetic diversity","pos","lexicon;genetics","language change","statistical","none","","hunley07geneticCoevolution"
