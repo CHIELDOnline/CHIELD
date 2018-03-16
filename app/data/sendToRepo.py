@@ -4,11 +4,11 @@
 
 from github import Github
 import json
-from os import listdir, remove
+from os import listdir, remove  # Might not need any more
 from math import floor
 #from shutil import copyfile
 from time import time
-
+import sys
 
 # Default Parameters
 repository_data_tree_folder = ""
@@ -48,6 +48,10 @@ def processFile(file):
 	bib_year = data[2]
 	bib_source = data[3].replace('--newline--',"\n")
 	causal_links = "\n".join(data[4:])
+	return contributor,bibref,bib_year,bib_source,causal_links
+
+
+def processData(contributor,bibref,bib_year,bib_source,causal_links):
 	
 	githubFolder = getFolder(bibref, bib_year)
 	
@@ -92,15 +96,6 @@ def processFile(file):
 			
 			
 def getFolder(bibref,year):
-# 	  getFolder = function(bibref, year){
-# 	  if(is.na(year)){
-# 		return(paste("Unknown",bibref,sep="/"))
-# 	  } else{
-# 		decade = paste0(floor(year/10)*10,"s")
-# 		return(paste(decade,year,bibref,sep="/"))
-# 	  }
-# 	}
-
 	try:
 		year_num = int(year)
 		decade = str(int(floor(year_num/10))*10) + "s"
@@ -154,22 +149,38 @@ def createPullRequest(pull_title, pull_request_text,target_branch):
 ############
 
 
-files = findFilesToProcess()
-if len(files)>0:
-	#print("processing:"+",".join(files))
+# files = findFilesToProcess()
+# if len(files)>0:
+# 	#print("processing:"+",".join(files))
+# 	g = Github(githubUser, githubAccessToken)
+# 	repo = g.get_user().get_repo(githubRepoName)
+	
+# 	for f in files:
+# 		contributor,bibref,bib_year,bib_source,causal_links = processFile(f)
+#		processData(contributor,bibref,bib_year,bib_source,causal_links)
+
+files_to_process = sys.argv[-3:]
+
+if len(files_to_process)==3:
+	# Connect to github repo
 	g = Github(githubUser, githubAccessToken)
 	repo = g.get_user().get_repo(githubRepoName)
-	
-for f in files:
-	processFile(f)
 
+	fcsv = open(files_to_process[0])
+	causal_links = fcsv.read()
+	fcsv.close()
 
-# Instance of github with authentication
-#g = Github("seannyD", "XXX")
+	fbib = open(files_to_process[1])
+	bibdata = fbib.read()
+	fbib.close()
+	bibdata = bibdata.split("\n")
+	bibref = bibdata[0]
+	bibyear = bibdata[1]
+	bibsource = bibdata[2:]
 
-# GetRepo
-#repo = g.get_user().get_repo("CHIELD_test")
-	
-#sendToGithub(repo, file_path="/test17.txt",content="mycontnet2", 
-#				commit_title="File commit", pull_title="pull title", 
-#				pull_request_text = "pull request text")
+	fcon = open(files_to_process[2])
+	contributor = fcon.read()
+	fcon.close()
+
+	processData(contributor,bibref,bibyear,bibsource,causal_links)
+

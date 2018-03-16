@@ -292,12 +292,7 @@ function submitToGitHub(){
 		}
 		var csvtext = JSONToCSVConvertor(data, true);
 	
-		// TODO: Validate bib source
-	
-		var bib_source_processed = bib_source.replace(new RegExp("\n", 'g'), "--newline--");
-		
-	
-		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source_processed+"\n";
+		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source+"\n";
 		
 		// Contributor data
 		var date = Date();
@@ -312,11 +307,20 @@ function submitToGitHub(){
 	
 		var params = "data="+encodeURIComponent(data);
 
+		var jdata = {
+			contributor: contributor_data,
+			bibtex: bibtex_data,
+			csv: csvtext
+				};
 
+		$.ajax({
+		    type: 'POST',
+		    url: 'php/sendNewRecord.php',
+		    data: {json: JSON.stringify(jdata)},
+		    dataType: 'json'
+		}). done(finishedSubmission).fail(finishedSubmission);
 
-		var http = new XMLHttpRequest();
-	//	var params = "lorem=ipsum&name=binny";
-	//	console.log(php_link);
+/*		var http = new XMLHttpRequest();
 		http.open("POST", "php/sendNewRecord.php", true);
 
 		//Send the proper header information along with the request
@@ -328,7 +332,7 @@ function submitToGitHub(){
 				finishedSubmission(http.responseText);
 			}
 		}
-		http.send(params);
+		http.send(params);*/
 	
 	} else{
 		$("#submitToGitHub").show();

@@ -1,5 +1,41 @@
-Online version:
+From Research IT:
 
+
+PHP
+	
+	TEST	Need to pass the python file the filename to process.
+	TEST PHP: use tempnam to generate filename
+	TEST PHP: pass as JSON
+	PHP: avoid using shell_exec, use just exec
+	PHP: Try/catch to make sure file is removed?
+	Escape anything sent to sendToRepo.py by the php file
+
+Escape table input in javascript.
+
+Check default character encoding on PDO open sqlite file
+
+R script: Regexp - take out control characters hex 0-31
+
+
+Configuration:
+	Create "configuration" folder for custom stuff
+
+Documentation:
+	Create diagram of how data flows
+	General thinking
+	Reservations
+
+
+
+
+Output to daggity format:
+	http://www.dagitty.net/manual-2.x.pdf
+Output to an igraph-compatible format, e.g. graphml
+Output to DOT
+
+
+Online version:
+	
 
 Help
 
@@ -16,9 +52,12 @@ php:
 	
 
 python script:
+
 	When editing, we can download the contents of the current contributor file, and automatically add the new line (instead of overwriting it).
 
 Deploy:
+	Don't write zip file to local app folder, but directly to server folder
+		(so we don't end up always updating it in git)
 	
 
 Explore:
@@ -45,12 +84,13 @@ Variable:
 addData:
 	TEST: does adding new data still work?
 
+	Fix: When editing (and adding?) data, blank cells are filled with "null".
+
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
 
 Documents: 
-
 
 Document:
 	LOW If bibtex has an abstract field, display it.
@@ -62,13 +102,10 @@ causal_links:
 
 
 Database:
-
-	Fix Dall'Asta, Baronchelli, Barrat & Loreto (2006)
-
 	Add important people: Kirby, Hurford etc.
-	Fix measured by: decide on ~= or =~ 
+	Check Wheeler, P. E. (1985). The loss of functional body hair in man.  
+		Causal links don't mention hair (and paper doesn't mention encephalisation?)
 
-	"Type" for evolang11_26 is "stone tool knapping"
 
 
 About:
