@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
-
+# Requires three arguments:
+# -  path of the causal links csv
+# -  path of the contributor file
+# -  path of the bibtex file
 
 from github import Github
 import json
@@ -127,7 +130,10 @@ def get_file_sha(file_path):
 	if file_folder.startswith("/"):
 		file_folder= file_folder[1:]
 	file_name = file_path[(file_path.rindex("/")+1):]
-	header, resp = repo._requester.requestJsonAndCheck("GET", repo.url + "/git/trees/master:"+file_folder)
+	try:
+		header, resp = repo._requester.requestJsonAndCheck("GET", repo.url + "/git/trees/master:"+file_folder)
+	except:
+		return("No existing file")
 	if not "tree" in resp.keys():
 		return("No existing file")
 	tree = resp["tree"]
@@ -149,16 +155,6 @@ def createPullRequest(pull_title, pull_request_text,target_branch):
 ############
 
 
-# files = findFilesToProcess()
-# if len(files)>0:
-# 	#print("processing:"+",".join(files))
-# 	g = Github(githubUser, githubAccessToken)
-# 	repo = g.get_user().get_repo(githubRepoName)
-	
-# 	for f in files:
-# 		contributor,bibref,bib_year,bib_source,causal_links = processFile(f)
-#		processData(contributor,bibref,bib_year,bib_source,causal_links)
-
 files_to_process = sys.argv[-3:]
 
 if len(files_to_process)==3:
@@ -176,11 +172,22 @@ if len(files_to_process)==3:
 	bibdata = bibdata.split("\n")
 	bibref = bibdata[0]
 	bibyear = bibdata[1]
-	bibsource = bibdata[2:]
+	bib_source = "\n".join(bibdata[2:])
 
 	fcon = open(files_to_process[2])
 	contributor = fcon.read()
 	fcon.close()
 
-	processData(contributor,bibref,bibyear,bibsource,causal_links)
+	processData(contributor,bibref,bibyear,bib_source,causal_links)
 
+
+# Old method: load single file and split data
+# files = findFilesToProcess()
+# if len(files)>0:
+# 	#print("processing:"+",".join(files))
+# 	g = Github(githubUser, githubAccessToken)
+# 	repo = g.get_user().get_repo(githubRepoName)
+	
+# 	for f in files:
+# 		contributor,bibref,bib_year,bib_source,causal_links = processFile(f)
+#		processData(contributor,bibref,bib_year,bib_source,causal_links)

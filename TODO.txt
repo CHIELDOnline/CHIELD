@@ -86,6 +86,8 @@ addData:
 
 	Fix: When editing (and adding?) data, blank cells are filled with "null".
 
+	hide "ui-helper-hidden-accessible"
+
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now

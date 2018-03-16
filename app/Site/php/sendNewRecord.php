@@ -12,9 +12,10 @@ $csv_data = $data->{'csv'};
 $bib_data = $data->{"bibtex"};
 $con_data = $data->{"contributor"};
 
-// TODO: escape slashes?
-
-echo $csv_data;
+// Escape < and >
+$csv_data = htmlentities($csv_data);
+$bib_data = htmlentities($bib_data);
+$con_data = htmlentities($con_data);
 
 // Write data to files
 
