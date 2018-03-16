@@ -127,12 +127,7 @@ function showTab(id){
 function JSONToCSVConvertor(JSONData, ShowLabel) {
     //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
     var arrData = typeof JSONData != 'object' ? JSON.parse(JSONData) : JSONData;
-
-    var CSV = '';    
-    //Set Report title in first row or line
-
-    //CSV += ReportTitle + '\r\n\n';
-
+    var CSV = '';
     //This condition will generate the Label/Header
     if (ShowLabel) {
         var row = "";
