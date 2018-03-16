@@ -16,6 +16,8 @@ ul {
     padding: 0;
 }
 
+.ui-helper-hidden-accessible { display:none; }
+
 #mynetwork {
     width: 90%;
     height: 300px;

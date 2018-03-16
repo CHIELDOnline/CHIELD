@@ -376,9 +376,9 @@ function offerCausalLinksAsCSV(){
  	document.body.removeChild(link);
 }
 
-function finishedSubmission(link){
-	console.log(link);
-	if(link.startsWith("https")){
+function finishedSubmission(obj){
+	var link = obj.responseText;
+	if(link!==undefined && link.startsWith("https")){
 		$("#submissionResults").html(
 			'Data submitted.  <a href="'+link+'" target="_blank">View the pull request</a>.'
 			);
@@ -388,7 +388,6 @@ function finishedSubmission(link){
 		Cookies.remove("GridSaveData");
 		Cookies.remove("BibTexSaveData");
 	} else{
-
 		$("#submissionResults").html(
 			'<p>There may be an error with the submission, please check data and try again.</p><p>Or you can <a href="#" onclick="offerCausalLinksAsCSV()">Download the causal links as a csv file</a> in order to work offline.</p>'
 			);
