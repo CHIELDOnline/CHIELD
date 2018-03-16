@@ -2,13 +2,12 @@ From Research IT:
 
 
 PHP
-	
-	TEST	Need to pass the python file the filename to process.
-	TEST PHP: use tempnam to generate filename
-	TEST PHP: pass as JSON
 	PHP: avoid using shell_exec, use just exec
 	PHP: Try/catch to make sure file is removed?
 	Escape anything sent to sendToRepo.py by the php file
+		This is hard: we don't want to escape the ">" relation.
+		Possible solution: escape < and > to &gt;
+		In the R script, convert Relation field back to > and <, and check that it's one of the approved types.
 
 Escape table input in javascript.
 

@@ -46,16 +46,20 @@ fclose($fpcon);
 // to the python executable.  This is done by deploy.sh
 $command = 'cd ../../data;path_to_python sendToRepo.py '.$csv_filename.' '.$bib_filename.' '.$con_filename;
 $output = shell_exec($command);
+echo $output;
 
 // make an archive copy
-//$fp2 = fopen($filename_processed, 'wb');
-//fwrite($fp2, $data);
-//fclose($fp2);
+$csv_filename2 = tempnam($base_processed,'CSV');
+$bib_filename2 = tempnam($base_processed,'BIB');
+$con_filename2 = tempnam($base_processed,'CON');
+
+copy($csv_filename,$csv_filename2);
+copy($bib_filename,$bib_filename2);
+copy($con_filename,$con_filename2);
 
 // remove the original file
-//unlink($filename);
-
-
-echo $output;
+unlink($csv_filename);
+unlink($bib_filename);
+unlink($con_filename);
 
 ?>
