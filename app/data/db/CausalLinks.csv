@@ -7,16 +7,16 @@
 "104912941","batali94innateBiases","3703421603",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "112298744","batali94innateBiases","2416492989",">","766158177","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "1498935402","batali94innateBiases","766158177",">","4058709162","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
-"1335799695","Isbell_Young_1996","2183189957",">","769810522","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"4017546239","Isbell_Young_1996","769810522",">","843580261","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"1401533592","Isbell_Young_1996","843580261",">","2469075885","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"3068536770","Isbell_Young_1996","843580261",">","1204873804","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"490510179","Isbell_Young_1996","2469075885","~","1204873804","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"2930404085","Isbell_Young_1996","2469075885",">","4029894760","neg",NA,NA,"preadaptation",NA,NA,NA,NA
-"2540646606","Isbell_Young_1996","1204873804",">","4029894760","pos",NA,NA,"preadaptation",NA,NA,NA,NA
-"3049530626","Isbell_Young_1996","1204873804",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
-"4158834566","Isbell_Young_1996","4029894760",">","4255839106","",NA,NA,"preadaptation",NA,NA,NA,NA
-"3899251918","Isbell_Young_1996","4255839106",">","947011756","",NA,NA,"preadaptation",NA,NA,NA,NA
+"1335799695","Isbell_Young_1996","2183189957",">","769810522","neg",NA,NA,"preadaptation",NA,"",NA,NA
+"2701916608","Isbell_Young_1996","769810522",">","1955486782","neg",NA,NA,"preadaptation",NA,"",NA,NA
+"1702130997","Isbell_Young_1996","1955486782",">","2469075885","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"1096762485","Isbell_Young_1996","1955486782",">","1204873804","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"490510179","Isbell_Young_1996","2469075885","~","1204873804","neg",NA,NA,"preadaptation",NA,"",NA,NA
+"2930404085","Isbell_Young_1996","2469075885",">","4029894760","neg",NA,NA,"preadaptation",NA,"",NA,NA
+"2540646606","Isbell_Young_1996","1204873804",">","4029894760","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"1289147122","Isbell_Young_1996","1204873804",">","3382257600","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"1470582756","Isbell_Young_1996","4029894760",">","3382257600","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"690242007","Isbell_Young_1996","3382257600",">","947011756","pos",NA,NA,"preadaptation",NA,"",NA,NA
 "535537129","deboer99selfOrganisation","513238399",">","1242158712","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
 "483080152","deboer99selfOrganisation","513238399",">","813265570","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
 "1436194289","deboer99selfOrganisation","1242158712",">","13429497","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
@@ -155,8 +155,8 @@
 "1013522352","evolang11_146","1573599243",">","2837888991","pos",NA,"syntax","preadaptation","review","neuroscience",NA,NA
 "1047379760","evolang11_148","2778494698",">","1553307738","pos",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
 "1941632163","evolang11_148","1136702946",">","1553307738","neg",NA,"lexicon","preadaptation","statistical","corpus","yes",NA
-"4123509569","evolang11_165","2285639406",">","2142639155","pos",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
-"3237020366","evolang11_165","2142639155",">","2004248785","neg",NA,"phonetcs; phonology","language change","model",NA,"yes","We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
+"3264075734","evolang11_165","2285639406",">","828689890","pos",NA,"phonetcs; phonology","language change","model","",NA,"We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
+"3716852303","evolang11_165","828689890",">","2004248785","neg",NA,"phonetcs; phonology","language change","model","",NA,"We predict that within parameter regions without added noise, ILM chains break evenly across these two orthogonal dimensions of compositionality. Under our hypothesis, the introduction of noise into the transmission of one of these dimensions will disrupt the stability of induction and expression and the languages will evolve robustness to this noise."
 "2982361151","evolang11_166","3869615948",">","1712682558","neg",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
 "946594202","evolang11_166","2355449044",">>","1712682558","pos",NA,"vocal learning","preadaptation","experiment","behavioural",NA,NA
 "360453615","evolang11_166","4211885451",">","1712682558","pos",NA,"vocal learning","coevolution","experiment","behavioural",NA,NA
