@@ -3,7 +3,6 @@ From Research IT:
 
 PHP
 	PHP: avoid using shell_exec, use just exec
-	PHP: Try/catch to make sure file is removed?
 	Escape anything sent to sendToRepo.py by the php file
 		This is hard: we don't want to escape the ">" relation.
 		Possible solution: escape < and > to &gt;
@@ -11,7 +10,6 @@ PHP
 
 Escape table input in javascript.
 
-Check default character encoding on PDO open sqlite file
 
 R script: Regexp - take out control characters hex 0-31
 
