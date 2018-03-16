@@ -76,14 +76,11 @@ Explore:
 
 
 Variable:
+	Summarise number of links where variable appears
 	
 
 addData:
 	TEST: does adding new data still work?
-
-	Fix: When editing (and adding?) data, blank cells are filled with "null".
-
-	hide "ui-helper-hidden-accessible"
 
 	Bib source: at the moment we write some extra data in the first two lines
 		We could just pass the bibtex record, and get the python file to decode it and find the year and bibref?
@@ -95,6 +92,8 @@ addData:
 Documents: 
 
 Document:
+	Add "Explore" button: Send URL parameter for list of variables
+
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
 		Doesn't seem to work.

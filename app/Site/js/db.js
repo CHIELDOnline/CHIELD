@@ -9,9 +9,13 @@ function preparePage(tableIdX,php_linkX){
 	if(php_link!=""){
 		php_link = php_linkX;
 	}
-	// set up column searching
+	setupColumnSearching(tableId);
+
+}
+
+function setupColumnSearching(tableIdX){
 	if(true){
-		$('#'+tableId+' tfoot th').each( function () {
+		$('#'+tableIdX+' tfoot th').each( function () {
 	        var title = $(this).text();
 	        //$(this).attr("id","Search_"+title);
 	        if(title=="Cor" || title=="Relation" || title=="Confirmed"){
@@ -26,7 +30,6 @@ function preparePage(tableIdX,php_linkX){
 	        }
 	    } );
 	}
-
 }
 
 function editData(data){

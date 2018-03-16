@@ -52,8 +52,8 @@ makePks = function(base){
   # unique keys based on hash numbers.  
   # Duplicate strings are given different keys
   # Old method:
-  n = unlist(tapply(base,base,function(X){1:length(X)}))
-  as.character(sapply(paste0(base,n),str_to_int))
+  n = sapply(1:length(base),function(i){sum(base[i:length(base)]==base[i])})
+  as.character(sapply(paste0(n,base),str_to_int))
   
   # For now, just return incrementing values
   #1:length(base)

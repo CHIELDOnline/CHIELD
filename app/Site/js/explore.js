@@ -71,6 +71,16 @@ function filterWithMaxLengthLimit(request, response) {
         response(results.slice(0, 8));
     }
 
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1));
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 $(document).ready(function(){
 	// Add the header
@@ -164,6 +174,13 @@ $(document).ready(function(){
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();
+
+
+	var edgesToLoad = getUrlParameter("links");
+	if(edgesToLoad!==undefined && edgesToLoad!=""){
+		requestRecord("php/getLinksForExploreByPk.php","keylist="+edgesToLoad,'links');
+	}
+
 	hideLoader();
 
 });

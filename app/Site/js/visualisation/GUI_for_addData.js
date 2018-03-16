@@ -283,17 +283,4 @@ function redrawGUIfromGrid(){
     saveProgressCookie();
 }
 
-function findUnconnectedNodes(){
-	// Find nodes in the GUI that are not connected with edges
-	var allNodeIds = network_nodes.getIds();
-	var nodesWithEdges= [];
-	var allEdgeIds = network_edges.getIds();
-	for(var i=0;i<allEdgeIds.length;++i){
-		nodesWithEdges.push(network_edges.get(allEdgeIds[i]).from);
-		nodesWithEdges.push(network_edges.get(allEdgeIds[i]).to);
-	}
-
-	// diff now contains what is in allNodeIds that is not in allEdgeIds
-	return($(allNodeIds).not(nodesWithEdges).get());
-}
 

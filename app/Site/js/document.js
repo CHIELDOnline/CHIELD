@@ -6,6 +6,7 @@ var bibtexVisible = false;
 
 var documentKey = "";
 var shortCite = "";
+var doc_causal_links = [];
 
 tableId = "links_table";
 dtableConfig = {
@@ -14,6 +15,7 @@ dtableConfig = {
         autoWidth: true,
         //fixedColumns: {leftColumns: 3},
     	columnDefs: [
+    		{targets: 0, visible:false},
     		{
     			// Colour stage background (see vis_network_utils for `stageColours` definition)
 	    		targets: 5,
@@ -43,6 +45,21 @@ dtableConfig = {
 				  }
 			  }
         ]
+    };
+
+dtableConfig_otherDocsTable = {
+		ordering: true,
+        lengthChange: false,
+        autoWidth: true,
+    	columns: [
+        	// Combine the reference and the citekey to make a link
+        	{ data: null, render: function(data,type,row){
+        		return '<a href="document.html?key=' + data[1] +'">'+data[0] + '</a>';
+        	}},
+        	{ data: null, render: function(data,type,row){
+        		return '<a href="variable.html?key=' + data[3] +'">'+data[2] + '</a>';
+        	}}
+        	]
     };
 
 
@@ -87,6 +104,7 @@ function updateRecord(response,type){
 		displayBibtex();
 	}
 	if(type=="links"){
+		doc_causal_links = JSON.parse(response);
 		updateLinksTable(response); // should pass string 
 		redrawGUIfromObject(JSON.parse(response)); //should pass object
 	}
@@ -94,6 +112,43 @@ function updateRecord(response,type){
 		response = JSON.parse(response);
 		showContributors(response);
 	}
+	if(type=="connections"){
+		if(response.length>5){
+			updateLinksTable2(response,"other_docs_table",dtableConfig_otherDocsTable);
+		} else{
+			$("#connectionsToOtherDocs").hide();
+		}
+	}
+}
+
+
+function updateLinksTable2(text,tableIdX,dtableConfigX){
+
+	var links = JSON.parse(text);
+	// DataTable wants an array of arrays, so convert:
+	var links2 = [];
+	for(i in links){
+		links2.push(Object.values(links[i]));
+	}
+	links2 = editData(links2);
+	var dtableConfigX = $.extend({data:links2},dtableConfigX);
+	
+	var dtableX = $('#'+tableIdX).DataTable(dtableConfigX);
+	
+	// Add column searching
+    dtableX.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+    $('#'+tableIdX+' tfoot tr').appendTo('#'+tableIdX+' thead');
+    document.getElementById(tableIdX+'_filter').style.display = "none";
 }
 
 var getUrlParameter = function getUrlParameter(sParam) {
@@ -118,6 +173,16 @@ function revealBibtex(){
 	} else{
 		$("#bibtexsource").hide();
 	}
+}
+
+function openExplore(){
+	var link_pks = "";
+	for(var i=0;i<doc_causal_links.length;++i){
+		link_pks += doc_causal_links[i].pk+",";
+	}
+	link_pks = link_pks.slice(0,link_pks.length -1);
+	var url = "explore.html?links="+link_pks;
+	window.open(url);
 }
 
 function openSource(){
@@ -183,6 +248,8 @@ $(document).ready(function(){
 		preparePage(tableId,"");
 		requestRecord("php/getLinksForDoc.php", "key="+documentKey,'links');
 		requestRecord("php/getContributorsForDoc.php", "key="+documentKey,'contributors');
+		setupColumnSearching("other_docs_table");
+		requestRecord("php/getConnectionsToDoc.php", "key="+documentKey,'connections');
 	} else{
 		// TODO: display no data message
 		console.log("no data");

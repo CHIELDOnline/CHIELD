@@ -54,6 +54,10 @@ function updateRecord(response, type){
 	if(database_records===null){
 		database_records = [];
 	}
+
+	// User may have added nodes already, but not connected them:
+	var unconnectedNodes = findUnconnectedNodes();
+
 	// In explore, this can recieve multiple updates,
 	// So need to check we're not adding stuff twice
 	var newRecords = false;
@@ -69,9 +73,25 @@ function updateRecord(response, type){
 		//console.log(database_records);
 		network_nodes.clear();
 		network_edges.clear();
+		
+		// Update GUI
 		redrawGUIfromObject(database_records);
-		updateGrid(database_records);
+		var currentNodeIds = network_nodes.getIds();
+		for(var i=0;i<unconnectedNodes.length;++i){
+			if($.inArray(unconnectedNodes[i],currentNodeIds)==-1){
+				var newNode = {
+					id:unconnectedNodes[i],
+					label:findVariableName(unconnectedNodes[i])
+				}
+				network_nodes.add(newNode);
+			}
+		}
+		network.redraw();
 		changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
+
+		// Update grid
+		updateGrid(database_records);
+
 	} else{
 		alert("No new links found");
 	}
@@ -81,24 +101,24 @@ function updateRecord(response, type){
 
 function updateGrid(links){
 
-	// Go through each row and check that the pk
-	// isn't already included in the table
-
 	var links2 = [];
 	for(i in links){
 		links2.push(Object.values(links[i]));
 	}
+	var tmpDtable= $("#links_table").dataTable();
+	tmpDtable.fnClearTable();
+	tmpDtable.fnAddData(links2);
 
-	if(links2.length>0){
-		dtable.rows.add(links2);
+	// if(links2.length>0){
+	// 	dtable.rows.add(links2);
 		
-		// Redraw the table to show the new data
-		dtable.draw();
-		$("#links_table").show();
-	} else{
-		alert("No causal links found");
-		$("#links_table").hide();
-	}
+	// 	// Redraw the table to show the new data
+	// 	dtable.draw();
+	// 	$("#links_table").show();
+	// } else{
+	// 	alert("No causal links found");
+	// 	$("#links_table").hide();
+	// }
 }
 
 

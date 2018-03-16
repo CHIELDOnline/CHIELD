@@ -5,7 +5,8 @@ $key = $_POST['key'];
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
 $sql= <<<EOT
-SELECT s.[name] variable1,
+SELECT l.pk,
+     s.[name] variable1,
 	   Relation as relation,
        s2.[name] variable2,
        Cor,

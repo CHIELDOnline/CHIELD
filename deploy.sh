@@ -57,22 +57,22 @@ fi
 
 if [ "$copy_local_files" = true ]
 then
-# Copy the sqlite database and downloadable csv files to the local app:
-cp -R data/db/* app/data/db/
+	# Copy the sqlite database and downloadable csv files to the local app:
+	cp -R data/db/* app/data/db/
 
-echo "Zipping publicly downloadable files ..."
-# Zip the downloadable csv files to the downloads folder
-# in the public folder of the local app:
-zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
+	if [ "${remove_public_files_first}" = true ]
+	then
+		echo "Deleting existing public files ..."
+		rm -R ${server_public_folder}*
+	fi
 
-# Zip the sqlite database and add to downloads
-zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
-fi
+	echo "Zipping publicly downloadable files ..."
+	# Zip the downloadable csv files to the downloads folder
+	# direct to the server (avoid adding it to the local folder, it upsets git)
+	zip app/Site/downloads/CHIELD_csv.zip data/db/*.csv
 
-if [ "${remove_public_files_first}" = true ]
-then
-	echo "Deleting existing public files ..."
-	rm -R ${server_public_folder}*
+	# Zip the sqlite database and add to downloads
+	zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
 fi
 
 
