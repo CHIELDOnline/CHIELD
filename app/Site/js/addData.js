@@ -318,7 +318,12 @@ function submitToGitHub(){
 		    url: 'php/sendNewRecord.php',
 		    data: {json: JSON.stringify(jdata)},
 		    dataType: 'json'
-		}). done(finishedSubmission).fail(finishedSubmission);
+		}). done(
+			function(data){
+				finishedSubmission(data);
+			}).fail(function(data){
+				finishedSubmission(data);
+			});
 
 /*		var http = new XMLHttpRequest();
 		http.open("POST", "php/sendNewRecord.php", true);
@@ -372,6 +377,7 @@ function offerCausalLinksAsCSV(){
 }
 
 function finishedSubmission(link){
+	console.log(link);
 	if(link.startsWith("https")){
 		$("#submissionResults").html(
 			'Data submitted.  <a href="'+link+'" target="_blank">View the pull request</a>.'

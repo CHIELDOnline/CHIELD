@@ -88,6 +88,9 @@ addData:
 
 	hide "ui-helper-hidden-accessible"
 
+	Bib source: at the moment we write some extra data in the first two lines
+		We could just pass the bibtex record, and get the python file to decode it and find the year and bibref?
+
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now

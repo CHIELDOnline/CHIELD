@@ -6,7 +6,6 @@ $base_processed = "../../data/processedRecords/";
 // get the text
 $data = json_decode($_POST['json']);
 
-var_dump($data);
 
 $csv_data = $data->{'csv'};
 $bib_data = $data->{"bibtex"};
