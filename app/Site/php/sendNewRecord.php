@@ -12,9 +12,14 @@ $bib_data = $data->{"bibtex"};
 $con_data = $data->{"contributor"};
 
 // Escape < and >
-$csv_data = htmlentities($csv_data);
-$bib_data = htmlentities($bib_data);
-$con_data = htmlentities($con_data);
+function escapeBrackets($text) {
+	$text = str_replace("<","&lt;",$text);
+	$text = str_replace(">","&gt;",$text);
+    return $text;
+}
+$csv_data = escapeBrackets($csv_data);
+$bib_data = escapeBrackets($bib_data);
+$con_data = escapeBrackets($con_data);
 
 // Write data to files
 
