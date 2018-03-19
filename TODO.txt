@@ -23,6 +23,7 @@ Documentation:
 	Reservations
 
 
+FIX: Currently, CSV converter does not escape double quotes.  Maybe bring in 3rd party csv converter?
 
 
 Output to daggity format:
@@ -81,6 +82,8 @@ Variable:
 
 addData:
 	TEST: does adding new data still work?
+
+	FIX: Don't import blank lines in csv
 
 	Bib source: at the moment we write some extra data in the first two lines
 		We could just pass the bibtex record, and get the python file to decode it and find the year and bibref?
