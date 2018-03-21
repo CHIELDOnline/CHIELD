@@ -17,7 +17,8 @@ def find_all_paths(graph, start, end, path=[]):
 	path = path + [start]
 	if start == end:
 		return [path]
-	if not graph.has_key(start):
+	#if not graph.has_key(start):
+	if not start in graph.keys():
 		return []
 	paths = []
 	for node in graph[start]:
@@ -25,7 +26,7 @@ def find_all_paths(graph, start, end, path=[]):
 			newpaths = find_all_paths(graph, node, end, path)
 			for newpath in newpaths:
 				paths.append(newpath)
-	return paths
+	return(paths)
 
 
 var1 = sys.argv[-2]
@@ -48,4 +49,4 @@ paths = find_all_paths(graph, var1, var2)
 
 uniqueNodes = list(set([item for sublist in paths for item in sublist]))
 
-print ",".join(uniqueNodes)
+print(",".join(uniqueNodes))

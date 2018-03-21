@@ -285,3 +285,4 @@ dbWriteTable(my_db2, "contributors",contributors, overwrite=T)
 dbWriteTable(my_db2, "version",version, overwrite=T)
 dbDisconnect(my_db2)
 
+

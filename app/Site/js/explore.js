@@ -97,14 +97,15 @@ $(document).ready(function(){
 	dtable = $('#'+tableId).DataTable(dtableConfig);
 	
 
+	// TODO: This is duplicated code
 	// Add column searching 
     dtable.columns().every( function () {
         var that = this;
  
         $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
+            if ( that.search() !== this.value.trim() ) {
                 that
-                    .search( this.value )
+                    .search( this.value.trim() )
                     .draw();
             }
         } );

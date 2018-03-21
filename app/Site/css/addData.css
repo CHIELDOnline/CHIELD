@@ -18,6 +18,19 @@ ul {
 
 .ui-helper-hidden-accessible { display:none; }
 
+.ui-menu-item:hover{
+    background-color: lightgray;
+}
+
+.ui-menu{
+    background-color:white;
+    border-style:solid;
+    border-width:1px;
+    width: 10%;
+}
+
+/* ---------- */
+
 #mynetwork {
     width: 90%;
     height: 300px;

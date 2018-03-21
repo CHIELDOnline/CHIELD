@@ -52,6 +52,7 @@ then
 	#echo "Skipping database compilation ..."
 	cd processing
 	R  --slave -f TreeToDatabase.R
+	R  --slave -f makeCausalLinksJSON.R
 	cd ..
 fi
 
@@ -88,7 +89,9 @@ chown _www ${server_private_folder}newRecords
 chown _www ${server_private_folder}processedRecords
 
 # sudo chmod 755 *.php
-
+# Remove zip files (to reduce git overhead)
+rm app/Site/downloads/CHIELD_csv.zip
+rm app/Site/downloads/CHIELD.zip
 
 # Need to update the python path for php to work
 sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewRecord.php

@@ -64,9 +64,9 @@ function updateLinksTable(text){
         var that = this;
  
         $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
+            if ( that.search() !== this.value.trim() ) {
                 that
-                    .search( this.value )
+                    .search( this.value.trim() )
                     .draw();
             }
         } );

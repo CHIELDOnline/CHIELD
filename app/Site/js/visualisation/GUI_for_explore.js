@@ -137,14 +137,36 @@ function addVar(varname){
 	if(pk!=null){
 		// Check it's not already displayed
 		if($.inArray(pk,network_nodes.getIds())==-1){
+
+			var meanPos = getMeanNodePositions();
 			// Add node
 			var newNode = {
 				id:pk,
-				label:varname
+				label:varname,
+				x: meanPos.x,
+				y: meanPos.y
 				};
 			network_nodes.add(newNode);
 		}
 	}
+}
+
+function getMeanNodePositions(){
+	var mean_x_position = 0.0;
+	var mean_y_position = 0.0;
+	var nodeIds = network_nodes.getIds();
+	if(nodeIds.length>0){
+		var nodePositions = network.getPositions();
+		for(var i=0;i<nodeIds.length;++i){
+			mean_x_position += nodePositions[nodeIds[i]].x;
+			mean_y_position += nodePositions[nodeIds[i]].y;
+		}
+
+		mean_x_position = mean_x_position/nodeIds.length;
+		mean_y_position = mean_y_position/nodeIds.length;
+	}
+	console.log([mean_x_position,mean_y_position]);
+	return({x:mean_x_position,y:mean_y_position});
 }
 
 function removeVariableViaNetwork(){

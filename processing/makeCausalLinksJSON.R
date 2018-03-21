@@ -1,8 +1,9 @@
 # Convert the causal links to a python dictionary format (json)
 
-library(jsonlite)
+suppressWarnings(suppressMessages(library(jsonlite)))
+print("Creating causal links json file ...")
 
-try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
+#try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 clinks = read.csv("../data/db/CausalLinks.csv", stringsAsFactors = F)
 

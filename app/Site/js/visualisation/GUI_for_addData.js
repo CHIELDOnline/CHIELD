@@ -12,6 +12,8 @@ var network_last_click_time = 0;
 var network_container = null;
 
 var drawLinksWithClicks = true;
+var mousePos = {x:0,y:0};
+var causal_links_canvas;
 
 
 function addVar(){
@@ -54,6 +56,11 @@ function addVarByVarName(selectedVar,x=null,y=null){
 		//network.redraw();
 		network.fit();
 	}
+	// Add to existingVariables so that it appears as a
+	// suggestion in the dropdown box
+	if($.inArray(selectedVar,existingVariables)==-1){
+		existingVariables.push(selectedVar);
+	}
 }
 
 function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
@@ -81,11 +88,11 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 	console.log((!edgeExists) && selectedVar1!=selectedVar2)
 
 	if((!edgeExists) && (selectedVar1!=selectedVar2) && (selectedVar1!="") && selectedVar2!=""){
+		//var1Position = network.getPositions(selectedVar1);
+		//var2Position = network.getPositions(selectedVar2);
 		console.log("HERE");
 		network_edges.add(newEdge);
 		network.fit();
-		
-
 		// add data to grid
 		addEdgeToGrid(selectedVar1,causal_relation,selectedVar2);		
 
@@ -192,6 +199,39 @@ function toggleDrawLinks(){
 	}
 }
 
+// function getCanvasMousePos(canvas, evt) {
+//     var rect = canvas.getBoundingClientRect();
+//     return {
+//         x: (evt.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+//         y: (evt.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height
+//     };
+// }
+
+function getMousePos(e) {
+	if(drawLinksWithClicks){
+    	mousePos = {
+         	x:e.clientX,
+         	y:e.clientY
+    			};
+    	network.redraw();
+	}
+}
+
+function dragToDrawConnections(ctx) {
+	if(drawLinksWithClicks && current_selection_mode=="end" && currently_selected_node!==null){
+	    var fromNodePosition = network.getPositions([currently_selected_node])[currently_selected_node];
+	    var mouseCanvasPosition = network.DOMtoCanvas(mousePos);
+	    var canvasBoundingRect = $("#mynetwork")[0].getBoundingClientRect();
+	    mouseCanvasPosition.x -= canvasBoundingRect.x;
+	    mouseCanvasPosition.y -= canvasBoundingRect.y;
+	    ctx.strokeStyle="#FF0000";
+   		ctx.beginPath();
+		ctx.moveTo(fromNodePosition.x,fromNodePosition.y);
+		ctx.lineTo(mouseCanvasPosition.x,mouseCanvasPosition.y);
+		ctx.stroke();
+	}
+  }
+
 
 function networkUpdateNodeName(oldNodeName, newNodeName){
 	// we can't rely on the id being the original id, 
@@ -213,12 +253,32 @@ function netwrokUpdateEdgeType(Var1, Var2, Relation){
 
 }
 
+function copyNetworkNodes(){
+	var network_nodes_copy = {};
+	var network_nodes_ids = network_nodes.getIds();
+	for(var i=0;i<network_nodes_ids.length;++i){
+		network_nodes_copy[network_nodes_ids[i]] = network_nodes.get(network_nodes_ids[i])
+	}
+	return(network_nodes_copy);
+}
+
 function redrawGUIfromGrid(){
+
+	// TODO: could probably change to just updating network, 
+	//   rather than completely redraw it
+	// This is hard, because there can be multiple edges connecting the same nodes
+	//  And edge ids can change if the node ids change
 
 	// find unconnected nodes in the GUI
 	// (these won't appear yet in the grid)
 	// so we can add them back later
 	var unconnectedNodes = findUnconnectedNodes();
+
+	// Keep track of position of nodes,
+	// so that we can draw them back in the same positions
+	// TODO: This should probably replace the unconnectedNodes function
+
+	network_nodes_copy = copyNetworkNodes();
 
 	network_nodes = new vis.DataSet([]);
   	network_edges = new vis.DataSet([]);
@@ -227,58 +287,83 @@ function redrawGUIfromGrid(){
   	// make a list of all nodes and edges in the grid
   	var nodes = [];
 
+  	// Add edges
 	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
 		
 		var objx = $('#jsGrid').data().JSGrid.data[row]
 		var this_var1 = objx.Var1;
 		var this_var2 = objx.Var2;
-		var this_relation = objx.Relation;
-		
-		console.log(this_var1 + " " + this_var2);
-		if($.inArray(this_var1,nodes)==-1){
-			nodes.push(this_var1)
-		}
-		if($.inArray(this_var2,nodes)==-1){
-			nodes.push(this_var2)
-		}
-		var id = this_var1+"#"+this_relation+"#"+this_var2;
-		// check we haven't added this data already
-		if($.inArray(id,network_edges.getIds())!=-1){
-			// id is already in the list of ids
-			alert("Duplicate data at row "+(row+1));
-		} else{
-			var newEdge = getEdgeSettings(
-				id,
-				this_var1,
-				this_var2,
-				this_relation,
-				objx.Cor,
-		        objx.Type,
-		        objx.Stage);
-			console.log(newEdge);
-			network_edges.add(newEdge);
+		if(this_var1=="" || this_var2==""){
+			alert("One of the variable names is blank on row "+(row+1));
+		} else {
+			var this_relation = objx.Relation;
+			
+			console.log(this_var1 + " " + this_var2);
+			if($.inArray(this_var1,nodes)==-1){
+				nodes.push(this_var1)
+			}
+			if($.inArray(this_var2,nodes)==-1){
+				nodes.push(this_var2)
+			}
+			var id = this_var1+"#"+this_relation+"#"+this_var2;
+			// check we haven't added this data already
+			if($.inArray(id,network_edges.getIds())!=-1){
+				// id is already in the list of ids
+				alert("Duplicate data at row "+(row+1));
+			} else{
+				var newEdge = getEdgeSettings(
+					id,
+					this_var1,
+					this_var2,
+					this_relation,
+					objx.Cor,
+			        objx.Type,
+			        objx.Stage);
+				console.log(newEdge);
+				network_edges.add(newEdge);
+			}
 		}
 	}
 
+	// Add nodes
 	for(var i=0; i < nodes.length; ++i){
 		var newNode = {
 			id:nodes[i],
 			label:nodes[i]
 		}
+
+		// If it already existed, put it back in the same location
+		var oldNode = network_nodes_copy[nodes[i]];
+		if(oldNode!==null && oldNode!==undefined){
+			newNode.x = oldNode.x;
+			newNode.y = oldNode.y;
+		}
 		network_nodes.add(newNode);
 	}
 
-
 	// draw the unconnected nodes back in
 	for(var i=0;i<unconnectedNodes.length;++i){
-		network_nodes.add(unconnectedNodes[i]);
+
+		// Check if node not already in the network.
+		if($.inArray(unconnectedNodes[i],network_nodes.getIds())==-1){
+			var oldNode = network_nodes_copy[unconnectedNodes[i]];
+			// var newNode = {
+			// 	id:unconnectedNodes[i],
+			// 	label:unconnectedNodes[i],
+			// 	x: network_nodes_copy.get(unconnectedNodes[i]).x
+			// 	y: network_nodes_copy.get(unconnectedNodes[i]).y
+			// }
+			network_nodes.add(oldNode);
+		}
+
+		
 	}
 
 	// redraw network
 	initialiseNetwork();
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
-
+    network.on("afterDrawing", dragToDrawConnections);
     // update progress
     saveProgressCookie();
 }

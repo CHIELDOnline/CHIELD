@@ -76,9 +76,19 @@ function headerTooltip(){
 */
 
 var dataHeaders = [
-            { name: "Var1", type: "text", width: 150},
+            { name: "Var1", type: "text", width: 150, 
+            	// Add autosuggest
+		        insertTemplate: function(value) { 
+		        	return this._insertAuto = $("<input>").autocomplete({ 
+		        		source: filterWithMaxLengthLimit});}, 
+		        insertValue: function() { return this._insertAuto.val(); }},
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
-            { name: "Var2", type: "text", width: 150 },
+            { name: "Var2", type: "text", width: 150,
+            	// Add autosuggest
+        		insertTemplate: function(value) { 
+		        	return this._insertAuto = $("<input>").autocomplete({ 
+		        		source: filterWithMaxLengthLimit});}, 
+		        insertValue: function() { return this._insertAuto.val(); }},
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
             { name: "Topic", type: "text", width: 150 },
             { name: "Stage", type: "select", items: stageTypes, valueField:"Id", textField: "Name"},
@@ -166,65 +176,6 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
     }   
 
 	return(CSV);    
-}
-
-function submitToGitHub_viaLink(){
-
-	// This function is not used if possible
-
-	console.log("Submit");
-	var data = $('#jsGrid').jsGrid('option', 'data');
-
-	// get list of variables that are new to the database
-	var newVars = [];
-	for(var i=0;i<data.length;++i){
-		// check if it's a new variable
-		if($.inArray(data[i].Var1, existingVariables)==-1){
-			if($.inArray(data[i].Var1, newVars)==-1){
-				newVars.push(data[i].Var1);
-			}
-		}
-		if($.inArray(data[i].Var2, existingVariables)==-1){
-			if($.inArray(data[i].Var2, newVars)==-1){
-				newVars.push(data[i].Var2);
-			}
-		}
-	}
-	// save new variables to cookie
-	saveTempVariablesToCookie(newVars);
-
-	// Add the bibref to every line
-	for(var i=0; i < data.length; ++i){
-		data[i].bibref = bib_key;
-	}
-	var csvtext = JSONToCSVConvertor(data, true);
-	console.log(csvtext);
-	
-	for(var i=0; i<7;++i){
-		csvtext = csvtext+"\n"+csvtext;
-	}
-	
-	var filename = bib_key;
-	var content = encodeURI(csvtext);
-	var message = "submit";
-	var description = "desc";
-	
-	var template = "https://github.com/seannyD/CHIELD_test/new/master/"+
-	filename+"?"+
-	"filename="+filename+
-	"&value="+ content+
-	"&message="+ message+
-	"&description="+ description;
-	
-	console.log(template);
-	
-	if(template.length<characterLengthLimit){
-		window.open(template, '_blank');
-	} else{
-		// TODO: do something if the message is too long
-		alert("TOO LONG!");
-	}
-	
 }
 
 function validateSubmission(){
@@ -392,7 +343,7 @@ function finishedSubmission(obj){
 }
 
 function filterWithMaxLengthLimit(request, response) {
-		// return top 8 hits
+		// return top 8 hits from 'existingVariables'
         var results = $.ui.autocomplete.filter(existingVariables, request.term);
         response(results.slice(0, 8));
     }
@@ -409,32 +360,68 @@ function recieveVariablesFromServer(response){
 	// Add variables from cookie
 	existingVariables = existingVariables.concat(tmpVariables);
 
-	// Add suggestions to "add" input
-	$("#searchVariablesToAdd").autocomplete({
-			source:filterWithMaxLengthLimit
-		});
-	$("#searchVariablesToAdd_dynamic").autocomplete({
-			source:filterWithMaxLengthLimit
-		});
-
-
-	// add suggestions to drop down:
-	var gridAddButton = document.getElementsByClassName("jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button")[0];
-	gridAddButton.onmouseup = function(){
-			// This is the Var1 input on the grid
-		$("#jsGrid")[0].getElementsByTagName("input")[8].id="Var1Autocomplete";
-		$("#Var1Autocomplete").autocomplete({
-			source:filterWithMaxLengthLimit
-			});
-		$("#jsGrid")[0].getElementsByTagName("input")[9].id="Var2Autocomplete";
-		$("#Var2Autocomplete").autocomplete({
-			source:filterWithMaxLengthLimit
-			});
-	};
-
 	// It's now safe to load other things, like for editing a document
 	// (loadDataFromDocument() does nothing if there is no url parameter "document")
 	loadDataFromDocument();
+}
+
+function submitToGitHub_viaLink(){
+
+	// This function is not used if possible
+
+	console.log("Submit");
+	var data = $('#jsGrid').jsGrid('option', 'data');
+
+	// get list of variables that are new to the database
+	var newVars = [];
+	for(var i=0;i<data.length;++i){
+		// check if it's a new variable
+		if($.inArray(data[i].Var1, existingVariables)==-1){
+			if($.inArray(data[i].Var1, newVars)==-1){
+				newVars.push(data[i].Var1);
+			}
+		}
+		if($.inArray(data[i].Var2, existingVariables)==-1){
+			if($.inArray(data[i].Var2, newVars)==-1){
+				newVars.push(data[i].Var2);
+			}
+		}
+	}
+	// save new variables to cookie
+	saveTempVariablesToCookie(newVars);
+
+	// Add the bibref to every line
+	for(var i=0; i < data.length; ++i){
+		data[i].bibref = bib_key;
+	}
+	var csvtext = JSONToCSVConvertor(data, true);
+	console.log(csvtext);
+	
+	for(var i=0; i<7;++i){
+		csvtext = csvtext+"\n"+csvtext;
+	}
+	
+	var filename = bib_key;
+	var content = encodeURI(csvtext);
+	var message = "submit";
+	var description = "desc";
+	
+	var template = "https://github.com/seannyD/CHIELD_test/new/master/"+
+	filename+"?"+
+	"filename="+filename+
+	"&value="+ content+
+	"&message="+ message+
+	"&description="+ description;
+	
+	console.log(template);
+	
+	if(template.length<characterLengthLimit){
+		window.open(template, '_blank');
+	} else{
+		// TODO: do something if the message is too long
+		alert("TOO LONG!");
+	}
+	
 }
 
 
@@ -457,6 +444,7 @@ function loadTempVariablesFromCookie(){
 		}
 	}
 	// now we can request the full list of variables from the server.
+	// TODO: Can we be more efficient and trigger this in recieveVersion() only?
 	requestVariablesFromServer("php/getVariables.php");
 }
 function saveTempVariablesToCookie(newVars){
@@ -528,6 +516,7 @@ function userAcceptCookies(){
 	Cookies.set("acceptCookies","YES");
 	$("#CookieAlert").hide();
 }
+
 
 // ------------------- //
 //       Editing
@@ -605,6 +594,7 @@ $(document).ready(function(){
 		$("#CookieAlert").hide();
 	}
 
+	// Hide validation warnings
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
 	$("#CausalLinksAlert").hide();
@@ -614,7 +604,7 @@ $(document).ready(function(){
 	// then get the full list of variables from the server
 	// if it isn't, then clear cookie variables and then get full
 	// list of variables from the server
-	getVersion();
+	getVersion();  // eventually triggers recieveVersion() and recieveVariablesFromServer()
 
 	$("#header").load("header.html", function(){
 		$("#AddDataHREF").addClass("active");
@@ -658,6 +648,12 @@ $(document).ready(function(){
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
 
+    // For drawing live links
+    causal_links_canvas = document.getElementsByTagName("canvas")[0];
+    network.on("afterDrawing", dragToDrawConnections);
+    // Beware: network removes listeners after redraw, so can't add the listener to the network 
+    document.addEventListener('mousemove', getMousePos, false);
+
 	// Load username from cookie
 	checkGithubUserCookie();
 	
@@ -668,5 +664,23 @@ $(document).ready(function(){
 
 	$("#drawLinks").attr("onclick","toggleDrawLinks()");
 
+	// Open up add row in grid
+	var gridAddButton = document.getElementsByClassName("jsgrid-button jsgrid-mode-button jsgrid-insert-mode-button")[0];
+	gridAddButton.click();
+
+	// Add suggestions to "add" input
+	// (note this will only work after existingVariables is loaded)
+	$("#searchVariablesToAdd").autocomplete({
+			source:filterWithMaxLengthLimit
+		});
+	$("#searchVariablesToAdd_dynamic").autocomplete({
+			source:filterWithMaxLengthLimit
+		});
+
+
 });
+
+
+
+
 

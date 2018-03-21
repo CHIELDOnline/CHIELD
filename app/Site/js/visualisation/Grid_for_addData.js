@@ -56,43 +56,46 @@ function gridUpdated(item){
 	// TODO: check that new var1 is not equal to new Var2 
 	// (i.e. we're not adding a link to itself)
 
-	var fields = ["Var1",'Var2'];
-	for(var i=0;i<fields.length;++i){
-		var field = fields[i];
-		// Check if node names have changed
-		if(newItem[field]!= oldItem[field]){
-			// Update the GUI
-			
-			
-			var numAppearancesOld = variableAppearancesInGrid(oldItem[field]);
-			var numAppearancesNew = variableAppearancesInGrid(newItem[field]);
-			console.log("OLD "+numAppearancesOld);
-			console.log(numAppearancesNew);
-			if(numAppearancesOld==1 && numAppearancesNew==0){
-				// only one appearance, so just change the label
-				networkUpdateNodeName(oldItem[field], newItem[field]);
-			} else{
-				// We also need to change the node name in all the other entries
-				// Give option not to do this
-				if (confirm('Update variable change for all rows?')) {
-					updateGridVariables(oldItem[field], newItem[field]);
-					redrawGUIfromGrid();
+	if(newItem.Var1=="" || newItem.Var1==""){
+		alert("Error: Updated variable name is blank");
+	} else {
+
+		var fields = ["Var1",'Var2'];
+		for(var i=0;i<fields.length;++i){
+			var field = fields[i];
+			// Check if node names have changed
+			if(newItem[field]!= oldItem[field]){
+				// Update the GUI
+				var numAppearancesOld = variableAppearancesInGrid(oldItem[field]);
+				var numAppearancesNew = variableAppearancesInGrid(newItem[field]);
+				console.log("OLD "+numAppearancesOld);
+				console.log(numAppearancesNew);
+				if(numAppearancesOld==1 && numAppearancesNew==0){
+					// only one appearance, so just change the label
+					networkUpdateNodeName(oldItem[field], newItem[field]);
 				} else{
-					// we're not updating all entires of a variable, so actually we need to create a new node
-					// Maybe just compeletely re-draw the vis graph based on the current gridData.
-					redrawGUIfromGrid();
+					// We also need to change the node name in all the other entries
+					// Give option not to do this
+					if (confirm('Update variable change for all rows?')) {
+						updateGridVariables(oldItem[field], newItem[field]);
+						redrawGUIfromGrid();
+					} else{
+						// we're not updating all entires of a variable, so actually we need to create a new node
+						// Maybe just compeletely re-draw the vis graph based on the current gridData.
+						redrawGUIfromGrid();
+					}
 				}
 			}
 		}
-	}
-	
-	// Updating relation type
-	if(newItem.Relation != oldItem.Relation){
-		// For now, just take the easy option:
-		redrawGUIfromGrid();
-	}
+		
+		// Updating relation type
+		if(newItem.Relation != oldItem.Relation){
+			// For now, just take the easy option:
+			redrawGUIfromGrid();
+		}
 
-	saveProgressCookie();
+		saveProgressCookie();
+	}
 
 }
 
@@ -114,15 +117,23 @@ function updateGridVariables(oldItem,newItem){
 	// go through data and change all instances
 
 	for(var row=0; row < $('#jsGrid').data().JSGrid.data.length; ++row){
-		if($('#jsGrid').data().JSGrid.data[row].Var1==oldItem){
-			$('#jsGrid').data().JSGrid.data[row].Var1 = newItem;
+		var rowData = $('#jsGrid').data().JSGrid.data[row];
+		if(rowData.Var1==oldItem){
+			rowData.Var1 = newItem;
 		}
-		if($('#jsGrid').data().JSGrid.data[row].Var2==oldItem){
-			$('#jsGrid').data().JSGrid.data[row].Var2 = newItem;
+		if(rowData.Var2==oldItem){
+			rowData.Var2 = newItem;
 		}
 	}
 	// update grid
 	$("#jsGrid").jsGrid("refresh");
+
+	// Update existing variables
+	existingVariables.push(newItem);
+	var varIndex = existingVariables.indexOf(oldItem);
+	if(varIndex > -1){
+		existingVariables.splice(varIndex,1);
+	}
 }
 
 

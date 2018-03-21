@@ -26,12 +26,16 @@ Documentation:
 FIX: Currently, CSV converter does not escape double quotes.  Maybe bring in 3rd party csv converter?
 
 
-Output to daggity format:
-	http://www.dagitty.net/manual-2.x.pdf
 Output to an igraph-compatible format, e.g. graphml
 Output to DOT
 
 
+From Peter:
+	Dropdown list: dark gray bars to highlight? + On Hover?
+	AddData: Need clearer way of drawing links
+	TEST AddData: Suggestions not shown for Var1?
+	TEST AddData: Variables added in GUI: append these to the list of suggested variables?
+	TEST Variables appear far away from each other
 Online version:
 	
 
@@ -54,12 +58,13 @@ python script:
 	When editing, we can download the contents of the current contributor file, and automatically add the new line (instead of overwriting it).
 
 Deploy:
-	Don't write zip file to local app folder, but directly to server folder
-		(so we don't end up always updating it in git)
+	
 	
 
 Explore:
-		
+	
+	FIX: Find paths button not working?
+
 	Colour edges by: Publication
 
 	Add button to find all direct links between two nodes
@@ -84,6 +89,9 @@ addData:
 	TEST: does adding new data still work?
 
 	FIX: Don't import blank lines in csv
+	FIX: Make dropdown disappear after click away (not just enter)
+
+	In GUI_for_addData.js, redrawGUIfromGrid(): Currently, when new data is added, we call `initialiseNetwork()`, which is a bit of a waste, and maybe causes the weird physics problems?
 
 	Bib source: at the moment we write some extra data in the first two lines
 		We could just pass the bibtex record, and get the python file to decode it and find the year and bibref?
@@ -110,7 +118,7 @@ Database:
 	Check Wheeler, P. E. (1985). The loss of functional body hair in man.  
 		Causal links don't mention hair (and paper doesn't mention encephalisation?)
 
-
+	"population age structure" change to "demographics: age structure"
 
 About:
 	
