@@ -1,3 +1,7 @@
+Online version:
+	TEST PYTHON: find paths
+
+
 From Research IT:
 
 
@@ -31,12 +35,8 @@ Output to DOT
 
 
 From Peter:
-	Dropdown list: dark gray bars to highlight? + On Hover?
-	AddData: Need clearer way of drawing links
-	TEST AddData: Suggestions not shown for Var1?
-	TEST AddData: Variables added in GUI: append these to the list of suggested variables?
 	TEST Variables appear far away from each other
-Online version:
+
 	
 
 Help

@@ -361,6 +361,7 @@ function redrawGUIfromGrid(){
 
 	// redraw network
 	initialiseNetwork();
+	// reinstate event handlers
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
     network.on("afterDrawing", dragToDrawConnections);

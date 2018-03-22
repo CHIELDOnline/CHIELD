@@ -653,6 +653,11 @@ $(document).ready(function(){
     network.on("afterDrawing", dragToDrawConnections);
     // Beware: network removes listeners after redraw, so can't add the listener to the network 
     document.addEventListener('mousemove', getMousePos, false);
+    // When mouse leaves network box, deselect everything
+    document.getElementById("mynetwork").onmouseleave = function(){
+    		current_selection_mode="start";
+    		network.selectNodes([]); // Need to remove this if we want a button to delete nodes
+    	};
 
 	// Load username from cookie
 	checkGithubUserCookie();
