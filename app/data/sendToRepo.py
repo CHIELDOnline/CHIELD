@@ -12,6 +12,7 @@ from math import floor
 #from shutil import copyfile
 from time import time
 import sys
+import base64
 
 # Default Parameters
 repository_data_tree_folder = ""
@@ -122,8 +123,11 @@ def createFile(file_path,commit_title,content, target_branch, appendContent=Fals
 		repo.create_file(file_path, commit_title, content, target_branch)
 		return(False)
 	else:
-		existingContent = repo.get_file_contents(file_path)
-		newContent = existingContent + "\n" + content
+		newContent = content
+		if appendContent:
+			existingContent = repo.get_file_contents(file_path)
+			existingContent_decoded = base64.b64decode(existingContent.content).decode("UTF-8") 
+			newContent =  existingContent_decoded + "\n" + content
 		repo.update_file(file_path, commit_title, newContent, sha, branch=target_branch)
 		return(True)
 
