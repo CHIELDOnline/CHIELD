@@ -13,7 +13,7 @@ var network_container = null;
 
 var drawLinksWithClicks = true;
 var mousePos = {x:0,y:0};
-var causal_links_canvas;
+
 
 
 function addVar(){
@@ -128,10 +128,14 @@ function network_on_click (params) {
 		if(params["nodes"].length > 0){
 			user_clicked_node(params["nodes"][0]);
 		} else{
-			// User didn't click - unselect
+			// User didn't click on a node - unselect
 			currently_selected_node = null;
 			current_selection_mode = "start";
 		}
+
+		// hide floating search bar
+		$("#searchVariablesToAdd_dynamic").hide();
+		$(".ui-menu").hide(); 
 	}
 
 }
@@ -218,12 +222,19 @@ function getMousePos(e) {
 }
 
 function dragToDrawConnections(ctx) {
+	// Draw a line between the origin node and the mouse
 	if(drawLinksWithClicks && current_selection_mode=="end" && currently_selected_node!==null){
-	    var fromNodePosition = network.getPositions([currently_selected_node])[currently_selected_node];
-	    var mouseCanvasPosition = network.DOMtoCanvas(mousePos);
-	    var canvasBoundingRect = $("#mynetwork")[0].getBoundingClientRect();
-	    mouseCanvasPosition.x -= canvasBoundingRect.x;
-	    mouseCanvasPosition.y -= canvasBoundingRect.y;
+	   	
+	   	// Mouse position should take into account offset of div first,
+	   	// then use the DOMtoCanvas function
+	   	var canvasBoundingRect = $("#mynetwork")[0].getBoundingClientRect();
+	    var mouseCanvasPosition = network.DOMtoCanvas({
+	    	x: mousePos.x - canvasBoundingRect.x,
+	    	y: mousePos.y - canvasBoundingRect.y
+	    });
+	    
+		var fromNodePosition = network.getPositions([currently_selected_node])[currently_selected_node];
+	    
 	    ctx.strokeStyle="#FF0000";
    		ctx.beginPath();
 		ctx.moveTo(fromNodePosition.x,fromNodePosition.y);
@@ -365,6 +376,7 @@ function redrawGUIfromGrid(){
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
     network.on("afterDrawing", dragToDrawConnections);
+    network.on("beforeDrawing", drawHelp);
     // update progress
     saveProgressCookie();
 }

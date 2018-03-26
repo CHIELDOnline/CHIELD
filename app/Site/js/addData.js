@@ -110,23 +110,6 @@ var contributor_realName = "";
 var CHIELDVersion = "";
 
 
-
-
-function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
 function showTab(id){
 	$('.nav-tabs a[href="#'+id+'"]').tab('show');
 	$("#ContributorAlert").hide();
@@ -214,9 +197,24 @@ function recieveVariablesFromServer(response){
 
 
 
-// ------------------- //
-//       Editing
-// ------------------- //
+// ----------------------------- //
+//  Editing existing documents
+// ----------------------------- //
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
 
 // Fill the grid with data from the database
 //  so the user can edit stuff
@@ -260,8 +258,8 @@ function updateRecord(response, type){
 }
 
 // ------------------------------------------- //
-
-// Warn user before unloading
+//        Warn user before unloading
+// ------------------------------------------- //
 
 window.addEventListener("beforeunload", function (e) {
 	if(!submissionFinished){
@@ -330,23 +328,29 @@ $(document).ready(function(){
 	  	if ( event.key == "Enter" || event.which==13 ) {
 	  		addVar_dynamic();
 	  		$("#searchVariablesToAdd_dynamic").hide();
-	  		$("#ui-id-2").hide();
+	  		$(".ui-menu").hide(); 
 		} else{
 			if ( event.key == "Escape" || event.which==27 ) {
 				$("#searchVariablesToAdd_dynamic").hide();
-				$("#ui-id-2").hide();
+				$(".ui-menu").hide(); 
 			}
 		}
 	  });
+	// If user clicks away, hide the search bar
+	$( "#searchVariablesToAdd_dynamic" ).blur(function(event){
+		$("#searchVariablesToAdd_dynamic").hide();
+		$(".ui-menu").hide(); 
+	});
 	$("#searchVariablesToAdd_dynamic").val("");
 	$("#searchVariablesToAdd").val("");
+
 	// Bind clicks to select network nodes
 	network.on("click", network_on_click);
     network.on("doubleClick", network_on_double_click);
-
     // For drawing live links
-    causal_links_canvas = document.getElementsByTagName("canvas")[0];
     network.on("afterDrawing", dragToDrawConnections);
+    // For drawing help
+    network.on("beforeDrawing", drawHelp);
     // Beware: network removes listeners after redraw, so can't add the listener to the network 
     document.addEventListener('mousemove', getMousePos, false);
     // When mouse leaves network box, deselect everything
@@ -361,7 +365,7 @@ $(document).ready(function(){
 	// swich to first tab (contributor ID)
 	$('#navTabs a:first').tab('show');
 
-	initialiseFileUpload();
+	initialiseFileUpload();  // see js/util/fileUpload.js
 
 	$("#drawLinks").attr("onclick","toggleDrawLinks()");
 

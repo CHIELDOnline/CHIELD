@@ -2,11 +2,11 @@
 /* Autocomplete stuff */
 
 #ui-id-1 {
-    background: lightgray;
+    background: white;
     width: 40%;
 }
 #ui-id-2 {
-    background: lightgray;
+    background: white;
     width: 40%;
 }
 
@@ -29,6 +29,11 @@ ul {
     width: 10%;
 }
 
+.ui-menu-item-wrapper{
+    border-width:1px;
+    border-style:solid;
+}
+
 /* ---------- */
 
 #mynetwork {
@@ -47,6 +52,10 @@ ul {
     display: none;
 }
 
+#drawLinks{
+    margin-left: 5%;
+}
+
 /* display long text as ellipsis */
 
 .jsgrid-cell {
@@ -57,5 +66,10 @@ ul {
 #uploadCSVButton{
     margin-top: 8px;
     padding: 6px;
+}
+
+#networkHelpText{
+    pointer-events: none;
+    background: none !important;
 }
 

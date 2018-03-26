@@ -1,3 +1,6 @@
+
+FIX: Document heaers are mis-aligned.
+
 Online version:
 	TEST PYTHON: find paths
 
@@ -14,9 +17,7 @@ PHP
 
 Escape table input in javascript.
 
-
 R script: Regexp - take out control characters hex 0-31
-
 
 Configuration:
 	Create "configuration" folder for custom stuff
@@ -26,8 +27,6 @@ Documentation:
 	General thinking
 	Reservations
 
-
-FIX: Currently, CSV converter does not escape double quotes.  Maybe bring in 3rd party csv converter?
 
 
 Output to an igraph-compatible format, e.g. graphml
@@ -63,19 +62,15 @@ Deploy:
 
 Explore:
 	
-	FIX: Find paths button not working?
-
 	Colour edges by: Publication
+	Add button to find all direct links between two nodes?
 
-	Add button to find all direct links between two nodes
-
-	Somehow link edges to data
-
-	Add edges by document
-
+	FIX: When removing node, the datatable needs to be updated (remove rows)
+	
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
 
+	Somehow link edges to data?
 	Find brokers
 	Find bridging theories (References that nodes in two other references)
 
@@ -86,12 +81,11 @@ Variable:
 	
 
 addData:
-	TEST: does adding new data still work?
 
-	FIX: Don't import blank lines in csv
-	FIX: Make dropdown disappear after click away (not just enter)
+	Submit tab: Can add commit message explaining the change?
 
 	In GUI_for_addData.js, redrawGUIfromGrid(): Currently, when new data is added, we call `initialiseNetwork()`, which is a bit of a waste, and maybe causes the weird physics problems?
+
 
 	Bib source: at the moment we write some extra data in the first two lines
 		We could just pass the bibtex record, and get the python file to decode it and find the year and bibref?

@@ -43,3 +43,41 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
 
 	return(CSV);    
 }
+
+function datatableToCSV(table){
+
+    var csvText = "";
+    var header = table.columns().header();
+    for(var i=0;i< header.length;++i){
+        header_title = header[i].textContent;
+        if(header_title!="pk"){
+            csvText += '"'+header_title +'",';
+        }
+    }
+    csvText = csvText.substring(0,csvText.length-1);
+    csvText += "\n";
+
+    var data = table.rows().data();
+    // For each row
+    for(var i=0;i<data.length;++i){
+        var row = "";
+        // for each column within a row
+        for(j=0;j<data[i].length;++j){
+            if(header[j].textContent!="pk"){
+                cellValue = data[i][j];
+                if(cellValue==null){
+                    cellValue = "";
+                }
+                // handle double quotes
+                cellValue = cellValue.replace(/"/g, '""');
+                row += '"' + cellValue + '",';
+            }
+        }
+        row = row.substring(0, row.length - 1);
+        csvText += row + "\n"
+    }
+
+    return(csvText);
+    
+}
+

@@ -40,10 +40,16 @@ function csvToGrid(data){
     var json = []
     for(var i=1;i<data.length;++i){
         var row = {}
+        var hasData = false;
         for(var j=0; j<header.length;++j){
             row[header[j]] = data[i][j];
+            if(data[i][j].length>0){
+                hasData = true;
+            }
         }
-        json.push(row);
+        if(hasData){
+            json.push(row);
+        }
     }
     console.log(json);
     $("#jsGrid").jsGrid("option", "data", json);

@@ -18,7 +18,7 @@ dtableConfig = {
     		{targets: 0, visible:false},
     		{
     			// Colour stage background (see vis_network_utils for `stageColours` definition)
-	    		targets: 5,
+	    		targets: 6,
 	    		createdCell: function (td, cellData, rowData, row, col) {
 	    			var stageCol = stageColours[cellData]
 	    			if(stageCol!==undefined){
@@ -27,7 +27,7 @@ dtableConfig = {
 	    		}
 	  		},
             //{ width: "2%", targets: 1 }, //  try to change relation column width?
-            { targets: 8,
+            { targets: 9,
 				 // Render the notes function as a button that reveals the
 				 // note in a seperate div
 				  "render": function ( data, type, row, meta ) {

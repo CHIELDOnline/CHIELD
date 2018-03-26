@@ -35,6 +35,7 @@
 <script src="js/addData.js"></script>
 <script src="js/visualisation/Grid_for_addData.js"></script>
 <script src="js/visualisation/GUI_for_addData.js"></script>
+<script src="js/visualisation/help_for_addData.js"></script>
 <script src="js/github/githubUsernames.js"></script>
 <script src="js/util/jquery.csv.js"></script>
 <script src="js/util/fileUpload.js"></script>
@@ -90,7 +91,8 @@
 			<div class="card">
       			<h3 class="card-header">Change contributor:</h3>
       			<div class="card-block">
-					<p>Enter your github username (or <a href="http://github.com/">sign up here</a>)</p>
+					<p>You need a GitHub account to add data.  <a href="http://github.com/">Sign up for a free account.</a></p>
+					<p>Enter your GitHub username:</p>
 					<input id="contributorID"></input>
 					<button id="githubUsernameButton" onclick="checkGithubUser()" class="btn btn-primary">Find User</button>
 	  			</div>
@@ -114,11 +116,11 @@
 	</div>
 
 	<div id="causal_links" role="tabpanel" class="tab-pane fade">
-		<input id="searchVariablesToAdd"></input>
 		<input id="searchVariablesToAdd_dynamic" autofocus></input>
+		<!--<input id="searchVariablesToAdd"></input>
 		<button id="addVar" onclick="addVar()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Add a variable">
 			<i class="fas fa-plus"></i>
-		</button>
+		</button> -->
 		<!--<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>-->
 		<button id="drawLinks" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Toggle click to draw link">
 			<i class="fas fa-arrow-right"></i>
@@ -129,6 +131,7 @@
 		<label id="uploadCSVButton" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Upload a template file (see help)">
     	Upload csv<input type="file" name="File Upload" id="txtFileUpload" accept=".csv" hidden>
 		</label>
+		<div id="networkHelpText"></div>
 		<div id="mynetwork"></div>
 		<div id="jsGrid"></div>
 	</div>
