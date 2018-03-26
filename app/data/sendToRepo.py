@@ -78,13 +78,13 @@ def processData(contributor,bibref,bib_year,bib_source,causal_links):
 	createFile(githubFolder + bibref+".csv","Add "+bibref, causal_links, branchName)
 	# Contributor
 	contributorFilename = "contributors.txt"
-	if contributor.count("EDIT")>0:
-		contributorFilename = "editor.txt"
-	createFile(githubFolder + contributorFilename, "Add contributors", contributor, branchName)
+	#if contributor.count("EDIT")>0:
+	#	contributorFilename = "editor.txt"
+	editingContributor = createFile(githubFolder + contributorFilename, "Add contributors", contributor, branchName, appendContent=True)
 	
 	# Create pull request
 	pullType = "Add "
-	if contributor.count("EDIT")>0:
+	if editingContributor:
 		pullType = "Edit "
 	pull = createPullRequest(pullType+bibref, pullType+bibref+" from "+contributor,branchName)
 	
@@ -115,13 +115,17 @@ def createBranch(target_branch):
 	repo.create_git_ref(ref='refs/heads/' + target_branch, sha=sb.commit.sha)
 	#print("Created branch "+target_branch + ":" + sb.commit.sha)
 
-def createFile(file_path,commit_title,content, target_branch):
+def createFile(file_path,commit_title,content, target_branch, appendContent=False):
 	# Check if file exists
 	sha = get_file_sha(file_path)
 	if sha == "No existing file" or sha=="":
 		repo.create_file(file_path, commit_title, content, target_branch)
+		return(False)
 	else:
-		repo.update_file(file_path, commit_title, content, sha, branch=target_branch)
+		existingContent = repo.get_file_contents(file_path)
+		newContent = existingContent + "\n" + content
+		repo.update_file(file_path, commit_title, newContent, sha, branch=target_branch)
+		return(True)
 
 #e.g. https://api.github.com/repos/CHIELDOnline/CHIELD/git/trees/master:data/tree/documents/2010s/2017/Blasi_Moran_SLE_2017
 #repo._requester.requestJsonAndCheck("GET", repo.url + "/git/trees/master:"+"data/tree/documents/2010s/2017/Blasi_Moran_SLE_2017")

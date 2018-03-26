@@ -83,6 +83,7 @@ Variable:
 addData:
 
 	Submit tab: Can add commit message explaining the change?
+		If we do this, also change python to edit contributors.txt, rather than create "Editor.txt"
 
 	In GUI_for_addData.js, redrawGUIfromGrid(): Currently, when new data is added, we call `initialiseNetwork()`, which is a bit of a waste, and maybe causes the weird physics problems?
 
