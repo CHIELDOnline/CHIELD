@@ -8,9 +8,9 @@ suppressWarnings(suppressMessages(library(RSQLite)))
 suppressWarnings(suppressMessages(library(bibtex)))
 suppressWarnings(suppressMessages(library(readr)))
 
-source("detexify.R")
-
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
+
+source("detexify.R")
 
 treeBaseFolder = "../data/tree"
 
@@ -186,7 +186,7 @@ for(f in list.dirs(treeBaseFolder)){
         cx$bibref = bKey
         newContributors = cx
       } 
-      contributors = rbind(contributors,newContributors)
+      contributors = rbind(contributors,newContributors[,c("username","realname","date","bibref")])
     }
   }
 }
