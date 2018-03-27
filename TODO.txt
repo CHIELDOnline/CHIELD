@@ -1,8 +1,5 @@
 
-FIX: Document heaers are mis-aligned.
-
 Online version:
-	TEST PYTHON: find paths
 
 
 From Research IT:
@@ -33,11 +30,6 @@ Output to an igraph-compatible format, e.g. graphml
 Output to DOT
 
 
-From Peter:
-	TEST Variables appear far away from each other
-
-	
-
 Help
 
 	Add tips for coding causal links
@@ -53,8 +45,7 @@ php:
 	
 
 python script:
-
-	When editing, we can download the contents of the current contributor file, and automatically add the new line (instead of overwriting it).
+	Add commit message from web form
 
 Deploy:
 	
@@ -62,10 +53,15 @@ Deploy:
 
 Explore:
 	
+	FIX: When removing node, the datatable needs to be updated (remove rows)
+
+	From Peter:
+		TEST Variables appear far away from each other
+
 	Colour edges by: Publication
 	Add button to find all direct links between two nodes?
 
-	FIX: When removing node, the datatable needs to be updated (remove rows)
+	Disable buttons until they can be used
 	
 	Tidy up "existing variables" code: should move to db,
 	 but addData has custom parts in overloaded method `recieveVariablesFromServer`
@@ -83,8 +79,7 @@ Variable:
 addData:
 
 	Submit tab: Can add commit message explaining the change?
-		If we do this, also change python to edit contributors.txt, rather than create "Editor.txt"
-
+		
 	In GUI_for_addData.js, redrawGUIfromGrid(): Currently, when new data is added, we call `initialiseNetwork()`, which is a bit of a waste, and maybe causes the weird physics problems?
 
 
@@ -98,7 +93,6 @@ addData:
 Documents: 
 
 Document:
-	Add "Explore" button: Send URL parameter for list of variables
 
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
@@ -134,9 +128,3 @@ Future:
 		A collection of causal link ids with a name
 		Is this just the "Process" field?
 
-Cosmetic 
-	Pagiation (Next/Previous): fix to bottom of window?
-		#documents_table_paginate{
-			position: fixed;
-			bottom: 10px;
-			}

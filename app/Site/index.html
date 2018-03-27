@@ -10,6 +10,12 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="css/home.css"/>
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+<script type="text/javascript" src="js/db.js"></script>
+
  
 <script type="text/javascript" src="js/home.js"></script>
 
@@ -23,8 +29,18 @@
 <div class="container">
 <h2>The Causal Hypotheses in Evolutionary Linguistics Database</h2>
 
+<div class="row">
+	<div class="col-md-2">
+		<img class="mx-auto d-block" src="images/CHIELD_logo_red.png" style="width:180px">
+	</div>
+	<div class="col-md-8">
+		<div style="height:200px">
+			<div id="mynetwork"></div>
+			<div id="networkTitle"></div>
+		</div>
+	</div>
+</div>
 
-<img class="mx-auto d-block" src="images/CHIELD_logo_red.png">
 <p> CHIELD is a searchable database of causal hypotheses in evolutionary linguistics. It is currently under development. 
 
 
