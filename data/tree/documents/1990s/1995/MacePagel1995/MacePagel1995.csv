@@ -1,2 +1,4 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"latitude",">","linguistic diversity","neg","","language change","statistical","yes","","MacePagel1995"
+"latitude",">","linguistic diversity","neg","","language change","statistical","yes","Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals","MacePagel1995"
+"latitude",">","language territory","pos","language change","statistical","yes"," the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule","MacePagel1995"
+"habitat diversity",">","linguistic diversity","pos","language change","statistical","yes","we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude","MacePagel1995"
