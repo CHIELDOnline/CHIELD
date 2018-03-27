@@ -410,6 +410,17 @@ The number of different species found in a given area of the Earth increases fro
   volume = {366},
   year = {2011},
 }","Calude & Pagel (2011)"
+"nettle2012social","Daniel Nettle","2012","Social scale and structural complexity in human languages","@Article{nettle2012social,
+  title = {Social scale and structural complexity in human languages},
+  author = {Daniel Nettle},
+  journal = {Phil. Trans. R. Soc. B},
+  volume = {367},
+  number = {1597},
+  pages = {1829--1836},
+  year = {2012},
+  publisher = {The Royal Society},
+  abstract = {The complexity of different components of the grammars of human languages can be quantified. For example, languages vary greatly in the size of their phonological inventories, and in the degree to which they make use of inflectional morphology. Recent studies have shown that there are relationships between these types of grammatical complexity and the number of speakers a language has. Languages spoken by large populations have been found to have larger phonological inventories, but simpler morphology, than languages spoken by small populations. The results require further investigation, and, most importantly, the mechanism whereby the social context of learning and use affects the grammatical evolution of a language needs elucidation.},
+}","Nettle (2012)"
 "bentz2013languages","Christian Bentz; Bodo Winter","2013","Languages with more second language learners tend to lose nominal case","@Article{bentz2013languages,
   abstract = {In this paper, we provide quantitative evidence showing that languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all. In our sample, all languages with more than 50% second language speakers had no nominal case. The negative association between the number of second language speakers and nominal case complexity generalizes to different language areas and families. As there are many studies attesting to the difficulty of acquiring morphological case in second language acquisition, this result supports the idea that languages adapt to the cognitive constraints of their speakers, as well as to the sociolinguistic niches of their speaking communities. We discuss our results with respect to sociolinguistic typology and the Linguistic Niche Hypothesis, as well as with respect to qualitative data from historical linguistics. All in all, multiple lines of evidence converge on the idea that morphosyntactic complexity is reduced by a high degree of language contact involving adult learners.},
   author = {Christian Bentz and Bodo Winter},
