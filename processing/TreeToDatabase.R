@@ -181,7 +181,7 @@ for(f in list.dirs(treeBaseFolder)){
       
       contributor.file = paste0(f,"/contributors.txt")
       if(file.exists(contributor.file)){
-        cx = read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F)
+        suppressWarnings(cx <- read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F))
         names(cx)[1:3] = c("username",'realname','date') 
         cx$bibref = bKey
         newContributors = cx

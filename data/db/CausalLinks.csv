@@ -3,10 +3,18 @@
 "3045844918","wheeler1985loss","2809754639",">","2413943838","pos",NA,NA,NA,NA,NA,NA,NA
 "3654500907","wheeler1985loss","2809754639",">>","2856910405","pos",NA,NA,NA,NA,NA,NA,NA
 "3221274554","elman90findingStructure","360106046",">","2870250470","pos",NA,"acquisition","preadaptation","simulation","neural network","yes",NA
+"1531893655","Nichols1990","1031734161",">","3719167349","neg",NA,NA,"language change","hypothesis","","no","Other things being equal, density of lineages is substantially greater at low latitudes than at high latitudes."
+"2639337206","Nichols1990","2924754009",">","3719167349","pos",NA,NA,"language change","hypothesis","","no","Other things being equal, the coastal area of a continent will generally have substantially greater lineage density than the interior"
+"278713596","Nichols1990","2114687372",">","3719167349","pos",NA,NA,"language change","hypothesis","","no","Where coastline is dry, density of lineages can be low even at relatively low latitudes, as in western Australia and western South America. Thus rainfall and/or availability of water in general may be a separate factor, although here it will often be lumped with the coast/interior distinction"
+"3159392967","Nichols1990","3999396400",">","3719167349","pos",NA,NA,"language change","hypothesis","","no","Mountains ... The cause of high lineage density in mountain areas is generally attributed to the fact that mountainous geography naturally isolates populations, resists large-scale economic integration, and creates refuge zones."
+"1573059327","Nichols1990","293110995",">","3719167349","neg",NA,NA,"language change","hypothesis","","no","SCALE OF ECONOMY. By this term is meant not so much the magnitude of production and/or extraction (although that too is relevant), but the natural territorial scope of the economy: a large-scale economy (e.g. one based on mounted nomadic stockbreeding, urban trade centers, or industrialization) in herently spreads out over a substantial territory ... Density of lineages is low in areas dominated by large-scale economies, higher in areas with smaller-scale economies."
 "1785601099","ackley94altruismIn","1634976027","<=>","1005906399","pos",NA,"signalling","coevolution","simulation",NA,"yes",NA
 "1114057333","batali94innateBiases","4114447394",">","3992170438","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "3046207239","batali94innateBiases","3732170114",">","3992170438","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "244744025","batali94innateBiases","3992170438",">","2936169330","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
+"2247298813","MacePagel1995","1031734161",">","3719167349","neg",NA,"","language change","statistical","","yes","Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals"
+"3942238836","","1031734161",">","3336870837","pos",NA,"language change","statistical","yes",""," the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule","MacePagel1995"
+"2796286696","","1954884054",">","3719167349","pos",NA,"language change","statistical","yes","","we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude","MacePagel1995"
 "2832055764","Isbell_Young_1996","2105322074",">","379726749","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "268902022","Isbell_Young_1996","379726749",">","4106631776","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "1390586990","Isbell_Young_1996","4106631776",">","4155923052","pos",NA,NA,"preadaptation",NA,"",NA,NA
@@ -119,6 +127,7 @@
 "2046682090","hunley07geneticCoevolution","3082542981",">","1154678184","pos",NA,"genetics","language change","statistical","","none",NA
 "1410623285","hunley07geneticCoevolution","1453643107",">","1154678184","pos",NA,"genetics","language change","statistical","","none",NA
 "2005841951","hunley07geneticCoevolution","3719167349","~","1154678184","pos",NA,"lexicon;genetics","language change","statistical","","none",NA
+"2407437793","Pageletal2007","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
 "639776741","selten07languageEmergencePNAS","2913953561",">","1923061136","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "605269479","selten07languageEmergencePNAS","1535144982",">","1923061136","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "3404301469","selten07languageEmergencePNAS","3790392373",">","1923061136","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
@@ -144,6 +153,7 @@
 "3033012502","roberts2010experimental","379726749",">","3286042659","neg",NA,"diversity","language change","experiment","",NA,"the ideal player would avoid ever giving resources away to their opponents, while always appearing to be the team-mate of whoever they were partnered with for a given round. This meant finding some way of identifying one�s team-mate, and the only channel by which this could be achieved was the negotiation stage of the round."
 "3762247510","roberts2010experimental","3286042659",">","331530021","pos",NA,"diversity","language change","experiment","",NA,"The results suggested that the pressure to identify oneself to one�s team-mate caused the alien language to diverge into team 'dialects'"
 "3068460575","roberts2010experimental","3260460435",">","379726749","neg",NA,"diversity","language change","hypothesis","",NA,""
+"955172757","Calude2011","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
 "3310817347","bentz2013languages","634707713","~=","2949246489","pos",NA,"morphology","language change","statistical","typological",NA,""
 "1462863154","bentz2013languages","264262316",">","634707713","neg","3554226544","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
 "552922672","thomas2014self","437593210",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
@@ -316,3 +326,6 @@
 "547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
 "2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","",NA,NA
 "3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
+"3719082042","evolang12Raviv","1746840506",">","634707713",NA,NA,NA,NA,"experiment","",NA,NA
+"3687643733","evolang12Raviv","1746840506",">","1923061136",NA,NA,NA,NA,"experiment","",NA,NA
+"784654683","evolang12Raviv","1746840506",">","1270992509",NA,NA,NA,NA,"experiment","",NA,NA

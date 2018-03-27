@@ -27,6 +27,16 @@
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/elman90findingStructure.html},
   bdsk-url-2 = {http://dx.doi.org/10.1016/0364-0213(90)90002-E},
 }","Elman (1990)"
+"Nichols1990","Johanna Nichols","1990","{Linguistic diversity and the first settlement of the New World}","@Article{Nichols1990,
+  author = {Johanna Nichols},
+  journal = {Language},
+  number = {3},
+  pages = {475--521},
+  title = {{Linguistic diversity and the first settlement of the New World}},
+  volume = {66},
+  year = {1990},
+  abstract = {The oft-noted genetic and typological diversity of the languages of the New World is due not to accidents of history but to the operation of regular principles of linguistic geography. Four building blocks of a theory of linguistic diversity are presented here: a classification and measures of diversity, an account of the causes of diversity, measures of rates of differentiation, and means of estimating the age of a linguistic population. On the most conservative archeological view, the New World was first colonized some 12,000 years ago; on the received view, up to 20,000 years ago. But no high-latitude area like Siberia, Beringia, Alaska, or northern Canada could have contributed or transmitted the linguistic diversity to seed the New World in these time frames, and no single dispersing family could have given rise to the attested diversity in these time frames. The unmistakable testimony of the linguistic evidence is that the New World has been inhabited nearly as long as Australia or New Guinea, perhaps some 35,000 years. Genetic unity for 'Amerind' is incompatible with the chronology demanded by the linguistic facts.},
+}","Nichols (1990)"
 "ackley94altruismIn","D. H. Ackley; M. L. Littman","1994","Altruism in the evolution of communication","@InProceedings{ackley94altruismIn,
   abstract = {Computer models of evolutionary phenomena often assume that the fitness of an individual can be evaluated in isolation, but effective communication requires that individuals interact. Existing models directly reward speakers for improved behavior on the part of the listeners so that, essentially, effective communication is fitness. We present new models in which, even though 'speaking truthfully' provides no tangible benefit to the speaker, effective communication nonetheless evolves. A large population is spatially distributed so that 'communication range' approximately correlates with 'breeding range,' so that most of the time 'you'll be talking to family,' allowing kin selection to encourage the emergence of communication. However, the emergence of altruistic communication also creates niches that can be exploited by 'information parasites.' The new models display complex and subtle long-term dynamics as the global implications of such social dilemmas are played out.},
   address = {Cambridge, MA},
@@ -57,6 +67,21 @@
   year = {1994},
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/batali94innateBiases.html},
 }","Batali (1994)"
+"MacePagel1995","R. Mace; Mark Pagel","1995","{A Latitudinal Gradient in the Density of Human Languages in North America}","@Article{MacePagel1995,
+  author = {R. Mace and Mark Pagel},
+  doi = {10.1098/rspb.1995.0125},
+  issn = {0962-8452},
+  journal = {Proceedings of the Royal Society B: Biological Sciences},
+  number = {1360},
+  pages = {117--121},
+  title = {{A Latitudinal Gradient in the Density of Human Languages in North America}},
+  url = {http://rspb.royalsocietypublishing.org/cgi/doi/10.1098/rspb.1995.0125},
+  volume = {261},
+  year = {1995},
+  abstract = {
+The number of different species found in a given area of the Earth increases from the poles towards the equator for a wide range of terrestrial and marine organisms. A similar but opposite latitudinal gradient is also generally found in the size of the geographic range over which a species is found: range sizes are larger in more northern latitudes becoming smaller in the south, a phenomenon known as Rapaport’s rule. Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals. Six times, or more, different languages were spoken in a given area in southern latitudes, compared to the density of language groups nearer to the poles. In addition, the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule. Finally, based upon a categorization of North America into 23 distinct major habitat types, we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude. ‘Linguistic ecology’, or the examination of ecological factors associated with diversity in the number of linguistic groups, may shed new light on some features of cultural and linguistic evolution.
+},
+}","Mace & Pagel (1995)"
 "Isbell_Young_1996","L. A. Isbell; T.P. Young","1996","The evolution of bipedalism in hominids and reduced group size in chimpanzees: alternative responses to decreasing resource availability","@Article{Isbell_Young_1996,
   abstract = {<P> One hypothesis for the evolution of hominid bipedalism is that bipedalism was more efficient than quadrupedalism for long-distance terrestrial locomotion, and was favored when resources became scarcer and more widely separated during the drying of African forests in the Miocene. Here we extend this scenario for the evolution of bipedalism based on principles of behavioral ecology of extant primates. Daily travel distance is not only an increasing function of resource scarcity, but also of group size (because of intragroup scramble competition). When faced with Miocene drying, hominoids were forced to evolve either energetically more efficient locomotory abilities or smaller group sizes. The cost of the latter strategy is that smaller groups are less successful than larger groups in intergroup contest competition (smaller groups are supplanted from limiting resources). Among the earliest hominids, bipedalism may have been favored over small group size as an alternative energetic response to decreased resource availability. The alternative was to maintain quadrupedal locomotion but evolve fission-fusion grouping to reduce daily travel distance for individuals and hence, their energetic costs of travel. We suggest that this strategy represents the evolutionary pathway taken by chimpanzees. This divergence of strategies may have been a result of inherent differences in feeding ecology, but could also have been enhanced by the pre-empting of niche space by the two closely related and presumably competing hominoid ancestors of humans and chimpanzees. If so, it could have been a potential factor in the speciation process that led to modern humans and chimpanzees.</P>},
   author = {L. A. Isbell and T.P. Young},
@@ -286,6 +311,19 @@
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/hunley07geneticCoevolution.html},
   bdsk-url-2 = {http://dx.doi.org/10.1002/ajpa.20542},
 }","Hunley, Cabana, Merriwether & Long (2007)"
+"Pageletal2007","Mark Pagel; Quentin D. Atkinson; Andrew Meade","2007","{Frequency of word-use predicts rates of lexical evolution throughout Indo-European history.}","@Article{Pageletal2007,
+  author = {Mark Pagel and Quentin D. Atkinson and Andrew Meade},
+  doi = {10.1038/nature06176},
+  journal = {Nature},
+  number = {7163},
+  pages = {717--720},
+  pmid = {17928860},
+  title = {{Frequency of word-use predicts rates of lexical evolution throughout Indo-European history.}},
+  url = {http://www.ncbi.nlm.nih.gov/pubmed/17928860},
+  volume = {449},
+  year = {2007},
+  abstract = {Greek speakers say {""}ovpá{""}, Germans {""}schwanz{""} and the French {""}queue{""} to describe what English speakers call a {""}tail{""}, but all of these languages use a related form of {""}two{""} to describe the number after one. Among more than 100 Indo-European languages and dialects, the words for some meanings (such as {""}tail{""}) evolve rapidly, being expressed across languages by dozens of unrelated words, while others evolve much more slowly{""}such as the number {""}two{""}, for which all Indo-European language speakers use the same related word-form1. No general linguistic mechanism has been advanced to explain this striking variation in rates of lexical replacement among meanings. Here we use four large and divergent language corpora (English, Spanish, Russian and Greek) and a comparative database of 200 fundamental vocabulary meanings in 87 Indo-European languages to show that the frequency with which these words are used in modern language predicts their rate of replacement over thousands of years of Indo-European language evolution. Across all 200 meanings, frequently used words evolve at slower rates and infrequently used words evolve more rapidly. This relationship holds separately and identically across parts of speech for each of the four language corpora, and accounts for approximately 50\% of the variation in historical rates of lexical replacement. We propose that the frequency with which specific words are used in everyday language exerts a general and law-like influence on their rates of evolution. Our findings are consistent with social models of word change that emphasize the role of selection, and suggest that owing to the ways that humans use language, some words will evolve slowly and others rapidly across all languages.},
+}","Pagel, Atkinson & Meade (2007)"
 "selten07languageEmergencePNAS","Reinhard Selten; Massimo Warglien","2007","The emergence of simple languages in an experimental coordination game","@Article{selten07languageEmergencePNAS,
   abstract = {We investigate in a series of laboratory experiments how costs and benefits of linguistic communication affect the emergence of simple languages in a coordination task when no common language is available in the beginning. The experiment involved pairwise computerized communication between 152 subjects involved in at least 60 rounds. The subjects had to develop a common code referring to items in varying lists of geometrical figures distinguished by up to three features. A code had to be made of a limited repertoire of letters. Using letters had a cost. We are interested in the question of whether a common code is developed, and what enhances its emergence. Furthermore, we explore the emergence of compositional, protogrammatical structure in such codes. We compare environments that differ in terms of available linguistic resources (number of letters available) and in terms of stability of the task environment (variability in the set of figures). Our experiments show that a too small repertoire of letters causes coordination failures. Cost efficiency and role asymmetry are important factors enhancing communicative success. In stable environments, grammars do not seem to matter much, and instead efficient arbitrary codes often do better. However, in an environment with novelty, compositional grammars offer considerable coordination advantages and therefore are more likely to arise.},
   author = {Reinhard Selten and Massimo Warglien},
@@ -361,6 +399,17 @@
   publisher = {John Benjamins Publishing Company},
   abstract = {Computational simulations have provided evidence that the use of linguistic cues as group markers plays an important role in the development of linguistic diversity shortcite (Nettle & Dunbar, 1997; Nettle, 1999). Other simulations, however, have contradicted these findings (Livingstone & Fyfe, 1999; Livingstone, 2002). Similar disagreements exist in sociolinguistics (e.g. Labov, 1963, 2001; Trudgill, 2004, 2008a; Baxter et al., 2009). This paper describes an experimental study in which participants played an anonymous economic game using an instant-messenger-style program and an artificial ‘alien language’. The competitiveness of the game and the frequency with which players interacted were manipulated. Given frequent enough interaction with team-mates, players were able to use linguistic cues to identify themselves. In the most competitive condition, this led to divergence in the language, which did not occur in other conditions. This suggests that both frequency of interaction and a pressure to use language to mark identity play a significant role in encouraging linguistic divergence over short periods, but that neither is sufficient on its own.},
 }","Roberts (2010)"
+"Calude2011","Andreea S. Calude; Mark Pagel","2011","{How do we use language? Shared patterns in the frequency of word use across 17 world languages}","@Article{Calude2011,
+  author = {Andreea S. Calude and Mark Pagel},
+  doi = {10.1098/rstb.2010.0315},
+  journal = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  number = {1567},
+  pages = {1101--1107},
+  title = {{How do we use language? Shared patterns in the frequency of word use across 17 world languages}},
+  url = {http://rstb.royalsocietypublishing.org/cgi/doi/10.1098/rstb.2010.0315},
+  volume = {366},
+  year = {2011},
+}","Calude & Pagel (2011)"
 "bentz2013languages","Christian Bentz; Bodo Winter","2013","Languages with more second language learners tend to lose nominal case","@Article{bentz2013languages,
   abstract = {In this paper, we provide quantitative evidence showing that languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all. In our sample, all languages with more than 50% second language speakers had no nominal case. The negative association between the number of second language speakers and nominal case complexity generalizes to different language areas and families. As there are many studies attesting to the difficulty of acquiring morphological case in second language acquisition, this result supports the idea that languages adapt to the cognitive constraints of their speakers, as well as to the sociolinguistic niches of their speaking communities. We discuss our results with respect to sociolinguistic typology and the Linguistic Niche Hypothesis, as well as with respect to qualitative data from historical linguistics. All in all, multiple lines of evidence converge on the idea that morphosyntactic complexity is reduced by a high degree of language contact involving adult learners.},
   author = {Christian Bentz and Bodo Winter},
@@ -642,3 +691,11 @@
   title = {Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar},
   year = {2017},
 }","Blasi, Moran, Margvelashvili, Dediu, Moisik et al. (2017)"
+"evolang12Raviv","Limor Raviv; Antje Meyer; Shiri Lev-Ari","2018","The role of community size in the emergence of linguistic structure","@InProceedings{evolang12Raviv,
+  author = {Limor Raviv and Antje Meyer and Shiri Lev-Ari},
+  booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
+  editor = {C. Cuskley and M. Flaherty and H. Little and Luke McCrohon and A. Ravignani and T. Verhoef},
+  publisher = {Online at url{http://evolang.org/torun/proceedings/papertemplate.html?p=5}},
+  title = {The role of community size in the emergence of linguistic structure},
+  year = {2018},
+}","Raviv, Meyer & Lev-Ari (2018)"
