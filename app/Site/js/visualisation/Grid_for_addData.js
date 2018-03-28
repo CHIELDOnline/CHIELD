@@ -168,14 +168,14 @@ function addEdgeToGrid(selectedVar1,causal_relation,selectedVar2){
 }
 
 function addRowToGrid(rowObj){
-	console.log("ROW OBJ");
-	console.log(rowObj);
+	//console.log("ROW OBJ");
+	//console.log(rowObj);
 	var fields = $("#jsGrid").jsGrid().data().JSGrid.fields;
 
 	var gridFieldNames = ["Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes"];
-	var databaseNames = ["variable1","relation","variable2","Cor","Topic","Stage","Type","XX","Notes"];
+	var databaseNames = ["variable1","relation","variable2","Cor","Topic","Stage","Type","Confirmed","Notes"];
 
-	console.log(fields);
+	//console.log(fields);
 	var rowData = {};
 	for(var i=0;i<gridFieldNames.length;++i){
 		var dx = rowObj[databaseNames[i]];
@@ -184,11 +184,11 @@ function addRowToGrid(rowObj){
 		}
 		rowData[gridFieldNames[i]] = dx;
 	}
-	console.log("ROW DATA");
-	console.log(rowData);
+	//console.log("ROW DATA");
+	//console.log(rowData);
 	calledGridUpdateFromScript = true;
 	$("#jsGrid").jsGrid("insertItem", rowData).done(function() {
-    	console.log("insertion completed");
+    	//console.log("insertion completed");
     	calledGridUpdateFromScript = false;
 	});;
 }

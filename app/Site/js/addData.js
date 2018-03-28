@@ -249,6 +249,8 @@ function updateRecord(response, type){
 	if(type=='links'){
 		// receiving causal links details from server
 		response = JSON.parse(response);
+		console.log("ADD DOC");
+		console.log(response);
 		// Add row one at a time
 		for(var i=0;i<response.length;++i){
 			addRowToGrid(response[i]);

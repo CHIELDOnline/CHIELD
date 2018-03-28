@@ -309,7 +309,7 @@ function redrawGUIfromGrid(){
 		} else {
 			var this_relation = objx.Relation;
 			
-			console.log(this_var1 + " " + this_var2);
+			//console.log(this_var1 + " " + this_var2);
 			if($.inArray(this_var1,nodes)==-1){
 				nodes.push(this_var1)
 			}
@@ -330,7 +330,7 @@ function redrawGUIfromGrid(){
 					objx.Cor,
 			        objx.Type,
 			        objx.Stage);
-				console.log(newEdge);
+				//console.log(newEdge);
 				network_edges.add(newEdge);
 			}
 		}

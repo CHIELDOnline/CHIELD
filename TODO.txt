@@ -7,6 +7,15 @@ FIX: slashes in bibref create extra directories
 
 R script: Filter duplicate contributors?
 
+Data:
+	trudgill1974linguistic:  
+		>> to >
+		communicatitve interaction should be between groups
+		physical distance should be negative?
+
+	nettle2012social: indicators should be the other way around?
+
+
 Online version:
 
 
@@ -87,6 +96,7 @@ Explore:
 
 Variable:
 	Summarise number of links where variable appears
+	Link to Explore 
 	
 
 addData:
