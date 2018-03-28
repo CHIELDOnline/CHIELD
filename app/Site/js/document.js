@@ -198,12 +198,14 @@ function openSource(){
 
 function raiseIssue(){
 	var title = encodeURIComponent("Question about "+shortCite);
-	var body = "Document Key:"+documentKey;
+	var docURL = "https://chield.excd.org/document.html?key="+documentKey;
+	var body = "Document: ["+docURL+"]("+docURL+")\n";
 	if(contributor_usernames.length>0){
-		body += "\nContributors: ";
+		body += "Contributors: ";
 		for(var i=0;i<contributor_usernames.length; ++i){
 			body += "@"+contributor_usernames[i] + " "
 		}
+		body += "\n";
 	}
 	body = encodeURIComponent(body);
 	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body+"&labels=data";
