@@ -1,7 +1,9 @@
 DONE:
 	
 
+FIX: Supported is not copying? (Peeter)
 
+FIX: slashes in bibref create extra directories
 
 
 Online version:

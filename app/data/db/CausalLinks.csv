@@ -1,4 +1,7 @@
 "pk","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Confirmed","Notes"
+"285690783","trudgill1974linguistic","1746840506",">>","2367146783","pos",NA,"population dynamics","none","logical","","none","The bigger the groups are, the higher the chance of them interacting with each other"
+"3832267666","trudgill1974linguistic","2367146783",">","2273399571","pos",NA,"phonetics","language change","model","","none","Trudgill considers this process analogous to Newton's gravity model"
+"1392706783","trudgill1974linguistic","233622896",">>","2367146783","pos",NA,"population dynamics","none","logical","","none",""
 "490829738","wheeler1985loss","2105322074",">","2809754639","pos",NA,NA,NA,NA,NA,NA,NA
 "3045844918","wheeler1985loss","2809754639",">","2413943838","pos",NA,NA,NA,NA,NA,NA,NA
 "3654500907","wheeler1985loss","2809754639",">>","2856910405","pos",NA,NA,NA,NA,NA,NA,NA
@@ -49,6 +52,16 @@
 "4144818843","akaishi03misperception","3929034535",">","3741147557","pos",NA,"signalling","coevolution","simulation","population","yes",NA
 "3279274480","akaishi03misperception","3741147557",">","1568653435","pos",NA,"signalling","coevolution","simulation","population","yes",NA
 "2874929278","akaishi03misperception","611107992",">","3741147557","neg",NA,"signalling","coevolution","simulation","population","yes",NA
+"1526072218","corballis2003hand","2413943838",">","3286382177","pos",NA,"anthropology","preadaptation","review","","none",NA
+"1048749643","corballis2003hand","170243050",">","3286382177","pos",NA,"anthropology","preadaptation","review","","none",NA
+"3781722774","corballis2003hand","893780426",">","228163819","pos",NA,"neurology","preadaptation","hypothesis","","none",NA
+"2030848126","corballis2003hand","2571402292",">","228163819","pos",NA,"anthropology","preadaptation","review","","none",NA
+"500274383","corballis2003hand","3286382177",">","228163819","pos",NA,"anthropology","coevolution","logical","","none",NA
+"2373465132","corballis2003hand","228163819",">","391008209","pos",NA,"anthropology","coevolution","hypothesis","","none",NA
+"2979539838","corballis2003hand","2390379791",">","391008209","pos",NA,"anthropology","preadaptation","review","","none",NA
+"3726101194","corballis2003hand","122473181",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","none",NA
+"3871865836","corballis2003hand","974945248",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","none",NA
+"3193620659","corballis2003hand","2413943838","<=>","170243050","n-m",NA,"anthropology","coevolution","review","","none",NA
 "1742720148","vogt03ecal","3758064816",">","1015851892","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "2615810473","vogt03ecal","3758064816",">","2100327343","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "331994827","dunbar2004gossip","1683706509",">","3260460435","pos",NA,NA,"coevolution","review","",NA,"free riders become increasingly more intrusive as social group sizes increase or society becomes more dispersed, principally because under each of these conditions free riders benefit from having large numbers of naive individuals whom they can exploit (Enquist & Leimar, 1993)"
@@ -134,6 +147,7 @@
 "3324551036","selten07languageEmergencePNAS","1250041027",">","3316682815","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "3088426045","vogt07ECAL","1746840506",">","3316682815","pos",NA,"syntax","cultural evolution","model","mathematical?","",NA
 "1639892571","vogt07ECAL","3316682815",">","1923061136","pos",NA,"signalling","cultural evolution","model","mathematical?","yes",NA
+"1414162014","fincher2008parasite","3765120731",">","3719167349","pos",NA,NA,"language change","statistical","","yes",NA
 "2677654797","minett04endangeredLanguage","2596364953",">","2802235688","pos",NA,NA,"language change","simulation","ising","yes",NA
 "2441401325","minett04endangeredLanguage","1579653318",">","2802235688","pos",NA,NA,"language change","simulation","ising","yes",NA
 "3453268714","lupyan2010language","1746840506",">","264262316","pos","3554226544","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to (1) be nonnative speakers or have learned the language from nonnative speakers, "
@@ -168,28 +182,45 @@
 "2410023053","nettle2012social","1746840506","~","3782876676","neg",NA,"demography","none","review","","yes",""
 "242616410","nettle2012social","1746840506","~","283652280","neg",NA,"","","review","","",""
 "686277518","nettle2012social","1746840506","~","1795157602","pos",NA,"","cultural evolution","hypothesis","","none","in small communities, each learner acquires language from a smaller set of individuals than they would in a larger community [32]. There is no direct evidence for this proposition, but it may be plausible, given that small languages are generally spoken in isolated subsistence communities with low levels of political organization and economic development."
-"4163919418","nettle2012social","1746840506","~","13986012","neg",NA,"","cultural evolution","hypothesis","",""," individuals in small communities acquire language from the same number of models as in large communities, but their social networks are more clus- tered. That is, if individual A is exposed to the speech of individuals B and C, then there is a high degree of expected overlap in the speech sample to which B and C were exposed as they learned. "
+"4163919418","nettle2012social","1746840506","~","13986012","neg",NA,"","cultural evolution","hypothesis","","","individuals in small communities acquire language from the same number of models as in large communities, but their social networks are more clus- tered. That is, if individual A is exposed to the speech of individuals B and C, then there is a high degree of expected overlap in the speech sample to which B and C were exposed as they learned."
 "3304989720","nettle2012social","1795157602",">","1152005270","pos",NA,"","","hypothesis","","",""
 "1264604873","nettle2012social","13986012",">","1152005270","neg",NA,"","","hypothesis","","",""
 "4098562177","nettle2012social","1152005270",">","1856389778","pos",NA,"","","hypothesis","","",""
-"1943885479","nettle2012social","1856389778",">","1288341260","pos",NA,"","","hypothesis","","","It could be that when the input to language learning is very heterogeneous, these ﬁne distinctions are more likely to fail to be acquired, with the learner not able to discriminate the pattern among the noise. The learner would then develop a grammar lacking the morphological means to make a semantically important distinction, and would spontaneously innovate with a lexical strategy such as adding a word for ‘two’ or ‘yesterday’ to fulﬁl the appropriate communicative function."
+"2382007341","nettle2012social","1856389778",">","2608129003","neg",NA,"","","hypothesis","","","It could be that when the input to language learning is very heterogeneous, these fine distinctions are more likely to fail to be acquired, with the learner not able to discriminate the pattern among the noise. The learner would then develop a grammar lacking the morphological means to make a semantically important distinction, and would spontaneously innovate with a lexical strategy such as adding a word for ""two"" or 'yesterday' to fulfil the appropriate communicative function."
 "261045438","nettle2012social","1152005270",">","2390884688","pos",NA,"","","hypothesis","","",""
-"3143518118","nettle2012social","2390884688",">","648399652","pos",NA,"","","hypothesis","","",""
+"3645727841","nettle2012social","2390884688",">","3252179577","pos",NA,"","","hypothesis","","",""
 "3443860228","nettle2012social","1746840506",">","1064001386","pos",NA,"","","hypothesis","","",""
 "3996219986","nettle2012social","1064001386",">","4074667640","pos",NA,"","","hypothesis","","",""
 "3836285640","nettle2012social","1064001386",">","3284661260","pos",NA,"","","review","","no","The empirical evidence thus far has not supported the proposal of a faster rate of change in smaller communities"
-"3268168181","nettle2012social","4074667640",">","668831871","pos",NA,"","","review","","no","[The empirical evidence thus far has not supported] small languages having more extreme levels of complexity than large languages, because the relation- ships between linguistic parameters and population size are linear, rather than inﬂected"
+"4027178923","nettle2012social","4074667640",">","2608129003","n-m",NA,"","","review","","no","[The empirical evidence thus far has not supported] small languages having more extreme levels of complexity than large languages, because the relation- ships between linguistic parameters and population size are linear, rather than inflected"
 "506326252","nettle2012social","1746840506",">","3270569964","pos",NA,"","","review","","yes",""
 "2217290300","nettle2012social","3270569964",">","314479007","pos",NA,"","","review","","yes",""
 "4263925928","nettle2012social","314479007",">","1856389778","pos",NA,"","","review","","yes",""
 "2828156063","nettle2012social","314479007",">","2045423383","pos",NA,"","","review","","yes",""
-"3065751308","nettle2012social","2045423383",">","1288341260","pos",NA,"","","hypothesis","","",""
+"1007367331","nettle2012social","2045423383",">","2608129003","neg",NA,"","","hypothesis","","",""
 "1098474191","nettle2012social","3270569964",">","847633490","pos",NA,"","","hypothesis","","",""
 "139703357","nettle2012social","3270569964",">","1250707072","pos",NA,"","","hypothesis","","",""
-"527872568","nettle2012social","1250707072",">","2016767557","pos",NA,"","","hypothesis","","",""
-"994136202","nettle2012social","847633490",">","2016767557","pos",NA,"","","hypothesis","","",""
+"4104633627","nettle2012social","1250707072",">","2608129003","pos",NA,"","","hypothesis","","","An alternative possibility is that much morphology is not directly communicatively advantageous, but rather enhances the learnability of language by children"
+"3188276352","nettle2012social","847633490",">","2608129003","pos",NA,"","","hypothesis","","","One possibility is that paradigmatic morphology increases the overall rate of information transmission, as suggested in ++2b. This would mean that using more morphological strategies allows speakers to communicate ef+++ciently and concisely, and will thus tend to be incrementally favoured in speech wherever the simplifying consequences of adult language acquisition are not in force."
+"3117091433","","4074667640",">","3252179577","n-m",NA,"","","hypothesis","","no","Trudgill+++s argument is slightly different but makes a similar prediction of disfavoured structures being more likely to persist in small communities. Assuming that intermediate sizes of phonological inventory, and intermediate levels of morphological complexity, represent the communicatively optimal language system, this predicts that languages spoken in small communities should be more extreme than those spoken in large ones. That is, a small language should be more likely to have a very large or very small phonological inventory, a very low or very high level of morphological complexity, with languages of large communities more likely to be in the middle"
+"509695294","","3284661260",">","4074667640","pos",NA,"","","hypothesis","","","Nettle argued that the turnover of linguistic change would be faster in small communities, and, relatedly, that communicatively suboptimal grammatical strategies were more likely to drift to +++xation in small communities than in larger ones. "
+"3210316744","","847633490",">","3477552002","neg",NA,"","","hypothesis","","","Here, successive generations reinterpret previously separate content words as grammatical modi+++cations of other words, often contracting them in the process. Thus, paradigmatic complexity is gained and syntagmatic complexity is lost."
 "3310817347","bentz2013languages","634707713","~=","2949246489","pos",NA,"morphology","language change","statistical","typological",NA,""
 "1462863154","bentz2013languages","264262316",">","634707713","neg","3554226544","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
+"3235175671","miyagawa2013emergence","1118704903",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","none","exemplified by birdsongs"
+"3547023964","miyagawa2013emergence","780032119",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","none","exemplified by alarm calls"
+"3101069128","miyagawa2013emergence","2642888319",">","780032119","n-m",NA,"","none","","","none",""
+"4065170602","amano2014global","1746840506",">","197493471","none",NA,NA,"none",NA,"","none","decrease in population size"
+"3186592695","amano2014global","283652280",">","197493471","none",NA,NA,"none",NA,"","none","increase in economic development. most prominent in higher latitudes"
+"417244605","amano2014global","456651676",">","197493471","none",NA,NA,"none",NA,"","none","most prominent in the tropics"
+"2127183283","amano2014global","1031734161","~","283652280","none",NA,NA,"none",NA,"","none",""
+"1282450085","amano2014global","1031734161","~","456651676","none",NA,NA,"none",NA,"","none",""
+"207473633","amano2014global","1031734161","~","1746840506","none",NA,NA,"none",NA,"","none",""
+"249099638","amano2014global","283652280","~","1746840506","none",NA,NA,"none",NA,"","none",""
+"2850626152","amano2014global","283652280","~","456651676","none",NA,NA,"none",NA,"","none",""
+"3082980434","axelsen2014river","3999396400",">","3719167349","pos",NA,"population dynamics","language change","model","","none",NA
+"2805706711","axelsen2014river","395999132",">","3719167349","neg",NA,"population dynamics","language change","model","","none",NA
+"1304981976","lee2014oceanic","1326982643",">","3719167349","pos",NA,"population dynamics","language change","statistical","","none",NA
 "552922672","thomas2014self","437593210",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1868351487","thomas2014self","2252199623",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1722501165","thomas2014self","3550963897",">","1706533394","pos",NA,"learning","preadaptation",NA,"","",""
@@ -201,6 +232,8 @@
 "1357404800","thomas2014self","478750561",">","3807270984","pos",NA,"genetics","preadaptation",NA,"","","Deacon"
 "1691586691","thomas2014self","3807270984",">","2107924262","pos",NA,"genetics","preadaptation",NA,"","none","Belyaev"
 "801078196","thomas2014self","2107924262",">","3550963897","pos",NA,"genetics","preadaptation",NA,"","","Belyaev"
+"1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","none",NA
+"4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","none",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
 "3204791347","bentz2016learning","264262316",">","3507217186","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
 "1237901007","bentz2016learning","3507217186",">","1883821886","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
@@ -360,6 +393,14 @@
 "547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
 "2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","",NA,NA
 "3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
-"3719082042","evolang12Raviv","1746840506",">","634707713",NA,NA,NA,NA,"experiment","",NA,NA
-"3687643733","evolang12Raviv","1746840506",">","1923061136",NA,NA,NA,NA,"experiment","",NA,NA
-"784654683","evolang12Raviv","1746840506",">","1270992509",NA,NA,NA,NA,"experiment","",NA,NA
+"3719082042","evolang12Raviv","1746840506",">","634707713","neg",NA,NA,"cultural evolution","experiment","","","bigger groups create simpler languages"
+"3687643733","evolang12Raviv","1746840506",">","1923061136","pos",NA,NA,"cultural evolution","experiment","","","bigger groups converge more often"
+"784654683","evolang12Raviv","1746840506",">","1270992509","pos",NA,NA,"cultural evolution","experiment","","","bigger groups stabilize slower, but more often"
+"801821047","evolang12Raviv","1746840506",">","3316682815","pos",NA,NA,"cultural evolution","experiment","","none","bigger groups create more compositional languages"
+"510638667","evolang12Raviv","1746840506",">","2100327343","pos",NA,NA,"cultural evolution","experiment","","none","bigger groups vary less on their accuracy"
+"2222532580","evolang12Raviv","2100327343",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
+"1629288615","evolang12Raviv","331530021",">","3719167349","",NA,NA,"cultural evolution","experiment","","","bigger groups are more similar to each other"
+"2486713500","evolang12Raviv","1270992509",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
+"3315300843","evolang12Raviv","3316682815",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
+"2881400997","evolang12Raviv","1923061136",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
+"4172872158","evolang12Raviv","634707713",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
