@@ -8,6 +8,8 @@ var documentKey = "";
 var shortCite = "";
 var doc_causal_links = [];
 
+var contributor_usernames = [];
+
 tableId = "links_table";
 dtableConfig = {
 		ordering: true,
@@ -196,7 +198,14 @@ function openSource(){
 
 function raiseIssue(){
 	var title = encodeURIComponent("Issue with "+shortCite);
-	var body = encodeURIComponent("Document Key:"+documentKey);
+	var body = "Document Key:"+documentKey;
+	if(contributor_usernames.length>0){
+		body += "\nContributors: ";
+		for(var i=0;i<contributor_usernames.length; ++i){
+			body += "@"+contributor_usernames[i] + " "
+		}
+	}
+	body = encodeURIComponent(body);
 	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body+"&labels=data";
 	window.open(url);
 }
@@ -208,6 +217,7 @@ function showContributors(obj){
 
 	for(var i=0;i<obj.length;++i){
 		if(obj[i].username!=""){
+			contributor_usernames.push(obj[i].username);
 			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
 		} else{
 			t += obj[i].realname;
