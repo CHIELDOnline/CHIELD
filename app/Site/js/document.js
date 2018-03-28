@@ -197,7 +197,7 @@ function openSource(){
 
 
 function raiseIssue(){
-	var title = encodeURIComponent("Issue with "+shortCite);
+	var title = encodeURIComponent("Question about "+shortCite);
 	var body = "Document Key:"+documentKey;
 	if(contributor_usernames.length>0){
 		body += "\nContributors: ";
