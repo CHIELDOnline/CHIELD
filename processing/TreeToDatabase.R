@@ -197,6 +197,10 @@ rownames(bib) = bib$pk
 
 contributors = contributors[!is.na(contributors$username),]
 
+# Filter duplicate contributors (if they've edited something multiple times)
+# TODO: should take most recent edit to get changes to real name?
+contributors = contributors[!duplicated(contributors[,c("username",'bibref')]),]
+
 # Write big bibtex file
 bigBibtexFile = sort(bigBibtexFile)
 cat(paste(bigBibtexFile,sep="\n\n"), file="../app/Site/downloads/CHIELD.bib")

@@ -114,6 +114,7 @@ function showTab(id){
 	$('.nav-tabs a[href="#'+id+'"]').tab('show');
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
+	$("#ReferenceYearAlert").hide();
 	$("#CausalLinksAlert").hide();
 }
 
@@ -124,9 +125,14 @@ function validateSubmission(){
 		$("#ContributorAlert").show();
 		valid = false;
 	}
-	if(!updateBib()){// also updates bib
+	if(!updateBib()){ // also updates bib
 		$("#ReferenceAlert").show();
 		valid = false;
+	} else{
+		if(bib_year===undefined){
+			$("#ReferenceYearAlert").show();
+			valid = false;
+		}
 	}
 	if($("#jsGrid").data().JSGrid.data.length==0){
 		$("#CausalLinksAlert").show();
@@ -291,6 +297,7 @@ $(document).ready(function(){
 	// Hide validation warnings
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
+	$("#ReferenceYearAlert").hide();
 	$("#CausalLinksAlert").hide();
 
 	// getVersion checks whether cookies are up to date.

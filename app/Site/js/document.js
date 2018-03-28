@@ -205,23 +205,15 @@ function showContributors(obj){
 	console.log(obj);
 
 	var t = "Contributed to CHIELD by: ";
-	var currentUsernames = [];
 
 	for(var i=0;i<obj.length;++i){
-		var thisName = obj[i].username;
-		if(obj[i].username==""){
-			thisName = obj[i].realname;
+		if(obj[i].username!=""){
+			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+		} else{
+			t += obj[i].realname;
 		}
-		if($.inArray(thisName,currentUsernames)==-1){
-			currentUsernames.push(thisName);
-			if(obj[i].username!=""){
-				t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
-			} else{
-				t += obj[i].realname;
-			}
-			if(i<(obj.length-1)){
-				t += "; ";
-			}
+		if(i<(obj.length-1)){
+			t += "; ";
 		}
 	}
 	console.log(t);

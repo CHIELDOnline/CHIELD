@@ -1,10 +1,11 @@
-DONE:
-	
+
 
 FIX: Supported is not copying? (Peeter)
+	Data transfer from edit button is not copying Confirmed field
 
 FIX: slashes in bibref create extra directories
 
+R script: Filter duplicate contributors?
 
 Online version:
 
