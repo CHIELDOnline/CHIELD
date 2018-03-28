@@ -1,3 +1,5 @@
+DONE:
+	
 
 
 
@@ -54,7 +56,7 @@ python script:
 	Add commit message from web form
 
 Deploy:
-	Remove {} from bib title/names (through detexify?)
+	
 	
 
 Explore:
@@ -69,7 +71,6 @@ Explore:
 	Colour edges by: Publication
 	Add button to find all direct links between two nodes?
 
-	Show loader when start load from document
 	Disable buttons until they can be used
 	
 	Tidy up "existing variables" code: should move to db,

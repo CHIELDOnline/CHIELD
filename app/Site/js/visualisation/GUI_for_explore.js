@@ -225,6 +225,10 @@ function findPaths(){
 
 }
 
+function loadCausalLinksFromDocument(bibref){
+	requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+}
+
 
 
 function toggleOptions(){
