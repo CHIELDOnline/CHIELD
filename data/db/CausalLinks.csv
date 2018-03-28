@@ -393,6 +393,15 @@
 "547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
 "2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","",NA,NA
 "3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
+"1185750865","tinits2017usage","2656510549",">>","3024043961","",NA,NA,"",NA,"","",NA
+"3272306306","tinits2017usage","2015726635",">","360233333","",NA,NA,"",NA,"","",NA
+"2295217470","","3024043961",">","2015726635","none",NA,NA,"none",NA,"","none",NA
+"3247784915","tinits2017usage","2313336171",">","2203045387","",NA,NA,"",NA,"","",NA
+"3939373490","tinits2017usage","2313336171",">","634707713","",NA,NA,"",NA,"","",NA
+"166485628","tinits2017usage","2656510549",">>","2894100489","",NA,NA,"",NA,"","",NA
+"1928423785","tinits2017usage","2894100489",">","2015726635","",NA,NA,"",NA,"","",NA
+"1210715216","tinits2017usage","360233333",">","1059384516","",NA,NA,"",NA,"","",NA
+"2171479975","tinits2017usage","1059384516",">","2313336171","",NA,NA,"",NA,"","",NA
 "3719082042","evolang12Raviv","1746840506",">","634707713","neg",NA,NA,"cultural evolution","experiment","","","bigger groups create simpler languages"
 "3687643733","evolang12Raviv","1746840506",">","1923061136","pos",NA,NA,"cultural evolution","experiment","","","bigger groups converge more often"
 "784654683","evolang12Raviv","1746840506",">","1270992509","pos",NA,NA,"cultural evolution","experiment","","","bigger groups stabilize slower, but more often"
