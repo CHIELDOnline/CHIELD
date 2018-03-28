@@ -232,6 +232,17 @@
 "1357404800","thomas2014self","478750561",">","3807270984","pos",NA,"genetics","preadaptation",NA,"","","Deacon"
 "1691586691","thomas2014self","3807270984",">","2107924262","pos",NA,"genetics","preadaptation",NA,"","none","Belyaev"
 "801078196","thomas2014self","2107924262",">","3550963897","pos",NA,"genetics","preadaptation",NA,"","","Belyaev"
+"1534410978","atkinson2015speaker","3298197017",">","14653804","pos",NA,NA,NA,"review","","yes","A number of studies have demonstrated the effect that input variability can have on the acquisition of phonemic (or tonal [13] contrasts."
+"4075508045","atkinson2015speaker","1152005270",">","3298197017","pos",NA,NA,NA,"logical","","",""
+"1548371879","atkinson2015speaker","1746840506","~","634707713","neg",NA,NA,NA,"review","","",""
+"2970765327","atkinson2015speaker","1746840506",">","223612159","pos",NA,NA,NA,"review","",""," One source of the latter kind of variability is the differences in the idiosyncratic pronunciations of the speakers who provide the input. This results from dialectal differences and variable speech rates, as well as anatomical differences amongst the speakers, such as the length and shapes of their oral and nasal cavities"
+"4034531280","atkinson2015speaker","1746840506",">","1795157602","pos",NA,NA,NA,"review","",""," Speaker input variability may therefore be increased either by the pronunciation being less homogeneous across the speakers, or by the data being provided by a greater number of speakers"
+"392463955","atkinson2015speaker","1795157602",">","1152005270","pos",NA,NA,NA,"hypothesis","","",""
+"4059316399","atkinson2015speaker","223612159",">","1152005270","pos",NA,NA,NA,"hypothesis","","",""
+"3940878616","atkinson2015speaker","3298197017",">","989508604","neg",NA,NA,NA,"experiment","","no","We have no evidence, however, that the effects of speaker input variability on phonemic acquisition can be extended to a learner's ability to segment their linguistic input"
+"2652273648","atkinson2015speaker","989508604",">","634707713","pos",NA,NA,NA,"hypothesis","","",""
+"1780928545","atkinson2015speaker","3298197017",">","3906907919","neg",NA,NA,NA,"experiment","","no"," As in Experiment 1, we find no evidence to support a hypothesis that speaker input variability aids language acquisition, and so again have no support for the suggestion that it should be considered a mechanism by which group size can determine a language's morphological complexity."
+"1241254912","atkinson2015speaker","3906907919",">","989508604","pos",NA,NA,NA,"hypothesis","","",""
 "1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","none",NA
 "4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","none",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
