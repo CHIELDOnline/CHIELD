@@ -27,7 +27,7 @@
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/elman90findingStructure.html},
   bdsk-url-2 = {http://dx.doi.org/10.1016/0364-0213(90)90002-E},
 }","Elman (1990)"
-"Nichols1990","Johanna Nichols","1990","{Linguistic diversity and the first settlement of the New World}","@Article{Nichols1990,
+"Nichols1990","Johanna Nichols","1990","Linguistic diversity and the first settlement of the New World","@Article{Nichols1990,
   author = {Johanna Nichols},
   journal = {Language},
   number = {3},
@@ -67,7 +67,7 @@
   year = {1994},
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/batali94innateBiases.html},
 }","Batali (1994)"
-"MacePagel1995","R. Mace; Mark Pagel","1995","{A Latitudinal Gradient in the Density of Human Languages in North America}","@Article{MacePagel1995,
+"MacePagel1995","R. Mace; Mark Pagel","1995","A Latitudinal Gradient in the Density of Human Languages in North America","@Article{MacePagel1995,
   author = {R. Mace and Mark Pagel},
   doi = {10.1098/rspb.1995.0125},
   issn = {0962-8452},
@@ -311,7 +311,7 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/hunley07geneticCoevolution.html},
   bdsk-url-2 = {http://dx.doi.org/10.1002/ajpa.20542},
 }","Hunley, Cabana, Merriwether & Long (2007)"
-"Pageletal2007","Mark Pagel; Quentin D. Atkinson; Andrew Meade","2007","{Frequency of word-use predicts rates of lexical evolution throughout Indo-European history.}","@Article{Pageletal2007,
+"Pageletal2007","Mark Pagel; Quentin D. Atkinson; Andrew Meade","2007","Frequency of word-use predicts rates of lexical evolution throughout Indo-European history.","@Article{Pageletal2007,
   author = {Mark Pagel and Quentin D. Atkinson and Andrew Meade},
   doi = {10.1038/nature06176},
   journal = {Nature},
@@ -399,7 +399,7 @@ The number of different species found in a given area of the Earth increases fro
   publisher = {John Benjamins Publishing Company},
   abstract = {Computational simulations have provided evidence that the use of linguistic cues as group markers plays an important role in the development of linguistic diversity shortcite (Nettle & Dunbar, 1997; Nettle, 1999). Other simulations, however, have contradicted these findings (Livingstone & Fyfe, 1999; Livingstone, 2002). Similar disagreements exist in sociolinguistics (e.g. Labov, 1963, 2001; Trudgill, 2004, 2008a; Baxter et al., 2009). This paper describes an experimental study in which participants played an anonymous economic game using an instant-messenger-style program and an artificial ‘alien language’. The competitiveness of the game and the frequency with which players interacted were manipulated. Given frequent enough interaction with team-mates, players were able to use linguistic cues to identify themselves. In the most competitive condition, this led to divergence in the language, which did not occur in other conditions. This suggests that both frequency of interaction and a pressure to use language to mark identity play a significant role in encouraging linguistic divergence over short periods, but that neither is sufficient on its own.},
 }","Roberts (2010)"
-"Calude2011","Andreea S. Calude; Mark Pagel","2011","{How do we use language? Shared patterns in the frequency of word use across 17 world languages}","@Article{Calude2011,
+"Calude2011","Andreea S. Calude; Mark Pagel","2011","How do we use language? Shared patterns in the frequency of word use across 17 world languages","@Article{Calude2011,
   author = {Andreea S. Calude and Mark Pagel},
   doi = {10.1098/rstb.2010.0315},
   journal = {Philosophical Transactions of the Royal Society B: Biological Sciences},

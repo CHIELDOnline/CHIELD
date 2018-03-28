@@ -177,11 +177,13 @@ $(document).ready(function(){
 	$(".vis-configuration-wrapper").hide();
 
 
+	hideLoader();
+
 	var edgesToLoad = getUrlParameter("links");
 	if(edgesToLoad!==undefined && edgesToLoad!=""){
+		showLoader();
+		// This calls the php script, and is handled by GUI_for_explore.js:updateRecord()
 		requestRecord("php/getLinksForExploreByPk.php","keylist="+edgesToLoad,'links');
 	}
-
-	hideLoader();
 
 });

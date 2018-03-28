@@ -68,8 +68,8 @@ ul {
     padding: 6px;
 }
 
-#networkHelpText{
-    pointer-events: none;
-    background: none !important;
+#downloadCSVButton{
+    padding: 6px;
 }
+
 

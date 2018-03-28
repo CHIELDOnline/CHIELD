@@ -140,6 +140,8 @@ detexify = function(text){
   for(sub in substitutions){
     text = gsub(sub[2],sub[1], text)
   }
+  # remove extra brackets
+  text = gsub("[{}]","",text)
   return(text)
 }
 
