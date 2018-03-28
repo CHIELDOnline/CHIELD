@@ -244,6 +244,9 @@ causal.links$Var2 = variables[match(causal.links$Var2, variables$name),]$pk
 
 causal.links$Process = processes[match(causal.links$Process, processes$name),]$pk
 
+causal.links$Confirmed[causal.links$Confirmed=="none" & !is.na(causal.links$Confirmed)] = ""
+causal.links$Confirmed[causal.links$Confirmed=="null" & !is.na(causal.links$Confirmed)] = "null"
+
 print("Checking notes")
 checkCharacters(causal.links$Notes)
 

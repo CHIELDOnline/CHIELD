@@ -1,7 +1,7 @@
 "pk","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Confirmed","Notes"
-"285690783","trudgill1974linguistic","1746840506",">>","2367146783","pos",NA,"population dynamics","none","logical","","none","The bigger the groups are, the higher the chance of them interacting with each other"
-"3832267666","trudgill1974linguistic","2367146783",">","2273399571","pos",NA,"phonetics","language change","model","","none","Trudgill considers this process analogous to Newton's gravity model"
-"1392706783","trudgill1974linguistic","233622896",">>","2367146783","pos",NA,"population dynamics","none","logical","","none",""
+"285690783","trudgill1974linguistic","1746840506",">>","2367146783","pos",NA,"population dynamics","none","logical","","","The bigger the groups are, the higher the chance of them interacting with each other"
+"3832267666","trudgill1974linguistic","2367146783",">","2273399571","pos",NA,"phonetics","language change","model","","","Trudgill considers this process analogous to Newton's gravity model"
+"1392706783","trudgill1974linguistic","233622896",">>","2367146783","pos",NA,"population dynamics","none","logical","","",""
 "490829738","wheeler1985loss","2105322074",">","2809754639","pos",NA,NA,NA,NA,NA,NA,NA
 "3045844918","wheeler1985loss","2809754639",">","2413943838","pos",NA,NA,NA,NA,NA,NA,NA
 "3654500907","wheeler1985loss","2809754639",">>","2856910405","pos",NA,NA,NA,NA,NA,NA,NA
@@ -15,9 +15,9 @@
 "1114057333","batali94innateBiases","4114447394",">","3992170438","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "3046207239","batali94innateBiases","3732170114",">","3992170438","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
 "244744025","batali94innateBiases","3992170438",">","2936169330","pos",NA,"syntax","coevolution","simulation","neural network","yes",NA
-"2247298813","MacePagel1995","1031734161",">","3719167349","neg",NA,"","language change","statistical","","yes","Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals"
-"3942238836","","1031734161",">","3336870837","pos",NA,"language change","statistical","yes",""," the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule","MacePagel1995"
-"2796286696","","1954884054",">","3719167349","pos",NA,"language change","statistical","yes","","we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude","MacePagel1995"
+"2247298813","MacePagel1995","1031734161",">","3719167349","neg",NA,NA,"language change","statistical","","yes","Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals"
+"789441669","MacePagel1995","1031734161",">","3336870837","pos",NA,NA,"language change","statistical","","yes"," the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport's rule"
+"2437437178","MacePagel1995","1954884054",">","3719167349","pos",NA,NA,"language change","statistical","","yes","we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude"
 "2832055764","Isbell_Young_1996","2105322074",">","379726749","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "268902022","Isbell_Young_1996","379726749",">","4106631776","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "1390586990","Isbell_Young_1996","4106631776",">","4155923052","pos",NA,NA,"preadaptation",NA,"",NA,NA
@@ -28,6 +28,16 @@
 "2646135607","Isbell_Young_1996","2112258279",">","4160292631","pos",NA,NA,"preadaptation",NA,"",NA,NA
 "2605876973","Isbell_Young_1996","1683706509",">","4160292631","pos",NA,NA,"preadaptation",NA,"",NA,NA
 "1030302768","Isbell_Young_1996","4160292631",">","2413943838","pos",NA,NA,"preadaptation",NA,"",NA,NA
+"2040218591","nettle1998explaining","3765143423",">","3637099776","pos",NA,"ecology",NA,"review","","","The Growing Season formula (Le- Houe ́rou 1989) was employed as a mea- sure of ecological risk. A month is in- cluded in the growing season if the average daily temperature is more than 6°C."
+"270452178","nettle1998explaining","2114687372",">","3637099776","pos",NA,"ecology",NA,"review","","","The Growing Season formula (Le- Houe ́rou 1989) was employed as a mea- sure of ecological risk. A month is in- cluded in the growing season if the total precipitation in millimeters is more than twice the average temperature in centigrade. "
+"1405069663","nettle1998explaining","2439279656",">","1554828085","pos",NA,"language diversity",NA,"logical","","",""
+"2220624432","nettle1998explaining","3637099776",">","2866204614","neg",NA,"ecology",NA,"logical","","","Ecological risk is the amount of variation which people face in their food supply over time."
+"2359520447","nettle1998explaining","2866204614",">","1233619157","pos",NA,"ecology; subsistence; exchange",NA,"hypothesis","","","Where small groups are basically self- sufficient, there is no incentive for them to form networks of primary bonds outside the immediate vicinity"
+"1622096875","nettle1998explaining","1233619157",">","2439279656","pos",NA,"exchange; social networks",NA,"hypothesis","","","languages are much more widespread, as the extensive social networks spread linguistic norms over a wider area."
+"393501458","nettle1998explaining","3637099776","~","1554828085","pos",NA,"ecology; language diversity",NA,"statistical","","yes","r =.66, df =40, p<.001 "
+"2805383491","nettle1998explaining","3637099776","~","2421226843","pos",NA,"ecology; language diversity",NA,"statistical","","yes","r=.63, df=40, p<.001"
+"3221522239","nettle1998explaining","2866204614",">","521073128","pos",NA,"ecology; demography",NA,"hypothesis","","","increasing the number of productive households in a social network decreases the variation experienced by all of them as a simple consequence of the law of large numbers. This is true as long as there is some degree of statistical independence between them. This numerical averaging leads to the prediction that the number of individuals in a language group should increase as the degree of ecological risk increases"
+"2209340755","nettle1998explaining","521073128",">","2421226843","pos",NA,"demography; language diversity",NA,"hypothesis","","",""
 "4241775566","deboer99selfOrganisation","3855161016",">","2077371872","pos",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
 "3545362010","deboer99selfOrganisation","3855161016",">","445369745","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
 "3935520674","deboer99selfOrganisation","2077371872",">","1989993081","neg",NA,"phonetics","cultural evolution","simulation","communication game","yes",NA
@@ -52,16 +62,16 @@
 "4144818843","akaishi03misperception","3929034535",">","3741147557","pos",NA,"signalling","coevolution","simulation","population","yes",NA
 "3279274480","akaishi03misperception","3741147557",">","1568653435","pos",NA,"signalling","coevolution","simulation","population","yes",NA
 "2874929278","akaishi03misperception","611107992",">","3741147557","neg",NA,"signalling","coevolution","simulation","population","yes",NA
-"1526072218","corballis2003hand","2413943838",">","3286382177","pos",NA,"anthropology","preadaptation","review","","none",NA
-"1048749643","corballis2003hand","170243050",">","3286382177","pos",NA,"anthropology","preadaptation","review","","none",NA
-"3781722774","corballis2003hand","893780426",">","228163819","pos",NA,"neurology","preadaptation","hypothesis","","none",NA
-"2030848126","corballis2003hand","2571402292",">","228163819","pos",NA,"anthropology","preadaptation","review","","none",NA
-"500274383","corballis2003hand","3286382177",">","228163819","pos",NA,"anthropology","coevolution","logical","","none",NA
-"2373465132","corballis2003hand","228163819",">","391008209","pos",NA,"anthropology","coevolution","hypothesis","","none",NA
-"2979539838","corballis2003hand","2390379791",">","391008209","pos",NA,"anthropology","preadaptation","review","","none",NA
-"3726101194","corballis2003hand","122473181",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","none",NA
-"3871865836","corballis2003hand","974945248",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","none",NA
-"3193620659","corballis2003hand","2413943838","<=>","170243050","n-m",NA,"anthropology","coevolution","review","","none",NA
+"1526072218","corballis2003hand","2413943838",">","3286382177","pos",NA,"anthropology","preadaptation","review","","",NA
+"1048749643","corballis2003hand","170243050",">","3286382177","pos",NA,"anthropology","preadaptation","review","","",NA
+"3781722774","corballis2003hand","893780426",">","228163819","pos",NA,"neurology","preadaptation","hypothesis","","",NA
+"2030848126","corballis2003hand","2571402292",">","228163819","pos",NA,"anthropology","preadaptation","review","","",NA
+"500274383","corballis2003hand","3286382177",">","228163819","pos",NA,"anthropology","coevolution","logical","","",NA
+"2373465132","corballis2003hand","228163819",">","391008209","pos",NA,"anthropology","coevolution","hypothesis","","",NA
+"2979539838","corballis2003hand","2390379791",">","391008209","pos",NA,"anthropology","preadaptation","review","","",NA
+"3726101194","corballis2003hand","122473181",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","",NA
+"3871865836","corballis2003hand","974945248",">","228163819","pos",NA,"psychology","preadaptation","hypothesis","","",NA
+"3193620659","corballis2003hand","2413943838","<=>","170243050","n-m",NA,"anthropology","coevolution","review","","",NA
 "1742720148","vogt03ecal","3758064816",">","1015851892","pos",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "2615810473","vogt03ecal","3758064816",">","2100327343","neg",NA,"signalling","cultural evolution","simulation","communication game","yes",NA
 "331994827","dunbar2004gossip","1683706509",">","3260460435","pos",NA,NA,"coevolution","review","",NA,"free riders become increasingly more intrusive as social group sizes increase or society becomes more dispersed, principally because under each of these conditions free riders benefit from having large numbers of naive individuals whom they can exploit (Enquist & Leimar, 1993)"
@@ -100,7 +110,7 @@
 "888211955","wang05verticalAndHorizontalTransmission","3408910299",">","2273399571","pos",NA,"signalling","language change","statistical",NA,"yes",NA
 "1112758081","dallasta06languageGamesNetworks","1746840506",">","1923061136","neg",NA,"signalling","cultural evolution","simulation","","null",NA
 "2905385591","dallasta06languageGamesNetworks","4248256416",">","2150046662","pos",NA,"signalling","cultural evolution","simulation","","null",NA
-"3541019126","dallasta06languageGamesNetworks","2150046662",">","1923061136","pos",NA,"signalling","cultural evolution","simulation","","none",NA
+"3541019126","dallasta06languageGamesNetworks","2150046662",">","1923061136","pos",NA,"signalling","cultural evolution","simulation","","",NA
 "1822057953","dallasta06microscopicPatterns","2150046662",">","1923061136","neg",NA,"signalling","cultural evolution","model","",NA,NA
 "2666442426","nettle06costsAndBenefits","391008209",">","445369745","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
 "950401639","nettle06costsAndBenefits","391008209",">","1005906399","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
@@ -113,33 +123,33 @@
 "1660062289","Skoyles_2006","269975053",">","497384921","pos",NA,NA,"",NA,NA,NA,""
 "1556140227","Skoyles_2006","497384921",">","2695952131","pos",NA,NA,"",NA,NA,NA,""
 "1937375871","Skoyles_2006","2695952131",">","3495528798","",NA,NA,"",NA,NA,NA,""
-"2731415828","ember2007climate","3765143423",">","2689867344","pos",NA,"social interaction","language change","hypothesis","","","The theory is that people in warmer climates generally spend more time outdoors and communicate at a distance more often than people in colder climates"
-"2799585688","ember2007climate","2689867344",">","1072527045","pos",NA,"social interaction","language change","hypothesis","","","The theory is that people in warmer climates generally spend more time outdoors and communicate at a distance more often than people in colder climates"
-"1127043776","ember2007climate","1072527045",">","4045320403","pos",NA,"phonetics","language change","hypothesis","","","it is adaptive to use syllables and sounds that are more easily heard and recognised at a distance � , the CV syllable provides maximal contrast and is more audible at a distance than other syllables (for supporting evidence, see Jakobson and Halle 1968:441, as referred to by Munroe et al. 1996)"
-"4214247889","ember2007climate","1072527045",">","3209295937","pos",NA,"phonetics","language change","hypothesis","","","assuming equivalence of pitch, length, and stress, sounds with higher sonority (vowels more than consonants, the [a] sound more than the [i] sound) are more easily heard (see Fletcher 1953:82-88, as referred to in Fought et al. 2004:3)"
-"4062476355","ember2007climate","186543927",">","3315872726","pos",NA,"phonetics","language change","review","",""," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
-"528331993","ember2007climate","3315872726",">","3209295937","pos",NA,"phonetics","language change","review","",""," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
-"2896466513","ember2007climate","3315872726",">","4045320403","pos",NA,"phonetics","language change","review","",""," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
-"1506850262","ember2007climate","3999396400",">","1099789564","pos",NA,"climate","language change","review","","","mountainous terrain would increase wind chill, especially at higher altitude"
-"1945426075","ember2007climate","2348045514",">","1099789564","pos",NA,"climate","language change","review","","","mountainous terrain would increase wind chill, especially at higher altitude"
-"516585224","ember2007climate","1099789564",">","4258006462","pos",NA,"phonetics","","review","","language change"," wind chill might necessitate keeping the mouth more closed"
-"373584437","ember2007climate","4258006462",">","3209295937","neg",NA,"phonetics","language change","hypothesis","","","wind chill might necessitate keeping the mouth more closed, and, hence, the language might have less sonority"
-"3224034567","ember2007climate","578833886",">","3209295937","pos",NA,"phonetics","language change","hypothesis","","","Lomax (1968) found that premarital sexual restrictiveness predicted two aspects of song style-less vocal width and greater nasality ... In Lomax's view, the singing voice reflects tension about sexuality (Lomax 1968:194)"
-"3997575089","ember2007climate","1534566204","~","1125575675","pos",NA,"culture","language change","statistical","","","premarital and extramarital sex frequency are correlated with each other (p = .35 in warmer climate, p < .04, one tail, n = 24; p = .40, p < .01, one tail, n = 36 in all climates),"
-"1378882220","ember2007climate","578833886","~=","1125575675","pos",NA,"culture","language change","logical","","","Given that premarital and extramarital sex frequency are correlated with each other ... we decided to create a factor score for the two variables. This factor score is significantly related to sonority in warmer climates (p = .42, p < .02, one tail, n = 24) and is significantly related to sonority (p = .32, p < .03, one tail, n = 36) regardless of climate"
-"4293882824","ember2007climate","578833886","~=","1534566204","pos",NA,"culture","language change","logical","","","Given that premarital and extramarital sex frequency are correlated with each other ... we decided to create a factor score for the two variables. This factor score is significantly related to sonority in warmer climates (p = .42, p < .02, one tail, n = 24) and is significantly related to sonority (p = .32, p < .03, one tail, n = 36) regardless of climate"
-"948300383","ember2007climate","578833886",">","4258006462","neg",NA,"culture","language change","statistical","","","sexual inhibition (at least with regard to premarital and extramarital sex) seems to discourage speaking with a wide open mouth, and sexual expressiveness may encourage it. � we suggest that greater sexual expressiveness also affects sonority."
-"2936908784","ember2007climate","3765143423","~=","3406085761","neg",NA,"climate","language change","logical","","",""
-"2756249842","ember2007climate","578833886","~","4045320403","pos",NA,"phonetics","language change","statistical","","","The factor score from Huber's data on premarital and extramarital sex is significantly and positively related (one tail) to the percentage of consonant-vowel syllables"
-"1382438225","ember2007climate","2112386438","~","578833886","neg",NA,"culture","language change","statistical","","","literacy is negatively related significantly [to The factor score from Huber's data on premarital and extramarital sex]"
-"1348917704","ember2007climate","3651242078",">","4045320403","pos",NA,"culture","language change","statistical","","","we add baby holding and literacy, previously found to be significant predictors ...baby holding and literacy both become significant [predictors of percentage of CV syllables] along with the factor score on sexuality derived from Huber. Baby holding and more sexuality are positive predictors; literacy is a negative predictor."
-"4291795830","ember2007climate","2112386438",">","4045320403","neg",NA,"culture","language change","statistical","","","we add baby holding and literacy, previously found to be significant predictors baby holding and literacy both become significant [predictors of percentage of CV syllables] along with the factor score on sexuality derived from Huber. Baby holding and more sexuality are positive predictors; literacy is a negative predictor."
+"2731415828","ember2007climate","3765143423",">","2689867344","pos",NA,"social interaction","language change","hypothesis","",NA,"The theory is that people in warmer climates generally spend more time outdoors and communicate at a distance more often than people in colder climates"
+"2799585688","ember2007climate","2689867344",">","1072527045","pos",NA,"social interaction","language change","hypothesis","",NA,"The theory is that people in warmer climates generally spend more time outdoors and communicate at a distance more often than people in colder climates"
+"1127043776","ember2007climate","1072527045",">","4045320403","pos",NA,"phonetics","language change","hypothesis","",NA,"it is adaptive to use syllables and sounds that are more easily heard and recognised at a distance, the CV syllable provides maximal contrast and is more audible at a distance than other syllables (for supporting evidence, see Jakobson and Halle 1968:441, as referred to by Munroe et al. 1996)"
+"4214247889","ember2007climate","1072527045",">","3209295937","pos",NA,"phonetics","language change","hypothesis","",NA,"assuming equivalence of pitch, length, and stress, sounds with higher sonority (vowels more than consonants, the [a] sound more than the [i] sound) are more easily heard (see Fletcher 1953:82-88, as referred to in Fought et al. 2004:3)"
+"4062476355","ember2007climate","186543927",">","3315872726","pos",NA,"phonetics","language change","review","",NA," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
+"528331993","ember2007climate","3315872726",">","3209295937","pos",NA,"phonetics","language change","review","",NA," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
+"2896466513","ember2007climate","3315872726",">","4045320403","pos",NA,"phonetics","language change","review","",NA," A previous reviewer of one of our earlier articles suggested that communication in a warm, tropical forest would be quite different from communication in a warm and more open environment. In the former, the dense foliage would make distant communication quite difficult, despite the warm weather"
+"1506850262","ember2007climate","3999396400",">","1099789564","pos",NA,"climate","language change","review","",NA,"mountainous terrain would increase wind chill, especially at higher altitude"
+"1945426075","ember2007climate","2348045514",">","1099789564","pos",NA,"climate","language change","review","",NA,"mountainous terrain would increase wind chill, especially at higher altitude"
+"516585224","ember2007climate","1099789564",">","4258006462","pos",NA,"phonetics","language change","review","",NA," wind chill might necessitate keeping the mouth more closed"
+"373584437","ember2007climate","4258006462",">","3209295937","neg",NA,"phonetics","language change","hypothesis","",NA,"wind chill might necessitate keeping the mouth more closed, and, hence, the language might have less sonority"
+"3224034567","ember2007climate","578833886",">","3209295937","pos",NA,"phonetics","language change","hypothesis","",NA,"Lomax (1968) found that premarital sexual restrictiveness predicted two aspects of song style-less vocal width and greater nasality ... In Lomax's view, the singing voice reflects tension about sexuality (Lomax 1968:194)"
+"3997575089","ember2007climate","1534566204","~","1125575675","pos",NA,"culture","language change","statistical","",NA,"premarital and extramarital sex frequency are correlated with each other (p = .35 in warmer climate, p < .04, one tail, n = 24; p = .40, p < .01, one tail, n = 36 in all climates),"
+"1378882220","ember2007climate","578833886","~=","1125575675","pos",NA,"culture","language change","logical","",NA,"Given that premarital and extramarital sex frequency are correlated with each other ... we decided to create a factor score for the two variables. This factor score is significantly related to sonority in warmer climates (p = .42, p < .02, one tail, n = 24) and is significantly related to sonority (p = .32, p < .03, one tail, n = 36) regardless of climate"
+"4293882824","ember2007climate","578833886","~=","1534566204","pos",NA,"culture","language change","logical","",NA,"Given that premarital and extramarital sex frequency are correlated with each other ... we decided to create a factor score for the two variables. This factor score is significantly related to sonority in warmer climates (p = .42, p < .02, one tail, n = 24) and is significantly related to sonority (p = .32, p < .03, one tail, n = 36) regardless of climate"
+"948300383","ember2007climate","578833886",">","4258006462","neg",NA,"culture","language change","statistical","",NA,"sexual inhibition (at least with regard to premarital and extramarital sex) seems to discourage speaking with a wide open mouth, and sexual expressiveness may encourage it. ... we suggest that greater sexual expressiveness also affects sonority."
+"2936908784","ember2007climate","3765143423","~=","3406085761","neg",NA,"climate","language change","logical","",NA,""
+"2756249842","ember2007climate","578833886","~","4045320403","pos",NA,"phonetics","language change","statistical","",NA,"The factor score from Huber's data on premarital and extramarital sex is significantly and positively related (one tail) to the percentage of consonant-vowel syllables"
+"1382438225","ember2007climate","2112386438","~","578833886","neg",NA,"culture","language change","statistical","",NA,"literacy is negatively related significantly [to The factor score from Huber's data on premarital and extramarital sex]"
+"1348917704","ember2007climate","3651242078",">","4045320403","pos",NA,"culture","language change","statistical","",NA,"we add baby holding and literacy, previously found to be significant predictors ...baby holding and literacy both become significant [predictors of percentage of CV syllables] along with the factor score on sexuality derived from Huber. Baby holding and more sexuality are positive predictors; literacy is a negative predictor."
+"4291795830","ember2007climate","2112386438",">","4045320403","neg",NA,"culture","language change","statistical","",NA,"we add baby holding and literacy, previously found to be significant predictors baby holding and literacy both become significant [predictors of percentage of CV syllables] along with the factor score on sexuality derived from Huber. Baby holding and more sexuality are positive predictors; literacy is a negative predictor."
 "2638534369","hunley07geneticCoevolution","3082542981",">","3719167349","pos",NA,"lexicon;genetics","language change","statistical","","null",NA
 "1222483254","hunley07geneticCoevolution","1453643107",">","3719167349","pos",NA,"lexicon;genetics","language change","statistical","","",NA
 "4002985835","hunley07geneticCoevolution","4093093174",">","3719167349","pos",NA,"lexicon;genetics","language change","statistical","","",NA
-"2046682090","hunley07geneticCoevolution","3082542981",">","1154678184","pos",NA,"genetics","language change","statistical","","none",NA
-"1410623285","hunley07geneticCoevolution","1453643107",">","1154678184","pos",NA,"genetics","language change","statistical","","none",NA
-"2005841951","hunley07geneticCoevolution","3719167349","~","1154678184","pos",NA,"lexicon;genetics","language change","statistical","","none",NA
+"2046682090","hunley07geneticCoevolution","3082542981",">","1154678184","pos",NA,"genetics","language change","statistical","","",NA
+"1410623285","hunley07geneticCoevolution","1453643107",">","1154678184","pos",NA,"genetics","language change","statistical","","",NA
+"2005841951","hunley07geneticCoevolution","3719167349","~","1154678184","pos",NA,"lexicon;genetics","language change","statistical","","",NA
 "2407437793","Pageletal2007","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
 "639776741","selten07languageEmergencePNAS","2913953561",">","1923061136","pos",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "605269479","selten07languageEmergencePNAS","1535144982",">","1923061136","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
@@ -168,6 +178,17 @@
 "3762247510","roberts2010experimental","3286042659",">","331530021","pos",NA,"diversity","language change","experiment","",NA,"The results suggested that the pressure to identify oneself to one�s team-mate caused the alien language to diverge into team 'dialects'"
 "3068460575","roberts2010experimental","3260460435",">","379726749","neg",NA,"diversity","language change","hypothesis","",NA,""
 "955172757","Calude2011","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
+"3523575627","trudgill2011social","1602716332","^","49467656","neg",NA,"phonology; sociolinguistics","language change","review","",""," This was because my attempted explanatory approach sug- gested that there is in fact a tendency for small, tightly-knit, stable, low-contact communities with large amounts of communally shared information to be char- acterised either by unusually large inventories or by unusually small inventories. "
+"3692133365","trudgill2011social","259090463","^","49467656","neg",NA,"phonology; sociolinguistics","language change","review","","","There is considerable evidence to show that short-term adult language contact leads to simplification in phonology."
+"3789256352","trudgill2011social","2078026494","^","49467656","pos",NA,"phonology; sociolinguistics","language change","review","","","Long-term contact involving childhood bilingualism tends to lead to complexification in terms of larger phoneme inventories"
+"3603464899","trudgill2011social","4115379846","^","49467656","pos",NA,"phonology; sociolinguistics","language change","review","","","A large fund of communally shared knowl- edge would have made for a situation in which communication with a relatively low level of phonological redundancy would have been relatively tolerable; and a community consisting entirely of native speakers exposed to the language from infancy would have had no problem with memory load. This would have permitted the development of small phoneme inventories, though of course it would not have compelled such a development."
+"3164854229","trudgill2011social","3658361432","^","49467656","pos",NA,"phonology; sociolinguistics","language change","review","",""," This was because my attempted explanatory approach suggested that there is in fact a tendency for small, tightly-knit, stable, low-contact communities with large amounts of communally shared information to be characterised either by unusually large inventories or by unusually small inventories. "
+"3494194022","trudgill2011social","49467656",">","1163238480","n-m",NA,"phonology; sociolinguistics","language change","qualitative","","","The best we can do is to say that larger communities are more likely to have medium-sized inventories; and that small communities are more likely to have either very large or very small inventories."
+"346201301","trudgill2011social","4238488948",">","1163238480","n-m",NA,"phonology; sociolinguistics","language change","qualitative","","","The best we can do is to say that larger communities are more likely to have medium-sized inventories; and that small communities are more likely to have either very large or very small inventories."
+"974408707","trudgill2011social","3672726309","^","4238488948","pos",NA,"phonology; sociolinguistics","language change","qualitative","","","I also suggest that small isolated communities are more able, not only to maintain, but also to produce complexity (I argue that this has to do with their network structures, for a full discussion see Trudgill forthcom- ing)."
+"1097805443","trudgill2011social","3672726309","^","49467656","pos",NA,"phonology; sociolinguistics","language change","review","",""," This was because my attempted explanatory approach sug- gested that there is in fact a tendency for small, tightly-knit, stable, low-contact communities with large amounts of communally shared information to be char- acterised either by unusually large inventories or by unusually small invento- ries. "
+"3111788985","trudgill2011social","2078026494","^","2833987042","pos",NA,"phonology; sociolinguistics","language change","qualitative","","","Long-term contact involving childhood bilingualism tends to lead to complexification in terms of larger phoneme inventories. The long-term pres- ence of neighbouring languages means that segment types can more read- ily be borrowed from one language to another, leading to increased in- ventories. "
+"36741522","trudgill2011social","2833987042",">","1163238480","n-m",NA,"phonology; sociolinguistics","language change","qualitative","","","The best we can do is to say that larger communities are more likely to have medium-sized inventories; and that small communities are more likely to have either very large or very small inventories."
 "3956050820","nettle2012social","300708266","~","3344516874","neg",NA,"morphology","language change","review","","yes",""
 "660986108","nettle2012social","3252179577","~","1746840506","pos",NA,"phonology","cultural evolution","review","","yes",""
 "2642247444","nettle2012social","3252179577","~","3344516874","neg",NA,"phonology","language change","review","","yes",""
@@ -181,7 +202,7 @@
 "799186241","nettle2012social","3042098220","~","3252179577","neg",NA,"phonology","language change","review","","yes",""
 "2410023053","nettle2012social","1746840506","~","3782876676","neg",NA,"demography","none","review","","yes",""
 "242616410","nettle2012social","1746840506","~","283652280","neg",NA,"","","review","","",""
-"686277518","nettle2012social","1746840506","~","1795157602","pos",NA,"","cultural evolution","hypothesis","","none","in small communities, each learner acquires language from a smaller set of individuals than they would in a larger community [32]. There is no direct evidence for this proposition, but it may be plausible, given that small languages are generally spoken in isolated subsistence communities with low levels of political organization and economic development."
+"686277518","nettle2012social","1746840506","~","1795157602","pos",NA,"","cultural evolution","hypothesis","","","in small communities, each learner acquires language from a smaller set of individuals than they would in a larger community [32]. There is no direct evidence for this proposition, but it may be plausible, given that small languages are generally spoken in isolated subsistence communities with low levels of political organization and economic development."
 "4163919418","nettle2012social","1746840506","~","13986012","neg",NA,"","cultural evolution","hypothesis","","","individuals in small communities acquire language from the same number of models as in large communities, but their social networks are more clus- tered. That is, if individual A is exposed to the speech of individuals B and C, then there is a high degree of expected overlap in the speech sample to which B and C were exposed as they learned."
 "3304989720","nettle2012social","1795157602",">","1152005270","pos",NA,"","","hypothesis","","",""
 "1264604873","nettle2012social","13986012",">","1152005270","neg",NA,"","","hypothesis","","",""
@@ -207,20 +228,20 @@
 "3210316744","","847633490",">","3477552002","neg",NA,"","","hypothesis","","","Here, successive generations reinterpret previously separate content words as grammatical modi+++cations of other words, often contracting them in the process. Thus, paradigmatic complexity is gained and syntagmatic complexity is lost."
 "3310817347","bentz2013languages","634707713","~=","2949246489","pos",NA,"morphology","language change","statistical","typological",NA,""
 "1462863154","bentz2013languages","264262316",">","634707713","neg","3554226544","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
-"3235175671","miyagawa2013emergence","1118704903",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","none","exemplified by birdsongs"
-"3547023964","miyagawa2013emergence","780032119",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","none","exemplified by alarm calls"
-"3101069128","miyagawa2013emergence","2642888319",">","780032119","n-m",NA,"","none","","","none",""
-"4065170602","amano2014global","1746840506",">","197493471","none",NA,NA,"none",NA,"","none","decrease in population size"
-"3186592695","amano2014global","283652280",">","197493471","none",NA,NA,"none",NA,"","none","increase in economic development. most prominent in higher latitudes"
-"417244605","amano2014global","456651676",">","197493471","none",NA,NA,"none",NA,"","none","most prominent in the tropics"
-"2127183283","amano2014global","1031734161","~","283652280","none",NA,NA,"none",NA,"","none",""
-"1282450085","amano2014global","1031734161","~","456651676","none",NA,NA,"none",NA,"","none",""
-"207473633","amano2014global","1031734161","~","1746840506","none",NA,NA,"none",NA,"","none",""
-"249099638","amano2014global","283652280","~","1746840506","none",NA,NA,"none",NA,"","none",""
-"2850626152","amano2014global","283652280","~","456651676","none",NA,NA,"none",NA,"","none",""
-"3082980434","axelsen2014river","3999396400",">","3719167349","pos",NA,"population dynamics","language change","model","","none",NA
-"2805706711","axelsen2014river","395999132",">","3719167349","neg",NA,"population dynamics","language change","model","","none",NA
-"1304981976","lee2014oceanic","1326982643",">","3719167349","pos",NA,"population dynamics","language change","statistical","","none",NA
+"3235175671","miyagawa2013emergence","1118704903",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","","exemplified by birdsongs"
+"3547023964","miyagawa2013emergence","780032119",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","","exemplified by alarm calls"
+"3101069128","miyagawa2013emergence","2642888319",">","780032119","n-m",NA,"","none","","","",""
+"4065170602","amano2014global","1746840506",">","197493471","none",NA,NA,"none",NA,"","","decrease in population size"
+"3186592695","amano2014global","283652280",">","197493471","none",NA,NA,"none",NA,"","","increase in economic development. most prominent in higher latitudes"
+"417244605","amano2014global","456651676",">","197493471","none",NA,NA,"none",NA,"","","most prominent in the tropics"
+"2127183283","amano2014global","1031734161","~","283652280","none",NA,NA,"none",NA,"","",""
+"1282450085","amano2014global","1031734161","~","456651676","none",NA,NA,"none",NA,"","",""
+"207473633","amano2014global","1031734161","~","1746840506","none",NA,NA,"none",NA,"","",""
+"249099638","amano2014global","283652280","~","1746840506","none",NA,NA,"none",NA,"","",""
+"2850626152","amano2014global","283652280","~","456651676","none",NA,NA,"none",NA,"","",""
+"3082980434","axelsen2014river","3999396400",">","3719167349","pos",NA,"population dynamics","language change","model","","",NA
+"2805706711","axelsen2014river","395999132",">","3719167349","neg",NA,"population dynamics","language change","model","","",NA
+"1304981976","lee2014oceanic","1326982643",">","3719167349","pos",NA,"population dynamics","language change","statistical","","",NA
 "552922672","thomas2014self","437593210",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1868351487","thomas2014self","2252199623",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1722501165","thomas2014self","3550963897",">","1706533394","pos",NA,"learning","preadaptation",NA,"","",""
@@ -230,8 +251,10 @@
 "3228754550","thomas2014self","1706533394",">","2252199623","pos",NA,"learning","preadaptation",NA,"","",""
 "3126708775","thomas2014self","3262232893",">","2252199623","pos",NA,"learning","preadaptation",NA,"","",""
 "1357404800","thomas2014self","478750561",">","3807270984","pos",NA,"genetics","preadaptation",NA,"","","Deacon"
-"1691586691","thomas2014self","3807270984",">","2107924262","pos",NA,"genetics","preadaptation",NA,"","none","Belyaev"
+"1691586691","thomas2014self","3807270984",">","2107924262","pos",NA,"genetics","preadaptation",NA,"","","Belyaev"
 "801078196","thomas2014self","2107924262",">","3550963897","pos",NA,"genetics","preadaptation",NA,"","","Belyaev"
+"1956811059","TurveyPettorelli2014","3719167349","~","3714369798","pos",NA,NA,"language change","statistical","","yes",NA
+"3144156030","TurveyPettorelli2014","1318407075","~","3439972045","neg",NA,NA,"language change","statistical","","",NA
 "1534410978","atkinson2015speaker","3298197017",">","14653804","pos",NA,NA,NA,"review","","yes","A number of studies have demonstrated the effect that input variability can have on the acquisition of phonemic (or tonal [13] contrasts."
 "4075508045","atkinson2015speaker","1152005270",">","3298197017","pos",NA,NA,NA,"logical","","",""
 "1548371879","atkinson2015speaker","1746840506","~","634707713","neg",NA,NA,NA,"review","","",""
@@ -243,8 +266,8 @@
 "2652273648","atkinson2015speaker","989508604",">","634707713","pos",NA,NA,NA,"hypothesis","","",""
 "1780928545","atkinson2015speaker","3298197017",">","3906907919","neg",NA,NA,NA,"experiment","","no"," As in Experiment 1, we find no evidence to support a hypothesis that speaker input variability aids language acquisition, and so again have no support for the suggestion that it should be considered a mechanism by which group size can determine a language's morphological complexity."
 "1241254912","atkinson2015speaker","3906907919",">","989508604","pos",NA,NA,NA,"hypothesis","","",""
-"1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","none",NA
-"4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","none",NA
+"1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","",NA
+"4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
 "3204791347","bentz2016learning","264262316",">","3507217186","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
 "1237901007","bentz2016learning","3507217186",">","1883821886","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
@@ -406,7 +429,7 @@
 "3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
 "1185750865","tinits2017usage","2656510549",">>","3024043961","",NA,NA,"",NA,"","",NA
 "3272306306","tinits2017usage","2015726635",">","360233333","",NA,NA,"",NA,"","",NA
-"2295217470","","3024043961",">","2015726635","none",NA,NA,"none",NA,"","none",NA
+"2295217470","","3024043961",">","2015726635","none",NA,NA,"none",NA,"","",NA
 "3247784915","tinits2017usage","2313336171",">","2203045387","",NA,NA,"",NA,"","",NA
 "3939373490","tinits2017usage","2313336171",">","634707713","",NA,NA,"",NA,"","",NA
 "166485628","tinits2017usage","2656510549",">>","2894100489","",NA,NA,"",NA,"","",NA
@@ -416,8 +439,8 @@
 "3719082042","evolang12Raviv","1746840506",">","634707713","neg",NA,NA,"cultural evolution","experiment","","","bigger groups create simpler languages"
 "3687643733","evolang12Raviv","1746840506",">","1923061136","pos",NA,NA,"cultural evolution","experiment","","","bigger groups converge more often"
 "784654683","evolang12Raviv","1746840506",">","1270992509","pos",NA,NA,"cultural evolution","experiment","","","bigger groups stabilize slower, but more often"
-"801821047","evolang12Raviv","1746840506",">","3316682815","pos",NA,NA,"cultural evolution","experiment","","none","bigger groups create more compositional languages"
-"510638667","evolang12Raviv","1746840506",">","2100327343","pos",NA,NA,"cultural evolution","experiment","","none","bigger groups vary less on their accuracy"
+"801821047","evolang12Raviv","1746840506",">","3316682815","pos",NA,NA,"cultural evolution","experiment","","","bigger groups create more compositional languages"
+"510638667","evolang12Raviv","1746840506",">","2100327343","pos",NA,NA,"cultural evolution","experiment","","","bigger groups vary less on their accuracy"
 "2222532580","evolang12Raviv","2100327343",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
 "1629288615","evolang12Raviv","331530021",">","3719167349","",NA,NA,"cultural evolution","experiment","","","bigger groups are more similar to each other"
 "2486713500","evolang12Raviv","1270992509",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
