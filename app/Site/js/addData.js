@@ -133,6 +133,11 @@ function validateSubmission(){
 			$("#ReferenceYearAlert").show();
 			valid = false;
 		}
+
+		if(bib_key.search("/")>=0){
+			$("#ReferenceKeyAlert").show();
+			valid = false;
+		}
 	}
 	if($("#jsGrid").data().JSGrid.data.length==0){
 		$("#CausalLinksAlert").show();
