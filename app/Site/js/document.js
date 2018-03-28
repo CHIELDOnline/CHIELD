@@ -199,7 +199,7 @@ function openSource(){
 function raiseIssue(){
 	var title = encodeURIComponent("Question about "+shortCite);
 	var docURL = "https://chield.excd.org/document.html?key="+documentKey;
-	var body = "Document: ["+docURL+"]("+docURL+")\n";
+	var body = "Document: ["+documentKey+"]("+docURL+")\n";
 	if(contributor_usernames.length>0){
 		body += "Contributors: ";
 		for(var i=0;i<contributor_usernames.length; ++i){
@@ -209,6 +209,11 @@ function raiseIssue(){
 	}
 	body = encodeURIComponent(body);
 	var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title="+title+"&body="+body+"&labels=data";
+	window.open(url);
+}
+
+function openDiscussionHistory(){
+	url = "https://github.com/CHIELDOnline/CHIELD/issues?q=label:data "+documentKey;
 	window.open(url);
 }
 
