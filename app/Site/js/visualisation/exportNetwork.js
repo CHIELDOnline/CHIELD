@@ -25,3 +25,16 @@ function saveDataAsCSV(){
   	link.click();
  	document.body.removeChild(link);
 }
+
+function saveDataAsDOT(){
+	var dotData = visGraphToDot(network_nodes,network_edges);
+	var encodedUri = "data:text/csv;charset=utf-8,"+encodeURIComponent(dotData);
+
+	var link = document.createElement('a');
+	link.style.display = 'none';
+	link.href = encodedUri;
+	link.download = "CausalLinks.dot"
+	document.body.appendChild(link);
+  	link.click();
+ 	document.body.removeChild(link);
+}
