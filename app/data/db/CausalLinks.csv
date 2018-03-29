@@ -105,9 +105,9 @@
 "1050691020","dunbar2004gossip","3260460435",">","379726749","neg",NA,NA,"coevolution","hypothesis","",NA,""
 "1144642206","ke04phd","2630414457",">","736844491","pos",NA,NA,"preadaptation","review",NA,NA,NA
 "2581856534","ke04phd","736844491",">","2413943838","pos",NA,NA,"preadaptation","review",NA,NA,NA
-"8177434","","2367900654","creolization","2603584510","regularity, creoles",NA,"language change","review","","","earliest stages in creoles should exhibit unpredictable variability, creoles at later stages don't","hudson2005regularizing"
-"1434851693","hudson2005regularizing","1522898464","regularisation bias","2603584510","regularity",NA,"language change","experiment","yes","","adults regularized, children didn't",""
-"1772864204","hudson2005regularizing","1522898464","regularity in language","2603584510","regularity",NA,"language change","review","","","",""
+"4045538854","hudson2005regularizing","1369442256","~=","3495191649","pos",NA,"regularity, creoles","language change","review","","","earliest stages in creoles should exhibit unpredictable variability, creoles at later stages don't"
+"3652216593","hudson2005regularizing","2629107599",">","251023881","pos",NA,"regularity","language change","experiment","","yes","adults regularized, children didn't"
+"4015222104","hudson2005regularizing","251023881",">","1369442256","pos",NA,"regularity","language change","review","","",""
 "3465784534","macwhinney2005language","2413943838",">","3286382177","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "825094920","macwhinney2005language","2413943838",">","2269326524","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "888211955","wang05verticalAndHorizontalTransmission","3408910299",">","2273399571","pos",NA,"signalling","language change","statistical",NA,"yes",NA
