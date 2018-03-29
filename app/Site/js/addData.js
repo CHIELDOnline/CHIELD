@@ -115,6 +115,7 @@ function showTab(id){
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
 	$("#ReferenceYearAlert").hide();
+	$("#ReferenceKeyAlert").hide();
 	$("#CausalLinksAlert").hide();
 }
 
@@ -129,9 +130,16 @@ function validateSubmission(){
 		$("#ReferenceAlert").show();
 		valid = false;
 	} else{
+		// check if there's an entry for year
 		if(bib_year===undefined){
 			$("#ReferenceYearAlert").show();
 			valid = false;
+		} else{
+			// check if the year is a number
+			if(bib_year.length!=4 || isNaN(bib_year)){
+				$("#ReferenceYearAlert").show();
+				valid = false;
+			}
 		}
 
 		if(bib_key.search("/")>=0){
@@ -305,6 +313,7 @@ $(document).ready(function(){
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
 	$("#ReferenceYearAlert").hide();
+	$("#ReferenceKeyAlert").hide();
 	$("#CausalLinksAlert").hide();
 
 	// getVersion checks whether cookies are up to date.
