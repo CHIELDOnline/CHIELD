@@ -407,6 +407,16 @@ The number of different species found in a given area of the Earth increases fro
   eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.0030-1299.2008.16684.x},
   abstract = {Parasite–host coevolutionary races are spatially variable across species’ or human cultural ranges. Assortative sociality, biased toward local conspecifics, and limited dispersal (philopatry) in humans and other organisms can be adaptive through reduced contact with dangerous contagions harbored by distant/non‐local conspecifics. These factors can generate cultural or population divergence. Thus, parasites are like a wedge driving groups apart through their effective creation of anticontagion behaviors. If this proposition is correct, then biological diversity should positively correlate with parasite diversity. Here we show that the worldwide distribution of indigenous human language diversity, a form of biodiversity, is strongly, positively related to human parasite diversity indicative of a legacy of parasite‐mediated diversification. The significant pattern remains when potential confounds are removed. The pattern too is seen in each of the six world regions and is not confounded by regional differences in their history of colonization and conquest. We hypothesize that variation in limited dispersal and assortative sociality with conspecifics in response to the worldwide spatial variation in pathogen diversity provides a fundamental mechanism of population divergence explaining many important aspects of the geographic patterns of biodiversity. This hypothesis has broad implications for a diversity of research topics including language diversity, cultural evolution, speciation, phylogeny and biogeography.},
 }","Fincher & Thornhill (2008)"
+"kusters2008","Wouter Kusters","2008","Complexity in linguistic theory, language learning and language change ","@InCollection{kusters2008,
+  author = {Wouter Kusters},
+  title = {Complexity in linguistic theory, language learning and language change },
+  editor = {Matti Miestamo and Kaius Sinnemäki and Fred Karlsson},
+  booktitle = {Language Complexity: Typology, contact, change},
+  publisher = {John Benjamins Publishing Company},
+  address = {Amsterdam / Philadelphia},
+  year = {2008},
+  pages = {3--22},
+}","Kusters (2008)"
 "minett04endangeredLanguage","James W. Minett; William S-Y. Wang","2008","Modelling endangered languages: The effects of bilingualism and social structure","@Article{minett04endangeredLanguage,
   abstract = {The mathematical model for language competition developed by Abrams and Strogatz allows the evolution of the numbers of monolingual speakers of two competing languages to be estimated. In this paper, we extend the model to examine the role of bilingualism and social structure, neither of which are addressed in the previous model. We consider the impact of two strategies for language maintenance: (1) adjusting the status of the endangered language; and (2) adjusting the availability of monolingual and bilingual educational resources. The model allows us to predict for which scenarios of intervention language maintenance is more likely to be achieved. Qualitative analysis of the model indicates a set of intervention strategies by which the likelihood of successful maintenance is expected to increase.},
   author = {James W. Minett and William S-Y. Wang},
