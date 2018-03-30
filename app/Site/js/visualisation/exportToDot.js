@@ -12,7 +12,7 @@ var dotEdgeTypes = {
 
 function visGraphToDot(network_nodes,network_edges){
 	
-	var dot = "digraph chield{\n__NODES__\n\n__EDGES__\n}";
+	var dot = 'digraph chield{\nnode [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]\n__NODES__\n\n__EDGES__\n}';
     var nodesArray = network_nodes.get(network_nodes.getIds());
     var nodeIds = makeNodeDictionary(nodesArray);
     var nodesDot = makeNodesDot(nodeIds);

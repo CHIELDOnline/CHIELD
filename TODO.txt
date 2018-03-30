@@ -1,7 +1,7 @@
 
-FIX: slashes in bibref create extra directories
 
-R script: Filter duplicate contributors?
+FIX: Explore: Cluster groups all "X:Y" into "X", but does not add just "X".
+
 
 Data:
 	trudgill1974linguistic:  
@@ -10,6 +10,9 @@ Data:
 		physical distance should be negative?
 
 	nettle2012social: indicators should be the other way around?
+
+	https://chield.excd.org/document.html?key=smith2010eliminating
+		Add plural marker as measure
 
 
 Online version:
