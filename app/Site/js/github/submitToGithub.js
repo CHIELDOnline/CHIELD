@@ -13,7 +13,8 @@ function submitToGitHub(){
 		$("#submitToGitHub").hide();
 
 		console.log("Submit");
-		var data = $('#jsGrid').jsGrid('option', 'data');
+		// Deep copy data to avoid changing grid object
+		var data = JSON.parse(JSON.stringify($('#jsGrid').jsGrid('option', 'data')));
 
 
 		// get list of variables that are new to the database

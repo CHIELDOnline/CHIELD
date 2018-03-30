@@ -7,8 +7,10 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
         var row = "";
         //This loop will extract the label from 1st index of on array
         for (var index in arrData[0]) {
-            //Now convert each value to string and comma-seprated
-            row += '"' +index + '",';
+            if(index.length>0){
+                //Now convert each value to string and comma-seprated
+                row += '"' +index + '",';
+            }
         }
         // remove trailing comma
         row = row.slice(0, -1);
@@ -21,13 +23,15 @@ function JSONToCSVConvertor(JSONData, ShowLabel) {
 
         //2nd loop will extract each column and convert it in string comma-seprated
         for (var index in arrData[i]) {
-        	var cellValue = arrData[i][index];
-        	if(cellValue==null){
-        		cellValue = "";
-        	}
-        	// handle double quotes
-        	cellValue = cellValue.replace(/"/g, '""');
-            row += '"' + cellValue + '",';
+            if(index.length>0){
+            	var cellValue = arrData[i][index];
+            	if(cellValue==null){
+            		cellValue = "";
+            	}
+            	// handle double quotes
+            	cellValue = cellValue.replace(/"/g, '""');
+                row += '"' + cellValue + '",';
+            }
         }
 
         row = row.substring(0, row.length - 1);

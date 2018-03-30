@@ -104,16 +104,32 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 	
 }
 
-function delNetworkElement(){
+function deleteNodes(){
+	// TODO: This will also remove any nodes that are unconnected
 	var nodesToDel = network.getSelectedNodes();
-	var edgesToDel = network.getSelectedEdges();
-	for(var i=0; i< nodesToDel.length; ++i){
-		console.log(nodesToDel);
+	var oldData = $('#jsGrid').jsGrid('option', 'data');
+	var newData = [];
+	if(nodesToDel.length>0){
+		var rowObjectsToDel = [];
+		for(var i=0;i<oldData.length;++i){
+			if($.inArray(oldData[i].Var1,nodesToDel)==-1 && 
+				$.inArray(oldData[i].Var2,nodesToDel)==-1){
+					newData.push(oldData[i]);
+			}
+		}
+		$(".jsGrid").jsGrid("option", "data", newData);
+		//redrawGUIfromGrid();
+		network_nodes.remove(nodesToDel);
+		var edgeIds = network_edges.getIds();
+		for(var i=0;i<nodesToDel.length;++i){
+			for(var j=0;j<edgeIds.length;++j){
+				var edge = network_edges.get(edgeIds[j]);
+				if(edge.from==nodesToDel[i] || edge.to==nodesToDel[i]){
+					network_edges.remove(edge.id);
+				}
+			}
+		}
 	}
-	for(var i=0; i< edgesToDel.length; ++i){
-		console.log(edgesToDel);
-	}
-	// TODO: Delete instances from the grid
 }
 
 function network_on_click (params) {

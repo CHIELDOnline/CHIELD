@@ -379,7 +379,6 @@ $(document).ready(function(){
     // When mouse leaves network box, deselect everything
     document.getElementById("mynetwork").onmouseleave = function(){
     		current_selection_mode="start";
-    		network.selectNodes([]); // Need to remove this if we want a button to delete nodes
     	};
 
 	// Load username from cookie
@@ -405,6 +404,8 @@ $(document).ready(function(){
 			source:filterWithMaxLengthLimit
 		});
 
+	// Make network box resizable
+	$( "#mynetwork" ).resizable();
 
 });
 

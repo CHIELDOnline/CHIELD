@@ -12,7 +12,9 @@
 <script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <script src="js/util/js.cookie.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -121,7 +123,7 @@
 		<button id="addVar" onclick="addVar()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Add a variable">
 			<i class="fas fa-plus"></i>
 		</button> -->
-		<!--<button id="delNetworkElement" onclick="delNetworkElement()" class="btn btn-primary"> - </button>-->
+		<button id="deleteNodes" onclick="deleteNodes()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Remove selected nodes"> - </button>
 		<button id="drawLinks" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Toggle click to draw link">
 			<i class="fas fa-arrow-right"></i>
 		</button>

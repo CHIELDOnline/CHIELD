@@ -53,7 +53,13 @@ ul {
 }
 
 #drawLinks{
-    margin-left: 5%;
+    
+}
+
+#deleteNodes{
+    margin-left:5%;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 /* display long text as ellipsis */
