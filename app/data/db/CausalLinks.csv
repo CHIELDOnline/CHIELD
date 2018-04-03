@@ -1,4 +1,5 @@
 "pk","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Confirmed","Notes"
+"2209074830","hockett1960Origin","2979943643",">","31407103","pos",NA,NA,"cultural evolution","hypothesis","","no",NA
 "285690783","trudgill1974linguistic","1746840506",">>","2367146783","pos",NA,"population dynamics","none","logical","","","The bigger the groups are, the higher the chance of them interacting with each other"
 "3832267666","trudgill1974linguistic","2367146783",">","2273399571","pos",NA,"phonetics","language change","model","","","Trudgill considers this process analogous to Newton's gravity model"
 "1392706783","trudgill1974linguistic","233622896",">>","2367146783","pos",NA,"population dynamics","none","logical","","",""
@@ -202,6 +203,7 @@
 "3392863649","hudson2009getting","3690867374",">","251023881","pos",NA,"regularity","language change","experiment","","yes","results of our experiments demonstrate that, when the inconsistencies are great enough (when alternate forms are numerous and low frequency, as well as inconsistent), adults will begin to regularize"
 "376485400","hudson2009getting","251023881",">","2203045387","pos",NA,"regularity","language change","review","","","Evidence suggests that this unpredictable variation disappears as the language is learned; it is regularized"
 "3852602300","hudson2009getting","2203045387","~=","3495191649","pos",NA,"regularity, creoles","language change","qualitative","","","(see Hudson Kam & Newport, 2005, for a discussion of the hypothesis that adult learners might be responsible for regularization in creole languages)"
+"1443871308","galantucci2010effects","1284866140",">","31407103","pos",NA,NA,"cultural evolution","experiment","","yes",NA
 "3453268714","lupyan2010language","1746840506",">","264262316","pos","3554226544","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to (1) be nonnative speakers or have learned the language from nonnative speakers, "
 "926792975","lupyan2010language","1746840506",">","3011025056","pos","3554226544","morphology","language change","statistical","cross-linguistic",NA,"The exoteric linguistic niche contains languages with large numbers of speakers, thus requiring these languages to serve as interfaces for communication between strangers. In reality the esoteric and exoteric niches form a continuum, and are represented as such in our analyses (see also Text S4). Speakers of languages in the exoteric niche compared to speakers of esoteric languages are more likely to ... (2) use the language to speak to outsiders—individuals from different ethnic and/or linguistic backgrounds."
 "594215368","lupyan2010language","264262316",">","4091963917","pos","3554226544","morphology","language change","review","",NA,"With increased geographic spread and an increasing speaker population, a language is more likely to be subjected to learnability biases and limitations of adult learners"
@@ -223,6 +225,7 @@
 "220648987","smith2010eliminating","1185835540",">","251023881","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
 "2100925986","smith2010eliminating","1369442256","~=","3495191649","pos",NA,"regularity","language change","review","","","creolization can also be characterised as the construction of a new language via levelling and regularization of a pool of linguistic variants arising from radical language contact"
 "955172757","Calude2011","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
+"655428662","little2011role","3071805488",">","634707713","neg",NA,NA,"language change","experiment","","no",NA
 "2899357548","trudgill2011social","1746840506",">","49467656","neg",NA,"phonology; sociolinguistics","language change","review","",NA,"This was because my attempted explanatory approach sug- gested that there is in fact a tendency for small, tightly-knit, stable, low-contact communities with large amounts of communally shared information to be char- acterised either by unusually large inventories or by unusually small inventories."
 "3692133365","trudgill2011social","259090463",">","49467656","neg",NA,"phonology; sociolinguistics","language change","review","",NA,"There is considerable evidence to show that short-term adult language contact leads to simplification in phonology."
 "3789256352","trudgill2011social","2078026494",">","49467656","pos",NA,"phonology; sociolinguistics","language change","review","",NA,"Long-term contact involving childhood bilingualism tends to lead to complexification in terms of larger phoneme inventories"
@@ -271,6 +274,8 @@
 "3117091433","","4074667640",">","3252179577","n-m",NA,"","","hypothesis","","no","Trudgill+++s argument is slightly different but makes a similar prediction of disfavoured structures being more likely to persist in small communities. Assuming that intermediate sizes of phonological inventory, and intermediate levels of morphological complexity, represent the communicatively optimal language system, this predicts that languages spoken in small communities should be more extreme than those spoken in large ones. That is, a small language should be more likely to have a very large or very small phonological inventory, a very low or very high level of morphological complexity, with languages of large communities more likely to be in the middle"
 "509695294","","3284661260",">","4074667640","pos",NA,"","","hypothesis","","","Nettle argued that the turnover of linguistic change would be faster in small communities, and, relatedly, that communicatively suboptimal grammatical strategies were more likely to drift to +++xation in small communities than in larger ones. "
 "3210316744","","847633490",">","3477552002","neg",NA,"","","hypothesis","","","Here, successive generations reinterpret previously separate content words as grammatical modi+++cations of other words, often contracting them in the process. Thus, paradigmatic complexity is gained and syntagmatic complexity is lost."
+"2824805122","roberts2012emergence","3345272349",">","31407103","pos",NA,NA,"cultural evolution","experiment","","yes",NA
+"256665854","roberts2012emergence","2979943643",">","31407103","pos",NA,NA,"cultural evolution","experiment","","no",NA
 "3310817347","bentz2013languages","634707713","~=","2949246489","pos",NA,"morphology","language change","statistical","typological",NA,""
 "1462863154","bentz2013languages","264262316",">","634707713","neg","3554226544","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
 "3235175671","miyagawa2013emergence","1118704903",">","3036999762","pos",NA,"linguistics","preadaptation","hypothesis","","","exemplified by birdsongs"
@@ -286,6 +291,12 @@
 "2850626152","amano2014global","283652280","~","456651676","n-m",NA,"ecology","none","statistical","","",""
 "3082980434","axelsen2014river","3999396400",">","3719167349","pos",NA,"population dynamics","language change","model","","",NA
 "2805706711","axelsen2014river","395999132",">","3719167349","neg",NA,"population dynamics","language change","model","","",NA
+"453179844","fay2014creating","2664839125",">","2571402292","pos",NA,NA,"preadaptation","hypothesis","","yes",NA
+"4293984386","fay2014creating","3739434718",">","2664839125","none",NA,NA,"preadaptation","hypothesis","","no",NA
+"2896212751","fay2014creating","3739434718",">","2571402292","pos",NA,NA,"preadaptation","experiment","","yes",NA
+"2336962662","fay2014creating","3739434718",">","4185064431","pos",NA,NA,"preadaptation","experiment","","yes",NA
+"2351453495","fay2014creating","2664839125",">","4185064431","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4027266889","fay2014creating","4185064431",">>","2571402292","pos",NA,NA,"preadaptation","logical","","yes",NA
 "1304981976","lee2014oceanic","1326982643",">","3719167349","pos",NA,"population dynamics","language change","statistical","","",NA
 "552922672","thomas2014self","437593210",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1868351487","thomas2014self","2252199623",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
@@ -300,6 +311,7 @@
 "801078196","thomas2014self","2107924262",">","3550963897","pos",NA,"genetics","preadaptation",NA,"","","Belyaev"
 "1956811059","TurveyPettorelli2014","3719167349","~","3714369798","pos",NA,NA,"language change","statistical","","yes",NA
 "3144156030","TurveyPettorelli2014","1318407075","~","3439972045","neg",NA,NA,"language change","statistical","","",NA
+"3592749394","verhoef2014emergence","360233333",">","31407103","pos",NA,NA,"cultural evolution","experiment","","yes",NA
 "1534410978","atkinson2015speaker","3298197017",">","14653804","pos",NA,NA,NA,"review","","yes","A number of studies have demonstrated the effect that input variability can have on the acquisition of phonemic (or tonal [13] contrasts."
 "4075508045","atkinson2015speaker","1152005270",">","3298197017","pos",NA,NA,NA,"logical","","",""
 "1548371879","atkinson2015speaker","1746840506","~","634707713","neg",NA,NA,NA,"review","","",""
@@ -314,6 +326,9 @@
 "1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","",NA
 "4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","",NA
 "3361991030","okanoya2015evolution","3550963897",">","1204190256","neg",NA,"syntax","preadaptation","other","","","The process by which song complexity emerged in domesticated [Bengalese Finches] might suggest a similar process in human language evolution."
+"1279146173","roberts2015communication","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
+"267981594","roberts2015communication","2664839125",">","2367146783","pos",NA,NA,"cultural evolution","experiment","","yes",NA
+"3444819371","roberts2015communication","2664839125","/=","2035146904","neg",NA,NA,"cultural evolution","experiment","","yes",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
 "3204791347","bentz2016learning","264262316",">","3507217186","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
 "1237901007","bentz2016learning","3507217186",">","1883821886","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
@@ -467,12 +482,17 @@
 "1398046192","regier2016languages","2571402292",">","4089669229",NA,NA,"semantics;lexicon","language change","statistical","",NA,"local cultural communicative needs (there is less need to communicate precisely and informatively about ice and snow than there would be in a colder climate) ... shape the category system of a language (allowing a broad and relatively uninformative semantic category encompassing both ice and snow)"
 "1001065648","rogers2016stick","4068186295",">","1923061136","neg",NA,"signalling","cultural evolution","experiment","communication game","no","Participants’ communication behaviour was predicted by how informative they perc eived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
 "874763669","rogers2016stick","1341298867",">","1923061136","pos",NA,"signalling","cultural evolution","experiment","communication game","yes","Participants’ communication behaviour was predicted by how informative they perceived the different shape descriptions to be. When their personal shape description was perceived to be more informative than their addressee’s description, there was a strong bias to communicate egocentrically. By contrast, when their addressee’s shape description was perceived to be more informative, there was a strong bias to take their addressee’s perspective. When the shape descriptions were perceived to be equally informative, there was a moderate bias to communicate egocentrically. "
+"456028294","verhoef2016iconicity","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
 "3451049801","Blasi_Moran_SLE_2017","4202478006",">","2387964722","pos",NA,NA,"language change","review","",NA,NA
 "4253597579","Blasi_Moran_SLE_2017","4202478006",">","1162835510","pos",NA,NA,"language change","review","",NA,NA
 "3095829081","Blasi_Moran_SLE_2017","2387964722",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
 "547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
 "2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","",NA,NA
 "3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
+"374185503","little2017conventionalisation","2367146783",">","2664839125","pos",NA,NA,"coevolution","experiment","","yes",NA
+"2510820715","little2017conventionalisation","790090870",">","2664839125","none",NA,NA,"coevolution","experiment","","no",NA
+"623507289","little2017signal","2259512269",">","2664839125","pos",NA,NA,"preadaptation","hypothesis","","no",NA
+"3402917027","little2017signal","2259512269",">","31407103","pos",NA,NA,"preadaptation","experiment","","no",NA
 "1185750865","tinits2017usage","2656510549","~","3024043961","",NA,"perception; cognition; psychology; categorization","preadaptation","experiment","","yes",""
 "3247784915","tinits2017usage","2313336171",">","2203045387","pos",NA,"morphology; regularisation; conventionalisation","language change","experiment","","yes","not confirmed for natural language!"
 "166485628","tinits2017usage","2656510549",">","2894100489","n-m",NA,"perception; cognition","preadaptation","review","","yes",""

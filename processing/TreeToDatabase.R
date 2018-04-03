@@ -7,6 +7,7 @@ suppressWarnings(suppressMessages(library(dbplyr)))
 suppressWarnings(suppressMessages(library(RSQLite)))
 suppressWarnings(suppressMessages(library(bibtex)))
 suppressWarnings(suppressMessages(library(readr)))
+suppressWarnings(suppressMessages(library(crayon)))
 
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
@@ -71,7 +72,9 @@ getShortCitation = function(b){
     citationAndSep = ", "
     citationEnd = " et al."
   }
-  bAuthors = sapply(b$author,function(X){X$family})
+  bAuthors = sapply(b$author,function(X){
+    paste(X$family,collapse=" ")
+    })
   bAuthors = detexify(bAuthors)
   if(length(bAuthors)==1){
     authorList = bAuthors[1]
@@ -124,70 +127,82 @@ for(f in list.dirs(treeBaseFolder)){
     
     linkFile = files[grepl("*.csv",files)][1]
     bibFile = files[grepl("*.bib",files)][1]
-                     
-    l = read.csv(paste0(f,"/",linkFile), stringsAsFactors = F, encoding = 'utf-8',fileEncoding = 'utf-8')
-    
-    # Remove rows without basic data
-    l = l[complete.cases(l[,c("Var1","Var2")]),]
-    l$Var1[l$Var1==""] = NA
-    l$Var2[l$Var2==""] = NA
-    l = l[complete.cases(l[,c("Var1","Var2")]),]
-    
-    # Check if there is actually any data left
-    if(nrow(l)>0){
-      for(colx in causal_links_columns){
-        if(!colx %in% names(l)){
-          l[,colx] = ""
+    l = data.frame(Var1=NA,Var2=NA)       
+    tryCatch(l <- read.csv(paste0(f,"/",linkFile), stringsAsFactors = F, encoding = 'utf-8',fileEncoding = 'utf-8'),
+             error=function(e){
+               cat(red("-----------------"))
+               cat(red("-     Error     -"))
+               cat(red("-----------------\n"))
+               print(f)
+               print(e)
+             })
+      # Remove rows without basic data
+      l = l[complete.cases(l[,c("Var1","Var2")]),]
+      l$Var1[l$Var1==""] = NA
+      l$Var2[l$Var2==""] = NA
+      l = l[complete.cases(l[,c("Var1","Var2")]),]
+      
+      # Check if there is actually any data left
+      if(nrow(l)>0){
+        for(colx in causal_links_columns){
+          if(!colx %in% names(l)){
+            l[,colx] = ""
+          }
         }
+        l = l[,causal_links_columns]
+        # Add links to list of links
+        links = rbind(links,l)
+      
+        #b = readLines(paste0(f,"/",bibFile), warn = F)
+        b = read.bib(paste0(f,"/",bibFile))
+        
+        checkCharacters(readLines(paste0(f,"/",bibFile),warn = F))
+        
+        # Add to big list
+        
+        bigBibtexFile = c(bigBibtexFile,paste(toBibtex(b),collapse = "\n"))
+        
+        # Extract info
+        
+        bKey = b$key
+        bAuthor = paste(detexify(b$author),collapse='; ')
+        bYear = b$year
+        bTitle = detexify(b$title)
+        # Make sure page range is specified as double dash
+        if(!is.null(b$pages)){
+          b$pages = gsub("-","--",b$pages)
+          b$pages = gsub("--+","--",b$pages)
+        }
+        bRecord = paste(as.character(toBibtex(b)),collapse="\n")
+        #bCitation = format(b, style = "html")
+        # remove link text
+        #bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
+        # Citation is now e.g. Ackley & Littman (1994)
+        bCitation = getShortCitation(b)
+        
+        bib = rbind(bib,
+                    c(bKey, bAuthor, bYear, bTitle,
+                      bRecord, bCitation))
+        
+        # Contributor
+        
+        newContributors= data.frame(
+          username=default_contributor,
+          realname=default_contributor_realname,
+          date = "",
+          bibref=bKey
+        )
+        
+        contributor.file = paste0(f,"/contributors.txt")
+        if(file.exists(contributor.file)){
+          suppressWarnings(cx <- read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F))
+          names(cx)[1:3] = c("username",'realname','date') 
+          cx$bibref = bKey
+          newContributors = cx
+        } 
+        contributors = rbind(contributors,newContributors[,c("username","realname","date","bibref")])
       }
-      l = l[,causal_links_columns]
-      # Add links to list of links
-      links = rbind(links,l)
     
-      #b = readLines(paste0(f,"/",bibFile), warn = F)
-      b = read.bib(paste0(f,"/",bibFile))
-      
-      checkCharacters(readLines(paste0(f,"/",bibFile),warn = F))
-      
-      # Add to big list
-      
-      bigBibtexFile = c(bigBibtexFile,paste(toBibtex(b),collapse = "\n"))
-      
-      # Extract info
-      
-      bKey = b$key
-      bAuthor = paste(detexify(b$author),collapse='; ')
-      bYear = b$year
-      bTitle = detexify(b$title)
-      bRecord = paste(as.character(toBibtex(b)),collapse="\n")
-      #bCitation = format(b, style = "html")
-      # remove link text
-      #bCitation = gsub(">[^<]+</a>",">link</a>",bCitation)
-      # Citation is now e.g. Ackley & Littman (1994)
-      bCitation = getShortCitation(b)
-      
-      bib = rbind(bib,
-                  c(bKey, bAuthor, bYear, bTitle,
-                    bRecord, bCitation))
-      
-      # Contributor
-      
-      newContributors= data.frame(
-        username=default_contributor,
-        realname=default_contributor_realname,
-        date = "",
-        bibref=bKey
-      )
-      
-      contributor.file = paste0(f,"/contributors.txt")
-      if(file.exists(contributor.file)){
-        suppressWarnings(cx <- read.delim(contributor.file,sep="\t", header=F, stringsAsFactors = F))
-        names(cx)[1:3] = c("username",'realname','date') 
-        cx$bibref = bKey
-        newContributors = cx
-      } 
-      contributors = rbind(contributors,newContributors[,c("username","realname","date","bibref")])
-    }
   }
 }
 bib = bib[2:nrow(bib),]
