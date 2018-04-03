@@ -16,9 +16,9 @@ The canonical version of the data is the folder tree `data/tree/documents`.  A s
     -  Writes the data to a file on the server side folder `newRecords`
     -  Calls the python file `sendToRepo.py`
   -  `sendToRepo.py` reads the new files and:
-    -  Decodes the data into seperate bib, csv and contributor files
-    -  Creates the files on a new branch in the GitHub repository
-    -  Creates a pull request for the new branch
+     -  Decodes the data into seperate bib, csv and contributor files
+     -  Creates the files on a new branch in the GitHub repository
+     -  Creates a pull request for the new branch
 2.  The GitHub administrator reviews the pull request and merges it into the repository
     -  The new data now lives in `data/tree/documents`
 3.  The GitHub administrator runs the `deploy.sh` script to rebuild the database
