@@ -1,5 +1,5 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"temperature",">","resource density","neg","","preadaptation","","","","Isbell_Young_1996"
+"climate: temperature",">","resource density","neg","","preadaptation","","","","Isbell_Young_1996"
 "resource density",">","foraging strategy","neg","","preadaptation","","","","Isbell_Young_1996"
 "foraging strategy",">","fission-fusion group dynamics","pos","","preadaptation","","","","Isbell_Young_1996"
 "foraging strategy",">","constant travel group dynamics","pos","","preadaptation","","","","Isbell_Young_1996"
