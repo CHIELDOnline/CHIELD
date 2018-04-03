@@ -20,7 +20,7 @@ Help using CHIELD can be found [here](https://chield.excd.org/help.html).
 -  The GitHub administrator reviews the pull request and merges it into the repository
 -  The server administrator periodically:
     -  Pulls the changes to the repository to a local version
-    -  Calls the `deploy.sh` script to build the database and depoly the code to the web folder
+    -  Calls the `deploy.sh -s` script to build the database and depoly the code to the web folder (the `-s` option avoids changing repository items so we don't run into git problems)
 
 
 
