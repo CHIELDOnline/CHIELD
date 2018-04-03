@@ -4,23 +4,25 @@ CHIELD is a searchable database of causal hypotheses in evolutionary linguistics
 
 Help using CHIELD can be found [here](https://chield.excd.org/help.html).
 
+The canonical version of the data is the folder tree `data/tree/documents`.  A script compiles this into a database file for use on the website.
+
 ## The data cycle
 
 ![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DevelopmentCycle.png)
 
 -  User creates new data on the website
--  User submits the data through AJAX to a php script which:
-    -  Writes the data to a file on the server side folder `data/newRecords`.
+-  User submits the data to a php script which:
+    -  Writes the data to a file on the server side folder `newRecords`.
     -  Calls the python file `sendToRepo.py`
--  `sendToRepo.py` looks for files in the folder `data/newRecords` and:
-    -  Decodes the data into seperate bib and csv files
+-  `sendToRepo.py` reads the new files and:
+    -  Decodes the data into seperate bib, csv and contributor files
     -  Creates the files on a new branch in the GitHub repository
     -  Creates a pull request for the new branch
-    -  Moves files from `data/newRecords` to `data/processedRecords`
 -  The GitHub administrator reviews the pull request and merges it into the repository
+    -  The new data now lives in `data/tree/documents`
 -  The server administrator periodically:
     -  Pulls the changes to the repository to a local version
-    -  Calls the `deploy.sh -s` script to build the database and depoly the code to the web folder (the `-s` option avoids changing repository items so we don't run into git problems)
+    -  Calls the `deploy.sh` script to build the database and depoly the code to the web folder
 
 
 
