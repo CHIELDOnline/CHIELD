@@ -3,9 +3,9 @@
 "285690783","trudgill1974linguistic","1746840506",">>","2367146783","pos",NA,"population dynamics","none","logical","","","The bigger the groups are, the higher the chance of them interacting with each other"
 "3832267666","trudgill1974linguistic","2367146783",">","2273399571","pos",NA,"phonetics","language change","model","","","Trudgill considers this process analogous to Newton's gravity model"
 "1392706783","trudgill1974linguistic","233622896",">>","2367146783","pos",NA,"population dynamics","none","logical","","",""
-"490829738","wheeler1985loss","2105322074",">","2809754639","pos",NA,NA,NA,NA,NA,NA,NA
-"3045844918","wheeler1985loss","2809754639",">","2413943838","pos",NA,NA,NA,NA,NA,NA,NA
-"3654500907","wheeler1985loss","2809754639",">>","2856910405","pos",NA,NA,NA,NA,NA,NA,NA
+"909615392","wheeler1985loss","3765143423",">","2809754639","pos",NA,NA,NA,NA,"",NA,NA
+"3045844918","wheeler1985loss","2809754639",">","2413943838","pos",NA,NA,NA,NA,"",NA,NA
+"3654500907","wheeler1985loss","2809754639",">>","2856910405","pos",NA,NA,NA,NA,"",NA,NA
 "3221274554","elman90findingStructure","360106046",">","2870250470","pos",NA,"acquisition","preadaptation","simulation","neural network","yes",NA
 "1531893655","Nichols1990","1031734161",">","3719167349","neg",NA,NA,"language change","hypothesis","","no","Other things being equal, density of lineages is substantially greater at low latitudes than at high latitudes."
 "2639337206","Nichols1990","2924754009",">","3719167349","pos",NA,NA,"language change","hypothesis","","no","Other things being equal, the coastal area of a continent will generally have substantially greater lineage density than the interior"
@@ -20,7 +20,7 @@
 "2247298813","MacePagel1995","1031734161",">","3719167349","neg",NA,NA,"language change","statistical","","yes","Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals"
 "789441669","MacePagel1995","1031734161",">","3336870837","pos",NA,NA,"language change","statistical","","yes"," the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport's rule"
 "2437437178","MacePagel1995","1954884054",">","3719167349","pos",NA,NA,"language change","statistical","","yes","we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude"
-"2832055764","Isbell_Young_1996","2105322074",">","379726749","neg",NA,NA,"preadaptation",NA,"",NA,NA
+"1849992812","Isbell_Young_1996","3765143423",">","379726749","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "268902022","Isbell_Young_1996","379726749",">","4106631776","neg",NA,NA,"preadaptation",NA,"",NA,NA
 "1390586990","Isbell_Young_1996","4106631776",">","4155923052","pos",NA,NA,"preadaptation",NA,"",NA,NA
 "3170683314","Isbell_Young_1996","4106631776",">","2112258279","pos",NA,NA,"preadaptation",NA,"",NA,NA
