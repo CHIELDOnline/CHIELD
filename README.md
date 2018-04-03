@@ -4,7 +4,11 @@ CHIELD is a searchable database of causal hypotheses in evolutionary linguistics
 
 Help using CHIELD can be found [here](https://chield.excd.org/help.html).
 
+## Data structure
+
 The canonical version of the data is the folder tree `data/tree/documents`.  A script compiles this into a database file for use on the website.
+
+![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DataStructure.png)
 
 ## The data cycle
 

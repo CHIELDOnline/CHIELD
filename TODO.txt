@@ -45,18 +45,13 @@ Configuration:
 	Create "configuration" folder for custom stuff
 
 Documentation:
-	Create diagram of how data flows
-	General thinking
 	Reservations
 
 
 
-Output to an igraph-compatible format, e.g. graphml
-Output to DOT
-
-
 Help
-
+	Create FAQ:
+		How do you represent an interaction effect?
 	Add tips for coding causal links
 		Try to re-use variable names
 			Measurable things
@@ -82,8 +77,6 @@ Deploy:
 Explore:
 	
 	FIX: When removing node, the datatable needs to be updated (remove rows)
-
-	FIX: When search inputs blur, hide them.
 
 	From Peter:
 		TEST Variables appear far away from each other
