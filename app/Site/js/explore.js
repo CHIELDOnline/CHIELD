@@ -158,6 +158,9 @@ $(document).ready(function(){
 		}
 	  });
 	$("#searchVariablesToAdd").hide();
+	$("#searchVariablesToAdd").blur(function(){
+		$("#searchVariablesToAdd").hide();
+	});
 	$("#searchVariablesToAdd").autocomplete({
 			source:filterWithMaxLengthLimit,
 			"onSelect": addVar
@@ -182,6 +185,9 @@ $(document).ready(function(){
 		$("#searchDocsToAdd").focus();
 	});
 	$("#searchDocsToAdd").hide();
+	$("#searchDocsToAdd").blur(function(){
+		$("#searchDocsToAdd").hide();
+	});
 	$("#searchDocsToAdd").val("");
 	$("#searchDocsToAdd").keypress(function(event) {
 	  	if ( event.key == "Enter" || event.which==13 ) {

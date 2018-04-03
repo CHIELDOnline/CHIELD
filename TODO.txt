@@ -88,8 +88,7 @@ Explore:
 	From Peter:
 		TEST Variables appear far away from each other
 
-	Colour edges by: Publication
-	Add button to find all direct links between two nodes?
+	Add button to remove edges (not nodes);
 
 	Disable buttons until they can be used
 	
