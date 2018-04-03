@@ -1,8 +1,12 @@
 # CHIELD
 
+CHIELD is a searchable database of causal hypotheses in evolutionary linguistics.  You can visit the live website here: [http://chield.excd.org/](http://chield.excd.org/).
+
+Help using CHIELD can be found [here](https://chield.excd.org/help.html).
+
 ## The data cycle
 
-User content -> Server push -> GitHub Review -> Server pull -> Website
+![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DevelopmentCycle.png)
 
 -  User creates new data on the website
 -  User submits the data through AJAX to a php script which:
