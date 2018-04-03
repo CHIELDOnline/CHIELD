@@ -1,4 +1,4 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"201","","wheeler1985loss","temperature",">","genetic selection: heat dissipation","pos","","","","","","","","","","","","",""
-"202","","wheeler1985loss","genetic selection: heat dissipation",">","bipedalism","pos","","","","","","","","","","","","",""
-"203","","wheeler1985loss","genetic selection: heat dissipation",">>","encephalisation","pos","","","","","","","","","","","","",""
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"climate: temperature",">","genetic selection: heat dissipation","pos","","","","","","wheeler1985loss"
+"genetic selection: heat dissipation",">","bipedalism","pos","","","","","","wheeler1985loss"
+"genetic selection: heat dissipation",">>","encephalisation","pos","","","","","","wheeler1985loss"
