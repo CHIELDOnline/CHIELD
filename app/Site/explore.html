@@ -51,6 +51,7 @@
           <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('cor')">Correlation</a>
           <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('type')">Type</a>
           <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('stage')">Stage</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('document')">Document</a>
         </div>
       </div>
     <h5>Visualisation</h4>
@@ -100,8 +101,12 @@
           <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
         </div>
     </div>
-
+    <button id="addDoc" class="btn btn-danger"  data-toggle="tooltip" data-placement="left" title="Add links from a document">
+      DOC
+    </button>
   </div>
+  <br />
+  <input id="searchDocsToAdd" placeholder="Search documents" autofocus></input>
 </div>
 
 

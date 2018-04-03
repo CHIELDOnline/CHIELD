@@ -345,7 +345,9 @@ function redrawGUIfromGrid(){
 					this_relation,
 					objx.Cor,
 			        objx.Type,
-			        objx.Stage);
+			        objx.Stage,
+			        null,
+			        null);
 				//console.log(newEdge);
 				network_edges.add(newEdge);
 			}
