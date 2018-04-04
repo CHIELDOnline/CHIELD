@@ -4,6 +4,7 @@ var dotEdgeTypes = {
 		"<": 'arrowhead="none",arrowtail="normal"',
 		"~": 'arrowhead="none",arrowtail="none",style="dashed"',
 		"/>":'arrowhead="tee",arrowtail="none"',
+		"/=":'arrowhead="tee",arrowtail="none"',
 		">>":'arrowhead="normal",arrowtail="none"',
 		"~=":'arrowhead="dot",arrowtail="none"',
 		"^":'arrowhead="normal",arrowtail="none",style="dashed"'

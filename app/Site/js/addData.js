@@ -15,7 +15,7 @@ var relationTypes = [
 	{ Name: "<=>", Id: "<=>" },
 	{ Name: "~=", Id: "~=" },
 	{ Name: ">>", Id: ">>" },
-	{ Name: "/=", Id: "/="},
+	{ Name: "/>", Id: "/>"},
 	{ Name: "~", Id: "~"},
 	{ Name: "^", Id: "^"}
 ];
