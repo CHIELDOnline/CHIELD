@@ -663,7 +663,7 @@ function getSupergroup(varname){
   return(varname);
 }
 
-function variablesArePartOfSameSubgroup(varname1,varname2){
+function variablesArePartOfSameSupergroup(varname1,varname2){
   return(getSupergroup(varname1) === getSupergroup(varname2));
 }
 
@@ -682,7 +682,7 @@ function clusterByGroup() {
               joinCondition: function (childOptions) {
                   console.log(childOptions.supergroup);
                   console.log(sg);
-                  return variablesArePartOfSameSubgroup(childOptions.supergroup,sg); 
+                  return variablesArePartOfSameSupergroup(childOptions.supergroup,sg); 
               },
               /*processProperties: function (clusterOptions, childNodes, childEdges) {
                   var totalMass = 0;

@@ -1,11 +1,9 @@
 
-
-FIX: Explore: Cluster groups all "X:Y" into "X", but does not add just "X".
-
 AddData: Validate: don't allow to submit with blank variable names
 
 
 
+FIX: Explore: on mobile, can select multiple nodes, but "find path" hangs
 
 
 Data:
@@ -23,6 +21,8 @@ Data:
 		Add other correlations
 	Dunbar2004gossip
 		Add correlation (review)
+
+	"paradigmatic morpholigical complexity" -> "morphological complexity: paradigmatic"
 
 Online version:
 
@@ -77,11 +77,18 @@ Deploy:
 Explore:
 	
 	FIX: When removing node, the datatable needs to be updated (remove rows)
+		We should re-do everything so that there's only one canonical source
+		Or at least only pushing data one way.  We can probably remove database_records? Or at least just update the datatable data.
 
 	From Peter:
 		TEST Variables appear far away from each other
 
+	FIX: When adding document, need to re-cluster?
+		Or just remove clusters
+
 	Add button to remove edges (not nodes);
+
+	Add by document: Show loader before request
 
 	Disable buttons until they can be used
 	

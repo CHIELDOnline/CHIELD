@@ -174,6 +174,7 @@ function addDoc(doc_citation){
 	var doc_index = existingDocuments.indexOf(doc_citation);
 	if(doc_index>=0){
 		var bibref = existingDocuments_pk[doc_index];
+		showLoader();
 		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links')
 	}
 }
@@ -206,13 +207,30 @@ function removeVariableViaNetwork(){
 function removeVar(pk){
 
 	network_nodes.remove(pk);
-	for(i =0;i<network_edges.length;++i){
+	// Remove from network edges
+	// Find edge pks to remove
+	var edgePKsToRemove = [];
+	for(var i =0;i<network_edges.length;++i){
 		var edge = network_edges.get()[i]
 		if(edge.from==pk || edge.to==pk){
-			network_edges.remove(edge.id);
+			edgePKsToRemove.push(edge.id);
 		}
 	}
+	for(var i =0;i<edgePKsToRemove;++i){
+		network_edges.remove(edgePKsToRemove[i]);
+	}
+	// remove from `database_records`
+	// TODO: Test
+	// for(var j=0;j<database_records.length;++j){
+	// 	var database_records_edge = database_records[j];
+	// 	if($.inArray(database_records_edge.pk,edgePKsToRemove) != -1){
+	// 		database_records.splice(j,1);
+	// 		j -= 1;
+	// 	}
+	// }
+	
 	network.redraw();
+	// remove from datatable
 	var varName = findVariableName(pk);
 	removeVarFromDataTable(varName);
 
