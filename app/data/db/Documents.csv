@@ -916,6 +916,14 @@ The number of different species found in a given area of the Earth increases fro
   title = {The Low-complexity-belt: Evidence For Large-scale Language Contact In Human Prehistory?},
   year = {2016},
 }","Bentz (2016)"
+"hamilton2016diachronic","William L Hamilton; Jure Leskovec; Dan Jurafsky","2016","Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change","@InProceedings{hamilton2016diachronic,
+  title = {Diachronic Word Embeddings Reveal Statistical Laws of Semantic Change},
+  author = {William L Hamilton and Jure Leskovec and Dan Jurafsky},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  volume = {1},
+  pages = {1489--1501},
+  year = {2016},
+}","Hamilton, Leskovec & Jurafsky (2016)"
 "regier2016languages","Terry Regier; Alexandra Carstensen; Charles Kemp","2016","Languages support efficient communication about the environment: Words for snow revisited","@Article{regier2016languages,
   title = {Languages support efficient communication about the environment: Words for snow revisited},
   author = {Terry Regier and Alexandra Carstensen and Charles Kemp},
