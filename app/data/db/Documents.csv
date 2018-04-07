@@ -545,6 +545,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2011},
   publisher = {Walter de Gruyter GmbH \& Co. KG},
 }","Trudgill (2011)"
+"carroll2012quantifying","Ryan Carroll; Ragnar Svare; Joseph C Salmons","2012","Quantifying the evolutionary dynamics of German verbs","@Article{carroll2012quantifying,
+  title = {Quantifying the evolutionary dynamics of German verbs},
+  author = {Ryan Carroll and Ragnar Svare and Joseph C Salmons},
+  journal = {Journal of Historical Linguistics},
+  volume = {2},
+  number = {2},
+  pages = {153--172},
+  year = {2012},
+  publisher = {John Benjamins Publishing Company},
+}","Carroll, Svare & Salmons (2012)"
 "nettle2012social","Daniel Nettle","2012","Social scale and structural complexity in human languages","@Article{nettle2012social,
   title = {Social scale and structural complexity in human languages},
   author = {Daniel Nettle},
@@ -627,6 +637,14 @@ The number of different species found in a given area of the Earth increases fro
   year = {2014},
   publisher = {Wiley Online Library},
 }","Lee & Hasegawa (2014)"
+"sinnemaki2014complexity","Kaius Sinnemäki","2014","Complexity trade-offs: A case study","@Article{sinnemaki2014complexity,
+  title = {Complexity trade-offs: A case study},
+  author = {Kaius Sinnemäki},
+  journal = {Measuring grammatical complexity},
+  pages = {179--201},
+  year = {2014},
+  publisher = {Oxford University Press New York},
+}","Sinnemäki (2014)"
 "thomas2014self","James Geoffrey Thomas","2014","Self-domestication and language evolution","@PhdThesis{thomas2014self,
   author = {James Geoffrey Thomas},
   date-added = {2017-08-15 15:25:55 +0000},
@@ -678,6 +696,13 @@ The number of different species found in a given area of the Earth increases fro
   year = {2015},
   publisher = {National Acad Sciences},
 }","Bromham, Hua, Fitzpatrick & Greenhill (2015)"
+"futrell2015quantifying","Richard Futrell; Kyle Mahowald; Edward Gibson","2015","Quantifying word order freedom in dependency corpora","@InProceedings{futrell2015quantifying,
+  title = {Quantifying word order freedom in dependency corpora},
+  author = {Richard Futrell and Kyle Mahowald and Edward Gibson},
+  booktitle = {Proceedings of the Third International Conference on Dependency Linguistics (Depling 2015)},
+  pages = {91--100},
+  year = {2015},
+}","Futrell, Mahowald & Gibson (2015)"
 "okanoya2015evolution","Kazuo Okanoya","2015","Evolution of song complexity in Bengalese finches could mirror the emergence of human language","@Article{okanoya2015evolution,
   title = {Evolution of song complexity in Bengalese finches could mirror the emergence of human language},
   author = {Kazuo Okanoya},
@@ -994,6 +1019,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {2017},
   publisher = {Elsevier},
 }","Little, Eryılmaz & de Boer (2017)"
+"simonenko2017taraldsen","Alexandra Simonenko; Benoıt Crabbé; Sophie Prévost","2017","Taraldsen's Generalization in Diachrony: Evidence from a Diachronic Corpus","@InProceedings{simonenko2017taraldsen,
+  author = {Alexandra Simonenko and Benoıt Crabbé and Sophie Prévost},
+  booktitle = {Proceedings of the 34th West Coast Conference on Formal Linguistics (WCCFL 34)},
+  title = {Taraldsen's Generalization in Diachrony: Evidence from a Diachronic Corpus},
+  year = {2017},
+}","Simonenko, Crabbé & Prévost (2017)"
 "tinits2017usage","Peeter Tinits; Jonas Nölle; Stefan Hartmann","2017","Usage context influences the evolution of overspecification in iterated learning","@Article{tinits2017usage,
   title = {Usage context influences the evolution of overspecification in iterated learning},
   author = {Peeter Tinits and Jonas Nölle and Stefan Hartmann},

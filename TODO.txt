@@ -22,7 +22,16 @@ Data:
 	Dunbar2004gossip
 		Add correlation (review)
 
+	The cultural evolution of human communication systems in different sized populations: usability trumps learnability N Fay, TM Ellison 
+		http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0071781
+
 	"paradigmatic morpholigical complexity" -> "morphological complexity: paradigmatic"
+
+	carroll2012quantifying:
+		Check modifiers
+
+	simonenko2017taraldsen:
+		Merge ~ and > relations
 
 Online version:
 
