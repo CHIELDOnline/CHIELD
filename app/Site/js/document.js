@@ -128,10 +128,7 @@ function updateLinksTable2(text,tableIdX,dtableConfigX){
 
 	var links = JSON.parse(text);
 	// DataTable wants an array of arrays, so convert:
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 	links2 = editData(links2);
 	var dtableConfigX = $.extend({data:links2},dtableConfigX);
 	

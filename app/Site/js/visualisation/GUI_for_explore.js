@@ -114,10 +114,7 @@ function updateRecord(response, type){
 
 function updateGrid(links){
 
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 	var tmpDtable= $("#links_table").dataTable();
 	tmpDtable.fnClearTable();
 	tmpDtable.fnAddData(links2);
