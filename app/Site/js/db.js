@@ -45,7 +45,13 @@ function updateLinksTable(text){
 	// DataTable wants an array of arrays, so convert:
 	var links2 = [];
 	for(i in links){
-		links2.push(Object.values(links[i]));
+		var link_item = [];
+		for(key in links[i]) {
+    		if(links[i].hasOwnProperty(key)) {
+        		link_item.push(links[i][key]);
+        	}
+    	}
+		links2.push(link_item);
 	}
 
 	//console.log(links2.slice(0,4));
