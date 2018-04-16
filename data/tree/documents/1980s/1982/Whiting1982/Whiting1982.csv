@@ -1,2 +1,3 @@
-"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"climate: temperature",">","migration","neg","","language change","statistical","yes","""the homogeneity of the winter temperature variation within the scale we have adopted suggests that winter temperature may have an important limiting effect  on migration in all climates""","Whiting1982"
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes"
+"climate: temperature",">","migration","neg","","language change","statistical","yes","""the homogeneity of the winter temperature variation within the scale we have adopted suggests that winter temperature may have an important limiting effect  on migration in all climates"""
+"climate: 10 Degrees Celsius",">","physical terrain: migration barrier","n-m","","language change","","none","""winter temperature of 10C has acted as a barrier to migration"""
