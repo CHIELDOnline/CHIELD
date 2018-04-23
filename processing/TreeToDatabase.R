@@ -123,7 +123,7 @@ contributors = data.frame(
 
 for(f in list.dirs(treeBaseFolder)){
   files = list.files(f)
-  if(sum(grepl("*.csv",files)>0)){
+  if(sum(grepl("*.csv",files))>0){
     
     linkFile = files[grepl("*.csv",files)][1]
     bibFile = files[grepl("*.bib",files)][1]
