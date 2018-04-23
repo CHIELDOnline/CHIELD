@@ -204,6 +204,9 @@
 "1566623964","kusters2008","893498440","~","1740533781","neg",NA,"sociolinguistics","language change","qualitative","","yes","A straightforward hypothesis is that a language (as a social fact, that is, as  �E-language�) becomes simpler the more it has been confronted with demands of generalized  outsiders. [...] As we measure complexity relative to the generalized outsider, we expect that in the end the measure of complexity of full languages (E-languages), correlates with the amount of outsiders in the speech community history. "
 "2677654797","minett04endangeredLanguage","2596364953",">","2802235688","pos",NA,NA,"language change","simulation","ising","yes",NA
 "2441401325","minett04endangeredLanguage","1579653318",">","2802235688","pos",NA,NA,"language change","simulation","ising","yes",NA
+"3037642837","tamariz2008exploring","1823005503",">","3845665038","pos",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity"
+"2758159852","tamariz2008exploring","2220833606",">","3845665038","pos",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity"
+"1656746240","tamariz2008exploring","538400051",">","3845665038","neg",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity"
 "2616616184","hudson2009getting","2629107599",">","251023881","pos",NA,"regularity","language change","experiment","","no","adults most often reproduce inconsistencies"
 "3392863649","hudson2009getting","3690867374",">","251023881","pos",NA,"regularity","language change","experiment","","yes","results of our experiments demonstrate that, when the inconsistencies are great enough (when alternate forms are numerous and low frequency, as well as inconsistent), adults will begin to regularize"
 "3787938546","hudson2009getting","251023881",">","1369442256","pos",NA,"regularity","language change","review","","","Evidence suggests that this unpredictable variation disappears as the language is learned; it is regularized"
@@ -233,6 +236,7 @@
 "2100925986","smith2010eliminating","1369442256","~=","3495191649","pos",NA,"regularity","language change","review","","","creolization can also be characterised as the construction of a new language via levelling and regularization of a pool of linguistic variants arising from radical language contact"
 "1966247970","smith2010eliminating","2571402292",">","251023881","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
 "1848253603","smith2010eliminating","868638216","~=","1369442256","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
+"168877145","tamariz2010role","2112386438",">","3445232044","pos",NA,NA,"cultural evolution","experiment","","","learning musical languages by musically literate and illiterate participants"
 "955172757","Calude2011","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
 "655428662","little2011role","3071805488",">","634707713","neg",NA,NA,"language change","experiment","","no",NA
 "2899357548","trudgill2011social","1746840506",">","49467656","neg",NA,"phonology; sociolinguistics","language change","review","",NA,"This was because my attempted explanatory approach sug- gested that there is in fact a tendency for small, tightly-knit, stable, low-contact communities with large amounts of communally shared information to be char- acterised either by unusually large inventories or by unusually small inventories."
@@ -331,6 +335,11 @@
 "3813074784","sinnemaki2014complexity","1597322660","~","2949246489","pos",NA,NA,"language change","statistical","","yes","Data from a stratified sample of 50 languages provides evidence that a complexity trade-off exists between case marking and rigid word order"
 "2285207254","sinnemaki2014complexity","3041324088",">","2949246489","",NA,NA,"language change","review","","","Languages which adhere to the trade-off hypothesis use only one coding device (either case marking or rigid word order), or they have less variety in the marking patterns of one coding device compared to that of the other coding device. Using a single coding device instead of two, or mutually limiting the variety of marking patterns of the coding devices, is a manifestation of the Zipfian principle of least effort or economy (e.g., Hawkins 2004; Hornstein et al. 2005; Haspelmath 2008)."
 "183232643","sinnemaki2014complexity","3041324088",">","1597322660","",NA,NA,"language change","review","","","Languages which adhere to the trade-off hypothesis use only one coding device (either case marking or rigid word order), or they have less variety in the marking patterns of one coding device compared to that of the other coding device. Using a single coding device instead of two, or mutually limiting the variety of marking patterns of the coding devices, is a manifestation of the Zipfian principle of least effort or economy (e.g., Hawkins 2004; Hornstein et al. 2005; Haspelmath 2008)."
+"4076303485","tamariz2014cultural","3561143743",">","788809357","neg",NA,"evolutionary dynamics","cultural evolution","model","","",NA
+"3271952399","tamariz2014cultural","2408866926",">","788809357","neg",NA,"evolutionary dynamics","cultural evolution","model","","",NA
+"4001923039","tamariz2014cultural","767559200",">","788809357","pos",NA,"evolutionary dynamics","cultural evolution","model","","",NA
+"1688966561","tamariz2014cultural","2259315750",">","788809357","neg",NA,"evolutionary dynamics","cultural evolution","model","","",NA
+"2333113510","tamariz2014cultural","4768733",">","788809357","pos",NA,"evolutionary dynamics","cultural evolution","model","","",NA
 "552922672","thomas2014self","437593210",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1868351487","thomas2014self","2252199623",">","360233333","pos",NA,"transmission","preadaptation",NA,"","",""
 "1722501165","thomas2014self","3550963897",">","1706533394","pos",NA,"learning","preadaptation",NA,"","",""
@@ -359,10 +368,20 @@
 "1894561417","bromham2015rate","1746840506",">","1948945692","neg",NA,"historical linguistics","language change","statistical","","",NA
 "4154162442","bromham2015rate","1746840506",">","3958755160","pos",NA,"historical linguistics","language change","statistical","","",NA
 "735781630","futrell2015quantifying","1597322660","~","2949246489","pos",NA,NA,"language change","statistical","","yes","we ... demonstrate a correlation between quantitative word order freedom of subjects and objects and the presence of nominative-accusative case marking."
+"4112332191","kirby2015compression","437593210",">","1534875632","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
+"826151143","kirby2015compression","2367146783",">","534647626","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
+"2419181726","kirby2015compression","437593210",">","1320143865","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
+"2312751760","kirby2015compression","2367146783",">","1320143865","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
+"4079151678","kirby2015compression","534647626",">","1320143865","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
+"611105621","kirby2015compression","1534875632",">","1320143865","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
 "3361991030","okanoya2015evolution","3550963897",">","1204190256","neg",NA,"syntax","preadaptation","other","","","The process by which song complexity emerged in domesticated [Bengalese Finches] might suggest a similar process in human language evolution."
 "1279146173","roberts2015communication","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
 "267981594","roberts2015communication","2664839125",">","2367146783","pos",NA,NA,"cultural evolution","experiment","","yes",NA
 "3444819371","roberts2015communication","2664839125","/>","2035146904","neg",NA,NA,"cultural evolution","experiment","","yes",NA
+"3481801685","tamariz2015culture","3510598252",">","1806009945","none",NA,NA,"cultural evolution","experiment","","yes","Iterated copying of drawings"
+"471422649","tamariz2015culture","3510598252",">","3598998190","none",NA,NA,"cultural evolution","experiment","","yes","Iterated copying of drawings"
+"2425052824","tamariz2015culture","2981623187","/>","1806009945","none",NA,NA,"cultural evolution","experiment","","yes","Iterated copying of individual drawings"
+"3172985025","tamariz2015culture","2981623187","/>","3598998190","none",NA,NA,"cultural evolution","experiment","","yes","Iterated copying of drawings"
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
 "3204791347","bentz2016learning","264262316",">","3507217186","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
 "1237901007","bentz2016learning","3507217186",">","1883821886","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
@@ -589,3 +608,9 @@
 "3315300843","evolang12Raviv","3316682815",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
 "2881400997","evolang12Raviv","1923061136",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
 "4172872158","evolang12Raviv","634707713",">","331530021","",NA,NA,"cultural evolution","experiment","","","small groups show more variance"
+"517406965","evolang12","1891808124",">","2561660791","pos",NA,NA,"cultural evolution","simulation","","",NA
+"1102778160","evolang12","1341298867",">","2561660791","pos",NA,NA,"cultural evolution","simulation","","",NA
+"3433617080","evolang12","4068186295",">","2561660791","neg",NA,NA,"cultural evolution","simulation","","",NA
+"3738984949","evolang12","1977872925",">","2561660791","neg",NA,NA,"cultural evolution","simulation","","",NA
+"853080608","evolang12","1341298867",">","1891808124","pos",NA,NA,"cultural evolution","simulation","","",NA
+"3114035299","evolang12","4248256416",">","2561660791","neg",NA,NA,"cultural evolution","simulation","","",NA
