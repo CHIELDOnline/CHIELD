@@ -139,6 +139,7 @@ Documents:
 
 Document:
 
+	Show quote when click on edge.
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
 		Doesn't seem to work.
