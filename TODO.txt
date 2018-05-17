@@ -1,44 +1,12 @@
 
 AddData: Validate: don't allow to submit with blank variable names
 
-
+Main page:
+	
 
 FIX: Explore: on mobile, can select multiple nodes, but "find path" hangs
 
 
-Data:
-	trudgill1974linguistic:  
-		>> to >
-		communicatitve interaction should be between groups
-		physical distance should be negative?
-
-	nettle2012social: indicators should be the other way around?
-
-	https://chield.excd.org/document.html?key=smith2010eliminating
-		Add plural marker as measure
-
-	Dunbar1992: 
-		Add other correlations
-	Dunbar2004gossip
-		Add correlation (review)
-
-	The cultural evolution of human communication systems in different sized populations: usability trumps learnability N Fay, TM Ellison 
-		http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0071781
-
-	"paradigmatic morpholigical complexity" -> "morphological complexity: paradigmatic"
-
-	carroll2012quantifying:
-		Check modifiers
-
-	simonenko2017taraldsen:
-		Merge ~ and > relations
-
-	Fire and episodic memory
-		https://www.cambridge.org/core/journals/cambridge-archaeological-journal/article/cognitive-implications-of-controlled-fire-use-by-early-humans/74CFBE5DB0E32458C09B5A04CCB8B630
-	https://www.sciencedirect.com/science/article/pii/S0028393207004289
-
-	Heat dissipation
-	https://www.nytimes.com/2018/04/27/science/chimpanzees-savanna-evolution.html?utm_content=70741182&utm_medium=social&utm_source=facebook
 
 Online version:
 
@@ -137,8 +105,7 @@ addData:
 		Not necessary right now
 
 Documents: 
-	Add coder?
-	Add stage
+	Add stage?
 
 Document:
 
