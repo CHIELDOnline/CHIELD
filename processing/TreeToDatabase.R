@@ -296,6 +296,25 @@ contributors = read_csv("../data/db/Contributors.csv",
 version = read_csv("../data/db/Version.csv",
                         col_types = "cc")
 
+# Escape html characters for security
+escapeHTML = function(d,columns){
+  d = d %>% mutate_at(columns,
+                stringr::str_replace_all, 
+                pattern = "<", replacement = "&lt;")
+  d = d %>% mutate_at(columns,
+                      stringr::str_replace_all, 
+                      pattern = ">", replacement = "&gt;")
+  return(d)
+}
+
+suppressWarnings(causal_links <- escapeHTML(causal_links,c("Notes")))
+variables = escapeHTML(variables,c("name"))
+documents = escapeHTML(documents,c("author","title","record","citation"))
+processes= escapeHTML(processes,c("name"))
+contributors= escapeHTML(contributors,c("username",'realname'))
+
+
+
 my_db_file <- "../data/db/CHIELD.sqlite"
 my_db <- src_sqlite(my_db_file, create = TRUE)
 my_db2 <- dbConnect(RSQLite::SQLite(), my_db_file)

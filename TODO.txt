@@ -21,7 +21,6 @@ PHP
 		Possible solution: escape < and > to &gt;
 		In the R script, convert Relation field back to > and <, and check that it's one of the approved types.
 
-Escape table input in javascript.
 
 R script: Regexp - take out control characters hex 0-31
 
