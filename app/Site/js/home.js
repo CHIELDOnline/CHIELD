@@ -50,6 +50,7 @@ $(document).ready(function(){
 
 	network_options.layout = document_network_layout_options;
 	network_options.physics = document_network_physics_options;
+	network_options.interaction = {navigationButtons: false};
 	network_options.edges.smooth = false;
 
 	initialiseNetwork();
