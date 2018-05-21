@@ -215,6 +215,7 @@ $(document).ready(function(){
 	$("#networkSettingsButton").click(toggleOptions);
 
 	network_options.configure = network_options_configure;
+	network_options.interaction.navigationButtons= false;
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();

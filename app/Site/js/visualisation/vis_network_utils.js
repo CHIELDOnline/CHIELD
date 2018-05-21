@@ -19,7 +19,8 @@ var network_options = {
   },
   interaction: {
     //zoomView:false, // prevents user from zooming
-    multiselect: true
+    multiselect: true,
+    navigationButtons: true
   },
     edges: {
       smooth: true

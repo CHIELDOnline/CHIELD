@@ -218,11 +218,14 @@ contributors = contributors[!duplicated(contributors[,c("username",'bibref')]),]
 
 # Contributor real names come from Github.
 # But we can add in extra conversions for those who have not filled out their details:
-extraContributorNames = read.csv("../data/ExtraContributorNameConversions.csv",stringsAsFactors = F, encoding = "UTF-8",fileEncoding = "UTF-8")
-for(i in 1:nrow(extraContributorNames)){
-  contributors[contributors$username==
-                 extraContributorNames$username[i],]$realname =
-    extraContributorNames$realname[i]
+extraContributorNamesFile = "../data/ExtraContributorNameConversions.csv"
+if(file.exists(extraContributorNamesFile)){
+  extraContributorNames = read.csv(extraContributorNamesFile,stringsAsFactors = F, encoding = "UTF-8",fileEncoding = "UTF-8")
+  for(i in 1:nrow(extraContributorNames)){
+    contributors[contributors$username==
+                   extraContributorNames$username[i],]$realname =
+      extraContributorNames$realname[i]
+  }
 }
 
 
