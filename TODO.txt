@@ -1,5 +1,5 @@
 
-AddData: Validate: don't allow to submit with blank variable names
+
 
 Main page:
 	
@@ -103,6 +103,8 @@ addData:
 	LOW Add button to remove variable from network (see commented button delNetworkElement).
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
+
+	in dataHeaders: " { type: "control" }" : is this necessary?
 
 Documents: 
 	Add stage?

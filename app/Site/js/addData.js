@@ -75,26 +75,44 @@ function headerTooltip(){
 // Then add "headerTemplate: headerTooltip" to dataHeaders property
 */
 
+function escapeHTML (s, noEscapeQuotes) {
+        var map = { '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'};
+            return s.replace(noEscapeQuotes ? /[&<>]/g : /[&<>'"]/g, function(c) {
+                return map[c];
+            });
+    }
+var escapeCell = function(value, item){
+    return $("<td>").append(escapeHTML(value));
+}
+
 var dataHeaders = [
             { name: "Var1", type: "text", width: 150, 
             	// Add autosuggest
 		        insertTemplate: function(value) { 
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
-		        insertValue: function() { return this._insertAuto.val(); }},
+		        insertValue: function() { return this._insertAuto.val(); },
+		    	cellRenderer: escapeCell
+		    },
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150,
             	// Add autosuggest
         		insertTemplate: function(value) { 
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
-		        insertValue: function() { return this._insertAuto.val(); }},
+		        insertValue: function() { return this._insertAuto.val(); },
+		    	cellRenderer: escapeCell
+		    },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
-            { name: "Topic", type: "text", width: 150 },
+            { name: "Topic", type: "text", width: 150,cellRenderer: escapeCell },
             { name: "Stage", type: "select", items: stageTypes, valueField:"Id", textField: "Name"},
 			{ name: "Type", type: "select", items: studyTypeTypes, valueField: "Id", textField: "Name", width: 150 },
 			{ name: "Confirmed", type: "select", items: confirmTypes, valueField: "Id", textField: "Name" },
-			{ name: "Notes", type: "text", width: 150 },
+			{ name: "Notes", type: "text", width: 150, cellRenderer: escapeCell },
             { type: "control" }
         ]
 
