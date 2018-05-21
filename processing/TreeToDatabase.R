@@ -216,6 +216,16 @@ contributors = contributors[!is.na(contributors$username),]
 # TODO: should take most recent edit to get changes to real name?
 contributors = contributors[!duplicated(contributors[,c("username",'bibref')]),]
 
+# Contributor real names come from Github.
+# But we can add in extra conversions for those who have not filled out their details:
+extraContributorNames = read.csv("../data/ExtraContributorNameConversions.csv",stringsAsFactors = F, encoding = "UTF-8",fileEncoding = "UTF-8")
+for(i in 1:nrow(extraContributorNames)){
+  contributors[contributors$username==
+                 extraContributorNames$username[i],]$realname =
+    extraContributorNames$realname[i]
+}
+
+
 # Write big bibtex file
 bigBibtexFile = sort(bigBibtexFile)
 cat(paste(bigBibtexFile,sep="\n\n"), file="../app/Site/downloads/CHIELD.bib")
