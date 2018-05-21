@@ -89,6 +89,16 @@ var escapeCell = function(value, item){
     return $("<td>").append(escapeHTML(value));
 }
 
+// Add validator for variable names
+variableIsLowercaseAndNotBlank = function(value, item) {
+        return /^([^A-Z])/.test(value) && value.length >0;
+    }
+jsGrid.validators.lowercase = {
+    message: "Variable names cannot be blank and should not be capitalised.",
+    validator: variableIsLowercaseAndNotBlank
+}
+
+
 var dataHeaders = [
             { name: "Var1", type: "text", width: 150, 
             	// Add autosuggest
@@ -96,7 +106,8 @@ var dataHeaders = [
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
 		        insertValue: function() { return this._insertAuto.val(); },
-		    	cellRenderer: escapeCell
+		    	cellRenderer: escapeCell,
+		    	validate: "lowercase"
 		    },
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150,
@@ -105,7 +116,8 @@ var dataHeaders = [
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
 		        insertValue: function() { return this._insertAuto.val(); },
-		    	cellRenderer: escapeCell
+		    	cellRenderer: escapeCell,
+		    	validate: "lowercase"
 		    },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
             { name: "Topic", type: "text", width: 150,cellRenderer: escapeCell },

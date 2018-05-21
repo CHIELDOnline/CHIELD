@@ -31,8 +31,10 @@ function addVar_dynamic(){
 	var setx = currently_clicked_location.x;
 	var sety = currently_clicked_location.y;
 	currently_clicked_location = {x:null, y:null};
-	if(selectedVar.length>0){
+	if(variableIsLowercaseAndNotBlank(selectedVar,null)){
 		addVarByVarName(selectedVar, setx, sety);
+	} else{
+		alert("Error: Variable names cannot be blank and should not be capitalised.");
 	}
 }
 
@@ -217,6 +219,14 @@ function toggleDrawLinks(){
 		network.selectNodes([]);
 		network.selectEdges([]);
 	}
+}
+
+function toggleStraightCurvedEdges(){
+	network_options.edges.smooth = !network_options.edges.smooth;
+	network.setOptions({
+		edges:{
+			smooth: network_options.edges.smooth
+	}});
 }
 
 // function getCanvasMousePos(canvas, evt) {
