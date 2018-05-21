@@ -76,7 +76,12 @@ function gridUpdated(item){
 				} else{
 					// We also need to change the node name in all the other entries
 					// Give option not to do this
-					if (confirm('Update variable change for all rows?')) {
+
+					var message = "You changed a variable name from " + oldItem[field] +
+									" to " + newItem[field] + 
+									". Click 'Yes' to apply this change to all rows, or 'Cancel' to apply this change just for this link.";
+
+					if (confirm(message)) {
 						updateGridVariables(oldItem[field], newItem[field]);
 						redrawGUIfromGrid();
 					} else{

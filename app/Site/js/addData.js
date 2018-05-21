@@ -122,10 +122,12 @@ function showTab(id){
 
 function validateSubmission(){
 	var valid = true;
+	// Check contributor
 	if(contributor ==""){
 		$("#ContributorAlert").show();
 		valid = false;
 	}
+	// Check bib
 	if(!updateBib()){ // also updates bib
 		$("#ReferenceAlert").show();
 		valid = false;
@@ -147,15 +149,28 @@ function validateSubmission(){
 			valid = false;
 		}
 	}
+	// Check causal links
 	if($("#jsGrid").data().JSGrid.data.length==0){
 		$("#CausalLinksAlert").show();
+		valid = false;
+	}
+	if(linksHasBlankVariableName()){
+		$("#BlankVariableAlert").show();
 		valid = false;
 	}
 
 	return(valid);
 }
 
-
+function linksHasBlankVariableName(){
+	var d = $("#jsGrid").data().JSGrid.data;
+	for(var i=0;i<d.length;++i){
+		if(d[i].Var1=="" || d[i].Var2==""){
+			return(true);
+		}
+	}
+	return(false);
+}
 
 function updateBib(){
 	console.log("change");
@@ -315,6 +330,8 @@ $(document).ready(function(){
 	$("#ReferenceYearAlert").hide();
 	$("#ReferenceKeyAlert").hide();
 	$("#CausalLinksAlert").hide();
+	$("#BlankVariableAlert").hide();
+	
 
 	// getVersion checks whether cookies are up to date.
 	// if it is, then we load temp cookies from server
