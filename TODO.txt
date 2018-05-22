@@ -82,6 +82,8 @@ Variable:
 	
 
 addData:
+	
+	Allow editing of Notes in seperate window/popup.
 
 	Submit tab: Can add commit message explaining the change?
 		
