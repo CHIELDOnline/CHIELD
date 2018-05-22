@@ -73,8 +73,11 @@ var network_options_configure = {
               if (path.indexOf('hierarchical') !== -1) {
                   return true;
               }
-              console.log(option);
-              console.log(path);
+              if (path.indexOf('smooth') !== -1 || option === 'smooth') {
+                  return true;
+              }
+              //console.log(option);
+              //console.log(path);
               if(path=="physics" && option =="enabled"){
                   return true;
               }
@@ -175,7 +178,7 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
             type: "arrow"
           }
         },
-        color: "black",
+        color: {color:"#000000"},
         causal_relation: Relation,
         cor: Cor,
         studyType: Type,
@@ -190,7 +193,7 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
   }
   if(Relation==">>"){
     if(edge_colour_scheme=="causal"){
-      newEdge.color = "red";
+      newEdge.color.color = "red"
     }
   }
   if(Relation=="<=>"){
@@ -204,10 +207,11 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
   if(Relation=="~"){
     newEdge.dashes = true;
     newEdge.arrows.to.enabled = false;
-    newEdge.color = "#b3b6b7";
+    newEdge.color.color = "#b3b6b7";
   }
 
   if(Relation=="/>"){
+    console.log("/>");
     newEdge.arrows.to["type"] = "bar";
   }
 
@@ -220,11 +224,11 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
       newEdge.arrows.from.enabled  = true;
       newEdge.dashes = true;
       if(edge_colour_scheme=="causal"){
-        newEdge.color = "green";
+        newEdge.color.color = "green";
       }
       newEdge.smooth = true;
   }
-  newEdge.causalColor = newEdge.color;
+  newEdge.causalColor = newEdge.color.color;
   return(newEdge);
 }
 
@@ -464,7 +468,7 @@ function applyNetworkColorScheme(scheme){
   for(var i=0; i<ids.length;++i){
     network_edges.update({
       id: ids[i], 
-      color: getEdgeColor(network_edges.get(ids[i]))
+      color : {color: getEdgeColor(network_edges.get(ids[i]))}
     })
   }
   network.redraw();
@@ -553,7 +557,7 @@ function constructEdgeColourLegend(){
     // Add the property and the corresponding colour
     if((prop!==null) && $.inArray(prop,items)==-1){
       items.push(prop);
-      colours.push(edge.color);
+      colours.push(edge.color.color);
     }
   }
   // Limit to 10 items

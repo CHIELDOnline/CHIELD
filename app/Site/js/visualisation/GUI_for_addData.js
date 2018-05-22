@@ -71,7 +71,7 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 		"from": selectedVar1,
     	"to": selectedVar2,
     	"arrows": "to",
-    	"color": "black",
+    	"color": {color:"black"},
     	"causal_relation":causal_relation
 	};
 
