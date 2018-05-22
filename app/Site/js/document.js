@@ -255,6 +255,7 @@ $(document).ready(function(){
     console.log(network_options);
 
 	initialiseNetwork();
+	network.on("click", network_on_click);
 
 	documentKey = getUrlParameter('key');
 	if(documentKey!=''){
@@ -269,3 +270,21 @@ $(document).ready(function(){
 		console.log("no data");
 	}
 });
+
+
+function network_on_click (params){
+	if(params["edges"].length ==1 && params["nodes"].length==0){
+		var edgeId = params["edges"][0];
+		for(var i=0; i < doc_causal_links.length;++i){
+			if(doc_causal_links[i].pk == edgeId){
+				var notes = doc_causal_links[i].Notes
+				if(notes.length>0){
+					openQuote(doc_causal_links[i].Notes);
+				}
+				break;
+			}
+		} else{
+			closeQuote();
+		}
+	}
+}
