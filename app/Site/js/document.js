@@ -278,13 +278,13 @@ function network_on_click (params){
 		for(var i=0; i < doc_causal_links.length;++i){
 			if(doc_causal_links[i].pk == edgeId){
 				var notes = doc_causal_links[i].Notes
-				if(notes.length>0){
+				if(notes!=null && notes.length>0){
 					openQuote(doc_causal_links[i].Notes);
 				}
 				break;
 			}
-		} else{
+		} 
+	} else{
 			closeQuote();
 		}
-	}
 }
