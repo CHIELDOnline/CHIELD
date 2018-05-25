@@ -228,6 +228,15 @@ if(file.exists(extraContributorNamesFile)){
   }
 }
 
+extraContributorFile = "../data/ExtraContributors.csv"
+if(file.exists(extraContributorFile)){
+  extraContributors = read.csv(extraContributorFile, stringsAsFactors = F,encoding = "UTF-8",fileEncoding = "UTF-8")
+  contributors = rbind(contributors,extraContributors)
+}
+if(sum(is.na(contributors$username))>0){
+  contributors[is.na(contributors$username),]$username = ""
+}
+
 
 # Write big bibtex file
 bigBibtexFile = sort(bigBibtexFile)

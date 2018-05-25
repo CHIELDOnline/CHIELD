@@ -200,7 +200,9 @@ function raiseIssue(){
 	if(contributor_usernames.length>0){
 		body += "Contributors: ";
 		for(var i=0;i<contributor_usernames.length; ++i){
-			body += "@"+contributor_usernames[i] + " "
+			if(contributor_usernames[i]!=null & contributor_usernames[i].length>1){
+				body += "@"+contributor_usernames[i] + " "
+			}
 		}
 		body += "\n";
 	}
@@ -220,7 +222,7 @@ function showContributors(obj){
 	var t = "Contributed to CHIELD by: ";
 
 	for(var i=0;i<obj.length;++i){
-		if(obj[i].username!=""){
+		if(obj[i].username!=null && obj[i].username.length>1){
 			contributor_usernames.push(obj[i].username);
 			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
 		} else{

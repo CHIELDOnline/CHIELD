@@ -50,6 +50,8 @@ Deploy:
 	
 
 Explore:
+
+	Add "Bulk out" button: find links that match current links.
 	
 	FIX: When removing node, the datatable needs to be updated (remove rows)
 		We should re-do everything so that there's only one canonical source
@@ -74,7 +76,12 @@ Explore:
 	Find brokers
 	Find bridging theories (References that nodes in two other references)
 
+	Highlight overlap: Allow highlighting of nodes that appear in all documents
 
+	Hide Doc when click away.
+
+	Set edge colour by document isn't working for large networks?
+	Edge colour by stage/evidence: remove "none"?
 
 Variable:
 	Summarise number of links where variable appears

@@ -13,7 +13,7 @@ dtableConfig =  {
         	{ data: null, render: function(data,type,row){
                 var username = data[0];
                 var realname = data[1];
-                if(username.length>0){
+                if(username!=null && username.length>1){
         		  return('<a href="https://github.com/' + username +'">'+realname + '</a>');
                 } else{
                     return(realname)

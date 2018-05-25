@@ -19,7 +19,11 @@ dtableConfig =  {
         		var realnames = data[5].split(";");
         		var ret = [];
         		for(var i=0;i<usernames.length; ++i){
-        			ret.push('<a href="https://github.com/' + usernames[i] +'">'+realnames[i] + '</a>');
+                    if(usernames[i]!=null && usernames[i].length>1){
+        			    ret.push('<a href="https://github.com/' + usernames[i] +'">'+realnames[i] + '</a>');
+                    } else{
+                        ret.push(realnames[i]);
+                    }
         		}
         		return ret.join(", ");
         	}},

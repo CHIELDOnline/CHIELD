@@ -68,7 +68,11 @@ function edgesToDot(edgesArray,nodeIds){
 
 function edgeToDot(edgeObject,nodeIds){
 	var edgeDot = nodeIds[edgeObject.from].id + " -> " + nodeIds[edgeObject.to].id;
-	edgeDot  += " " + edgeProperties(edgeObject.causal_relation, edgeObject.color);
+	var col = edgeObject.color;
+	if(col.hasOwnProperty("color")){
+		col = edgeObject.color.color;
+	}
+	edgeDot  += " " + edgeProperties(edgeObject.causal_relation, col);
 	return(edgeDot);
 }
 
