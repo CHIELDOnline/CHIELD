@@ -200,7 +200,9 @@ function raiseIssue(){
 	if(contributor_usernames.length>0){
 		body += "Contributors: ";
 		for(var i=0;i<contributor_usernames.length; ++i){
-			if(contributor_usernames[i]!=null & contributor_usernames[i].length>1){
+			if(contributor_usernames[i]!=null && 
+				contributor_usernames[i].length>1 &&
+				!contributor_usernames[i].startswith("http")){
 				body += "@"+contributor_usernames[i] + " "
 			}
 		}
@@ -223,8 +225,12 @@ function showContributors(obj){
 
 	for(var i=0;i<obj.length;++i){
 		if(obj[i].username!=null && obj[i].username.length>1){
-			contributor_usernames.push(obj[i].username);
-			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+			if(obj[i].username.startswith('http')){
+				t += '<a href="'+obj[i].username+'">'+obj[i].realname+"</a>";
+			} else{
+				contributor_usernames.push(obj[i].username);
+				t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+			}
 		} else{
 			t += obj[i].realname;
 		}

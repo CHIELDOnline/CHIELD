@@ -14,7 +14,11 @@ dtableConfig =  {
                 var username = data[0];
                 var realname = data[1];
                 if(username!=null && username.length>1){
-        		  return('<a href="https://github.com/' + username +'">'+realname + '</a>');
+                    if(username.startsWith("http")){
+                        return('<a href="' + username +'">'+realname + '</a>');
+                    } else{
+                        return('<a href="https://github.com/' + username +'">'+realname + '</a>');
+                    }
                 } else{
                     return(realname)
                 }

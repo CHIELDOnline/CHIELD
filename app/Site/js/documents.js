@@ -20,7 +20,11 @@ dtableConfig =  {
         		var ret = [];
         		for(var i=0;i<usernames.length; ++i){
                     if(usernames[i]!=null && usernames[i].length>1){
-        			    ret.push('<a href="https://github.com/' + usernames[i] +'">'+realnames[i] + '</a>');
+                        if(usernames[i].startsWith("http")){
+                            ret.push('<a href="' + usernames[i] +'">'+realnames[i] + '</a>');
+                        } else{
+                            ret.push('<a href="https://github.com/' + usernames[i] +'">'+realnames[i] + '</a>');
+                        }
                     } else{
                         ret.push(realnames[i]);
                     }
