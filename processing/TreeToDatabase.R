@@ -228,16 +228,6 @@ if(file.exists(extraContributorNamesFile)){
   }
 }
 
-# extraContributorFile = "../data/ExtraContributors.csv"
-# if(file.exists(extraContributorFile)){
-#   extraContributors = read.csv(extraContributorFile, stringsAsFactors = F,encoding = "UTF-8",fileEncoding = "UTF-8")
-#   if(nrow(extraContributors)>0){
-#     # If username is blank, code breaks
-#     # TODO: add full website.
-#     extraContributors$username = "x"
-#     contributors = rbind(contributors,extraContributors)
-#   }
-# }
 if(sum(is.na(contributors$username))>0){
   contributors[is.na(contributors$username),]$username = "x"
 }

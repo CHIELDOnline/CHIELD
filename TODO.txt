@@ -1,5 +1,5 @@
 
-
+Site tracker
 
 Main page:
 	
@@ -123,10 +123,6 @@ causal_links:
 
 Database:
 	Add important people: Kirby, Hurford etc.
-	Check Wheeler, P. E. (1985). The loss of functional body hair in man.  
-		Causal links don't mention hair (and paper doesn't mention encephalisation?)
-
-	"population age structure" change to "demographics: age structure"
 
 About:
 	

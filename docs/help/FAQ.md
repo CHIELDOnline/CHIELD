@@ -54,6 +54,10 @@ Yes! We want to be able to see overlapping theories, replications and converging
 
 The value of papers that test explicit links is that they provide supporting evidence for larger theories. The best solution would be to code the original theory separately (or check if it's already coded), then add the single link from the test, including the type of study.
 
+### The paper I'm adding has several different studies for the same causal link. Which do I represent?
+
+If a paper has e.g. a cross-cultural statistical test and an experiment, you can add both as seperate links (seperate rows in the table where the entries are mostly the same except for "type" and probably "notes").  Note that multiple links between the same nodes may not always show up in the graphical display.
+
 ## Other
 
 ### Who decides which submissions are accepted?
