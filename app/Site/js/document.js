@@ -202,7 +202,7 @@ function raiseIssue(){
 		for(var i=0;i<contributor_usernames.length; ++i){
 			if(contributor_usernames[i]!=null && 
 				contributor_usernames[i].length>1 &&
-				!contributor_usernames[i].startswith("http")){
+				!contributor_usernames[i].startsWith("http")){
 				body += "@"+contributor_usernames[i] + " "
 			}
 		}
@@ -225,7 +225,7 @@ function showContributors(obj){
 
 	for(var i=0;i<obj.length;++i){
 		if(obj[i].username!=null && obj[i].username.length>1){
-			if(obj[i].username.startswith('http')){
+			if(obj[i].username.startsWith('http')){
 				t += '<a href="'+obj[i].username+'">'+obj[i].realname+"</a>";
 			} else{
 				contributor_usernames.push(obj[i].username);
