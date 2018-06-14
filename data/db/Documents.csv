@@ -139,6 +139,16 @@
   year = {1994},
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/batali94innateBiases.html},
 }","Batali (1994)"
+"hare1995learning","Mary Hare; Jeffrey L Elman","1995","Learning and morphological change","@Article{hare1995learning,
+  title = {Learning and morphological change},
+  author = {Mary Hare and Jeffrey L Elman},
+  journal = {Cognition},
+  volume = {56},
+  number = {1},
+  pages = {61--98},
+  year = {1995},
+  publisher = {Elsevier},
+}","Hare & Elman (1995)"
 "MacePagel1995","R. Mace; Mark Pagel","1995","A Latitudinal Gradient in the Density of Human Languages in North America","@Article{MacePagel1995,
   author = {R. Mace and Mark Pagel},
   doi = {10.1098/rspb.1995.0125},
