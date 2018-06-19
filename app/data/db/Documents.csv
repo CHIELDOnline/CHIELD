@@ -514,6 +514,18 @@ The number of different species found in a given area of the Earth increases fro
   year = {2008},
   publisher = {American Association for the Advancement of Science},
 }","Atkinson, Meade, Venditti, Greenhill, Pagel et al. (2008)"
+"dammel2008complexity","Antje Dammel; Sebastian Kürschner","2008","Complexity in nominal plural allomorphy: A contrastive survey of ten Germanic languages","@InCollection{dammel2008complexity,
+  author = {Antje Dammel and Sebastian Kürschner},
+  title = {Complexity in nominal plural allomorphy: A contrastive survey of ten Germanic languages},
+  booktitle = {Language Complexity: Typology, Contact, Change},
+  publisher = {John Benjamins},
+  year = {2008},
+  editor = {Matti Miestamo and Kaius Sinnemäki and Fred Karlsson},
+  volume = {94},
+  series = {Studies In Language Companion},
+  pages = {243--262},
+  address = {Amsterdam},
+}","Dammel & Kürschner (2008)"
 "fincher2008parasite","Corey L. Fincher; Randy Thornhill","2008","A parasite‐driven wedge: infectious diseases may explain language and other biodiversity","@Article{fincher2008parasite,
   author = {Corey L. Fincher and Randy Thornhill},
   title = {A parasite‐driven wedge: infectious diseases may explain language and other biodiversity},
@@ -1276,6 +1288,18 @@ The number of different species found in a given area of the Earth increases fro
   pages = {1489--1501},
   year = {2016},
 }","Hamilton, Leskovec & Jurafsky (2016)"
+"nichols2016","Johanna Nichols","2016","Complex edges, transparent frontiers: grammatical complexity and language spreads","@InCollection{nichols2016,
+  author = {Johanna Nichols},
+  title = {Complex edges, transparent frontiers: grammatical complexity and language spreads},
+  booktitle = {Complexity, isolation, and variation},
+  publisher = {Walter de Gruyter},
+  year = {2016},
+  editor = {Raffaela Baechler and Guido Seiler},
+  volume = {57},
+  series = {linguae \& litterae},
+  pages = {117--138},
+  address = {Berlin},
+}","Nichols (2016)"
 "regier2016languages","Terry Regier; Alexandra Carstensen; Charles Kemp","2016","Languages support efficient communication about the environment: Words for snow revisited","@Article{regier2016languages,
   title = {Languages support efficient communication about the environment: Words for snow revisited},
   author = {Terry Regier and Alexandra Carstensen and Charles Kemp},
@@ -1402,6 +1426,14 @@ The number of different species found in a given area of the Earth increases fro
   pages = {186--202},
   address = {Oxford},
 }","Trudgill (2017)"
+"baechler2018absolute","Raffaela Baechler","2018","Absolute Komplexit\""at in der Nominalflexion: Althochdeutsch, Mittelhochdeutsch, Alemannisch und deutsche Standardsprache","@Book{baechler2018absolute,
+  title = {Absolute Komplexit{\""a}t in der Nominalflexion: Althochdeutsch, Mittelhochdeutsch, Alemannisch und deutsche Standardsprache},
+  author = {Raffaela Baechler},
+  year = {2018},
+  address = {Berlin},
+  publisher = {Language Science Press},
+  url = {http://langsci-press.org/catalog/book/134},
+}","Baechler (2018)"
 "demille2018worldwide","Mellissa MC DeMille; Kevin Tang; Chintan M Mehta; Christopher Geissler; Jeffrey G Malins; Natalie R Powers; Beatrice M Bowen; Andrew K Adams; Dongnhu T Truong; Jan C Frijters; others","2018","Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages","@Article{demille2018worldwide,
   abstract = {DCDC2 is a gene strongly associated with components of the phonological processing system in animal models and in multiple independent studies of populations and languages. We propose that it may also influence population-level variation in language component usage. To test this hypothesis, we investigated the evolution and worldwide distribution of the READ1 regulatory element within DCDC2, and compared its distribution with variation in different language properties. The mutational history of READ1 was estimated by examining primate and archaic hominin sequences. This identified duplication and expansion events, which created a large number of polymorphic alleles based on internal repeat units (RU1 and RU2). Association of READ1 alleles was studied with respect to the numbers of consonants and vowels for languages in 43 human populations distributed across five continents. Using population-based approaches with multivariate ANCOVA and linear mixed effects analyses, we found that the RU1-1 allele group of READ1 is significantly associated with the number of consonants within languages independent of genetic relatedness, geographic proximity, and language family. We propose that allelic variation in READ1 helped create a subtle cognitive bias that was amplified by cultural transmission, and ultimately shaped consonant use by different populations over time.},
   title = {Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages},
@@ -1456,3 +1488,10 @@ The number of different species found in a given area of the Earth increases fro
   title = {The cultural evolution of communicative conventions: interactions between population connectivity dynamics and cognitive biases},
   year = {2018},
 }","Segovia-Martin & Tamariz (2018)"
+"sinnemakidigarbo2018","Kaius Sinnemäki; Francesca Di Garbo","2018","Language structures may adapt to the sociolinguistic environment, but it matters what and how you count: A typological study of verbal and nominal complexity","@Article{sinnemakidigarbo2018,
+  author = {Kaius Sinnemäki and Francesca {Di Garbo}},
+  title = {Language structures may adapt to the sociolinguistic environment, but it matters what and how you count: A typological study of verbal and nominal complexity},
+  journal = {to appear in Fronties in Psychology},
+  year = {2018},
+  volume = {9},
+}","Sinnemäki & Di Garbo (2018)"
