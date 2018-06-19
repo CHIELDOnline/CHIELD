@@ -647,14 +647,6 @@ The number of different species found in a given area of the Earth increases fro
   year = {2010},
   publisher = {Elsevier},
 }","Smith & Wonnacott (2010)"
-"tamariz2010role","MÓNICA TAMARIZ; J ERIN BROWN; KEELIN M MURRAY","2010","The role of practice and literacy in the evolution of linguistic structure","@InCollection{tamariz2010role,
-  title = {The role of practice and literacy in the evolution of linguistic structure},
-  author = {MÓNICA TAMARIZ and J {ERIN BROWN} and KEELIN M MURRAY},
-  booktitle = {The Evolution Of Language},
-  pages = {313--320},
-  year = {2010},
-  publisher = {World Scientific},
-}","TAMARIZ, ERIN BROWN & MURRAY (2010)"
 "tamarizBrownMurray2010literacy","Monica Tamariz; J. Erin Brown; Keelin M. Murray","2010","The Role of Practice and Literacy in the Evolution of Linguistic Structure","@InProceedings{tamarizBrownMurray2010literacy,
   title = {The Role of Practice and Literacy in the Evolution of Linguistic Structure},
   abstract = {Recent iterated language learning studies have shown that artificial languages evolve over the generations towards regularity. This trend has been explained as a reflection of the learners’ biases. We test whether this learning bias for regularity is affected by culturally acquired knowledge, specifically by familiarity and literacy. The results of non-iterated learning experiments with miniature artificial musical and spoken languages suggest that familiarity helps us learn and reproduce the signals of a language, but literacy is required for regularities to be faithfully replicated. This in turn indicates that, by modifying human learning biases, literacy may play a role in the evolution of linguistic structure.},
