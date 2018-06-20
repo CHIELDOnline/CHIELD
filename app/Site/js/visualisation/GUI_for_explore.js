@@ -166,14 +166,19 @@ function addVar(varname){
 
 function addDoc(doc_citation){
 	if(doc_citation===null){
-		doc_citation = $("#searchDocsToAdd").val()
+		doc_citation = $("#searchDocsToAdd").val();
 	}
 	var doc_index = existingDocuments.indexOf(doc_citation);
 	if(doc_index>=0){
 		var bibref = existingDocuments_pk[doc_index];
 		showLoader();
-		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links')
+		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
 	}
+}
+
+function bulkOut(){
+	var currentEdgesKeys= network_edges.getIds().join(",");
+	requestRecord("php/getBulkOutLinks.php","keylist="+currentEdgesKeys,'links');
 }
 
 function getMeanNodePositions(){
