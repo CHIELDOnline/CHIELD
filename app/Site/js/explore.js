@@ -173,6 +173,7 @@ $(document).ready(function(){
 	$("#fit").click(function(){
 		network.fit()
 	})
+	$("#bulkOut").click(bulkOut);
 
 	$("#viewAll").click(function(){
 		showLoader();
