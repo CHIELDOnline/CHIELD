@@ -309,6 +309,15 @@ The number of different species found in a given area of the Earth increases fro
   year = {2005},
   publisher = {Taylor \& Francis},
 }","Hudson Kam & Newport (2005)"
+"lee2005role","Yoosook Lee; Travis C Collier Edward P Stabler; Charles E Taylor","2005","The role of population structure in language evolution","@Article{lee2005role,
+  title = {The role of population structure in language evolution},
+  author = {Yoosook Lee and Travis C Collier Edward P Stabler and Charles E Taylor},
+  journal = {language},
+  volume = {22},
+  number = {23},
+  pages = {24--25},
+  year = {2005},
+}","Lee, Stabler & Taylor (2005)"
 "macwhinney2005language","Brian MacWhinney","2005","Language evolution and human development","@Article{macwhinney2005language,
   author = {Brian MacWhinney},
   date-added = {2017-08-16 09:19:55 +0000},
@@ -792,6 +801,14 @@ The number of different species found in a given area of the Earth increases fro
   volume = {3},
   year = {2013},
 }","Bentz & Winter (2013)"
+"ferdinand2013regularization","Vanessa Ferdinand; Bill Thompson; Simon Kirby; Kenny Smith","2013","Regularization behavior in a non-linguistic domain","@InProceedings{ferdinand2013regularization,
+  title = {Regularization behavior in a non-linguistic domain},
+  author = {Vanessa Ferdinand and Bill Thompson and Simon Kirby and Kenny Smith},
+  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume = {35},
+  number = {35},
+  year = {2013},
+}","Ferdinand, Thompson, Kirby & Smith (2013)"
 "gavin2013toward","Michael C Gavin; Carlos A Botero; Claire Bowern; Robert K Colwell; Michael Dunn; Robert R Dunn; Russell D Gray; Kathryn R Kirby; Joe McCarter; Adam Powell; others","2013","Toward a mechanistic understanding of linguistic diversity","@Article{gavin2013toward,
   title = {Toward a mechanistic understanding of linguistic diversity},
   abstract = {Our species displays remarkable linguistic diversity. Although the uneven distribution of this diversity demands explanation, the drivers of these patterns have not been conclusively determined. We address this issue in two steps: First, we review previous empirical studies whose authors have suggested environmental, geographical, and sociocultural drivers of linguistic diversification. However, contradictory results and methodological variation make it difficult to draw general conclusions. Second, we outline a program for future research. We suggest that future analyses should account for interactions among causal factors, the lack of spatial and phylogenetic independence of the data, and transitory patterns. Recent analytical advances in biogeography and evolutionary biology, such as simulation modeling of diversity patterns, hold promise for testing four key mechanisms of language diversification proposed here: neutral change, population movement, contact, and selection. Future modeling approaches should also evaluate how the outcomes of these processes are influenced by demography, environmental heterogeneity, and time.},

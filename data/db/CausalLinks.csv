@@ -135,6 +135,8 @@
 "4045538854","hudson2005regularizing","1369442256","~=","3495191649","pos",NA,"regularity, creoles","language change","review","","","earliest stages in creoles should exhibit unpredictable variability, creoles at later stages don't"
 "3652216593","hudson2005regularizing","2629107599",">","251023881","pos",NA,"regularity","language change","experiment","","yes","adults regularized, children didn't"
 "4015222104","hudson2005regularizing","251023881",">","1369442256","pos",NA,"regularity","language change","review","","",""
+"3756531960","lee2005role","1891808124",">","2561660791","pos",NA,"Population structure","language change","model","","",NA
+"3139377856","lee2005role","117108001",">","2561660791","pos",NA,"Population structure","language change","model","","",NA
 "3465784534","macwhinney2005language","2413943838",">","3286382177","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "825094920","macwhinney2005language","2413943838",">","2269326524","pos",NA,NA,"preadaptation",NA,NA,NA,NA
 "888211955","wang05verticalAndHorizontalTransmission","3408910299",">","2273399571","pos",NA,"signalling","language change","statistical",NA,"yes",NA
@@ -367,6 +369,7 @@
 "256665854","roberts2012emergence","2979943643",">","31407103","pos",NA,NA,"cultural evolution","experiment","","no",NA
 "3310817347","bentz2013languages","634707713","~=","2949246489","pos",NA,"morphology","language change","statistical","typological",NA,""
 "1462863154","bentz2013languages","264262316",">","634707713","neg","3554226544","morphology","language change","statistical","typological",NA,"languages spoken by many second language speakers tend to have relatively small nominal case systems or no nominal case at all"
+"2298754549","ferdinand2013regularization","4248256416",">","508526560","neg",NA,"Regularization","cultural evolution","experiment","","","Regularization behavior in a non-linguistic domain"
 "1610916514","gavin2013toward","3637099776",">","191368178","pos",NA,"ecology; language diversity","none","review","","","For example, Nettle (1996, 1998, 1999a) found support for the role of mean growing season (MGS) in driving linguistic diversification, whereas others (e.g., Currie and Mace 2009) have emphasized a more limited role for environmental variables."
 "1642747584","gavin2013toward","3224745679",">","1228033448","pos",NA,"ecology; language diversity","none","review","","","For example, in a pioneering study, Birdsell (1953) showed the role of environmental productivity in influencing the distribution of ethnic groups."
 "221985692","gavin2013toward","3637099776",">","2866204614","neg",NA,"ecology; language diversity","none","review","","","Nettle (1998, 1999a) hypothesized that shorter MGS (defined as the number of months with mean temperatures above 6 degrees Celsius and mean precipitation [in millimeters] at least double the mean temperature) contribute to greater ecological risk for humans, who in turn must increase social network size to cope with the risk, which leads to linguistic homogenization."

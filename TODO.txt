@@ -83,6 +83,9 @@ Explore:
 	Set edge colour by document isn't working for large networks?
 	Edge colour by stage/evidence: remove "none"?
 
+Meta:
+	Build webpage, js
+
 Variable:
 	Summarise number of links where variable appears
 	Link to Explore 
@@ -110,6 +113,8 @@ Documents:
 	Add stage?
 
 Document:
+
+	php file getConnectionsToDoc.php seems to have dead first sql code?
 
 	Show quote when click on edge.
 	LOW If bibtex has an abstract field, display it.
