@@ -351,6 +351,9 @@
 "3504031101","wichmann2011phonological","1746840506","~","1163238480","pos",NA,"phonology","language change","statistical","","yes",NA
 "188717399","wichmann2011phonological","1746840506","~","3344516874","neg",NA,"lexicon","language change","statistical","","yes",NA
 "2654845571","wichmann2011phonological","1163238480","~","3344516874","neg",NA,"","language change","statistical","","yes",NA
+"860948135","baronchelli_biological_2012","1042999546",">","3719167349","pos",NA,NA,"language change","simulation","",NA,"Thus, rather than genetic adaptations for specific aspects of language, such as recursion, the coevolution of genes and fast-changing linguistic structure provides the biological basis for linguistic diversity. Only biological adaptations for flexible learning combined with cultural evolution can explain how each child has the potential to learn any human language."
+"560317765","baronchelli_biological_2012","4177504910",">","1042999546","pos",NA,NA,"language change","simulation","",NA,"flexible learners can best cope with the observed high rates of linguistic change associated with divergent cultural evolution following human migration ... Our results indicate that humans have evolved a biological adaptation specifically for keeping up with the rapid cultural evolution of language, instead of a special-purpose linguistic system analogous to the visual system"
+"891944344","baronchelli_biological_2012","1453643107",">","4177504910","pos",NA,NA,"language change","simulation","",NA,"This pressure arises because flexible learners can best cope with the observed high rates of linguistic change associated with divergent cultural evolution following human migration."
 "4048894345","carroll2012quantifying","2139249206",">","3314850165","neg",NA,"regularity","language change","statistical","","yes","We have shown that German parallels English in the regularization of less frequent before more frequent strong verbs"
 "1742352119","carroll2012quantifying","267865261",">","3314850165","neg",NA,"regularity","language change","statistical","","yes","We show that regularization also interacts with verb class membership (type frequency)"
 "4111479812","carroll2012quantifying","259090463",">","844366709","pos",NA,"language contact","language change","review","","","it has been argued that ‘simplified’ interdialectal forms emerge in dialect contact (Kerswill 2002: 676–677, including examples from Norwegian verb regularization), as speakers in contact with mutually intelligible varieties forge new, shared identities and abandon old, distinct ones"
@@ -823,6 +826,26 @@
 "1159153504","tinits2017usage","2203045387","~","2015726635","",NA,"morphology; language change","language change","experiment","","yes","for natural language, again, still unconfirmed hypothesis"
 "3397420507","tinits2017usage","634707713","~","2015726635","",NA,"morphology; complexity","language change","experiment","","yes",""
 "1694754447","trudgill_2017","2173973138",">","2077948442",NA,NA,NA,"language change","qualitative","",NA,"Trudgill argues that polysynthetic communities are spoken by small, traditional, non-industrialised rural communities. Unlike in his other writings about sociolinguistic typology, he brings in more clearly anthropological features here, but not in the sense of Perkins’ cultural complexity."
+"230454908","abels2018speech","3017727441",">","1092082758","none",NA,NA,"none",NA,"","",NA
+"3088616090","abels2018speech","4202478006",">","1092082758","none",NA,NA,"none",NA,"","",NA
+"1183691410","abels2018speech","4202478006",">","765601210","none",NA,NA,"none",NA,"","",NA
+"2253979869","abels2018speech","4202478006",">","260204596","none",NA,NA,"none",NA,"","",NA
+"3300975184","abels2018speech","4202478006",">","608609148","none",NA,NA,"none",NA,"","",NA
+"3692605864","abels2018speech","4202478006",">","3503820829","none",NA,NA,"none",NA,"","",NA
+"2061058667","abels2018speech","739256948",">","765601210","none",NA,NA,"none",NA,"","",NA
+"3668795791","abels2018speech","739256948",">","260204596","none",NA,NA,"none",NA,"","",NA
+"1846118954","abels2018speech","739256948",">","608609148","none",NA,NA,"none",NA,"","",NA
+"4168367099","abels2018speech","739256948",">","3503820829","none",NA,NA,"none",NA,"","",NA
+"2235460998","abels2018speech","765601210",">","4050887025","none",NA,NA,"none",NA,"","",NA
+"1152217096","abels2018speech","1758300889",">","4050887025","none",NA,NA,"none",NA,"","",NA
+"2814104420","abels2018speech","260204596",">","4050887025","none",NA,NA,"none",NA,"","",NA
+"322853697","abels2018speech","3718506622",">","1092082758","none",NA,NA,"none",NA,"","",NA
+"697274131","abels2018speech","4202478006",">","3269298170","none",NA,NA,"none",NA,"","",NA
+"2757889403","abels2018speech","739256948",">","3269298170","none",NA,NA,"none",NA,"","",NA
+"1267985820","abels2018speech","3503820829",">","2921059985","none",NA,NA,"none",NA,"","",NA
+"1374421264","abels2018speech","608609148",">","3314565730","none",NA,NA,"none",NA,"","",NA
+"1804219454","abels2018speech","3503820829",">","1482432177","none",NA,NA,"none",NA,"","",NA
+"3462914057","abels2018speech","3503820829",">","4197619215","none",NA,NA,"none",NA,"","",NA
 "1439107068","baechler2018absolute","1188703056",">","1607522636",NA,NA,"complexity; inflection","language change","qualitative","","yes","The Author researches diachronically how the complexity of noun morphology varies in different Germanic varieties. The non-standard varieties show some complexification, standard simplification. More detailed analysis compared to Baechler (2015)."
 "1875818203","demille2018worldwide","1894285072","~","1577079810","pos",NA,"phonetics; genetics","none","statistical","","","To examine the relationships between components of the phonological processing system and READ1, we regressed the number of consonants and vowels from 43 populations (SI Appendix, Table S3) onto the frequencies of READ1 allele groups RU1-1, RU1-2, and the 2.4-kb microdeletion (Fig. 3). This showed that consonants correlate with RU1-1 frequency (ρ = 0.45, P = 0.002)"
 "1386895967","demille2018worldwide","1894285072","/>","2302538404","none",NA,"phonetics; genetics","none","statistical","","","To examine the relationships between components of the phonological processing system and READ1, we regressed the number of consonants and vowels from 43 populations (SI Appendix, Table S3) onto the frequencies of READ1 allele groups RU1-1, RU1-2, and the 2.4-kb microdeletion (Fig. 3). This showed that consonants correlate with RU1-1 frequency (ρ = 0.45, P = 0.002), but vowels do not (ρ = −0.09, P = 0.58)."
@@ -879,6 +902,7 @@
 "4205326685","roberts2018social","178921397",">","1358093247","pos",NA,"Lanlanguage change;learning biases;social biases;iterated learning;artificial language learningguage change;Learning biases;Social biases;Iterated learning;Artificial language learning","language change","experiment","","yes","""[redundant forms] may thus serve as a means of signaling group identity, which may slow its disappearance from the linguistic system."" ... ""We predicted, however, that this process would be modulated by social biases, and that the redundant case marking would persist over more generations when there was a social bias to feel positively or- iented towards the group of aliens who used case in their dialect."""
 "1599731221","roberts2018social","2587381268",">","1358093247","pos",NA,"Lanlanguage change;learning biases;social biases;iterated learning;artificial language learningguage change;Learning biases;Social biases;Iterated learning;Artificial language learning","language change","review","","","as a result of biases for efficient communication, learners of miniature languages are more likely to drop redundant case markers if word order is fixed than if it is flexible"
 "2479919278","roberts2018social","2587381268",">","2423013624","pos",NA,"Lanlanguage change;learning biases;social biases;iterated learning;artificial language learningguage change;Learning biases;Social biases;Iterated learning;Artificial language learning","language change","review","","","as a result of biases for efficient communication, learners of miniature languages are more likely to drop redundant case markers if word order is fixed than if it is flexible"
+"2489044041","rolando2018compressible","16693795",">","445369745","neg",NA,NA,"language change","experiment","","yes","'we found that participants in the Simple [kinship terminology] condition learned significantly faster that participants in the Complex [kinship terminology] condition"" p.2"
 "2948638161","SegoviaMartinevolang12","1891808124",">","2561660791","pos",NA,NA,"cultural evolution","simulation","",NA,NA
 "3635609674","SegoviaMartinevolang12","1341298867",">","2561660791","pos",NA,NA,"cultural evolution","simulation","",NA,NA
 "4249183102","SegoviaMartinevolang12","4068186295",">","2561660791","neg",NA,NA,"cultural evolution","simulation","",NA,NA
