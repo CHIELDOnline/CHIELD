@@ -123,7 +123,7 @@ contributors = data.frame(
 
 for(f in list.dirs(treeBaseFolder)){
   files = list.files(f)
-  if(sum(grepl("*.csv",files)>0)){
+  if(sum(grepl("*.csv",files))>0){
     
     linkFile = files[grepl("*.csv",files)][1]
     bibFile = files[grepl("*.bib",files)][1]
@@ -216,6 +216,23 @@ contributors = contributors[!is.na(contributors$username),]
 # TODO: should take most recent edit to get changes to real name?
 contributors = contributors[!duplicated(contributors[,c("username",'bibref')]),]
 
+# Contributor real names come from Github.
+# But we can add in extra conversions for those who have not filled out their details:
+extraContributorNamesFile = "../data/ExtraContributorNameConversions.csv"
+if(file.exists(extraContributorNamesFile)){
+  extraContributorNames = read.csv(extraContributorNamesFile,stringsAsFactors = F, encoding = "UTF-8",fileEncoding = "UTF-8")
+  for(i in 1:nrow(extraContributorNames)){
+    contributors[contributors$username==
+                   extraContributorNames$username[i],]$realname =
+      extraContributorNames$realname[i]
+  }
+}
+
+if(sum(is.na(contributors$username))>0){
+  contributors[is.na(contributors$username),]$username = "x"
+}
+
+
 # Write big bibtex file
 bigBibtexFile = sort(bigBibtexFile)
 cat(paste(bigBibtexFile,sep="\n\n"), file="../app/Site/downloads/CHIELD.bib")
@@ -295,6 +312,25 @@ contributors = read_csv("../data/db/Contributors.csv",
                      col_types = "cccc")
 version = read_csv("../data/db/Version.csv",
                         col_types = "cc")
+
+# Escape html characters for security
+escapeHTML = function(d,columns){
+  d = d %>% mutate_at(columns,
+                stringr::str_replace_all, 
+                pattern = "<", replacement = "&lt;")
+  d = d %>% mutate_at(columns,
+                      stringr::str_replace_all, 
+                      pattern = ">", replacement = "&gt;")
+  return(d)
+}
+
+suppressWarnings(causal_links <- escapeHTML(causal_links,c("Notes")))
+variables = escapeHTML(variables,c("name"))
+documents = escapeHTML(documents,c("author","title","record","citation"))
+processes= escapeHTML(processes,c("name"))
+contributors= escapeHTML(contributors,c("username",'realname'))
+
+
 
 my_db_file <- "../data/db/CHIELD.sqlite"
 my_db <- src_sqlite(my_db_file, create = TRUE)

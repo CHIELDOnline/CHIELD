@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"mime","<=>","storytelling","pos","","coevolution","hypothesis","none","Mimes are not language. The proposal is that mimes came into being as a way of telling stories,","mcbride2014storytelling"
+"mime",">","language","pos","","preadaptation","hypothesis","none","Mimes are not language. The proposal is that mimes came into being as a way of telling stories,","mcbride2014storytelling"
+"storytelling",">","language","pos","","preadaptation","hypothesis","none","","mcbride2014storytelling"
+"gesture: hand gesturing",">","mime","pos","","preadaptation","hypothesis","none","Mimes and their understanding required nothing that every hominin did not already have. The mime would have included every call and gesture used in the story","mcbride2014storytelling"

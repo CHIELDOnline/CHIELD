@@ -53,7 +53,8 @@ ul {
 }
 
 #drawLinks{
-    
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 #deleteNodes{
@@ -67,6 +68,12 @@ ul {
 .jsgrid-cell {
     overflow: hidden;
     white-space: nowrap;
+}
+
+#straightCurvedEdges{
+    margin-left:5%;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 #uploadCSVButton{

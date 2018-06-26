@@ -48,63 +48,73 @@ function network_on_click (params) {
 
 function updateRecord(response, type){
 
-	var obj = JSON.parse(response);
-	// TODO: test if obj is correctly parsed.
+	if(type=='links'){
 
-	if(database_records===null){
-		database_records = [];
-	}
+		var obj = JSON.parse(response);
+		// TODO: test if obj is correctly parsed.
 
-	// User may have added nodes already, but not connected them:
-	var unconnectedNodes = findUnconnectedNodes();
-
-	// In explore, this can recieve multiple updates,
-	// So need to check we're not adding stuff twice
-	var newRecords = false;
-	var currentIds = network_edges.getIds();
-	for(var i=0; i<obj.length;++i){
-		if($.inArray(obj[i].pk,currentIds)==-1){
-			database_records.push(obj[i]);
-			newRecords = true;
+		if(database_records===null){
+			database_records = [];
 		}
-	}
 
-	if(newRecords){
-		//console.log(database_records);
-		network_nodes.clear();
-		network_edges.clear();
-		
-		// Update GUI
-		redrawGUIfromObject(database_records);
-		var currentNodeIds = network_nodes.getIds();
-		for(var i=0;i<unconnectedNodes.length;++i){
-			if($.inArray(unconnectedNodes[i],currentNodeIds)==-1){
-				var newNode = {
-					id:unconnectedNodes[i],
-					label:findVariableName(unconnectedNodes[i])
-				}
-				network_nodes.add(newNode);
+		// User may have added nodes already, but not connected them:
+		var unconnectedNodes = findUnconnectedNodes();
+
+		// In explore, this can recieve multiple updates,
+		// So need to check we're not adding stuff twice
+		var newRecords = false;
+		var currentIds = network_edges.getIds();
+		for(var i=0; i<obj.length;++i){
+			if($.inArray(obj[i].pk,currentIds)==-1){
+				database_records.push(obj[i]);
+				newRecords = true;
 			}
 		}
-		network.redraw();
-		changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
 
-		// Update grid
-		updateGrid(database_records);
+		if(newRecords){
+			//console.log(database_records);
+			network_nodes.clear();
+			network_edges.clear();
+			
+			// Update GUI
+			redrawGUIfromObject(database_records);
+			var currentNodeIds = network_nodes.getIds();
+			for(var i=0;i<unconnectedNodes.length;++i){
+				if($.inArray(unconnectedNodes[i],currentNodeIds)==-1){
+					var newNode = {
+						id:unconnectedNodes[i],
+						label:findVariableName(unconnectedNodes[i])
+					}
+					network_nodes.add(newNode);
+				}
+			}
+			network.redraw();
+			changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
 
-	} else{
-		alert("No new links found");
+			// Update grid
+			updateGrid(database_records);
+
+		} else{
+			alert("No new links found");
+		}
+		hideLoader();
 	}
-	hideLoader();
+	if(type=="docs"){
+		existingDocuments = [];
+		existingDocuments_pk = [];
+		var obj = JSON.parse(response);
+		for(var i=0;i<obj.length;++i){
+			existingDocuments.push(obj[i].citation);
+			existingDocuments_pk.push(obj[i].pk);
+		}
+		
+	}
 }
 
 
 function updateGrid(links){
 
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 	var tmpDtable= $("#links_table").dataTable();
 	tmpDtable.fnClearTable();
 	tmpDtable.fnAddData(links2);
@@ -133,6 +143,9 @@ function expandVariable() {
 
 function addVar(varname){
 	$("#searchVariablesToAdd").hide();
+	if(varname===null){
+		varname = $("#searchVariablesToAdd").val()
+	}
 	var pk = findVariablePK(varname);
 	if(pk!=null){
 		// Check it's not already displayed
@@ -149,6 +162,23 @@ function addVar(varname){
 			network_nodes.add(newNode);
 		}
 	}
+}
+
+function addDoc(doc_citation){
+	if(doc_citation===null){
+		doc_citation = $("#searchDocsToAdd").val();
+	}
+	var doc_index = existingDocuments.indexOf(doc_citation);
+	if(doc_index>=0){
+		var bibref = existingDocuments_pk[doc_index];
+		showLoader();
+		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+	}
+}
+
+function bulkOut(){
+	var currentEdgesKeys= network_edges.getIds().join(",");
+	requestRecord("php/getBulkOutLinks.php","keylist="+currentEdgesKeys,'links');
 }
 
 function getMeanNodePositions(){
@@ -179,13 +209,30 @@ function removeVariableViaNetwork(){
 function removeVar(pk){
 
 	network_nodes.remove(pk);
-	for(i =0;i<network_edges.length;++i){
+	// Remove from network edges
+	// Find edge pks to remove
+	var edgePKsToRemove = [];
+	for(var i =0;i<network_edges.length;++i){
 		var edge = network_edges.get()[i]
 		if(edge.from==pk || edge.to==pk){
-			network_edges.remove(edge.id);
+			edgePKsToRemove.push(edge.id);
 		}
 	}
+	for(var i =0;i<edgePKsToRemove;++i){
+		network_edges.remove(edgePKsToRemove[i]);
+	}
+	// remove from `database_records`
+	// TODO: Test
+	// for(var j=0;j<database_records.length;++j){
+	// 	var database_records_edge = database_records[j];
+	// 	if($.inArray(database_records_edge.pk,edgePKsToRemove) != -1){
+	// 		database_records.splice(j,1);
+	// 		j -= 1;
+	// 	}
+	// }
+	
 	network.redraw();
+	// remove from datatable
 	var varName = findVariableName(pk);
 	removeVarFromDataTable(varName);
 

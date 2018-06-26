@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIELD: Explore</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/meta.css"/>
+
+<script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
+<script type="text/javascript" src="js/meta.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="loader"></div> 
+
+<button id="networkSettingsButton" class="btn btn-danger">
+  <i class="fas fa-wrench"></i>
+</button>
+<div id="networkSettings" class="container">
+    <h5>Visualisation</h4>
+</div>
+
+<h3 id="exploreTitle">Meta</h3>
+
+<div id="mynetwork"></div>
+
+<div id="controlPanel">
+  <br /><br />
+  <div class="btn-group-vertical">
+  </div>
+</div>
+
+
+
+<div id="legend">
+  <h5 id="legendTitle">Legend</h5>
+  <a id="closeLegendButton" href="#" class="close" aria-label="close" onclick="hideLegend()">&times;</a>
+  <div id="legendItems"></div>
+</div>
+<button id="legendButton" class="btn btn-danger" onclick="showLegend()"><i class="fas fa-bars"></i></button>
+
+
+
+<div class="container-fluid" id="links">
+  <button id="toggleTableButton" class="btn btn-danger">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <div id="links_table_container">
+  <table id="links_table" class="table table-striped table-bordered">
+    <thead>
+      <th>doc1.citation</th>
+      <th>doc2.citation</th>
+      <th>first_document_links.bibref</th>
+      <th>numberOfLinks</th>
+      <th>second_document_links.bibref</th>
+    </thead>
+    <tfoot>
+      <th>doc1.citation</th>
+      <th>doc2.citation</th>
+      <th>first_document_links.bibref</th>
+      <th>numberOfLinks</th>
+      <th>second_document_links.bibref</th>
+    </tfoot>
+    <tbody>
+    </tbody>
+  </table>
+  <div>
+</div>
+</html>

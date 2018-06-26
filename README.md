@@ -1,22 +1,37 @@
 # CHIELD
 
+CHIELD is a searchable database of causal hypotheses in evolutionary linguistics.  You can visit the live website here: [http://chield.excd.org/](http://chield.excd.org/).
+
+Help using CHIELD can be found [here](https://chield.excd.org/help.html).
+
+## Data structure
+
+The canonical version of the data is the folder tree `data/tree/documents`.  A script compiles this into a database file for use on the website.
+
+![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DataStructure.png)
+
 ## The data cycle
 
-User content -> Server push -> GitHub Review -> Server pull -> Website
+![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DevelopmentCycle.png)
 
--  User creates new data on the website
--  User submits the data through AJAX to a php script which:
-    -  Writes the data to a file on the server side folder `data/newRecords`.
+1.  Pull reqest
+  -  User creates new data on the website
+  -  User submits the data to a php script which:
+    -  Writes the data to a file on the server side folder `newRecords`
     -  Calls the python file `sendToRepo.py`
--  `sendToRepo.py` looks for files in the folder `data/newRecords` and:
-    -  Decodes the data into seperate bib and csv files
-    -  Creates the files on a new branch in the GitHub repository
-    -  Creates a pull request for the new branch
-    -  Moves files from `data/newRecords` to `data/processedRecords`
--  The GitHub administrator reviews the pull request and merges it into the repository
--  The server administrator periodically:
-    -  Pulls the changes to the repository to a local version
-    -  Calls the `deploy.sh` script to build the database and depoly the code to the web folder
+  -  `sendToRepo.py` reads the new files and:
+     -  Decodes the data into seperate bib, csv and contributor files
+     -  Creates the files on a new branch in the GitHub repository
+     -  Creates a pull request for the new branch
+2.  The GitHub administrator reviews the pull request and merges it into the repository
+    -  The new data now lives in `data/tree/documents`
+3.  The GitHub administrator runs the `deploy.sh` script to rebuild the database
+4.  The GitHub administrator pushes the changes back to the GitHub repository
+
+The server administrator periodically:
+
+5.  Pulls the changes to the repository to a local version
+6.  Calls the `deploy.sh -s` script to depoly the code to the web folder (the `-s` switch avoids changing the repository items, minimising git strife)
 
 
 

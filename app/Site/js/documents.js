@@ -7,17 +7,31 @@ dtableConfig =  {
         //scrollY: '50vh',
         //scrollCollapse: true,
         pageLength: 8,
-        "columnDefs": [
-    			{ "targets": 3,
-				 // "data": "key",
-				  "render": function ( data, type, row, meta ) {
-				  if(type === 'display'){
-				     data =  '<a href="document.html?key='+data+'">Open</a>';
-				     }
-			      return(data);
-				  }
-			  }
- 	 		]
+        columns: [
+        	{ data: 0}, // authors
+        	{ data: 1}, // year
+        	// Combine the title and the citekey to make a link
+        	{ data: null, render: function(data,type,row){
+        		return '<a href="document.html?key=' + data[3] +'">'+data[2] + '</a>';
+        	}},
+        	{ data: null, render: function(data,type,row){
+        		var usernames = data[4].split(";");
+        		var realnames = data[5].split(";");
+        		var ret = [];
+        		for(var i=0;i<usernames.length; ++i){
+                    if(usernames[i]!=null && usernames[i].length>1){
+                        if(usernames[i].startsWith("http")){
+                            ret.push('<a href="' + usernames[i] +'">'+realnames[i] + '</a>');
+                        } else{
+                            ret.push('<a href="https://github.com/' + usernames[i] +'">'+realnames[i] + '</a>');
+                        }
+                    } else{
+                        ret.push(realnames[i]);
+                    }
+        		}
+        		return ret.join(", ");
+        	}},
+        	]
  	 	};
 
 

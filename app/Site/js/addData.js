@@ -15,7 +15,7 @@ var relationTypes = [
 	{ Name: "<=>", Id: "<=>" },
 	{ Name: "~=", Id: "~=" },
 	{ Name: ">>", Id: ">>" },
-	{ Name: "/=", Id: "/="},
+	{ Name: "/>", Id: "/>"},
 	{ Name: "~", Id: "~"},
 	{ Name: "^", Id: "^"}
 ];
@@ -75,26 +75,56 @@ function headerTooltip(){
 // Then add "headerTemplate: headerTooltip" to dataHeaders property
 */
 
+function escapeHTML (s, noEscapeQuotes) {
+        var map = { '&': '&amp;',
+                    '<': '&lt;',
+                    '>': '&gt;',
+                    '"': '&quot;',
+                    "'": '&#39;'};
+            return s.replace(noEscapeQuotes ? /[&<>]/g : /[&<>'"]/g, function(c) {
+                return map[c];
+            });
+    }
+var escapeCell = function(value, item){
+    return $("<td>").append(escapeHTML(value));
+}
+
+// Add validator for variable names
+variableIsLowercaseAndNotBlank = function(value, item) {
+        return /^([^A-Z])/.test(value) && value.length >0;
+    }
+jsGrid.validators.lowercase = {
+    message: "Variable names cannot be blank and should not be capitalised.",
+    validator: variableIsLowercaseAndNotBlank
+}
+
+
 var dataHeaders = [
             { name: "Var1", type: "text", width: 150, 
             	// Add autosuggest
 		        insertTemplate: function(value) { 
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
-		        insertValue: function() { return this._insertAuto.val(); }},
+		        insertValue: function() { return this._insertAuto.val(); },
+		    	cellRenderer: escapeCell,
+		    	validate: "lowercase"
+		    },
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150,
             	// Add autosuggest
         		insertTemplate: function(value) { 
 		        	return this._insertAuto = $("<input>").autocomplete({ 
 		        		source: filterWithMaxLengthLimit});}, 
-		        insertValue: function() { return this._insertAuto.val(); }},
+		        insertValue: function() { return this._insertAuto.val(); },
+		    	cellRenderer: escapeCell,
+		    	validate: "lowercase"
+		    },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
-            { name: "Topic", type: "text", width: 150 },
+            { name: "Topic", type: "text", width: 150,cellRenderer: escapeCell },
             { name: "Stage", type: "select", items: stageTypes, valueField:"Id", textField: "Name"},
 			{ name: "Type", type: "select", items: studyTypeTypes, valueField: "Id", textField: "Name", width: 150 },
 			{ name: "Confirmed", type: "select", items: confirmTypes, valueField: "Id", textField: "Name" },
-			{ name: "Notes", type: "text", width: 150 },
+			{ name: "Notes", type: "text", width: 150, cellRenderer: escapeCell },
             { type: "control" }
         ]
 
@@ -122,10 +152,12 @@ function showTab(id){
 
 function validateSubmission(){
 	var valid = true;
+	// Check contributor
 	if(contributor ==""){
 		$("#ContributorAlert").show();
 		valid = false;
 	}
+	// Check bib
 	if(!updateBib()){ // also updates bib
 		$("#ReferenceAlert").show();
 		valid = false;
@@ -147,15 +179,28 @@ function validateSubmission(){
 			valid = false;
 		}
 	}
+	// Check causal links
 	if($("#jsGrid").data().JSGrid.data.length==0){
 		$("#CausalLinksAlert").show();
+		valid = false;
+	}
+	if(linksHasBlankVariableName()){
+		$("#BlankVariableAlert").show();
 		valid = false;
 	}
 
 	return(valid);
 }
 
-
+function linksHasBlankVariableName(){
+	var d = $("#jsGrid").data().JSGrid.data;
+	for(var i=0;i<d.length;++i){
+		if(d[i].Var1=="" || d[i].Var2==""){
+			return(true);
+		}
+	}
+	return(false);
+}
 
 function updateBib(){
 	console.log("change");
@@ -315,6 +360,8 @@ $(document).ready(function(){
 	$("#ReferenceYearAlert").hide();
 	$("#ReferenceKeyAlert").hide();
 	$("#CausalLinksAlert").hide();
+	$("#BlankVariableAlert").hide();
+	
 
 	// getVersion checks whether cookies are up to date.
 	// if it is, then we load temp cookies from server

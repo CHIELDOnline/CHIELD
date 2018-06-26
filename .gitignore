@@ -1,0 +1,12 @@
+.DS_Store
+app/Notes.txt
+app/data/__pycache__/*
+app/data/__pycache__
+app/data/githubConfig.py
+app/data/newRecords/*
+app/data/processedRecords/*
+deploy_config.sh
+Documents_To_Add.txt
+.Rapp.history
+.RData
+.Rhistory

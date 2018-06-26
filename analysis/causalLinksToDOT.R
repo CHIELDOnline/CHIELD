@@ -1,6 +1,6 @@
 # Convert causal links to dot language
 library(igraph)
-try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
+try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/analysis/"))
 
 
 dotEdgeTypes = c(">"= 'arrowhead="normal",arrowtail="none"',
@@ -61,7 +61,7 @@ cat(allLinksDot, file="../../Graphs/dotClusters/AllLinks.dot")
 
 # Components
 
-g = graph_from_data_frame(d[d$Relation!="/>",
+g = graph_from_data_frame(d[d$Relation!="^",
                             c("Var1.label","Var2.label")])
 clu <- components(g)
 grps = groups(clu)

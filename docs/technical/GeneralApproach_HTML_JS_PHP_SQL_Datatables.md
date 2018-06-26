@@ -188,10 +188,7 @@ function updateLinksTable(text){
 
 	var links = JSON.parse(text);
 	// DataTable wants an array of arrays, so convert:
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 	dtable_config = $.extend({data:links2},dtableConfig);
 	dtable = $('#'+tableId).DataTable(dtable_config);
 	addColumnSearching();

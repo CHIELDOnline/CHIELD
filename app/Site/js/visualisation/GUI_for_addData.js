@@ -31,8 +31,10 @@ function addVar_dynamic(){
 	var setx = currently_clicked_location.x;
 	var sety = currently_clicked_location.y;
 	currently_clicked_location = {x:null, y:null};
-	if(selectedVar.length>0){
+	if(variableIsLowercaseAndNotBlank(selectedVar,null)){
 		addVarByVarName(selectedVar, setx, sety);
+	} else{
+		alert("Error: Variable names cannot be blank and should not be capitalised.");
 	}
 }
 
@@ -69,7 +71,7 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 		"from": selectedVar1,
     	"to": selectedVar2,
     	"arrows": "to",
-    	"color": "black",
+    	"color": {color:"black"},
     	"causal_relation":causal_relation
 	};
 
@@ -219,6 +221,14 @@ function toggleDrawLinks(){
 	}
 }
 
+function toggleStraightCurvedEdges(){
+	network_options.edges.smooth = !network_options.edges.smooth;
+	network.setOptions({
+		edges:{
+			smooth: network_options.edges.smooth
+	}});
+}
+
 // function getCanvasMousePos(canvas, evt) {
 //     var rect = canvas.getBoundingClientRect();
 //     return {
@@ -345,7 +355,9 @@ function redrawGUIfromGrid(){
 					this_relation,
 					objx.Cor,
 			        objx.Type,
-			        objx.Stage);
+			        objx.Stage,
+			        null,
+			        null);
 				//console.log(newEdge);
 				network_edges.add(newEdge);
 			}

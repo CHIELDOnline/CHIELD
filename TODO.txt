@@ -1,18 +1,11 @@
 
+Site tracker
 
-FIX: Explore: Cluster groups all "X:Y" into "X", but does not add just "X".
+Main page:
+	
 
+FIX: Explore: on mobile, can select multiple nodes, but "find path" hangs
 
-Data:
-	trudgill1974linguistic:  
-		>> to >
-		communicatitve interaction should be between groups
-		physical distance should be negative?
-
-	nettle2012social: indicators should be the other way around?
-
-	https://chield.excd.org/document.html?key=smith2010eliminating
-		Add plural marker as measure
 
 
 Online version:
@@ -23,31 +16,17 @@ From Research IT:
 
 PHP
 	PHP: avoid using shell_exec, use just exec
-	Escape anything sent to sendToRepo.py by the php file
-		This is hard: we don't want to escape the ">" relation.
-		Possible solution: escape < and > to &gt;
-		In the R script, convert Relation field back to > and <, and check that it's one of the approved types.
 
-Escape table input in javascript.
-
-R script: Regexp - take out control characters hex 0-31
 
 Configuration:
 	Create "configuration" folder for custom stuff
 
 Documentation:
-	Create diagram of how data flows
-	General thinking
 	Reservations
 
 
 
-Output to an igraph-compatible format, e.g. graphml
-Output to DOT
-
-
-Help
-
+Help:
 	Add tips for coding causal links
 		Try to re-use variable names
 			Measurable things
@@ -71,16 +50,22 @@ Deploy:
 	
 
 Explore:
+
+	Add "Bulk out" button: find links that match current links.
 	
 	FIX: When removing node, the datatable needs to be updated (remove rows)
-
-	Add whole document button
+		We should re-do everything so that there's only one canonical source
+		Or at least only pushing data one way.  We can probably remove database_records? Or at least just update the datatable data.
 
 	From Peter:
 		TEST Variables appear far away from each other
 
-	Colour edges by: Publication
-	Add button to find all direct links between two nodes?
+	FIX: When adding document, need to re-cluster?
+		Or just remove clusters
+
+	Add button to remove edges (not nodes);
+
+	Add by document: Show loader before request
 
 	Disable buttons until they can be used
 	
@@ -91,7 +76,15 @@ Explore:
 	Find brokers
 	Find bridging theories (References that nodes in two other references)
 
+	Highlight overlap: Allow highlighting of nodes that appear in all documents
 
+	Hide Doc when click away.
+
+	Set edge colour by document isn't working for large networks?
+	Edge colour by stage/evidence: remove "none"?
+
+Meta:
+	Build webpage, js
 
 Variable:
 	Summarise number of links where variable appears
@@ -99,6 +92,8 @@ Variable:
 	
 
 addData:
+	
+	Allow editing of Notes in seperate window/popup.
 
 	Submit tab: Can add commit message explaining the change?
 		
@@ -112,12 +107,16 @@ addData:
 		Should prob iterate through *grid*, then update network from grid.
 		Not necessary right now
 
+	in dataHeaders: " { type: "control" }" : is this necessary?
+
 Documents: 
-	Add coder?
-	Add stage
+	Add stage?
 
 Document:
 
+	php file getConnectionsToDoc.php seems to have dead first sql code?
+
+	Show quote when click on edge.
 	LOW If bibtex has an abstract field, display it.
 	Freeze first three columns
 		Doesn't seem to work.
@@ -129,10 +128,6 @@ causal_links:
 
 Database:
 	Add important people: Kirby, Hurford etc.
-	Check Wheeler, P. E. (1985). The loss of functional body hair in man.  
-		Causal links don't mention hair (and paper doesn't mention encephalisation?)
-
-	"population age structure" change to "demographics: age structure"
 
 About:
 	

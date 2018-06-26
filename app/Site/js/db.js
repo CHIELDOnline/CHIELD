@@ -35,7 +35,21 @@ function setupColumnSearching(tableIdX){
 function editData(data){
 	// Hook to edit data
 	return(data);	
-}	
+}
+
+function ObjectToArrayOfArrays(obj){
+	var objectArray = [];
+	for(i in obj){
+		var obj_item = [];
+		for(key in obj[i]) {
+    		if(obj[i].hasOwnProperty(key)) {
+        		obj_item.push(obj[i][key]);
+        	}
+    	}
+		objectArray.push(obj_item);
+	}
+	return(objectArray)
+}
 
 
 
@@ -43,10 +57,7 @@ function updateLinksTable(text){
 
 	var links = JSON.parse(text);
 	// DataTable wants an array of arrays, so convert:
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 
 	//console.log(links2.slice(0,4));
 

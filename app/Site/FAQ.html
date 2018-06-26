@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>Help</title>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#header').load('header.html', function(){
+    $('#HelpHREF').addClass('active');
+  }); 
+});
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="header"></div>
+
+<div class="container">
+
+<h1>CHIELD FAQ</h1>
+
+<ul class="toc">
+<li>
+<a href="#toc_0">Coding causal links</a>
+<ul>
+<li>
+<a href="#toc_1">What do the different causal link types mean?</a>
+</li>
+<li>
+<a href="#toc_2">Should I code causal links that are hypothesised or just the ones where causality has been proved?</a>
+</li>
+<li>
+<a href="#toc_3">Can I code links that were not supported?</a>
+</li>
+<li>
+<a href="#toc_4">How do I code an interaction effect?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_5">Documents</a>
+<ul>
+<li>
+<a href="#toc_6">What kind of documents can I add?</a>
+</li>
+<li>
+<a href="#toc_7">Can I add papers that I didn&#39;t write?</a>
+</li>
+<li>
+<a href="#toc_8">Should I add a document if the causal link is already in the database?</a>
+</li>
+<li>
+<a href="#toc_9">The paper I&#39;m adding tests just one part of a larger theory. Do I code the whole theory or just the tested link?</a>
+</li>
+<li>
+<a href="#toc_10">The paper I&#39;m adding has several different studies for the same causal link. Which do I represent?</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_11">Other</a>
+<ul>
+<li>
+<a href="#toc_12">Who decides which submissions are accepted?</a>
+</li>
+<li>
+<a href="#toc_13">How is CHIELD pronounced?</a>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 id="toc_0">Coding causal links</h2>
+
+<h3 id="toc_1">What do the different causal link types mean?</h3>
+
+<p>See the <a href="Help_CausalLinkSpecifications.html#toc_7">&quot;Relation&quot; table</a> in the specification.</p>
+
+<h3 id="toc_2">Should I code causal links that are hypothesised or just the ones where causality has been proved?</h3>
+
+<p>CHIELD is a database of hypotheses, not of definitive proof.  The connections should reflect the author&#39;s ideas. Causality is very hard to demonstrate, but you can add the type of support (experimental, statistical etc.), and there are options to state that e.g. the experiment did not support the link, or that the authors only propose a correlation (~), or that the authors propose no causal link (/&gt;).</p>
+
+<h3 id="toc_3">Can I code links that were not supported?</h3>
+
+<p>Yes!  There are options to state that e.g. the experiment did not support the link, or that the authors only propose a correlation (~), or that the authors propose no causal link (/&gt;).</p>
+
+<h3 id="toc_4">How do I code an interaction effect?</h3>
+
+<p>There doesn&#39;t appear to be a standard way of representing interactions in causal graphs. Some have an edge which links a node to another edge (i.e. the node interferes with the effect of another link). That&#39;s not possible in CHIELD at the moment. The other option is to have a node whose label is the interaction between two variables (e.g. &quot;content bias * population connectivity). For more discussion, see e.g. <a href="https://academic.oup.com/aje/article/166/9/1096/88564#80869997">VanderWeele &amp; Robins (2007)&#39;s section on sufficient causation</a>.</p>
+
+<!--In the case that the two contributing causes amplify each other, not much information is lost by just coding them as having simple links to the effect.  However, when the presence of one effect reverses the effect of another, there seems to be some call to mark this somehow.<-->
+
+<p>However, in many cases the issue can be resolved by thinking about the extra steps in between. </p>
+
+<!--For example, you could add an extra node called "rate of dispersal", then have:
+
+content bias > rate of dispersal
+population connectivity > rate of dispersal
+rate of dispersal > time to convergence
+
+"rate of dispersal" might not be an actual parameter in your model, but I'm guessing this is part of the explanation of why these things are connected. -->
+
+<p>If in doubt, keep the structure simple, but add a note in the &quot;Notes&quot; column.</p>
+
+<h2 id="toc_5">Documents</h2>
+
+<h3 id="toc_6">What kind of documents can I add?</h3>
+
+<p>Any peer-reviewed publication. This includes journal papers, conference abstracts and books.</p>
+
+<h3 id="toc_7">Can I add papers that I didn&#39;t write?</h3>
+
+<p>Yes!</p>
+
+<h3 id="toc_8">Should I add a document if the causal link is already in the database?</h3>
+
+<p>Yes! We want to be able to see overlapping theories, replications and converging evidence.   For hypotheses with longer histories, it&#39;s often better to just include an up-to-date review or summary of a particular theory (e.g. Dunbar 2004 covers several incremental papers by Dunbar).</p>
+
+<h3 id="toc_9">The paper I&#39;m adding tests just one part of a larger theory. Do I code the whole theory or just the tested link?</h3>
+
+<p>The value of papers that test explicit links is that they provide supporting evidence for larger theories. The best solution would be to code the original theory separately (or check if it&#39;s already coded), then add the single link from the test, including the type of study.</p>
+
+<h3 id="toc_10">The paper I&#39;m adding has several different studies for the same causal link. Which do I represent?</h3>
+
+<p>If a paper has e.g. a cross-cultural statistical test and an experiment, you can add both as seperate links (seperate rows in the table where the entries are mostly the same except for &quot;type&quot; and probably &quot;notes&quot;).  Note that multiple links between the same nodes may not always show up in the graphical display.</p>
+
+<h2 id="toc_11">Other</h2>
+
+<h3 id="toc_12">Who decides which submissions are accepted?</h3>
+
+<p>The github repository managers.  If you would like to become a manager, please <a href="about.html">contact the developers</a>.</p>
+
+<h3 id="toc_13">How is CHIELD pronounced?</h3>
+
+<p>Like &quot;shield&quot;, but louder.</p>
+
+
+
+</body>
+
+</html>

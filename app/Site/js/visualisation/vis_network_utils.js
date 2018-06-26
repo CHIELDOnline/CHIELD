@@ -10,6 +10,8 @@ var convert_pks_to_string_ids = true;
 // Edge colour scheme
 // Currently supports causal, cor, type, stage
 var edge_colour_scheme = "causal";
+var documentColours = {}; // dictionary of document to colour mappings for edges
+var maxNumberOfLegendItems = 12;
 
 var network_options = {
   layout:{
@@ -17,7 +19,8 @@ var network_options = {
   },
   interaction: {
     //zoomView:false, // prevents user from zooming
-    multiselect: true
+    multiselect: true,
+    navigationButtons: true
   },
     edges: {
       smooth: true
@@ -70,8 +73,11 @@ var network_options_configure = {
               if (path.indexOf('hierarchical') !== -1) {
                   return true;
               }
-              console.log(option);
-              console.log(path);
+              if (path.indexOf('smooth') !== -1 || option === 'smooth') {
+                  return true;
+              }
+              //console.log(option);
+              //console.log(path);
               if(path=="physics" && option =="enabled"){
                   return true;
               }
@@ -155,7 +161,7 @@ function initialiseNetwork(){
 
 }
 
-function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
+function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,citation){
   // standard setting: ">"
 
   var newEdge = {
@@ -172,11 +178,13 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
             type: "arrow"
           }
         },
-        color: "black",
+        color: {color:"#000000"},
         causal_relation: Relation,
         cor: Cor,
         studyType: Type,
-        stage: Stage
+        stage: Stage,
+        bibref: bibref,
+        citation: citation
     };
 
   if(Relation=="<"){
@@ -185,7 +193,7 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
   }
   if(Relation==">>"){
     if(edge_colour_scheme=="causal"){
-      newEdge.color = "red";
+      newEdge.color.color = "red"
     }
   }
   if(Relation=="<=>"){
@@ -199,10 +207,11 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
   if(Relation=="~"){
     newEdge.dashes = true;
     newEdge.arrows.to.enabled = false;
-    newEdge.color = "#b3b6b7";
+    newEdge.color.color = "#b3b6b7";
   }
 
   if(Relation=="/>"){
+    console.log("/>");
     newEdge.arrows.to["type"] = "bar";
   }
 
@@ -215,11 +224,11 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage){
       newEdge.arrows.from.enabled  = true;
       newEdge.dashes = true;
       if(edge_colour_scheme=="causal"){
-        newEdge.color = "green";
+        newEdge.color.color = "green";
       }
       newEdge.smooth = true;
   }
-  newEdge.causalColor = newEdge.color;
+  newEdge.causalColor = newEdge.color.color;
   return(newEdge);
 }
 
@@ -344,6 +353,11 @@ function redrawGUIfromObject(obj){
     if($.inArray(this_edge_id,network_edges.getIds())==-1){
       // create a new edge
 
+      var doc_citation = null;
+      if(typeof existingDocuments !== 'undefined'){
+        doc_citation = existingDocuments_pk[existingDocuments.indexOf(obj[row].bibref)];
+      }
+
       // Node ids are pks, so 'from' and 'to' need to be pks
       var newEdge = getEdgeSettings(
         this_edge_id,
@@ -352,7 +366,9 @@ function redrawGUIfromObject(obj){
         this_relation,
         obj[row].Cor,
         obj[row].Type,
-        obj[row].Stage); 
+        obj[row].Stage,
+        obj[row].citekey,
+        obj[row].bibref); 
       // add it to the network
       network_edges.add(newEdge);
 
@@ -385,6 +401,21 @@ function redrawGUIfromObject(obj){
   network.fit();
 
 }
+
+function findUnconnectedNodes(){
+  // Find nodes in the GUI that are not connected with edges
+  var allNodeIds = network_nodes.getIds();
+  var nodesWithEdges= [];
+  var allEdgeIds = network_edges.getIds();
+  for(var i=0;i<allEdgeIds.length;++i){
+    nodesWithEdges.push(network_edges.get(allEdgeIds[i]).from);
+    nodesWithEdges.push(network_edges.get(allEdgeIds[i]).to);
+  }
+
+  // diff now contains what is in allNodeIds that is not in allEdgeIds
+  return($(allNodeIds).not(nodesWithEdges).get());
+}
+
 
 
 // ------------------
@@ -419,8 +450,17 @@ function changeNetworkLayout(type){
   }
 }
 
+
+// ------------------
+//   Colour schemes
+// ------------------
+
 function applyNetworkColorScheme(scheme){
   edge_colour_scheme = scheme;
+
+  if(scheme == "document"){
+    calculateDocumentColours();
+  }
 
   try{showLoader();} catch(err){}
 
@@ -428,7 +468,7 @@ function applyNetworkColorScheme(scheme){
   for(var i=0; i<ids.length;++i){
     network_edges.update({
       id: ids[i], 
-      color: getEdgeColor(network_edges.get(ids[i]))
+      color : {color: getEdgeColor(network_edges.get(ids[i]))}
     })
   }
   network.redraw();
@@ -475,6 +515,15 @@ function getEdgeColor(edge){
     }
   }
 
+  if(edge_colour_scheme=="document"){
+    var docCol = documentColours[edge.bibref];
+    if(docCol===undefined){
+      return("black");
+    } else{
+      return(docCol);
+    }
+  }
+
   return("black");
 }
 
@@ -489,7 +538,8 @@ function constructEdgeColourLegend(){
     stage: "stage",
     type: "studyType",
     cor: "cor",
-    causal: "causal_relation"
+    causal: "causal_relation",
+    "document": "citation"
   }[edge_colour_scheme];
 
   if(itemProperty===undefined){
@@ -507,13 +557,15 @@ function constructEdgeColourLegend(){
     // Add the property and the corresponding colour
     if((prop!==null) && $.inArray(prop,items)==-1){
       items.push(prop);
-      colours.push(edge.color);
+      colours.push(edge.color.color);
     }
   }
-
-  if(items.length>10){
-    items.slice(0,10);
-    colours.slice(0,10);
+  // Limit to 10 items
+  if(items.length>maxNumberOfLegendItems){
+    items = items.slice(0,maxNumberOfLegendItems);
+    colours = colours.slice(0,maxNumberOfLegendItems);
+    items.push("Other");
+    colours.push("#000000");
   }
 
   var legend = "";
@@ -524,21 +576,66 @@ function constructEdgeColourLegend(){
   return(legend);
 }
 
-
-function findUnconnectedNodes(){
-  // Find nodes in the GUI that are not connected with edges
-  var allNodeIds = network_nodes.getIds();
-  var nodesWithEdges= [];
-  var allEdgeIds = network_edges.getIds();
-  for(var i=0;i<allEdgeIds.length;++i){
-    nodesWithEdges.push(network_edges.get(allEdgeIds[i]).from);
-    nodesWithEdges.push(network_edges.get(allEdgeIds[i]).to);
+function calculateDocumentColours(){
+  
+  documentColours = {};
+  
+  // Build list of documents, with frequency of occurance
+  var document_frequency = {};
+  var ids = network_edges.getIds();
+  for(var i=0; i<ids.length; ++i){
+    var edge = network_edges.get(ids[i]);
+    if (document_frequency[edge.bibref]) {
+           document_frequency[edge.bibref]++;
+        } else {
+           document_frequency[edge.bibref] = 1;
+        }
   }
 
-  // diff now contains what is in allNodeIds that is not in allEdgeIds
-  return($(allNodeIds).not(nodesWithEdges).get());
+  // Sort document list by frequency so we can take just the top X
+  var topDocsByFreq = Object.keys(document_frequency).map(function(key) {
+    return { key: key, value: this[key] };
+  }, document_frequency);
+  topDocsByFreq.sort(function(p1, p2) { return p2.value - p1.value; });
+  topDocsByFreq = topDocsByFreq.slice(0, maxNumberOfLegendItems);
+
+
+  // Choose colours.
+  var rainbowColours = rainbow(topDocsByFreq.length);
+
+  for(var i=0;i<topDocsByFreq.length;++i){
+    documentColours[topDocsByFreq[i].key] = rainbowColours[i];
+  }
+
 }
 
+
+function rainbow(numOfSteps) {
+    // This function generates vibrant, "evenly spaced" colours (i.e. no clustering). This is ideal for creating easily distinguishable vibrant markers in Google Maps and other apps.
+    // Adam Cole, 2011-Sept-14
+    // HSV to RBG adapted from: http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
+    //  see http://blog.adamcole.ca/2011/11/simple-javascript-rainbow-color.html
+
+    var ret = [];
+    for(var step=0;step<numOfSteps;++step){
+    var r, g, b;
+    var h = step / numOfSteps;
+    var i = ~~(h * 6);
+    var f = h * 6 - i;
+    var q = 1 - f;
+    switch(i % 6){
+        case 0: r = 1; g = f; b = 0; break;
+        case 1: r = q; g = 1; b = 0; break;
+        case 2: r = 0; g = 1; b = f; break;
+        case 3: r = 0; g = q; b = 1; break;
+        case 4: r = f; g = 0; b = 1; break;
+        case 5: r = 1; g = 0; b = q; break;
+    }
+    var c = "#" + ("00" + (~ ~(r * 255)).toString(16)).slice(-2) + ("00" + (~ ~(g * 255)).toString(16)).slice(-2) + ("00" + (~ ~(b * 255)).toString(16)).slice(-2);
+    ret.push(c);
+    }
+    return (ret);
+}
 
 
 // ---------------------
@@ -571,7 +668,7 @@ function getSupergroup(varname){
   return(varname);
 }
 
-function variablesArePartOfSameSubgroup(varname1,varname2){
+function variablesArePartOfSameSupergroup(varname1,varname2){
   return(getSupergroup(varname1) === getSupergroup(varname2));
 }
 
@@ -590,7 +687,7 @@ function clusterByGroup() {
               joinCondition: function (childOptions) {
                   console.log(childOptions.supergroup);
                   console.log(sg);
-                  return variablesArePartOfSameSubgroup(childOptions.supergroup,sg); 
+                  return variablesArePartOfSameSupergroup(childOptions.supergroup,sg); 
               },
               /*processProperties: function (clusterOptions, childNodes, childEdges) {
                   var totalMass = 0;

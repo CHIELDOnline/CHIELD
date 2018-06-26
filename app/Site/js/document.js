@@ -128,10 +128,7 @@ function updateLinksTable2(text,tableIdX,dtableConfigX){
 
 	var links = JSON.parse(text);
 	// DataTable wants an array of arrays, so convert:
-	var links2 = [];
-	for(i in links){
-		links2.push(Object.values(links[i]));
-	}
+	var links2 = ObjectToArrayOfArrays(links);
 	links2 = editData(links2);
 	var dtableConfigX = $.extend({data:links2},dtableConfigX);
 	
@@ -203,7 +200,11 @@ function raiseIssue(){
 	if(contributor_usernames.length>0){
 		body += "Contributors: ";
 		for(var i=0;i<contributor_usernames.length; ++i){
-			body += "@"+contributor_usernames[i] + " "
+			if(contributor_usernames[i]!=null && 
+				contributor_usernames[i].length>1 &&
+				!contributor_usernames[i].startsWith("http")){
+				body += "@"+contributor_usernames[i] + " "
+			}
 		}
 		body += "\n";
 	}
@@ -223,9 +224,13 @@ function showContributors(obj){
 	var t = "Contributed to CHIELD by: ";
 
 	for(var i=0;i<obj.length;++i){
-		if(obj[i].username!=""){
-			contributor_usernames.push(obj[i].username);
-			t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+		if(obj[i].username!=null && obj[i].username.length>1){
+			if(obj[i].username.startsWith('http')){
+				t += '<a href="'+obj[i].username+'">'+obj[i].realname+"</a>";
+			} else{
+				contributor_usernames.push(obj[i].username);
+				t += '<a href="https://github.com/'+obj[i].username+'">'+obj[i].realname+"</a>";
+			}
 		} else{
 			t += obj[i].realname;
 		}
@@ -253,11 +258,12 @@ $(document).ready(function(){
 
 	network_options.layout = document_network_layout_options;
 	network_options.physics = document_network_physics_options;
-	network_options.edges.smooth = false;
+	//network_options.edges.smooth = false;
 
     console.log(network_options);
 
 	initialiseNetwork();
+	network.on("click", network_on_click);
 
 	documentKey = getUrlParameter('key');
 	if(documentKey!=''){
@@ -272,3 +278,21 @@ $(document).ready(function(){
 		console.log("no data");
 	}
 });
+
+
+function network_on_click (params){
+	if(params["edges"].length ==1 && params["nodes"].length==0){
+		var edgeId = params["edges"][0];
+		for(var i=0; i < doc_causal_links.length;++i){
+			if(doc_causal_links[i].pk == edgeId){
+				var notes = doc_causal_links[i].Notes
+				if(notes!=null && notes.length>0){
+					openQuote(doc_causal_links[i].Notes);
+				}
+				break;
+			}
+		} 
+	} else{
+			closeQuote();
+		}
+}

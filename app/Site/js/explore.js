@@ -13,6 +13,9 @@ var displayDatatable = true; // set to false below
 var existingVariables = [];
 var existingVariables_pk = [];
 
+var existingDocuments = [];
+var existingDocuments_pk = [];
+
 dtableConfig =  {
 		ordering: true,
         lengthChange: false,
@@ -70,6 +73,12 @@ function filterWithMaxLengthLimit(request, response) {
         var results = $.ui.autocomplete.filter(existingVariables, request.term);
         response(results.slice(0, 8));
     }
+function filterDocs(request, response) {
+		// return top 4 hits
+    	var results = $.ui.autocomplete.filter(existingDocuments, request.term);
+    	response(results.slice(0, 4));
+    }
+
 
 function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1));
@@ -91,6 +100,8 @@ $(document).ready(function(){
 
 	// Request full list of variables to suggest to user
 	requestVariablesFromServer("php/getVariables.php");
+	// Request list of documents
+	requestRecord("php/getDocsForHome.php","",'docs');
 
 	// Prepare links table layout
 	preparePage("links_table","php/getLinksForExplore.php");
@@ -125,6 +136,12 @@ $(document).ready(function(){
 	$("#toggleTableButton").click(toggleTableDisplay);
 	$("#links_table").hide();
 
+
+	// If user clicks +, show list of variables to add
+	$("#addVariable").click(function(){
+		$("#searchVariablesToAdd").show();
+		$("#searchVariablesToAdd").focus();
+	});
 	// Set up searchable list of variables
 	// If user presses enter, add variable to network
 	$("#searchVariablesToAdd").keypress(function(event) {
@@ -140,13 +157,10 @@ $(document).ready(function(){
 			}
 		}
 	  });
-	// If user clicks +, show list of variables to add
-	$("#addVariable").click(function(){
-		$("#searchVariablesToAdd").show();
-		$("#searchVariablesToAdd").focus();
-	});
-
 	$("#searchVariablesToAdd").hide();
+	$("#searchVariablesToAdd").blur(function(){
+		$("#searchVariablesToAdd").hide();
+	});
 	$("#searchVariablesToAdd").autocomplete({
 			source:filterWithMaxLengthLimit,
 			"onSelect": addVar
@@ -159,11 +173,41 @@ $(document).ready(function(){
 	$("#fit").click(function(){
 		network.fit()
 	})
+	$("#bulkOut").click(bulkOut);
 
 	$("#viewAll").click(function(){
 		showLoader();
 		requestRecord(php_link,"keylist=ALL",'links');
 	})
+
+	// Add links by document ---------//
+	$("#addDoc").click(function(){
+		$("#searchDocsToAdd").show();
+		$("#searchDocsToAdd").focus();
+	});
+	$("#searchDocsToAdd").hide();
+	$("#searchDocsToAdd").blur(function(){
+		$("#searchDocsToAdd").hide();
+	});
+	$("#searchDocsToAdd").val("");
+	$("#searchDocsToAdd").keypress(function(event) {
+	  	if ( event.key == "Enter" || event.which==13 ) {
+	  		addDoc($("#searchDocsToAdd").val());
+	  		$("#searchDocsToAdd").val("");
+	  		$("#searchDocsToAdd").hide();
+		} else{
+			// If user presses escape, hide the search bar
+			if ( event.key == "Escape" || event.which==27 ) {
+				$("#searchDocsToAdd").val("");
+				$("#searchDocsToAdd").hide();
+			}
+		}
+	  });
+	$( "#searchDocsToAdd" ).autocomplete({
+      		source: filterDocs,
+      		onSelect: addDoc
+    	});
+
 
 	hideLegend();
 
@@ -172,6 +216,7 @@ $(document).ready(function(){
 	$("#networkSettingsButton").click(toggleOptions);
 
 	network_options.configure = network_options_configure;
+	network_options.interaction.navigationButtons= false;
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();

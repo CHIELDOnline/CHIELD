@@ -56,8 +56,10 @@ function gridUpdated(item){
 	// TODO: check that new var1 is not equal to new Var2 
 	// (i.e. we're not adding a link to itself)
 
-	if(newItem.Var1=="" || newItem.Var1==""){
-		alert("Error: Updated variable name is blank");
+	// This should be checked already by the validator
+	if((!variableIsLowercaseAndNotBlank(newItem.Var1,null)) || 
+		(!variableIsLowercaseAndNotBlank(newItem.Var2,null))){
+		alert("Error: Variable names cannot be blank and should not be capitalised.");
 	} else {
 
 		var fields = ["Var1",'Var2'];
@@ -76,7 +78,12 @@ function gridUpdated(item){
 				} else{
 					// We also need to change the node name in all the other entries
 					// Give option not to do this
-					if (confirm('Update variable change for all rows?')) {
+
+					var message = "You changed a variable name from " + oldItem[field] +
+									" to " + newItem[field] + 
+									". Click 'Yes' to apply this change to all rows, or 'Cancel' to apply this change just for this link.";
+
+					if (confirm(message)) {
 						updateGridVariables(oldItem[field], newItem[field]);
 						redrawGUIfromGrid();
 					} else{
