@@ -1670,3 +1670,13 @@ The number of different species found in a given area of the Earth increases fro
   year = {2018},
   volume = {9},
 }","Sinnemäki & Di Garbo (2018)"
+"spike2018complexity","Matthew Spike","2018","Language complexity as an interaction between social structure, innovation, and simplicity","@InProceedings{spike2018complexity,
+  author = {Matthew Spike},
+  booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
+  editor = {C. Cuskley and M. Flaherty and H. Little and Luke McCrohon and A. Ravignani and T. Verhoef},
+  publisher = {NCU Press},
+  doi = {10.12775/3991-1.119},
+  url = {http://evolang.org/torun/proceedings/papertemplate.html?p=97},
+  title = {Language complexity as an interaction between social structure, innovation, and simplicity},
+  year = {2018},
+}","Spike (2018)"
