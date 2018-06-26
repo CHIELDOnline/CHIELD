@@ -133,8 +133,20 @@ substitutions <- c(substitutions, list(
                                        c("⁄", "\\\\textfractionsolidus\\{\\}"), 
                                        c("√", "\\\\textsurd\\{\\}"),
                                        c("¬", "\\\\textlnot\\{\\}"), 
-                                       c("−", "\\\\textminus\\{\\}")))
-
+                                       c("−", "\\\\textminus\\{\\}"),
+                                       # acutes
+                                       c("á", "\\'a"),
+                                       c("é", "\\'e"),
+                                       c("í", "\\'i"),
+                                       c("ó", "\\'o"),
+                                       c("ú", "\\'u"),
+                                       # diaresis
+                                       c("ä", "\\\"a"),
+                                       c("ë", "\\\"e"),
+                                       c("ï", "\\\"i"),
+                                       c("ö", "\\\"o"),
+                                       c("ü", "\\\"u")
+))
 
 detexify = function(text){
   for(sub in substitutions){
