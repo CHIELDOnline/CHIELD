@@ -157,6 +157,8 @@ detexify = function(text){
   }
   # remove extra brackets
   text = gsub("[{}]","",text)
+  # remove extra slashes
+  text = gsub("\\\\","",text)
   return(text)
 }
 
