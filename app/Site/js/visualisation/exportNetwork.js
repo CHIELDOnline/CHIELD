@@ -26,8 +26,8 @@ function saveDataAsCSV(){
  	document.body.removeChild(link);
 }
 
-function saveDataAsDOT(){
-	var dotData = visGraphToDot(network_nodes,network_edges);
+function saveDataAsDOT(includePos = false){
+	var dotData = visGraphToDot(network,network_nodes,network_edges,includePos);
 	var encodedUri = "data:text/csv;charset=utf-8,"+encodeURIComponent(dotData);
 
 	var link = document.createElement('a');

@@ -11,12 +11,17 @@ var dotEdgeTypes = {
 	}
 
 
-function visGraphToDot(network_nodes,network_edges){
+function visGraphToDot(network,network_nodes,network_edges,includePos){
 	
-	var dot = 'digraph chield{\nnode [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]\n__NODES__\n\n__EDGES__\n}';
+	var dot = 'digraph chield{\nnode [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]';
+	if(includePos){
+		// Positions will only be rendered if the dot file is displayed with the Neato layout
+		dot += '\ngraph [layout="neato"]';
+	}
+	dot += '\n__NODES__\n\n__EDGES__\n}';
     var nodesArray = network_nodes.get(network_nodes.getIds());
-    var nodeIds = makeNodeDictionary(nodesArray);
-    var nodesDot = makeNodesDot(nodeIds);
+    var nodeIds = makeNodeDictionary(nodesArray,network);
+    var nodesDot = makeNodesDot(nodeIds,includePos);
 
 	var edgesArray = network_edges.get(network_edges.getIds());
     var edgesDot = edgesToDot(edgesArray,nodeIds);
@@ -27,15 +32,38 @@ function visGraphToDot(network_nodes,network_edges){
     return(dot);	
 }
 
-function makeNodeDictionary(nodesArray){
+function makeNodeDictionary(nodesArray,network){
 	var nodeIds = {};
 	var nodeCounter = 0;
 
+	// make list of current node positions
+	var net_positions = network.getPositions();
+	// Positions in Dot have an inverse y axis to vis.js
+	// so we invert them here
+	// First, find maximum y
+	var maxy = 0;
+	for (var property in net_positions) {
+	    if (net_positions.hasOwnProperty(property)) {
+	    	if(net_positions[property].y > maxy){
+	    		maxy = net_positions[property].y
+	    	}
+	   	}
+	}
+	// Now invert y axis
+	for (var property in net_positions) {
+	    if (net_positions.hasOwnProperty(property)) {
+	    	net_positions[property].y = maxy - net_positions[property].y;
+	    }
+	}
+
+	// Make an array of node objects
 	for(var i=0;i<nodesArray.length;++i){
 		if($.inArray(nodesArray[i].id,Object.keys(nodeIds))==-1){
+
 			nodeIds[nodesArray[i].id] = {
 				label: nodesArray[i].label,
-				id: "N" + nodeCounter
+				id: "N" + nodeCounter,
+				pos: net_positions[nodesArray[i].id]
 				}
 			nodeCounter += 1;
 		}
@@ -43,18 +71,29 @@ function makeNodeDictionary(nodesArray){
 	return(nodeIds);
 }
 
-function makeNodesDot(nodeIds){
+function makeNodesDot(nodeIds,includePos){
 	var nodesDot = "";
 	for (var property in nodeIds) {
 	    if (nodeIds.hasOwnProperty(property)) {
-	        nodesDot += makeDotNode(nodeIds[property].id,nodeIds[property].label) + "\n";
+	        nodesDot += makeDotNode(
+	        	nodeIds[property].id,
+	        	nodeIds[property].label,
+	        	nodeIds[property].pos,
+	        	includePos) + "\n";
 	    }
 	}
 	return(nodesDot);
 }
 
-function makeDotNode(id,label){
-	return(id + " " + '[label="'+label+'"]');
+function makeDotNode(id,label,pos,includePos){
+	var node = id + " " + '[label="'+label+'"';
+	if(includePos){
+		//DOT format: 'pos="3,5!"'
+		node += ',pos="'+pos.x+","+pos.y+'!"';
+	}
+	// zero margin makes the dot file look more like the on-screen vis.js network
+	node += ",margin=0]";
+	return(node);
 }
 
 function edgesToDot(edgesArray,nodeIds){
