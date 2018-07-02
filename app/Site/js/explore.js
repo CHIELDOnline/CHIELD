@@ -175,10 +175,10 @@ $(document).ready(function(){
 	})
 	$("#bulkOut").click(bulkOut);
 
-	$("#viewAll").click(function(){
+	/*$("#viewAll").click(function(){
 		showLoader();
 		requestRecord(php_link,"keylist=ALL",'links');
-	})
+	})*/
 
 	// Add links by document ---------//
 	$("#addDoc").click(function(){
