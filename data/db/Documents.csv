@@ -1251,6 +1251,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2015},
   publisher = {Wiley Online Library},
 }","Tamariz & Kirby (2015)"
+"welsh2015relationship","Caela Welsh","2015","The relationship between population size and rates of language evolution","@Article{welsh2015relationship,
+  author = {Caela Welsh},
+  date-added = {2018-06-29 14:07:00 +0000},
+  date-modified = {2018-06-29 14:22:43 +0000},
+  journal = {The ANU Undergraduate Research Journal},
+  pages = {11--18},
+  title = {The relationship between population size and rates of language evolution},
+  volume = {7},
+  year = {2015},
+}","Welsh (2015)"
 "bentz2016learning","Christian Bentz; Aleksandrs Berdicevskis","2016","Learning pressures reduce morphological complexity: Linking corpus, computational and experimental evidence","@InProceedings{bentz2016learning,
   author = {Christian Bentz and Aleksandrs Berdicevskis},
   booktitle = {COLING 2016},
@@ -1698,6 +1708,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2018},
   publisher = {National Acad Sciences},
 }","DeMille, Tang, Mehta, Geissler, Malins, Powers, Bowen, Adams, Truong, Frijters, Gruen et al. (2018)"
+"demolin2018acoustic","Didier Demolin","2018","Acoustic, aerodynamic and biomechanical constraints in the evolution of consonants","@InProceedings{demolin2018acoustic,
+  author = {Didier Demolin},
+  booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
+  editor = {C. Cuskley and M. Flaherty and H. Little and Luke McCrohon and A. Ravignani and T. Verhoef},
+  publisher = {NCU Press},
+  doi = {10.12775/3991-1.020},
+  url = {http://evolang.org/torun/proceedings/papertemplate.html?p=61},
+  title = {Acoustic, aerodynamic and biomechanical constraints in the evolution of consonants},
+  year = {2018},
+}","Demolin (2018)"
 "evolang12CelmaMiralles","Alexandre Celma-Miralles; Juan M Toro","2018","Beat perception in a non-vocal learner: rats can identify isochronous beats","@InProceedings{evolang12CelmaMiralles,
   author = {Alexandre Celma-Miralles and Juan M Toro},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
