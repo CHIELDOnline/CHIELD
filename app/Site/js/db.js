@@ -157,3 +157,18 @@ function requestRecord(php_link,params, type){
 	}
 	http.send(params);
 }
+
+
+function pageCounter(ignoreParameters=false){
+	var http = new XMLHttpRequest();
+	http.open("POST", "php/pageCounter.php", true);
+	//Send the proper header information along with the request
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+	var pageLocation = window.location.href;
+	if(ignoreParameters){
+		pageLocation= pageLocation.split('?')[0];
+	}
+
+	http.send("page="+pageLocation);
+}
