@@ -13,7 +13,8 @@ SELECT l.pk,
        Stage,
        Type,
      d.[citation] bibref,
-     bibref as citekey
+     bibref as citekey,
+     l.Confirmed
   FROM causal_links l 
   LEFT JOIN variables s ON l.Var1 = s.pk 
   LEFT JOIN variables s2 ON l.Var2 = s2.pk

@@ -357,7 +357,8 @@ function redrawGUIfromGrid(){
 			        objx.Type,
 			        objx.Stage,
 			        null,
-			        null);
+			        null,
+			        objx.Confirmed);
 				//console.log(newEdge);
 				network_edges.add(newEdge);
 			}

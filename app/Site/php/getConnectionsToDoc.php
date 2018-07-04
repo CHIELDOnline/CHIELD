@@ -4,21 +4,6 @@ $key = $_POST['key'];
 
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
-$sql= <<<EOT
-INSERT INTO vars 
-select Var1 from causal_links where bibref=:key1
-union
-select Var2 from causal_links where bibref=:key2; 
-select d.[citation] as Document, bibref, s.[name] as Variable from (
-select c.bibref, c.Var1 from causal_links c where c.Var1 in vars 
-  AND c.bibref !=:key3
-union
-select c2.bibref, c2.Var2 from causal_links c2 where c2.Var2 in vars
-   AND c2.bibref !=:key4 )
-   left join variables s ON Var1 = s.pk
-   left join documents d ON bibref = d.pk
-EOT;
-
 $sql = <<<EOT
 select d.[citation] as Document, bibref, s.[name], s.[pk] as Variable from(
 select c.bibref, c.Var1 from causal_links c where c.Var1 in 

@@ -213,7 +213,7 @@ function removeVar(pk){
 	// Find edge pks to remove
 	var edgePKsToRemove = [];
 	for(var i =0;i<network_edges.length;++i){
-		var edge = network_edges.get()[i]
+		var edge = network_edges.get()[i];
 		if(edge.from==pk || edge.to==pk){
 			edgePKsToRemove.push(edge.id);
 		}

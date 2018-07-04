@@ -64,7 +64,8 @@ stageColours = {
   "preadaptation":'#DC3545'
 };
 
-
+var POSITIVE_COR_COLOUR = "#e92b2b"; // CHIELD RED
+var NEGATIVE_COR_COLOUR = "#2b4fe9"; // BLUE
 
 
 
@@ -161,7 +162,7 @@ function initialiseNetwork(){
 
 }
 
-function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,citation){
+function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,citation,confirmed){
   // standard setting: ">"
 
   var newEdge = {
@@ -228,6 +229,18 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
       }
       newEdge.smooth = true;
   }
+
+  if(confirmed=="no"){
+    newEdge.shadow ={
+      "enabled": true,
+      "color": "rgba(255,0,0,1)",
+      "size": 3,
+      "x": -2,
+      "y": -2
+    };
+  }
+
+
   newEdge.causalColor = newEdge.color.color;
   return(newEdge);
 }
@@ -368,7 +381,8 @@ function redrawGUIfromObject(obj){
         obj[row].Type,
         obj[row].Stage,
         obj[row].citekey,
-        obj[row].bibref); 
+        obj[row].bibref,
+        obj[row].Confirmed); 
       // add it to the network
       network_edges.add(newEdge);
 
@@ -490,8 +504,8 @@ function getEdgeColor(edge){
 
   // Correlational colour scheme
   if(edge_colour_scheme=="cor"){
-    if(edge.cor=="pos"){return('green');}
-    if(edge.cor=="neg"){return("red");  }
+    if(edge.cor=="pos"){return(POSITIVE_COR_COLOUR);}
+    if(edge.cor=="neg"){return(NEGATIVE_COR_COLOUR);}
     return("black")
   }
 
