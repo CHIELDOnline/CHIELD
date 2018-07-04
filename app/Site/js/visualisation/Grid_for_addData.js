@@ -50,58 +50,61 @@ function gridUpdated(item){
 	var newItem = item.item;
 	var oldItem = item.previousItem;
 
-	console.log(newItem.Var1);
-	console.log(oldItem.Var1);
-
 	// TODO: check that new var1 is not equal to new Var2 
 	// (i.e. we're not adding a link to itself)
+	if(newItem.Var1 == newItem.Var2){
+		alert("Error: Cannot add link from variable to itself");
+	} else{
+		// Trim whitespace
+		newItem.Var1 = newItem.Var1.trim();
+		newItem.Var2 = newItem.Var2.trim();
 
-	// This should be checked already by the validator
-	if((!variableIsLowercaseAndNotBlank(newItem.Var1,null)) || 
-		(!variableIsLowercaseAndNotBlank(newItem.Var2,null))){
-		alert("Error: Variable names cannot be blank and should not be capitalised.");
-	} else {
-
-		var fields = ["Var1",'Var2'];
-		for(var i=0;i<fields.length;++i){
-			var field = fields[i];
-			// Check if node names have changed
-			if(newItem[field]!= oldItem[field]){
-				// Update the GUI
-				var numAppearancesOld = variableAppearancesInGrid(oldItem[field]);
-				var numAppearancesNew = variableAppearancesInGrid(newItem[field]);
-				console.log("OLD "+numAppearancesOld);
-				console.log(numAppearancesNew);
-				if(numAppearancesOld==1 && numAppearancesNew==0){
-					// only one appearance, so just change the label
-					networkUpdateNodeName(oldItem[field], newItem[field]);
-				} else{
-					// We also need to change the node name in all the other entries
-					// Give option not to do this
-
-					var message = "You changed a variable name from " + oldItem[field] +
-									" to " + newItem[field] + 
-									". Click 'Yes' to apply this change to all rows, or 'Cancel' to apply this change just for this link.";
-
-					if (confirm(message)) {
-						updateGridVariables(oldItem[field], newItem[field]);
-						redrawGUIfromGrid();
+		// This should be checked already by the validator
+		if((!variableIsLowercaseAndNotBlank(newItem.Var1,null)) || 
+			(!variableIsLowercaseAndNotBlank(newItem.Var2,null))){
+			alert("Error: Variable names cannot be blank and should not be capitalised.");
+		} else {
+			var fields = ["Var1",'Var2'];
+			for(var i=0;i<fields.length;++i){
+				var field = fields[i];
+				// Check if node names have changed
+				if(newItem[field]!= oldItem[field]){
+					// Update the GUI
+					var numAppearancesOld = variableAppearancesInGrid(oldItem[field]);
+					var numAppearancesNew = variableAppearancesInGrid(newItem[field]);
+					console.log("OLD "+numAppearancesOld);
+					console.log(numAppearancesNew);
+					if(numAppearancesOld==1 && numAppearancesNew==0){
+						// only one appearance, so just change the label
+						networkUpdateNodeName(oldItem[field], newItem[field]);
 					} else{
-						// we're not updating all entires of a variable, so actually we need to create a new node
-						// Maybe just compeletely re-draw the vis graph based on the current gridData.
-						redrawGUIfromGrid();
+						// We also need to change the node name in all the other entries
+						// Give option not to do this
+
+						var message = "You changed a variable name from " + oldItem[field] +
+										" to " + newItem[field] + 
+										". Click 'Yes' to apply this change to all rows, or 'Cancel' to apply this change just for this link.";
+
+						if (confirm(message)) {
+							updateGridVariables(oldItem[field], newItem[field]);
+							redrawGUIfromGrid();
+						} else{
+							// we're not updating all entires of a variable, so actually we need to create a new node
+							// Maybe just compeletely re-draw the vis graph based on the current gridData.
+							redrawGUIfromGrid();
+						}
 					}
 				}
 			}
-		}
-		
-		// Updating relation type
-		if(newItem.Relation != oldItem.Relation){
-			// For now, just take the easy option:
-			redrawGUIfromGrid();
-		}
+			
+			// Updating relation type
+			if(newItem.Relation != oldItem.Relation){
+				// For now, just take the easy option:
+				redrawGUIfromGrid();
+			}
 
-		saveProgressCookie();
+			saveProgressCookie();
+		}
 	}
 
 }

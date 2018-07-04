@@ -93,10 +93,17 @@ var escapeCell = function(value, item){
 variableIsLowercaseAndNotBlank = function(value, item) {
         return /^([^A-Z])/.test(value) && value.length >0;
     }
+variableHasTrailingOrLeadingWhitespace = function(value, item) {
+        return value == value.trim();
+    }
 jsGrid.validators.lowercase = {
     message: "Variable names cannot be blank and should not be capitalised.",
     validator: variableIsLowercaseAndNotBlank
-}
+};
+jsGrid.validators.noWhitespace = {
+    message: "Variable names should not have leading or trailing whitespace.",
+    validator: variableHasTrailingOrLeadingWhitespace
+};
 
 
 var dataHeaders = [
@@ -107,7 +114,7 @@ var dataHeaders = [
 		        		source: filterWithMaxLengthLimit});}, 
 		        insertValue: function() { return this._insertAuto.val(); },
 		    	cellRenderer: escapeCell,
-		    	validate: "lowercase"
+		    	validate: ["lowercase","noWhitespace"]
 		    },
             { name: "Relation", type: "select", items: relationTypes, valueField: "Id", textField: "Name" },
             { name: "Var2", type: "text", width: 150,
@@ -117,7 +124,7 @@ var dataHeaders = [
 		        		source: filterWithMaxLengthLimit});}, 
 		        insertValue: function() { return this._insertAuto.val(); },
 		    	cellRenderer: escapeCell,
-		    	validate: "lowercase"
+		    	validate: ["lowercase","noWhitespace"]
 		    },
             { name: "Cor", type: "select", items: correlationTypes, valueField: "Id", textField: "Name" },
             { name: "Topic", type: "text", width: 150,cellRenderer: escapeCell },
