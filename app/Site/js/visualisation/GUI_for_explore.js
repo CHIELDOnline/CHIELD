@@ -218,7 +218,7 @@ function removeVar(pk){
 			edgePKsToRemove.push(edge.id);
 		}
 	}
-	for(var i =0;i<edgePKsToRemove;++i){
+	for(var i =0;i<edgePKsToRemove.length;++i){
 		network_edges.remove(edgePKsToRemove[i]);
 	}
 	// remove from `database_records`
