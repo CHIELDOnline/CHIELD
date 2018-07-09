@@ -142,6 +142,14 @@ for(f in list.dirs(treeBaseFolder)){
       l$Var2[l$Var2==""] = NA
       l = l[complete.cases(l[,c("Var1","Var2")]),]
       
+      if("X" %in% names(l)[2:length(names(l))]){
+        cat(red("---------------\n"))
+        cat(red("-   Warning   -\n"))
+        cat(red("- File has extra column\n"))
+        cat(red(f))
+        cat(red("---------------\n"))
+      }
+      
       # Check if there is actually any data left
       if(nrow(l)>0){
         for(colx in causal_links_columns){
@@ -152,6 +160,14 @@ for(f in list.dirs(treeBaseFolder)){
         l = l[,causal_links_columns]
         # Add links to list of links
         links = rbind(links,l)
+        
+        if("" %in% l$bibref || sum(is.na(l$bibref))>0){
+          cat(green("---------------\n"))
+          cat(green("-   Warning   -\n"))
+          cat(green("- Bibref empty \n"))
+          cat(green(f))
+          cat(green("---------------\n"))
+        }
       
         #b = readLines(paste0(f,"/",bibFile), warn = F)
         b = read.bib(paste0(f,"/",bibFile))
