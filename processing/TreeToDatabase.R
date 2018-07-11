@@ -120,6 +120,11 @@ contributors = data.frame(
   stringsAsFactors = F
 )
 
+authors = data.frame(
+  name = NA,
+  bibref = NA
+)
+
 
 for(f in list.dirs(treeBaseFolder)){
   files = list.files(f)
@@ -199,6 +204,11 @@ for(f in list.dirs(treeBaseFolder)){
         bib = rbind(bib,
                     c(bKey, bAuthor, bYear, bTitle,
                       bRecord, bCitation))
+        # Authors
+        authors = rbind(authors,
+          data.frame(name = detexify(b$author),
+                     bibref = bKey)
+        )
         
         # Contributor
         
@@ -298,6 +308,13 @@ causal.links$Confirmed[causal.links$Confirmed=="null" & !is.na(causal.links$Conf
 print("Checking notes")
 checkCharacters(causal.links$Notes)
 
+# Authors
+
+authors = authors[!is.na(authors$name),]
+authors$name = gsub("\\."," ",authors$name)
+authors$name = gsub(" +"," ",authors$name)
+authors = authors[authors$name!="others",]
+
 # Write csv files
 
 write.csv(causal.links,"../data/db/CausalLinks.csv", row.names = F, fileEncoding = "utf-8")
@@ -305,6 +322,7 @@ write.csv(variables,"../data/db/Variables.csv", row.names = F, fileEncoding = "u
 write.csv(documents,"../data/db/Documents.csv", row.names = F, fileEncoding = "utf-8")
 write.csv(processes,"../data/db/Processes.csv", row.names = F, fileEncoding = "utf-8")
 write.csv(contributors,"../data/db/Contributors.csv", row.names = F, fileEncoding = "utf-8")
+write.csv(authors,"../data/db/Authors.csv", row.names = F, fileEncoding = "utf-8")
 
 version = getVersion()
 
@@ -326,6 +344,8 @@ processes = read_csv("../data/db/Processes.csv",
                      col_types = paste(rep("c",ncol(processes)),collapse=''))
 contributors = read_csv("../data/db/Contributors.csv",
                      col_types = "cccc")
+authors = read_csv("../data/db/Authors.csv",
+                        col_types = "cc")
 version = read_csv("../data/db/Version.csv",
                         col_types = "cc")
 
@@ -356,6 +376,7 @@ dbWriteTable(my_db2, "variables",variables, overwrite=T)
 dbWriteTable(my_db2, "documents",documents, overwrite=T)
 dbWriteTable(my_db2, "processes",processes, overwrite=T)
 dbWriteTable(my_db2, "contributors",contributors, overwrite=T)
+dbWriteTable(my_db2, "authors",authors, overwrite=T)
 dbWriteTable(my_db2, "version",version, overwrite=T)
 dbDisconnect(my_db2)
 
