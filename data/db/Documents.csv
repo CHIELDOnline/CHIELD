@@ -215,6 +215,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {1996},
   bdsk-url-1 = {http://www.ingentaconnect.com/content/ap/hu/1996/00000030/00000005/art00034},
 }","Isbell & Young (1996)"
+"kashima1998culture","Emiko S Kashima; Yoshihisa Kashima","1998","Culture and language: The case of cultural dimensionsand personal pronoun use","@Article{kashima1998culture,
+  title = {Culture and language: The case of cultural dimensionsand personal pronoun use},
+  author = {Emiko S Kashima and Yoshihisa Kashima},
+  journal = {Journal of Cross-Cultural Psychology},
+  volume = {29},
+  number = {3},
+  pages = {461--486},
+  year = {1998},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+}","Kashima & Kashima (1998)"
 "nettle1998explaining","Daniel Nettle","1998","Explaining global patterns of language diversity","@Article{nettle1998explaining,
   title = {Explaining global patterns of language diversity},
   author = {Daniel Nettle},
@@ -687,6 +697,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2008},
   publisher = {John Benjamins Publishing Company},
 }","Tamariz (2008)"
+"evans2009myth","Nicholas Evans; Stephen C Levinson","2009","The myth of language universals: Language diversity and its importance for cognitive science","@Article{evans2009myth,
+  title = {The myth of language universals: Language diversity and its importance for cognitive science},
+  author = {Nicholas Evans and Stephen C Levinson},
+  journal = {Behavioral and brain sciences},
+  volume = {32},
+  number = {5},
+  pages = {429--448},
+  year = {2009},
+  publisher = {Cambridge University Press},
+}","Evans & Levinson (2009)"
 "hudson2009getting","Carla L Hudson Kam; Elissa L Newport","2009","Getting it right by getting it wrong: When learners change languages","@Article{hudson2009getting,
   title = {Getting it right by getting it wrong: When learners change languages},
   author = {Carla L {Hudson Kam} and Elissa L Newport},
