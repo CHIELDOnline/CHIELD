@@ -66,7 +66,7 @@ function updateRecord(response, type){
 		buildMetaNetwork(obj);
 		
 		console.log("1");
-		var links2 = ObjectToArrayOfArrays(links);
+		var links2 = ObjectToArrayOfArrays(obj);
 		console.log("2");
 		var tmpDtable= $("#links_table").dataTable();
 		console.log("3");

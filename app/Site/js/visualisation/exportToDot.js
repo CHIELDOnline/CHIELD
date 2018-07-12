@@ -11,9 +11,16 @@ var dotEdgeTypes = {
 	}
 
 
-function visGraphToDot(network,network_nodes,network_edges,includePos){
+function visGraphToDot(network,network_nodes,network_edges,includePos,directed){
 	
-	var dot = 'digraph chield{\nnode [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]';
+	var graphType = "digraph";
+	var edgeConnector = " -> ";
+	if(!directed){
+		graphType = "graph";
+		edgeConnector = " -- ";
+	}
+
+	var dot = graphType + ' chield{\nnode [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]';
 	if(includePos){
 		// Positions will only be rendered if the dot file is displayed with the Neato layout
 		dot += '\ngraph [layout="neato"]';
@@ -24,7 +31,7 @@ function visGraphToDot(network,network_nodes,network_edges,includePos){
     var nodesDot = makeNodesDot(nodeIds,includePos);
 
 	var edgesArray = network_edges.get(network_edges.getIds());
-    var edgesDot = edgesToDot(edgesArray,nodeIds);
+    var edgesDot = edgesToDot(edgesArray,nodeIds,edgeConnector);
     
     dot = dot.replace("__NODES__",nodesDot);
     dot = dot.replace("__EDGES__",edgesDot);
@@ -96,17 +103,17 @@ function makeDotNode(id,label,pos,includePos){
 	return(node);
 }
 
-function edgesToDot(edgesArray,nodeIds){
+function edgesToDot(edgesArray,nodeIds,edgeConnector){
 	var edgesSpec = "";
 
 	for(var i=0; i < edgesArray.length; ++i){
-		edgesSpec += edgeToDot(edgesArray[i],nodeIds) + "\n";
+		edgesSpec += edgeToDot(edgesArray[i],nodeIds,edgeConnector) + "\n";
 	}
 	return(edgesSpec)
 }
 
-function edgeToDot(edgeObject,nodeIds){
-	var edgeDot = nodeIds[edgeObject.from].id + " -> " + nodeIds[edgeObject.to].id;
+function edgeToDot(edgeObject,nodeIds,edgeConnector){
+	var edgeDot = nodeIds[edgeObject.from].id + edgeConnector + nodeIds[edgeObject.to].id;
 	var col = edgeObject.color;
 	if(col.hasOwnProperty("color")){
 		col = edgeObject.color.color;
@@ -117,7 +124,11 @@ function edgeToDot(edgeObject,nodeIds){
 
 function edgeProperties(causal_relation,color){
 	var edgeProperty=  "[";
-	edgeProperty += dotEdgeTypes[causal_relation];
+	var det = dotEdgeTypes[causal_relation];
+	if(det==undefined){
+		det = 'arrowhead="none",arrowtail="none"';
+	}
+	edgeProperty += det;
 	edgeProperty += ',color="'+color+'"';
 	edgeProperty += "]"
 	return(edgeProperty);

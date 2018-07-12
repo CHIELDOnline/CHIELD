@@ -10,9 +10,12 @@
 
 var displayDatatable = true; // set to false below
 
+var numLinksThreshold = 2;
+
 
 dtableConfig =  {
 		ordering: true,
+		order: [[ 2, "desc" ]],
         lengthChange: false,
         //scrollY: "300px",
         //scrollCollapse: true,
@@ -59,20 +62,17 @@ function getUrlParameter(sParam) {
     }
 };
 
+var tmp=null;
 function updateRecord(response, type){
 	if(type=="metalinks"){
 		var obj = JSON.parse(response);
-		//buildMetaNetwork(obj);
+		tmp = obj;
+		buildMetaNetwork(obj);
 		
-		console.log("1");
-		var links2 = ObjectToArrayOfArrays(links);
-		console.log("2");
+		var links2 = ObjectToArrayOfArrays(obj);
 		var tmpDtable= $("#links_table").dataTable();
-		console.log("3");
 		tmpDtable.fnClearTable();
-		console.log("4");
 		tmpDtable.fnAddData(links2);
-		console.log("5");
 		hideLoader();
 	}
 }
@@ -80,43 +80,58 @@ function updateRecord(response, type){
 function buildMetaNetwork(links){
 	// receives object
 
+	var nodeName1 = "Researcher1";
+	var nodeLabel1 = "Researcher1";
+	var nodeName2 = "Researcher2";
+	var nodeLabel2 = "Researcher2"
+
 	var nodes = [];
+	var nodeList = [];
 	for(var i=0;i<links.length;++i){
 		link = links[i];
-		if($.inArray(link["first_document_links.bibref"],nodes)==-1){
-			newNode = {
-				id:link["first_document_links.bibref"],
-				label:link["doc1.citation"]
-				};
-			network_nodes.add(newNode);
-			nodes.push(link["first_document_links.bibref"]);
-		}
-		if($.inArray(link["second_document_links.bibref"],nodes)==-1){
-			newNode = {
-				id:link["second_document_links.bibref"],
-				label:link["doc2.citation"]
-				};
-			network_nodes.add(newNode);
-			nodes.push(link["second_document_links.bibref"]);
+		if(link["numberOfLinks"]>=numLinksThreshold){
+			if($.inArray(link[nodeName1],nodes)==-1){
+				newNode = {
+					id:link[nodeName1],
+					label:link[nodeLabel1]
+					};
+				//network_nodes.add(newNode);
+				nodeList.push(newNode);
+				nodes.push(link[nodeName1]);
+			}
+			if($.inArray(link[nodeName2],nodes)==-1){
+				newNode = {
+					id:link[nodeName2],
+					label:link[nodeLabel2]
+					};
+				//network_nodes.add(newNode);
+				nodeList.push(newNode);
+				nodes.push(link[nodeName2]);
+			}
 		}
 	}
 
+	var edgeList = [];
 	for(var i=0;i<links.length;++i){
 		link = links[i];
-		var newEdge = {
-		"from": link["first_document_links.bibref"],
-    	"to": link["second_document_links.bibref"],
-    	"color": {color:"black"},
-    	"width":link["numberOfLinks"]
-		};
-		network_edges.add(newEdge);
+		if(link["numberOfLinks"]>=numLinksThreshold){
+			var newEdge = {
+			"from": link[nodeName1],
+	    	"to": link[nodeName2],
+	    	"color": {color:"black"},
+	    	"width":link["numberOfLinks"]
+			};
+			//network_edges.add(newEdge);
+			edgeList.push(newEdge);
+		}
 	}
+	network_nodes.update(nodeList);
+	network_edges.update(edgeList);
 }
 
 $(document).ready(function(){
 
-	showLoader();
-	
+	showLoader();	
 
 	// Add the header
 	// TODO: Minimise or autohide this?
@@ -151,6 +166,8 @@ $(document).ready(function(){
 	initialiseNetwork();
 	network.on("click", network_on_click);
 
+	$("#removeVariable").click(removeVariableViaNetwork);
+
 	// Hide the table
 	toggleTableDisplay();
 	// Set the button action to show/hide the table
@@ -166,6 +183,12 @@ $(document).ready(function(){
 
 	network_options.configure = network_options_configure;
 	network_options.interaction.navigationButtons= false;
+	network_options.physics.stabilization = {
+		enabled: true,
+      	iterations: 100,
+      	updateInterval:1000
+	};
+
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();
