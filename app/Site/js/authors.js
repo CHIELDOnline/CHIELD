@@ -62,8 +62,7 @@ function getUrlParameter(sParam) {
 function updateRecord(response, type){
 	if(type=="metalinks"){
 		var obj = JSON.parse(response);
-		console.log(obj);
-		buildMetaNetwork(obj);
+		//buildMetaNetwork(obj);
 		
 		console.log("1");
 		var links2 = ObjectToArrayOfArrays(links);
@@ -72,7 +71,7 @@ function updateRecord(response, type){
 		console.log("3");
 		tmpDtable.fnClearTable();
 		console.log("4");
-		//tmpDtable.fnAddData(links2);
+		tmpDtable.fnAddData(links2);
 		console.log("5");
 		hideLoader();
 	}
