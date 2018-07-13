@@ -189,6 +189,13 @@ $(document).ready(function(){
       	updateInterval:1000
 	};
 
+	network_options.nodes.color = {
+		background: "#d3ffe3", //pale blue
+		border: "#00bf44", // dark green
+		highlight: { border: "#00bf44", background: "#d3ffe3" },
+		hover: { border: "#00bf44", background: "#d3ffe3" }
+	};
+
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();

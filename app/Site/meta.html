@@ -20,9 +20,10 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/meta.css"/>
+<link rel="stylesheet" type="text/css" href="css/explore.css"/>
 
 <script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/visualisation/GUI_for_explore.js"></script>
 <script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
 <script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
 <script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
@@ -48,17 +49,27 @@
 <div id="controlPanel">
   <br /><br />
   <div class="btn-group-vertical">
+
+      <button id="removeVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Remove the selected nodes">
+          <i class="fas fa-minus"></i>
+      </button>
+
+  <div class="btn-group">
+      <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-download"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsDOT(false,false)">DOT</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true,false)">DOT (with positions)</a>
+      </div>
   </div>
+  </div>
+  
 </div>
 
 
-
-<div id="legend">
-  <h5 id="legendTitle">Legend</h5>
-  <a id="closeLegendButton" href="#" class="close" aria-label="close" onclick="hideLegend()">&times;</a>
-  <div id="legendItems"></div>
-</div>
-<button id="legendButton" class="btn btn-danger" onclick="showLegend()"><i class="fas fa-bars"></i></button>
 
 
 
