@@ -59,8 +59,8 @@ studyTypeColours = {
 
 stageColours = {
   "language change":'#28A745',
-  "cultural evolution":'#FFC107',
-  "coevolution":'#FFAF00',
+  "cultural evolution":'#ffd507',
+  "coevolution":'#ff9400',
   "preadaptation":'#DC3545'
 };
 
