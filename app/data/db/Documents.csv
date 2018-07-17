@@ -44,6 +44,16 @@
   year = {1974},
   publisher = {Cambridge University Press},
 }","Trudgill (1974)"
+"frederiksen1975representing","Carl H Frederiksen","1975","Representing logical and semantic structure of knowledge acquired from discourse","@Article{frederiksen1975representing,
+  title = {Representing logical and semantic structure of knowledge acquired from discourse},
+  author = {Carl H Frederiksen},
+  journal = {Cognitive psychology},
+  volume = {7},
+  number = {3},
+  pages = {371--458},
+  year = {1975},
+  publisher = {Elsevier},
+}","Frederiksen (1975)"
 "kalmar1985there","Ivan Kalmár","1985","Are there really no primitive languages","@InCollection{kalmar1985there,
   title = {Are there really no primitive languages},
   author = {Ivan Kalmár},
@@ -179,6 +189,16 @@
   year = {1995},
   publisher = {Elsevier},
 }","Hare & Elman (1995)"
+"knight1995human","Chris Knight; Camilla Power; Ian Watts","1995","The human symbolic revolution: a Darwinian account","@Article{knight1995human,
+  title = {The human symbolic revolution: a Darwinian account},
+  author = {Chris Knight and Camilla Power and Ian Watts},
+  journal = {Cambridge archaeological journal},
+  volume = {5},
+  number = {1},
+  pages = {75--114},
+  year = {1995},
+  publisher = {Cambridge University Press},
+}","Knight, Power & Watts (1995)"
 "MacePagel1995","R. Mace; Mark Pagel","1995","A Latitudinal Gradient in the Density of Human Languages in North America","@Article{MacePagel1995,
   author = {R. Mace and Mark Pagel},
   doi = {10.1098/rspb.1995.0125},
@@ -1110,6 +1130,27 @@ The number of different species found in a given area of the Earth increases fro
   year = {2014},
   publisher = {Springer},
 }","Bialystok & Poarch (2014)"
+"bowern2014loan","Claire Bowern; Hannah Haynie; Catherine Sheard; Barry Alpher; Patience Epps; Jane Hill; Patrick McConvell","2014","Loan and inheritance patterns in hunter-gatherer ethnobiological systems","@Article{bowern2014loan,
+  title = {Loan and inheritance patterns in hunter-gatherer ethnobiological systems},
+  author = {Claire Bowern and Hannah Haynie and Catherine Sheard and Barry Alpher and Patience Epps and Jane Hill and Patrick McConvell},
+  abstract = {We compare the etymologies of ethnobiological nomenclature in 130 hunter-gatherer and agriculturist
+languages in Australia, North America, and Amazonia. Previous work has identified correlations between systems
+of ethnobiological terminology and dominant means of community subsistence, relating stability of terminology to
+the ‘‘salience’’ of the items. However, the relevance of subsistence patterns to the development of ethnobiological
+nomenclature requires further investigation, as does the notion of ‘‘salience’’ and how it might relate to etymological
+stability. The current study probes the relationship between salience and stability and the variability within this
+relationship. We refine the notion of stability by studying both inheritance and loan rates. We refine the notion of
+‘‘salience’’ by separately testing retention and loan rates in flora and fauna vocabulary that might be considered
+salient for different reasons. Results indicate that the most etymologically stable items are core foodstuffs (whether
+cultivated or wild). Psychotropic items were more likely to be loaned. There were no significant patterns for cultivar
+status or trade, though we note that the most frequently loaned items in the sample are also traded.},
+  journal = {Journal of Ethnobiology},
+  volume = {34},
+  number = {2},
+  pages = {195--227},
+  year = {2014},
+  publisher = {BioOne},
+}","Bowern, Haynie, Sheard, Alpher, Epps, Hill, McConvell et al. (2014)"
 "delancey_2014","Scott DeLancey","2014","Sociolinguistic typology in North East India: A tale of two branches","@Article{delancey_2014,
   author = {Scott DeLancey},
   title = {Sociolinguistic typology in North East India: A tale of two branches},
