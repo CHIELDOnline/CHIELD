@@ -97,7 +97,6 @@ function updateRecord(response, type){
 		} else{
 			alert("No new links found");
 		}
-		hideLoader();
 	}
 	if(type=="docs"){
 		existingDocuments = [];
@@ -109,6 +108,7 @@ function updateRecord(response, type){
 		}
 		
 	}
+	hideLoader();
 }
 
 
@@ -177,6 +177,7 @@ function addDoc(doc_citation){
 }
 
 function bulkOut(){
+	showLoader();
 	var currentEdgesKeys= network_edges.getIds().join(",");
 	requestRecord("php/getBulkOutLinks.php","keylist="+currentEdgesKeys,'links');
 }
