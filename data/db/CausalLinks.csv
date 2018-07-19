@@ -349,10 +349,10 @@
 "2905385591","dallasta06languageGamesNetworks","4248256416",">","2150046662","pos",NA,"signalling","cultural evolution","simulation","","null",NA
 "3541019126","dallasta06languageGamesNetworks","2150046662",">","1923061136","pos",NA,"signalling","cultural evolution","simulation","","",NA
 "1822057953","dallasta06microscopicPatterns","2150046662",">","1923061136","neg",NA,"signalling","cultural evolution","model","",NA,NA
-"1948447753","dornyei2006individual","1930784619",">","1687498215","pos",NA,NA,"language change","experiment","","no","'when individual differences ... would be related to morphosyntactic L2 attainment' (667)"
-"3455148535","dornyei2006individual","1930784619","~=","3769396611","n-m",NA,NA,"language change","experiment","","no","'whether individual differences (IDs) in [sequence learning ability] would be related to morphosyntactic L2 attainment' (667)"
-"3570272042","dornyei2006individual","3769396611","~=","1687498215","n-m",NA,NA,"language change","experiment","","no","'whether individual differences (IDs) in [sequence learning ability] would be related to morphosyntactic L2 attainment' (667)"
-"2225465685","dornyei2006individual","2629107599",">","1687498215","n-m",NA,NA,"language change","experiment","","no","'ability would be related to morphosyntactic L2 attainment in early bilinguals who started learning the L2 before age 6 and late bilinguals who started learning the L2 after age 16' (667)"
+"788957629","dornyei2006individual","1930784619",">","3937818589","pos",NA,NA,"language change","experiment","","yes","'when individual differences ... would be related to morphosyntactic L2 attainment' (667)"
+"3455148535","dornyei2006individual","1930784619",">","3769396611","n-m",NA,NA,"language change","experiment","","yes","'whether individual differences (IDs) in [sequence learning ability] would be related to morphosyntactic L2 attainment' (667)"
+"2258881695","dornyei2006individual","3769396611",">","3937818589","n-m",NA,NA,"language change","experiment","","yes","'whether individual differences (IDs) in [sequence learning ability] would be related to morphosyntactic L2 attainment' (667)"
+"3178623924","dornyei2006individual","2629107599",">","3937818589","n-m",NA,NA,"language change","experiment","","yes","'ability would be related to morphosyntactic L2 attainment in early bilinguals who started learning the L2 before age 6 and late bilinguals who started learning the L2 after age 16' (667)"
 "2666442426","nettle06costsAndBenefits","391008209",">","445369745","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
 "950401639","nettle06costsAndBenefits","391008209",">","1005906399","neg",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
 "4108429839","nettle06costsAndBenefits","391008209",">","3810575075","pos",NA,"signalling","coevolution","hypothesis",NA,"yes",NA
