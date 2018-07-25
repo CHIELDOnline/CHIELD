@@ -277,6 +277,8 @@ $(document).ready(function(){
 		// TODO: display no data message
 		console.log("no data");
 	}
+
+	$( "#mynetwork" ).resizable();
 });
 
 

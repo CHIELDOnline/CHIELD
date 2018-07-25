@@ -43,4 +43,5 @@ $(document).ready(function(){
 
 	preparePage("documents_table","php/getDocs.php");
     requestLinks(php_link);
+
 });
