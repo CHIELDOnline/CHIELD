@@ -298,6 +298,10 @@ function toggleOptions(){
 
 }
 
+function zoomInOnNode(nodeId){
+	network.focus(nodeId,{animation:true,scale:2})
+}
+
 // --------------------------
 // Legend and Colour Scheme
 // --------------------------
