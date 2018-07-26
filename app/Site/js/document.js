@@ -214,7 +214,7 @@ function raiseIssue(){
 }
 
 function openDiscussionHistory(){
-	url = "https://github.com/CHIELDOnline/CHIELD/issues?q=label:data "+documentKey;
+	url = "https://github.com/CHIELDOnline/CHIELD/issues?q="+documentKey;
 	window.open(url);
 }
 
