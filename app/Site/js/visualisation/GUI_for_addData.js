@@ -97,7 +97,7 @@ function addEdgeByVarName(selectedVar1, selectedVar2, causal_relation=">"){
 		network.fit();
 		// add data to grid
 		addEdgeToGrid(selectedVar1,causal_relation,selectedVar2);		
-
+		
 	}
 	currently_selected_node = null;
 	current_selection_mode = "start";

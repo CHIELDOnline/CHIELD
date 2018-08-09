@@ -290,6 +290,8 @@ function network_on_click (params){
 				var notes = doc_causal_links[i].Notes
 				if(notes!=null && notes.length>0){
 					openQuote(doc_causal_links[i].Notes);
+				}else{
+					closeQuote();
 				}
 				break;
 			}
