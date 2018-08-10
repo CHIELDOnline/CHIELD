@@ -159,7 +159,7 @@ function requestRecord(php_link,params, type){
 }
 
 
-function pageCounter(ignoreParameters=false){
+function pageCounter(ignoreParameters=true){
 	var http = new XMLHttpRequest();
 	http.open("POST", "php/pageCounter.php", true);
 	//Send the proper header information along with the request
