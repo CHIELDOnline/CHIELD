@@ -1,4 +1,4 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"population size",">>","communicative interaction","pos","population dynamics","none","logical","none","The bigger the groups are, the higher the chance of them interacting with each other","trudgill1974linguistic"
+"population size",">","communicative interaction","pos","population dynamics","none","logical","none","The bigger the groups are, the higher the chance of them interacting with each other","trudgill1974linguistic"
 "communicative interaction",">","lexical similarity between languages","pos","phonetics","language change","model","none","Trudgill considers this process analogous to Newton's gravity model","trudgill1974linguistic"
-"physical distance",">>","communicative interaction","pos","population dynamics","none","logical","none","","trudgill1974linguistic"
+"physical distance",">","communicative interaction","pos","population dynamics","none","logical","none","","trudgill1974linguistic"
