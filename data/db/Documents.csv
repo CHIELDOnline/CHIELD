@@ -755,6 +755,15 @@ The number of different species found in a given area of the Earth increases fro
   year = {2008},
   publisher = {John Benjamins Publishing Company},
 }","Tamariz (2008)"
+"curriemace2009","T.E. Currie; R. Mace","2009","Political complexity predicts the spread of ethnolinguistic groups","@Article{curriemace2009,
+  year = {2009},
+  author = {T.E. Currie and R. Mace},
+  title = {Political complexity predicts the spread of ethnolinguistic groups},
+  journal = {PNAS - Proceedings of the National Academy of Sciences},
+  number = {106},
+  issue = {7339},
+  publisher = {National Academy of Sciences of the United States of America},
+}","Currie & Mace (2009)"
 "evans2009myth","Nicholas Evans; Stephen C Levinson","2009","The myth of language universals: Language diversity and its importance for cognitive science","@Article{evans2009myth,
   title = {The myth of language universals: Language diversity and its importance for cognitive science},
   author = {Nicholas Evans and Stephen C Levinson},
@@ -1786,6 +1795,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2017},
   publisher = {National Acad Sciences},
 }","Garland, Rendell, Lamoni, Poole, Noad et al. (2017)"
+"knight2017wild","Chris Knight; JD Lewis","2017","Wild Voices: Mimicry, Reversal, Metaphor, and the Emergence of Language","@Article{knight2017wild,
+  title = {Wild Voices: Mimicry, Reversal, Metaphor, and the Emergence of Language},
+  author = {Chris Knight and JD Lewis},
+  journal = {Current Anthropology},
+  volume = {58},
+  number = {4},
+  year = {2017},
+  publisher = {University of Chicago Press},
+}","Knight & Lewis (2017)"
 "laland2017origins","Kevin N Laland","2017","The origins of language in teaching","@Article{laland2017origins,
   title = {The origins of language in teaching},
   abstract = {I introduce seven criteria for determining the validity of competing theories for the original function of language. I go on to present a novel explanation that meets all the criteria: language originally evolved to teach kin. I suggest that the use of symbols subsequently generated evolutionary feedback at two levels, in the form of self-modified selection pressures that favored structures in the mind that functioned to manipulate and use symbols with efficiency, and cultural selection on languages for learnability.},

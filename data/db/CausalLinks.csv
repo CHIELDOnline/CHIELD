@@ -540,6 +540,10 @@
 "1130650486","tamariz2008exploring","839223823",">","3445232044","pos",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity in Spanish"
 "1714605963","tamariz2008exploring","493698091",">","3445232044","pos",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity in Spanish"
 "203519748","tamariz2008exploring","2571844325",">","3445232044","neg",NA,"structure of the lexicon","cultural evolution","statistical","","","corpus study of word-form word-meaning systematicity in Spanish"
+"2164497502","curriemace2009","2379220120",">","4176837079","pos",NA,"language area; political complexity; population dynamics; ","cultural evolution","statistical","","","They find a correlation between a language covering a large area and having high political complexity, they suggest that either political complexity helps spread a language or that a common language in a large area promotes political complexity."
+"733589769","curriemace2009","2379220120","~","191368178","neg",NA,"language area; political complexity; population dynamics; ","cultural evolution","statistical","","","This is not explicitly tested, but implied in the paper and an assumption of the dataset."
+"1906121536","curriemace2009","191368178",">","4176837079","neg",NA,"language area; political complexity; population dynamics; ","cultural evolution","statistical","","","They find a correlation between a language covering a large area and having high political complexity, they suggest that either political complexity helps spread a language or that a common language in a large area promotes political complexity."
+"199085216","curriemace2009","4202478006",">","4176837079","none",NA,"language area; population dynamics; ","cultural evolution","statistical","","no","""Subsistence strategy does not show a consistent relationship between language area and absolute latitude. """
 "2701124776","evans2009myth","4141958184","<=>","191368178",NA,NA,"Linguistic Diversity","coevolution","hypothesis","","yes","Language is one of the best exemplars of coevolution, with evolved biological underpinnings for culturally variable practices, where the biology constrains and canalizes but does not dictate linguistic structures."
 "4240754012","evans2009myth","1546512080","<=>","191368178",NA,NA,"Linguistic Diversity","coevolution","hypothesis","","yes","Language is one of the best exemplars of coevolution, with evolved biological underpinnings for culturally variable practices, where the biology constrains and canalizes but does not dictate linguistic structures."
 "2325085241","evans2009myth","191368178","<=>","3453919018",NA,NA,"Linguistic Diversity","cultural evolution","hypothesis","","yes",""
@@ -1290,6 +1294,25 @@
 "2689176590","garland2017song","841198702",">","3919880984","none",NA,NA,"none","experiment","","","when different whale populations with different songs come into contact with each other, they learn new songs from each other and thus their song evolves"
 "1417009355","garland2017song","2390379791",">","1140663058","",NA,NA,"","review","","","Song is reliant upon vocal learning"
 "2251984131","garland2017song","1803112881",">","297120351","",NA,NA,"","review","","","the ability to segment sounds into component parts is only possible if there are the right learning mechanisms to support this behaviour"
+"2599571647","knight2017wild","124859253",">","3790402265","",NA,NA,"","","",NA,""
+"1865313194","knight2017wild","3790402265",">","3128385482","none",NA,NA,"","","",NA,"""Where interests conflict, listeners’ resistance to being deceived drives signalers to limit their vocal repertoire to signals that cannot be faked"""
+"2278766979","knight2017wild","3128385482",">","2566178785","",NA,NA,"","","",NA,"""Where interests conflict, listeners’ resistance to being deceived drives signalers to limit their vocal repertoire to signals that cannot be faked"""
+"440382573","knight2017wild","3128385482",">","4223044014","",NA,NA,"","","",NA,"""The relative inflexibility of primate vocal signaling reflects audience pressure for reliability."" "
+"3774883036","knight2017wild","3718573502",">","630764264","",NA,NA,"preadaptation","hypothesis","",NA,"""we follow Boehm (1999), Whiten and Erdal (2012), and Gavrilets et al. (2008) in highlighting political egalitarianism as the critical element in the transition to symbolic culture and modern mind"""
+"3846595665","knight2017wild","630764264",">","2136321625","",NA,NA,"preadaptation","hypothesis","",NA,"""When our ancestors were vulnerable hominins equipped with limited weaponry, they kept predators away by increasing the range and diversity of their vocal calls"""
+"1415977675","knight2017wild","630764264",">","3901830774","",NA,NA,"preadaptation","hypothesis","",NA,"""When our ancestors were vulnerable hominins equipped with limited weaponry, they kept predators away by increasing the range and diversity of their vocal calls"""
+"213047661","knight2017wild","2136321625",">","3249306571","",NA,NA,"coevolution","hypothesis","",NA,"""[Increased vocal range] led to choral singing, primarily by females"""
+"4218010881","knight2017wild","3901830774",">","3249306571","",NA,NA,"coevolution","hypothesis","",NA,"""[Increased vocal diversity] led to choral singing, primarily by females"""
+"2678067570","knight2017wild","2485117586",">","2614865911","",NA,NA,"coevolution","hypothesis","",NA,"""A critical feature of our model is the core principle of reversal, whereby deceptive signals aimed originally by a coalition against an external target are subsequently redeployed for honest communicative purposes within the group""; ""vocal fakes originally aimed at deceiving animals—choral singing on the one hand, animal mimicry on the other—are reversed through being redeployed to share ideas within the group"""
+"3554502976","knight2017wild","2136321625",">","2485117586","",NA,NA,"coevolution","hypothesis","",NA,"""[Increased vocal range led to] deceptive mimicry of animal calls, primarily by scavenging and hunting males"""
+"331361532","knight2017wild","3901830774",">","2485117586","",NA,NA,"coevolution","hypothesis","",NA,"""[Increased vocal diversity led to] deceptive mimicry of animal calls, primarily by scavenging and hunting males"""
+"608738643","knight2017wild","2606162095",">","2337532234","",NA,NA,"language change","hypothesis","",NA,"""We argue that this dynamic [i.e., redeployment of vocal calls for honest communication within group] culminated ultimately in gestural, vocal, and ritual metaphor, opening the way to word formation and the rapid emergence of grammar."""
+"40822545","knight2017wild","1227251338",">","124859253","",NA,NA,"preadaptation","","",NA,""
+"2940248900","knight2017wild","1227251338",">","2741802467","",NA,NA,"preadaptation","","",NA,""
+"3170993969","knight2017wild","2741802467",">","3718573502","",NA,NA,"preadaptation","hypothesis","",NA,"""Beginning some two million years ago, as our relatively slowmoving and defenseless ancestors became exposed in more open environments, it was the fear of predators that began driving... larger group sizes, increased social complexity, and selection for larger brains"""
+"2432686647","knight2017wild","2614865911",">","3764831454","",NA,NA,"cultural evolution","hypothesis","",NA,"""We argue that this dynamic [i.e., redeployment of vocal calls for honest communication within group] culminated ultimately in gestural, vocal, and ritual metaphor, opening the way to word formation and the rapid emergence of grammar."""
+"2329423623","knight2017wild","3764831454",">","2606162095","",NA,NA,"cultural evolution","hypothesis","",NA,"""We argue that this dynamic [i.e., redeployment of vocal calls for honest communication within group] culminated ultimately in gestural, vocal, and ritual metaphor, opening the way to word formation and the rapid emergence of grammar."""
+"2496081557","knight2017wild","3249306571",">","2614865911","",NA,NA,"coevolution","hypothesis","",NA,"""A critical feature of our model is the core principle of reversal, whereby deceptive signals aimed originally by a coalition against an external target are subsequently redeployed for honest communicative purposes within the group""; ""vocal fakes originally aimed at deceiving animals—choral singing on the one hand, animal mimicry on the other—are reversed through being redeployed to share ideas within the group"""
 "837690588","laland2017origins","1741655559","^","3858777019","none",NA,NA,"none","review","","","Selective scenarios for how and why this transition to the emergence of natural language occurred are bounteous: language evolved to facilitate cooperative hunting (Washburn & Lancaster, 1968)"
 "989529399","laland2017origins","3234019456","^","3858777019","none",NA,NA,"none","review","","","Selective scenarios for how and why this transition to the emergence of natural language occurred are bounteous: language evolved to facilitate cooperative hunting (Washburn & Lancaster, 1968), as a substitute for grooming (Dunbar, 1998), "
 "2421853682","laland2017origins","1881652661","^","3858777019","none",NA,NA,"none","review","","","Selective scenarios for how and why this transition to the emergence of natural language occurred are bounteous: language evolved to facilitate cooperative hunting (Washburn & Lancaster, 1968), as a substitute for grooming (Dunbar, 1998), to promote pair bonding (Deacon, 2003),"
@@ -1501,21 +1524,24 @@
 "2681444474","SegoviaMartinevolang12","4248256416",">","1923061136","neg",NA,NA,"cultural evolution","simulation","",NA,NA
 "674453602","sinnemakidigarbo2018","3270569964",">","184397397","neg",NA,"complexity","cultural evolution","statistical","","yes","Authors show that the degree of inflectional synthesis on the verb is affected by both proportion of L2 learners and population size (accepted paper; details will follow later)."
 "2103500612","sinnemakidigarbo2018","1746840506",">","184397397","neg",NA,"complexity","cultural evolution","statistical","","yes","Authors show that the degree of inflectional synthesis on the verb is affected by both proportion of L2 learners and population size (accepted paper; details will follow later)."
-"1376846647","spike2018complexity","1890085269",">","2013530923","pos",NA,NA,"language change","model","","yes","""if the agent is connected to many others by relatively few steps (i.e. a low average shortest path length), then its effective population size is large"""
-"172658855","spike2018complexity","1890085269",">","4179598820","pos",NA,NA,"language change","model","","yes","Social Structure was found to be more important than population size"
-"2443781826","spike2018complexity","1057180281",">","4179598820","pos",NA,NA,"language change","model","","yes",""
-"1846777972","spike2018complexity","3732553649",">","1057180281","pos",NA,NA,"language change","model","","yes","In small population, novel complexity fixates easily in line with the strength of the bias"
-"47085998","spike2018complexity","4228385437",">","1057180281","neg",NA,NA,"cultural evolution","model","","yes",""
-"130488096","spike2018complexity","4228385437",">","543679109","neg",NA,NA,"cultural evolution","model","","yes",""
-"2136695498","spike2018complexity","4160434672",">","543679109","neg",NA,NA,"cultural evolution","model","","yes","drift effects and a subsequent loss of complexity take over"
-"4158877102","spike2018complexity","4160434672",">","4228385437","neg",NA,NA,"cultural evolution","model","","yes","loss of complexity unless there's a strong anti simplicity bias "
-"1835048299","spike2018complexity","1150357518",">","543679109","pos",NA,NA,"cultural evolution","model","","yes",""
-"3745189769","spike2018complexity","1150357518",">","4228385437","pos",NA,NA,"cultural evolution","model","","yes",""
-"945079434","spike2018complexity","4160434672",">","3732553649","pos",NA,NA,"cultural evolution","model","","yes",""
-"905895930","spike2018complexity","1150357518",">","1057180281","neg",NA,NA,"cultural evolution","model","","yes","high levels of complexity innovation have the paradoxical effect of leading to a collapse in complexity unless the simplicity bias is strong"
-"268674159","spike2018complexity","543679109",">","4179598820","",NA,NA,"language change","model","","yes",""
-"2111061601","spike2018complexity","2013530923","~","4160434672","",NA,NA,"cultural evolution","model","","yes"," if the agent is connected to many others via relatively few steps (i.e. a low average shortest path length), then its effective population size is large, and vice versa"
-"2772679829","spike2018complexity","2013530923","~","1150357518","",NA,NA,"cultural evolution","model","","yes"," if the agent is connected to many others via relatively few steps (i.e. a low average shortest path length), then its effective population size is large, and vice versa"
+"3587529991","spike2018complexity","2771823229",">","1705087338","pos",NA,NA,"cultural evolution","model","","",NA
+"2876793029","spike2018complexity","938445341",">","4011348903","pos",NA,NA,"language change","model","","yes",NA
+"2562495953","spike2018complexity","2203045387",">","4011348903","neg",NA,NA,"language change","model","","yes",NA
+"2199225427","spike2018complexity","3732553649",">","938445341","pos",NA,NA,"language change","model","","yes",NA
+"3173119558","spike2018complexity","1705087338",">","2203045387","neg",NA,NA,"cultural evolution","model","","yes",NA
+"3892197355","spike2018complexity","1746840506",">","1705087338","pos",NA,NA,"cultural evolution","model","","yes",NA
+"4249010395","spike2018complexity","1705087338",">","938445341","neg",NA,NA,"cultural evolution","model","","yes",NA
+"3932012903","spike2018complexity","1705087338",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
+"305336677","spike2018complexity","2203045387",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
+"4005391079","spike2018complexity","1270992509",">","4011348903","pos",NA,NA,"language change","model","","yes",NA
+"4293609595","spike2018complexity","785194831",">","508526560","pos",NA,NA,"language change","model","","yes",NA
+"2796234772","spike2018complexity","3170287203",">","508526560","pos",NA,NA,"language change","model","","yes",NA
+"4176475815","spike2018complexity","508526560",">","2203045387","pos",NA,NA,"language change","model","","yes",NA
+"3603387523","spike2018complexity","938445341",">","1270992509","neg",NA,NA,"cultural evolution","model","","yes",NA
+"3613025337","spike2018complexity","3061338629",">","508526560","pos",NA,NA,"language change","model","","yes",NA
+"2965240378","spike2018complexity","3061338629",">","785194831","pos",NA,NA,"language change","model","","yes",NA
+"3283830683","spike2018complexity","3170287203",">","785194831","neg",NA,NA,"language change","model","","yes",NA
+"2575119583","spike2018complexity","4028116375",">","785194831","neg",NA,NA,"language change","model","","yes",NA
 "1157439869","vernes2018bats","2488543423",">","4219793443","none",NA,NA,"none","experiment","","",""
 "2550369487","vernes2018bats","222431261",">","4219793443","none",NA,NA,"none","experiment","","",""
 "4155499555","vernes2018bats","2994646040",">","4219793443","none",NA,NA,"none","experiment","","",""
