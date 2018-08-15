@@ -19,10 +19,16 @@ clinks$Var2 = as.character(clinks$Var2)
 dict = list()
 for(i in 1:nrow(clinks)){
   if(clinks[i,]$Relation %in% c(">",">>","<=>","=~")){
-    dict[[clinks[i,]$Var1]] = c(dict[[clinks[i,]$Var1]],clinks[i,]$Var2)  
+    # make sure we're not adding duplicate links
+    # (the SQL search finds all links between nodes)
+    if(!clinks[i,]$Var2 %in% dict[[clinks[i,]$Var1]]){
+      dict[[clinks[i,]$Var1]] = c(dict[[clinks[i,]$Var1]],clinks[i,]$Var2)  
+    }
   }
   if(clinks[i,]$Relation %in% c("<","<=>")){
-    dict[[clinks[i,]$Var2]] = c(dict[[clinks[i,]$Var2]],clinks[i,]$Var1)
+    if(!clinks[i,]$Var1 %in% dict[[clinks[i,]$Var2]]){
+      dict[[clinks[i,]$Var2]] = c(dict[[clinks[i,]$Var2]],clinks[i,]$Var1)
+    }
   }
 }
 
