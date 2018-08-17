@@ -1153,6 +1153,15 @@ The number of different species found in a given area of the Earth increases fro
   year = {2013},
   publisher = {National Acad Sciences},
 }","Pagel, Atkinson, Calude & Meade (2013)"
+"stanford_pan_2013","James N. Stanford; Yanhong Pan","2013","The Sociolinguistics of Exogamy: Dialect Acquisition in a Zhuang Village","@Article{stanford_pan_2013,
+  author = {James N. Stanford and Yanhong Pan},
+  year = {2013},
+  title = {The Sociolinguistics of Exogamy: Dialect Acquisition in a Zhuang Village},
+  journal = {Journal of Sociolinguistics},
+  issue = {17},
+  number = {5},
+  page = {1–35},
+}","Stanford & Pan (2013)"
 "twomey2013cognitive","Terrence Twomey","2013","The cognitive implications of controlled fire use by early humans","@Article{twomey2013cognitive,
   title = {The cognitive implications of controlled fire use by early humans},
   author = {Terrence Twomey},
@@ -1301,6 +1310,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2014},
   publisher = {Oxford University Press New York},
 }","Sinnemäki (2014)"
+"sterelny2014paleolithic","Kim Sterelny","2014","A paleolithic reciprocation crisis: symbols, signals, and norms","@Article{sterelny2014paleolithic,
+  title = {A paleolithic reciprocation crisis: symbols, signals, and norms},
+  author = {Kim Sterelny},
+  journal = {Biological Theory},
+  volume = {9},
+  number = {1},
+  pages = {65--77},
+  year = {2014},
+  publisher = {Springer},
+}","Sterelny (2014)"
 "tamariz2014cultural","Monica Tamariz; T Mark Ellison; Dale J Barr; Nicolas Fay","2014","Cultural selection drives the evolution of human communication systems","@Article{tamariz2014cultural,
   title = {Cultural selection drives the evolution of human communication systems},
   author = {Monica Tamariz and T Mark Ellison and Dale J Barr and Nicolas Fay},
@@ -2039,6 +2058,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   volume = {9},
   year = {2018},
 }","Greenhill, Hua, Welsh, Schneemann, Bromham et al. (2018)"
+"jakiela_ozier_2018","Pamela Jakiela; Owen Ozier","2018","Gendered Language","@TechReport{jakiela_ozier_2018,
+  author = {Pamela Jakiela and Owen Ozier},
+  year = {2018},
+  title = {Gendered Language},
+  institution = {Development Economics, Development Research Group, World Bank},
+  journal = {Policy Research Working Paper},
+  number = {8468},
+  url = {http://documents.worldbank.org/curated/en/405621528167411253/pdf/WPS8464.pdf},
+}","Jakiela & Ozier (2018)"
 "lev2018unforeseen","Shiri Lev-Ari; Emily Ho; Boaz Keysar","2018","The Unforeseen Consequences of Interacting With Non-Native Speakers","@Article{lev2018unforeseen,
   title = {The Unforeseen Consequences of Interacting With Non-Native Speakers},
   author = {Shiri Lev-Ari and Emily Ho and Boaz Keysar},
