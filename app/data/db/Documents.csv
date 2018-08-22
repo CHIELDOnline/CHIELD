@@ -363,6 +363,16 @@ The number of different species found in a given area of the Earth increases fro
   author = {Wouter Kusters},
   address = {Utrecht},
 }","Kusters (2003)"
+"marwick2003pleistocene","Ben Marwick","2003","Pleistocene exchange networks as evidence for the evolution of language","@Article{marwick2003pleistocene,
+  title = {Pleistocene exchange networks as evidence for the evolution of language},
+  author = {Ben Marwick},
+  journal = {Cambridge Archaeological Journal},
+  volume = {13},
+  number = {1},
+  pages = {67--81},
+  year = {2003},
+  publisher = {Cambridge University Press},
+}","Marwick (2003)"
 "vogt03ecal","Paul Vogt","2003","Grounded Lexicon Formation Without Explicit Reference Transfer: who's talking to who?","@InProceedings{vogt03ecal,
   abstract = {This paper presents a first investigation regarding lexicon grounding and evolution under an iterated learning regime without an explicit transfer of reference. In the original iterated learning framework, a population contains adult speakers and learning hearers. In this paper I investigate the effects of allowing both adults and learners to take up the role of speakers and hearers with varying probabilities. The results indicate that when adults and learners can be selected as speakers and hearers, their lexicons become more similar but at the cost of reduced success in communication.},
   author = {Paul Vogt},
