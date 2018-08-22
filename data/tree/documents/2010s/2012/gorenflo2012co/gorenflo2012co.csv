@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"population size","~","language diversity","pos","","language change","statistical","yes","""weak positive"" correlation","gorenflo2012co"
+"biodiversity: endemic species","~","language diversity: endemic languages","pos","","language change","statistical","yes","link between language hotspots and biodiversity hotspots (defined by endemicity)","gorenflo2012co"
+"population size",">","language diversity","","","","","","","gorenflo2012co"
+"biodiversity",">","population size","neg","","language change","hypothesis","none","inferred link","gorenflo2012co"
