@@ -72,7 +72,7 @@ getShortCitation = function(b){
     citationAndSep = ", "
     citationEnd = " et al."
   }
-  bAuthors = sapply(b$author,function(X){
+  bAuthors = sapply(bAuthors,function(X){
     paste(X$family,collapse=" ")
     })
   bAuthors = detexify(bAuthors)

@@ -148,7 +148,7 @@
   pages = {25--53},
   year = {1993},
   publisher = {University of Chicago Press},
-}","Burling, Armstrong, Blount, Callaghan, Foster, King, Parker, Sakura, Stokoe, Wallace, Wallman, Whiten, Wilcox, Wynn et al. (1993)"
+}","Burling, Armstrong, Blount, Callaghan et al. (1993)"
 "ackley94altruismIn","D. H. Ackley; M. L. Littman","1994","Altruism in the evolution of communication","@InProceedings{ackley94altruismIn,
   abstract = {Computer models of evolutionary phenomena often assume that the fitness of an individual can be evaluated in isolation, but effective communication requires that individuals interact. Existing models directly reward speakers for improved behavior on the part of the listeners so that, essentially, effective communication is fitness. We present new models in which, even though 'speaking truthfully' provides no tangible benefit to the speaker, effective communication nonetheless evolves. A large population is spatially distributed so that 'communication range' approximately correlates with 'breeding range,' so that most of the time 'you'll be talking to family,' allowing kin selection to encourage the emergence of communication. However, the emergence of altruistic communication also creates niches that can be exploited by 'information parasites.' The new models display complex and subtle long-term dynamics as the global implications of such social dilemmas are played out.},
   address = {Cambridge, MA},
@@ -416,7 +416,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {108--114},
   year = {2004},
   publisher = {Elsevier},
-}","Majid, Bowerman, Kita, Haun, Levinson et al. (2004)"
+}","Majid, Bowerman, Kita, Haun et al. (2004)"
 "hudson2005regularizing","Carla L Hudson Kam; Elissa L Newport","2005","Regularizing unpredictable variation: The roles of adult and child learners in language formation and change","@Article{hudson2005regularizing,
   title = {Regularizing unpredictable variation: The roles of adult and child learners in language formation and change},
   author = {Carla L {Hudson Kam} and Elissa L Newport},
@@ -603,7 +603,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {713},
   year = {2007},
   publisher = {Nature Publishing Group},
-}","Lieberman, Michel, Jackson, Tang, Nowak et al. (2007)"
+}","Lieberman, Michel, Jackson, Tang et al. (2007)"
 "okanoya2007language","Kazuo Okanoya","2007","Language evolution and an emergent property","@Article{okanoya2007language,
   title = {Language evolution and an emergent property},
   author = {Kazuo Okanoya},
@@ -698,7 +698,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {588--588},
   year = {2008},
   publisher = {American Association for the Advancement of Science},
-}","Atkinson, Meade, Venditti, Greenhill, Pagel et al. (2008)"
+}","Atkinson, Meade, Venditti, Greenhill et al. (2008)"
 "christiansen2008language","Morten H. Christiansen; Nick Chater","2008","Language as shaped by the brain","@Article{christiansen2008language,
   title = {Language as shaped by the brain},
   author = {Morten H. Christiansen and Nick Chater},
@@ -1106,7 +1106,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {000--000},
   year = {2012},
   publisher = {University of Chicago Press Chicago, IL},
-}","Tomasello, Melis, Tennie, Wyman, Herrmann, Gilby, Hawkes, Sterelny, Wyman, Tomasello, others et al. (2012)"
+}","Tomasello, Melis, Tennie, Wyman et al. (2012)"
 "whiten2012human","Andrew Whiten; David Erdal","2012","The human socio-cognitive niche and its evolutionary origins","@Article{whiten2012human,
   title = {The human socio-cognitive niche and its evolutionary origins},
   author = {Andrew Whiten and David Erdal},
@@ -1171,7 +1171,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {524--535},
   year = {2013},
   publisher = {American Institute of Biological Sciences Circulation, AIBS, 1313 Dolley Madison Blvd., Suite 402, McLean, VA 22101. USA},
-}","Gavin, Botero, Bowern, Colwell, Dunn, Dunn, Gray, Kirby, McCarter, Powell, Rangel, Stepp, Trautwein, Verdolin, Yanega et al. (2013)"
+}","Gavin, Botero, Bowern, Colwell et al. (2013)"
 "miyagawa2013emergence","Shigeru Miyagawa; Robert C Berwick; Kazuo Okanoya","2013","The emergence of hierarchical structure in human language","@Article{miyagawa2013emergence,
   title = {The emergence of hierarchical structure in human language},
   author = {Shigeru Miyagawa and Robert C Berwick and Kazuo Okanoya},
@@ -1230,7 +1230,7 @@ The number of different species found in a given area of the Earth increases fro
   pages = {20141574},
   year = {2014},
   publisher = {The Royal Society},
-}","Amano, Sandel, Eager, Bulteau, Svenning, Dalsgaard, Rahbek, Davies, Sutherland et al. (2014)"
+}","Amano, Sandel, Eager, Bulteau et al. (2014)"
 "axelsen2014river","Jacob Bock Axelsen; Susanna Manrubia","2014","River density and landscape roughness are universal determinants of linguistic diversity","@Article{axelsen2014river,
   title = {River density and landscape roughness are universal determinants of linguistic diversity},
   author = {Jacob Bock Axelsen and Susanna Manrubia},
@@ -1280,7 +1280,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   pages = {195--227},
   year = {2014},
   publisher = {BioOne},
-}","Bowern, Haynie, Sheard, Alpher, Epps, Hill, McConvell et al. (2014)"
+}","Bowern, Haynie, Sheard, Alpher et al. (2014)"
 "delancey_2014","Scott DeLancey","2014","Sociolinguistic typology in North East India: A tale of two branches","@Article{delancey_2014,
   author = {Scott DeLancey},
   title = {Sociolinguistic typology in North East India: A tale of two branches},
@@ -1452,7 +1452,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   abstract = {Explaining the diversity of languages across the world is one of the central aims of typological, historical, and evolutionary linguistics. We consider the effect of language contact-the number of non-native speakers a language has-on the way languages change and evolve. By analysing hundreds of languages within and across language families, regions, and text types, we show that languages with greater levels of contact typically employ fewer word forms to encode the same information content (a property we refer to as lexical diversity). Based on three types of statistical analyses, we demonstrate that this variance can in part be explained by the impact of non-native speakers on information encoding strategies. Finally, we argue that languages are information encoding systems shaped by the varying needs of their speakers. Language evolution and change should be modeled as the co-evolution of multiple intertwined adaptive systems: On one hand, the structure of human societies and human learning capabilities, and on the other, the structure of language.},
   number = {6},
   doi = {10.1371/journal.pone.0128254},
-}","Bentz, Verkerk, Kiela, Hill, Buttery et al. (2015)"
+}","Bentz, Verkerk, Kiela, Hill et al. (2015)"
 "bromham2015rate","Lindell Bromham; Xia Hua; Thomas G Fitzpatrick; Simon J Greenhill","2015","Rate of language evolution is affected by population size","@Article{bromham2015rate,
   title = {Rate of language evolution is affected by population size},
   author = {Lindell Bromham and Xia Hua and Thomas G Fitzpatrick and Simon J Greenhill},
@@ -1514,7 +1514,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   pages = {6029},
   year = {2015},
   publisher = {Nature Publishing Group},
-}","Morgan, Uomini, Rendell, Chouinard-Thuly, Street, Lewis, Cross, Evans, Kearney, De la Torre, Whiten, Laland et al. (2015)"
+}","Morgan, Uomini, Rendell, Chouinard-Thuly et al. (2015)"
 "okanoya2015evolution","Kazuo Okanoya","2015","Evolution of song complexity in Bengalese finches could mirror the emergence of human language","@Article{okanoya2015evolution,
   title = {Evolution of song complexity in Bengalese finches could mirror the emergence of human language},
   author = {Kazuo Okanoya},
@@ -1876,7 +1876,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   date-modified = {2017-09-12 16:37:57 +0000},
   title = {Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar},
   year = {2017},
-}","Blasi, Moran, Margvelashvili, Dediu, Moisik et al. (2017)"
+}","Blasi, Moran, Margvelashvili, Dediu et al. (2017)"
 "Everett2017","Caleb Everett","2017","Languages in Drier Climates Use Fewer Vowels","@Article{Everett2017,
   author = {Caleb Everett},
   title = {Languages in Drier Climates Use Fewer Vowels},
@@ -1898,7 +1898,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   pages = {7822--7829},
   year = {2017},
   publisher = {National Acad Sciences},
-}","Garland, Rendell, Lamoni, Poole, Noad et al. (2017)"
+}","Garland, Rendell, Lamoni, Poole et al. (2017)"
 "killin2017did","Anton Killin","2017","Where did language come from? Connecting sign, song, and speech in hominin evolution","@Article{killin2017did,
   title = {Where did language come from? Connecting sign, song, and speech in hominin evolution},
   author = {Anton Killin},
@@ -2040,7 +2040,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   pages = {181100},
   year = {2018},
   publisher = {The Royal Society},
-}","Bromham, Hua, Cardillo, Schneemann, Greenhill et al. (2018)"
+}","Bromham, Hua, Cardillo, Schneemann et al. (2018)"
 "demille2018worldwide","Mellissa MC DeMille; Kevin Tang; Chintan M Mehta; Christopher Geissler; Jeffrey G Malins; Natalie R Powers; Beatrice M Bowen; Andrew K Adams; Dongnhu T Truong; Jan C Frijters; Jeffrey R. Gruen","2018","Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages","@Article{demille2018worldwide,
   abstract = {DCDC2 is a gene strongly associated with components of the phonological processing system in animal models and in multiple independent studies of populations and languages. We propose that it may also influence population-level variation in language component usage. To test this hypothesis, we investigated the evolution and worldwide distribution of the READ1 regulatory element within DCDC2, and compared its distribution with variation in different language properties. The mutational history of READ1 was estimated by examining primate and archaic hominin sequences. This identified duplication and expansion events, which created a large number of polymorphic alleles based on internal repeat units (RU1 and RU2). Association of READ1 alleles was studied with respect to the numbers of consonants and vowels for languages in 43 human populations distributed across five continents. Using population-based approaches with multivariate ANCOVA and linear mixed effects analyses, we found that the RU1-1 allele group of READ1 is significantly associated with the number of consonants within languages independent of genetic relatedness, geographic proximity, and language family. We propose that allelic variation in READ1 helped create a subtle cognitive bias that was amplified by cultural transmission, and ultimately shaped consonant use by different populations over time.},
   title = {Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages},
@@ -2049,7 +2049,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   pages = {201710472},
   year = {2018},
   publisher = {National Acad Sciences},
-}","DeMille, Tang, Mehta, Geissler, Malins, Powers, Bowen, Adams, Truong, Frijters, Gruen et al. (2018)"
+}","DeMille, Tang, Mehta, Geissler et al. (2018)"
 "demolin2018acoustic","Didier Demolin","2018","Acoustic, aerodynamic and biomechanical constraints in the evolution of consonants","@InProceedings{demolin2018acoustic,
   author = {Didier Demolin},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
@@ -2089,7 +2089,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   url = {http://evolang.org/torun/proceedings/papertemplate.html?p=44},
   title = {Cultural transmission of melodic and rhythmic universals: four experiments and a model},
   year = {2018},
-}","Delgado, Ravignani, Verhoef, Thompson, Grossi, Kirby et al. (2018)"
+}","Delgado, Ravignani, Verhoef, Thompson et al. (2018)"
 "evolang12Feeney","Andrew Feeney","2018","Dual-processing and the representational hypothesis: accounting for the emergence of language","@InProceedings{evolang12Feeney,
   author = {Andrew Feeney},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
@@ -2109,7 +2109,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   url = {http://evolang.org/torun/proceedings/papertemplate.html?p=211},
   title = {Primate songs and their relevance in the study of language evolution},
   year = {2018},
-}","Gamba, Torti, Valente, Gregorio, Friard, Giacoma et al. (2018)"
+}","Gamba, Torti, Valente, Gregorio et al. (2018)"
 "evolang12mazuka","Reiko Mazuka; Tadahisa Kondo; Akiko Hayashi","2018","A potential link between infant-directed speech and evolution of vocal communication","@InProceedings{evolang12mazuka,
   author = {Reiko Mazuka and Tadahisa Kondo and Akiko Hayashi},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
@@ -2155,7 +2155,7 @@ status or trade, though we note that the most frequently loaned items in the sam
   url = {http://journal.frontiersin.org/article/10.3389/fpsyg.2018.00576/full},
   volume = {9},
   year = {2018},
-}","Greenhill, Hua, Welsh, Schneemann, Bromham et al. (2018)"
+}","Greenhill, Hua, Welsh, Schneemann et al. (2018)"
 "jakiela_ozier_2018","Pamela Jakiela; Owen Ozier","2018","Gendered Language","@TechReport{jakiela_ozier_2018,
   author = {Pamela Jakiela and Owen Ozier},
   year = {2018},
