@@ -2005,6 +2005,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   publisher = {Language Science Press},
   url = {http://langsci-press.org/catalog/book/134},
 }","Baechler (2018)"
+"Bromham2018Parasites","Lindell Bromham; Xia Hua; Marcel Cardillo; Hilde Schneemann; Simon J Greenhill","2018","Parasites and politics: why cross-cultural studies must control for relatedness, proximity and covarision","@Article{Bromham2018Parasites,
+  title = {Parasites and politics: why cross-cultural studies must control for relatedness, proximity and covarision},
+  author = {Lindell Bromham and Xia Hua and Marcel Cardillo and Hilde Schneemann and Simon J Greenhill},
+  journal = {R. Soc. open Sci.},
+  volume = {5},
+  number = {0},
+  pages = {181100},
+  year = {2018},
+  publisher = {The Royal Society},
+}","Bromham, Hua, Cardillo, Schneemann, Greenhill et al. (2018)"
 "demille2018worldwide","Mellissa MC DeMille; Kevin Tang; Chintan M Mehta; Christopher Geissler; Jeffrey G Malins; Natalie R Powers; Beatrice M Bowen; Andrew K Adams; Dongnhu T Truong; Jan C Frijters; Jeffrey R. Gruen","2018","Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages","@Article{demille2018worldwide,
   abstract = {DCDC2 is a gene strongly associated with components of the phonological processing system in animal models and in multiple independent studies of populations and languages. We propose that it may also influence population-level variation in language component usage. To test this hypothesis, we investigated the evolution and worldwide distribution of the READ1 regulatory element within DCDC2, and compared its distribution with variation in different language properties. The mutational history of READ1 was estimated by examining primate and archaic hominin sequences. This identified duplication and expansion events, which created a large number of polymorphic alleles based on internal repeat units (RU1 and RU2). Association of READ1 alleles was studied with respect to the numbers of consonants and vowels for languages in 43 human populations distributed across five continents. Using population-based approaches with multivariate ANCOVA and linear mixed effects analyses, we found that the RU1-1 allele group of READ1 is significantly associated with the number of consonants within languages independent of genetic relatedness, geographic proximity, and language family. We propose that allelic variation in READ1 helped create a subtle cognitive bias that was amplified by cultural transmission, and ultimately shaped consonant use by different populations over time.},
   title = {Worldwide distribution of the DCDC2 READ1 regulatory element and its relationship with phoneme variation across languages},
