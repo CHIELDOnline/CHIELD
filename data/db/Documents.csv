@@ -985,6 +985,14 @@ The number of different species found in a given area of the Earth increases fro
   year = {2011},
   publisher = {National Acad Sciences},
 }","Piantadosi, Tily & Gibson (2011)"
+"rzeszutek2011structure","Tom Rzeszutek; Patrick E Savage; Steven Brown","2011","The structure of cross-cultural musical diversity","@Article{rzeszutek2011structure,
+  title = {The structure of cross-cultural musical diversity},
+  author = {Tom Rzeszutek and Patrick E Savage and Steven Brown},
+  journal = {Proc. R. Soc. B},
+  pages = {rspb20111750},
+  year = {2011},
+  publisher = {The Royal Society},
+}","Rzeszutek, Savage & Brown (2011)"
 "trudgill2011social","Peter Trudgill","2011","Social structure and phoneme inventories","@Article{trudgill2011social,
   title = {Social structure and phoneme inventories},
   author = {Peter Trudgill},
@@ -2051,6 +2059,14 @@ status or trade, though we note that the most frequently loaned items in the sam
   publisher = {Language Science Press},
   url = {http://langsci-press.org/catalog/book/134},
 }","Baechler (2018)"
+"baumann2018linguistic","Andreas Baumann","2018","Linguistic stability increases with population size, but only in stable learning environments","@InProceedings{baumann2018linguistic,
+  title = {Linguistic stability increases with population size, but only in stable learning environments},
+  doi = {10.12775/3991-1.004},
+  booktitle = {The Evolution of Language: Proceedings of the 12th {{International Conference}} ({{EVOLANGXII}})},
+  author = {Andreas Baumann},
+  year = {2018},
+  pages = {19--30},
+}","Baumann (2018)"
 "Bromham2018Parasites","Lindell Bromham; Xia Hua; Marcel Cardillo; Hilde Schneemann; Simon J Greenhill","2018","Parasites and politics: why cross-cultural studies must control for relatedness, proximity and covarision","@Article{Bromham2018Parasites,
   title = {Parasites and politics: why cross-cultural studies must control for relatedness, proximity and covarision},
   author = {Lindell Bromham and Xia Hua and Marcel Cardillo and Hilde Schneemann and Simon J Greenhill},
@@ -2090,6 +2106,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2018},
   publisher = {The Royal Society},
 }","Derex, Perreault & Boyd (2018)"
+"derungs2018environmental","Curdin Derungs; Martina Köhl; Robert Weibel; Balthasar Bickel","2018","Environmental factors drive language density more in food-producing than in hunter--gatherer populations","@Article{derungs2018environmental,
+  title = {Environmental factors drive language density more in food-producing than in hunter--gatherer populations},
+  author = {Curdin Derungs and Martina Köhl and Robert Weibel and Balthasar Bickel},
+  journal = {Proc. R. Soc. B},
+  volume = {285},
+  number = {1885},
+  pages = {20172851},
+  year = {2018},
+  publisher = {The Royal Society},
+}","Derungs, Köhl, Weibel & Bickel (2018)"
 "evolang12CelmaMiralles","Alexandre Celma-Miralles; Juan M Toro","2018","Beat perception in a non-vocal learner: rats can identify isochronous beats","@InProceedings{evolang12CelmaMiralles,
   author = {Alexandre Celma-Miralles and Juan M Toro},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
