@@ -1,2 +1,7 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"language split",">","lexical change","pos","","language change","statistical","none","In each language family, we found significantly more lexical change along paths in which more new languages have emerged, the signature of punctuational evolution (Fig. 1B).","atkinson2008languages"
+"language splitting",">","rapid bursts of change","pos","Language Evolution","language change","model","yes","","atkinson2008languages"
+"rapid bursts of change",">","sister languages","pos","Language Evolution","language change","model","yes","","atkinson2008languages"
+"sister languages",">","lexical divergence","pos","Language Evolution","language change","model","yes","","atkinson2008languages"
+"lexical divergence",">","33% in bantu","none","Language Evolution","language change","model","yes","","atkinson2008languages"
+"lexical divergence",">","9.5% in austronesian","","Language Evolution","language change","model","yes","","atkinson2008languages"
+"lexical divergence",">","21% in indo-european","","Language Evolution","language change","model","yes","","atkinson2008languages"
