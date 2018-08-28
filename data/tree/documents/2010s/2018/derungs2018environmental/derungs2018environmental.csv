@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"language diversity","~","latitude","neg","","language change","statistical","none","","derungs2018environmental"
+"language diversity","~","climate:rainfall","pos","","language change","statistical","none","","derungs2018environmental"
+"language diversity","~","physical terrain: roughness","pos","","language change","statistical","none","","derungs2018environmental"
+"language diversity","~","physical terrain: river density","pos","","language change","statistical","none","This correlation is scale dependent","derungs2018environmental"
