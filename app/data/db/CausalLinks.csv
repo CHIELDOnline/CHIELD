@@ -606,6 +606,26 @@
 "3286451914","szmrecsanyi2009between","2170040672",">","3996588635","pos",NA,NA,"language change","statistical","",NA,"Rather, in spontaneous discourse L2 speakers appear to avoid grammatical marking of any kind, rather than opting for analytic marking or overtly L2-easy marking"
 "1052066739","wichmann_holman_2009","3041367352",">","2844212883","pos",NA,"norm, lexicon","language change","hypothesis","","","""the exception being an apparently faster rate of change in the larger of two closely related vari- ants. A possible explanation may be the influence on emerging standard (or cross- regional) variants from speakers who shift from different dialects to the standard."""
 "3806541166","wichmann_holman_2009","1746840506",">","2844212883","pos",NA,"lexicon, global typology, typology","language change","statistical","","no","""In the present paper, therefore, we derived another test from the null hypothesis that the ultrametric inequality is satisfied by lexical distances among triples of related languages. The test was applied to lexical data from nearly one-half of the world’s languages, and again the result was mainly negative,"""
+"2562494352","bowern2010correlates","2565278095",">","3570056592","pos",NA,NA,"cultural evolution","review","","","""task specialization, and the stronger need for local defenses facilitated the emergence of hierarchical social systems."""
+"3233148689","bowern2010correlates","6219488",">","1746840506","pos",NA,NA,"cultural evolution","review","","","""The population increase caused by the more stable availability of food also drove farming groups into new land"""
+"1074156717","bowern2010correlates","1746840506",">","3799227097","pos",NA,NA,"cultural evolution","review","","","""The population increase caused by the more stable availability of food also drove farming groups into new land"""
+"2441197395","bowern2010correlates","6219488",">","2565278095","pos",NA,NA,"cultural evolution","review","","","""The emergence of agriculture has been implicated in profound social change. The so-called Neolithic Revolution led to greater food production"""
+"2274609554","bowern2010correlates","3799227097",">","1026050230","pos",NA,NA,"cultural evolution","review","","","""Work by Bellwood (2002), Renfrew (1987), Nettle (1999), and others (known as the ‘farming dispersal hypothesis’) causally links both Holocene language spread and the distribution of certain linguistic features to the advantages that agriculture brings."""
+"3983941429","bowern2010correlates","1746840506",">","4011348903","neg",NA,NA,"language change","review","","","""Lupyan and Dale (2010) claim that population size is strongly correlated with linguistic complexity and that population expansion causes the loss of complex features."""
+"1081072252","bowern2010correlates","3672726309",">","4055760873","pos",NA,NA,"language change","review","","","""Milroy and Milroy (1992, 5), and earlier Milroy and Milroy (1985) provide evidence that dense and multiplex social networks are conservatizing; change is difficult to introduce to the network, and local norms are closely enforced."""
+"2949018883","bowern2010correlates","3672726309",">","3060598751","pos",NA,NA,"language change","review","","","""An alternative argument is provided by Nettle (2000a,b, 1999), who maintains that we would expect changes to be implemented more quickly in such groups simply because it takes less time for a change to diffuse across a group of 500 people than one of 50,000."""
+"647555316","bowern2010correlates","4055760873",">","3060598751","neg",NA,NA,"language change","hypothesis","","","These three arrows form an inconsistent triad. This third edge is implicit in the author's contrast between Milroy and Milroy (1992) and Nettle (2000) (page 669)"
+"1106740704","bowern2010correlates","3974655723",">","3658361432","neg",NA,NA,"cultural evolution","hypothesis","","","""However, in very small groups, population size is also less stable (as a percentage of total population; see for example Kimber (1990). We might therefore find higher levels of koineization, dialect leveling, or language shift, all of which would lead to greater rates of change."""
+"4012712168","bowern2010correlates","3658361432",">","4177474738","neg",NA,NA,"language change","hypothesis","","","""However, in very small groups, population size is also less stable (as a percentage of total population; see for example Kimber (1990). We might therefore find higher levels of koineization, dialect leveling, or language shift, all of which would lead to greater rates of change."""
+"3567344601","bowern2010correlates","3974655723",">","1242623269","neg",NA,NA,"cultural evolution","statistical","","","""Small communities usually have higher rates of exogamy than large ones"""
+"4128044355","bowern2010correlates","1242623269",">","3719167349","pos",NA,NA,"language change","hypothesis","","","""Small communities usually have higher rates of exogamy than large ones, which could lead to greater community-internal linguistic diversity and therefore greater variation and change, as well as greater opportunities for borrowing."""
+"3765111468","bowern2010correlates","3974655723",">","330085724","neg",NA,NA,"cultural evolution","statistical","","","""Because small language groups often have trade alliances with neighbors who speak other languages, we might find that the greater effects of language contact lead to greater average levels of change."""
+"2161199552","bowern2010correlates","330085724",">","2421226843","pos",NA,NA,"language change","statistical","","","""Because small language groups often have trade alliances with neighbors who speak other languages, we might find that the greater effects of language contact lead to greater average levels of change."""
+"2711843718","bowern2010correlates","2421226843",">","4177474738","pos",NA,NA,"language change","hypothesis","","","""Because small language groups often have trade alliances with neighbors who speak other languages, we might find that the greater effects of language contact lead to greater average levels of change."""
+"1887291534","bowern2010correlates","264262316",">","634707713","neg",NA,NA,"language change","review","","","""Lupyan and Dale argue that morphologically simple languages are easier for second language learners to acquire, and conversely that morphological overspecification assists child learners and therefore languages without large numbers of adult learners should tend to have increased morphological complexity"""
+"468376287","bowern2010correlates","1325890961","~","6219488","pos",NA,NA,"cultural evolution","statistical","","","""The availability of food resources is also (not surprisingly) negatively correlated with food storage practices, especially among hunter-gatherers."" [While the term ""negatively"" appears in the quote, the variable ""food risk"" here is used as the opposite of ""food availability"", so the correlation is properly positive. - SFM]"
+"4269996508","bowern2010correlates","1031734161","~","1746840506","pos",NA,NA,"cultural evolution","statistical","","","""Population sizes are also correlated with latitude, with smaller populations at higher latitudes and larger populations in temperate and tropical zones. """
+"2850534737","bowern2010correlates","1031734161","~","3719167349","pos",NA,NA,"cultural evolution","statistical","","","""we also find correlates in linguistic diversity; the tropics contain the majority of the world’s linguistic diversity (Nettle 1999)."""
 "4050980233","colonna2010long","3523749499","~","2295082792","pos",NA,NA,"language change","statistical","","","genetic distance from STRs and SNPs; linguistic distance from 62 syntax variables"
 "4088412666","colonna2010long","3523749499","~","233622896","pos",NA,NA,"language change","statistical","","",""
 "1443871308","galantucci2010effects","1284866140",">","31407103","pos",NA,NA,"cultural evolution","experiment","","yes",NA
@@ -1878,24 +1898,23 @@
 "2681444474","SegoviaMartinevolang12","4248256416",">","1923061136","neg",NA,NA,"cultural evolution","simulation","",NA,NA
 "674453602","sinnemakidigarbo2018","3270569964",">","184397397","neg",NA,"complexity","cultural evolution","statistical","","yes","Authors show that the degree of inflectional synthesis on the verb is affected by both proportion of L2 learners and population size (accepted paper; details will follow later)."
 "2103500612","sinnemakidigarbo2018","1746840506",">","184397397","neg",NA,"complexity","cultural evolution","statistical","","yes","Authors show that the degree of inflectional synthesis on the verb is affected by both proportion of L2 learners and population size (accepted paper; details will follow later)."
-"3587529991","spike2018complexity","2771823229",">","1705087338","pos",NA,NA,"cultural evolution","model","","",NA
-"2876793029","spike2018complexity","938445341",">","4011348903","pos",NA,NA,"language change","model","","yes",NA
-"2562495953","spike2018complexity","2203045387",">","4011348903","neg",NA,NA,"language change","model","","yes",NA
-"2199225427","spike2018complexity","3732553649",">","938445341","pos",NA,NA,"language change","model","","yes",NA
-"3173119558","spike2018complexity","1705087338",">","2203045387","neg",NA,NA,"cultural evolution","model","","yes",NA
-"3892197355","spike2018complexity","1746840506",">","1705087338","pos",NA,NA,"cultural evolution","model","","yes",NA
-"4249010395","spike2018complexity","1705087338",">","938445341","neg",NA,NA,"cultural evolution","model","","yes",NA
-"3932012903","spike2018complexity","1705087338",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
-"305336677","spike2018complexity","2203045387",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
+"194422425","spike2018complexity","4028116375",">","508526560","neg",NA,NA,"language change","model","","yes",NA
+"3054824279","spike2018complexity","3170287203",">","508526560","neg",NA,NA,"language change","model","","yes",NA
+"852870109","spike2018complexity","3061338629",">","508526560","pos",NA,NA,"language change","model","","yes",NA
 "4005391079","spike2018complexity","1270992509",">","4011348903","pos",NA,NA,"language change","model","","yes",NA
-"4293609595","spike2018complexity","785194831",">","508526560","pos",NA,NA,"language change","model","","yes",NA
-"2796234772","spike2018complexity","3170287203",">","508526560","pos",NA,NA,"language change","model","","yes",NA
+"2562495953","spike2018complexity","2203045387",">","4011348903","neg",NA,NA,"language change","model","","yes",NA
+"2876793029","spike2018complexity","938445341",">","4011348903","pos",NA,NA,"language change","model","","yes",NA
+"4249010395","spike2018complexity","1705087338",">","938445341","neg",NA,NA,"cultural evolution","model","","yes",NA
+"2199225427","spike2018complexity","3732553649",">","938445341","pos",NA,NA,"language change","model","","yes",NA
+"3587529991","spike2018complexity","2771823229",">","1705087338","pos",NA,NA,"cultural evolution","model","","",NA
+"3892197355","spike2018complexity","1746840506",">","1705087338","pos",NA,NA,"cultural evolution","model","","yes",NA
+"3173119558","spike2018complexity","1705087338",">","2203045387","neg",NA,NA,"cultural evolution","model","","yes",NA
 "4176475815","spike2018complexity","508526560",">","2203045387","pos",NA,NA,"language change","model","","yes",NA
-"3603387523","spike2018complexity","938445341",">","1270992509","neg",NA,NA,"cultural evolution","model","","yes",NA
+"2796234772","spike2018complexity","3170287203",">","508526560","neg",NA,NA,"language change","model","","yes",NA
 "3613025337","spike2018complexity","3061338629",">","508526560","pos",NA,NA,"language change","model","","yes",NA
-"2965240378","spike2018complexity","3061338629",">","785194831","pos",NA,NA,"language change","model","","yes",NA
-"3283830683","spike2018complexity","3170287203",">","785194831","neg",NA,NA,"language change","model","","yes",NA
-"2575119583","spike2018complexity","4028116375",">","785194831","neg",NA,NA,"language change","model","","yes",NA
+"3932012903","spike2018complexity","1705087338",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
+"3603387523","spike2018complexity","938445341",">","1270992509","neg",NA,NA,"cultural evolution","model","","yes",NA
+"305336677","spike2018complexity","2203045387",">","1270992509","pos",NA,NA,"cultural evolution","model","","yes",NA
 "2112185318","vernes2018bats","3870970400",">","4219793443","none",NA,NA,"none","experiment","",NA,""
 "3478136595","vernes2018bats","3362711614",">","4219793443","none",NA,NA,"none","experiment","",NA,""
 "1942702816","vernes2018bats","2158918291",">","4219793443","none",NA,NA,"none","experiment","",NA,""
