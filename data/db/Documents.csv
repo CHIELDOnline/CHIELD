@@ -130,6 +130,14 @@
   year = {1990},
   abstract = {The oft-noted genetic and typological diversity of the languages of the New World is due not to accidents of history but to the operation of regular principles of linguistic geography. Four building blocks of a theory of linguistic diversity are presented here: a classification and measures of diversity, an account of the causes of diversity, measures of rates of differentiation, and means of estimating the age of a linguistic population. On the most conservative archeological view, the New World was first colonized some 12,000 years ago; on the received view, up to 20,000 years ago. But no high-latitude area like Siberia, Beringia, Alaska, or northern Canada could have contributed or transmitted the linguistic diversity to seed the New World in these time frames, and no single dispersing family could have given rise to the attested diversity in these time frames. The unmistakable testimony of the linguistic evidence is that the New World has been inhabited nearly as long as Australia or New Guinea, perhaps some 35,000 years. Genetic unity for 'Amerind' is incompatible with the chronology demanded by the linguistic facts.},
 }","Nichols (1990)"
+"noble1991evolutionary","William Noble; Iain Davidson","1991","The evolutionary emergence of modern human behaviour: Language and its archaeology","@Article{noble1991evolutionary,
+  title = {The evolutionary emergence of modern human behaviour: Language and its archaeology},
+  author = {William Noble and Iain Davidson},
+  journal = {Man},
+  pages = {223--253},
+  year = {1991},
+  publisher = {JSTOR},
+}","Noble & Davidson (1991)"
 "Dunbar1992","Robin IM Dunbar","1992","Neocortex size as a constraint on group size in primates","@Article{Dunbar1992,
   doi = {10.1016/0047-2484(92)90081-j},
   url = {https://doi.org/10.1016/0047-2484(92)90081-j},
@@ -2114,6 +2122,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   number = {1},
   pages = {144--129},
 }","Skelton (2017)"
+"tattersall2017material","Ian Tattersall","2017","The material record and the antiquity of language","@Article{tattersall2017material,
+  title = {The material record and the antiquity of language},
+  author = {Ian Tattersall},
+  journal = {Neuroscience \& Biobehavioral Reviews},
+  year = {2017},
+  volume = {81},
+  pages = {247--254},
+  publisher = {Elsevier},
+}","Tattersall (2017)"
 "tinits2017usage","Peeter Tinits; Jonas Nölle; Stefan Hartmann","2017","Usage context influences the evolution of overspecification in iterated learning","@Article{tinits2017usage,
   title = {Usage context influences the evolution of overspecification in iterated learning},
   author = {Peeter Tinits and Jonas Nölle and Stefan Hartmann},
