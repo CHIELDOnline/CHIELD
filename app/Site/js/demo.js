@@ -22,8 +22,8 @@ function updateRecord(response,type){
 	}
 	if(type=="links"){
 		doc_causal_links = JSON.parse(response);
-		network_nodes.remove(network_nodes.getIds());
-		network_edges.remove(network_edges.getIds());
+		//network_nodes.remove(network_nodes.getIds());
+		//network_edges.remove(network_edges.getIds());
 		redrawGUIfromObject(doc_causal_links); 
 	}
 	
