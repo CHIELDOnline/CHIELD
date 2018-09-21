@@ -164,8 +164,10 @@ function addEdgeToGrid(selectedVar1,causal_relation,selectedVar2){
 		var fieldName = fields[i].name;
 		rowData[fieldName] = "";
 	}
-	
-	
+
+	// get node positions for later
+	var currentNodePos = network.getPositions();
+
 	// Insert into grid.
 	// First, we set 'calledGridUpdateFromScript' to true
 	// so the script knows not to update the GUI after the grid is updated
@@ -174,6 +176,14 @@ function addEdgeToGrid(selectedVar1,causal_relation,selectedVar2){
    			 console.log("insertion completed");
    			 calledGridUpdateFromScript = false;
 		});
+
+	// put nodes back in previous positions
+	for(var i=0;i< Object.keys(currentNodePos).length;++i){
+		var nodeID = Object.keys(currentNodePos)[i];
+		network_nodes.update({  id:nodeID,
+								x:currentNodePos[nodeID].x,
+								y:currentNodePos[nodeID].y});
+	}
 
 }
 
