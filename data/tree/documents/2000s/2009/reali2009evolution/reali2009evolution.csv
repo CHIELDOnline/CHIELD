@@ -1,0 +1,3 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"iterated learning",">","regularisation of variation","pos","Language evolution","language change","model","none","Model and 3 experiments","reali2009evolution"
+"regularisation bias",">","regularisation of variation","n-m","Language evolution","language change","experiment","none","Even a weak bias towards regularization can allow regular languages","reali2009evolution"
