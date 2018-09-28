@@ -1,0 +1,6 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"great ape baseline",">","combinatorial structure","","","preadaptation","hypothesis","","""From the emerging biological evidence, it is clear that many of the basic behaviors needed to produce combinatorial structure are already present in apes — and by homology our last common ancestor with them""","zuidema2018evolution"
+"great ape baseline",">","compositional semantics","","","preadaptation","hypothesis","","","zuidema2018evolution"
+"vocabulary size",">","combinatorial structure","","","cultural evolution","hypothesis","","""It has been proposed that the need for an increasing number of signals caused evolution of combinatorial structure and our ability to deal with it... There are even mathematical and computer models that simulate this""","zuidema2018evolution"
+"cultural evolution",">","combinatorial structure","","","cultural evolution","hypothesis","","""Through cultural transmission, languages will then have evolved (culturally) to show more and more combinatorial structure""","zuidema2018evolution"
+"combinatorial structure","<=>","compositional semantics","","","cultural evolution","hypothesis","","""Thus, the ability to use combinatorial structure and combinatorial structure itself could have co-evolved gradually""","zuidema2018evolution"
