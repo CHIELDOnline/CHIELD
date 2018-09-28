@@ -25,6 +25,7 @@ function updateRecord(response,type){
 		network_nodes.remove(network_nodes.getIds());
 		network_edges.remove(network_edges.getIds());
 		redrawGUIfromObject(doc_causal_links); 
+		network.fit();
 	}
 	
 }
