@@ -318,6 +318,16 @@
 "261108026","cangelosi01howNouns","3634902485",">","204556361","pos",NA,"lexicon","preadaptation","simulation","neural network","yes",""
 "3716399553","cangelosi01howNouns","1109429773",">","3031258614","pos",NA,"lexicon","coevolution","simulation","neural network","yes","What about link to syntax?"
 "2377154732","cangelosi01howNouns","204556361",">","3634902485","pos",NA,"lexicon","coevolution","simulation","neural network","yes",""
+"1395007142","gennari2002motion","2866678753","~=","963073673",NA,NA,"spatial language",NA,"experiment","","",NA
+"1248613828","gennari2002motion","2866678753","~=","3590905158",NA,NA,"spatial language",NA,"experiment","","",NA
+"4168686734","gennari2002motion","3278942209",">","2866678753",NA,NA,"spatial language",NA,"experiment","","",NA
+"2022962540","gennari2002motion","4233869025",">","2866678753",NA,NA,"spatial language",NA,"experiment","","no",NA
+"3477654181","gennari2002motion","4233869025","~=","201621352",NA,NA,"spatial language",NA,"experiment","","",NA
+"297999472","gennari2002motion","2866678753","~=","2115356377",NA,NA,"spatial language",NA,"experiment","","",NA
+"1026863477","gennari2002motion","201621352",">","963073673",NA,NA,"spatial language",NA,"experiment","","",NA
+"1525805232","gennari2002motion","2115356377","/>","963073673",NA,NA,"spatial language",NA,"experiment","","",NA
+"3443174406","gennari2002motion","201621352","/>","3590905158",NA,NA,"spatial language",NA,"experiment","","",NA
+"3679610293","gennari2002motion","2115356377","/>","3590905158",NA,NA,"spatial language",NA,"experiment","","",NA
 "3502589323","levinson2002returning","213616591","/>","313563106",NA,NA,"spatial language","cultural evolution","experiment","","yes",NA
 "3886189192","levinson2002returning","2287359411",">","313563106",NA,NA,"spatial language","cultural evolution","experiment","","yes",NA
 "810575858","levinson2002returning","213616591","/>","2287359411",NA,NA,"spatial language","cultural evolution","experiment","","yes",NA
@@ -2038,6 +2048,11 @@
 "585422566","lev2018unforeseen","1166300837","~","1804701879","pos",NA,"Cognition","language change","experiment","","yes"," 'We further find that the degree to which people adjust their processing to non‐native speakers is related to the degree to which they adjust their speech to them."
 "1292329847","lev2018unforeseen","1251135464",">","1166300837","pos",NA,"Linguistics","language change","review","","yes","'It is well documented that people accommodate their speech when they interact with NNS by simplifying their speech, avoiding local variants, widening their vowel space, slowing down their speech, and so forth (Barbu, Martin, & Chevrot, 2014; Biersack, Kempe, & Knapton, 2005; Long, 1983; Uther, Knoll, & Burnham, 2007)'"
 "276241014","lev2018unforeseen","1804701879",">","1546524409","neg",NA,"Cognitive Sociolinguistics","language change","hypothesis","","yes","This suggests that merely expecting NNS to have lower linguistic competence can lead people to remember their interaction with them in less detail and in a manner that is more in line with their expectations.'"
+"1916125543","li2018competing","421486999",">","3476893381",NA,NA,"spatial language","","experiment","","yes",NA
+"201766951","li2018competing","1087536274",">","313563106",NA,NA,"spatial language","cultural evolution","hypothesis","","",NA
+"726836878","li2018competing","2287359411","/>","313563106",NA,NA,"spatial language","cultural evolution","experiment","","yes",NA
+"4022787216","li2018competing","3476893381","~","313563106",NA,NA,"spatial language","cultural evolution","hypothesis","","",NA
+"3738116743","li2018competing","1087536274","~=","421486999",NA,NA,"spatial language","cultural evolution","hypothesis","","",NA
 "128378645","miyagawa2018cross","4089599729",">","666570964","pos",NA,NA,"preadaptation","review","",NA,"individuals who were able to transform symbolic thinking into sensory stimuli —likely privileged in the society— may have had a higher rate of reproductive success"
 "1443462733","miyagawa2018cross","4089599729",">","1122996870","pos",NA,NA,"preadaptation","review","",NA,"individuals who were able to transform symbolic thinking into sensory stimuli —likely privileged in the society— may have had a higher rate of reproductive success"
 "3226525463","miyagawa2018cross","4089599729",">","1033335544","pos",NA,NA,"preadaptation","hypothesis","",NA,"We hypothesize that the individuals who were able to transform symbolic thinking into sensory stimuli —likely privileged in the society— may have had a higher rate of reproductive success, thus spreadingthe cognitive ability required for this practice through the population."
