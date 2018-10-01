@@ -511,6 +511,23 @@
 "1660062289","Skoyles_2006","269975053",">","497384921","pos",NA,NA,"",NA,NA,NA,""
 "1556140227","Skoyles_2006","497384921",">","2695952131","pos",NA,NA,"",NA,NA,NA,""
 "1937375871","Skoyles_2006","2695952131",">","3495528798","",NA,NA,"",NA,NA,NA,""
+"1216358931","chomsky2007biolinguistic","1411636729",">","130863228",NA,NA,NA,"coevolution","hypothesis","",NA,"""An account of the evolution of language will have to deal with the property of unbounded Merge, and whatever else remains in UG, the genetic endowment""; ""the ‘emergence’ was the capacity for recursive generation in its simplest possible form: the operation Merge, linked to atomic conceptual resources to create a ‘language of thought’, perhaps near optimally. That exaptation would indeed have been adaptive, and could well have come to dominate the particular population of the human lineage in which it occurred."""
+"4145753483","chomsky2007biolinguistic","1513097241",">","130863228",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"876962500","chomsky2007biolinguistic","130863228",">","2754310106",NA,NA,NA,"coevolution","hypothesis","",NA,"""The later event would have been the externalization, laying the basis for rich social interchange and the great leap forward."""
+"3612827862","chomsky2007biolinguistic","3680325353",">","1411636729",NA,NA,NA,"preadaptation","hypothesis","",NA,"""The core principle of language, unbounded Merge, must have arisen from some rewiring of the brain, presumably not too long before the ‘great leap forward’, and hence very recently in evolutionary time. Such changes take place in an individual, not a group. The individual so endowed would have had many advantages: capacities for complex thought, planning, interpretation, and so on. The capacity would be transmitted to offspring, coming to dominate a small breeding group. At that stage, there would be an advantage to externalization, so the capacity would be linked as a secondary process to the sensorimotor system for externalization and interaction"""
+"2283261531","chomsky2007biolinguistic","3680325353",">","1513097241",NA,NA,NA,"preadaptation","hypothesis","",NA,""
+"3071525753","chomsky2007biolinguistic","4264128334",">","1411636729",NA,NA,NA,"preadaptation","hypothesis","",NA,""
+"3409251356","chomsky2007biolinguistic","4264128334",">","1513097241",NA,NA,NA,"preadaptation","hypothesis","",NA,""
+"1540097140","chomsky2007biolinguistic","1411636729",">","2502066793",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"4262819559","chomsky2007biolinguistic","2502066793",">","2754310106",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"1472133276","chomsky2007biolinguistic","1411636729",">","2834095368",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"3412235754","chomsky2007biolinguistic","2834095368",">","2754310106",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"1083194412","chomsky2007biolinguistic","1411636729",">","827545027",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"3020809210","chomsky2007biolinguistic","827545027",">","2754310106",NA,NA,NA,"coevolution","hypothesis","",NA,""
+"3136975842","chomsky2007biolinguistic","1411636729",">","1025699252",NA,NA,NA,"cultural evolution","hypothesis","",NA,"""Perhaps it was an automatic consequence of absolute brain size, as Striedter suggests, or perhaps some minor chance mutation. Sometime later – not very long in evolutionary time – came further innovations, perhaps cultural, that led to behaviourally modern humans, the ‘great leap forward’, and the trek from Africa."""
+"1165465898","chomsky2007biolinguistic","43189547",">","700311259",NA,NA,NA,"cultural evolution","hypothesis","",NA,""
+"499374750","chomsky2007biolinguistic","1025699252",">","43189547",NA,NA,NA,"cultural evolution","hypothesis","",NA,""
+"2406752949","chomsky2007biolinguistic","43189547",">","3785553139",NA,NA,NA,"cultural evolution","hypothesis","",NA,""
 "2866667954","dediu2007linguistic","1270498918",">","1317752949","none",NA,"historical linguistics","language change","review","","","It is generally acknowledged (22) that the process of language acquisition plays a major role in historical language change: language acquirers construct a grammar based on the language they hear around them, but the constructed grammar is not necessarily identical to that of their models, and the cumulative effect of such small differences over generations leads to language change."
 "2653976910","dediu2007linguistic","1852676864","~","3996645437","none",NA,"phonetics; neurobiology","none","review","","","A later study by the same team (P. C. M. Wong, personal communication), focusing on the relationship between the anatomy of the primary auditory cortex and linguistic tone learning, found that the successful learners showed greater volume of left, but not right, Heschl's Gyrus, especially for gray matter."
 "1618055669","dediu2007linguistic","3680325353",">","1852676864","none",NA,"neurobiology","none","hypothesis","","no","Although this correlation could be entirely due to environmental effects of previous experience, it could also point to a genetic component."
@@ -786,6 +803,13 @@
 "564158667","berwick2011songs","668439925","<=>","3036999762","pos",NA,"semantics; syntax; early language evolution","preadaptation","hypothesis","","no","see Figure 2"
 "2633846917","berwick2011songs","668439925","<=>","780032119","pos",NA,"semantics; early language evolution","preadaptation","hypothesis","","no","see Figure 2"
 "955172757","Calude2011","2139249206",">","2844212883","neg",NA,NA,"language change","statistical","","yes",NA
+"2603472037","haun2011plasticity","2287359411",">","313563106",NA,NA,"spatial language","","experiment","","yes",NA
+"759424195","haun2011plasticity","2287359411",">","2276223598",NA,NA,"spatial language","","experiment","","yes",NA
+"112129915","haun2011plasticity","313563106","~","2276223598",NA,NA,"spatial language","","experiment","","yes",NA
+"112804629","haun2011plasticity","313563106",">","3476893381",NA,NA,"spatial language","","experiment","","yes",NA
+"2281054179","haun2011plasticity","1388146405","~","2287359411",NA,NA,"spatial language","cultural evolution","hypothesis","","",NA
+"393655540","haun2011plasticity","2273464980","/>","313563106",NA,NA,"spatial language","","experiment","","yes",NA
+"2351147883","haun2011plasticity","1388146405","~","2276223598",NA,NA,"spatial language","cultural evolution","hypothesis","","",NA
 "655428662","little2011role","3071805488",">","634707713","neg",NA,NA,"language change","experiment","","no",NA
 "1092308599","piantadosi2011word","68874892",">","3344516874","pos",NA,NA,"language change","statistical","","","Our results indicate that information content is a considerably more important predictor of word length than frequency."
 "4082725631","rzeszutek2011structure","2421449091","~","3195384208","pos",NA,NA,"language change","statistical","",NA,"""The pairwise population-level distances based on the modal profiles (ignoring internal diversity) were highly correlated with pairwise ΦST distances (rs = 0.730, p < 0.001), which take into account the internal variation in musical repertoires"""
