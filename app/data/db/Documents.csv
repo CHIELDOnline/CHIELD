@@ -651,6 +651,18 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6WN2-4JG5FPH-4/2/17b7f97172e95704ee2b79c891e8f497},
   bdsk-url-2 = {http://dx.doi.org/10.1016/j.mehy.2006.01.042},
 }","Skoyles (2006)"
+"szamado2006selective","Szabolcs Számadó; Eörs Szathmáry","2006","Selective Scenarios for the Emergence of Natural Language","@Article{szamado2006selective,
+  title = {Selective Scenarios for the Emergence of Natural Language},
+  volume = {21},
+  issn = {0169-5347},
+  doi = {10.1016/j.tree.2006.06.021},
+  number = {10},
+  journal = {Trends in Ecology \& Evolution},
+  author = {Szabolcs Számadó and Eörs Szathmáry},
+  month = {oct},
+  year = {2006},
+  pages = {555--561},
+}","Számadó & Szathmáry (2006)"
 "chomsky2007biolinguistic","Noam Chomsky","2007","Biolinguistic explorations: Design, development, evolution","@Article{chomsky2007biolinguistic,
   title = {Biolinguistic explorations: Design, development, evolution},
   author = {Noam Chomsky},
