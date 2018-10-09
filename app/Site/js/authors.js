@@ -22,7 +22,7 @@ dtableConfig =  {
 $(document).ready(function(){
 
     $("#header").load("header.html", function(){
-        $("#CausalLinksHREF").addClass("active");
+        $("#AuthorsHREF").addClass("active");
     }); 
 
     

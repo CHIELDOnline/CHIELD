@@ -278,7 +278,7 @@ $(document).ready(function(){
 	$("#quoteDiv").hide();
 	$("#bibtexsource").hide();	
 	$("#header").load("header.html", function(){
-		$("#DocumentsHREF").addClass("active");
+		$("#AuthorsHREF").addClass("active");
 	}); 
 
 
