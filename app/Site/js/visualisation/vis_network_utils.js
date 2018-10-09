@@ -530,7 +530,11 @@ function getEdgeColor(edge){
   }
 
   if(edge_colour_scheme=="document"){
-    var docCol = documentColours[edge.bibref];
+    var edgeBibRef = edge.bibref;
+    if(edgeBibRef===undefined){
+      edgeBibRef = edge.citation;
+    }
+    var docCol = documentColours[edgeBibRef];
     if(docCol===undefined){
       return("black");
     } else{
@@ -599,10 +603,14 @@ function calculateDocumentColours(){
   var ids = network_edges.getIds();
   for(var i=0; i<ids.length; ++i){
     var edge = network_edges.get(ids[i]);
-    if (document_frequency[edge.bibref]) {
-           document_frequency[edge.bibref]++;
+    var edgeBibRef = edge.bibref;
+    if(edgeBibRef===undefined){
+      edgeBibRef = edge.citation;
+    }
+    if (document_frequency[edgeBibRef]) {
+           document_frequency[edgeBibRef]++;
         } else {
-           document_frequency[edge.bibref] = 1;
+           document_frequency[edgeBibRef] = 1;
         }
   }
 
