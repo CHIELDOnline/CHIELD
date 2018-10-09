@@ -16,6 +16,7 @@ dtableConfig = {
         lengthChange: false,
         autoWidth: true,
         //fixedColumns: {leftColumns: 3},
+        pageLength: 5,
     	columns: [
     		{data: 1},
     		{data: 2},
