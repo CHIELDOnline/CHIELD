@@ -94,6 +94,18 @@
   volume = {95},
   year = {1986},
 }","Marck (1986)"
+"guy1988","Gregory R Guy","1988","Language and Social Class","@InCollection{guy1988,
+  author = {Gregory R Guy},
+  title = {Language and Social Class},
+  booktitle = {Linguistics: The {C}ambridge Survey},
+  publisher = {Cambridge University Press},
+  year = {1988},
+  editor = {Frederick J. Newmeyer},
+  volume = {4: Language: The Socio-cultural Context},
+  chapter = {3},
+  pages = {37--63},
+  address = {Cambridge},
+}","Guy (1988)"
 "davidson1989archaeology","Iain Davidson; William Noble","1989","The Archaeology of Perception: Traces of Depiction and Language","@Article{davidson1989archaeology,
   title = {The Archaeology of Perception: Traces of Depiction and Language},
   author = {Iain Davidson and William Noble},
