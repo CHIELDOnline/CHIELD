@@ -294,6 +294,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {1997},
   publisher = {Archaeological and Anthropological Society of Victoria, Inc.},
 }","Bednarik (1997)"
+"smith1997major","John Maynard Smith; Eors Szathmary","1997","The major transitions in evolution","@Book{smith1997major,
+  title = {The major transitions in evolution},
+  author = {John Maynard Smith and Eors Szathmary},
+  year = {1997},
+  publisher = {Oxford University Press},
+}","Smith & Szathmary (1997)"
 "chen1998can","Chao C Chen; Xiao-Ping Chen; James R Meindl","1998","How can cooperation be fostered? The cultural effects of individualism-collectivism","@Article{chen1998can,
   title = {How can cooperation be fostered? The cultural effects of individualism-collectivism},
   author = {Chao C Chen and Xiao-Ping Chen and James R Meindl},
@@ -1116,6 +1122,12 @@ The number of different species found in a given area of the Earth increases fro
   publisher = {John Benjamins Publishing Company},
   abstract = {Computational simulations have provided evidence that the use of linguistic cues as group markers plays an important role in the development of linguistic diversity shortcite (Nettle & Dunbar, 1997; Nettle, 1999). Other simulations, however, have contradicted these findings (Livingstone & Fyfe, 1999; Livingstone, 2002). Similar disagreements exist in sociolinguistics (e.g. Labov, 1963, 2001; Trudgill, 2004, 2008a; Baxter et al., 2009). This paper describes an experimental study in which participants played an anonymous economic game using an instant-messenger-style program and an artificial ‘alien language’. The competitiveness of the game and the frequency with which players interacted were manipulated. Given frequent enough interaction with team-mates, players were able to use linguistic cues to identify themselves. In the most competitive condition, this led to divergence in the language, which did not occur in other conditions. This suggests that both frequency of interaction and a pressure to use language to mark identity play a significant role in encouraging linguistic divergence over short periods, but that neither is sufficient on its own.},
 }","Roberts (2010)"
+"schmandt2010writing","Denise Schmandt-Besserat","2010","How writing came about","@Book{schmandt2010writing,
+  title = {How writing came about},
+  author = {Denise Schmandt-Besserat},
+  year = {2010},
+  publisher = {University of Texas Press},
+}","Schmandt-Besserat (2010)"
 "sinnemaki2010word","Kaius Sinnemäki","2010","Word order in zero-marking languages","@Article{sinnemaki2010word,
   title = {Word order in zero-marking languages},
   author = {Kaius Sinnemäki},
@@ -1319,6 +1331,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {2012},
   publisher = {American Association for the Advancement of Science},
 }","Kemp & Regier (2012)"
+"levi2012tristes","Claude Lévi-Strauss","2012","Tristes tropiques","@Book{levi2012tristes,
+  title = {Tristes tropiques},
+  author = {Claude Lévi-Strauss},
+  year = {2012},
+  publisher = {Penguin},
+}","Lévi-Strauss (2012)"
 "nettle2012social","Daniel Nettle","2012","Social scale and structural complexity in human languages","@Article{nettle2012social,
   title = {Social scale and structural complexity in human languages},
   author = {Daniel Nettle},
