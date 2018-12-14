@@ -930,6 +930,16 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/minett04endangeredLanguage.html},
   bdsk-url-2 = {http://dx.doi.org/10.1016/j.lingua.2007.04.001},
 }","Minett & Wang (2008)"
+"tabellini2008institutions","Guido Tabellini","2008","Institutions and culture","@Article{tabellini2008institutions,
+  title = {Institutions and culture},
+  author = {Guido Tabellini},
+  journal = {Journal of the European Economic Association},
+  volume = {6},
+  number = {2-3},
+  pages = {255--294},
+  year = {2008},
+  publisher = {Oxford University Press},
+}","Tabellini (2008)"
 "tamariz2008exploring","Monica Tamariz","2008","Exploring systematicity between phonological and context-cooccurrence representations of the mental lexicon","@Article{tamariz2008exploring,
   title = {Exploring systematicity between phonological and context-cooccurrence representations of the mental lexicon},
   author = {Monica Tamariz},
@@ -2293,6 +2303,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2017},
   publisher = {Springer},
 }","Laland (2017)"
+"li2017does","King King Li","2017","How does language affect decision-making in social interactions and decision biases?","@Article{li2017does,
+  title = {How does language affect decision-making in social interactions and decision biases?},
+  author = {King King Li},
+  journal = {Journal of Economic Psychology},
+  volume = {61},
+  pages = {15--28},
+  year = {2017},
+  publisher = {Elsevier},
+}","Li (2017)"
 "little2017conventionalisation","Hannah Little; Kerem Eryılmaz; Bart de Boer","2017","Conventionalisation and discrimination as competing pressures on continuous speech-like signals","@Article{little2017conventionalisation,
   title = {Conventionalisation and discrimination as competing pressures on continuous speech-like signals},
   author = {Hannah Little and Kerem Eryılmaz and Bart {de Boer}},
