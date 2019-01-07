@@ -113,14 +113,15 @@ $(document).ready(function(){
 	// Add column searching 
     dtable.columns().every( function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value.trim() ) {
-                that
-                    .search( this.value.trim() )
-                    .draw();
-            }
-        } );
+ 		if(that.visible()){
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value.trim() ) {
+	                that
+	                    .search( this.value.trim() )
+	                    .draw();
+	            }
+	        } );
+	    }
     } );
     $('#'+tableId+' tfoot tr').appendTo('#'+tableId+' thead');
     document.getElementById(tableId+'_filter').style.display = "none";

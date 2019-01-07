@@ -1774,6 +1774,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   number = {6},
   doi = {10.1371/journal.pone.0128254},
 }","Bentz, Verkerk, Kiela, Hill et al. (2015)"
+"bowern2015linguistics","Claire Bowern","2015","Linguistics: Evolution and Language Change","@Article{bowern2015linguistics,
+  title = {Linguistics: Evolution and Language Change},
+  author = {Claire Bowern},
+  journal = {Current Biology},
+  volume = {25},
+  number = {1},
+  pages = {R41--R43},
+  year = {2015},
+  publisher = {Cell},
+}","Bowern (2015)"
 "bromham2015rate","Lindell Bromham; Xia Hua; Thomas G Fitzpatrick; Simon J Greenhill","2015","Rate of language evolution is affected by population size","@Article{bromham2015rate,
   title = {Rate of language evolution is affected by population size},
   author = {Lindell Bromham and Xia Hua and Thomas G Fitzpatrick and Simon J Greenhill},
@@ -1826,6 +1836,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2015},
   publisher = {Elsevier},
 }","Kirby, Tamariz, Cornish & Smith (2015)"
+"marino2015brain","Lori Marino","2015","The Brain: Evolution, Structure, and Function","@Book{marino2015brain,
+  title = {The Brain: Evolution, Structure, and Function},
+  booktitle = {Dolphin communication and cognition: past, present, and future},
+  author = {Lori Marino},
+  editor = {Denise L Herzing and Christine M Johnson},
+  year = {2015},
+  pages = {1--18},
+  publisher = {MIT Press},
+}","Marino (2015)"
 "morgan2015experimental","Thomas JH Morgan; Natalie T Uomini; Luke E Rendell; Laura Chouinard-Thuly; Sally E Street; Hannah M Lewis; Catherine P Cross; C Evans; R Kearney; I De la Torre; Andrew Whiten; Kevin N Laland","2015","Experimental evidence for the co-evolution of hominin tool-making teaching and language","@Article{morgan2015experimental,
   title = {Experimental evidence for the co-evolution of hominin tool-making teaching and language},
   abstract = {Hominin reliance on Oldowan stone tools—which appear from 2.5 mya and are believed to have been socially transmitted—has been hypothesized to have led to the evolution of teaching and language. Here we present an experiment investigating the efficacy of transmission of Oldowan tool-making skills along chains of adult human participants (N=184) using five different transmission mechanisms. Across six measures, transmission improves with teaching, and particularly with language, but not with imitation or emulation. Our results support the hypothesis that hominin reliance on stone tool-making generated selection for teaching and language, and imply that (i) low-fidelity social transmission, such as imitation/emulation, may have contributed to the ~700,000 year stasis of the Oldowan technocomplex, and (ii) teaching or proto-language may have been pre-requisites for the appearance of Acheulean technology. This work supports a gradual evolution of language, with simple symbolic communication preceding behavioural modernity by hundreds of thousands of years.},
@@ -2617,6 +2636,13 @@ status or trade, though we note that the most frequently loaned items in the sam
   title = {The role of community size in the emergence of linguistic structure},
   year = {2018},
 }","Raviv, Meyer & Lev-Ari (2018)"
+"feldmann2018linguistic","Horst Feldmann","2018","Do Linguistic Structures Affect Human Capital? The Case of Pronoun Drop","@Article{feldmann2018linguistic,
+  title = {Do Linguistic Structures Affect Human Capital? The Case of Pronoun Drop},
+  author = {Horst Feldmann},
+  journal = {Kyklos},
+  year = {2018},
+  publisher = {Wiley Online Library},
+}","Feldmann (2018)"
 "fitch2018animals","W Tecumseh Fitch","2018","What animals can teach us about human language: The phonological continuity hypothesis","@Article{fitch2018animals,
   title = {What animals can teach us about human language: The phonological continuity hypothesis},
   author = {W Tecumseh Fitch},

@@ -137,14 +137,15 @@ function updateLinksTable2(text,tableIdX,dtableConfigX){
 	// Add column searching
     dtableX.columns().every( function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
-                that
-                    .search( this.value )
-                    .draw();
-            }
-        } );
+ 		if(that.visible()){
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value ) {
+	                that
+	                    .search( this.value )
+	                    .draw();
+	            }
+	        } );
+    	}
     } );
     $('#'+tableIdX+' tfoot tr').appendTo('#'+tableIdX+' thead');
     document.getElementById(tableIdX+'_filter').style.display = "none";
