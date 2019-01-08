@@ -1597,6 +1597,14 @@ status or trade, though we note that the most frequently loaned items in the sam
   number = {1},
   pages = {59--82},
 }","DeLancey (2014)"
+"dunbar2014fireside","Robin IM Dunbar; John AJ Gowlett","2014","Fireside chat: the impact of fire on hominin socioecology","@Article{dunbar2014fireside,
+  title = {Fireside chat: the impact of fire on hominin socioecology},
+  author = {Robin IM Dunbar and John AJ Gowlett},
+  journal = {Lucy to language: the benchmark papers},
+  pages = {277--296},
+  year = {2014},
+  publisher = {Oxford: Oxford University Press},
+}","Dunbar & Gowlett (2014)"
 "fay2014creating","Nicolas Fay; Casey J Lister; T Mark Ellison; Susan Goldin-Meadow","2014","Creating a communication system from scratch: gesture beats vocalization hands down","@Article{fay2014creating,
   title = {Creating a communication system from scratch: gesture beats vocalization hands down},
   author = {Nicolas Fay and Casey J Lister and T Mark Ellison and Susan Goldin-Meadow},
@@ -1913,6 +1921,15 @@ status or trade, though we note that the most frequently loaned items in the sam
   volume = {7},
   year = {2015},
 }","Welsh (2015)"
+"wursig2015dolphin","Bernd Würsig; Heidi C. Pearson","2015","Dolphin Societies: Structure and Function","@Book{wursig2015dolphin,
+  title = {Dolphin Societies: Structure and Function},
+  booktitle = {Dolphin communication and cognition: past, present, and future},
+  author = {Bernd Würsig and Heidi C. Pearson},
+  editor = {Denise L Herzing and Christine M Johnson},
+  year = {2015},
+  pages = {77--105},
+  publisher = {MIT Press},
+}","Würsig & Pearson (2015)"
 "bentz2016learning","Christian Bentz; Aleksandrs Berdicevskis","2016","Learning pressures reduce morphological complexity: Linking corpus, computational and experimental evidence","@InProceedings{bentz2016learning,
   author = {Christian Bentz and Aleksandrs Berdicevskis},
   booktitle = {COLING 2016},
