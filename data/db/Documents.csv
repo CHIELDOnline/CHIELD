@@ -1597,6 +1597,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   number = {1},
   pages = {59--82},
 }","DeLancey (2014)"
+"dunbar2014conversations","Robin IM Dunbar","2014","How conversations around campfires came to be","@Article{dunbar2014conversations,
+  title = {How conversations around campfires came to be},
+  author = {Robin IM Dunbar},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {111},
+  number = {39},
+  pages = {14013--14014},
+  year = {2014},
+  publisher = {National Acad Sciences},
+}","Dunbar (2014)"
 "dunbar2014fireside","Robin IM Dunbar; John AJ Gowlett","2014","Fireside chat: the impact of fire on hominin socioecology","@Article{dunbar2014fireside,
   title = {Fireside chat: the impact of fire on hominin socioecology},
   author = {Robin IM Dunbar and John AJ Gowlett},
@@ -1939,6 +1949,16 @@ status or trade, though we note that the most frequently loaned items in the sam
   title = {Learning pressures reduce morphological complexity: Linking corpus, computational and experimental evidence},
   year = {2016},
 }","Bentz & Berdicevskis (2016)"
+"calude2016typology","Andreea S Calude; Annemarie Verkerk","2016","The typology and diachrony of higher numerals in Indo-European: a phylogenetic comparative study","@Article{calude2016typology,
+  title = {The typology and diachrony of higher numerals in Indo-European: a phylogenetic comparative study},
+  author = {Andreea S Calude and Annemarie Verkerk},
+  journal = {Journal of Language Evolution},
+  volume = {1},
+  number = {2},
+  pages = {91--108},
+  year = {2016},
+  publisher = {Oxford University Press},
+}","Calude & Verkerk (2016)"
 "evolang11_101","Maryia Fedzechkina; Becky Chu; T. Florian Jaeger; John Trueswell","2016","Processing Preferences Shape Language Change","@InProceedings{evolang11_101,
   author = {Maryia Fedzechkina and Becky Chu and T. Florian Jaeger and John Trueswell},
   booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANGX11)},
