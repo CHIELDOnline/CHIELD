@@ -8,6 +8,7 @@ var characterLengthLimit = 7800;
 var existingVariables = [];
 var tmpVariables = []; // loaded from cookie
 
+var existingDocuments = [];
 var editingExistingData = false;
 
 var relationTypes = [
@@ -133,13 +134,14 @@ var dataHeaders = [
 			{ name: "Confirmed", type: "select", items: confirmTypes, valueField: "Id", textField: "Name" },
 			{ name: "Notes", type: "text", width: 150, cellRenderer: escapeCell },
             { type: "control" }
-        ]
+        ];
 
 
 
 var bib_year = "";
 var bib_key = "";
 var bib_source = "";
+var bib_title = "";
 
 var contributor = "";
 var contributor_realName = "";
@@ -220,13 +222,45 @@ function updateBib(){
 		bib_year = "";
 		bib_key = "";
 		bib_source = "";
+		bib_title = "";
 		return(false);
 	} else{
 		bib_year = bib_object[0].properties.year;
 		bib_key = bib_object[0].label;
 		bib_source = bib;
+		bib_title = bib_object[0].properties.title;
+		checkForDuplicatePublication();
 		return(true);
 	}
+}
+
+function simplifyTitle(title){
+	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+	title = title.replace(/\s{2,}/g," ");
+	title = title.trim();
+	title = title.toLowerCase();
+	return(title);
+}
+
+function checkForDuplicatePublication(){
+
+	if(editingExistingData){
+		return(true); // contributor is explicitly editing an existing document
+	}
+
+	var currentTitle = simplifyTitle(bib_title);
+
+	for(var i=0;i<existingDocuments.length;++i){
+		if(existingDocuments[i].title == currentTitle){
+			alert("Warning: There is already a document in the database with that title ("+currentTitle+").");
+			return(true);
+		}
+		if(existingDocuments[i].pk == bib_key){
+			alert("Warning: There is already a document in the database with that bibtex key ("+bib_key+").");
+			return(true);
+		}
+	}
+	return(false);
 }
 
 function offerCausalLinksAsCSV(){
@@ -328,6 +362,14 @@ function updateRecord(response, type){
 		$('#SavedDataAlert').hide();
 		network.fit();
 	}
+	if(type=="docs"){
+		// Use this list of documents to check if someone has already submitted 
+		existingDocuments = JSON.parse(response);
+		// convert to lowercase for comparison
+		for(var i=0;i<existingDocuments.length;++i){
+			existingDocuments[i].title = simplifyTitle(existingDocuments[i].title);
+		}
+	}
 }
 
 // ------------------------------------------- //
@@ -376,6 +418,11 @@ $(document).ready(function(){
 	// if it isn't, then clear cookie variables and then get full
 	// list of variables from the server
 	getVersion();  // eventually triggers recieveVersion() and recieveVariablesFromServer()
+
+
+	// request the list of documents
+	requestRecord("php/getDocsForAddData.php","",'docs');
+
 
 	$("#header").load("header.html", function(){
 		$("#AddDataHREF").addClass("active");
