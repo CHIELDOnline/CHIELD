@@ -185,7 +185,8 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
         studyType: Type,
         stage: Stage,
         bibref: bibref,
-        citation: citation
+        citation: citation,
+        confirmed: confirmed
     };
 
   if(Relation=="<"){

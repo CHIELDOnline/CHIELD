@@ -49,7 +49,7 @@ function saveDataAsDagitty(){
 	                    'data-dismiss="alert" aria-hidden="true">' + 
 	                '&times;' + 
 	            '</button>' + 
-	            '<p>Paste the following into the "model code" window at <a href="http://www.dagitty.net/dags.html">http://www.dagitty.net/dags.html</a></p>' + 
+	            '<p>Paste the following into the "model code" window at <a href="http://www.dagitty.net/dags.html" target="_blank">http://www.dagitty.net/dags.html</a></p>' + 
 	            '<textarea cols="100" rows=12>' + 
 	            dagittyFormat +
 	            "</textarea>" +

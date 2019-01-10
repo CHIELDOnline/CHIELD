@@ -33,7 +33,7 @@ dtableConfig =  {
         		{ data: 5},
         		{ data: 6},
     			{ data: null, render: function(data,type,row){
-        			return '<a href="document.html?key=' + data[8] +'">'+data[7] + '</a>';
+        			return '<a href="document.html?key=' + data[8] +'" target="_blank">'+data[7] + '</a>';
         		}},
         		{ data: 8, visible:false},
         		{ data: 9, visible:false}

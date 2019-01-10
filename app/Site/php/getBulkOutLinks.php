@@ -17,7 +17,8 @@ SELECT
        l2.Stage,
        l2.Type,
      d.[citation] bibref,
-     l2.bibref as citekey
+     l2.bibref as citekey,
+     l2.Confirmed
 FROM causal_links l
 LEFT JOIN causal_links l2 ON
   (l.Var1 = l2.Var1 AND l.Var2 = l2.Var2) OR

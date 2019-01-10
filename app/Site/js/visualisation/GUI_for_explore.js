@@ -1,5 +1,3 @@
-var database_records = null;
-
 var currently_selected_node = null;
 var currently_selected_edge = null;
 var current_selection_mode = "start";
@@ -46,57 +44,19 @@ function network_on_click (params) {
 
 }
 
-function updateRecord(response, type){
-
+function updateRecord(response,type){
+	// NEW VERSION THAT USES NETWORK AS CANONICAL DATA SOURCE
 	if(type=='links'){
-
 		var obj = JSON.parse(response);
 		// TODO: test if obj is correctly parsed.
+		console.log("LINKS OBJECT");
+		console.log(obj);
+		redrawGUIfromObject(obj);
+		changeEdgeColourScheme(edge_colour_scheme);
+		updateGridFromNetwork();
 
-		if(database_records===null){
-			database_records = [];
-		}
-
-		// User may have added nodes already, but not connected them:
-		var unconnectedNodes = findUnconnectedNodes();
-
-		// In explore, this can recieve multiple updates,
-		// So need to check we're not adding stuff twice
-		var newRecords = false;
-		var currentIds = network_edges.getIds();
-		for(var i=0; i<obj.length;++i){
-			if($.inArray(obj[i].pk,currentIds)==-1){
-				database_records.push(obj[i]);
-				newRecords = true;
-			}
-		}
-
-		if(newRecords){
-			//console.log(database_records);
-			network_nodes.clear();
-			network_edges.clear();
-			
-			// Update GUI
-			redrawGUIfromObject(database_records);
-			var currentNodeIds = network_nodes.getIds();
-			for(var i=0;i<unconnectedNodes.length;++i){
-				if($.inArray(unconnectedNodes[i],currentNodeIds)==-1){
-					var newNode = {
-						id:unconnectedNodes[i],
-						label:findVariableName(unconnectedNodes[i])
-					}
-					network_nodes.add(newNode);
-				}
-			}
-			network.redraw();
-			changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
-
-			// Update grid
-			updateGrid(database_records);
-
-		} else{
-			alert("No new links found");
-		}
+		// TODO: Check if no new links
+		//alert("No new links found");
 	}
 	if(type=="docs"){
 		existingDocuments = [];
@@ -111,24 +71,33 @@ function updateRecord(response, type){
 	hideLoader();
 }
 
+function updateGridFromNetwork(){
+		var edges = network_edges.get();
+	var rows = [];
 
-function updateGrid(links){
+	for(var i=0;i<edges.length;++i){
+		var edge = edges[i];
+		var newRow = [
+			null,
+			network_nodes.get(edge.from).label,
+			edge.causal_relation,
+			network_nodes.get(edge.to).label,
+			edge.cor,
+			edge.stage,
+			edge.studyType,
+			//'<a href="document.html?key='+ edge.bibref +'">' + edge.citation + "</a>",
+			//null,
+			//null
+			edge.citation,
+			edge.bibref,
+			edge.confirmed // Confirmed
+		];
+		rows.push(newRow);
+	}
+	dtable.clear();
+	dtable.rows.add(rows);
+	dtable.draw();
 
-	var links2 = ObjectToArrayOfArrays(links);
-	var tmpDtable= $("#links_table").dataTable();
-	tmpDtable.fnClearTable();
-	tmpDtable.fnAddData(links2);
-
-	// if(links2.length>0){
-	// 	dtable.rows.add(links2);
-		
-	// 	// Redraw the table to show the new data
-	// 	dtable.draw();
-	// 	$("#links_table").show();
-	// } else{
-	// 	alert("No causal links found");
-	// 	$("#links_table").hide();
-	// }
 }
 
 
@@ -203,11 +172,18 @@ function getMeanNodePositions(){
 function removeVariableViaNetwork(){
 	var n = network.getSelectedNodes();
 	for(var i=0;i<n.length;++i){
-		removeVar(n);
+		removeVar(n,false);
 	}
+	// Also remove any edges:
+	// (selecting a variable will select all connected edges, 
+	//	which should be deleted above, but edges may be selected
+	//  in addition)
+	var selectedEdges = network.getSelectedEdges();
+	network_edges.remove(selectedEdges);
+	updateGridFromNetwork();
 }
 
-function removeVar(pk){
+function removeVar(pk,updateGrid=true){
 
 	network_nodes.remove(pk);
 	// Remove from network edges
@@ -222,20 +198,12 @@ function removeVar(pk){
 	for(var i =0;i<edgePKsToRemove.length;++i){
 		network_edges.remove(edgePKsToRemove[i]);
 	}
-	// remove from `database_records`
-	// TODO: Test
-	// for(var j=0;j<database_records.length;++j){
-	// 	var database_records_edge = database_records[j];
-	// 	if($.inArray(database_records_edge.pk,edgePKsToRemove) != -1){
-	// 		database_records.splice(j,1);
-	// 		j -= 1;
-	// 	}
-	// }
 	
 	network.redraw();
 	// remove from datatable
-	var varName = findVariableName(pk);
-	removeVarFromDataTable(varName);
+	if(updateGrid){
+		updateGridFromNetwork();
+	}
 
 }
 
