@@ -56,3 +56,10 @@ function saveDataAsDagitty(){
 	         '</div>');
 
 }
+
+function getExploreLink(){
+	return(
+		"https://chield.excd.org/explore.html?links=" + 
+			network_edges.getIds().join(",");
+			);
+}

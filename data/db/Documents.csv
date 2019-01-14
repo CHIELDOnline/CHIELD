@@ -586,6 +586,17 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/wang05verticalAndHorizontalTransmission.html},
   bdsk-url-2 = {http://dx.doi.org/10.1111/j.1467-968X.2005.00147.x},
 }","Wang & Minett (2005)"
+"arnold2006language","Kate Arnold; Klaus Zuberbühler","2006","Language evolution: semantic combinations in primate calls","@Article{arnold2006language,
+  title = {Language evolution: semantic combinations in primate calls},
+  abstract = {Syntax sets human language apart from other natural communication systems, although its evolutionary origins are obscure1. Here we show that free-ranging putty-nosed monkeys combine two vocalizations into different call sequences that are linked to specific external events, such as the presence of a predator and the imminent movement of the group. Our findings indicate that non-human primates can combine calls into higher-order sequences that have a particular meaning.},
+  author = {Kate Arnold and Klaus Zuberbühler},
+  journal = {Nature},
+  volume = {441},
+  number = {7091},
+  pages = {303},
+  year = {2006},
+  publisher = {Nature Publishing Group},
+}","Arnold & Zuberbühler (2006)"
 "dallasta06languageGamesNetworks","Luca Dall'Asta; Andrea Baronchelli; Alain Barrat; Vittorio Loreto","2006","Non-equilibrium dynamics of language games on complex networks","@Article{dallasta06languageGamesNetworks,
   abstract = {The Naming Game is a model of non-equilibrium dynamics for the self-organized emergence of a linguistic convention or a communication system in a population of agents with pairwise local interactions. We present an extensive study of its dynamics on complex networks, that can be considered as the most natural topological embedding for agents involved in language games and opinion dynamics. Except for some community structured networks on which metastable phases can be observed, agents playing the Naming Game always manage to reach a global consensus. This convergence is obtained after a time generically scaling with the population's size $N$ as $t\_{conv} \sim N^{1.4 \pm 0.1}$, i.e. much faster than for agents embedded on regular lattices. Moreover, the memory capacity required by the system scales only linearly with its size. Particular attention is given to heterogenous networks, in which the dynamical activity pattern of a node depends on its degree. High degree nodes have a fundamental role, but require larger memory capacity. They govern the dynamics acting as spreaders of (linguistic) conventions. The effects of other properties, such as the average degree and the clustering, are also discussed.},
   author = {Luca Dall'Asta and Andrea Baronchelli and Alain Barrat and Vittorio Loreto},
@@ -638,6 +649,17 @@ The number of different species found in a given area of the Earth increases fro
   year = {2006},
   publisher = {National Acad Sciences},
 }","Haun, Rapold, Call, Janzen et al. (2006)"
+"horner2006faithful","Victoria Horner; Andrew Whiten; Emma Flynn; Frans BM de Waal","2006","Faithful replication of foraging techniques along cultural transmission chains by chimpanzees and children","@Article{horner2006faithful,
+  title = {Faithful replication of foraging techniques along cultural transmission chains by chimpanzees and children},
+  author = {Victoria Horner and Andrew Whiten and Emma Flynn and Frans BM {de Waal}},
+  abstract = {Observational studies of wild chimpanzees (Pan troglodytes) have revealed population-specific differences in behavior, thought to represent cultural variation. Field studies have also reported behaviors indicative of cultural learning, such as close observation of adult skills by infants, and the use of similar foraging techniques within a population over many generations. Although experimental studies have shown that chimpanzees are able to learn complex behaviors by observation, it is unclear how closely these studies simulate the learning environment found in the wild. In the present study we have used a diffusion chain paradigm, whereby a behavior is passed from one individual to the next in a linear sequence in an attempt to simulate intergenerational transmission of a foraging skill. Using a powerful three-group, two-action methodology, we found that alternative methods used to obtain food from a foraging device (“lift door” versus “slide door”) were accurately transmitted along two chains of six and five chimpanzees, respectively, such that the last chimpanzee in the chain used the same method as the original trained model. The fidelity of transmission within each chain is remarkable given that several individuals in the no-model control group were able to discover either method by individual exploration. A comparative study with human children revealed similar results. This study is the first to experimentally demonstrate the linear transmission of alternative foraging techniques by non-human primates. Our results show that chimpanzees have a capacity to sustain local traditions across multiple simulated generations.},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {103},
+  number = {37},
+  pages = {13878--13883},
+  year = {2006},
+  publisher = {National Acad Sciences},
+}","Horner, Whiten, Flynn & de Waal (2006)"
 "locke2006language","John L Locke; Barry Bogin","2006","Language and life history: A new perspective on the development and evolution of human language","@Article{locke2006language,
   title = {Language and life history: A new perspective on the development and evolution of human language},
   author = {John L Locke and Barry Bogin},
@@ -1854,6 +1876,26 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2015},
   publisher = {Elsevier},
 }","Kirby, Tamariz, Cornish & Smith (2015)"
+"majid2015semantic","Asifa Majid; Fiona Jordan; Michael Dunn","2015","Semantic systems in closely related languages","@Misc{majid2015semantic,
+  title = {Semantic systems in closely related languages},
+  author = {Asifa Majid and Fiona Jordan and Michael Dunn},
+  abstract = {In each semantic domain studied to date, there is considerable variation in how meanings are expressed across languages. But are some
+semantic domains more likely to show variation than others? Is the domain of space more or less variable in its expression than other
+semantic domains, such as containers, body parts, or colours? According to many linguists, the meanings expressed in grammaticised
+expressions, such as (spatial) adpositions, are more likely to be similar across languages than meanings expressed in open class lexical
+items. On the other hand, some psychologists predict there ought to be more variation across languages in the meanings of adpositions,
+than in the meanings of nouns. This is because relational categories, such as those expressed as adpositions, are said to be constructed by
+language; whereas object categories expressed as nouns are predicted to be “given by the world”. We tested these hypotheses by
+comparing the semantic systems of closely related languages. Previous cross-linguistic studies emphasise the importance of studying
+diverse languages, but we argue that a focus on closely related languages is advantageous because domains can be compared in a
+culturally- and historically-informed manner. Thus we collected data from 12 Germanic languages. Naming data were collected from at
+least 20 speakers of each language for containers, body-parts, colours, and spatial relations. We found the semantic domains of colour and
+body-parts were the most similar across languages. Containers showed some variation, but spatial relations expressed in adpositions
+showed the most variation. The results are inconsistent with the view expressed by most linguists. Instead, we find meanings expressed
+in grammaticised meanings are more variable than meanings in open class lexical items.},
+  year = {2015},
+  publisher = {Elsevier},
+}","Majid, Jordan & Dunn (2015)"
 "marino2015brain","Lori Marino","2015","The Brain: Evolution, Structure, and Function","@Book{marino2015brain,
   title = {The Brain: Evolution, Structure, and Function},
   booktitle = {Dolphin communication and cognition: past, present, and future},
@@ -2888,6 +2930,14 @@ status or trade, though we note that the most frequently loaned items in the sam
   title = {Vocal learning in bats: from genes to behaviour},
   year = {2018},
 }","Vernes, Lattenkamp, Lavrichenko & Mengede (2018)"
+"wessling2018costs","Erin G Wessling; Hjalmar S Kühl; Roger Mundry; Tobias Deschner; Jill D Pruetz","2018","The costs of living at the edge: seasonal stress in wild savanna-dwelling chimpanzees","@Article{wessling2018costs,
+  title = {The costs of living at the edge: seasonal stress in wild savanna-dwelling chimpanzees},
+  author = {Erin G Wessling and Hjalmar S Kühl and Roger Mundry and Tobias Deschner and Jill D Pruetz},
+  abstract = {Adaptations associated with shifting from a predominately forested habitat to a more open environment are considered a crucial step in hominin evolution. Understanding how chimpanzees, one of our closest-living relatives, are exposed to the selection pressures associated with living in a relatively sparse, hot, and dry environment can inform us about the relative importance of potential environmental stressors involved in adaptations to drier environments. We investigated the extent to which chimpanzees living in an extreme savanna habitat experience seasonal variability in either energy balance or thermoregulation (dehydration and heat exposure), as well as whether these potential environmental constraints are taxing to chimpanzee individuals. Specifically, we tested the hypothesis that savanna environments impose seasonally-relevant costs to chimpanzees. To this end, we collected 368 urine samples from one community of chimpanzees at Fongoli, Senegal, and measured c-peptide, creatinine, and cortisol as measures of physiological responses to environmental food, water, and heat constraints, respectively. We then evaluated the influence of climatic and phenological factors on these indicators. Results illustrated significant seasonal variation in all biomarkers, which corresponded to relevant ecological correlates. Furthermore, creatinine but not c-peptide correlated with cortisol levels, suggesting that chimpanzees in this environment endure periods of heat and dehydration stress, but are able to avoid stressful levels of negative energy balance. Using savanna chimpanzees as a referential model, our research lends support to the notion that thermoregulatory challenges were a significant factor in hominin evolution, and suggests these challenges may have overshadowed the challenges of maintaining adequate energetic balance during the expansion of the hominin range from wetter to drier environments.},
+  journal = {Journal of human evolution},
+  year = {2018},
+  publisher = {Elsevier},
+}","Wessling, Kühl, Mundry, Deschner et al. (2018)"
 "woensdregt2018perspective","Marieke Woensdregt; Kenny Smith; Chris Cummins; Simon Kirby","2018","A model of cultural co-evolution of language and perspective-taking","@InProceedings{woensdregt2018perspective,
   author = {Marieke Woensdregt and Kenny Smith and Chris Cummins and Simon Kirby},
   booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
