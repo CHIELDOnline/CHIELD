@@ -290,6 +290,8 @@ function highlightEdges(edgeIds, hilightColour = "red", nonHilightColour = "gray
 function highlightConflictingEdges(){
 	// TODO: Figure out some way of detecting differences in direction of causality
 
+
+	showLoader();
 	// build list of edges between nodes
 	var edges = network_edges.get();
 	var edgeTypes = {};
@@ -326,7 +328,7 @@ function highlightConflictingEdges(){
 	}
 	highlightEdges(edgesToHighlight);
 	findBoundsForEdges(edgesToHighlight);
-	
+	hideLoader();
 }
 
 function findBoundsForEdges(edgeIds){
