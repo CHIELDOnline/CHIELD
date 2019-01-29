@@ -325,7 +325,24 @@ function highlightConflictingEdges(){
 		}
 	}
 	highlightEdges(edgesToHighlight);
+	findBoundsForEdges(edgesToHighlight);
 	
+}
+
+function findBoundsForEdges(edgeIds){
+
+	var nodesForEdges = [];
+
+	for(var i=0;i<edgeIds.length;++i){
+		var edge = network_edges.get(edgeIds[i]);
+		nodesForEdges.push(edge.from);
+		nodesForEdges.push(edge.to);
+	}
+
+	network.fit({
+		nodes: nodesForEdges,
+		animation: true
+	});
 }
 
 // --------------------------
