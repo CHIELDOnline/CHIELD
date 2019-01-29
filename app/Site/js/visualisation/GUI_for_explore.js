@@ -270,6 +270,64 @@ function zoomInOnNode(nodeId){
 	network.focus(nodeId,{animation:true,scale:2})
 }
 
+function highlightEdges(edgeIds, hilightColour = "red", nonHilightColour = "gray"){
+
+	var ids = network_edges.getIds();
+
+	for(var i=0;i<ids.length;++i){
+		var col = nonHilightColour;
+		if($.inArray(ids[i],edgeIds)>=0){
+			col = hilightColour;
+		}
+		network_edges.update({
+			id:ids[i], 
+			color:{color:col}
+		})
+	}
+	network.redraw();
+}
+
+function highlightConflictingEdges(){
+	// TODO: Figure out some way of detecting differences in direction of causality
+
+	// build list of edges between nodes
+	var edges = network_edges.get();
+	var edgeTypes = {};
+	var edgeIds = {};
+	for(var i=0;i<edges.length;++i){
+		var nodes = [edges[i].to,edges[i].from];
+		var edgeLabel = nodes.sort().join(",");
+		if (edgeLabel in edgeTypes){
+			edgeTypes[edgeLabel].push(edges[i].causal_relation);
+			edgeIds[edgeLabel].push(edges[i].id);
+		} else{
+			edgeTypes[edgeLabel] = [edges[i].causal_relation];
+			edgeIds[edgeLabel] = [edges[i].id];
+		}
+	}
+
+	var edgesToHighlight = [];
+	
+	for(var i=0;i<Object.keys(edgeTypes).length;++i){
+		var key = Object.keys(edgeTypes)[i]
+		var et = edgeTypes[key];
+		if(et.length > 1){
+			var someCausal = $.inArray(">",et)>=0 || 
+							 $.inArray("<=>",et)>=0 || 
+							 $.inArray(">>",et)>=0;
+			var causalAndNonCausal = someCausal && $.inArray("/>",et)>=0;
+			var hilight = causalAndNonCausal;
+			if(hilight){
+				for(var j=0;j<edgeIds[key].length;++j){
+					edgesToHighlight.push(edgeIds[key][j]);
+				}
+			}
+		}
+	}
+	highlightEdges(edgesToHighlight);
+	
+}
+
 // --------------------------
 // Legend and Colour Scheme
 // --------------------------
