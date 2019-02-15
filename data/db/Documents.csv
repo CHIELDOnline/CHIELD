@@ -398,6 +398,12 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/macneilage00onThe.html},
   bdsk-url-2 = {http://dx.doi.org/10.1126/science.288.5465.527},
 }","MacNeilage & Davis (2000)"
+"smith2000origins","John Maynard Smith; Eörs Szathmáry","2000","The origins of life: From the Birth of Life to the Origin of Language","@Book{smith2000origins,
+  title = {The origins of life: From the Birth of Life to the Origin of Language},
+  author = {John Maynard Smith and Eörs Szathmáry},
+  year = {2000},
+  publisher = {Oxford University Press on Demand},
+}","Smith & Szathmáry (2000)"
 "cangelosi01howNouns","A. Cangelosi; D. Parisi","2001","How nouns and verbs differentially affect the behavior of artificial organisms","@InProceedings{cangelosi01howNouns,
   abstract = {This paper presents an Artificial Life and Neural Network (ALNN) model for the evolution of syntax. The simulation methodology provides a unifying approach for the study of the evolution of language and its interaction with other behavioral and neural factors. The model uses an object manipulation task to simulate the evolution of language based on a simple verb-noun rule. The analyses of results focus on the interaction between language and other non-linguistic abilities, and on the neural control of linguistic abilities. The model shows that the beneficial effects of language on non-linguistic behavior are explained by the emergence of distinct internal representation patterns for the processing of verbs and nouns.},
   address = {London},
