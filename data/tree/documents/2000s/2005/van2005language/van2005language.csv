@@ -1,0 +1,8 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"meaning",">","language","","language use","cultural evolution","hypothesis","","""Meaning is the basis of language""","van2005language"
+"language",">","evolutionary fitness","","","cultural evolution","hypothesis","","""Like any mutualist symbiont, language enhances our reproductive fitness.""","van2005language"
+"hominid brain","<=>","language","","","coevolution","hypothesis","","""Language began to live in our brains as an organismal memetic symbiont when these brains became host to the first replicating meaning.""","van2005language"
+"symbiosis",">>","language","","","coevolution","hypothesis","","""Language is a symbiotic organism.""","van2005language"
+"symbiosis",">>","hominid brain","","","coevolution","hypothesis","","""Language began to live in our brains as an organismal memetic symbiont when these brains became host to the first replicating meaning.""","van2005language"
+"brain size: neocortex",">","evolutionary fitness","","language evolution","preadaptation","hypothesis","","""Hominid brain evolution came to be driven by language at least as radically as any symbiont determines the evolution of its host species.""","van2005language"
+"language",">","brain size: neocortex","","","preadaptation","logical","","""Language engendered the tripling of brain volume from a mean brain size of 440 cc to 1400 cc in two and a half million years and the expansion of the available surface area through an increasingly convoluted topography of the neocortex.""","van2005language"
