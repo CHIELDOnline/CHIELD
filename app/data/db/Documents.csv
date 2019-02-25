@@ -24,6 +24,26 @@
   pages = {88--111},
   year = {1960},
 }","Hockett (1960)"
+"zajonc1968attitudinal","Robert B Zajonc","1968","Attitudinal effects of mere exposure.","@Article{zajonc1968attitudinal,
+  title = {Attitudinal effects of mere exposure.},
+  author = {Robert B Zajonc},
+  journal = {Journal of personality and social psychology},
+  volume = {9},
+  number = {2p2},
+  pages = {1},
+  year = {1968},
+  publisher = {American Psychological Association},
+}","Zajonc (1968)"
+"boucher1969pollyanna","Jerry Boucher; Charles E Osgood","1969","The pollyanna hypothesis","@Article{boucher1969pollyanna,
+  title = {The pollyanna hypothesis},
+  author = {Jerry Boucher and Charles E Osgood},
+  journal = {Journal of verbal learning and verbal behavior},
+  volume = {8},
+  number = {1},
+  pages = {1--8},
+  year = {1969},
+  publisher = {Elsevier},
+}","Boucher & Osgood (1969)"
 "goody1970cousin","Jack Goody","1970","Cousin terms","@Article{goody1970cousin,
   title = {Cousin terms},
   author = {Jack Goody},
@@ -54,6 +74,16 @@
   year = {1975},
   publisher = {Elsevier},
 }","Frederiksen (1975)"
+"brown1984frequency","Gordon DA Brown","1984","A frequency count of 190,000 words in theLondon-Lund Corpus of English Conversation","@Article{brown1984frequency,
+  title = {A frequency count of 190,000 words in theLondon-Lund Corpus of English Conversation},
+  author = {Gordon DA Brown},
+  journal = {Behavior Research Methods, Instruments, \& Computers},
+  volume = {16},
+  number = {6},
+  pages = {502--532},
+  year = {1984},
+  publisher = {Springer},
+}","Brown (1984)"
 "kalmar1985there","Ivan Kalmár","1985","Are there really no primitive languages","@InCollection{kalmar1985there,
   title = {Are there really no primitive languages},
   author = {Ivan Kalmár},
@@ -85,6 +115,16 @@
   year = {1985},
   publisher = {JSTOR},
 }","Witkowski & Brown (1985)"
+"kroll1986lexical","Judith F Kroll; Jill S Merves","1986","Lexical access for concrete and abstract words.","@Article{kroll1986lexical,
+  title = {Lexical access for concrete and abstract words.},
+  author = {Judith F Kroll and Jill S Merves},
+  journal = {Journal of Experimental Psychology: Learning, Memory, and Cognition},
+  volume = {12},
+  number = {1},
+  pages = {92},
+  year = {1986},
+  publisher = {American Psychological Association},
+}","Kroll & Merves (1986)"
 "Marck1986","Jeffrey C. Marck","1986","Micronesian dialects and the overnight voyage","@Article{Marck1986,
   author = {Jeffrey C. Marck},
   journal = {Journal of the Polynesian Society},
@@ -383,6 +423,16 @@ The number of different species found in a given area of the Earth increases fro
   volume = {108},
   year = {1999},
 }","Nettle (1999)"
+"walker1999concrete","Ian Walker; Charles Hulme","1999","Concrete words are easier to recall than abstract words: Evidence for a semantic contribution to short-term serial recall.","@Article{walker1999concrete,
+  title = {Concrete words are easier to recall than abstract words: Evidence for a semantic contribution to short-term serial recall.},
+  author = {Ian Walker and Charles Hulme},
+  journal = {Journal of Experimental Psychology: Learning, Memory, and Cognition},
+  volume = {25},
+  number = {5},
+  pages = {1256},
+  year = {1999},
+  publisher = {American Psychological Association},
+}","Walker & Hulme (1999)"
 "macneilage00onThe","Peter F. MacNeilage; Barbara L. Davis","2000","On the origin of internal structure of word forms","@Article{macneilage00onThe,
   abstract = {This study shows that a corpus of proto-word forms shares four sequential sound patterns with words of modern languages and the first words of infants. Three of the patterns involve intrasyllabic consonant-vowel (CV) co-occurrence: labial (lip) consonants with central vowels, coronal (tongue front) consonants with front vowels, and dorsal (tongue back) consonants with back vowels. The fourth pattern is an intersyllabic preference for initiating words with a labial consonant-vowel-coronal consonant sequence (LC). The CV effects may be primarily biomechanically motivated. The LC effect may be self-organizational, with multivariate causality. The findings support the hypothesis that these four patterns were basic to the origin of words.},
   author = {Peter F. MacNeilage and Barbara L. Davis},
@@ -507,6 +557,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2003},
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/vogt03ecal.html},
 }","Vogt (2003)"
+"balota2004visual","David A Balota; Michael J Cortese; Susan D Sergent-Marshall; Daniel H Spieler; Melvin J Yap","2004","Visual word recognition of single-syllable words.","@Article{balota2004visual,
+  title = {Visual word recognition of single-syllable words.},
+  author = {David A Balota and Michael J Cortese and Susan D Sergent-Marshall and Daniel H Spieler and Melvin J Yap},
+  journal = {Journal of Experimental Psychology: General},
+  volume = {133},
+  number = {2},
+  pages = {283},
+  year = {2004},
+  publisher = {American Psychological Association},
+}","Balota, Cortese, Sergent-Marshall, Spieler et al. (2004)"
 "dunbar2004gossip","Robin IM Dunbar","2004","Gossip in evolutionary perspective.","@Article{dunbar2004gossip,
   title = {Gossip in evolutionary perspective.},
   author = {Robin IM Dunbar},
@@ -1073,6 +1133,26 @@ The number of different species found in a given area of the Earth increases fro
   year = {2009},
   publisher = {Elsevier},
 }","Reali & Griffiths (2009)"
+"sereno2009size","Sara C. Sereno; Patrick J. O'Donnell; Margaret E. Sereno","2009","Short article: Size matters: Bigger is faster","@Article{sereno2009size,
+  author = {Sara C. Sereno and Patrick J. O'Donnell and Margaret E. Sereno},
+  title = {Short article: Size matters: Bigger is faster},
+  journal = {Quarterly Journal of Experimental Psychology},
+  volume = {62},
+  number = {6},
+  pages = {1115--1122},
+  year = {2009},
+  doi = {10.1080/17470210802618900},
+  note = {PMID: 19142830},
+  url = { 
+        https://doi.org/10.1080/17470210802618900
+    
+},
+  eprint = { 
+        https://doi.org/10.1080/17470210802618900
+    
+},
+  abstract = { A largely unexplored aspect of lexical access in visual word recognition is “semantic size”—namely, the real-world size of an object to which a word refers. A total of 42 participants performed a lexical decision task on concrete nouns denoting either big or small objects (e.g., bookcase or teaspoon). Items were matched pairwise on relevant lexical dimensions. Participants’ reaction times were reliably faster to semantically “big” versus “small” words. The results are discussed in terms of possible mechanisms, including more active representations for “big” words, due to the ecological importance attributed to large objects in the environment and the relative speed of neural responses to large objects. },
+}","Sereno, O'Donnell & Sereno (2009)"
 "sinnemaki_2009","Kaius Sinnemäki","2009","Complexity in core argument marking and population size","@InCollection{sinnemaki_2009,
   author = {Kaius Sinnemäki},
   title = {Complexity in core argument marking and population size},
@@ -1584,6 +1664,16 @@ The number of different species found in a given area of the Earth increases fro
   publisher = {Cambridge University Press},
   abstract = {This article proposes a framework for investigating the cognitive implications of controlled fire use by Middle Pleistocene humans. By identifying the simplest strategies they could have used to control fire, given the constraints individuals had to overcome, we can establish a behavioural basis for making inferences about cognition. Accessing, maintaining and benefiting from fire involved a range of behaviours that imply future-directed planning, response inhibition and group-level cooperation. I argue that we can infer human cognitive abilities such as an extended working memory, episodic memories, collective intentionality and intersubjective communication from these fire-related behaviours.},
 }","Twomey (2013)"
+"yao2013semantic","Bo Yao; Milica Vasiljevic; Mario Weick; Margaret E Sereno; Patrick J O’Donnell; Sara C Sereno","2013","Semantic size of abstract concepts: It gets emotional when you can’t see it","@Article{yao2013semantic,
+  title = {Semantic size of abstract concepts: It gets emotional when you can’t see it},
+  author = {Bo Yao and Milica Vasiljevic and Mario Weick and Margaret E Sereno and Patrick J O’Donnell and Sara C Sereno},
+  journal = {PloS one},
+  volume = {8},
+  number = {9},
+  pages = {e75000},
+  year = {2013},
+  publisher = {Public Library of Science},
+}","Yao, Vasiljevic, Weick, Sereno et al. (2013)"
 "amano2014global","Tatsuya Amano; Brody Sandel; Heidi Eager; Edouard Bulteau; Jens-Christian Svenning; Bo Dalsgaard; Carsten Rahbek; Richard G Davies; William J Sutherland","2014","Global distribution and drivers of language extinction risk","@Article{amano2014global,
   title = {Global distribution and drivers of language extinction risk},
   author = {Tatsuya Amano and Brody Sandel and Heidi Eager and Edouard Bulteau and Jens-Christian Svenning and Bo Dalsgaard and Carsten Rahbek and Richard G Davies and William J Sutherland},
