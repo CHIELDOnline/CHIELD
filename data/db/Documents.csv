@@ -1458,6 +1458,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2012},
   publisher = {Elsevier},
 }","Fedorenko, Duncan & Kanwisher (2012)"
+"garcia2012positive","David Garcia; Antonios Garas; Frank Schweitzer","2012","Positive words carry less information than negative words","@Article{garcia2012positive,
+  title = {Positive words carry less information than negative words},
+  author = {David Garcia and Antonios Garas and Frank Schweitzer},
+  journal = {EPJ Data Science},
+  volume = {1},
+  number = {1},
+  pages = {3},
+  year = {2012},
+  publisher = {SpringerOpen},
+}","Garcia, Garas & Schweitzer (2012)"
 "gong2012studying","Tao Gong; Lan Shuai; Monica Tamariz; Gerhard Jäger","2012","Studying language change using price equation and Pólya-urn dynamics","@Article{gong2012studying,
   title = {Studying language change using price equation and P{\'o}lya-urn dynamics},
   author = {Tao Gong and Lan Shuai and Monica Tamariz and Gerhard Jäger},
@@ -3101,6 +3111,16 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {A model of cultural co-evolution of language and perspective-taking},
   year = {2018},
 }","Woensdregt, Smith, Cummins & Kirby (2018)"
+"xu2018foxp2","Shuqin Xu; Pei Liu; Yuanxing Chen; Yi Chen; Wei Zhang; Haixia Zhao; Yiwei Cao; Fuhua Wang; Nana Jiang; Shifeng Lin; others","2018","Foxp2 regulates anatomical features that may be relevant for vocal behaviors and bipedal locomotion","@Article{xu2018foxp2,
+  title = {Foxp2 regulates anatomical features that may be relevant for vocal behaviors and bipedal locomotion},
+  author = {Shuqin Xu and Pei Liu and Yuanxing Chen and Yi Chen and Wei Zhang and Haixia Zhao and Yiwei Cao and Fuhua Wang and Nana Jiang and Shifeng Lin and {others}},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {115},
+  number = {35},
+  pages = {8799--8804},
+  year = {2018},
+  publisher = {National Acad Sciences},
+}","Xu, Liu, Chen, Chen et al. (2018)"
 "zuidema2018evolution","Willem Zuidema; Bart de Boer","2018","The evolution of combinatorial structure in language","@Article{zuidema2018evolution,
   title = {The evolution of combinatorial structure in language},
   author = {Willem Zuidema and Bart {de Boer}},

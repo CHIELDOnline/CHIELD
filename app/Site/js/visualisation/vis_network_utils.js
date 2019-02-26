@@ -633,7 +633,7 @@ function calculateDocumentColours(){
 }
 
 
-function rainbow(numOfSteps) {
+/*function rainbow(numOfSteps) {
     // This function generates vibrant, "evenly spaced" colours (i.e. no clustering). This is ideal for creating easily distinguishable vibrant markers in Google Maps and other apps.
     // Adam Cole, 2011-Sept-14
     // HSV to RBG adapted from: http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
@@ -658,6 +658,34 @@ function rainbow(numOfSteps) {
     ret.push(c);
     }
     return (ret);
+}*/
+
+function rainbow(numOfSteps){
+  // Colourblind safe pallettes
+  var colCharts = [
+    ["#e92b2b"],
+    ["#e92b2b","#004488"],
+    ['#DDAA33','#BB5566','#004488'],
+    ["#0077BB","#009988","#EE7733","#CC3311"],
+    ["#0077BB","#33BBEE","#009988","#EE7733","#CC3311"],
+    ["#0077BB","#33BBEE","#009988","#EE7733","#CC3311","#EE3377"],
+    ["#332288","#44AA99","#117733","#999933","#CC6677","#882255","#AA4499"],
+    ["#332288","#88CCEE","#44AA99","#117733","#999933","#CC6677","#882255","#AA4499"],
+    ["#332288","#88CCEE","#44AA99","#117733","#999933","#DDCC77","#CC6677","#882255","#AA4499"],
+    ['#8b0000','#ba1c36','#dd4a54','#f07e67','#e3b795','#b4b9df','#968bcb','#735db6','#4a32a1','#00008b'],
+    ['#8b0000','#b61832','#d7414f','#ed6d61','#efa07a','#add8e6','#a9a7d7','#8c7dc5','#6b54b2','#462d9e','#00008b'],
+    ['#8b0000','#b2152f','#d2394b','#e8615d','#f18c6e','#dfbc9e','#b6bee1','#9e97d0','#8372bf','#654eae','#42299d','#00008b']]
+
+  if(numOfSteps <= colCharts.length){
+    return(colCharts[numOfSteps-1]);
+  }
+
+  var chosenChart = colCharts[colCharts.length-1];
+  for(var i=colCharts.length;i<numOfSteps;++i){
+    chosenChart.push("#000000");
+  }
+  return(chosenChart)
+
 }
 
 
