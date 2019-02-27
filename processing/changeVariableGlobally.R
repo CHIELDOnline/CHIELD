@@ -22,13 +22,21 @@ for(f in list.dirs(treeBaseFolder)){
   if(sum(grepl("*.csv",files))>0){
     
     linkFile = files[grepl("*.csv",files)][1]
+    linkFilePos= paste0(f,"/",linkFile)
     l <- read.csv(paste0(f,"/",linkFile), stringsAsFactors = F, encoding = 'utf-8',fileEncoding = 'utf-8')
-    numChanged = numChanged + sum(l$Var1==oldVar)
-    numChanged = numChanged + sum(l$Var2==oldVar)
-    l$Var1[l$Var1==oldVar] = l$Var1[l$Var1==newVar]
-    l$Var2[l$Var2==oldVar] = l$Var1[l$Var2==newVar]
+    chng = sum(l$Var1==oldVar,na.rm=T) + sum(l$Var2==oldVar,na.rm = T)
+    numChanged = numChanged + chng
+    if(chng>0){
+      if(sum(l$Var1==oldVar,na.rm=T)>0){
+        l$Var1[l$Var1==oldVar & !is.na(l$Var1)] = newVar
+      }
+      if(sum(l$Var2==oldVar,na.rm=T)>0){
+        l$Var2[l$Var2==oldVar & !is.na(l$Var2)] = newVar
+      }
+      write.csv(l,file=linkFilePos,fileEncoding = "UTF-8",row.names = F)
+    }
     
   }
 }
 
-print(paste("Changed",numChanged,"variables"))
+print(paste("Changed",numChanged,"entries"))

@@ -134,14 +134,20 @@ function addVar(varname){
 }
 
 function addDoc(doc_citation){
+
 	if(doc_citation===null){
 		doc_citation = $("#searchDocsToAdd").val();
 	}
-	var doc_index = existingDocuments.indexOf(doc_citation);
-	if(doc_index>=0){
-		var bibref = existingDocuments_pk[doc_index];
-		showLoader();
-		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+	var docs = doc_citation.split(";");
+
+	for(var i=0;i<docs.length;++i){
+		doc_citation = docs[i].trim();
+		var doc_index = existingDocuments.indexOf(doc_citation);
+		if(doc_index>=0){
+			var bibref = existingDocuments_pk[doc_index];
+			showLoader();
+			requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+		}
 	}
 }
 
