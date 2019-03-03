@@ -17,6 +17,26 @@ causalLinksToDOT = function(d){
   varLabels = unique(c(d$Var1.label,d$Var2.label))
   varIds = v[match(varLabels,v$name),]$pk
   
+  gx = graph_from_data_frame(d[d$Relation!="^",
+          c("Var1.label","Var2.label")])
+  gx.diameter = diameter(gx)
+  rankdir = "LR"
+  if(gx.diameter > 4){
+    rankdir="TB"
+  }
+  
+  #V = unique(c(d$Var1.label,d$Var2.label))
+  #edL <- vector("list", length=length(V))
+  #for(i in 1:length(V)){
+  #  edL[[i]] = list(edges=which(V %in% unique(d[d$Var1.label==V[i],]$Var2.label)))
+  #}
+  #gx = graphNEL(nodes=V,edgeL=edL,edgemode = "directed")
+  #x = plot(gx, "dot",attrs=list(
+  #  graph=list(rankdir="LR"),
+  #  node=list(color="#e92b2b", style='filled', fillcolor="#ffd2d2"),
+  #  edge=list(penwidth=3)))
+  #aspectRatio = x@boundBox@upRight@x / x@boundBox@upRight@y
+
   nodesDot = paste("V",varIds,' [label="',varLabels,'"]', sep='')
   
   edgesProperties = dotEdgeTypes[d$Relation]
@@ -29,10 +49,8 @@ causalLinksToDOT = function(d){
     sep=""
   )
   
-  
-  
   dot = paste0("digraph chield {\n",
-    'node [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]\n\n',
+    'node [color="#e92b2b", style=filled, fillcolor="#ffd2d2"]\nedge [penwidth=3]\ngraph [rankdir="',rankdir,'"]\n',
     paste(nodesDot,collapse = "\n"),
     "\n",
     paste(edgesDot, collapse = "\n"),
