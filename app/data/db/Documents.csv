@@ -1536,6 +1536,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2012},
   publisher = {American Association for the Advancement of Science},
 }","Kemp & Regier (2012)"
+"kuperman2012age","Victor Kuperman; Hans Stadthagen-Gonzalez; Marc Brysbaert","2012","Age-of-acquisition ratings for 30,000 English words","@Article{kuperman2012age,
+  title = {Age-of-acquisition ratings for 30,000 English words},
+  author = {Victor Kuperman and Hans Stadthagen-Gonzalez and Marc Brysbaert},
+  journal = {Behavior research methods},
+  volume = {44},
+  number = {4},
+  pages = {978--990},
+  year = {2012},
+  publisher = {Springer},
+}","Kuperman, Stadthagen-Gonzalez & Brysbaert (2012)"
 "levi2012tristes","Claude Lévi-Strauss","2012","Tristes tropiques","@Book{levi2012tristes,
   title = {Tristes tropiques},
   author = {Claude Lévi-Strauss},
@@ -2560,6 +2570,16 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2017},
   publisher = {Elsevier},
 }","Crespi, Read & Hurd (2017)"
+"de2017evolution","Bart de Boer","2017","Evolution of speech and evolution of language","@Article{de2017evolution,
+  title = {Evolution of speech and evolution of language},
+  author = {Bart {de Boer}},
+  journal = {Psychonomic bulletin \& review},
+  volume = {24},
+  number = {1},
+  pages = {158--162},
+  year = {2017},
+  publisher = {Springer},
+}","de Boer (2017)"
 "Everett2017","Caleb Everett","2017","Languages in Drier Climates Use Fewer Vowels","@Article{Everett2017,
   author = {Caleb Everett},
   title = {Languages in Drier Climates Use Fewer Vowels},
