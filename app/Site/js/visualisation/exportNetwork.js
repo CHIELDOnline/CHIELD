@@ -57,6 +57,22 @@ function saveDataAsDagitty(){
 
 }
 
+function saveDataAsPhylopath(){
+	var phylopath = makePhylopath();
+
+	$("body").append(
+	        '<div class="alert alert-success alert-dismissable" style="position:fixed;top:20%;left:10%">'+
+	            '<button type="button" class="close" ' + 
+	                    'data-dismiss="alert" aria-hidden="true">' + 
+	                '&times;' + 
+	            '</button>' + 
+	            '<p>Paste the following into your R script:</p>' + 
+	            '<textarea cols="100" rows=12>' + 
+	            phylopath +
+	            "</textarea>" +
+	         '</div>');
+}
+
 function getExploreLink(){
 	return(
 		"https://chield.excd.org/explore.html?links=" + 
