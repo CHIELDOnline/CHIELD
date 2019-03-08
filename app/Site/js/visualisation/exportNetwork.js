@@ -66,7 +66,7 @@ function saveDataAsPhylopath(){
 	                    'data-dismiss="alert" aria-hidden="true">' + 
 	                '&times;' + 
 	            '</button>' + 
-	            '<p>Paste the following into your R script:</p>' + 
+	            '<p>Paste the following into your R script. (note that this only includes simple ">" causal connections)</p>' + 
 	            '<textarea cols="100" rows=12>' + 
 	            phylopath +
 	            "</textarea>" +

@@ -23,6 +23,10 @@ makePhylopath = function(){
   		// only look at simple causal effects
   		if(edge.causal_relation==">"){
 	    	var cite = edge.citation;
+	    	if(cite === undefined){
+	    		// Maybe we're on a "document" page
+	    		cite = shortCite;
+	    	}
 	    	if($.inArray(cite,Object.keys(docs))==-1){
 	    		docs[cite] = {};
 	    	}
@@ -57,6 +61,7 @@ makePhylopathLabels = function(label){
 	label = label.replace(/ /g, ".");
 	label = label.replace(/:/g, ".");
 	label = label.replace(/\.+/g, ".");
+	label = label.replace(/[-,&\(\)']/g, "");
 	return(label);
 }
 
