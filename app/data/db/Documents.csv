@@ -74,6 +74,17 @@
   year = {1975},
   publisher = {Elsevier},
 }","Frederiksen (1975)"
+"gentner1982nouns","Dedre Gentner","1982","Why Nouns are Learned Before Verbs: Linguistic Relativity versus Natural Partitioning","@InBook{gentner1982nouns,
+  author = {Dedre Gentner},
+  chapter = {11},
+  date-added = {2019-03-11 09:36:24 +0000},
+  date-modified = {2019-03-11 09:39:21 +0000},
+  editor = {S. Kuczaj},
+  publisher = {Hillsdale, N.J.:LawrenceEribaum},
+  title = {Why Nouns are Learned Before Verbs: Linguistic Relativity versus Natural Partitioning},
+  volume = {Language development: Language, thought and Culture},
+  year = {1982},
+}","Gentner (1982)"
 "brown1984frequency","Gordon DA Brown","1984","A frequency count of 190,000 words in the London-Lund Corpus of English Conversation","@Article{brown1984frequency,
   title = {A frequency count of 190,000 words in the London-Lund Corpus of English Conversation},
   author = {Gordon DA Brown},
