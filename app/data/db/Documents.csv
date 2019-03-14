@@ -1175,6 +1175,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2009},
   publisher = {Cambridge University Press},
 }","Evans & Levinson (2009)"
+"fisher2009foxp2","Simon E Fisher; Constance Scharff","2009","FOXP2 as a molecular window into speech and language","@Article{fisher2009foxp2,
+  title = {FOXP2 as a molecular window into speech and language},
+  author = {Simon E Fisher and Constance Scharff},
+  journal = {Trends in Genetics},
+  volume = {25},
+  number = {4},
+  pages = {166--177},
+  year = {2009},
+  publisher = {Elsevier},
+}","Fisher & Scharff (2009)"
 "goldwater2009bayesian","Sharon Goldwater; Thomas L Griffiths; Mark Johnson","2009","A Bayesian framework for word segmentation: Exploring the effects of context","@Article{goldwater2009bayesian,
   title = {A Bayesian framework for word segmentation: Exploring the effects of context},
   author = {Sharon Goldwater and Thomas L Griffiths and Mark Johnson},
