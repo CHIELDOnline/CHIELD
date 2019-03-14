@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"exchange",">","division of labour","pos","","none","","none","Fig. 3 p. 902 Exchange leads to greater specialisation in division of labour ","basu2009memory"
+"writing",">","exchange","pos","","none","","none","Fig. 3 p. 902 Records allow larger numbers of customised transactions and expanded network complexity","basu2009memory"
+"population size","<=>","writing","none","","none","","none","Fig. 3 p. 902 Records emerge early at economies expand in size","basu2009memory"
+"memory capacity","^","population size","neg","","none","","none","Fig. 3 p. 902 Internal memory constrains group to modest size.","basu2009memory"

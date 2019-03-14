@@ -59,12 +59,13 @@ studyTypeColours = {
 
 stageColours = {
   "language change":'#28A745',
-  "cultural evolution":'#FFC107',
-  "coevolution":'#FFAF00',
+  "cultural evolution":'#ffd507',
+  "coevolution":'#ff9400',
   "preadaptation":'#DC3545'
 };
 
-
+var POSITIVE_COR_COLOUR = "#e92b2b"; // CHIELD RED
+var NEGATIVE_COR_COLOUR = "#2b4fe9"; // BLUE
 
 
 
@@ -161,7 +162,7 @@ function initialiseNetwork(){
 
 }
 
-function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,citation){
+function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,citation,confirmed){
   // standard setting: ">"
 
   var newEdge = {
@@ -184,7 +185,8 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
         studyType: Type,
         stage: Stage,
         bibref: bibref,
-        citation: citation
+        citation: citation,
+        confirmed: confirmed
     };
 
   if(Relation=="<"){
@@ -228,6 +230,18 @@ function getEdgeSettings(edge_id, Var1, Var2, Relation, Cor, Type, Stage,bibref,
       }
       newEdge.smooth = true;
   }
+
+  if(confirmed=="no"){
+    newEdge.shadow ={
+      "enabled": true,
+      "color": "rgba(255,0,0,1)",
+      "size": 3,
+      "x": -2,
+      "y": -2
+    };
+  }
+
+
   newEdge.causalColor = newEdge.color.color;
   return(newEdge);
 }
@@ -368,7 +382,8 @@ function redrawGUIfromObject(obj){
         obj[row].Type,
         obj[row].Stage,
         obj[row].citekey,
-        obj[row].bibref); 
+        obj[row].bibref,
+        obj[row].Confirmed); 
       // add it to the network
       network_edges.add(newEdge);
 
@@ -490,8 +505,8 @@ function getEdgeColor(edge){
 
   // Correlational colour scheme
   if(edge_colour_scheme=="cor"){
-    if(edge.cor=="pos"){return('green');}
-    if(edge.cor=="neg"){return("red");  }
+    if(edge.cor=="pos"){return(POSITIVE_COR_COLOUR);}
+    if(edge.cor=="neg"){return(NEGATIVE_COR_COLOUR);}
     return("black")
   }
 
@@ -516,7 +531,11 @@ function getEdgeColor(edge){
   }
 
   if(edge_colour_scheme=="document"){
-    var docCol = documentColours[edge.bibref];
+    var edgeBibRef = edge.bibref;
+    if(edgeBibRef===undefined){
+      edgeBibRef = edge.citation;
+    }
+    var docCol = documentColours[edgeBibRef];
     if(docCol===undefined){
       return("black");
     } else{
@@ -585,10 +604,14 @@ function calculateDocumentColours(){
   var ids = network_edges.getIds();
   for(var i=0; i<ids.length; ++i){
     var edge = network_edges.get(ids[i]);
-    if (document_frequency[edge.bibref]) {
-           document_frequency[edge.bibref]++;
+    var edgeBibRef = edge.bibref;
+    if(edgeBibRef===undefined){
+      edgeBibRef = edge.citation;
+    }
+    if (document_frequency[edgeBibRef]) {
+           document_frequency[edgeBibRef]++;
         } else {
-           document_frequency[edge.bibref] = 1;
+           document_frequency[edgeBibRef] = 1;
         }
   }
 
@@ -610,7 +633,7 @@ function calculateDocumentColours(){
 }
 
 
-function rainbow(numOfSteps) {
+/*function rainbow(numOfSteps) {
     // This function generates vibrant, "evenly spaced" colours (i.e. no clustering). This is ideal for creating easily distinguishable vibrant markers in Google Maps and other apps.
     // Adam Cole, 2011-Sept-14
     // HSV to RBG adapted from: http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript
@@ -635,6 +658,34 @@ function rainbow(numOfSteps) {
     ret.push(c);
     }
     return (ret);
+}*/
+
+function rainbow(numOfSteps){
+  // Colourblind safe pallettes
+  var colCharts = [
+    ["#e92b2b"],
+    ["#e92b2b","#004488"],
+    ['#DDAA33','#BB5566','#004488'],
+    ["#0077BB","#009988","#EE7733","#CC3311"],
+    ["#0077BB","#33BBEE","#009988","#EE7733","#CC3311"],
+    ["#0077BB","#33BBEE","#009988","#EE7733","#CC3311","#EE3377"],
+    ["#332288","#44AA99","#117733","#999933","#CC6677","#882255","#AA4499"],
+    ["#332288","#88CCEE","#44AA99","#117733","#999933","#CC6677","#882255","#AA4499"],
+    ["#332288","#88CCEE","#44AA99","#117733","#999933","#DDCC77","#CC6677","#882255","#AA4499"],
+    ['#8b0000','#ba1c36','#dd4a54','#f07e67','#e3b795','#b4b9df','#968bcb','#735db6','#4a32a1','#00008b'],
+    ['#8b0000','#b61832','#d7414f','#ed6d61','#efa07a','#add8e6','#a9a7d7','#8c7dc5','#6b54b2','#462d9e','#00008b'],
+    ['#8b0000','#b2152f','#d2394b','#e8615d','#f18c6e','#dfbc9e','#b6bee1','#9e97d0','#8372bf','#654eae','#42299d','#00008b']]
+
+  if(numOfSteps <= colCharts.length){
+    return(colCharts[numOfSteps-1]);
+  }
+
+  var chosenChart = colCharts[colCharts.length-1];
+  for(var i=colCharts.length;i<numOfSteps;++i){
+    chosenChart.push("#000000");
+  }
+  return(chosenChart)
+
 }
 
 

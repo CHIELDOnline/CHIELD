@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIELD: Authors</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.4/css/fixedColumns.dataTables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>-->
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
+<script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="css/document.css"/>
+
+<script type="text/javascript" src="js/citation.js"></script>
+<script type="text/javascript" src="js/displayBibtex.js"></script>
+<script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/author.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<h3 id="authorTitle"></h3>
+
+<div class="container-fluid">
+<h3 id="documentShortCite"></h3>
+<div id="bibtexhtml"></div>
+  <!--<button onclick="revealBibtex()" class="btn btn-primary">Bibtex source</button>-->
+  <textarea id="bibtexsource" class="form-control" rows="5"></textarea>
+  <br />
+
+
+  
+
+  <div id="mynetwork"></div>
+  
+  <br />
+
+  <h3>Causal links
+        <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-download"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a onclick="openSource()" class="dropdown-item" href="#">Source</button>
+          <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true)">DOT (with positions)</a>
+        </div>
+    </div>    
+    <button onclick="openExplore()" class="btn btn-success">Explore</button>
+  </h3>
+  <table id="links_table" class="table table-striped table-bordered">
+    <thead>
+      <th data-toggle="tooltip" title="First variable">Variable 1</th>
+      <th data-toggle="tooltip" title="Type of causal relation">Relation</th>
+      <th data-toggle="tooltip" title="Second variable">Variable 2</th>
+      <th>Document</th>
+    </thead>
+    <tfoot>
+      <th>Variable 1</th>
+      <th>Relation</th>
+      <th>Variable 2</th>
+      <th>Document</th>
+    </tfoot>
+    <tbody>
+    </tbody>
+  </table>
+
+    <div id="authorDocuments">
+  <hr>
+  <h3>Documents</h3>
+
+    <table id="authorDocuments_table" class="table table-striped table-bordered">
+      <thead>
+        <th>Document</th>
+        <th>Title</th>
+        <th>Year</th>
+      </thead>
+      <tfoot>
+        <th>Document</th>
+        <th>Title</th>
+        <th>Year</th>
+      </tfoot>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  
+
+  <div id="coauthors">
+  <hr>
+  <h3>Co-authors</h3>
+
+    <table id="coauthors_table" class="table table-striped table-bordered">
+      <thead>
+        <th>Author</th>
+        <th>Co-publications</th>
+      </thead>
+      <tfoot>
+        <th>Author</th>
+        <th>Co-publications</th>
+      </tfoot>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="collaborators">
+  <hr>
+  <h3>Suggested collaborators</h3>
+    <p>These are authors who share a causal node but not a co-authored document.</p>
+
+    <table id="collaborators_table" class="table table-striped table-bordered">
+      <thead>
+        <th>Author</th>
+        <th>Common variables</th>
+        <th>Count</th>
+      </thead>
+      <tfoot>
+        <th>Author</th>
+        <th>Common variables</th>
+        <th>Count</th>
+      </tfoot>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+
+
+<div id="quoteDiv" class="alert alert-info" role="alert">
+  <div id="quoteDivText"></div>
+  <button id="quoteDivClose" onclick="closeQuote()" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+</html>

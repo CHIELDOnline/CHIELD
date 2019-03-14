@@ -35,8 +35,20 @@ function recieveGithubUser(response){
 function getGithubUser(username){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
+		console.log(this.readyState);
+		console.log(this.status);
+		console.log('---');
 		if (this.readyState == 4 && this.status == 200) {
 		   recieveGithubUser(xhttp.responseText);
+		} else{
+			if (this.readyState == 4){
+			   $("#contributorRealName").html("No user found");
+			   $("#contributorUserName").html("");
+			   contributor = "";
+			   contributor_realName = "";
+			   $('#githubUsernameButton').removeClass('disabled').text("Find User");
+			   alert("No user found, check your github username is correct.");
+			}
 		}
 	};
 	xhttp.open("GET", "https://api.github.com/users/"+username, true);

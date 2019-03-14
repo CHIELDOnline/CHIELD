@@ -1,5 +1,3 @@
-var database_records = null;
-
 var currently_selected_node = null;
 var currently_selected_edge = null;
 var current_selection_mode = "start";
@@ -46,58 +44,19 @@ function network_on_click (params) {
 
 }
 
-function updateRecord(response, type){
-
+function updateRecord(response,type){
+	// NEW VERSION THAT USES NETWORK AS CANONICAL DATA SOURCE
 	if(type=='links'){
-
 		var obj = JSON.parse(response);
 		// TODO: test if obj is correctly parsed.
+		console.log("LINKS OBJECT");
+		console.log(obj);
+		redrawGUIfromObject(obj);
+		changeEdgeColourScheme(edge_colour_scheme);
+		updateGridFromNetwork();
 
-		if(database_records===null){
-			database_records = [];
-		}
-
-		// User may have added nodes already, but not connected them:
-		var unconnectedNodes = findUnconnectedNodes();
-
-		// In explore, this can recieve multiple updates,
-		// So need to check we're not adding stuff twice
-		var newRecords = false;
-		var currentIds = network_edges.getIds();
-		for(var i=0; i<obj.length;++i){
-			if($.inArray(obj[i].pk,currentIds)==-1){
-				database_records.push(obj[i]);
-				newRecords = true;
-			}
-		}
-
-		if(newRecords){
-			//console.log(database_records);
-			network_nodes.clear();
-			network_edges.clear();
-			
-			// Update GUI
-			redrawGUIfromObject(database_records);
-			var currentNodeIds = network_nodes.getIds();
-			for(var i=0;i<unconnectedNodes.length;++i){
-				if($.inArray(unconnectedNodes[i],currentNodeIds)==-1){
-					var newNode = {
-						id:unconnectedNodes[i],
-						label:findVariableName(unconnectedNodes[i])
-					}
-					network_nodes.add(newNode);
-				}
-			}
-			network.redraw();
-			changeEdgeColourScheme(edge_colour_scheme); // udpates colours and redraws legend
-
-			// Update grid
-			updateGrid(database_records);
-
-		} else{
-			alert("No new links found");
-		}
-		hideLoader();
+		// TODO: Check if no new links
+		//alert("No new links found");
 	}
 	if(type=="docs"){
 		existingDocuments = [];
@@ -109,26 +68,36 @@ function updateRecord(response, type){
 		}
 		
 	}
+	hideLoader();
 }
 
+function updateGridFromNetwork(){
+		var edges = network_edges.get();
+	var rows = [];
 
-function updateGrid(links){
+	for(var i=0;i<edges.length;++i){
+		var edge = edges[i];
+		var newRow = [
+			null,
+			network_nodes.get(edge.from).label,
+			edge.causal_relation,
+			network_nodes.get(edge.to).label,
+			edge.cor,
+			edge.stage,
+			edge.studyType,
+			//'<a href="document.html?key='+ edge.bibref +'">' + edge.citation + "</a>",
+			//null,
+			//null
+			edge.citation,
+			edge.bibref,
+			edge.confirmed // Confirmed
+		];
+		rows.push(newRow);
+	}
+	dtable.clear();
+	dtable.rows.add(rows);
+	dtable.draw();
 
-	var links2 = ObjectToArrayOfArrays(links);
-	var tmpDtable= $("#links_table").dataTable();
-	tmpDtable.fnClearTable();
-	tmpDtable.fnAddData(links2);
-
-	// if(links2.length>0){
-	// 	dtable.rows.add(links2);
-		
-	// 	// Redraw the table to show the new data
-	// 	dtable.draw();
-	// 	$("#links_table").show();
-	// } else{
-	// 	alert("No causal links found");
-	// 	$("#links_table").hide();
-	// }
 }
 
 
@@ -165,18 +134,25 @@ function addVar(varname){
 }
 
 function addDoc(doc_citation){
+
 	if(doc_citation===null){
 		doc_citation = $("#searchDocsToAdd").val();
 	}
-	var doc_index = existingDocuments.indexOf(doc_citation);
-	if(doc_index>=0){
-		var bibref = existingDocuments_pk[doc_index];
-		showLoader();
-		requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+	var docs = doc_citation.split(";");
+
+	for(var i=0;i<docs.length;++i){
+		doc_citation = docs[i].trim();
+		var doc_index = existingDocuments.indexOf(doc_citation);
+		if(doc_index>=0){
+			var bibref = existingDocuments_pk[doc_index];
+			showLoader();
+			requestRecord("php/getLinksForExploreByDocument.php","bibref="+bibref,'links');
+		}
 	}
 }
 
 function bulkOut(){
+	showLoader();
 	var currentEdgesKeys= network_edges.getIds().join(",");
 	requestRecord("php/getBulkOutLinks.php","keylist="+currentEdgesKeys,'links');
 }
@@ -202,39 +178,38 @@ function getMeanNodePositions(){
 function removeVariableViaNetwork(){
 	var n = network.getSelectedNodes();
 	for(var i=0;i<n.length;++i){
-		removeVar(n);
+		removeVar(n,false);
 	}
+	// Also remove any edges:
+	// (selecting a variable will select all connected edges, 
+	//	which should be deleted above, but edges may be selected
+	//  in addition)
+	var selectedEdges = network.getSelectedEdges();
+	network_edges.remove(selectedEdges);
+	updateGridFromNetwork();
 }
 
-function removeVar(pk){
+function removeVar(pk,updateGrid=true){
 
 	network_nodes.remove(pk);
 	// Remove from network edges
 	// Find edge pks to remove
 	var edgePKsToRemove = [];
 	for(var i =0;i<network_edges.length;++i){
-		var edge = network_edges.get()[i]
+		var edge = network_edges.get()[i];
 		if(edge.from==pk || edge.to==pk){
 			edgePKsToRemove.push(edge.id);
 		}
 	}
-	for(var i =0;i<edgePKsToRemove;++i){
+	for(var i =0;i<edgePKsToRemove.length;++i){
 		network_edges.remove(edgePKsToRemove[i]);
 	}
-	// remove from `database_records`
-	// TODO: Test
-	// for(var j=0;j<database_records.length;++j){
-	// 	var database_records_edge = database_records[j];
-	// 	if($.inArray(database_records_edge.pk,edgePKsToRemove) != -1){
-	// 		database_records.splice(j,1);
-	// 		j -= 1;
-	// 	}
-	// }
 	
 	network.redraw();
 	// remove from datatable
-	var varName = findVariableName(pk);
-	removeVarFromDataTable(varName);
+	if(updateGrid){
+		updateGridFromNetwork();
+	}
 
 }
 
@@ -295,6 +270,87 @@ function toggleOptions(){
 		$("#legendButton").show();
 	}
 
+}
+
+function zoomInOnNode(nodeId){
+	network.focus(nodeId,{animation:true,scale:2})
+}
+
+function highlightEdges(edgeIds, hilightColour = "red", nonHilightColour = "gray"){
+
+	var ids = network_edges.getIds();
+
+	for(var i=0;i<ids.length;++i){
+		var col = nonHilightColour;
+		if($.inArray(ids[i],edgeIds)>=0){
+			col = hilightColour;
+		}
+		network_edges.update({
+			id:ids[i], 
+			color:{color:col}
+		})
+	}
+	network.redraw();
+}
+
+function highlightConflictingEdges(){
+	// TODO: Figure out some way of detecting differences in direction of causality
+
+
+	showLoader();
+	// build list of edges between nodes
+	var edges = network_edges.get();
+	var edgeTypes = {};
+	var edgeIds = {};
+	for(var i=0;i<edges.length;++i){
+		var nodes = [edges[i].to,edges[i].from];
+		var edgeLabel = nodes.sort().join(",");
+		if (edgeLabel in edgeTypes){
+			edgeTypes[edgeLabel].push(edges[i].causal_relation);
+			edgeIds[edgeLabel].push(edges[i].id);
+		} else{
+			edgeTypes[edgeLabel] = [edges[i].causal_relation];
+			edgeIds[edgeLabel] = [edges[i].id];
+		}
+	}
+
+	var edgesToHighlight = [];
+	
+	for(var i=0;i<Object.keys(edgeTypes).length;++i){
+		var key = Object.keys(edgeTypes)[i]
+		var et = edgeTypes[key];
+		if(et.length > 1){
+			var someCausal = $.inArray(">",et)>=0 || 
+							 $.inArray("<=>",et)>=0 || 
+							 $.inArray(">>",et)>=0;
+			var causalAndNonCausal = someCausal && $.inArray("/>",et)>=0;
+			var hilight = causalAndNonCausal;
+			if(hilight){
+				for(var j=0;j<edgeIds[key].length;++j){
+					edgesToHighlight.push(edgeIds[key][j]);
+				}
+			}
+		}
+	}
+	highlightEdges(edgesToHighlight);
+	findBoundsForEdges(edgesToHighlight);
+	hideLoader();
+}
+
+function findBoundsForEdges(edgeIds){
+
+	var nodesForEdges = [];
+
+	for(var i=0;i<edgeIds.length;++i){
+		var edge = network_edges.get(edgeIds[i]);
+		nodesForEdges.push(edge.from);
+		nodesForEdges.push(edge.to);
+	}
+
+	network.fit({
+		nodes: nodesForEdges,
+		animation: true
+	});
 }
 
 // --------------------------

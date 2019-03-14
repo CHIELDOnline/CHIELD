@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CHIELD: Authors</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+<script type="text/javascript" src="js/visualisation/vis.js"></script>
+<script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.4/js/dataTables.fixedColumns.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/explore.css"/>
+
+<script type="text/javascript" src="js/db.js"></script>
+<script type="text/javascript" src="js/visualisation/GUI_for_explore.js"></script>
+<script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
+<script type="text/javascript" src="js/explore_authors.js"></script>
+<!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
+</head>
+
+<div id="header"></div>
+
+<div class="loader"></div> 
+
+<button id="networkSettingsButton" class="btn btn-danger">
+  <i class="fas fa-wrench"></i>
+</button>
+<div id="networkSettings" class="container">
+    <h5>Visualisation</h4>
+</div>
+
+<h3 id="exploreTitle">Authors</h3>
+
+<div id="mynetwork"></div>
+
+<div id="controlPanel">
+  <br /><br />
+  <div class="btn-group-vertical">
+
+      <button id="removeVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Remove the selected nodes">
+          <i class="fas fa-minus"></i>
+      </button>
+
+  <div class="btn-group">
+      <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-download"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsDOT(false,false)">DOT</a>
+        <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true,false)">DOT (with positions)</a>
+      </div>
+  </div>
+  </div>
+  
+</div>
+
+
+<div class="container-fluid" id="links">
+  <button id="toggleTableButton" class="btn btn-danger">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <div id="links_table_container">
+  <table id="links_table" class="table table-striped table-bordered">
+    <thead>
+      <th>Author 1</th>
+      <th>Author 2</th>
+      <th>Number of links</th>
+    </thead>
+    <tfoot>
+      <th>Author 1</th>
+      <th>Author 2</th>
+      <th>Number of links</th>
+    </tfoot>
+    <tbody>
+    </tbody>
+  </table>
+  <div>
+</div>
+</html>

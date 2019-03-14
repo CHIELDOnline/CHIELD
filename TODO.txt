@@ -92,6 +92,10 @@ Variable:
 	
 
 addData:
+
+	Nodes don't jump around:
+		network_options.physics.stabilization.enabled = false
+		network.setOptions({physics:{enabled:false}})
 	
 	Allow editing of Notes in seperate window/popup.
 

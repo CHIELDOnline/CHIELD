@@ -80,7 +80,7 @@
 
 .vis-configuration-wrapper{
 	position: fixed;
-	top: 29%;
+	top: 18%;
 	right: 0px;
 	width: 30%;
 	z-index: 9;
@@ -102,7 +102,7 @@
 #networkSettings{
 	position: fixed;
 	top: 10%;
-	height: 20%;
+	height: 8%;
 	right: 0px;
 	width: 30%;
 	border-style: solid;

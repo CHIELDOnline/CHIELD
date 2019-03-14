@@ -33,9 +33,10 @@ dtableConfig =  {
         		{ data: 5},
         		{ data: 6},
     			{ data: null, render: function(data,type,row){
-        			return '<a href="document.html?key=' + data[8] +'">'+data[7] + '</a>';
+        			return '<a href="document.html?key=' + data[8] +'" target="_blank">'+data[7] + '</a>';
         		}},
-        		{ data: 8, visible:false}
+        		{ data: 8, visible:false},
+        		{ data: 9, visible:false}
  	 		]
  	 	};
 
@@ -112,14 +113,15 @@ $(document).ready(function(){
 	// Add column searching 
     dtable.columns().every( function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value.trim() ) {
-                that
-                    .search( this.value.trim() )
-                    .draw();
-            }
-        } );
+ 		if(that.visible()){
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value.trim() ) {
+	                that
+	                    .search( this.value.trim() )
+	                    .draw();
+	            }
+	        } );
+	    }
     } );
     $('#'+tableId+' tfoot tr').appendTo('#'+tableId+' thead');
     document.getElementById(tableId+'_filter').style.display = "none";
@@ -175,10 +177,10 @@ $(document).ready(function(){
 	})
 	$("#bulkOut").click(bulkOut);
 
-	$("#viewAll").click(function(){
+	/*$("#viewAll").click(function(){
 		showLoader();
 		requestRecord(php_link,"keylist=ALL",'links');
-	})
+	})*/
 
 	// Add links by document ---------//
 	$("#addDoc").click(function(){

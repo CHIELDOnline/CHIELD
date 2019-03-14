@@ -1,0 +1,3 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"word learnability",">","word length","neg","","language change","statistical","none","""A (hypothetical) language with maximum word entropy would have a vast (potentially infinite) number of word forms of equal probability, and would be hard (or impossible) to learn.","Bentz2017"
+"word expressivity",">","word length","pos","","language change","statistical","none","""A language with minimum word entropy, on the other hand, would repeat the same word forms over and over again, and lack expressivity. Natural languages fall in a relatively narrow range between these extremes.""","Bentz2017"

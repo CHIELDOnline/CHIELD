@@ -9,9 +9,12 @@
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <!--script type="text/javascript" src="js/jquery.dynatable.js"></script>-->
 <!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/popper.js"/>-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.css"/>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/sc-1.4.3/sl-1.2.4/datatables.min.js"></script>
@@ -22,6 +25,12 @@
 <script type="text/javascript" src="js/visualisation/vis.js"></script>
 <link href="css/vis-network.min.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="js/visualisation/vis_network_utils.js"></script>
+
+<script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDagitty.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToPhylopath.js"></script>
+<script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="css/document.css"/>
@@ -41,13 +50,28 @@
   <!--<button onclick="revealBibtex()" class="btn btn-primary">Bibtex source</button>-->
   <textarea id="bibtexsource" class="form-control" rows="5"></textarea>
   <br />
+
+
   
 
   <div id="mynetwork"></div>
   
   <br />
   <h3>Causal links
-    <button onclick="openSource()" class="btn btn-link">Source</button>
+        <div class="btn-group">
+        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-download"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a onclick="openSource()" class="dropdown-item" href="#">Source</button>
+          <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true)">DOT (with positions)</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDagitty()">DAGitty</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsPhylopath()">Phylopath</a>
+        </div>
+    </div>    
     <button onclick="openExplore()" class="btn btn-success">Explore</button>
     <button onclick="editDocumentData()" class="btn btn-warning">Edit data</button>
     <button onclick="raiseIssue()" class="btn btn-danger">Discuss / Raise an issue</button>

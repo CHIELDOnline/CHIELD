@@ -1,8 +1,8 @@
-bibref,Var1,Relation,Var2,Cor,Process,Topic,Stage,Type,Subtype,Test,Stat,Confirmed,Languages,Species,Confidence,Notes,General.description
-evolang11_37,tool use,<=>,imperative gestures,pos,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,tool use,>,role swapping,pos,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,role swapping,>,intersubjectivity,pos,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,intersubjectivity,>,symbolic signals,pos,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,triadic signals,>,symbolic signals,pos,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,tool use,>>,triadic signals,,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
-evolang11_37,imperitive gestures,>>,triadic signals,,Triadic ontogenetic ritualisation,symbolic communication,coevolution,hypothesis,,,,,,,,,
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"tool use","<=>","imperative gestures","pos","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"tool use",">","role swapping","pos","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"role swapping",">","intersubjectivity","pos","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"intersubjectivity",">","symbolic signals","pos","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"triadic signals",">","symbolic signals","pos","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"tool use",">>","triadic signals","","symbolic communication","coevolution","hypothesis","","","evolang11_37"
+"imperative gestures",">>","triadic signals","","symbolic communication","coevolution","hypothesis","","","evolang11_37"

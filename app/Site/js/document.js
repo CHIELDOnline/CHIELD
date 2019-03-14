@@ -137,14 +137,15 @@ function updateLinksTable2(text,tableIdX,dtableConfigX){
 	// Add column searching
     dtableX.columns().every( function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
-                that
-                    .search( this.value )
-                    .draw();
-            }
-        } );
+ 		if(that.visible()){
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value ) {
+	                that
+	                    .search( this.value )
+	                    .draw();
+	            }
+	        } );
+    	}
     } );
     $('#'+tableIdX+' tfoot tr').appendTo('#'+tableIdX+' thead');
     document.getElementById(tableIdX+'_filter').style.display = "none";
@@ -214,7 +215,7 @@ function raiseIssue(){
 }
 
 function openDiscussionHistory(){
-	url = "https://github.com/CHIELDOnline/CHIELD/issues?q=label:data "+documentKey;
+	url = "https://github.com/CHIELDOnline/CHIELD/issues?q="+documentKey;
 	window.open(url);
 }
 
@@ -277,6 +278,8 @@ $(document).ready(function(){
 		// TODO: display no data message
 		console.log("no data");
 	}
+
+	$( "#mynetwork" ).resizable();
 });
 
 
@@ -288,6 +291,8 @@ function network_on_click (params){
 				var notes = doc_causal_links[i].Notes
 				if(notes!=null && notes.length>0){
 					openQuote(doc_causal_links[i].Notes);
+				}else{
+					closeQuote();
 				}
 				break;
 			}

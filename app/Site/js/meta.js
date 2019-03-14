@@ -13,12 +13,15 @@ var displayDatatable = true; // set to false below
 
 dtableConfig =  {
 		ordering: true,
+		order: [[ 2, "desc" ]],
         lengthChange: false,
         //scrollY: "300px",
         //scrollCollapse: true,
         paging: true,
         pageLength: 20
  	 	};
+
+var numLinksThreshold = 1;
 
 function toggleTableDisplay(){
 
@@ -62,18 +65,13 @@ function getUrlParameter(sParam) {
 function updateRecord(response, type){
 	if(type=="metalinks"){
 		var obj = JSON.parse(response);
-		console.log(obj);
+		//console.log(obj);
 		buildMetaNetwork(obj);
 		
-		console.log("1");
-		var links2 = ObjectToArrayOfArrays(links);
-		console.log("2");
+		var links2 = ObjectToArrayOfArrays(obj);
 		var tmpDtable= $("#links_table").dataTable();
-		console.log("3");
 		tmpDtable.fnClearTable();
-		console.log("4");
-		//tmpDtable.fnAddData(links2);
-		console.log("5");
+		tmpDtable.fnAddData(links2);
 		hideLoader();
 	}
 }
@@ -81,38 +79,68 @@ function updateRecord(response, type){
 function buildMetaNetwork(links){
 	// receives object
 
+	var nodeName1 = "first_document_links.bibref";
+	var nodeLabel1 = "doc1.citation";
+	var nodeName2 = "second_document_links.bibref";
+	var nodeLabel2 = "doc2.citation";
+
 	var nodes = [];
+	var nodeList = [];
 	for(var i=0;i<links.length;++i){
 		link = links[i];
-		if($.inArray(link["first_document_links.bibref"],nodes)==-1){
-			newNode = {
-				id:link["first_document_links.bibref"],
-				label:link["doc1.citation"]
-				};
-			network_nodes.add(newNode);
-			nodes.push(link["first_document_links.bibref"]);
-		}
-		if($.inArray(link["second_document_links.bibref"],nodes)==-1){
-			newNode = {
-				id:link["second_document_links.bibref"],
-				label:link["doc2.citation"]
-				};
-			network_nodes.add(newNode);
-			nodes.push(link["second_document_links.bibref"]);
+		if(link["numberOfLinks"]>=numLinksThreshold){
+			if($.inArray(link[nodeName1],nodes)==-1){
+				newNode = {
+					id:link[nodeName1],
+					label:reduceCitationLabel(link[nodeLabel1])
+					};
+				//network_nodes.add(newNode);
+				nodeList.push(newNode);
+				nodes.push(link[nodeName1]);
+			}
+			if($.inArray(link[nodeName2],nodes)==-1){
+				newNode = {
+					id:link[nodeName2],
+					label:reduceCitationLabel(link[nodeLabel2])
+					};
+				//network_nodes.add(newNode);
+				nodeList.push(newNode);
+				nodes.push(link[nodeName2]);
+			}
 		}
 	}
 
+	var edgeList = [];
 	for(var i=0;i<links.length;++i){
 		link = links[i];
-		var newEdge = {
-		"from": link["first_document_links.bibref"],
-    	"to": link["second_document_links.bibref"],
-    	"color": {color:"black"},
-    	"width":link["numberOfLinks"]
-		};
-		network_edges.add(newEdge);
+		if(link["numberOfLinks"]>=numLinksThreshold){
+			var newEdge = {
+			"from": link[nodeName1],
+	    	"to": link[nodeName2],
+	    	"color": {color:"black"},
+	    	"width":link["numberOfLinks"]
+			};
+			//network_edges.add(newEdge);
+			edgeList.push(newEdge);
+		}
 	}
+	network_nodes.update(nodeList);
+	network_edges.update(edgeList);
 }
+
+function reduceCitationLabel(citation){
+	var authorNames = citation.split(",");
+	if(authorNames.length>2){
+		return([authorNames[0],
+			   ",",
+			   authorNames[1],
+			   " et al. ",
+			   citation.substr(citation.length-6) // year
+			   ].join(""))
+	}
+	return(citation);
+}
+
 
 $(document).ready(function(){
 
@@ -134,14 +162,15 @@ $(document).ready(function(){
 	// Add column searching 
     dtable.columns().every( function () {
         var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value.trim() ) {
-                that
-                    .search( this.value.trim() )
-                    .draw();
-            }
-        } );
+ 		if(that.visible()){
+	        $( 'input', this.footer() ).on( 'keyup change', function () {
+	            if ( that.search() !== this.value.trim() ) {
+	                that
+	                    .search( this.value.trim() )
+	                    .draw();
+	            }
+	        } );
+    	}
     } );
     $('#'+tableId+' tfoot tr').appendTo('#'+tableId+' thead');
     document.getElementById(tableId+'_filter').style.display = "none";
@@ -151,6 +180,8 @@ $(document).ready(function(){
 	convert_pks_to_string_ids = false;
 	initialiseNetwork();
 	network.on("click", network_on_click);
+
+	$("#removeVariable").click(removeVariableViaNetwork);
 
 	// Hide the table
 	toggleTableDisplay();
@@ -167,6 +198,14 @@ $(document).ready(function(){
 
 	network_options.configure = network_options_configure;
 	network_options.interaction.navigationButtons= false;
+
+	network_options.nodes.color = {
+		background: "#d3e8ff", //pale blue
+		border: "#006de7", // dark blue
+		highlight: { border: "#006de7", background: "#d3e8ff" },
+		hover: { border: "#006de7", background: "#d3e8ff" }
+	};
+
 	network.setOptions(network_options);
 
 	$(".vis-configuration-wrapper").hide();

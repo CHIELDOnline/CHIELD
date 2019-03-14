@@ -26,6 +26,8 @@
 <script type="text/javascript" src="js/visualisation/GUI_for_explore.js"></script>
 <script type="text/javascript" src="js/visualisation/exportNetwork.js"></script>
 <script type="text/javascript" src="js/visualisation/exportToDot.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToDagitty.js"></script>
+<script type="text/javascript" src="js/visualisation/exportToPhylopath.js"></script>
 <script type="text/javascript" src="js/util/JSONtoCSV.js"></script>
 <script type="text/javascript" src="js/explore.js"></script>
 <!--<link rel="stylesheet" type="text/css" href="css/jquery.dynatable.css">-->
@@ -39,22 +41,7 @@
   <i class="fas fa-wrench"></i>
 </button>
 <div id="networkSettings" class="container">
-  <h5>Options</h4>
-      <button class="btn btn-danger" onclick="clusterByGroup()">Cluster</button>
-      <br />
-      <div class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Set Edge Colours by ...
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('causal')">Causal</a>
-          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('cor')">Correlation</a>
-          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('type')">Type</a>
-          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('stage')">Stage</a>
-          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('document')">Document</a>
-        </div>
-      </div>
-    <h5>Visualisation</h4>
+  <h5>Network Options</h4>
 </div>
 
 <h3 id="exploreTitle">Explore</h3>
@@ -62,6 +49,52 @@
 <div id="mynetwork"></div>
 
 <div id="controlPanel">
+  <div class="btn-group-vertical">
+
+    <div class="btn-group">
+        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a id="expandVariable" class="dropdown-item" href="#">Expand links from selected nodes</a>
+          <a id="findPaths" class="dropdown-item" href="#">Find causal paths between two selected nodes</a>
+          <a id="bulkOut" class="dropdown-item" href="#">Find supporting evidence for the current links</a>
+          <a class="dropdown-item" href="#" onclick="clusterByGroup()">Cluster nodes</a>
+          <a class="dropdown-item" href="#" onclick="highlightConflictingEdges()">Hilight conflicting edges</a>
+          <a id="fit" class="dropdown-item" href="#" >Fit the network within the window</a>
+          <!--<a id="viewAll" class="dropdown-item" href="#">View the whole network (can be very slow)</a>-->    
+        </div>
+    </div>
+
+    <div class="btn-group dropdown">
+      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Colours
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('causal')">Causal</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('cor')">Correlation</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('type')">Type</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('stage')">Stage</a>
+          <a class="dropdown-item" href="#" onclick="changeEdgeColourScheme('document')">Document</a>
+      </div>
+    </div>
+
+    <div class="btn-group">
+        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-download"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDOT(true)">DOT (with positions)</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsDagitty()">DAGitty</a>
+          <a class="dropdown-item" href="#" onclick="saveDataAsPhylopath()">Phylopath</a>
+        </div>
+    </div>
+
+  </div>
+
+
+  <br /><br />
   <input id="searchVariablesToAdd" placeholder="Search variables" autofocus></input>
   <br /><br />
   <div class="btn-group-vertical">
@@ -73,44 +106,14 @@
     <button id="removeVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Remove the selected nodes">
         <i class="fas fa-minus"></i>
     </button>
-
-    <button id="expandVariable" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Expand links from selected nodes">
-        <svg class="svg-inline--fa fa-expand fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="expand" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M 182.49805 92.9375 A 175.84147 175.84147 0 0 0 55.591797 144.42188 A 175.84147 175.84147 0 0 0 55.591797 393.09961 A 175.84147 175.84147 0 0 0 304.26953 393.09961 A 175.84147 175.84147 0 0 0 351.32617 307.73047 L 175.79883 307.73047 C 122.42358 302.20778 136.01725 229.35539 175.79883 229.8125 L 351.19141 229.8125 A 175.84147 175.84147 0 0 0 304.26953 144.42188 A 175.84147 175.84147 0 0 0 182.49805 92.9375 z M 351.19141 229.8125 A 175.84147 175.84147 0 0 1 351.32617 307.73047 L 431.88086 307.73047 C 432.3282 323.49253 432.89909 342.89513 433.61328 369.6582 C 434.00178 399.73217 453.65085 403.59135 466.96875 390.27344 L 566.98242 290.25977 C 576.3326 280.90959 576.3326 265.85604 566.98242 256.50586 L 466.96875 156.49219 C 457.61857 147.142 434.54679 149.94838 431.60938 174.92969 C 431.19939 198.75257 430.93502 215.8103 430.81445 229.8125 L 351.19141 229.8125 z "></path></svg>
-    </button>
-    
-    <button id="findPaths" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Find causal paths between two selected nodes">
-        <svg class="svg-inline--fa fa-path fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="path" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M 520.82812 3.7324219 A 49.087188 49.087188 0 0 0 471.74023 52.820312 A 49.087188 49.087188 0 0 0 488.88281 90.0625 A 15.151515 15.151515 0 0 0 487.81641 92.179688 L 451.22266 179.08594 A 15.151515 15.151515 0 0 0 450.74219 180.35156 A 91.789185 91.789185 0 0 0 429.56641 177.77148 A 91.789185 91.789185 0 0 0 394.9707 184.60547 A 18.60186 18.60186 0 0 0 393.96289 182.9375 L 347.29883 113.22852 A 18.60186 18.60186 0 0 0 345.66406 111.10547 A 65.203423 65.203423 0 0 0 360.77539 69.392578 A 65.203423 65.203423 0 0 0 295.57031 4.1894531 A 65.203423 65.203423 0 0 0 230.36719 69.392578 A 65.203423 65.203423 0 0 0 247.70508 113.57812 A 23.152315 23.152315 0 0 0 245.51953 117.16602 L 185.24414 236.56055 A 23.152315 23.152315 0 0 0 184.43164 238.32617 A 138.17537 138.17537 0 0 0 143.63867 232.16602 A 138.17537 138.17537 0 0 0 5.4628906 370.33984 A 138.17537 138.17537 0 0 0 143.63867 508.51562 A 138.17537 138.17537 0 0 0 281.81445 370.33984 A 138.17537 138.17537 0 0 0 225.55469 259.25977 A 23.152315 23.152315 0 0 0 226.57617 257.42578 L 286.85156 138.03125 A 23.152315 23.152315 0 0 0 288.42383 134.17578 A 65.203423 65.203423 0 0 0 295.57031 134.5957 A 65.203423 65.203423 0 0 0 315.01562 131.55469 A 18.60186 18.60186 0 0 0 316.38672 133.92383 L 363.05078 203.63086 A 18.60186 18.60186 0 0 0 364.21094 205.22461 A 91.789185 91.789185 0 0 0 337.77734 269.56055 A 91.789185 91.789185 0 0 0 429.56641 361.34961 A 91.789185 91.789185 0 0 0 521.35547 269.56055 A 91.789185 91.789185 0 0 0 478.57227 192.07227 A 15.151515 15.151515 0 0 0 479.14844 190.84375 L 515.74219 103.9375 A 15.151515 15.151515 0 0 0 516.50195 101.69141 A 49.087188 49.087188 0 0 0 520.82812 101.90625 A 49.087188 49.087188 0 0 0 569.91406 52.820312 A 49.087188 49.087188 0 0 0 520.82812 3.7324219 z "></path></svg>
-    </button>
-
-    <button id="bulkOut" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Find supporting evidence for the current links">
-      <svg class="svg-inline--fa fa-path fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="path" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613.95545 230.23061" data-fa-i2svg=""><path fill="currentColor" d="m 181.94765,201.29608 311.91024,0 0,47.03409 -311.91024,0 z m 148.38438,-91.95819 c -7.23886,0.0714 -14.47664,0.38231 -21.69126,0.98332 2.49599,5.28634 -2.89601,19.79091 5.60654,18.04381 16.42738,-1.09813 32.95347,-0.75009 49.3175,1.0673 -1.24916,-5.49678 5.72791,-17.62964 -1.09174,-18.63295 -10.67729,-1.06528 -21.41117,-1.55103 -32.14104,-1.46148 z M 251.875,120.85742 c -18.20542,5.46919 -35.85488,12.99376 -52.02776,23.02515 4.61716,3.36314 6.3723,18.08389 12.69336,13.8301 14.16201,-8.37112 29.46646,-14.71598 45.22095,-19.39655 -2.12708,-5.35348 -2.90655,-13.73188 -5.88655,-17.4587 z m 163.57227,19.82031 c 16.64343,5.57676 32.69999,13.10223 47.2286,22.99273 1.50389,-5.18762 12.39655,-12.1672 8.66001,-16.35975 -15.43817,-10.26764 -32.38212,-18.16545 -49.94125,-24.05598 z m 46.76171,144.86329 c -14.41382,9.72131 -30.29511,17.15527 -46.7618,22.66837 3.50559,4.45514 2.1967,18.72042 9.04491,16.36523 17.13137,-6.01287 33.63605,-13.9685 48.65039,-24.21085 -3.6497,-4.6025 -7.06198,-11.56519 -10.9335,-14.82275 z m -256.33203,9.95117 c -3.27765,5.0089 -9.55595,10.82723 -0.40875,12.86009 14.82957,8.51093 30.75678,15.03043 47.13574,19.88961 -0.16268,-5.43193 7.77055,-15.23875 3.17683,-18.27196 -16.15411,-4.95284 -31.81463,-11.6858 -46.19662,-20.58943 z m 154.69727,24.2832 c -16.74249,1.66061 -33.63582,1.81933 -50.40453,0.44305 0.71745,5.56756 -3.57885,15.38007 0.0547,18.47875 18.41003,1.39597 36.95123,1.10126 55.30248,-0.93602 -2.17907,-4.14633 1.51601,-19.82989 -4.95264,-17.98578 z m 283.34439,-95.86784 c 2.19433,57.79193 -60.9439,104.24177 -115.45316,85.13693 -55.82229,-14.99328 -81.63815,-89.01014 -47.21568,-135.4563 30.8211,-48.91758 109.15535,-51.69163 143.35954,-5.07678 12.43977,15.59542 19.35788,35.44991 19.3093,55.39615 z m -435.68417,0 c 2.19433,57.79193 -60.9439,104.24177 -115.453159,85.13693 C 36.958993,294.0512 11.143131,220.03434 45.565603,173.58818 76.386704,124.6706 154.72095,121.89655 188.92514,168.5114 c 12.43977,15.59542 19.35788,35.44991 19.3093,55.39615 z" /></path></svg>
-    </button>
-    
-    
-    <button id="fit" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="Fit the network within the window">
-        <i class="fas fa-eye"></i>
-    </button>
-    
-    <button id="viewAll" class="btn btn-danger" data-toggle="tooltip" data-placement="left" title="View the whole network (can be very slow)">
-        ALL
-    </button>
-
-    <div class="btn-group">
-        <a class="btn btn-danger dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-download"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#" onclick="saveCanvasAsPNG()">PNG</a>
-          <a class="dropdown-item" href="#" onclick="saveDataAsCSV()">CSV</a>
-          <a class="dropdown-item" href="#" onclick="saveDataAsDOT()">DOT</a>
-        </div>
-    </div>
     <button id="addDoc" class="btn btn-danger"  data-toggle="tooltip" data-placement="left" title="Add links from a document">
-      DOC
+      Add doc
     </button>
   </div>
   <br />
   <input id="searchDocsToAdd" placeholder="Search documents" autofocus></input>
+  <br />
+
 </div>
 
 
@@ -140,6 +143,7 @@
       <th>Type</th>
       <th>Reference</th>
       <th>citekey</th>
+      <th>Confirmed</th>
     </thead>
     <tfoot>
       <th>pk</th>
@@ -151,6 +155,7 @@
       <th>Type</th>
       <th>Reference</th>
       <th>citekey</th>
+      <th>Confirmed</th>
     </tfoot>
     <tbody>
     </tbody>
