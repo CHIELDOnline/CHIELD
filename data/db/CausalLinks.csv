@@ -748,6 +748,9 @@
 "3748496662","coventry2008language","2556992153",">","990904661",NA,NA,"spatial language",NA,"experiment","","yes","(proximal vs distal)"
 "3051429471","coventry2008language","3285458657",">","2556992153",NA,NA,"spatial language",NA,"experiment","","yes",""
 "4205977398","coventry2008language","1072527045",">","2556992153",NA,NA,"spatial language",NA,"experiment","","yes",""
+"749315765","crawford08","1047602444",">","2477885121","neg",NA,NA,"language change","model","","yes",NA
+"2602059009","crawford08","1047602444",">","1606716478","neg",NA,NA,"language change","hypothesis","","",NA
+"2258921195","crawford08","1606716478",">","2477885121","pos",NA,NA,"language change","hypothesis","","",NA
 "3209627395","dammel2008complexity","1188703056",">","1607522636",NA,NA,"complexity","language change","qualitative","","yes","The authors compare inflectional morphology of the noun in ten Germanic varieties and find language contact affecting the degree of complexity."
 "1414162014","fincher2008parasite","3765120731",">","3719167349","pos",NA,NA,"language change","statistical","","yes",NA
 "3103818302","kusters2008","1746840506","~=","56395203","pos",NA,"sociolinguistics","language change","hypothesis","","","dimension of variation between Type 1 and Type 2 communites, see pp 14-15 in paper"
