@@ -1,6 +1,8 @@
 # Change a variable
 # Takes two arguments: oldVariable and newVariable
 # Remember to use Rscript to run from command line
+# e.g.:
+# Rscript changeVariableGlobally.R "varialbe one" "variable one"
 
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 
