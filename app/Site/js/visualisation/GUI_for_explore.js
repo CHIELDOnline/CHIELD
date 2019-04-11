@@ -72,27 +72,29 @@ function updateRecord(response,type){
 }
 
 function updateGridFromNetwork(){
-		var edges = network_edges.get();
+	var edges = network_edges.get();
 	var rows = [];
 
 	for(var i=0;i<edges.length;++i){
 		var edge = edges[i];
-		var newRow = [
-			null,
-			network_nodes.get(edge.from).label,
-			edge.causal_relation,
-			network_nodes.get(edge.to).label,
-			edge.cor,
-			edge.stage,
-			edge.studyType,
-			//'<a href="document.html?key='+ edge.bibref +'">' + edge.citation + "</a>",
-			//null,
-			//null
-			edge.citation,
-			edge.bibref,
-			edge.confirmed // Confirmed
-		];
-		rows.push(newRow);
+		if((network_nodes.get(edge.from)!=null) && (network_nodes.get(edge.to)!=null)){
+			var newRow = [
+				null,
+				network_nodes.get(edge.from).label,
+				edge.causal_relation,
+				network_nodes.get(edge.to).label,
+				edge.cor,
+				edge.stage,
+				edge.studyType,
+				//'<a href="document.html?key='+ edge.bibref +'">' + edge.citation + "</a>",
+				//null,
+				//null
+				edge.citation,
+				edge.bibref,
+				edge.confirmed // Confirmed
+			];
+			rows.push(newRow);
+		}
 	}
 	dtable.clear();
 	dtable.rows.add(rows);
@@ -176,16 +178,17 @@ function getMeanNodePositions(){
 }
 
 function removeVariableViaNetwork(){
-	var n = network.getSelectedNodes();
-	for(var i=0;i<n.length;++i){
-		removeVar(n,false);
-	}
+	network.deleteSelected();
+	//var n = network.getSelectedNodes();
+	//for(var i=0;i<n.length;++i){
+	//	removeVar(n,false);
+	//}
 	// Also remove any edges:
 	// (selecting a variable will select all connected edges, 
 	//	which should be deleted above, but edges may be selected
 	//  in addition)
-	var selectedEdges = network.getSelectedEdges();
-	network_edges.remove(selectedEdges);
+	//var selectedEdges = network.getSelectedEdges();
+	//network_edges.remove(selectedEdges);
 	updateGridFromNetwork();
 }
 
