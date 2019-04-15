@@ -1,7 +1,7 @@
 var dotEdgeTypes = {
 		">": 'arrowhead="normal",arrowtail="none"',
-		"<=>": 'arrowhead="normal",arrowtail="normal"',
-		"<": 'arrowhead="none",arrowtail="normal"',
+		"<=>": 'dir="both"',
+		"<": 'arrowhead="none",dir="back"',
 		"~": 'arrowhead="none",arrowtail="none",style="dashed"',
 		"/>":'arrowhead="tee",arrowtail="none"',
 		"/=":'arrowhead="tee",arrowtail="none"',

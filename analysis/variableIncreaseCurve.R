@@ -59,8 +59,7 @@ plot(newdata$numDocuments,
      xlim=range(newdata$numDocuments),
      ylim=c(0,max(predictedCurve)),
      lty=2,col=2)
-abline(0,1,lty=2)
-
+#abline(0,1,lty=2)
 points(1:length(cumUniqueVariables.mean),
        cumUniqueVariables.mean,
      xlab="Number of documents",
