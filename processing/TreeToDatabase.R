@@ -1,4 +1,4 @@
-# Take the CHILED database in a directory tree format and build an SQL database
+# Take the CHIELD database in a directory tree format and build an SQL database
 
 suppressWarnings(suppressMessages(library(digest)))
 suppressWarnings(suppressMessages(library(stringr)))
