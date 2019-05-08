@@ -14,7 +14,7 @@ The canonical version of the data is the folder tree `data/tree/documents`.  A s
 
 ![alt text](https://raw.githubusercontent.com/CHIELDOnline/CHIELD/master/misc/DevelopmentCycle.png)
 
-1.  Pull reqest
+1.  Pull request
   -  User creates new data on the website
   -  User submits the data to a php script which:
     -  Writes the data to a file on the server side folder `newRecords`
