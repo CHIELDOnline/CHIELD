@@ -2016,12 +2016,13 @@
 "456028294","verhoef2016iconicity","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
 "3630314603","Bentz2017","1687862168",">","3344516874","neg",NA,NA,"language change","statistical","","","""A (hypothetical) language with maximum word entropy would have a vast (potentially infinite) number of word forms of equal probability, and would be hard (or impossible) to learn."
 "734870917","Bentz2017","586905007",">","3344516874","pos",NA,NA,"language change","statistical","","","""A language with minimum word entropy, on the other hand, would repeat the same word forms over and over again, and lack expressivity. Natural languages fall in a relatively narrow range between these extremes."""
-"3641815132","Blasi_Moran_SLE_2017","2976820764",">","2387964722","pos",NA,NA,"language change","review","",NA,NA
-"3179611310","Blasi_Moran_SLE_2017","2976820764",">","1162835510","pos",NA,NA,"language change","review","",NA,NA
-"3095829081","Blasi_Moran_SLE_2017","2387964722",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
-"547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","",NA,NA
-"2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","",NA,NA
-"3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","",NA,NA
+"3641815132","Blasi_Moran_SLE_2017","2976820764",">","2387964722","pos",NA,NA,"language change","review","","",""
+"3179611310","Blasi_Moran_SLE_2017","2976820764",">","1162835510","pos",NA,NA,"language change","review","","",""
+"3095829081","Blasi_Moran_SLE_2017","2387964722","<=>","3921770158","pos",NA,NA,"language change","review","","","implicitly bite profile and diet are coevolving, as a result of subsistence style"
+"547486659","Blasi_Moran_SLE_2017","1162835510",">","3921770158","pos",NA,NA,"language change","review","","",""
+"2924583147","Blasi_Moran_SLE_2017","3921770158",">","201824849","pos",NA,NA,"language change","simulation","","",""
+"3672709264","Blasi_Moran_SLE_2017","201824849",">","1885660811","neg",NA,NA,"language change","statistical","","",""
+"716761283","Blasi_Moran_SLE_2017","2387964722",">","201824849","pos",NA,NA,"language change","logical","","",""
 "719477024","creanza2017greater","3011025056",">","2256680223","pos",NA,"Cultural evolution","cultural evolution","model","","",""
 "1179773254","creanza2017greater","142655320",">","2256680223","pos",NA,"Cultural evolution","cultural evolution","model","",""," inter-population migration increases cultural complexity"
 "3334947890","crespi2017segregating","3870970400",">","4275885719",NA,NA,NA,NA,"hypothesis","",NA,"""results are congruent with previous work on the involvement of FOXP2 in lateralization and fluency of speech, and suggest the novel hypothesis that this gene also mediates the expression and forms of human inner speech."""

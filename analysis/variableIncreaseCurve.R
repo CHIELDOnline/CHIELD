@@ -46,6 +46,7 @@ predictedCurve = predict(m0,
     newdata = data.frame(numDocuments = 1:3000))
 dx = abs(diff(predictedCurve))
 plateau = which(dx==min(dx))
+predictedCurve[plateau]
 
 newdata = data.frame(
   numDocuments = seq(1,plateau,length.out=100)
@@ -79,6 +80,9 @@ cumPlot = ggplot(newdata,aes(x=numDocuments,y=predictedCurve)) +
   geom_line(linetype="dotted") + 
   xlab("Number of documents") +
   ylab("Number of unique variables")
+pdf("../../Writeup/IntroPaper/visualisation/CumulativeVariablesPlot.pdf",width=4,height=3)
+cumPlot
+dev.off()
 
 ## General stats
 
