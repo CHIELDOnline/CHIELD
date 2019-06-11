@@ -709,15 +709,15 @@ The number of different species found in a given area of the Earth increases fro
   year = {2005},
   publisher = {Taylor \& Francis},
 }","Hudson Kam & Newport (2005)"
-"lee2005role","Yoosook Lee; Travis C Collier Edward P Stabler; Charles E Taylor","2005","The role of population structure in language evolution","@Article{lee2005role,
+"lee2005role","Yoosook Lee; Travis C Collier; Edward P Stabler; Charles E Taylor","2005","The role of population structure in language evolution","@Article{lee2005role,
   title = {The role of population structure in language evolution},
-  author = {Yoosook Lee and Travis C Collier Edward P Stabler and Charles E Taylor},
+  author = {Yoosook Lee and Travis C Collier and Edward P Stabler and Charles E Taylor},
   journal = {language},
   volume = {22},
   number = {23},
   pages = {24--25},
   year = {2005},
-}","Lee, Stabler & Taylor (2005)"
+}","Lee, Collier, Stabler & Taylor (2005)"
 "macwhinney2005language","Brian MacWhinney","2005","Language evolution and human development","@Article{macwhinney2005language,
   author = {Brian MacWhinney},
   date-added = {2017-08-16 09:19:55 +0000},
