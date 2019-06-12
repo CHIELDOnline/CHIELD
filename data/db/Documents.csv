@@ -318,8 +318,8 @@
   year = {1995},
   publisher = {Cambridge University Press},
 }","Knight, Power & Watts (1995)"
-"MacePagel1995","R. Mace; Mark Pagel","1995","A Latitudinal Gradient in the Density of Human Languages in North America","@Article{MacePagel1995,
-  author = {R. Mace and Mark Pagel},
+"MacePagel1995","Ruth Mace; Mark Pagel","1995","A Latitudinal Gradient in the Density of Human Languages in North America","@Article{MacePagel1995,
+  author = {Ruth Mace and Mark Pagel},
   doi = {10.1098/rspb.1995.0125},
   issn = {0962-8452},
   journal = {Proceedings of the Royal Society B: Biological Sciences},
@@ -375,12 +375,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {1997},
   publisher = {Archaeological and Anthropological Society of Victoria, Inc.},
 }","Bednarik (1997)"
-"smith1997major","John Maynard Smith; Eors Szathmary","1997","The major transitions in evolution","@Book{smith1997major,
+"smith1997major","John Maynard Smith; Eörs Szathmáry","1997","The major transitions in evolution","@Book{smith1997major,
   title = {The major transitions in evolution},
-  author = {John Maynard Smith and Eors Szathmary},
+  author = {John Maynard Smith and Eörs Szathmáry},
   year = {1997},
   publisher = {Oxford University Press},
-}","Smith & Szathmary (1997)"
+}","Smith & Szathmáry (1997)"
 "brown1998children","Penelope Brown","1998","Children’s first verbs in Tzeltal: Evidence for an early verb category","@Article{brown1998children,
   title = {Children’s first verbs in Tzeltal: Evidence for an early verb category},
   author = {Penelope Brown},
@@ -431,9 +431,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {1998},
   publisher = {Elsevier},
 }","Nettle (1998)"
-"pederson1998semantic","Eric Pederson; Eve Danziger; David Wilkins; Stephen Levinson; Sotaro Kita; Gunter Senft","1998","Semantic typology and spatial conceptualization","@Article{pederson1998semantic,
+"pederson1998semantic","Eric Pederson; Eve Danziger; David Wilkins; Stephen C Levinson; Sotaro Kita; Gunter Senft","1998","Semantic typology and spatial conceptualization","@Article{pederson1998semantic,
   title = {Semantic typology and spatial conceptualization},
-  author = {Eric Pederson and Eve Danziger and David Wilkins and Stephen Levinson and Sotaro Kita and Gunter Senft},
+  author = {Eric Pederson and Eve Danziger and David Wilkins and Stephen C Levinson and Sotaro Kita and Gunter Senft},
   journal = {Language},
   volume = {74},
   number = {3},
@@ -525,10 +525,10 @@ The number of different species found in a given area of the Earth increases fro
   year = {2000},
   publisher = {Oxford University Press on Demand},
 }","Smith & Szathmáry (2000)"
-"cangelosi01howNouns","A. Cangelosi; D. Parisi","2001","How nouns and verbs differentially affect the behavior of artificial organisms","@InProceedings{cangelosi01howNouns,
+"cangelosi01howNouns","Angelo Cangelosi; D. Parisi","2001","How nouns and verbs differentially affect the behavior of artificial organisms","@InProceedings{cangelosi01howNouns,
   abstract = {This paper presents an Artificial Life and Neural Network (ALNN) model for the evolution of syntax. The simulation methodology provides a unifying approach for the study of the evolution of language and its interaction with other behavioral and neural factors. The model uses an object manipulation task to simulate the evolution of language based on a simple verb-noun rule. The analyses of results focus on the interaction between language and other non-linguistic abilities, and on the neural control of linguistic abilities. The model shows that the beneficial effects of language on non-linguistic behavior are explained by the emergence of distinct internal representation patterns for the processing of verbs and nouns.},
   address = {London},
-  author = {A. Cangelosi and D. Parisi},
+  author = {Angelo Cangelosi and D. Parisi},
   booktitle = {Proceedings of the Twenty-third Annual Conference of the Cognitive Science Society},
   date-added = {2017-12-18 14:49:46 +0000},
   date-modified = {2017-12-18 14:49:46 +0000},
@@ -726,15 +726,15 @@ The number of different species found in a given area of the Earth increases fro
   title = {Language evolution and human development},
   year = {2005},
 }","MacWhinney (2005)"
-"van2005language","George Van Driem","2005","The language organism: The Leiden theory of language evolution","@InBook{van2005language,
-  author = {George Van Driem},
+"van2005language","George van Driem","2005","The language organism: The Leiden theory of language evolution","@InBook{van2005language,
+  author = {George {van Driem}},
   chapter = {9},
   editor = {James W Minett and SY William},
   pages = {331--340},
   publisher = {City University of HK Press},
   title = {The language organism: The Leiden theory of language evolution},
   year = {2005},
-}","Driem (2005)"
+}","van Driem (2005)"
 "wang05verticalAndHorizontalTransmission","William S-Y. Wang; James W. Minett","2005","Vertical and horizontal transmission in language evolution","@Article{wang05verticalAndHorizontalTransmission,
   abstract = {It has been observed that borrowing within a group of genetically related languages often causes the lexical similarities among them to be skewed. Consequently, it has been proposed that borrowing can sometimes be inferred from such skewing. However, heterogeneity in the rate of lexical replacement, as well as borrowing from other languages, can also give rise to skewed lexical similarities. It is important, therefore, to determine to what degree skewing is a statistically significant indicator of borrowing. Here, we describe a statistical hypothesis test for detecting language contact based on skewing of linguistic characters of arbitrary type. Significant probabilities of correct detection of contact are maintained for various contact scenarios, with low false alarm probability. Our experiments show that the test is fairly robust to substantial heterogeneity in the retention rate, both across characters and across lineages, suggesting that the method can provide an objective criterion against which claims of significant skewing due to contact can be tested, pointing the way for more detailed analysis.},
   author = {William S-Y. Wang and James W. Minett},
@@ -1226,9 +1226,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2009},
   publisher = {Wiley Online Library},
 }","Björk & Magnusson (2009)"
-"curriemace2009","T.E. Currie; R. Mace","2009","Political complexity predicts the spread of ethnolinguistic groups","@Article{curriemace2009,
+"curriemace2009","T.E. Currie; Ruth Mace","2009","Political complexity predicts the spread of ethnolinguistic groups","@Article{curriemace2009,
   year = {2009},
-  author = {T.E. Currie and R. Mace},
+  author = {T.E. Currie and Ruth Mace},
   title = {Political complexity predicts the spread of ethnolinguistic groups},
   journal = {PNAS - Proceedings of the National Academy of Sciences},
   number = {106},
@@ -1887,9 +1887,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2013},
   publisher = {Springer},
 }","Warriner, Kuperman & Brysbaert (2013)"
-"yao2013semantic","Bo Yao; Milica Vasiljevic; Mario Weick; Margaret E Sereno; Patrick J O’Donnell; Sara C Sereno","2013","Semantic size of abstract concepts: It gets emotional when you can’t see it","@Article{yao2013semantic,
+"yao2013semantic","Bo Yao; Milica Vasiljevic; Mario Weick; Margaret E Sereno; Patrick J O'Donnell; Sara C Sereno","2013","Semantic size of abstract concepts: It gets emotional when you can’t see it","@Article{yao2013semantic,
   title = {Semantic size of abstract concepts: It gets emotional when you can’t see it},
-  author = {Bo Yao and Milica Vasiljevic and Mario Weick and Margaret E Sereno and Patrick J O’Donnell and Sara C Sereno},
+  author = {Bo Yao and Milica Vasiljevic and Mario Weick and Margaret E Sereno and Patrick J O'Donnell and Sara C Sereno},
   journal = {PloS one},
   volume = {8},
   number = {9},
@@ -1936,9 +1936,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2014},
   publisher = {Springer},
 }","Bialystok & Poarch (2014)"
-"bowern2014loan","Claire Bowern; Hannah Haynie; Catherine Sheard; Barry Alpher; Patience Epps; Jane Hill; Patrick McConvell","2014","Loan and inheritance patterns in hunter-gatherer ethnobiological systems","@Article{bowern2014loan,
+"bowern2014loan","Claire Bowern; Hannah J Haynie; Catherine Sheard; Barry Alpher; Patience Epps; Jane Hill; Patrick McConvell","2014","Loan and inheritance patterns in hunter-gatherer ethnobiological systems","@Article{bowern2014loan,
   title = {Loan and inheritance patterns in hunter-gatherer ethnobiological systems},
-  author = {Claire Bowern and Hannah Haynie and Catherine Sheard and Barry Alpher and Patience Epps and Jane Hill and Patrick McConvell},
+  author = {Claire Bowern and Hannah J Haynie and Catherine Sheard and Barry Alpher and Patience Epps and Jane Hill and Patrick McConvell},
   abstract = {We compare the etymologies of ethnobiological nomenclature in 130 hunter-gatherer and agriculturist
 languages in Australia, North America, and Amazonia. Previous work has identified correlations between systems
 of ethnobiological terminology and dominant means of community subsistence, relating stability of terminology to
@@ -2045,9 +2045,9 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2014},
   organization = {Taylor and Francis},
 }","Lawson (2014)"
-"lee2014oceanic","S Lee; T Hasegawa","2014","Oceanic barriers promote language diversification in the Japanese Islands","@Article{lee2014oceanic,
+"lee2014oceanic","Sean Lee; T Hasegawa","2014","Oceanic barriers promote language diversification in the Japanese Islands","@Article{lee2014oceanic,
   title = {Oceanic barriers promote language diversification in the Japanese Islands},
-  author = {S Lee and T Hasegawa},
+  author = {Sean Lee and T Hasegawa},
   journal = {Journal of evolutionary biology},
   volume = {27},
   number = {9},
@@ -2280,10 +2280,10 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   pages = {1--18},
   publisher = {MIT Press},
 }","Marino (2015)"
-"morgan2015experimental","Thomas JH Morgan; Natalie T Uomini; Luke E Rendell; Laura Chouinard-Thuly; Sally E Street; Hannah M Lewis; Catherine P Cross; C Evans; R Kearney; I De la Torre; Andrew Whiten; Kevin N Laland","2015","Experimental evidence for the co-evolution of hominin tool-making teaching and language","@Article{morgan2015experimental,
+"morgan2015experimental","Thomas JH Morgan; Natalie T Uomini; Luke E Rendell; Laura Chouinard-Thuly; Sally E Street; Hannah M Lewis; Catherine P Cross; Cara Evans; R Kearney; I De la Torre; Andrew Whiten; Kevin N Laland","2015","Experimental evidence for the co-evolution of hominin tool-making teaching and language","@Article{morgan2015experimental,
   title = {Experimental evidence for the co-evolution of hominin tool-making teaching and language},
   abstract = {Hominin reliance on Oldowan stone tools—which appear from 2.5 mya and are believed to have been socially transmitted—has been hypothesized to have led to the evolution of teaching and language. Here we present an experiment investigating the efficacy of transmission of Oldowan tool-making skills along chains of adult human participants (N=184) using five different transmission mechanisms. Across six measures, transmission improves with teaching, and particularly with language, but not with imitation or emulation. Our results support the hypothesis that hominin reliance on stone tool-making generated selection for teaching and language, and imply that (i) low-fidelity social transmission, such as imitation/emulation, may have contributed to the ~700,000 year stasis of the Oldowan technocomplex, and (ii) teaching or proto-language may have been pre-requisites for the appearance of Acheulean technology. This work supports a gradual evolution of language, with simple symbolic communication preceding behavioural modernity by hundreds of thousands of years.},
-  author = {Thomas JH Morgan and Natalie T Uomini and Luke E Rendell and Laura Chouinard-Thuly and Sally E Street and Hannah M Lewis and Catherine P Cross and C Evans and R Kearney and I {De la Torre} and Andrew Whiten and Kevin N Laland},
+  author = {Thomas JH Morgan and Natalie T Uomini and Luke E Rendell and Laura Chouinard-Thuly and Sally E Street and Hannah M Lewis and Catherine P Cross and Cara Evans and R Kearney and I {De la Torre} and Andrew Whiten and Kevin N Laland},
   journal = {Nature communications},
   volume = {6},
   pages = {6029},
@@ -2725,8 +2725,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {The Entropy of Words - Learnability and Expressivity across More than 1000 Languages},
   journal = {Entropy},
 }","Bentz, Alikaniotis, Cysouw & Ferrer-i-Cancho (2017)"
-"Blasi_Moran_SLE_2017","Damian Blasi; Steve Moran; Ani Margvelashvili; Dan Dediu; Scott Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
-  author = {Damian Blasi and Steve Moran and Ani Margvelashvili and Dan Dediu and Scott Moisik},
+"Blasi_Moran_SLE_2017","Damián E Blasi; Steve Moran; Ani Margvelashvili; Dan Dediu; Scott Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
+  author = {Damián E Blasi and Steve Moran and Ani Margvelashvili and Dan Dediu and Scott Moisik},
   booktitle = {Proceedings of the 50th Annual Meeting of the Societas Linguistica Europaea},
   date-added = {2017-09-12 16:33:48 +0000},
   date-modified = {2017-09-12 16:37:57 +0000},
@@ -2743,9 +2743,9 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2017},
   publisher = {The Royal Society},
 }","Creanza, Kolodny & Feldman (2017)"
-"crespi2017segregating","Bernard Crespi; Silven Read; Peter Hurd","2017","Segregating polymorphisms of FOXP2 are associated with measures of inner speech, speech fluency and strength of handedness in a healthy population","@Article{crespi2017segregating,
+"crespi2017segregating","Bernard J Crespi; Silven Read; Peter Hurd","2017","Segregating polymorphisms of FOXP2 are associated with measures of inner speech, speech fluency and strength of handedness in a healthy population","@Article{crespi2017segregating,
   title = {Segregating polymorphisms of FOXP2 are associated with measures of inner speech, speech fluency and strength of handedness in a healthy population},
-  author = {Bernard Crespi and Silven Read and Peter Hurd},
+  author = {Bernard J Crespi and Silven Read and Peter Hurd},
   journal = {Brain and language},
   volume = {173},
   pages = {33--40},
@@ -3262,9 +3262,9 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2018},
   publisher = {Elsevier},
 }","Li & Abarbanell (2018)"
-"majid2018differential","Asifa Majid; Seán G Roberts; Ludy Cilissen; Karen Emmorey; Brenda Nicodemus; Lucinda O’grady; Bencie Woll; Barbara LeLan; Hilário De Sousa; Brian L Cansler; Shakila Shayani; Connie de Vos; Gunter Senft; N. J. Enfield; Rogayah A. Razak; Sebastian Fedden; Sylvia Tufvesson; Mark Dingemanse; Ozge Ozturk; Penelope Brown; Clair Hill; Olivier Le Guen; Vincent Hirtzel; Rik van Gijn; Mark A. Sicoli; Stephen C. Levinson","2018","Differential coding of perception in the world’s languages","@Article{majid2018differential,
+"majid2018differential","Asifa Majid; Seán G Roberts; Ludy Cilissen; Karen Emmorey; Brenda Nicodemus; Lucinda O’grady; Bencie Woll; Barbara LeLan; Hilário De Sousa; Brian L Cansler; Shakila Shayani; Connie de Vos; Gunter Senft; Nick J. Enfield; Rogayah A. Razak; Sebastian Fedden; Sylvia Tufvesson; Mark Dingemanse; Ozge Ozturk; Penelope Brown; Clair Hill; Olivier Le Guen; Vincent Hirtzel; Rik van Gijn; Mark A. Sicoli; Stephen C. Levinson","2018","Differential coding of perception in the world’s languages","@Article{majid2018differential,
   title = {Differential coding of perception in the world’s languages},
-  author = {Asifa Majid and Seán G Roberts and Ludy Cilissen and Karen Emmorey and Brenda Nicodemus and Lucinda O’grady and Bencie Woll and Barbara LeLan and Hilário {De Sousa} and Brian L Cansler and Shakila Shayani and Connie {de Vos} and Gunter Senft and N. J. Enfield and Rogayah A. Razak and Sebastian Fedden and Sylvia Tufvesson and Mark Dingemanse and Ozge Ozturk and Penelope Brown and Clair Hill and Olivier Le Guen and Vincent Hirtzel and Rik {van Gijn} and Mark A. Sicoli and Stephen C. Levinson},
+  author = {Asifa Majid and Seán G Roberts and Ludy Cilissen and Karen Emmorey and Brenda Nicodemus and Lucinda O’grady and Bencie Woll and Barbara LeLan and Hilário {De Sousa} and Brian L Cansler and Shakila Shayani and Connie {de Vos} and Gunter Senft and Nick J. Enfield and Rogayah A. Razak and Sebastian Fedden and Sylvia Tufvesson and Mark Dingemanse and Ozge Ozturk and Penelope Brown and Clair Hill and Olivier Le Guen and Vincent Hirtzel and Rik {van Gijn} and Mark A. Sicoli and Stephen C. Levinson},
   journal = {Proceedings of the National Academy of Sciences},
   volume = {115},
   number = {45},

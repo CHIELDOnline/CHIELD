@@ -315,6 +315,7 @@ authors$name = gsub("\\."," ",authors$name)
 authors$name = gsub(" +"," ",authors$name)
 authors = authors[authors$name!="others",]
 
+
 # Write csv files
 
 write.csv(causal.links,"../data/db/CausalLinks.csv", row.names = F, fileEncoding = "utf-8")
