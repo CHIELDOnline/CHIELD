@@ -1,3 +1,3 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"linguistic diversity","~","mammalian diversity","pos","","language change","statistical","yes","","TurveyPettorelli2014"
-"language endangerment","~","mammalian endangerment","neg","","language change","statistical","none","","TurveyPettorelli2014"
+"language diversity","~","mammalian diversity","pos",NA,"language change","statistical","yes",NA,"TurveyPettorelli2014"
+"language endangerment","~","mammalian endangerment","neg",NA,"language change","statistical","none",NA,"TurveyPettorelli2014"
