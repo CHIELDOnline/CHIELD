@@ -159,6 +159,18 @@ function bulkOut(){
 	requestRecord("php/getBulkOutLinks.php","keylist="+currentEdgesKeys,'links');
 }
 
+function completeCurrentDocuments(){
+	var edges = network_edges.get();
+	var currentDocs = [];
+	for(var i=0;i<edges.length;++i){
+		var cit = edges[i].citation
+		if($.inArray(cit, currentDocs)<0){
+			currentDocs.push(cit);
+		}
+	}
+	addDoc(currentDocs.join(";"));
+}
+
 function getMeanNodePositions(){
 	var mean_x_position = 0.0;
 	var mean_y_position = 0.0;

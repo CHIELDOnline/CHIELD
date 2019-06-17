@@ -172,6 +172,7 @@ $(document).ready(function(){
 
 	$("#expandVariable").click(expandVariable);
 	$("#findPaths").click(findPaths);
+	$("#completeDocuments").click(completeCurrentDocuments);
 	$("#fit").click(function(){
 		network.fit()
 	})
@@ -210,6 +211,10 @@ $(document).ready(function(){
       		onSelect: addDoc
     	});
 
+
+	$("#loader").click(function(){
+		hideLoader();
+	});
 
 	hideLegend();
 
