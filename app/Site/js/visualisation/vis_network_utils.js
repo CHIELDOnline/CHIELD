@@ -720,6 +720,7 @@ function getSupergroup(varname){
 }
 
 function variablesArePartOfSameSupergroup(varname1,varname2){
+  console.log("TEST "+varname1 + "#"+varname2+":"+(getSupergroup(varname1) === getSupergroup(varname2)));
   return(getSupergroup(varname1) === getSupergroup(varname2));
 }
 
@@ -736,9 +737,10 @@ function clusterByGroup() {
       var sg = supergroups[i];
       var clusterOptionsByData = {
               joinCondition: function (childOptions) {
-                  console.log(childOptions.supergroup);
-                  console.log(sg);
-                  return variablesArePartOfSameSupergroup(childOptions.supergroup,sg); 
+                  if(childOptions.label==""){
+                    return(false);
+                  }
+                  return variablesArePartOfSameSupergroup(childOptions.label,sg); 
               },
               /*processProperties: function (clusterOptions, childNodes, childEdges) {
                   var totalMass = 0;
