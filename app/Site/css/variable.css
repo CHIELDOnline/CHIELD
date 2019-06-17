@@ -14,3 +14,12 @@
 	right:10px;
 	top:10px;
 }
+
+
+#mynetwork{
+	border-style: solid;
+	border: "red";
+	height: 400px;
+	width: 90%;
+	margin-left:5%;
+}

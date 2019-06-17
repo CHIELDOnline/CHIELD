@@ -2,6 +2,8 @@
 
 // TODO: getLinksForDoc - prepare database
 
+var currentVariableName = "";
+
 tableId = "links_table";
 dtableConfig = {
 		ordering: true,
@@ -78,11 +80,14 @@ function updateRecord(response,type){
 	if(type=='var'){
 		var info = JSON.parse(response);
 		var vname = info[0].name;
+		currentVariableName = vname;
 		vname = vname.charAt(0).toUpperCase() + vname.slice(1).toLowerCase()
 		$("#variableTitle").html(vname);
 	}
 	if(type=="links"){
 		updateLinksTable(response);
+		redrawGUIfromObject(JSON.parse(response)); //should pass object
+		network.selectNodes([currentVariableName])
 	}
 }
 
@@ -106,6 +111,9 @@ $(document).ready(function(){
 	$("#header").load("header.html", function(){
 		$("#VariablesHREF").addClass("active");
 	}); 
+
+	initialiseNetwork();
+	applyNetworkColorScheme("document");
 
 	var key = getUrlParameter('key');
 	if(key!=''){
