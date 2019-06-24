@@ -1562,6 +1562,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2011},
   publisher = {The Royal Society},
 }","Rzeszutek, Savage & Brown (2011)"
+"sandler2011gradual","Wendy Sandler; Mark Aronoff; Irit Meir; Carol Padden","2011","The gradual emergence of phonological form in a new language","@Article{sandler2011gradual,
+  title = {The gradual emergence of phonological form in a new language},
+  author = {Wendy Sandler and Mark Aronoff and Irit Meir and Carol Padden},
+  journal = {Natural language \& linguistic theory},
+  volume = {29},
+  number = {2},
+  pages = {503--543},
+  year = {2011},
+  publisher = {Springer},
+}","Sandler, Aronoff, Meir & Padden (2011)"
 "trudgill2011social","Peter Trudgill","2011","Social structure and phoneme inventories","@Article{trudgill2011social,
   title = {Social structure and phoneme inventories},
   author = {Peter Trudgill},
@@ -3343,6 +3353,12 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   pages = {177--198},
   year = {2018},
 }","Moro (2018)"
+"nichols2018morphological","J Nichols; C Bentz","2018","Morphological complexity of languages reflects the settlement history of the Americas","@Article{nichols2018morphological,
+  title = {Morphological complexity of languages reflects the settlement history of the Americas},
+  author = {J Nichols and C Bentz},
+  journal = {New perspectives on the peopling of the Americas. Kerns Verlag, T{\""u}bingen},
+  year = {2018},
+}","Nichols & Bentz (2018)"
 "onnis2018language","Luca Onnis; Anna Truzzi; Xiaomeng Ma","2018","Language development and disorders: Possible genes and environment interactions","@Article{onnis2018language,
   title = {Language development and disorders: Possible genes and environment interactions},
   author = {Luca Onnis and Anna Truzzi and Xiaomeng Ma},
