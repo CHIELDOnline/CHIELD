@@ -1473,6 +1473,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {2010},
   publisher = {Benjamins},
 }","Sinnemäki (2010)"
+"skyrms2010signals","Brian Skyrms","2010","Signals: Evolution, learning, and information","@Book{skyrms2010signals,
+  title = {Signals: Evolution, learning, and information},
+  author = {Brian Skyrms},
+  year = {2010},
+  publisher = {Oxford University Press},
+}","Skyrms (2010)"
 "smith2010eliminating","Kenny Smith; Elizabeth Wonnacott","2010","Eliminating unpredictable variation through iterated learning","@Article{smith2010eliminating,
   title = {Eliminating unpredictable variation through iterated learning},
   author = {Kenny Smith and Elizabeth Wonnacott},
@@ -2976,6 +2982,16 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   number = {1},
   pages = {144--129},
 }","Skelton (2017)"
+"spike2017minimal","Matthew Spike; Kevin Stadler; Simon Kirby; Kenny Smith","2017","Minimal requirements for the emergence of learned signaling","@Article{spike2017minimal,
+  title = {Minimal requirements for the emergence of learned signaling},
+  author = {Matthew Spike and Kevin Stadler and Simon Kirby and Kenny Smith},
+  journal = {Cognitive science},
+  volume = {41},
+  number = {3},
+  pages = {623--658},
+  year = {2017},
+  publisher = {Wiley Online Library},
+}","Spike, Stadler, Kirby & Smith (2017)"
 "tattersall2017material","Ian Tattersall","2017","The material record and the antiquity of language","@Article{tattersall2017material,
   title = {The material record and the antiquity of language},
   author = {Ian Tattersall},

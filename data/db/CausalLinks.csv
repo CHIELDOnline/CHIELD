@@ -995,6 +995,13 @@
 "609321836","schmandt2010writing","73178654",">","2148751129","none",NA,NA,"none","hypothesis","","","It [writing] was the outcome of a new threshold in cognitive development - abstract counting (p.122)"
 "1160609761","schmandt2010writing","73178654",">","33334670","none",NA,NA,"none","hypothesis","","","The invention of abstract numerals was the beginning of mathematics; it was also the beginning of writing (p.125)"
 "208507833","sinnemaki2010word","2412374766",">","634707713",NA,NA,NA,"language change","statistical","",NA,"Zero morphological marking of core arguments (subject and object) develops and is maintained in languages with dominant SVO word order and overt morphological marking develops and is maintained in languages with some other dominant word order type."
+"2182856647","skyrms2010signals","3650517719",">","3528510945","pos",NA,NA,"cultural evolution","model","","yes",NA
+"1656001054","skyrms2010signals","879262785",">","3528510945","pos",NA,NA,"coevolution","model","","yes",NA
+"4282201279","skyrms2010signals","2979943643",">","3528510945","neg",NA,NA,"coevolution","model","","yes",NA
+"2540787023","skyrms2010signals","2351271384",">","3528510945","pos",NA,NA,"coevolution","model","","yes",NA
+"3524981936","skyrms2010signals","1496358279",">","3528510945","neg",NA,NA,"coevolution","model","","yes",NA
+"172864024","skyrms2010signals","628453345",">","3528510945","pos",NA,NA,"coevolution","model","","yes",NA
+"3539800163","skyrms2010signals","3055909732",">","3528510945","n-m",NA,NA,"cultural evolution","model","","yes",NA
 "3594115542","smith2010eliminating","251023881",">","1369442256","pos",NA,"regularity","language change","review","","",""
 "2010886537","smith2010eliminating","360233333",">","251023881","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
 "2100925986","smith2010eliminating","1369442256","~=","3495191649","pos",NA,"regularity","language change","review","","","creolization can also be characterised as the construction of a new language via levelling and regularization of a pool of linguistic variants arising from radical language contact"
@@ -2341,6 +2348,22 @@
 "2496026546","simonenko2017taraldsen","3771759523","~","1200066372","pos",NA,NA,"language change","statistical","",NA,"We show that agreement syncretisation and the emergence of overt pronominal subjects proceeded at the same rate."
 "2032147567","simonenko2017taraldsen","1200066372",">","3771759523","pos",NA,NA,"language change","hypothesis","",NA,"One of the major factors evoked in relation to the disappearance of null subjects in the history of French is syncretisation of subject agreement inflection on the verb."
 "3722823663","skelton_2017","3837172764",">","3252179577",NA,NA,NA,"language change","qualitative","",NA,"The author argues that language contact led to simplification of phonological contrasts, but not of the inflectional system of the Greek variety spoken in the ancient Pamphylia."
+"1671878320","spike2017minimal","2922716437",">","3342768720","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"920569446","spike2017minimal","3650517719",">","3342768720","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"3107226031","spike2017minimal","821059637",">","1598196866","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"282297308","spike2017minimal","4248256416",">","1598196866","neg",NA,NA,"cultural evolution","simulation","","yes",""
+"3027645307","spike2017minimal","4251516531",">","1598196866","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"1978668823","spike2017minimal","2430810519",">","1598196866","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"4187569531","spike2017minimal","1598196866",">>","3528510945","n-m",NA,NA,"cultural evolution","simulation","","yes",""
+"2255033905","spike2017minimal","3342768720",">>","3528510945","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"1682308098","spike2017minimal","3734849153",">>","3528510945","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"1777990447","spike2017minimal","2430810519",">","3734849153","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"434217497","spike2017minimal","3650517719",">","3734849153","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"4197641086","spike2017minimal","974945248",">","3734849153","pos",NA,NA,"cultural evolution","simulation","","yes","'Obverter learning' Batali & Oliphant"
+"1046028423","spike2017minimal","3427124779",">","3342768720","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"155838996","spike2017minimal","694523404",">","1598196866","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"3340703116","spike2017minimal","694523404",">","3734849153","pos",NA,NA,"cultural evolution","simulation","","yes",""
+"3280923490","spike2017minimal","3427124779",">","3734849153","pos",NA,NA,"cultural evolution","simulation","","yes",""
 "1609162840","tattersall2017material","4089599729","~","3858777019",NA,NA,"symbolism","cultural evolution","hypothesis","",NA,"""where we can identify archaeological proxies for symbolic thought, it is overwhelmingly probable that we will also have prima facie evidence of language"""
 "3632810098","tattersall2017material","4089599729","~","2079275522",NA,NA,"symbolism","cultural evolution","hypothesis","",NA,"""If symbolic thought and language are indeed correctly associated, then the only completely reliable proxy for the possession of language by ancient hominids will be the production of explicitly symbolic objects"" "
 "2017727872","tattersall2017material","4089599729",">","150406688",NA,NA,"","cultural evolution","hypothesis","",NA,""
