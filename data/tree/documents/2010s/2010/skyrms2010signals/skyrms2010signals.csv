@@ -1,0 +1,8 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"reinforcement learning",">","convergence on signs","pos","","cultural evolution","model","yes","","skyrms2010signals"
+"replicator dynamics",">","convergence on signs","pos","","coevolution","model","yes","","skyrms2010signals"
+"number of meanings",">","convergence on signs","neg","","coevolution","model","yes","","skyrms2010signals"
+"mutation",">","convergence on signs","pos","","coevolution","model","yes","","skyrms2010signals"
+"number of signals",">","convergence on signs","neg","","coevolution","model","yes","","skyrms2010signals"
+"assortment",">","convergence on signs","pos","","coevolution","model","yes","","skyrms2010signals"
+"forgetting",">","convergence on signs","n-m","","cultural evolution","model","yes","","skyrms2010signals"
