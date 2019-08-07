@@ -63,6 +63,16 @@
   year = {1970},
   publisher = {University of New Mexico},
 }","Goody (1970)"
+"trivers1971evolution","Robert L Trivers","1971","The evolution of reciprocal altruism","@Article{trivers1971evolution,
+  title = {The evolution of reciprocal altruism},
+  author = {Robert L Trivers},
+  journal = {The Quarterly review of biology},
+  volume = {46},
+  number = {1},
+  pages = {35--57},
+  year = {1971},
+  publisher = {Stony Brook Foundation, Inc.},
+}","Trivers (1971)"
 "trudgill1974linguistic","Peter Trudgill","1974","Linguistic change and diffusion: Description and explanation in sociolinguistic dialect geography","@Article{trudgill1974linguistic,
   title = {Linguistic change and diffusion: Description and explanation in sociolinguistic dialect geography},
   author = {Peter Trudgill},
@@ -83,6 +93,16 @@
   year = {1975},
   publisher = {Elsevier},
 }","Frederiksen (1975)"
+"green1981construction","Margaret W Green","1981","The construction and implementation of the cuneiform writing system","@Article{green1981construction,
+  title = {The construction and implementation of the cuneiform writing system},
+  author = {Margaret W Green},
+  journal = {Visible Language},
+  volume = {15},
+  number = {4},
+  pages = {345--372},
+  year = {1981},
+  publisher = {Visible Language, etc.},
+}","Green (1981)"
 "gentner1982nouns","Dedre Gentner","1982","Why Nouns are Learned Before Verbs: Linguistic Relativity versus Natural Partitioning","@InBook{gentner1982nouns,
   author = {Dedre Gentner},
   chapter = {11},
@@ -135,6 +155,12 @@
   year = {1985},
   publisher = {JSTOR},
 }","Witkowski & Brown (1985)"
+"goody1986logic","Jack Goody","1986","The logic of writing and the organization of society","@Book{goody1986logic,
+  title = {The logic of writing and the organization of society},
+  author = {Jack Goody},
+  year = {1986},
+  publisher = {Cambridge University Press},
+}","Goody (1986)"
 "kroll1986lexical","Judith F Kroll; Jill S Merves","1986","Lexical access for concrete and abstract words.","@Article{kroll1986lexical,
   title = {Lexical access for concrete and abstract words.},
   author = {Judith F Kroll and Jill S Merves},
