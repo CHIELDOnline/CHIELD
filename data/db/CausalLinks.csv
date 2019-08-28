@@ -1173,6 +1173,15 @@
 "2000569487","garcia2012positive","907311459",">","509874855","neg",NA,NA,"language change","statistical","",NA,"positive sentences would become more frequent and even advance to a social norm (cf. 'Have a nice day'), but they would provide less information when ex-pressed. ' Words with negative emotions are less often used, but because of their rareness they carry more information."
 "3487552953","garcia2012positive","4218912191",">","22340044","pos",NA,NA,"cultural evolution","review","",NA,"according to Rime (2009), the expression of positive emotions increases the level of communication and strengthens social links."
 "2425911409","garcia2012positive","22340044","<=>","376579730","pos",NA,NA,"cultural evolution","review","",NA,"the expression of positive emotions increases the level of communication and strengthens social links. This would lead to stronger pro-social behaviour and cooperation, giving evolutionary advantage to societies whose communication shows a positive bias."
+"981071441","Gavin2012","3637099776","/>","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"2893305967","Gavin2012","3032816132",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"2230249916","Gavin2012","1954884054",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"4084184950","Gavin2012","3618796425",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"2865997479","Gavin2012","2866204614",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"4046868514","Gavin2012","1257084201",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"3116682829","Gavin2012","4133015428",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"1581149414","Gavin2012","1689565228",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
+"300637521","Gavin2012","4032506403",">","191368178",NA,NA,NA,"language change","statistical","",NA,NA
 "4168065153","gong2012studying","4043516415",">","4176837079","pos",NA,"language change","language change","model","","",NA
 "2808523121","gorenflo2012co","1746840506","~","191368178","pos",NA,NA,"language change","statistical","","yes","""weak positive"" correlation"
 "136682793","gorenflo2012co","1721658120","~","3036892572","pos",NA,NA,"language change","statistical","","yes","link between language hotspots and biodiversity hotspots (defined by endemicity)"
@@ -1842,6 +1851,8 @@
 "764883138","Everett2015","1639326746",">","746919029","neg",NA,NA,"language change","statistical","","","""We predict that, given the relative imprecision of vocal fold vibration in desiccated versus humid contexts, arid and cold ecologies should be less amenable, when contrasted to warm and humid ecologies, to the development of languages with phonemic tone, especially complex tone. """
 "1050925871","Everett2015","3060838189",">","746919029","neg",NA,NA,"language change","statistical","","","""We predict as well that this tendency should be particularly apparent in frigid climates, given the extremely reduced water vapor capacity of cold air."""
 "735781630","futrell2015quantifying","1597322660","~","2949246489","pos",NA,NA,"language change","statistical","","yes","we ... demonstrate a correlation between quantitative word order freedom of subjects and objects and the presence of nominative-accusative case marking."
+"1575264515","Good2015","3495191649","/>","353259398",NA,NA,"morphology","language change","statistical","",NA,NA
+"125396046","Good2015","3495191649",">","2948506823",NA,NA,"morphology","language change","statistical","",NA,NA
 "4112332191","kirby2015compression","437593210",">","1534875632","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
 "826151143","kirby2015compression","2367146783",">","534647626","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
 "2419181726","kirby2015compression","437593210",">","1320143865","pos",NA,NA,"cultural evolution","experiment","","","iterated learning of artificial miniature languages"
@@ -2462,6 +2473,12 @@
 "2319153444","baumann2018linguistic","1746840506",">","2844212883","pos",NA,NA,"language change","model","","","""...evolution proceeds faster in large populations. At first sight, this may seem paradox: population size is predicted to increase the stability of an item, but at the same time population size drives linguistic optimization, where an item is effectively replaced by a more successful version of itself. Note, crucially, that the more optimized variant is less likely to get lost."""
 "944230969","baumann2018linguistic","1683164269",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
 "1751657311","baumann2018linguistic","223612159",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
+"1327885561","Bentz2018","3473049755",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
+"1760508090","Bentz2018","1200513521",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
+"4030237165","Bentz2018","1031734161",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
+"3403113672","Bentz2018","3032816132",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
+"139985769","Bentz2018","3749371032",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
+"1477600081","Bentz2018","1746840506",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
 "1665693209","Bromham2018Parasites","191368178","~","3765120731","pos",NA,NA,"language change","statistical","","","significant correlation shown to be due to covariation with other factors and statistical nonindpendence"
 "1301112821","Bromham2018Parasites","1031734161","~","191368178","neg",NA,NA,"language change","statistical","","",""
 "467493790","Bromham2018Parasites","1031734161","~","3765120731","neg",NA,NA,"language change","statistical","","",""
@@ -2974,6 +2991,12 @@
 "2728159450","zuidema2018evolution","1781494893",">","31407103",NA,NA,NA,"cultural evolution","hypothesis","",NA,"""It has been proposed that the need for an increasing number of signals caused evolution of combinatorial structure and our ability to deal with it... There are even mathematical and computer models that simulate this"""
 "3479051370","zuidema2018evolution","1758201540",">","31407103",NA,NA,NA,"cultural evolution","hypothesis","",NA,"""Through cultural transmission, languages will then have evolved (culturally) to show more and more combinatorial structure"""
 "3076717867","zuidema2018evolution","31407103","<=>","3957176432",NA,NA,NA,"cultural evolution","hypothesis","",NA,"""Thus, the ability to use combinatorial structure and combinatorial structure itself could have co-evolved gradually"""
+"1748032474","Dediu2019Aug","2576999303",">","1410213813",NA,NA,"phonetics","language change","simulation","","yes",NA
+"2585915144","Dediu2019Aug","643305771",">","1410213813",NA,NA,"phonetics","language change","simulation","","yes",NA
+"3937465920","Dediu2019Aug","1739646661",">","1410213813",NA,NA,"phonetics","language change","simulation","","yes",NA
+"3456736674","Dediu2019Aug","1742566378",">","643305771",NA,NA,"","","","","",NA
+"3605631148","Dediu2019Aug","1742566378",">","2576999303",NA,NA,"","","","","",NA
+"1888617462","Dediu2019Aug","1742566378",">","1739646661",NA,NA,"","","","","",NA
 "2866724473","hua2019ecological","1554828085","~","3637099776","pos",NA,NA,"language change","statistical","","yes",""
 "577437850","hua2019ecological","4077221114","~","3637099776","pos",NA,NA,"language change","statistical","","yes",""
 "4216809946","hua2019ecological","1554828085","~","1031734161","neg",NA,NA,"language change","statistical","","yes","indirect association through climatic variables"
@@ -3019,6 +3042,7 @@
 "3476883626","monaghan2019cognitive","304590923",">","3253875825","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "2876719949","monaghan2019cognitive","304590923",">","2024490099","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "3247940510","monaghan2019cognitive","907311459",">","1097259485","pos",NA,NA,"language change","review","","","Pagel et al. found that the contemporary frequency of a word predicted its rate of lexical change   higher frequency words had a lower rate of change."
+"3528643636","Nikolaev2019","2351288590",">","225151578",NA,NA,NA,"cultural evolution","statistical","",NA,NA
 "288719332","Pacheco_Coelho_2019","395999132",">","1554828085","pos",NA,NA,"language change","statistical","","yes","β=0.17"
 "2731376617","Pacheco_Coelho_2019","395999132",">","4077221114","neg",NA,NA,"language change","statistical","","yes","β=-0.01"
 "3970250331","Pacheco_Coelho_2019","4077221114",">","1554828085","pos",NA,NA,"language change","statistical","","yes","β=0.44"
