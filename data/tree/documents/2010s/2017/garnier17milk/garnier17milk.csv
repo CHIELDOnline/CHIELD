@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"cattle domestication",">","cheese consumption","pos","","coevolution","hypothesis","","","garnier17milk"
+"cattle domestication",">","population size","pos","","coevolution","hypothesis","","","garnier17milk"
+"cheese consumption",">","lactose tolerance","pos","","coevolution","hypothesis","","","garnier17milk"
+"lactose tolerance",">","population size","pos","","coevolution","hypothesis","","","garnier17milk"
