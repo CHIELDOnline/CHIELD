@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"homophily",">","cultural diversity","n-m","Cultural ","cultural evolution","model","yes","","centola2007homophily"
+"social influence variation",">","cultural diversity","n-m","Network dynamics","cultural evolution","model","yes","","centola2007homophily"
+"social interaction","<=>","population connectivity","pos","Network dynamics","cultural evolution","model","none","","centola2007homophily"
+"population connectivity","~","cultural diversity","n-m","Network dynamics","coevolution","model","none","","centola2007homophily"
