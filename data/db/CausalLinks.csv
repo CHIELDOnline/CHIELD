@@ -674,6 +674,15 @@
 "1862554179","szamado2006selective","2743229210",">","3858777019","",NA,NA,"","","","",""
 "4032867936","szamado2006selective","3790402265","~","3784310726","neg",NA,NA,"","","","",""
 "474817091","szamado2006selective","4280693773","~","3858777019","neg",NA,NA,"","","","",""
+"1766496006","centola2007complex","1891808124",">","3345272349","pos",NA,"Network structure","cultural evolution","model","","",NA
+"1726961073","centola2007complex","1072527045",">","3345272349","neg",NA,"Netwrok structure","cultural evolution","model","","",NA
+"3158616810","centola2007complex","1072527045","~","1891808124","n-m",NA,"Network structure","cultural evolution","model","","",NA
+"2073194366","centola2007complex","1072527045",">","880542913","neg",NA,"Network structure","cultural evolution","model","","",NA
+"2038826005","centola2007complex","880542913",">","3345272349","neg",NA,"Network structure","cultural evolution","model","","",NA
+"92013714","centola2007homophily","1935171617",">","2407761691","n-m",NA,"Cultural ","cultural evolution","model","","yes",NA
+"16173037","centola2007homophily","448567049",">","2407761691","n-m",NA,"Network dynamics","cultural evolution","model","","yes",NA
+"2572941063","centola2007homophily","1729858907","<=>","1891808124","pos",NA,"Network dynamics","cultural evolution","model","","",NA
+"3955549394","centola2007homophily","1891808124","~","2407761691","n-m",NA,"Network dynamics","coevolution","model","","",NA
 "1216358931","chomsky2007biolinguistic","1411636729",">","130863228",NA,NA,NA,"coevolution","hypothesis","",NA,"""An account of the evolution of language will have to deal with the property of unbounded Merge, and whatever else remains in UG, the genetic endowment""; ""the ‘emergence’ was the capacity for recursive generation in its simplest possible form: the operation Merge, linked to atomic conceptual resources to create a ‘language of thought’, perhaps near optimally. That exaptation would indeed have been adaptive, and could well have come to dominate the particular population of the human lineage in which it occurred."""
 "4145753483","chomsky2007biolinguistic","1513097241",">","130863228",NA,NA,NA,"coevolution","hypothesis","",NA,""
 "876962500","chomsky2007biolinguistic","130863228",">","2754310106",NA,NA,NA,"coevolution","hypothesis","",NA,"""The later event would have been the externalization, laying the basis for rich social interchange and the great leap forward."""
