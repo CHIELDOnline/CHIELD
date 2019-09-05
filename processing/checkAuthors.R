@@ -1,5 +1,6 @@
 library(bibtex)
 library(RSQLite)
+library(dplyr)
 
 try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
 source("detexify.R")
@@ -28,6 +29,9 @@ authors[sapply(authors,function(X){nchar(strsplit(X," ")[[1]][1])==1})]
 lastNames = sapply(authors,function(X){x = strsplit(X," ")[[1]];x[length(x)]})
 lastNamesC = sort(table(lastNames))
 lastNamesC[lastNamesC>1]
+for(x in names(lastNamesC[lastNamesC>1])){
+  print(authors[grepl(x,authors)])
+}
 
 ## Replace some authors manually
 
@@ -66,4 +70,13 @@ if(FALSE){
   replaceAuthorName("A. Cangelosi","Angelo Cangelosi")
   replaceAuthorName("John R Stepp","John Richard Stepp")
   replaceAuthorName("S Lee","Sean Lee")
+  # Second round 5/9/19
+  replaceAuthorName("Russell Gray","Russel D Gray")
+  replaceAuthorName("Fiona Jordan","Fiona M Jordan")
+  replaceAuthorName("Scott Moisik","Scott R Moisik")
+  replaceAuthorName("Patrick Kavanagh","Patrick H Kavanagh")
+  replaceAuthorName("C Bentz","Christian Bentz")
+  replaceAuthorName("K L Hunley","Keith Hunley")
+  replaceAuthorName("John R Stepp","John Richard Stepp")
+  replaceAuthorName("J Nichols","Johanna Nichols")
 }

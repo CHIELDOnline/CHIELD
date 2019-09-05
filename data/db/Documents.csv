@@ -1021,9 +1021,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2007},
   publisher = {Linguistic Society of America},
 }","Hay & Bauer (2007)"
-"hunley07geneticCoevolution","K.L. Hunley; G.S. Cabana; D.A. Merriwether; J.C. Long","2007","A formal test of linguistic and genetic coevolution in native Central and South America","@Article{hunley07geneticCoevolution,
+"hunley07geneticCoevolution","Keith Hunley; G.S. Cabana; D.A. Merriwether; J.C. Long","2007","A formal test of linguistic and genetic coevolution in native Central and South America","@Article{hunley07geneticCoevolution,
   abstract = {This paper investigates a mechanism of linguistic and genetic coevolution in Native Central and South America. This mechanism proposes that a process of population fissions, expansions into new territories, and isolation of ancestral and descendant groups will produce congruent language and gene trees. To evaluate this population fissions mechanism, we collected published mtDNA sequences for 1,381 individuals from 17 Native Central and South American populations. We then tested the hypothesis that three well-known language classifications also represented the genetic structure of these populations. We rejected the hypothesis for each language classification. Our tests revealed linguistic and genetic correspondence in several shallow branches common to each classification, but no linguistic and genetic correspondence in the deeper branches contained in two of the language classifications. We discuss the possible causes for the lack of congruence between linguistic and genetic structure in the region, and describe alternative mechanisms of linguistic and genetic correspondence and their predictions.},
-  author = {K.L. Hunley and G.S. Cabana and D.A. Merriwether and J.C. Long},
+  author = {Keith Hunley and G.S. Cabana and D.A. Merriwether and J.C. Long},
   date-added = {2017-12-18 14:49:46 +0000},
   date-modified = {2017-12-18 14:49:46 +0000},
   doi = {10.1002/ajpa.20542},
@@ -1623,9 +1623,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2011},
   publisher = {Elsevier},
 }","Berwick, Okanoya, Beckers & Bolhuis (2011)"
-"bowern2011does","Claire Bowern; Patience Epps; Russell Gray; Jane Hill; Keith Hunley; Patrick McConvell; Jason Zentz","2011","Does lateral transmission obscure inheritance in hunter-gatherer languages?","@Article{bowern2011does,
+"bowern2011does","Claire Bowern; Patience Epps; Russell D Gray; Jane Hill; Keith Hunley; Patrick McConvell; Jason Zentz","2011","Does lateral transmission obscure inheritance in hunter-gatherer languages?","@Article{bowern2011does,
   title = {Does lateral transmission obscure inheritance in hunter-gatherer languages?},
-  author = {Claire Bowern and Patience Epps and Russell Gray and Jane Hill and Keith Hunley and Patrick McConvell and Jason Zentz},
+  author = {Claire Bowern and Patience Epps and Russell D Gray and Jane Hill and Keith Hunley and Patrick McConvell and Jason Zentz},
   journal = {PloS one},
   volume = {6},
   number = {9},
@@ -2419,9 +2419,9 @@ status or trade, though we note that the most frequently loaned items in the sam
   year = {2015},
   publisher = {Elsevier},
 }","Kirby, Tamariz, Cornish & Smith (2015)"
-"majid2015semantic","Asifa Majid; Fiona Jordan; Michael Dunn","2015","Semantic systems in closely related languages","@Misc{majid2015semantic,
+"majid2015semantic","Asifa Majid; Fiona M Jordan; Michael Dunn","2015","Semantic systems in closely related languages","@Misc{majid2015semantic,
   title = {Semantic systems in closely related languages},
-  author = {Asifa Majid and Fiona Jordan and Michael Dunn},
+  author = {Asifa Majid and Fiona M Jordan and Michael Dunn},
   abstract = {In each semantic domain studied to date, there is considerable variation in how meanings are expressed across languages. But are some
 semantic domains more likely to show variation than others? Is the domain of space more or less variable in its expression than other
 semantic domains, such as containers, body parts, or colours? According to many linguists, the meanings expressed in grammaticised
@@ -2727,8 +2727,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {Adult Language Learning And The Evolution Of Linguistic Complexity},
   year = {2016},
 }","Atkinson, Smith & Kirby (2016)"
-"evolang11_57","Dan Dediu; Scott Moisik","2016","Anatomical Biasing Of Click Learning And Production: An MRI And 3d Palate Imaging Study","@InProceedings{evolang11_57,
-  author = {Dan Dediu and Scott Moisik},
+"evolang11_57","Dan Dediu; Scott R Moisik","2016","Anatomical Biasing Of Click Learning And Production: An MRI And 3d Palate Imaging Study","@InProceedings{evolang11_57,
+  author = {Dan Dediu and Scott R Moisik},
   booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANGX11)},
   date-added = {2017-12-18 16:18:12 +0000},
   date-modified = {2017-12-18 16:18:12 +0000},
@@ -2902,8 +2902,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {The Entropy of Words - Learnability and Expressivity across More than 1000 Languages},
   journal = {Entropy},
 }","Bentz, Alikaniotis, Cysouw & Ferrer-i-Cancho (2017)"
-"Blasi_Moran_SLE_2017","Damián E Blasi; Steve Moran; Ani Margvelashvili; Dan Dediu; Scott Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
-  author = {Damián E Blasi and Steve Moran and Ani Margvelashvili and Dan Dediu and Scott Moisik},
+"Blasi_Moran_SLE_2017","Damián E Blasi; Steve Moran; Ani Margvelashvili; Dan Dediu; Scott R Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
+  author = {Damián E Blasi and Steve Moran and Ani Margvelashvili and Dan Dediu and Scott R Moisik},
   booktitle = {Proceedings of the 50th Annual Meeting of the Societas Linguistica Europaea},
   date-added = {2017-09-12 16:33:48 +0000},
   date-modified = {2017-09-12 16:37:57 +0000},
@@ -3593,9 +3593,9 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   pages = {177--198},
   year = {2018},
 }","Moro (2018)"
-"nichols2018morphological","J Nichols; C Bentz","2018","Morphological complexity of languages reflects the settlement history of the Americas","@Article{nichols2018morphological,
+"nichols2018morphological","Johanna Nichols; Christian Bentz","2018","Morphological complexity of languages reflects the settlement history of the Americas","@Article{nichols2018morphological,
   title = {Morphological complexity of languages reflects the settlement history of the Americas},
-  author = {J Nichols and C Bentz},
+  author = {Johanna Nichols and Christian Bentz},
   journal = {New perspectives on the peopling of the Americas. Kerns Verlag, T{\""u}bingen},
   year = {2018},
 }","Nichols & Bentz (2018)"
@@ -3828,7 +3828,7 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   month = {May},
   doi = {10.1163/22105832-00901001},
 }","Nikolaev (2019)"
-"Pacheco_Coelho_2019","Marco Túlio Pacheco Coelho; Elisa Barreto Pereira; Hannah J. Haynie; Thiago F. Rangel; Patrick Kavanagh; Kathryn R. Kirby; Simon J. Greenhill; Claire Bowern; Russell D. Gray; Robert K. Colwell; Nicholas Evans; Michael C. Gavin","2019","Drivers of geographical patterns of North American language diversity","@Article{Pacheco_Coelho_2019,
+"Pacheco_Coelho_2019","Marco Túlio Pacheco Coelho; Elisa Barreto Pereira; Hannah J. Haynie; Thiago F. Rangel; Patrick H Kavanagh; Kathryn R. Kirby; Simon J. Greenhill; Claire Bowern; Russell D. Gray; Robert K. Colwell; Nicholas Evans; Michael C. Gavin","2019","Drivers of geographical patterns of North American language diversity","@Article{Pacheco_Coelho_2019,
   doi = {10.1098/rspb.2019.0242},
   url = {https://doi.org/10.1098%2Frspb.2019.0242},
   year = {2019},
@@ -3837,7 +3837,7 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   volume = {286},
   number = {1899},
   pages = {20190242},
-  author = {Marco Túlio Pacheco Coelho and Elisa Barreto Pereira and Hannah J. Haynie and Thiago F. Rangel and Patrick Kavanagh and Kathryn R. Kirby and Simon J. Greenhill and Claire Bowern and Russell D. Gray and Robert K. Colwell and Nicholas Evans and Michael C. Gavin},
+  author = {Marco Túlio Pacheco Coelho and Elisa Barreto Pereira and Hannah J. Haynie and Thiago F. Rangel and Patrick H Kavanagh and Kathryn R. Kirby and Simon J. Greenhill and Claire Bowern and Russell D. Gray and Robert K. Colwell and Nicholas Evans and Michael C. Gavin},
   title = {Drivers of geographical patterns of North American language diversity},
   journal = {Proceedings of the Royal Society B: Biological Sciences},
 }","Coelho, Pereira, Haynie, Rangel et al. (2019)"
