@@ -23,6 +23,7 @@ dx = adist(authors)
 authors[which(dx==1,arr.ind = T)[,1]]
 authors[which(dx==2,arr.ind = T)[,1]]
 authors[which(dx==3,arr.ind = T)[,1]]
+sort(unique(authors[which(dx==4,arr.ind = T)[,1]]))
 
 authors[sapply(authors,function(X){nchar(strsplit(X," ")[[1]][1])==1})]
 
@@ -57,6 +58,7 @@ replaceAuthorName = function(oldName,newName){
 
 
 if(FALSE){
+  # First round
   replaceAuthorName("George Van Driem","George van Driem")
   replaceAuthorName("Patrick J O’Donnell","Patrick J O'Donnell")
   replaceAuthorName("Stephen Levinson","Stephen C Levinson")
