@@ -160,6 +160,7 @@ function hideAlerts(){
 	$("#ReferenceYearAlert").hide();
 	$("#ReferenceTitleAlert").hide();
 	$("#ReferenceKeyAlert").hide();
+	$("#ReferenceKeyAlert2").hide();
 	$("#CausalLinksAlert").hide();
 	$("#BlankVariableAlert").hide();
 }
@@ -199,6 +200,13 @@ function validateSubmission(){
 			$("#ReferenceKeyAlert").show();
 			valid = false;
 		}
+
+		// Check bib key is acceptable
+		if(!(/^[A-Za-z0-9_-]+$/.test(bib_key))) {
+			$("#ReferenceKeyAlert2").show();
+			valid = false;
+		}
+
 	}
 	// Check causal links
 	if($("#jsGrid").data().JSGrid.data.length==0){
