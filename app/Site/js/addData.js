@@ -151,15 +151,22 @@ var CHIELDVersion = "";
 
 function showTab(id){
 	$('.nav-tabs a[href="#'+id+'"]').tab('show');
+	hideAlerts();
+}
+
+function hideAlerts(){
 	$("#ContributorAlert").hide();
 	$("#ReferenceAlert").hide();
 	$("#ReferenceYearAlert").hide();
+	$("#ReferenceTitleAlert").hide();
 	$("#ReferenceKeyAlert").hide();
 	$("#CausalLinksAlert").hide();
+	$("#BlankVariableAlert").hide();
 }
 
 
 function validateSubmission(){
+	hideAlerts();
 	var valid = true;
 	// Check contributor
 	if(contributor ==""){
@@ -181,6 +188,11 @@ function validateSubmission(){
 				$("#ReferenceYearAlert").show();
 				valid = false;
 			}
+		}
+
+		if(bib_title===undefined){
+			$("#ReferenceTitleAlert").show();
+			valid = false;
 		}
 
 		if(bib_key.search("/")>=0){
@@ -235,10 +247,12 @@ function updateBib(){
 }
 
 function simplifyTitle(title){
-	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-	title = title.replace(/\s{2,}/g," ");
-	title = title.trim();
-	title = title.toLowerCase();
+	if(title){
+		title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+		title = title.replace(/\s{2,}/g," ");
+		title = title.trim();
+		title = title.toLowerCase();
+	}
 	return(title);
 }
 
@@ -404,12 +418,7 @@ $(document).ready(function(){
 	}
 
 	// Hide validation warnings
-	$("#ContributorAlert").hide();
-	$("#ReferenceAlert").hide();
-	$("#ReferenceYearAlert").hide();
-	$("#ReferenceKeyAlert").hide();
-	$("#CausalLinksAlert").hide();
-	$("#BlankVariableAlert").hide();
+	hideAlerts();
 	
 
 	// getVersion checks whether cookies are up to date.
