@@ -114,6 +114,17 @@
   volume = {Language development: Language, thought and Culture},
   year = {1982},
 }","Gentner (1982)"
+"Brown1983","Cecil H. Brown","1983","Where do cardinal direction terms come from?","@Article{Brown1983,
+  author = {Cecil H. Brown},
+  date-added = {2019-09-16 7:41:39 PM +0000},
+  date-modified = {2019-09-16 7:42:18 PM +0000},
+  journal = {Anthropological {L}inguistics},
+  number = {2},
+  pages = {121--161},
+  title = {Where do cardinal direction terms come from?},
+  volume = {25},
+  year = {1983},
+}","Brown (1983)"
 "brown1984frequency","Gordon DA Brown","1984","A frequency count of 190,000 words in the London-Lund Corpus of English Conversation","@Article{brown1984frequency,
   title = {A frequency count of 190,000 words in the London-Lund Corpus of English Conversation},
   author = {Gordon DA Brown},
@@ -3518,6 +3529,14 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2018},
   publisher = {Elsevier},
 }","Kikuchi, Sedley, Griffiths & Petkov (2018)"
+"knight2018trust","Chris Knight","2018","Pressure for trust-based efficiency shaped the evolution of language","@Proceedings{knight2018trust,
+  booktitle = {The Evolution of Language: Proceedings of the 12th International Conference (EVOLANGXII)},
+  author = {Chris Knight},
+  editor = {C. Cuskley and M. Flaherty and H. Little and L. McCrohon and A. Ravignani and A. Verhoef},
+  title = {Pressure for trust-based efficiency shaped the evolution of language},
+  year = {2018},
+  doi = {10.12775/3991-1.053},
+}","Knight (2018)"
 "kuhlwilm2018evolution","Martin Kuhlwilm","2018","The evolution of FOXP2 in the light of admixture","@Article{kuhlwilm2018evolution,
   title = {The evolution of FOXP2 in the light of admixture},
   author = {Martin Kuhlwilm},
