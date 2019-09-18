@@ -750,6 +750,17 @@ The number of different species found in a given area of the Earth increases fro
   year = {2004},
   publisher = {Elsevier},
 }","Majid, Bowerman, Kita, Haun et al. (2004)"
+"Meyer2004","Julien Meyer","2004","Bioacoustics of human whistled languages: an alternative approach to the cognitive processes of language","@Article{Meyer2004,
+  author = {Julien Meyer},
+  date-added = {2019-09-17 7:21:21 PM +0000},
+  date-modified = {2019-09-17 7:22:55 PM +0000},
+  journal = {Anais da {A}cademia {B}rasileira de {C}i{\^e}ncias ({A}nnals of the {B}razilian {A}cademy of {S}ciences)},
+  number = {2},
+  pages = {405--412},
+  title = {Bioacoustics of human whistled languages: an alternative approach to the cognitive processes of language},
+  volume = {76},
+  year = {2004},
+}","Meyer (2004)"
 "ameel2005bilinguals","Eef Ameel; Gert Storms; Barbara C Malt; Steven A Sloman","2005","How bilinguals solve the naming problem","@Article{ameel2005bilinguals,
   title = {How bilinguals solve the naming problem},
   author = {Eef Ameel and Gert Storms and Barbara C Malt and Steven A Sloman},
