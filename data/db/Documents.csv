@@ -1508,6 +1508,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2010},
   publisher = {Karger Publishers},
 }","Colonna, Boattini, Guardiano, Dall’Ara et al. (2010)"
+"csibra2010recognizing","Gergely Csibra","2010","Recognizing communicative intentions in infancy","@Article{csibra2010recognizing,
+  title = {Recognizing communicative intentions in infancy},
+  author = {Gergely Csibra},
+  journal = {Mind \& Language},
+  volume = {25},
+  number = {2},
+  pages = {141--168},
+  year = {2010},
+  publisher = {Wiley Online Library},
+}","Csibra (2010)"
 "fagyal2010centers","Zsuzsanna Fagyal; Samarth Swarup; Anna M Escobar; Les Gasser; Kiran Lakkaraju","2010","Centers and peripheries: Network roles in language change","@Article{fagyal2010centers,
   title = {Centers and peripheries: Network roles in language change},
   author = {Zsuzsanna Fagyal and Samarth Swarup and Anna M Escobar and Les Gasser and Kiran Lakkaraju},
@@ -2879,6 +2889,12 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   pages = {117--138},
   address = {Berlin},
 }","Nichols (2016)"
+"perry2016early","L Perry; MARCUS PERLMAN; GARY LUPYAN; BODO WINTER; D Massaro","2016","Early Learned Words Are More Iconic","@InProceedings{perry2016early,
+  title = {Early Learned Words Are More Iconic},
+  author = {L Perry and MARCUS PERLMAN and GARY LUPYAN and BODO WINTER and D Massaro},
+  year = {2016},
+  booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANG11)},
+}","Perry, PERLMAN, LUPYAN, WINTER et al. (2016)"
 "regier2016languages","Terry Regier; Alexandra Carstensen; Charles Kemp","2016","Languages support efficient communication about the environment: Words for snow revisited","@Article{regier2016languages,
   title = {Languages support efficient communication about the environment: Words for snow revisited},
   author = {Terry Regier and Alexandra Carstensen and Charles Kemp},
@@ -3824,6 +3840,16 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2018},
   publisher = {Elsevier},
 }","Zuidema & de Boer (2018)"
+"Blasietal2019","D. Blasi; Steven Moran; Scott Moisik; Paul Widmer; Dan Dediu; Balthasar Bickel","2019","Human sound systems are shaped by post-Neolithic changes in bite configuration","@Article{Blasietal2019,
+  author = {D. Blasi and Steven Moran and Scott Moisik and Paul Widmer and Dan Dediu and Balthasar Bickel},
+  date-modified = {2019-09-18 6:37:37 PM +0000},
+  journal = {Science},
+  month = {03},
+  pages = {eaav3218},
+  title = {Human sound systems are shaped by post-Neolithic changes in bite configuration},
+  volume = {363},
+  year = {2019},
+}","Blasi, Moran, Moisik, Widmer et al. (2019)"
 "Dediu2019Aug","Dan Dediu; Rick Janssen; Scott R. Moisik","2019","Weak biases emerging from vocal tract anatomy shape the repeated transmission of vowels","@Article{Dediu2019Aug,
   author = {Dan Dediu and Rick Janssen and Scott R. Moisik},
   title = {Weak biases emerging from vocal tract anatomy shape the repeated transmission of vowels},
