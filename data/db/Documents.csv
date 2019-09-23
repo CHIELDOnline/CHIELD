@@ -571,6 +571,15 @@ The number of different species found in a given area of the Earth increases fro
   year = {2000},
   publisher = {Oxford University Press on Demand},
 }","Smith & Szathmáry (2000)"
+"Sperber2000","Dan Sperber","2000","Metarepresentations from an Evolutionary Perspective","@InCollection{Sperber2000,
+  author = {Dan Sperber},
+  booktitle = {Metarepresentations in an Evolutionary Perspective},
+  editor = {Dan Sperber},
+  pages = {117--137},
+  publisher = {Oxford University Press},
+  title = {Metarepresentations from an Evolutionary Perspective},
+  year = {2000},
+}","Sperber (2000)"
 "cangelosi01howNouns","Angelo Cangelosi; D. Parisi","2001","How nouns and verbs differentially affect the behavior of artificial organisms","@InProceedings{cangelosi01howNouns,
   abstract = {This paper presents an Artificial Life and Neural Network (ALNN) model for the evolution of syntax. The simulation methodology provides a unifying approach for the study of the evolution of language and its interaction with other behavioral and neural factors. The model uses an object manipulation task to simulate the evolution of language based on a simple verb-noun rule. The analyses of results focus on the interaction between language and other non-linguistic abilities, and on the neural control of linguistic abilities. The model shows that the beneficial effects of language on non-linguistic behavior are explained by the emergence of distinct internal representation patterns for the processing of verbs and nouns.},
   address = {London},
@@ -1279,6 +1288,14 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/minett04endangeredLanguage.html},
   bdsk-url-2 = {http://dx.doi.org/10.1016/j.lingua.2007.04.001},
 }","Minett & Wang (2008)"
+"SenjuCsibra2008","A. Senju; G. Csibra","2008","Gaze following in human infants depends on communicative signals","@Article{SenjuCsibra2008,
+  author = {A. Senju and G. Csibra},
+  journal = {Current Biology},
+  pages = {668--671},
+  title = {Gaze following in human infants depends on communicative signals},
+  volume = {18},
+  year = {2008},
+}","Senju & Csibra (2008)"
 "tabellini2008institutions","Guido Tabellini","2008","Institutions and culture","@Article{tabellini2008institutions,
   title = {Institutions and culture},
   author = {Guido Tabellini},
@@ -1327,6 +1344,14 @@ The number of different species found in a given area of the Earth increases fro
   year = {2009},
   publisher = {Wiley Online Library},
 }","Björk & Magnusson (2009)"
+"CsibraGergely2009","Gergely Csibra; György Gergely","2009","Natural pedagogy","@Article{CsibraGergely2009,
+  author = {Gergely Csibra and György Gergely},
+  journal = {Trends in Cognitive Sciences},
+  pages = {148--153},
+  title = {Natural pedagogy},
+  volume = {13},
+  year = {2009},
+}","Csibra & Gergely (2009)"
 "curriemace2009","T.E. Currie; Ruth Mace","2009","Political complexity predicts the spread of ethnolinguistic groups","@Article{curriemace2009,
   year = {2009},
   author = {T.E. Currie and Ruth Mace},
@@ -3511,6 +3536,12 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2018},
   publisher = {Elsevier},
 }","Ghazanfar & Liao (2018)"
+"Gredebacketal2018","Gustaf Gredebäck; Kim Astor; Christine Fawcett","2018","Gaze Following Is Not Dependent on Ostensive Cues: A Critical Test of Natural Pedagogy","@Article{Gredebacketal2018,
+  author = {Gustaf Gredebäck and Kim Astor and Christine Fawcett},
+  journal = {Child Development},
+  title = {Gaze Following Is Not Dependent on Ostensive Cues: A Critical Test of Natural Pedagogy},
+  year = {2018},
+}","Gredebäck, Astor & Fawcett (2018)"
 "Greenhill2018","Simon J. Greenhill; Xia Hua; Caela F. Welsh; Hilde Schneemann; Lindell Bromham","2018","Population Size and the Rate of Language Evolution: A Test Across Indo-European, Austronesian, and Bantu Languages","@Article{Greenhill2018,
   author = {Simon J. Greenhill and Xia Hua and Caela F. Welsh and Hilde Schneemann and Lindell Bromham},
   doi = {10.3389/fpsyg.2018.00576},
