@@ -2052,6 +2052,23 @@
 "1906310946","wursig2015dolphin","333505672",">","3351950938","pos",NA,NA,"preadaptation","review","","yes","pg 93"
 "2635966272","wursig2015dolphin","3658361432",">","3351950938","pos",NA,NA,"preadaptation","review","","yes","pg 93"
 "2763741053","wursig2015dolphin","3974655723","~","542539479","pos",NA,NA,"preadaptation","hypothesis","","yes","pg 94"
+"3741635634","benitez2016language","3889561208",">","1610587064","pos",NA,NA,"coevolution","review","","yes",NA
+"3579342993","benitez2016language","3889561208",">","3975778051","pos",NA,NA,"coevolution","review","","yes",NA
+"884830311","benitez2016language","3889561208",">","3573166714","pos",NA,NA,"coevolution","review","","yes",NA
+"1907449877","benitez2016language","3889561208",">","3002161330","pos",NA,NA,"coevolution","review","","yes",NA
+"3512418019","benitez2016language","3889561208",">","3985122679","pos",NA,NA,"coevolution","review","","yes",NA
+"2952547032","benitez2016language","3889561208",">","2500177205","pos",NA,NA,"coevolution","review","","yes",NA
+"3228502432","benitez2016language","3889561208",">","201625146","pos",NA,NA,"coevolution","review","","yes",NA
+"873053120","benitez2016language","3889561208",">","1914907636","pos",NA,NA,"coevolution","review","","yes",NA
+"2251417824","benitez2016language","3889561208",">","2998418330","pos",NA,NA,"coevolution","review","","yes",NA
+"2360048272","benitez2016language","3889561208",">","3512069158","pos",NA,NA,"coevolution","review","","yes",NA
+"87038073","benitez2016language","3889561208",">","3777706962","pos",NA,NA,"coevolution","review","","yes",NA
+"3846137452","benitez2016language","3889561208",">","2064402695","pos",NA,NA,"coevolution","review","","yes",NA
+"1847279905","benitez2016language","3889561208",">","844897027","pos",NA,NA,"coevolution","review","","yes",NA
+"1296749787","benitez2016language","3889561208",">","1560510891","neg",NA,NA,"coevolution","hypothesis","","no",NA
+"2478003916","benitez2016language","3889561208",">","1859237902","neg",NA,NA,"coevolution","hypothesis","","no",NA
+"1909099920","benitez2016language","1560510891",">","487241615","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1699254700","benitez2016language","1859237902",">","487241615","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
 "3204791347","bentz2016learning","264262316",">","3507217186","pos",NA,"morphology","language change","hypothesis","",NA,"A theory currently gaining ground at the interface of historical linguistics, linguistic typology and sociolinguistics maintains that reduction in morphological complexity might be driven by learning pressures, namely imperfect learning by non-native adults (McWhorter, 2002; McWhorter, 2011; Trudgill, 2011; Wray and Grace, 2007). Adults learning a foreign language often lack the breadth of exposure to the target language that a native speaker would have. Thus, they only partially learn the range of inflectional variants of a word, and omit morphological markers in their language production (Papadopoulou et al., 2011; Haznedar, 2006; Gurel, 2000). If non-native speakers represent a considerable part of the overall speaker population, they might drive the language towards morphological simplification."
 "1237901007","bentz2016learning","3507217186",">","1883821886","neg",NA,"morphology","language change","hypothesis","",NA,"Imperfect (non-native) learning is simulated via less exposure. “Native” learners have six training blocks to learn the artificial language epsilon, whereas “non-native” imperfect learners have only half of the training blocks"
@@ -2267,6 +2284,51 @@
 "2229828607","tamariz2016cultural","61253232",">","1369442256","pos",NA,"transmission","cultural evolution","hypothesis","","no","Another widespread feature of language is that the mapping between signals and meanings tends to be regular. For example, we tend not to have many synonymous words for the same meaning. This can also be seen as reflecting a preference for compressibility because systems with unconditioned variation have higher entropy."
 "449948864","tamariz2016cultural","61253232","<=>","1787328747","neg",NA,"transmission","cultural evolution","review","","yes","Converging evidence that language does indeed trade off compressibility and expressivity comes from cross-linguistic studies of semantic categories across a wide range of domains [13], including numerals [47], colour [48], spatial [49], and kinship [50] terms."
 "456028294","verhoef2016iconicity","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
+"992201613","benitez2017schizophrenia","3501911129",">","1610587064","",NA,NA,"","","","",NA
+"3604032786","benitez2017schizophrenia","3501911129",">","3144312930","",NA,NA,"","","","",NA
+"2074478225","benitez2017schizophrenia","3501911129",">","127443506","",NA,NA,"","","","",NA
+"3182136434","benitez2017schizophrenia","3501911129",">","1265907750","",NA,NA,"","","","",NA
+"1391633969","benitez2017schizophrenia","3501911129",">","611227036","",NA,NA,"","","","",NA
+"3204035912","benitez2017schizophrenia","3501911129",">","380063046","",NA,NA,"","","","",NA
+"2997552173","benitez2017schizophrenia","3501911129",">","4062056941","",NA,NA,"","","","",NA
+"1875358921","benitez2017schizophrenia","3501911129",">","2767417409","",NA,NA,"","","","",NA
+"460116402","benitez2017schizophrenia","3501911129",">","3002161330","",NA,NA,"","","","",NA
+"2205184551","benitez2017schizophrenia","3501911129",">","4108557257","",NA,NA,"","","","",NA
+"3431906508","benitez2017schizophrenia","3501911129",">","1976565355","",NA,NA,"","","","",NA
+"2752413981","benitez2017schizophrenia","3501911129",">","4173578086","",NA,NA,"","","","",NA
+"3275176722","benitez2017schizophrenia","3501911129",">","84297241","",NA,NA,"","","","",NA
+"1189151812","benitez2017schizophrenia","3501911129",">","201625146","",NA,NA,"","","","",NA
+"2994550429","benitez2017schizophrenia","1976565355",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1373587536","benitez2017schizophrenia","380063046",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3312385579","benitez2017schizophrenia","127443506",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4154205152","benitez2017schizophrenia","1610587064",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"718993123","benitez2017schizophrenia","201625146",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2725782317","benitez2017schizophrenia","3144312930",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3720607177","benitez2017schizophrenia","4062056941",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2888905417","benitez2017schizophrenia","84297241",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"282008214","benitez2017schizophrenia","2767417409",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3379114115","benitez2017schizophrenia","3501911129",">","3593816533","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3739361612","benitez2017schizophrenia","3593816533",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"953884050","benitez2017schizophrenia","1265907750",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"923845828","benitez2017schizophrenia","4173578086",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"625820055","benitez2017schizophrenia","3002161330",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3073562015","benitez2017schizophrenia","4108557257",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1104465428","benitez2017schizophrenia","4062056941",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"325256529","benitez2017schizophrenia","84297241",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4263756349","benitez2017schizophrenia","3593816533",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3863816715","benitez2017schizophrenia","2767417409",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"931235732","benitez2017schizophrenia","3002161330",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2904600865","benitez2017schizophrenia","4108557257",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4210553741","benitez2017schizophrenia","1265907750",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1770578450","benitez2017schizophrenia","1976565355",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1070503958","benitez2017schizophrenia","611227036",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1443822414","benitez2017schizophrenia","1610587064",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3703602764","benitez2017schizophrenia","201625146",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"81645308","benitez2017schizophrenia","127443506",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1985292008","benitez2017schizophrenia","380063046",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"147907410","benitez2017schizophrenia","3144312930",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3257166609","benitez2017schizophrenia","4173578086",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3114636295","benitez2017schizophrenia","611227036",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","",NA
 "3630314603","Bentz2017","1687862168",">","3344516874","neg",NA,NA,"language change","statistical","","","""A (hypothetical) language with maximum word entropy would have a vast (potentially infinite) number of word forms of equal probability, and would be hard (or impossible) to learn."
 "734870917","Bentz2017","586905007",">","3344516874","pos",NA,NA,"language change","statistical","","","""A language with minimum word entropy, on the other hand, would repeat the same word forms over and over again, and lack expressivity. Natural languages fall in a relatively narrow range between these extremes."""
 "3641815132","Blasi_Moran_SLE_2017","2976820764",">","2387964722","pos",NA,NA,"language change","review","","",""
@@ -2590,6 +2652,22 @@
 "2319153444","baumann2018linguistic","1746840506",">","2844212883","pos",NA,NA,"language change","model","","","""...evolution proceeds faster in large populations. At first sight, this may seem paradox: population size is predicted to increase the stability of an item, but at the same time population size drives linguistic optimization, where an item is effectively replaced by a more successful version of itself. Note, crucially, that the more optimized variant is less likely to get lost."""
 "944230969","baumann2018linguistic","1683164269",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
 "1751657311","baumann2018linguistic","223612159",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
+"1812540626","benitez2018emergence","3786538259",">","130020136","pos",NA,NA,"coevolution","review","","yes",NA
+"2220360383","benitez2018emergence","3786538259",">","1009504771","pos",NA,NA,"coevolution","review","","yes",NA
+"3336759581","benitez2018emergence","3786538259",">","63370745","pos",NA,NA,"coevolution","review","","yes",NA
+"3201795198","benitez2018emergence","3786538259",">","1519314390","pos",NA,NA,"coevolution","review","","yes",NA
+"2228426296","benitez2018emergence","3786538259",">","1535596030","pos",NA,NA,"coevolution","review","","yes",NA
+"881814800","benitez2018emergence","130020136",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
+"1889687269","benitez2018emergence","63370745",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
+"329087975","benitez2018emergence","1535596030",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
+"478067780","benitez2018emergence","1009504771",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
+"1534563036","benitez2018emergence","1519314390",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
+"3690588195","benitez2018emergence","3532236208",">","1914866528","pos",NA,NA,"language change","hypothesis","","yes",NA
+"731987887","benitez2018emergence","3532236208",">","3235438309","pos",NA,NA,"language change","hypothesis","","yes",NA
+"1468021576","benitez2018emergence","3532236208",">","2630963321","pos",NA,NA,"language change","hypothesis","","yes",NA
+"3961531491","benitez2018emergence","3532236208",">","4179535522","pos",NA,NA,"language change","hypothesis","","yes",NA
+"1249950170","benitez2018emergence","3532236208",">","1250775508","pos",NA,NA,"language change","hypothesis","","yes",NA
+"2294637541","benitez2018emergence","3532236208",">","3853963800","pos",NA,NA,"language change","hypothesis","","yes",NA
 "1327885561","Bentz2018","3473049755",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
 "1760508090","Bentz2018","1200513521",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
 "4030237165","Bentz2018","1031734161",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
@@ -2985,6 +3063,36 @@
 "2527087262","moro2018plural","622831246",">","1516117658","n-m",NA,NA,"language change","review","","","The author argues that functional remapping, that is, when one functional category of a language is mapped onto a morphological unit of another language is typically found in young people's speech. Quoting the author, ""it is mostly bilingual children who are able to dissociate grammatical features from their morphological counterparts and remap them."""
 "3613532623","moro2018plural","1516117658",">","353259398","n-m",NA,NA,"language change","logical","","yes","Functional remapping increases paradigmatic complexity of a language."
 "1248862253","moro2018plural","622831246",">","353259398","pos",NA,NA,"language change","qualitative","","","This is the main hypothesis (broken down into smaller constituents using ""functional remapping"" as an intermediate step."
+"859202909","murphy2018paleo","3014229387",">","1194645744","",NA,NA,"","","","",NA
+"3158681902","murphy2018paleo","3014229387",">","262666713","",NA,NA,"","","","",NA
+"1659528401","murphy2018paleo","3014229387",">","876571668","",NA,NA,"","","","",NA
+"2072412783","murphy2018paleo","3014229387",">","3003217898","",NA,NA,"","","","",NA
+"854051492","murphy2018paleo","3910781698",">","876571668","pos",NA,NA,"none","experiment","","yes",NA
+"2009923139","murphy2018paleo","3947831073",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"2018405876","murphy2018paleo","3042683475",">","262666713","pos",NA,NA,"","experiment","","yes",NA
+"3683099345","murphy2018paleo","1136677408",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"1143997101","murphy2018paleo","2442698619",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"3314286155","murphy2018paleo","3910781698",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"3835286311","murphy2018paleo","1301081977",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"1649735289","murphy2018paleo","1862531714",">","3003217898","pos",NA,NA,"","experiment","","yes",NA
+"3946178146","murphy2018paleo","2146618997",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"2009792891","murphy2018paleo","1368372041",">","262666713","pos",NA,NA,"","experiment","","yes",NA
+"3364044086","murphy2018paleo","112823841",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"2585392137","murphy2018paleo","112823841",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"74779977","murphy2018paleo","3218656186",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"1304867905","murphy2018paleo","2442698619",">","3627450644","pos",NA,NA,"","experiment","","yes",NA
+"1464988872","murphy2018paleo","3042683475",">","3627450644","pos",NA,NA,"","experiment","","yes",NA
+"1257063329","murphy2018paleo","3947831073",">","2647382948","pos",NA,NA,"","experiment","","yes",NA
+"1448330559","murphy2018paleo","3947831073",">","663822152","pos",NA,NA,"","experiment","","yes",NA
+"1008143283","murphy2018paleo","1368372041",">","663822152","pos",NA,NA,"","experiment","","yes",NA
+"3595720078","murphy2018paleo","1368372041",">","3758248852","pos",NA,NA,"","experiment","","yes",NA
+"1941697383","murphy2018paleo","3910781698",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"832402856","murphy2018paleo","1136677408",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"3536010564","murphy2018paleo","1862531714",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"533127262","murphy2018paleo","3218656186",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"214651573","murphy2018paleo","112823841",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"3478346715","murphy2018paleo","2146618997",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
+"1105058777","murphy2018paleo","1301081977",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
 "2127531079","nichols2018morphological","634707713","~=","992715075","pos",NA,NA,"none","hypothesis","","","""The third measure used here is word entropy, more precisely the entropy of unigrams, i.e., runs of alphanumeric UTF8 characters delimited by white spaces. [...] The bottom line is that a language with high morphological complexity, i.e., very productive morphological marking strategies, has a wide range of word forms, higher word unpredictability, and hence higher entropy—as a general trend"" (Nichols & Bentz 2018: 15-16)."
 "389355763","nichols2018morphological","634707713","~=","3669644103","pos",NA,NA,"none","hypothesis","","","""The simplest measure of complexity is inventory complexity, a.k.a. taxonomic complexity, which is the total number of units in a system, for some subsystem or set of subsystems of a language"" (Nichols & Bentz 2018: 14)."
 "1128629296","nichols2018morphological","3473049755",">","992715075","pos",NA,NA,"none","statistical","","","""The correlation for altitude and word entropy is moderate and significant (r = 0.36, p < 0.0001)"" (Nichols & Bentz 2018: 18)."
@@ -3208,6 +3316,50 @@
 "3476883626","monaghan2019cognitive","304590923",">","3253875825","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "2876719949","monaghan2019cognitive","304590923",">","2024490099","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "3247940510","monaghan2019cognitive","907311459",">","1097259485","pos",NA,NA,"language change","review","","","Pagel et al. found that the contemporary frequency of a word predicted its rate of lexical change   higher frequency words had a lower rate of change."
+"3822997292","niego2019williams","704961818",">","2724113022","",NA,NA,"","","","",NA
+"885176763","niego2019williams","704961818",">","4038096903","",NA,NA,"","","","",NA
+"953455556","niego2019williams","704961818",">","611227036","",NA,NA,"","","","",NA
+"3298634797","niego2019williams","704961818",">","185475884","",NA,NA,"","","","",NA
+"854932356","niego2019williams","704961818",">","2135505942","",NA,NA,"","","","",NA
+"1089100062","niego2019williams","704961818",">","3200549465","",NA,NA,"","","","",NA
+"420082943","niego2019williams","704961818",">","592475013","",NA,NA,"","","","",NA
+"1335201277","niego2019williams","704961818",">","2945812816","",NA,NA,"","","","",NA
+"3650097028","niego2019williams","704961818",">","1568108178","",NA,NA,"","","","",NA
+"937381269","niego2019williams","704961818",">","844897027","",NA,NA,"","","","",NA
+"257040841","niego2019williams","704961818",">","3372776662","",NA,NA,"","","","",NA
+"2453022245","niego2019williams","704961818",">","4262391499","",NA,NA,"","","","",NA
+"3068844355","niego2019williams","704961818",">","3144312930","",NA,NA,"","","","",NA
+"263930861","niego2019williams","704961818",">","286091435","",NA,NA,"","","","",NA
+"3540895667","niego2019williams","3144312930",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"753934125","niego2019williams","286091435",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"983419241","niego2019williams","592475013",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2248231825","niego2019williams","185475884",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1554952251","niego2019williams","4262391499",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2904965289","niego2019williams","3372776662",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2623829048","niego2019williams","1568108178",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2092542494","niego2019williams","611227036",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4020695218","niego2019williams","4038096903",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1082629556","niego2019williams","844897027",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3101217836","niego2019williams","3249023582",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"215925965","niego2019williams","2724113022",">","4080737986","pos",NA,NA,"cultural evolution","hypothesis","","no",NA
+"3808715285","niego2019williams","2945812816",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"609466632","niego2019williams","3200549465",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4004880928","niego2019williams","2135505942",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1924740348","niego2019williams","3249023582",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3034689808","niego2019williams","4262391499",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3647185566","niego2019williams","592475013",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4237914033","niego2019williams","185475884",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3217964023","niego2019williams","2945812816",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"756002271","niego2019williams","286091435",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4006423216","niego2019williams","3200549465",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3912696212","niego2019williams","4038096903",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"553568189","niego2019williams","3372776662",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1853959945","niego2019williams","611227036",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2281015862","niego2019williams","844897027",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"155867485","niego2019williams","2135505942",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3662349540","niego2019williams","1568108178",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1936255440","niego2019williams","2724113022",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2642676957","niego2019williams","3144312930",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "3528643636","Nikolaev2019","2351288590",">","225151578",NA,NA,NA,"cultural evolution","statistical","",NA,NA
 "288719332","Pacheco_Coelho_2019","395999132",">","1554828085","pos",NA,NA,"language change","statistical","","yes","β=0.17"
 "2731376617","Pacheco_Coelho_2019","395999132",">","4077221114","neg",NA,NA,"language change","statistical","","yes","β=-0.01"
