@@ -2952,6 +2952,12 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   volume = {11},
   year = {2016},
 }","Rogers & Fay (2016)"
+"spike2016minimal","MATTHEW SPIKE; KENNY SMITH; SIMON KIRBY","2016","Minimal pressures leading to duality of patterning","@InProceedings{spike2016minimal,
+  title = {Minimal pressures leading to duality of patterning},
+  author = {MATTHEW SPIKE and KENNY SMITH and SIMON KIRBY},
+  booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANGX11). Online at http://evolang. org/neworleans/papers/129. html},
+  year = {2016},
+}","SPIKE, SMITH & KIRBY (2016)"
 "sterelny2016cumulative","Kim Sterelny","2016","Cumulative cultural evolution and the origins of language","@Article{sterelny2016cumulative,
   title = {Cumulative cultural evolution and the origins of language},
   author = {Kim Sterelny},
@@ -3928,6 +3934,15 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   month = {Aug},
   doi = {10.1038/s41562-019-0663-x},
 }","Dediu, Janssen & Moisik (2019)"
+"ferdinand2019cognitive","Vanessa Ferdinand; Simon Kirby; Kenny Smith","2019","The cognitive roots of regularization in language","@Article{ferdinand2019cognitive,
+  title = {The cognitive roots of regularization in language},
+  author = {Vanessa Ferdinand and Simon Kirby and Kenny Smith},
+  journal = {Cognition},
+  volume = {184},
+  pages = {53--68},
+  year = {2019},
+  publisher = {Elsevier},
+}","Ferdinand, Kirby & Smith (2019)"
 "fergus19otitis","Anelisa Fergus","2019","Lend Me Your Ears: Otitis Media and Aboriginal Australian languages","@MastersThesis{fergus19otitis,
   title = {Lend Me Your Ears: Otitis Media and Aboriginal Australian languages},
   author = {Anelisa Fergus},
