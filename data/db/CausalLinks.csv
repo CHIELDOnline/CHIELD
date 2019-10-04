@@ -1113,7 +1113,7 @@
 "2010886537","smith2010eliminating","360233333",">","251023881","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
 "2100925986","smith2010eliminating","1369442256","~=","3495191649","pos",NA,"regularity","language change","review","","","creolization can also be characterised as the construction of a new language via levelling and regularization of a pool of linguistic variants arising from radical language contact"
 "1966247970","smith2010eliminating","2571402292",">","251023881","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
-"1848253603","smith2010eliminating","868638216","~=","1369442256","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
+"4023234598","smith2010eliminating","3811912106","~=","1369442256","pos",NA,"regularity","language change","experiment","","yes","Diffusion chains, but not isolate learners, were found to cumulatively increase predictability of plural marking by lexicalising the choice of plural marker."
 "1818452488","tamarizBrownMurray2010literacy","2112386438",">","2047439975","pos",NA,NA,"cultural evolution","experiment","","yes","musically literate and illiterate musicians learned referential musical languages (melody-meaning mappings)"
 "3314646540","tamarizBrownMurray2010literacy","2112386438",">","1635301053","pos",NA,NA,"cultural evolution","experiment","","yes","musically literate and illiterate musicians learned referential musical languages (melody-meaning mappings) with 3 different levels of compositionally"
 "2732934268","tamarizBrownMurray2010literacy","2123557069",">","2047439975","pos",NA,NA,"cultural evolution","experiment","","yes","(illiterate) musicians vs nonmusicians"
@@ -1304,8 +1304,6 @@
 "2426191681","kuperman2012age","2091036663",">","1184525675","neg",NA,NA,"language change","experiment","",NA,"The outcomes of the factor analysis are shown in Table�5. This analysis indicates that lexical-decision times only loaded on the first four factors (word frequency, length, familiarity, and imageability)."
 "1602571946","kuperman2012age","304590923","~","1184525675","neg",NA,NA,"language change","experiment","",NA,"correlation between concreteness and lexical decision zRT = �.166"
 "3737722442","kuperman2012age","1948106157","~","1184525675","pos",NA,NA,"language change","experiment","",NA,"correlation between OLD20 and lexical decision zRT = .577**"
-"3985045996","kuperman2012age","4218912191","~","1184525675","neg",NA,NA,"language change","experiment","",NA,"correlation between OLD20 and lexical decision zRT = �.266**"
-"2085920268","kuperman2012age","1720487013","~","1184525675","neg",NA,NA,"language change","experiment","",NA,"correlation between OLD20 and lexical decision zRT = �.217**"
 "2923645167","levi2012tristes","2148751129","~","2379220120","pos",NA,NA,"none","hypothesis","","","The only phenomenon with which writing has always been concomitant is the creation of cities and empires, that is the integration of large numbers of individuals into a political system, and their grading into castes or classes."
 "1195470043","levi2012tristes","2148751129","~","2815645112","pos",NA,NA,"none","hypothesis","","","The only phenomenon with which writing has always been concomitant is the creation of cities and empires, that is the integration of large numbers of individuals into a political system, and their grading into castes or classes."
 "2275680928","levi2012tristes","2148751129",">","1877518407","none",NA,NA,"none","hypothesis","","","at the time when first emerged: it [writing] seems to have favoured the exploitation of human beings rather than their enlightenment."
@@ -1820,12 +1818,12 @@
 "1880187172","dunbar2014fireside","767677181",">","3216306248","neg",NA,NA,"preadaptation","review","","yes","""Wrangham (2010, Wrangham et al. 1999) has argued that the use of fire for cooking must have evolved at an early date in order to improve the dietary efficiency of hominins"""
 "1812028289","dunbar2014fireside","965441969",">","3216306248","neg",NA,NA,"preadaptation","hypothesis","","no","""Here, we want to explore another possibility, namely that by shifting the bulk of social interaction into the evening hours hominins were able to free off the daylight hours for foraging and other survival activities."""
 "1879081656","dunbar2014fireside","4226475470",">","965441969","pos",NA,NA,"preadaptation","hypothesis","","no","""Here, we want to explore another possibility, namely that by shifting the bulk of social interaction into the evening hours hominins were able to free off the daylight hours for foraging and other survival activities."""
-"453179844","fay2014creating","2664839125",">","2571402292","pos",NA,NA,"preadaptation","hypothesis","","yes",NA
+"3281086402","fay2014creating","2664839125",">","2743229210","pos",NA,NA,"preadaptation","hypothesis","","yes",NA
 "4293984386","fay2014creating","3739434718",">","2664839125","none",NA,NA,"preadaptation","hypothesis","","no",NA
-"2896212751","fay2014creating","3739434718",">","2571402292","pos",NA,NA,"preadaptation","experiment","","yes",NA
+"3463123625","fay2014creating","3739434718",">","2743229210","pos",NA,NA,"preadaptation","experiment","","yes",NA
 "2336962662","fay2014creating","3739434718",">","4185064431","pos",NA,NA,"preadaptation","experiment","","yes",NA
 "2351453495","fay2014creating","2664839125",">","4185064431","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4027266889","fay2014creating","4185064431",">>","2571402292","pos",NA,NA,"preadaptation","logical","","yes",NA
+"175658399","fay2014creating","4185064431",">>","2743229210","pos",NA,NA,"preadaptation","logical","","yes",NA
 "2179318757","GavinStepp2014","3692972676",">","456651676","pos",NA,NA,"language change","statistical","","yes","At a global scale and in five of the six regions examined, language- range extent and language-range area are strongly correlated with language richness. "
 "3842828780","GavinStepp2014","3692972676",">","2439279656","pos",NA,NA,"language change","statistical","","yes","At a global scale and in five of the six regions examined, language- range extent and language-range area are strongly correlated with language richness. "
 "270450342","GavinStepp2014","1031734161",">","3692972676","neg",NA,NA,"language change","statistical","","","Our results point to group boundary formation as a critical mediator of the relationship between Rapoport’s rule and diversity patterns."
@@ -2220,8 +2218,8 @@
 "1811262477","evolang11_74","534647626",">","3316682815","pos","360233333","morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
 "3544534421","evolang11_74","1534875632",">","2653787294","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
 "2549890512","evolang11_74","534647626",">","2653787294","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Authors find ""sublexical structure"" similar to cranberry morphemes."
-"1697053121","evolang11_78","2664839125",">","1321198580","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
-"2400075466","evolang11_78","1321198580",">","3316682815","pos",NA,"morphology","cultural evolution","experiment","iterated communication game",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
+"1697053121","evolang11_78","2664839125",">","1321198580","pos",NA,"morphology","cultural evolution","experiment","",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
+"2400075466","evolang11_78","1321198580",">","3316682815","pos",NA,"morphology","cultural evolution","experiment","",NA,"Meanings were triangles and ""sublexical structure was driven by shape-based sound symbolism"""
 "2741868842","evolang11_8","3709090691",">","1290018447","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
 "497412005","evolang11_8","229917296",">","7789961","pos",NA,"lexicon; syntax","preadaptation","review","aphasia",NA,NA
 "788822419","evolang11_85","1565682765",">","634707713","neg",NA,"morphology","language change","statistical","corpus","yes",NA
@@ -2495,8 +2493,8 @@
 "3865672250","li2017does","3276327110",">","174782874","",NA,"Language and behavior","cultural evolution","experiment","","yes","subjects are more likely to exhibit culture-specific preference in risky choiceswhen using the familiar language"
 "3974338990","li2017does","3276327110",">","2647928298","pos",NA,"Language and behavior","cultural evolution","experiment","","yes","Expectation - based Hypothesis; strategic trust games"
 "377107961","li2017does","2647928298",">","22340044","pos",NA,"Language and behavior","cultural evolution","experiment","","yes","Expectation - based Hypothesis; strategic trust games"
-"374185503","little2017conventionalisation","2367146783",">","2664839125","pos",NA,NA,"coevolution","experiment","","yes",NA
-"2510820715","little2017conventionalisation","790090870",">","2664839125","none",NA,NA,"coevolution","experiment","","no",NA
+"374185503","little2017conventionalisation","2367146783",">","2664839125","pos",NA,NA,"coevolution","experiment","","yes",""
+"3095689341","little2017conventionalisation","3739434718",">","2664839125","none",NA,NA,"coevolution","experiment","","no","We have shown that conventionalisation, as a process for arbitrary forms to 581 emerge, may not work in the same way or as quickly with different modalities. We found 582 no evidence that signals in our experiment became more conventionalised (simpler and 583 less iconic) through interaction or repetition. We hypothesise that when iconicity is 584 difficult in a modality, iconicity needs to emerge over a period of negotiation to gain 585 transparent, mutually intelligible signals. It is only when a signal is grounded for more 586 than one person that it can then be separated in form from its meaning and become more 587 arbitrary."
 "623507289","little2017signal","2259512269",">","2664839125","pos",NA,NA,"preadaptation","hypothesis","","no",NA
 "3402917027","little2017signal","2259512269",">","31407103","pos",NA,NA,"preadaptation","experiment","","no",NA
 "1468956866","Mulleretal2017","3351076756",">","1695651849",NA,NA,NA,NA,NA,"",NA,NA
