@@ -1288,8 +1288,8 @@ The number of different species found in a given area of the Earth increases fro
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/minett04endangeredLanguage.html},
   bdsk-url-2 = {http://dx.doi.org/10.1016/j.lingua.2007.04.001},
 }","Minett & Wang (2008)"
-"SenjuCsibra2008","A. Senju; G. Csibra","2008","Gaze following in human infants depends on communicative signals","@Article{SenjuCsibra2008,
-  author = {A. Senju and G. Csibra},
+"SenjuCsibra2008","A. Senju; Gergely Csibra","2008","Gaze following in human infants depends on communicative signals","@Article{SenjuCsibra2008,
+  author = {A. Senju and Gergely Csibra},
   journal = {Current Biology},
   pages = {668--671},
   title = {Gaze following in human infants depends on communicative signals},
@@ -3011,8 +3011,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {The Entropy of Words - Learnability and Expressivity across More than 1000 Languages},
   journal = {Entropy},
 }","Bentz, Alikaniotis, Cysouw & Ferrer-i-Cancho (2017)"
-"Blasi_Moran_SLE_2017","Damián E Blasi; Steve Moran; Ani Margvelashvili; Dan Dediu; Scott R Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
-  author = {Damián E Blasi and Steve Moran and Ani Margvelashvili and Dan Dediu and Scott R Moisik},
+"Blasi_Moran_SLE_2017","Damián E Blasi; Steven Moran; Ani Margvelashvili; Dan Dediu; Scott R Moisik","2017","Molecular Anthropology as a window on language contact: diffusion probabilities in phonology and grammar","@InProceedings{Blasi_Moran_SLE_2017,
+  author = {Damián E Blasi and Steven Moran and Ani Margvelashvili and Dan Dediu and Scott R Moisik},
   booktitle = {Proceedings of the 50th Annual Meeting of the Societas Linguistica Europaea},
   date-added = {2017-09-12 16:33:48 +0000},
   date-modified = {2017-09-12 16:37:57 +0000},
@@ -3915,8 +3915,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2018},
   publisher = {Elsevier},
 }","Zuidema & de Boer (2018)"
-"Blasietal2019","D. Blasi; Steven Moran; Scott Moisik; Paul Widmer; Dan Dediu; Balthasar Bickel","2019","Human sound systems are shaped by post-Neolithic changes in bite configuration","@Article{Blasietal2019,
-  author = {D. Blasi and Steven Moran and Scott Moisik and Paul Widmer and Dan Dediu and Balthasar Bickel},
+"Blasietal2019","Damián E Blasi; Steven Moran; Scott R. Moisik; Paul Widmer; Dan Dediu; Balthasar Bickel","2019","Human sound systems are shaped by post-Neolithic changes in bite configuration","@Article{Blasietal2019,
+  author = {Damián E Blasi and Steven Moran and Scott R. Moisik and Paul Widmer and Dan Dediu and Balthasar Bickel},
   date-modified = {2019-09-18 6:37:37 PM +0000},
   journal = {Science},
   month = {03},
