@@ -777,24 +777,24 @@
 "3324551036","selten07languageEmergencePNAS","1250041027",">","3316682815","neg",NA,"signalling","coevolution","simulation","communication game","yes",NA
 "3088426045","vogt07ECAL","1746840506",">","3316682815","pos",NA,"syntax","cultural evolution","model","mathematical?","",NA
 "1639892571","vogt07ECAL","3316682815",">","1923061136","pos",NA,"signalling","cultural evolution","model","mathematical?","yes",NA
-"2199051187","wraygrace2007","1251135464",">","3316682815","pos",NA,"","none","qualitative","","",""
-"964805964","wraygrace2007","1251135464",">","4011348903","neg",NA,"","none","qualitative","","",""
-"3329288853","wraygrace2007","3316682815",">","445369745","neg",NA,"","none","qualitative","","",""
-"2560278805","wraygrace2007","3316682815","/>","1279325025","none",NA,"language evolution;","preadaptation","hypothesis","","","""full compositionality is not a property that we have to account for at the dawn of language. """
-"1229661033","wraygrace2007","3316682815","/>","1270498918","none",NA,"","preadaptation","qualitative","","",""
-"3426205658","wraygrace2007","4115379846",">","4011348903","pos",NA,"","none","qualitative","","",""
-"3721667425","wraygrace2007","4115379846",">","3316682815","neg",NA,"","none","qualitative","","",""
-"604266183","wraygrace2007","4011348903","<=>","3316682815","none",NA,"","none","","","",""
-"3739059180","wraygrace2007","1746840506",">","4011348903","neg",NA,"","none","qualitative","","",""
-"235882819","wraygrace2007","1746840506",">","3316682815","pos",NA,"","none","qualitative","","",""
-"2861097118","wraygrace2007","4190484598","/>","3316682815","none",NA,"","none","review","","",""
-"1229640025","wraygrace2007","3353805721",">","3316682815","pos",NA,"esoterogeny; exotericity","none","qualitative","","",""
-"1910672507","wraygrace2007","3353805721",">","4011348903","neg",NA,"esoterogeny; exotericity","none","qualitative","","",""
-"2160256099","wraygrace2007","3353805721",">","1297814488","pos",NA,"esoterogeny; exotericity","none","","","","The more you talk to strangers the more likely you are to make informationally automatous utterances because you cannot assume knowledge."
-"2531501554","wraygrace2007","4115379846",">","1297814488","neg",NA,"","none","hypothesis","","",""
-"1898155056","wraygrace2007","3622787118",">","3316682815","neg",NA,"","none","qualitative","","",""
-"4138360297","wraygrace2007","3622787118",">","4011348903","pos",NA,"","none","qualitative","","",""
-"3190963688","wraygrace2007","4190484598",">","4011348903","pos",NA,"","none","qualitative","","",""
+"2199051187","wraygrace2007","1251135464",">","3316682815","pos",NA,"","none","qualitative","",NA,""
+"964805964","wraygrace2007","1251135464",">","4011348903","neg",NA,"","none","qualitative","",NA,""
+"3329288853","wraygrace2007","3316682815",">","445369745","neg",NA,"","none","qualitative","",NA,""
+"2560278805","wraygrace2007","3316682815","/>","1279325025","none",NA,"language evolution;","preadaptation","hypothesis","",NA,"""full compositionality is not a property that we have to account for at the dawn of language. """
+"1229661033","wraygrace2007","3316682815","/>","1270498918","none",NA,"","preadaptation","qualitative","",NA,""
+"3426205658","wraygrace2007","4115379846",">","4011348903","pos",NA,"","none","qualitative","",NA,""
+"3721667425","wraygrace2007","4115379846",">","3316682815","neg",NA,"","none","qualitative","",NA,""
+"604266183","wraygrace2007","4011348903","<=>","3316682815","none",NA,"","none","","",NA,""
+"3739059180","wraygrace2007","1746840506",">","4011348903","neg",NA,"","none","qualitative","",NA,""
+"235882819","wraygrace2007","1746840506",">","3316682815","pos",NA,"","none","qualitative","",NA,""
+"2861097118","wraygrace2007","4190484598","/>","3316682815","none",NA,"","none","review","",NA,""
+"1229640025","wraygrace2007","3353805721",">","3316682815","pos",NA,"esoterogeny; exotericity","none","qualitative","",NA,""
+"1910672507","wraygrace2007","3353805721",">","4011348903","neg",NA,"esoterogeny; exotericity","none","qualitative","",NA,""
+"2160256099","wraygrace2007","3353805721",">","1297814488","pos",NA,"esoterogeny; exotericity","none","","",NA,"The more you talk to strangers the more likely you are to make informationally automatous utterances because you cannot assume knowledge."
+"2531501554","wraygrace2007","4115379846",">","1297814488","neg",NA,"","none","hypothesis","",NA,""
+"3214152329","wraygrace2007","194336202",">","3316682815","neg",NA,"","none","qualitative","",NA,""
+"2378567187","wraygrace2007","194336202",">","4011348903","pos",NA,"","none","qualitative","",NA,""
+"3190963688","wraygrace2007","4190484598",">","4011348903","pos",NA,"","none","qualitative","",NA,""
 "3187826897","Arbib2008PrimateVG","3709090691",">>","3775454729","pos",NA,"cognition","preadaptation","review","","yes"," 'one should associate Broca s area with multimodal language production rather than with speech alone. Such considerations led to the formulation of the mirror system hypothesis (Arbib and Rizzolatti 1997; Rizzolatti and Arbib 1998) the evolutionary basis for language parity (the more or less alignment between the meaning intended by the  speaker  and the meaning understood by the  hearer ) is provided by the evolution of brain mechanisms that support language atop the mirror system for grasping, rooting speech in communication based on manual gesture.' pg.1053"
 "3349222989","Arbib2008PrimateVG","3775454729",">","2218595703","pos",NA,"cognition","preadaptation","review","","yes",""
 "1189890924","Arbib2008PrimateVG","2218595703",">","2564456517","pos",NA,"cognition","preadaptation","review","","yes","'These observations suggest that this gesture is understood by receivers as referential (although selfreferential) because it indicates a certain spot on the body and therefore creates a triadic communication (for an example, see CA  online supplement D).' pg. 1057"
@@ -2052,21 +2052,21 @@
 "1906310946","wursig2015dolphin","333505672",">","3351950938","pos",NA,NA,"preadaptation","review","","yes","pg 93"
 "2635966272","wursig2015dolphin","3658361432",">","3351950938","pos",NA,NA,"preadaptation","review","","yes","pg 93"
 "2763741053","wursig2015dolphin","3974655723","~","542539479","pos",NA,NA,"preadaptation","hypothesis","","yes","pg 94"
-"3741635634","benitez2016language","3889561208",">","1610587064","pos",NA,NA,"coevolution","review","","yes",NA
-"3579342993","benitez2016language","3889561208",">","3975778051","pos",NA,NA,"coevolution","review","","yes",NA
-"884830311","benitez2016language","3889561208",">","3573166714","pos",NA,NA,"coevolution","review","","yes",NA
-"1907449877","benitez2016language","3889561208",">","3002161330","pos",NA,NA,"coevolution","review","","yes",NA
-"3512418019","benitez2016language","3889561208",">","3985122679","pos",NA,NA,"coevolution","review","","yes",NA
-"2952547032","benitez2016language","3889561208",">","2500177205","pos",NA,NA,"coevolution","review","","yes",NA
-"3228502432","benitez2016language","3889561208",">","201625146","pos",NA,NA,"coevolution","review","","yes",NA
-"873053120","benitez2016language","3889561208",">","1914907636","pos",NA,NA,"coevolution","review","","yes",NA
-"2251417824","benitez2016language","3889561208",">","2998418330","pos",NA,NA,"coevolution","review","","yes",NA
-"2360048272","benitez2016language","3889561208",">","3512069158","pos",NA,NA,"coevolution","review","","yes",NA
-"87038073","benitez2016language","3889561208",">","3777706962","pos",NA,NA,"coevolution","review","","yes",NA
-"3846137452","benitez2016language","3889561208",">","2064402695","pos",NA,NA,"coevolution","review","","yes",NA
-"1847279905","benitez2016language","3889561208",">","844897027","pos",NA,NA,"coevolution","review","","yes",NA
-"1296749787","benitez2016language","3889561208",">","1560510891","neg",NA,NA,"coevolution","hypothesis","","no",NA
-"2478003916","benitez2016language","3889561208",">","1859237902","neg",NA,NA,"coevolution","hypothesis","","no",NA
+"2306637581","benitez2016language","3550963897",">","1610587064","pos",NA,NA,"coevolution","review","","yes",NA
+"3452968522","benitez2016language","3550963897",">","3975778051","pos",NA,NA,"coevolution","review","","yes",NA
+"17534248","benitez2016language","3550963897",">","3573166714","pos",NA,NA,"coevolution","review","","yes",NA
+"1192526994","benitez2016language","3550963897",">","24271369","pos",NA,NA,"coevolution","review","","yes",NA
+"2001656910","benitez2016language","3550963897",">","170243050","pos",NA,NA,"coevolution","review","","yes",NA
+"609926706","benitez2016language","3550963897",">","802505058","pos",NA,NA,"coevolution","review","","yes",NA
+"1168875121","benitez2016language","3550963897",">","201625146","pos",NA,NA,"coevolution","review","","yes",NA
+"853745013","benitez2016language","3550963897",">","1914907636","pos",NA,NA,"coevolution","review","","yes",NA
+"731755174","benitez2016language","3550963897",">","2998418330","pos",NA,NA,"coevolution","review","","yes",NA
+"2600343859","benitez2016language","3550963897",">","334021331","none",NA,NA,"coevolution","review","","yes",NA
+"1442729890","benitez2016language","3550963897",">","1928006968","pos",NA,NA,"coevolution","review","","yes",NA
+"4146344900","benitez2016language","3550963897",">","2064402695","pos",NA,NA,"coevolution","review","","yes",NA
+"4014875899","benitez2016language","3550963897",">","844897027","pos",NA,NA,"coevolution","review","","yes",NA
+"3260169361","benitez2016language","3550963897",">","1560510891","neg",NA,NA,"coevolution","hypothesis","","no",NA
+"3513967409","benitez2016language","3550963897",">","1859237902","neg",NA,NA,"coevolution","hypothesis","","no",NA
 "1909099920","benitez2016language","1560510891",">","487241615","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "1699254700","benitez2016language","1859237902",">","487241615","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "2524690947","bentz2016learning","1746840506",">","264262316","",NA,"","","","",NA,""
@@ -2290,51 +2290,52 @@
 "2229828607","tamariz2016cultural","61253232",">","1369442256","pos",NA,"transmission","cultural evolution","hypothesis","","no","Another widespread feature of language is that the mapping between signals and meanings tends to be regular. For example, we tend not to have many synonymous words for the same meaning. This can also be seen as reflecting a preference for compressibility because systems with unconditioned variation have higher entropy."
 "449948864","tamariz2016cultural","61253232","<=>","1787328747","neg",NA,"transmission","cultural evolution","review","","yes","Converging evidence that language does indeed trade off compressibility and expressivity comes from cross-linguistic studies of semantic categories across a wide range of domains [13], including numerals [47], colour [48], spatial [49], and kinship [50] terms."
 "456028294","verhoef2016iconicity","2664839125",">","31407103","neg",NA,NA,"cultural evolution","experiment","","yes",NA
-"992201613","benitez2017schizophrenia","3501911129",">","1610587064","",NA,NA,"","","","",NA
-"3604032786","benitez2017schizophrenia","3501911129",">","3144312930","",NA,NA,"","","","",NA
-"2074478225","benitez2017schizophrenia","3501911129",">","127443506","",NA,NA,"","","","",NA
-"3182136434","benitez2017schizophrenia","3501911129",">","1265907750","",NA,NA,"","","","",NA
-"1391633969","benitez2017schizophrenia","3501911129",">","611227036","",NA,NA,"","","","",NA
-"3204035912","benitez2017schizophrenia","3501911129",">","380063046","",NA,NA,"","","","",NA
-"2997552173","benitez2017schizophrenia","3501911129",">","4062056941","",NA,NA,"","","","",NA
-"1875358921","benitez2017schizophrenia","3501911129",">","2767417409","",NA,NA,"","","","",NA
-"460116402","benitez2017schizophrenia","3501911129",">","3002161330","",NA,NA,"","","","",NA
-"2205184551","benitez2017schizophrenia","3501911129",">","4108557257","",NA,NA,"","","","",NA
-"3431906508","benitez2017schizophrenia","3501911129",">","1976565355","",NA,NA,"","","","",NA
-"2752413981","benitez2017schizophrenia","3501911129",">","4173578086","",NA,NA,"","","","",NA
-"3275176722","benitez2017schizophrenia","3501911129",">","84297241","",NA,NA,"","","","",NA
-"1189151812","benitez2017schizophrenia","3501911129",">","201625146","",NA,NA,"","","","",NA
-"2994550429","benitez2017schizophrenia","1976565355",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2802784788","benitez2017schizophrenia","3550963897",">","1610587064","",NA,NA,"","","","",NA
+"1476243786","benitez2017schizophrenia","3550963897",">","334021331","",NA,NA,"","","","",NA
+"2289103200","benitez2017schizophrenia","3550963897",">","219886150","neg",NA,NA,"","","","",NA
+"2813676632","benitez2017schizophrenia","3550963897",">","1695531707","neg",NA,NA,"","","","",NA
+"1799590287","benitez2017schizophrenia","3550963897",">","1928006968","",NA,NA,"","","","",NA
+"53840631","benitez2017schizophrenia","3550963897",">","380063046","",NA,NA,"","","","",NA
+"1474213818","benitez2017schizophrenia","3550963897",">","4199633387","pos",NA,NA,"","","","",NA
+"2049203023","benitez2017schizophrenia","3550963897",">","2241948882","neg",NA,NA,"","","","",NA
+"4283952115","benitez2017schizophrenia","3550963897",">","24271369","neg",NA,NA,"","","","",NA
+"698679828","benitez2017schizophrenia","3550963897",">","2291159476","neg",NA,NA,"","","","",NA
+"2646089255","benitez2017schizophrenia","3550963897",">","170243050","neg",NA,NA,"","","","",NA
+"1058947199","benitez2017schizophrenia","3550963897",">","2252199623","neg",NA,NA,"","","","",NA
+"3703382332","benitez2017schizophrenia","3550963897",">","84297241","",NA,NA,"","","","",NA
+"818240797","benitez2017schizophrenia","3550963897",">","201625146","",NA,NA,"","","","",NA
+"632994518","benitez2017schizophrenia","170243050",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "1373587536","benitez2017schizophrenia","380063046",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3312385579","benitez2017schizophrenia","127443506",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4118295687","benitez2017schizophrenia","219886150",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "4154205152","benitez2017schizophrenia","1610587064",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "718993123","benitez2017schizophrenia","201625146",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2725782317","benitez2017schizophrenia","3144312930",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3720607177","benitez2017schizophrenia","4062056941",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"710293676","benitez2017schizophrenia","334021331",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"538251771","benitez2017schizophrenia","4199633387",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "2888905417","benitez2017schizophrenia","84297241",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"282008214","benitez2017schizophrenia","2767417409",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3379114115","benitez2017schizophrenia","3501911129",">","3593816533","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3739361612","benitez2017schizophrenia","3593816533",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"953884050","benitez2017schizophrenia","1265907750",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"923845828","benitez2017schizophrenia","4173578086",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"625820055","benitez2017schizophrenia","3002161330",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3073562015","benitez2017schizophrenia","4108557257",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1104465428","benitez2017schizophrenia","4062056941",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4035562899","benitez2017schizophrenia","2241948882",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1225595804","benitez2017schizophrenia","3550963897",">","4262391499","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1460556381","benitez2017schizophrenia","4262391499",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3352530389","benitez2017schizophrenia","1695531707",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"29242019","benitez2017schizophrenia","2252199623",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4091291076","benitez2017schizophrenia","24271369",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1563697779","benitez2017schizophrenia","2291159476",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4092586726","benitez2017schizophrenia","4199633387",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "325256529","benitez2017schizophrenia","84297241",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4263756349","benitez2017schizophrenia","3593816533",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3863816715","benitez2017schizophrenia","2767417409",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"931235732","benitez2017schizophrenia","3002161330",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2904600865","benitez2017schizophrenia","4108557257",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4210553741","benitez2017schizophrenia","1265907750",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1770578450","benitez2017schizophrenia","1976565355",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1070503958","benitez2017schizophrenia","611227036",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3898814515","benitez2017schizophrenia","4262391499",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"251753501","benitez2017schizophrenia","2241948882",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"439546249","benitez2017schizophrenia","24271369",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1499524141","benitez2017schizophrenia","2291159476",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1407098715","benitez2017schizophrenia","1695531707",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"4221860459","benitez2017schizophrenia","170243050",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"929686170","benitez2017schizophrenia","1928006968",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "1443822414","benitez2017schizophrenia","1610587064",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "3703602764","benitez2017schizophrenia","201625146",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"81645308","benitez2017schizophrenia","127443506",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"2707667406","benitez2017schizophrenia","219886150",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
 "1985292008","benitez2017schizophrenia","380063046",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"147907410","benitez2017schizophrenia","3144312930",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3257166609","benitez2017schizophrenia","4173578086",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3114636295","benitez2017schizophrenia","611227036",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","",NA
+"2117142487","benitez2017schizophrenia","334021331",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1853738346","benitez2017schizophrenia","2252199623",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"1281445239","benitez2017schizophrenia","1928006968",">","3880877654","pos",NA,NA,"coevolution","hypothesis","","",NA
+"4033875475","benitez2017schizophrenia","3880877654",">","1520978948","none",NA,NA,"none","","","",NA
 "3630314603","Bentz2017","1687862168",">","3344516874","neg",NA,NA,"language change","statistical","","","""A (hypothetical) language with maximum word entropy would have a vast (potentially infinite) number of word forms of equal probability, and would be hard (or impossible) to learn."
 "734870917","Bentz2017","586905007",">","3344516874","pos",NA,NA,"language change","statistical","","","""A language with minimum word entropy, on the other hand, would repeat the same word forms over and over again, and lack expressivity. Natural languages fall in a relatively narrow range between these extremes."""
 "3641815132","Blasi_Moran_SLE_2017","2976820764",">","2387964722","pos",NA,NA,"language change","review","","",""
@@ -2658,22 +2659,22 @@
 "2319153444","baumann2018linguistic","1746840506",">","2844212883","pos",NA,NA,"language change","model","","","""...evolution proceeds faster in large populations. At first sight, this may seem paradox: population size is predicted to increase the stability of an item, but at the same time population size drives linguistic optimization, where an item is effectively replaced by a more successful version of itself. Note, crucially, that the more optimized variant is less likely to get lost."""
 "944230969","baumann2018linguistic","1683164269",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
 "1751657311","baumann2018linguistic","223612159",">","1152005270","pos",NA,NA,"language change","model","","","""The model builds on the assumption that the learning process depends on a mass-action law (i.e., interactions are proportional with the product of the number of learners and users). It has been pointed out (de Jong, Diekmann, & Heesterbeek, 1996), that this assumption does not hold in large populations in realistic ecological scenarios. Consequently, the effect of population size on the basic reproductive ratio is probably overestimated as populations become larger."""
-"1812540626","benitez2018emergence","3786538259",">","130020136","pos",NA,NA,"coevolution","review","","yes",NA
-"2220360383","benitez2018emergence","3786538259",">","1009504771","pos",NA,NA,"coevolution","review","","yes",NA
-"3336759581","benitez2018emergence","3786538259",">","63370745","pos",NA,NA,"coevolution","review","","yes",NA
-"3201795198","benitez2018emergence","3786538259",">","1519314390","pos",NA,NA,"coevolution","review","","yes",NA
-"2228426296","benitez2018emergence","3786538259",">","1535596030","pos",NA,NA,"coevolution","review","","yes",NA
-"881814800","benitez2018emergence","130020136",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
-"1889687269","benitez2018emergence","63370745",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
-"329087975","benitez2018emergence","1535596030",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
-"478067780","benitez2018emergence","1009504771",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
-"1534563036","benitez2018emergence","1519314390",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",NA
-"3690588195","benitez2018emergence","3532236208",">","1914866528","pos",NA,NA,"language change","hypothesis","","yes",NA
-"731987887","benitez2018emergence","3532236208",">","3235438309","pos",NA,NA,"language change","hypothesis","","yes",NA
-"1468021576","benitez2018emergence","3532236208",">","2630963321","pos",NA,NA,"language change","hypothesis","","yes",NA
-"3961531491","benitez2018emergence","3532236208",">","4179535522","pos",NA,NA,"language change","hypothesis","","yes",NA
-"1249950170","benitez2018emergence","3532236208",">","1250775508","pos",NA,NA,"language change","hypothesis","","yes",NA
-"2294637541","benitez2018emergence","3532236208",">","3853963800","pos",NA,NA,"language change","hypothesis","","yes",NA
+"2361608947","benitez2018emergence","3550963897",">","3570056592","pos",NA,NA,"coevolution","review","","yes",""
+"2258484121","benitez2018emergence","3550963897",">","1667386437","pos",NA,NA,"coevolution","review","","yes",""
+"1692854558","benitez2018emergence","3550963897",">","4035123759","pos",NA,NA,"coevolution","review","","yes","We focus specifically on parenting and teaching behaviors as foundations of cultural transmission processes that may have facilitated the exploitation of our cognitive potential and, ultimately, the emergence of modern languages. ... With respect to language, this developmental niche affords rich linguistic interactions that ensure mastery of increasingly more complex decontextualized languages through forms of teaching that build on human mimetic abilities like demonstration (Gärdenfors, 2017) and input enhancement (Shafto and Goodman, 2008) by parents and other caregivers. Thus, our main point is that the impact of self-domestication on language complexity was exerted through a developmental niche that facilitated learning through teaching."
+"178543892","benitez2018emergence","3550963897",">","3447457575","pos",NA,NA,"coevolution","review","","yes","While self-domestication per se may have brought about subtle changes in brain structure and function that contributed to language complexity directly (see Benítez-Burraco, 2017, for discussion), we suggest that it is the less aggressive behavior associated with domestication which served as the main prerequisite for the increase in language complexity. The reason is that a greater sociability enhances the intergroup contacts that ultimately require more complex, cognitively demanding linguistic systems to serve the resulting expanded social networks. Yet only in conjunction with another key consequence of domestication, namely, the increase in neotenic features that sustain extended juvenility (see Hare, 2017, for details), can these systems be learned."
+"3730521561","benitez2018emergence","3550963897",">","1664764723","pos",NA,NA,"coevolution","review","","yes",""
+"1741397487","benitez2018emergence","3570056592",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes","On the other hand, subsequent increases in social complexity involving larger population size, greater rates of inter-group economic transactions and cross-cultural exchange, increased polity size, greater division of labor, increased hierarchical social organization and, more recently, the invention of writing systems (Turchin et al., 2017), may have shifted the emphasis from esoteric language use as a joint action tool toward language as a means of decontextualized information transmission between unfamiliar individuals in so-called exoteric communities. "
+"4105192803","benitez2018emergence","4035123759",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",""
+"2221779410","benitez2018emergence","1664764723",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",""
+"3187148989","benitez2018emergence","1667386437",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",""
+"3471982604","benitez2018emergence","3447457575",">","3532236208","pos",NA,NA,"cultural evolution","hypothesis","","yes",""
+"3690588195","benitez2018emergence","3532236208",">","1914866528","pos",NA,NA,"language change","hypothesis","","yes",""
+"670029185","benitez2018emergence","3532236208",">","1781494893","pos",NA,NA,"language change","hypothesis","","yes",""
+"1962261712","benitez2018emergence","3532236208",">","1204190256","pos",NA,NA,"language change","hypothesis","","yes","The extant morpho-syntactic variation found in modern exoteric languages presumably reflects different solutions to the trade-off between communicative efficiency of morphological systems given lexical and syntactic complexity and the cognitive effort required for processing these systems (Piantadosi et al., 2012; Kemp et al., 2018). "
+"2318719312","benitez2018emergence","3532236208",">","1161379898","pos",NA,NA,"language change","hypothesis","","yes","The greater cognitive cost to language processing and learning incurred by this expansion might partially be alleviated by simpler sound combinations, more regular morphologies, greater compositionality, and enhanced semantic transparency (see Bolender, 2007; Wray and Grace, 2007; Lupyan and Dale, 2010; Trudgill, 2011; Nettle, 2012 for discussion). "
+"28026223","benitez2018emergence","3532236208",">","2047543007","neg",NA,NA,"language change","hypothesis","","yes",""
+"1515337321","benitez2018emergence","3532236208",">","3316682815","pos",NA,NA,"language change","hypothesis","","yes",""
 "1327885561","Bentz2018","3473049755",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
 "1760508090","Bentz2018","1200513521",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
 "4030237165","Bentz2018","1031734161",">","191368178",NA,NA,NA,NA,"statistical","",NA,NA
@@ -3073,32 +3074,32 @@
 "3158681902","murphy2018paleo","3014229387",">","262666713","",NA,NA,"","","","",NA
 "1659528401","murphy2018paleo","3014229387",">","876571668","",NA,NA,"","","","",NA
 "2072412783","murphy2018paleo","3014229387",">","3003217898","",NA,NA,"","","","",NA
-"854051492","murphy2018paleo","3910781698",">","876571668","pos",NA,NA,"none","experiment","","yes",NA
-"2009923139","murphy2018paleo","3947831073",">","876571668","pos",NA,NA,"","experiment","","yes",NA
-"2018405876","murphy2018paleo","3042683475",">","262666713","pos",NA,NA,"","experiment","","yes",NA
-"3683099345","murphy2018paleo","1136677408",">","876571668","pos",NA,NA,"","experiment","","yes",NA
-"1143997101","murphy2018paleo","2442698619",">","876571668","pos",NA,NA,"","experiment","","yes",NA
-"3314286155","murphy2018paleo","3910781698",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
-"3835286311","murphy2018paleo","1301081977",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
-"1649735289","murphy2018paleo","1862531714",">","3003217898","pos",NA,NA,"","experiment","","yes",NA
-"3946178146","murphy2018paleo","2146618997",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
-"2009792891","murphy2018paleo","1368372041",">","262666713","pos",NA,NA,"","experiment","","yes",NA
-"3364044086","murphy2018paleo","112823841",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
-"2585392137","murphy2018paleo","112823841",">","876571668","pos",NA,NA,"","experiment","","yes",NA
-"74779977","murphy2018paleo","3218656186",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
-"1304867905","murphy2018paleo","2442698619",">","3627450644","pos",NA,NA,"","experiment","","yes",NA
-"1464988872","murphy2018paleo","3042683475",">","3627450644","pos",NA,NA,"","experiment","","yes",NA
-"1257063329","murphy2018paleo","3947831073",">","2647382948","pos",NA,NA,"","experiment","","yes",NA
-"1448330559","murphy2018paleo","3947831073",">","663822152","pos",NA,NA,"","experiment","","yes",NA
-"1008143283","murphy2018paleo","1368372041",">","663822152","pos",NA,NA,"","experiment","","yes",NA
-"3595720078","murphy2018paleo","1368372041",">","3758248852","pos",NA,NA,"","experiment","","yes",NA
-"1941697383","murphy2018paleo","3910781698",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
-"832402856","murphy2018paleo","1136677408",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
-"3536010564","murphy2018paleo","1862531714",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
-"533127262","murphy2018paleo","3218656186",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
-"214651573","murphy2018paleo","112823841",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
-"3478346715","murphy2018paleo","2146618997",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
-"1105058777","murphy2018paleo","1301081977",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
+"35739431","murphy2018paleo","959027771",">","876571668","pos",NA,NA,"none","experiment","","yes",NA
+"537162363","murphy2018paleo","3337529627",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"4145962140","murphy2018paleo","2158918291",">","262666713","pos",NA,NA,"","experiment","","yes",NA
+"344454623","murphy2018paleo","311831060",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"3524708802","murphy2018paleo","126517773",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"940267992","murphy2018paleo","959027771",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"46446019","murphy2018paleo","1668365301",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"2478550754","murphy2018paleo","749375927",">","3003217898","pos",NA,NA,"","experiment","","yes",NA
+"1400626536","murphy2018paleo","2519215061",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"1512734101","murphy2018paleo","1690851878",">","262666713","pos",NA,NA,"","experiment","","yes",NA
+"1841330625","murphy2018paleo","3362711614",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"1992357772","murphy2018paleo","3362711614",">","876571668","pos",NA,NA,"","experiment","","yes",NA
+"2342108178","murphy2018paleo","1548222744",">","1194645744","pos",NA,NA,"","experiment","","yes",NA
+"605867424","murphy2018paleo","126517773",">","627813970","pos",NA,NA,"","experiment","","yes",NA
+"2622272460","murphy2018paleo","2158918291",">","627813970","pos",NA,NA,"","experiment","","yes",NA
+"2028092302","murphy2018paleo","3337529627",">","872564415","pos",NA,NA,"","experiment","","yes",NA
+"3468234368","murphy2018paleo","3337529627",">","3257930183","pos",NA,NA,"","experiment","","yes",NA
+"1873727988","murphy2018paleo","1690851878",">","3257930183","pos",NA,NA,"","experiment","","yes",NA
+"3777786207","murphy2018paleo","1690851878",">","3555046474","pos",NA,NA,"","experiment","","yes",NA
+"3843609895","murphy2018paleo","959027771",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"3489443026","murphy2018paleo","311831060",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"2634407882","murphy2018paleo","749375927",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"1290180043","murphy2018paleo","1548222744",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"1558489538","murphy2018paleo","3362711614",">","3022821268","pos",NA,NA,"","experiment","","yes",NA
+"2503107872","murphy2018paleo","2519215061",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
+"693080047","murphy2018paleo","1668365301",">","2593492914","pos",NA,NA,"","experiment","","yes",NA
 "2127531079","nichols2018morphological","634707713","~=","992715075","pos",NA,NA,"none","hypothesis","","","""The third measure used here is word entropy, more precisely the entropy of unigrams, i.e., runs of alphanumeric UTF8 characters delimited by white spaces. [...] The bottom line is that a language with high morphological complexity, i.e., very productive morphological marking strategies, has a wide range of word forms, higher word unpredictability, and hence higher entropy—as a general trend"" (Nichols & Bentz 2018: 15-16)."
 "389355763","nichols2018morphological","634707713","~=","3669644103","pos",NA,NA,"none","hypothesis","","","""The simplest measure of complexity is inventory complexity, a.k.a. taxonomic complexity, which is the total number of units in a system, for some subsystem or set of subsystems of a language"" (Nichols & Bentz 2018: 14)."
 "1128629296","nichols2018morphological","3473049755",">","992715075","pos",NA,NA,"none","statistical","","","""The correlation for altitude and word entropy is moderate and significant (r = 0.36, p < 0.0001)"" (Nichols & Bentz 2018: 18)."
@@ -3327,50 +3328,51 @@
 "3476883626","monaghan2019cognitive","304590923",">","3253875825","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "2876719949","monaghan2019cognitive","304590923",">","2024490099","pos",NA,NA,"language change","review","","","borrowing may be facilitated for concrete words compared to abstract words, since they are recognised and retrieved faster and more accurately (Strain, Patterson, & Seidenberg, 1995; Walker & Hulme, 1999), they may be more similar in meaning between languages (Van Hell & De Groot, 1998), and they may be borrowed alongside their physical referents (e.g., during trade)."
 "3247940510","monaghan2019cognitive","907311459",">","1097259485","pos",NA,NA,"language change","review","","","Pagel et al. found that the contemporary frequency of a word predicted its rate of lexical change   higher frequency words had a lower rate of change."
-"3822997292","niego2019williams","704961818",">","2724113022","",NA,NA,"","","","",NA
-"885176763","niego2019williams","704961818",">","4038096903","",NA,NA,"","","","",NA
-"953455556","niego2019williams","704961818",">","611227036","",NA,NA,"","","","",NA
-"3298634797","niego2019williams","704961818",">","185475884","",NA,NA,"","","","",NA
-"854932356","niego2019williams","704961818",">","2135505942","",NA,NA,"","","","",NA
-"1089100062","niego2019williams","704961818",">","3200549465","",NA,NA,"","","","",NA
-"420082943","niego2019williams","704961818",">","592475013","",NA,NA,"","","","",NA
-"1335201277","niego2019williams","704961818",">","2945812816","",NA,NA,"","","","",NA
-"3650097028","niego2019williams","704961818",">","1568108178","",NA,NA,"","","","",NA
-"937381269","niego2019williams","704961818",">","844897027","",NA,NA,"","","","",NA
-"257040841","niego2019williams","704961818",">","3372776662","",NA,NA,"","","","",NA
-"2453022245","niego2019williams","704961818",">","4262391499","",NA,NA,"","","","",NA
-"3068844355","niego2019williams","704961818",">","3144312930","",NA,NA,"","","","",NA
-"263930861","niego2019williams","704961818",">","286091435","",NA,NA,"","","","",NA
-"3540895667","niego2019williams","3144312930",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"753934125","niego2019williams","286091435",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"983419241","niego2019williams","592475013",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2248231825","niego2019williams","185475884",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1554952251","niego2019williams","4262391499",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2904965289","niego2019williams","3372776662",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2623829048","niego2019williams","1568108178",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2092542494","niego2019williams","611227036",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4020695218","niego2019williams","4038096903",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1082629556","niego2019williams","844897027",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3101217836","niego2019williams","3249023582",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"215925965","niego2019williams","2724113022",">","4080737986","pos",NA,NA,"cultural evolution","hypothesis","","no",NA
-"3808715285","niego2019williams","2945812816",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"609466632","niego2019williams","3200549465",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4004880928","niego2019williams","2135505942",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1924740348","niego2019williams","3249023582",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3034689808","niego2019williams","4262391499",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3647185566","niego2019williams","592475013",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4237914033","niego2019williams","185475884",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3217964023","niego2019williams","2945812816",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"756002271","niego2019williams","286091435",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"4006423216","niego2019williams","3200549465",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3912696212","niego2019williams","4038096903",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"553568189","niego2019williams","3372776662",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1853959945","niego2019williams","611227036",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2281015862","niego2019williams","844897027",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"155867485","niego2019williams","2135505942",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"3662349540","niego2019williams","1568108178",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"1936255440","niego2019williams","2724113022",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
-"2642676957","niego2019williams","3144312930",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",NA
+"3592523917","niego2019williams","3550963897",">","2724113022","",NA,NA,"","","","",""
+"3865693698","niego2019williams","3550963897",">","2064490408","neg",NA,NA,"","","","","One important parallel between WS and DS concerns visuospatial abilities, which are reported to be severely impaired in WS (Bellugi and Wang, 1994; Meyer-Lindenberg et al., 2004; Mobbs et al., 2007; Atkinson and Braddick, 2011; Haas and Reiss, 2012). Usually, people with WS experience problems with seeing the ‘big picture’ made out of smaller components, like a triangle composed of circles (Wang et al., 1995)."
+"1452936661","niego2019williams","3550963897",">","1928006968","",NA,NA,"","","","","The HPA axis is a major neuroendocrine system resulting from complex interactions between the hypothalamus, the pituitary gland, and the adrenal glands, and regulates a great number of bodily functions. In Belyaev’s seminal farm fox experiment, it was shown that the function of the HPA axis was significantly reduced in domesticated foxes in just a few generations, resulting in decreased levels of glucocorticoids, decreased levels of basal adrenocorticotropic hormone in plasma, and reduced adrenal response to stress, which plausibly accounts for the changes in behavior linked to domestication (Naumenko and Belyaev, 1980; Oskina, 1996; Trut et al., 2009). A decreased stress response of the HPA axis was later found in other domesticated animals, like rats and guinea pigs (Kruska, 1988; Künzl and Sachser, 1999; Trut et al., 2009). Specifically, Kaiser et al. (2015) found that although cortisol levels in guinea pigs were similar in wild and domestic strains when it came to basal cortisol activity, the wild strain of cavies exhibited a more pronounced cortisol response when introduced to new environments (Künzl and Sachser, 1999; Künzl et al., 2003; Zipser et al., 2014). The HPA axis also plays a key role in the amygdala response and fear signaling impulses, which also contribute importantly to the behavioral phenotype of domesticated animals. "
+"3846474748","niego2019williams","3550963897",">","2291159476","pos",NA,NA,"","","","","Subjects with WS exhibit some other features typically found in domesticated mammals, like the acceleration of sexual maturation. Pankau et al. (1992) "
+"1524028181","niego2019williams","3550963897",">","4287741266","pos",NA,NA,"","","","","Domesticated animals (dogs vs. wolves, domestic vs. wild foxes, and bonobos vs. chimpanzees) show more attentiveness and sensitivity to human social cues (Hare, 2017). These cues are usually eye or facial movements or gestures. "
+"2275050231","niego2019williams","3550963897",">","170243050","neg",NA,NA,"","","","","All in all, when one looks at anatomically-modern humans (AMHs) in comparison to our primate relatives, but also extinct hominins like Neanderthals, we exhibit reduced cranial robusticity, reduced brain size, reduced tooth size, juvenile cranial shape retained in adulthood, reduced sexual dimorphism, and differences in temperament resulting in less aggressive behaviors (Shea, 1989; Leach, 2003; Somel et al., 2009; Zollikofer and Ponce de León, 2010; Herrmann et al., 2011; Plavcan, 2012; Márquez et al., 2014; Fukase et al., 2015; Stringer, 2016; Thomas and Kirby, 2018),"
+"1675431991","niego2019williams","3550963897",">","24271369","neg",NA,NA,"","","","","With no external controlling factor triggering the domestication process, it seems that human self -domestication was mostly due to selection against aggression, when humans started to sexually select for non-threatening, less emotionally reactive partners, as a result of the rise of community living, co-parenting and other social factors (Belyaev, 1969; Trut, 1999; Hare et al., 2012; Thomas, 2014; Wilkins et al., 2014)"
+"349767682","niego2019williams","3550963897",">","2945812816","pos",NA,NA,"","","","","People with WS exhibit a distinctive “elfin face,” resulting from a short philtrum, pointy ears with longer and narrower conchae, shorter noses with a nose bridge that is flatter than normal, wide mouth, and wideset eyes (Hovis and Butler, 1997; Pober, 2003; Tarjan et al., 2003; Morris, 2010; Poornima et al., 2012)."
+"832091618","niego2019williams","3550963897",">","4089592957","pos",NA,NA,"","","","","Hare et al. (2002) to speculate that the process of domestication might create selective pressures for certain social cognition skills only, especially those related to gaze attention, which enable domesticated animals to better communicate with humans. Interestingly, individuals with WS excel in following an experimenter’s gaze to the correct target, although they underperform in the subsequent tasks because they remain fixated on the face and eyes of the experimenter (Riby et al., 2013)."
+"2190426863","niego2019williams","3550963897",">","844897027","pos",NA,NA,"","","","","That said, they also experience difficulties with interpreting social cues, sustaining social relationships, and converting empathy into helpful behavior or other types of socially appropriate responses (Plesa Skwerer and Tager-Flusberg, 2016). This might explain the high prevalence of anxiety disorders in people with WS and the reported feelings of isolation despite their attempts to connect with other people (Leyfer et al., 2009; Järvinen and Bellugi, 2013)."
+"1212749162","niego2019williams","3550963897",">","3372776662","pos",NA,NA,"","","","","Likewise, most individuals with the syndrome exhibit less pigmentation in their eyes, as most of them have blue eyes and/or a characteristic “star pattern” in the iris (Jones and Smith, 1975; Greenberg and Lewis, 1988; Holmström et al., 1990)."
+"2423333273","niego2019williams","3550963897",">","4262391499","pos",NA,NA,"","","","",""
+"2679547234","niego2019williams","3550963897",">","334021331","n-m",NA,NA,"","","","","Although domestication usually involves selection for tameness, it results in a distinctive set of common features affecting the body and behavior, dubbed ‘the domestication syndrome’ (DS), including floppy ears, shorter muzzles/noses, smaller teeth, smaller jaws, increased docility, earlier sexual maturation and more frequent estrous cycles, reduced sexual dimorphism, neoteny (retention of juvenile characteristics into adulthood), and smaller brains and reduced cranial capacity (Wilkins et al., 2014). These traits are not always present in all domesticated animals, but there are enough incidences of them in enough species to cause us to believe that they are connected to domestication in some way. "
+"3237794699","niego2019williams","3550963897",">","219886150","neg",NA,NA,"","","","","Although domestication usually involves selection for tameness, it results in a distinctive set of common features affecting the body and behavior, dubbed ‘the domestication syndrome’ (DS), including floppy ears, shorter muzzles/noses, smaller teeth, smaller jaws, increased docility, earlier sexual maturation and more frequent estrous cycles, reduced sexual dimorphism, neoteny (retention of juvenile characteristics into adulthood), and smaller brains and reduced cranial capacity (Wilkins et al., 2014). These traits are not always present in all domesticated animals, but there are enough incidences of them in enough species to cause us to believe that they are connected to domestication in some way. "
+"3790974447","niego2019williams","334021331",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3262785050","niego2019williams","219886150",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"2307531455","niego2019williams","24271369",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"4094475750","niego2019williams","2291159476",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1554952251","niego2019williams","4262391499",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"2904965289","niego2019williams","3372776662",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3209892434","niego2019williams","4089592957",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1427371640","niego2019williams","3880877654",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"4198253301","niego2019williams","2064490408",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1082629556","niego2019williams","844897027",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3101217836","niego2019williams","3249023582",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"215925965","niego2019williams","2724113022",">","4080737986","pos",NA,NA,"cultural evolution","hypothesis","","no",""
+"3808715285","niego2019williams","2945812816",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3489684172","niego2019williams","170243050",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1335969733","niego2019williams","4287741266",">","4080737986","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1924740348","niego2019williams","3249023582",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3034689808","niego2019williams","4262391499",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1780371507","niego2019williams","24271369",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1862795329","niego2019williams","2291159476",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3217964023","niego2019williams","2945812816",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3428539223","niego2019williams","219886150",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"502448209","niego2019williams","170243050",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"4064636105","niego2019williams","2064490408",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"553568189","niego2019williams","3372776662",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"805094196","niego2019williams","3880877654",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"2281015862","niego2019williams","844897027",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3536489453","niego2019williams","4287741266",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3004245398","niego2019williams","4089592957",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"1936255440","niego2019williams","2724113022",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"185569358","niego2019williams","334021331",">","1520978948","pos",NA,NA,"coevolution","hypothesis","","no",""
+"3040803311","niego2019williams","1928006968",">","3880877654","pos",NA,NA,"none","","","","The HPA axis is a major neuroendocrine system resulting from complex interactions between the hypothalamus, the pituitary gland, and the adrenal glands, and regulates a great number of bodily functions. In Belyaev’s seminal farm fox experiment, it was shown that the function of the HPA axis was significantly reduced in domesticated foxes in just a few generations, resulting in decreased levels of glucocorticoids, decreased levels of basal adrenocorticotropic hormone in plasma, and reduced adrenal response to stress, which plausibly accounts for the changes in behavior linked to domestication (Naumenko and Belyaev, 1980; Oskina, 1996; Trut et al., 2009). A decreased stress response of the HPA axis was later found in other domesticated animals, like rats and guinea pigs (Kruska, 1988; Künzl and Sachser, 1999; Trut et al., 2009). Specifically, Kaiser et al. (2015) found that although cortisol levels in guinea pigs were similar in wild and domestic strains when it came to basal cortisol activity, the wild strain of cavies exhibited a more pronounced cortisol response when introduced to new environments (Künzl and Sachser, 1999; Künzl et al., 2003; Zipser et al., 2014). The HPA axis also plays a key role in the amygdala response and fear signaling impulses, which also contribute importantly to the behavioral phenotype of domesticated animals. "
 "3528643636","Nikolaev2019","2351288590",">","225151578",NA,NA,NA,"cultural evolution","statistical","",NA,NA
 "288719332","Pacheco_Coelho_2019","395999132",">","1554828085","pos",NA,NA,"language change","statistical","","yes","β=0.17"
 "2731376617","Pacheco_Coelho_2019","395999132",">","4077221114","neg",NA,NA,"language change","statistical","","yes","β=-0.01"
