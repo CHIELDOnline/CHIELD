@@ -1,0 +1,76 @@
+{
+	"label" : "Topics",
+	"expanded" : "true",
+	"children" : [
+		{
+			"label" : "Languages and literature",
+			"children" : [
+				{
+					"label" : "Linguistics (Outline of linguistics)",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Applied linguistics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Composition studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Computational linguistics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Discourse analysis"
+						},
+						{
+							"leaf" : "true",
+							"label" : "English studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Etymology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Grammar"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Historical linguistics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "History of linguistics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Interlinguistics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Lexicology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Linguistic typology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Morphology (linguistics)"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Natural language processing"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Philology"
+						}
+					]
+				}
+			]
+		}
+	]
+}

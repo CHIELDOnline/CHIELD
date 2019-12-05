@@ -49,10 +49,11 @@ fi
 
 if [ "$compile" = true ]
 then
-	#echo "Skipping database compilation ..."
+	echo "Processing ..."
 	cd processing
 	R  --slave -f TreeToDatabase.R
 	R  --slave -f makeCausalLinksJSON.R
+	R  --slave -f makeTopicHierarchy.R
 	cd ..
 fi
 
@@ -95,3 +96,4 @@ rm app/Site/downloads/CHIELD.zip
 
 # Need to update the python path for php to work
 sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewRecord.php
+sed -i "" -e "s#path_to_python#${path_to_python}#g" ${server_public_folder}php/sendNewIssue.php

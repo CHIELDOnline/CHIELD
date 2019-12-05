@@ -44,6 +44,71 @@ function loadRandomNetwork(){
 	}
 }
 
+function requestCoding(){
+
+	var form = 
+	'<div id="IssueForm" class="card" style="background:pink;padding:10px">\
+		<div class="form-group">\
+			<p>Please enter a reference for the document you wish to be coded (apa or bibtex preferred):</p>\
+			<textarea id="IssueFormText" class="form-control"></textarea>\
+			<p>Enter your name (optional):</p>\
+			<input id="IssueFormName" value="Anonymous" class="form-control">\
+		</div>\
+		<button onclick="submitNewIssue()" class="btn btn-danger" type="submit">Submit</button>\
+	</div>';
+
+	$("#requestCoding").append(form);
+}
+
+function submitNewIssue(){
+		
+	var issueLabel = "codingRequest";
+	var issueText = 
+		$("#IssueFormText").val() + 
+		"\n\nSent by: " +
+		$("#IssueFormName").val();
+	var issueTitle = "Coding Request";
+
+	if(issueText!=undefined){
+
+		var jdata = {
+			text: issueText,
+			label: issueLabel,
+			title: issueTitle
+				};
+		console.log(jdata);
+
+		$.ajax({
+		    type: 'POST',
+		    url: 'php/sendNewIssue.php',
+		    data: {json: JSON.stringify(jdata)},
+		    dataType: 'json'
+		}). done(
+			function(data){
+				finishedSubmission(data);
+			}).fail(function(data){
+				finishedSubmission(data);
+			});
+	}
+}
+
+function finishedSubmission(obj){
+	console.log(obj.responseText);
+	var link = obj.responseText;
+	if(link!==undefined && link.startsWith("https")){
+		$("#IssueForm").html(
+			'Request submitted.  <a href="'+link+'" target="_blank">View the issue</a>.'
+			);
+
+	} else{
+		var url = "https://github.com/CHIELDOnline/CHIELD/issues/new?title=Coding Request&labels=codingRequest";
+		$("#IssueForm").html(
+			'<p>There may be an error with the submission. You can submit an request via GitHub <a href="'+url+'">here</a>.'
+			);
+	}
+}
+
+
 
 $(document).ready(function(){
 	$("#header").load("header.html"); 
@@ -56,7 +121,7 @@ $(document).ready(function(){
 	initialiseNetwork();
 	requestRecord("php/getDocsForHome.php", "",'docs');
 	
-	setInterval("loadRandomNetwork()",5000);
+	//setInterval("loadRandomNetwork()",5000);
 
 	// -----------------------------------------------------
 	// Video poster

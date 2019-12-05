@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
+<title>CHIELD: Topics</title>
 <meta charset="utf-8">
-<title>Topics</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/chieldIcon.ico" />
+
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $('#header').load('header.html', function(){
-    $('#TopicsHREF').addClass('active');
-  }); 
-});
-</script>
+
+<script src="js/util/simpleTree.js"></script>
+<link href="css/simpleTree.css" rel="stylesheet" type="text/css"/>
+<style>
+  #mytree { margin: 20px auto; }
+</style>
+
+<script src="js/topics.js"></script>
 
 </head>
 
-<body>
 <div id="header"></div>
+
 <div class="container">
-	<h1 id="toc_0">Topics</h1>
-	<p>Coming soon ...</p>
+	<h1>List of topics</h1>
+	<p>Click on the arrows to expand sections. Click on leaf nodes to see the variables associated with a given topic.</p>
+	<br />
+	<h3>Search:</h3>
+	<input type="search" id="searchTopics" class="form-control">
+	<div id="mytree"></div>
+	<p><button onclick="$('#mytree').data('simpleTree').expandAll()" class="btn btn-primary">Expand All</button></p>
 </div>
-</body>
+
 </html>
