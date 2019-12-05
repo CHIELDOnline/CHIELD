@@ -3,70 +3,7274 @@
 	"expanded" : "true",
 	"children" : [
 		{
-			"label" : "Languages and literature",
+			"label" : "Applied Sciences",
 			"children" : [
 				{
-					"label" : "Linguistics (Outline of linguistics)",
+					"label" : "Business",
 					"children" : [
 						{
 							"leaf" : "true",
-							"label" : "Applied linguistics"
+							"label" : "Accounting"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Composition studies"
+							"label" : "Business management"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Computational linguistics"
+							"label" : "Finance"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Discourse analysis"
+							"label" : "Marketing"
 						},
 						{
 							"leaf" : "true",
-							"label" : "English studies"
+							"label" : "Operations management"
+						}
+					]
+				},
+				{
+					"label" : "Engineering and technology",
+					"children" : [
+						{
+							"label" : "Chemical Engineering",
+							"children" : [
+								{
+									"label" : "Bioengineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Biochemical engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Biomolecular engineering"
+										}
+									]
+								},
+								{
+									"label" : "Catalysis",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Materials engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Molecular engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Nanotechnology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Polymer engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Process design",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Petroleum engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Nuclear engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Food engineering"
+										}
+									]
+								},
+								{
+									"label" : "Process engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Reaction engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Thermodynamics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Transport phenomena",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Civil Engineering",
+							"children" : [
+								{
+									"label" : "Coastal engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Earthquake engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Ecological engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Environmental engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Geotechnical engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Engineering geology"
+										}
+									]
+								},
+								{
+									"label" : "Hydraulic engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Mining engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Structural engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Architectural engineering"
+										}
+									]
+								},
+								{
+									"label" : "Structural mechanics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Surveying",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Transportation engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Highway engineering"
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Educational Technology",
+							"children" : [
+								{
+									"label" : "Human performance technology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Instructional design",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Distance education"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Instructional simulation"
+										}
+									]
+								},
+								{
+									"label" : "Knowledge management",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Electrical Engineering",
+							"children" : [
+								{
+									"label" : "Applied physics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Computer engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Computer science",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Control systems engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Control theory"
+										}
+									]
+								},
+								{
+									"label" : "Electronic engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Instrumentation engineering"
+										}
+									]
+								},
+								{
+									"label" : "Engineering physics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Photonics"
+										}
+									]
+								},
+								{
+									"label" : "Information theory",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Mechatronics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Power engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Quantum computing",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Robotics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Semiconductors",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Telecommunications engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Materials Science and Engineering",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Biomaterials"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ceramic engineering"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Crystallography"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Nanomaterials"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Photonics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Physical Metallurgy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Polymer engineering"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Polymer science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Semiconductors"
+								}
+							]
+						},
+						{
+							"label" : "Mechanical Engineering",
+							"children" : [
+								{
+									"label" : "Acoustical engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Aerospace engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Aeronautics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Astronautics"
+										}
+									]
+								},
+								{
+									"label" : "Automotive engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Biomedical engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Biomechanical engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Neural engineering"
+										}
+									]
+								},
+								{
+									"label" : "Continuum mechanics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Fluid mechanics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Heat transfer",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Industrial engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Manufacturing engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Marine engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Mass transfer",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Mechatronics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Nanoengineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Ocean engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Optical engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Robotics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Thermodynamics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Vehicle engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Systems science",
+							"children" : [
+								{
+									"label" : "Chaos theory",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Complex systems",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Conceptual systems",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Control theory",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Affect control theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Control engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Control systems"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Dynamical systems"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Perceptual control theory"
+										}
+									]
+								},
+								{
+									"label" : "Cybernetics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Biocybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Engineering cybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Management cybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Medical cybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "New Cybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Second-order cybernetics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Sociocybernetics"
+										}
+									]
+								},
+								{
+									"label" : "Network science",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Operations research",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "System dynamics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Social dynamics"
+										}
+									]
+								},
+								{
+									"label" : "Systems biology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Computational systems biology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Synthetic biology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Systems immunology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Systems neuroscience"
+										}
+									]
+								},
+								{
+									"label" : "Systems ecology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Ecosystem ecology"
+										}
+									]
+								},
+								{
+									"label" : "Systems engineering",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Biological systems engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Earth systems engineering and management"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Enterprise systems engineering"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Systems analysis"
+										}
+									]
+								},
+								{
+									"label" : "Systems psychology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Ergonomics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Family systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Systemic therapy"
+										}
+									]
+								},
+								{
+									"label" : "Systems theory",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Biochemical systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Ecological systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Developmental systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "General systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Living systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "LTI system theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Mathematical system theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Sociotechnical systems theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "World-systems theory"
+										}
+									]
+								},
+								{
+									"label" : "Systems theory in anthropology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Medicine and health",
+					"children" : [
+						{
+							"label" : "Alternative medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Clinical laboratory sciences/Clinical pathology/Laboratory medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Clinical biochemistry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cytogenetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cytohematology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cytology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Haemostasiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Histology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Clinical immunology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Clinical microbiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Molecular genetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Parasitology"
+								}
+							]
+						},
+						{
+							"label" : "Clinical physiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Dentistry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Dental hygiene and epidemiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Dental surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Endodontics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Implantology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Oral and maxillofacial surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Orthodontics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Periodontics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Prosthodontics"
+								}
+							]
+						},
+						{
+							"label" : "Dermatology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Emergency medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Epidemiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Geriatrics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Gynaecology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Health informatics/Clinical informatics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Hematology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Infectious disease",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Intensive care medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Internal medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Cardiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cardiac electrophysiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Endocrinology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Gastroenterology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Hepatology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Nephrology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Neurology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Oncology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Pulmonology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Rheumatology"
+								}
+							]
+						},
+						{
+							"label" : "Medical toxicology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Music therapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Nursing",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Nutrition and dietetics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Obstetrics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Occupational hygiene",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Occupational therapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Occupational toxicology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Ophthalmology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Neuro-ophthalmology"
+								}
+							]
+						},
+						{
+							"label" : "Optometry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Otolaryngology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pathology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pediatrics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pharmaceutical sciences",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Pharmacy"
+								}
+							]
+						},
+						{
+							"label" : "Physical fitness",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Group Fitness / aerobics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Kinesiology / Exercise science / Human performance"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Personal fitness training"
+								}
+							]
+						},
+						{
+							"label" : "Physical therapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Physiotherapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Podiatry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Preventive medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Primary care",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "General practice"
+								}
+							]
+						},
+						{
+							"label" : "Psychiatry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Forensic psychiatry"
+								}
+							]
+						},
+						{
+							"label" : "Psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Public health",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Radiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Recreational therapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Rehabilitation medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Respiratory therapy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sleep medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Speech-language pathology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sports medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Surgery",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Bariatric surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cardiothoracic surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Neurosurgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Orthoptics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Orthopedic surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Plastic surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Trauma surgery"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Traumatology"
+								}
+							]
+						},
+						{
+							"label" : "Traditional medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Urology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Andrology"
+								}
+							]
+						},
+						{
+							"label" : "Veterinary medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Formal Sciences",
+			"children" : [
+				{
+					"label" : "Computer Science",
+					"children" : [
+						{
+							"label" : "Algorithms",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Computational geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Distributed algorithms"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Parallel algorithms"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Randomized algorithms"
+								}
+							]
+						},
+						{
+							"label" : "Artificial intelligence",
+							"children" : [
+								{
+									"label" : "Automated reasoning",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Cognitive science",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Computer vision",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Expert systems",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Machine learning",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Artificial neural network"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Support vector machine"
+										}
+									]
+								},
+								{
+									"label" : "Natural language processing (Computational linguistics)",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Robotics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Computer architecture",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Computer communications (networks)",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Cloud computing"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Information theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Internet, World Wide Web"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ubiquitous computing"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Wireless computing (Mobile computing)"
+								}
+							]
+						},
+						{
+							"label" : "Computer graphics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Image processing"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Scientific visualization"
+								}
+							]
+						},
+						{
+							"label" : "Computer security and reliability",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Cryptography"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Fault-tolerant computing"
+								}
+							]
+						},
+						{
+							"label" : "Computing in mathematics, natural sciences, engineering, and medicine",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Algebraic (symbolic) computation"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational biology (bioinformatics)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational chemistry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational mathematics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational neuroscience"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational number theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational physics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computer-aided engineering"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational fluid dynamics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Finite element analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Numerical analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Scientific computing (Computational science)"
+								}
+							]
+						},
+						{
+							"label" : "Computing in social sciences, arts, humanities, and professions",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Community informatics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational economics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational finance"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational sociology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Digital humanities (Humanities computing)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of computer hardware"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of computer science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Humanistic informatics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Database"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Distributed database"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Object database"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Relational database"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Data management"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Data mining"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Information architecture"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Information management"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Information retrieval"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Knowledge management"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Multimedia, hypermedia"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sound and music computing"
+								}
+							]
+						},
+						{
+							"label" : "Data structures",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Distributed computing",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Grid computing"
+								}
+							]
+						},
+						{
+							"label" : "Human-computer interaction",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Logic in computer science",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Formal methods (Formal verification)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Logic programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Multi-valued logic"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Fuzzy logic"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Programming language semantics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Type theory"
+								}
+							]
+						},
+						{
+							"label" : "Operating systems",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Parallel computing",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "High-performance computing"
+								}
+							]
+						},
+						{
+							"label" : "Programming languages",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Compilers"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Programming paradigms"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Concurrent programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Functional programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Imperative programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Logic programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Object-oriented programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Program semantics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Type theory"
+								}
+							]
+						},
+						{
+							"label" : "Quantum computing",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Software engineering",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Formal methods (Formal verification)"
+								}
+							]
+						},
+						{
+							"label" : "Theory of computation",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Automata theory (Formal languages)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computability theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational complexity theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Concurrency theory"
+								}
+							]
+						},
+						{
+							"label" : "VLSI design",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Humanities",
+			"children" : [
+				{
+					"label" : "Arts",
+					"children" : [
+						{
+							"label" : "Performing arts",
+							"children" : [
+								{
+									"label" : "Dance",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Choreography"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Dance notation"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Ethnochoreology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "History of dance"
+										}
+									]
+								},
+								{
+									"label" : "Film",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Animation"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Film criticism"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Filmmaking"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Film theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Live action"
+										}
+									]
+								},
+								{
+									"label" : "Music",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Accompanying"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Chamber music"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Church music"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Conducting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Choral conducting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Orchestral conducting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Wind ensemble conducting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Early music"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Jazz studies"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Musical composition"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Music education"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Music history"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Musicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Historical musicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Systematic musicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Ethnomusicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Music theory"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Orchestral studies"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Organology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Organ and historical keyboards"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Piano"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Strings, harp, oud, and guitar"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Singing"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Woodwinds, brass, and percussion"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Recording"
+										}
+									]
+								},
+								{
+									"label" : "Television",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Television studies"
+										}
+									]
+								},
+								{
+									"label" : "Theatre",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Acting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Directing"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Dramaturgy"
+										},
+										{
+											"leaf" : "true",
+											"label" : "History"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Musical theatre"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Playwrighting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Puppetry"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Scenography"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Stage design"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Ventriloquism"
+										}
+									]
+								}
+							]
+						},
+						{
+							"label" : "Visual arts",
+							"children" : [
+								{
+									"label" : "Applied arts",
+									"children" : [
+										{
+											"label" : "Animation",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Architectural analytics",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Architecture",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Calligraphy",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Decorative arts",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Fashion design",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Historic preservation",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Industrial design (product design)",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : "Ergonomics"
+												},
+												{
+													"leaf" : "true",
+													"label" : "Game design"
+												},
+												{
+													"leaf" : "true",
+													"label" : "Toy and amusement design"
+												}
+											]
+										},
+										{
+											"label" : "Interior architecture",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Interior design (interior architecture)",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Landscape architecture",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : "Landscape design"
+												},
+												{
+													"leaf" : "true",
+													"label" : "Landscape planning"
+												}
+											]
+										},
+										{
+											"label" : "Mixed media",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Outline of design",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Printmaking",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Studio art",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Technical drawing",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Textile design",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "Urban planning (urban design)",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : ""
+												}
+											]
+										},
+										{
+											"label" : "User experience design",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : "Interaction design"
+												},
+												{
+													"leaf" : "true",
+													"label" : "User experience evaluation"
+												},
+												{
+													"leaf" : "true",
+													"label" : "User interface design"
+												}
+											]
+										},
+										{
+											"label" : "Visual communication",
+											"children" : [
+												{
+													"leaf" : "true",
+													"label" : "Graphic design"
+												},
+												{
+													"leaf" : "true",
+													"label" : "Typography"
+												}
+											]
+										}
+									]
+								},
+								{
+									"label" : "Fine arts",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Graphic arts"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Drawing"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Painting"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Photography"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Sculpture"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "History",
+					"children" : [
+						{
+							"label" : "African history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "American history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Ancient history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Ancient Egypt"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Carthage"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ancient Greek history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ancient Roman history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Biblical history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of the Indus Valley Civilization"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Preclassic Maya"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of Mesopotamia"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of the Yangtze civilization"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of the Yellow River civillization"
+								}
+							]
+						},
+						{
+							"label" : "Asian history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Chinese history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Indian history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Indonesian history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Iranian history"
+								}
+							]
+						},
+						{
+							"label" : "Australian history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Ecclesiastical history of the Catholic Church",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Economic history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Environmental history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "European history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "History of culture",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "History of philosophy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Ancient philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Contemporary philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Medieval philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Humanism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Scholasticism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Modern philosophy"
+								}
+							]
+						},
+						{
+							"label" : "Intellectual history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Latin American history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Modern history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Political history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pre-Columbian era",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Public history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Russian history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Scientific history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Technological history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "World history",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Languages and literature",
+					"children" : [
+						{
+							"label" : "Comparative literature",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Creative writing",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Fiction"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Non-fiction"
+								}
+							]
+						},
+						{
+							"label" : "English literature",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "History of literature",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Medieval literature"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Post-colonial literature"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Post-modern literature"
+								}
+							]
+						},
+						{
+							"label" : "Linguistics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Applied linguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Composition studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Computational linguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Discourse analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "English studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Etymology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Grammar"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Historical linguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "History of linguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Interlinguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Lexicology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Linguistic typology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Morphology (linguistics)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Natural language processing"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phonetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phonology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Pragmatics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Psycholinguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Rhetoric"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Semantics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Semiotics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sociolinguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Syntax"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Usage"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Word usage"
+								}
+							]
+						},
+						{
+							"label" : "Literary theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Critical theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Literary criticism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Poetics"
+								}
+							]
+						},
+						{
+							"label" : "Poetry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "World literature",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "African-American literature"
+								},
+								{
+									"leaf" : "true",
+									"label" : "American literature"
+								},
+								{
+									"leaf" : "true",
+									"label" : "British literature"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Law",
+					"children" : [
+						{
+							"label" : "Administrative law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Canon law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Civil law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Admiralty law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Animal law/Animal rights"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Civil procedure"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Common law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Contract law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Corporations"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Environmental law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Family law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Federal law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "International law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Public international law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Supranational law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Labor law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Property law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Tax law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Tort law"
+								}
+							]
+						},
+						{
+							"label" : "Comparative law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Competition law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Constitutional law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Criminal law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Criminal justice"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Criminal procedure"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Forensic science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Police science"
+								}
+							]
+						},
+						{
+							"label" : "Islamic law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Jewish law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Jurisprudence (Philosophy of Law)",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Legal management",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Commercial law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Corporate law"
+								}
+							]
+						},
+						{
+							"label" : "Procedural law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Substantive law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Philosophy",
+					"children" : [
+						{
+							"label" : "Aesthetics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Applied philosophy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of economics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of education"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of engineering"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of history"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of language"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of law"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of mathematics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of music"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of psychology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of religion"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of physical sciences"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of biology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of chemistry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of physics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of social science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of technology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Systems philosophy"
+								}
+							]
+						},
+						{
+							"label" : "Epistemology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Justification"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Reasoning errors"
+								}
+							]
+						},
+						{
+							"label" : "Ethics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Applied ethics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Animal rights"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Bioethics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Environmental ethics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Meta-ethics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Moral psychology, Descriptive ethics, Value theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Normative ethics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Virtue ethics"
+								}
+							]
+						},
+						{
+							"label" : "Logic",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Mathematical logic"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophical logic"
+								}
+							]
+						},
+						{
+							"label" : "Meta-philosophy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Metaphysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of Action"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Determinism and Free will"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ontology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of mind"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of pain"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of artificial intelligence"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of perception"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Philosophy of space and time"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Teleology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Theism and Atheism"
+								}
+							]
+						},
+						{
+							"label" : "Philosophical traditions and schools",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "African philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Analytic philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Aristotelianism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Continental philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Eastern philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Feminist philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Platonism"
+								}
+							]
+						},
+						{
+							"label" : "Social philosophy and political philosophy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Anarchism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Feminist philosophy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Libertarianism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Marxism"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Theology",
+					"children" : [
+						{
+							"label" : "Biblical Hebrew, Biblical Greek, Aramaic",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Biblical studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Buddhist theology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Christian theology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Anglican theology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Baptist theology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Catholic theology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Eastern Orthodox theology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Protestant theology"
+								}
+							]
+						},
+						{
+							"label" : "Hindu theology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Jewish theology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Muslim theology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Religious studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Mathematics",
+			"children" : [
+				{
+					"label" : "Applied mathematics",
+					"children" : [
+						{
+							"label" : "Approximation theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Combinatorics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Coding theory"
+								}
+							]
+						},
+						{
+							"label" : "Cryptography",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Dynamical systems",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Chaos theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Fractal geometry"
+								}
+							]
+						},
+						{
+							"label" : "Game theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Graph theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Information theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mathematical physics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Quantum field theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Quantum gravity"
+								},
+								{
+									"leaf" : "true",
+									"label" : "String theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Quantum mechanics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Statistical mechanics"
+								}
+							]
+						},
+						{
+							"label" : "Numerical analysis",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Operations research",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Assignment problem"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Decision analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Dynamic programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Inventory theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Linear programming"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Mathematical optimization"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Optimal maintenance"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Real options analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Scheduling"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Stochastic processes"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Systems analysis"
+								}
+							]
+						},
+						{
+							"label" : "Statistics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Actuarial science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Demography"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Econometrics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Mathematical statistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Data visualization"
+								}
+							]
+						},
+						{
+							"label" : "Theory of computation",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Computational complexity theory"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Pure mathematics",
+					"children" : [
+						{
+							"label" : "Algebra",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Associative algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Category theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Topos theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Differential algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Field theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Group theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Group representation"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Homological algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "K-theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Lattice theory (Order theory)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Lie algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Linear algebra (Vector space)"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Multilinear algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Non-associative algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Representation theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ring theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Commutative algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Noncommutative algebra"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Universal algebra"
+								}
+							]
+						},
+						{
+							"label" : "Analysis",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Complex analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Functional analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Operator theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Harmonic analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Fourier analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Non-standard analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ordinary differential equations"
+								},
+								{
+									"leaf" : "true",
+									"label" : "p-adic analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Partial differential equations"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Real analysis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Calculus"
+								}
+							]
+						},
+						{
+							"label" : "Geometry and Topology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Affine geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Algebraic geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Algebraic topology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Convex geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Differential topology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Discrete geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Finite geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Galois geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "General topology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Geometric topology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Integral geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Noncommutative geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Non-Euclidean geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Projective geometry"
+								}
+							]
+						},
+						{
+							"label" : "Mathematical logic and Foundations of mathematics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Intuitionistic logic"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Modal logic"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Model theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Proof theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Recursion theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Set theory"
+								}
+							]
+						},
+						{
+							"label" : "Number theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Algebraic number theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Analytic number theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Arithmetic combinatorics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Geometric number theory"
+								}
+							]
+						},
+						{
+							"label" : "Probability theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Ergodic theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Measure theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Integral geometry"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Stochastic process"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Statistics",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Astrostatistics"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Etymology"
+							"label" : "Biostatistics"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Natural Sciences",
+			"children" : [
+				{
+					"label" : "Biology",
+					"children" : [
+						{
+							"label" : "Aerobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Anatomy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Comparative anatomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Human anatomy"
+								}
+							]
+						},
+						{
+							"label" : "Biochemistry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Bioinformatics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Biophysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Biotechnology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Botany",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Ethnobotany"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phycology"
+								}
+							]
+						},
+						{
+							"label" : "Cell biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Chronobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Computational biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Cryobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Developmental biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Embryology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Teratology"
+								}
+							]
+						},
+						{
+							"label" : "Ecology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Agroecology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ethnoecology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Human ecology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Landscape ecology"
+								}
+							]
+						},
+						{
+							"label" : "Endocrinology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Evolutionary biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Genetics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Behavioural genetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Molecular genetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Population genetics"
+								}
+							]
+						},
+						{
+							"label" : "Histology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Human biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Immunology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Limnology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Linnaean taxonomy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Marine biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mathematical biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Microbiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Molecular biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mycology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Neuroscience",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Behavioral neuroscience"
+								}
+							]
+						},
+						{
+							"label" : "Nutrition",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Paleobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Paleontology"
+								}
+							]
+						},
+						{
+							"label" : "Parasitology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pathology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Anatomical pathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Clinical pathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Dermatopathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Forensic pathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Hematopathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Histopathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Molecular pathology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Surgical pathology"
+								}
+							]
+						},
+						{
+							"label" : "Physiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Human physiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Exercise physiology"
+								}
+							]
+						},
+						{
+							"label" : "Structural Biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Systematics (Taxonomy)",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Systems biology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Virology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Molecular virology"
+								}
+							]
+						},
+						{
+							"label" : "Xenobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Zoology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Animal communications"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Apiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Arachnology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Carcinology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cetology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Entomology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Forensic entomology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ethnozoology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ethology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Helminthology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Herpetology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ichthyology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Mammalogy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Malacology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Conchology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Myrmecology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Nematology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Neuroethology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Oology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ornithology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Planktology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Primatology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Zootomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Zoosemiotics"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Chemistry",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Agrochemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Grammar"
+							"label" : "Analytical chemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Historical linguistics"
+							"label" : "Astrochemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "History of linguistics"
+							"label" : "Atmospheric chemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Interlinguistics"
+							"label" : "Biochemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Lexicology"
+							"label" : "Chemical biology"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Linguistic typology"
+							"label" : "Chemical engineering"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Morphology (linguistics)"
+							"label" : "Cheminformatics"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Natural language processing"
+							"label" : "Computational chemistry"
 						},
 						{
 							"leaf" : "true",
-							"label" : "Philology"
+							"label" : "Cosmochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Electrochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Environmental chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Femtochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Flavor"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Flow chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Geochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Green chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Histochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Hydrogenation"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Immunochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Inorganic chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Marine chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mathematical chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mechanochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Medicinal chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Molecular biology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Molecular mechanics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Nanotechnology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Natural product chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Neurochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Oenology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Organic chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Organometallic chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Petrochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Pharmacology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Photochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Physical chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Physical organic chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Phytochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Polymer chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Quantum chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Radiochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Solid-state chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Sonochemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Supramolecular chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Surface chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Synthetic chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Theoretical chemistry"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Thermochemistry"
+						}
+					]
+				},
+				{
+					"label" : "Earth science",
+					"children" : [
+						{
+							"label" : "Edaphology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Environmental chemistry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Environmental science",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Gemology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Geochemistry",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Geodesy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Geophysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Paleontology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Paleobiology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Paleoecology"
+								}
+							]
+						},
+						{
+							"label" : "Physical geography",
+							"children" : [
+								{
+									"label" : "Atmospheric science / Meteorology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Biogeography / Phytogeography",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Climatology / Paleoclimatology / Palaeogeography",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Coastal geography / Oceanography",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Edaphology / Pedology or Soil science",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Geobiology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Geology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Geomorphology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Mineralogy"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Petrology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Sedimentology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Speleology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Tectonics"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Volcanology"
+										}
+									]
+								},
+								{
+									"label" : "Geostatistics",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Glaciology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Hydrology/ Limnology / Hydrogeology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Landscape ecology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Quaternary science",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Physics",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Acoustics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Aerodynamics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Applied physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Astrophysics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Atomic, molecular, and optical physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Biophysics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Computational physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Condensed matter physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cryogenics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Electricity"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Electromagnetism"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Elementary particle physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Experimental physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Fluid dynamics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Geophysics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mathematical physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mechanics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Medical physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Molecular physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Newtonian dynamics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Nuclear physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Optics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Plasma physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Quantum physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Solid mechanics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Solid state physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Statistical mechanics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Theoretical physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Thermal physics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Thermodynamics"
+						}
+					]
+				},
+				{
+					"label" : "Space sciences",
+					"children" : [
+						{
+							"label" : "Astrobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Astronomy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Observational astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Gamma ray astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Infrared astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Microwave astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Optical astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Radio astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "UV astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "X-ray astronomy"
+								}
+							]
+						},
+						{
+							"label" : "Astrophysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Gravitational astronomy"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Black holes"
+								}
+							]
+						},
+						{
+							"label" : "Interstellar medium",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Numerical simulations",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Astrophysical plasma"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Galaxy formation and evolution"
+								},
+								{
+									"leaf" : "true",
+									"label" : "High-energy astrophysics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Hydrodynamics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Magnetohydrodynamics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Star formation"
+								}
+							]
+						},
+						{
+							"label" : "Physical cosmology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Planetary science",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Stellar astrophysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Helioseismology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Stellar evolution"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Stellar nucleosynthesis"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Social sciences",
+			"children" : [
+				{
+					"label" : "Anthropology",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Biological anthropology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Linguistic anthropology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cultural anthropology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Social anthropology"
+						}
+					]
+				},
+				{
+					"label" : "Archaeology",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : ""
+						}
+					]
+				},
+				{
+					"label" : "Economics",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Agricultural economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Anarchist economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Applied economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Behavioural economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Bioeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Complexity economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Computational economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Consumer economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Development economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Ecological economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Econometrics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Economic geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Economic sociology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Economic systems"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Education economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Energy economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Entrepreneurial economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Environmental economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Evolutionary economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Experimental economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Feminist economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Financial econometrics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Financial economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Green economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Growth economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Human development theory"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Industrial organization"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Information economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Institutional economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "International economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Islamic economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Labor economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Law and economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Macroeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Managerial economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Marxian economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mathematical economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Microeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Monetary economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Neuroeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Participatory economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political economy"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Public economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Public finance"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Real estate economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Resource economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Social choice theory"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Socialist economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Socioeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Transport economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Welfare economics"
+						}
+					]
+				},
+				{
+					"label" : "Human geography",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Behavioral geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cognitive geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cultural geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Development geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Economic geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Health geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Historical geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Language geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Marketing geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Military geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Population geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Religion geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Social geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Strategic geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Time geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Tourism geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Transport geography"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Urban geography"
+						}
+					]
+				},
+				{
+					"label" : "Political science",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "American politics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Canadian politics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Civics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Comparative politics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "European studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Geopolitics (Political geography)"
+						},
+						{
+							"leaf" : "true",
+							"label" : "International relations"
+						},
+						{
+							"leaf" : "true",
+							"label" : "International organizations"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Nationalism studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Peace and conflict studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Policy studies"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political behavior"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political culture"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political economy"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political history"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Political philosophy"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Public administration"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Public law"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Psephology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Social choice theory"
+						}
+					]
+				},
+				{
+					"label" : "Psychology",
+					"children" : [
+						{
+							"label" : "Abnormal psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Applied psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Biological psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Clinical neuropsychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Clinical psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Cognitive psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Community psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Comparative psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Conservation psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Consumer psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Counseling psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Criminal psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Cultural psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Asian psychology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Black psychology"
+								}
+							]
+						},
+						{
+							"label" : "Developmental psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Differential psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Ecological psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Educational psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Environmental psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Evolutionary psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Experimental psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Family psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Feminine psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Forensic developmental psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Forensic psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Group psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Health psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Humanistic psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Indigenous psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Legal psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mathematical psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Media psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Medical psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Military psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Moral psychology and Descriptive ethics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Music psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Neuropsychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Occupational health psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Occupational psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Organizational psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Parapsychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pediatric psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Pedology (children study)",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Personality psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Phenomenology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Political psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Positive psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychoanalysis",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychology of religion",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychometrics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychopathology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Child psychopathology"
+								}
+							]
+						},
+						{
+							"label" : "Psychophysics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Quantitative psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Rehabilitation psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "School psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sport psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Traffic psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Transpersonal psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Social Work",
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Clinical Social Work"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Community practice"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Mental health"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Psychosocial rehabilitation"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Person-centered therapy"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Family therapy"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Financial social work"
+						}
+					]
+				},
+				{
+					"label" : "Sociology",
+					"children" : [
+						{
+							"label" : "Analytical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Applied sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Leisure studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Political sociology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Public sociology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Social engineering"
+								}
+							]
+						},
+						{
+							"label" : "Architectural sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Area studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "African studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "American studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Appalachian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Canadian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Latin American studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Asian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Central Asian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "East Asian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Indology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Iranian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Japanese studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Korean studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Pakistan studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sindhology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sinology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Southeast Asian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Thai studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Australian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "European studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Celtic studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "German studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sociology in Poland"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Scandinavian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Slavic studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Middle Eastern studies"
+								}
+							]
+						},
+						{
+							"label" : "Behavioral sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Collective behavior",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Social movements"
+								}
+							]
+						},
+						{
+							"label" : "Community informatics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Social network analysis"
+								}
+							]
+						},
+						{
+							"label" : "Comparative sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Conflict theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Criminology/Criminal justice",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Critical management studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Critical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Cultural sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Cultural studies/ethnic studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Africana studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Cross-cultural studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Culturology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Deaf studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Ethnology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Utopian studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Whiteness studies"
+								}
+							]
+						},
+						{
+							"label" : "Demography/Population",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Digital sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Dramaturgical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Economic sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Educational sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Empirical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Environmental sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Evolutionary sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Feminist sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Figurational sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Futures studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Gender studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Men's studies"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Women's studies"
+								}
+							]
+						},
+						{
+							"label" : "Historical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Human ecology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Humanistic sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Industrial sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Interactionism",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Interpretive sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Ethnomethodology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phenomenology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Social constructionism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Symbolic interactionism"
+								}
+							]
+						},
+						{
+							"label" : "Jealousy sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Macrosociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Marxist sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mathematical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Medical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Mesosociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Microsociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Military sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Natural resource sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Organizational studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Phenomenological sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Policy sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Psychoanalytic sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Science studies/Science and technology studies",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sexology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Heterosexism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Human sexual behavior"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Human sexuality"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Queer studies/Queer theory"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sex education"
+								}
+							]
+						},
+						{
+							"label" : "Social capital",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social change",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social conflict theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social control",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Pure sociology"
+								}
+							]
+						},
+						{
+							"label" : "Social economy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social philosophy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social policy",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social psychology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social stratification",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social theory",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Social transformation",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Computational sociology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Economic sociology/Socioeconomics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Economic development"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Social development"
+								}
+							]
+						},
+						{
+							"label" : "Sociobiology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociocybernetics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociolinguistics",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of aging",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of agriculture",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of art",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of autism",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of childhood",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of conflict",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of culture",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of cyberspace",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of development",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of deviance",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of disaster",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of education",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of emotions",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of fatherhood",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of finance",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of food",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of gender",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of generations",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of globalization",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of government",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of health and illness",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of human consciousness",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of immigration",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of knowledge",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of language",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of law",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of leisure",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of literature",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of markets",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of marriage",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of motherhood",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of music",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of natural resources",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of organizations",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of peace, war, and social conflict",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of punishment",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of race and ethnic relations",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of religion",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of risk",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of science",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of scientific knowledge",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of social change",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of social movements",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of space",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of sport",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of technology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of terrorism",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of the body",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of the family",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of the history of science",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of the Internet",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociology of work",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Sociomusicology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Structural sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Theoretical sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Urban studies or Urban sociology/Rural sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Victimology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Visual sociology",
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
 						}
 					]
 				}

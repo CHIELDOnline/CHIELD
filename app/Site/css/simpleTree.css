@@ -81,3 +81,6 @@ div.simpleTree-mainContainer.countHidden span.simpleTree-childCountBadge {
     font-weight: normal;
     opacity: .75;
 }
+.hidden {
+    display: none;
+}

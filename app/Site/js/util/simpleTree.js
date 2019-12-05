@@ -125,6 +125,10 @@ $.fn.simpleTree = function(options, data) {
         return this;
     }
 
+    this.clearSearch = function(){
+        _performSearch("");
+    }
+
     // ------------------------------------------------------------------------
     // expands/collapses node with children
     this.toggleSubtree = function(
@@ -417,6 +421,7 @@ $.fn.simpleTree = function(options, data) {
         if(!node.upperLabel)
             node.upperLabel = node.label.toUpperCase();
         if(node.searchInfo) {
+        //if(false) {
             node.searchInfo.prevMatched = node.searchInfo.matches;
             node.searchInfo.matches = _lastSearchTerm === '' || node.upperLabel.includes(_lastSearchTerm);
         }
@@ -455,6 +460,15 @@ $.fn.simpleTree = function(options, data) {
         ) {
             _self.hideNode(node);
         }
+        // Sean added
+/*        if(!node.searchInfo.matches 
+            && !node.searchInfo.anyChildMatches
+            && node.expanded
+        ) {
+            _self.toggleSubtree(node);
+        }*/
+
+
         _renderNodeLabelText(node);
         node.children.forEach(child => _setSearchVisibility(child));
         if(node.children.length > 0 && node.domToggle) {
