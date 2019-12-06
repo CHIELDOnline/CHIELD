@@ -98,6 +98,7 @@ makeList<-function(x){
     lapply(names(listSplit),function(y){
       list(
         label=y,
+        leaf = y %in% hLeaves,
         children=makeList(listSplit[[y]]))
       })
   }else{
