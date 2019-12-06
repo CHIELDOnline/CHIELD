@@ -3,6 +3,8 @@
 	"expanded" : "true",
 	"children" : [
 		{
+<<<<<<< HEAD
+=======
 			"label" : "Applied Sciences",
 			"children" : [
 				{
@@ -3853,11 +3855,16 @@
 			]
 		},
 		{
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 			"label" : "Natural Sciences",
 			"children" : [
 				{
 					"label" : "Biology",
 					"children" : [
+<<<<<<< HEAD
+						{
+							"label" : "Ecology",
+=======
 						{
 							"label" : "Aerobiology",
 							"children" : [
@@ -6442,14 +6449,20 @@
 						},
 						{
 							"label" : "Human ecology",
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : ""
+									"label" : {
+										"NA" : "Human ecology"
+									}
 								}
 							]
 						},
 						{
+<<<<<<< HEAD
+							"label" : "Neuroscience",
+=======
 							"label" : "Humanistic sociology",
 							"children" : [
 								{
@@ -7301,10 +7314,13 @@
 						},
 						{
 							"label" : "Visual sociology",
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : ""
+									"label" : {
+										"NA" : "Behavioral neuroscience"
+									}
 								}
 							]
 						}
@@ -7317,275 +7333,9 @@
 			"children" : [
 				{
 					"leaf" : "true",
-					"label" : "technology, dialectology, linguistic diversity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "population dynamics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "phonetics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "knowledge representation"
-				},
-				{
-					"leaf" : "true",
-					"label" : "social motivations for language change"
-				},
-				{
-					"leaf" : "true",
-					"label" : "acquisition"
-				},
-				{
-					"leaf" : "true",
-					"label" : "spatial language"
-				},
-				{
-					"leaf" : "true",
-					"label" : "early human language evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "early language evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "esoterogeny"
-				},
-				{
-					"leaf" : "true",
-					"label" : "exotericity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cognition"
-				},
-				{
-					"leaf" : "true",
-					"label" : "primate cognition"
-				},
-				{
-					"leaf" : "true",
-					"label" : "morphology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "morphosyntax"
-				},
-				{
-					"leaf" : "true",
-					"label" : "linguistic relativity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "sociolinguistics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "social signals, developmental pragmatics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "linguistic relativity hypothesis"
-				},
-				{
-					"leaf" : "true",
-					"label" : "economic behaviour"
-				},
-				{
-					"leaf" : "true",
-					"label" : "structure of the lexicon"
-				},
-				{
-					"leaf" : "true",
-					"label" : "symbiosism"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language area"
-				},
-				{
-					"leaf" : "true",
-					"label" : "political complexity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "bayesian models"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cultural diversty"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cultural diversity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "norm, lexicon"
-				},
-				{
-					"leaf" : "true",
-					"label" : "lexicon, global typology, typology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cultural evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "technology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "social structure"
-				},
-				{
-					"leaf" : "true",
-					"label" : "evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "nutritional demands"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cognitive evolution"
-				},
-				{
-					"leaf" : "true",
-					"label" : "ecology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "diversity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "online communication"
-				},
-				{
-					"leaf" : "true",
-					"label" : "semantics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "bilingualism"
-				},
-				{
-					"leaf" : "true",
-					"label" : "phonology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language contact"
-				},
-				{
-					"leaf" : "true",
-					"label" : "linguistic typology"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cultural transmission"
-				},
-				{
-					"leaf" : "true",
-					"label" : "symbolic communication"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language and cognition"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language and behavior"
-				},
-				{
-					"leaf" : "true",
-					"label" : "bilingualism and ftr"
-				},
-				{
-					"leaf" : "true",
-					"label" : "symbolism"
-				},
-				{
-					"leaf" : "true",
-					"label" : "perception"
-				},
-				{
-					"leaf" : "true",
-					"label" : "grammatical complexity"
-				},
-				{
-					"leaf" : "true",
-					"label" : "experimental semiotics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "linguistic structure"
-				},
-				{
-					"leaf" : "true",
-					"label" : "processing"
-				},
-				{
-					"leaf" : "true",
-					"label" : "importance and selection of speech"
-				},
-				{
-					"leaf" : "true",
-					"label" : "honesty"
-				},
-				{
-					"leaf" : "true",
-					"label" : "early language evoluion"
-				},
-				{
-					"leaf" : "true",
-					"label" : "linguistics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "cognitive sociolinguistics"
-				},
-				{
-					"leaf" : "true",
-					"label" : "lanlanguage change"
-				},
-				{
-					"leaf" : "true",
-					"label" : "learning biases"
-				},
-				{
-					"leaf" : "true",
-					"label" : "social biases"
-				},
-				{
-					"leaf" : "true",
-					"label" : "iterated learning"
-				},
-				{
-					"leaf" : "true",
-					"label" : "artificial language learningguage change"
-				},
-				{
-					"leaf" : "true",
-					"label" : "artificial language learning"
-				},
-				{
-					"leaf" : "true",
-					"label" : "language contatc"
+					"label" : {
+						"V2" : ""
+					}
 				}
 			]
 		}

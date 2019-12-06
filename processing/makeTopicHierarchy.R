@@ -55,7 +55,7 @@ Ctopics = (l$Topic)
 Ctopics = unlist(strsplit(Ctopics,";"))
 Ctopics = gsub(" +$","",Ctopics)
 Ctopics = gsub("^ +","",Ctopics)
-Ctopics = unique(topics[!is.na(Ctopics)])
+Ctopics = unique(Ctopics[!is.na(Ctopics)])
 # Capitalise first letter
 #Ctopics = tolower(Ctopics)
 #Ctopics = sapply(Ctopics,function(X){
@@ -69,13 +69,15 @@ hLeaves = apply(h,1,function(X){
   X[depth(X[1:(length(X)-1)])]
 })
 
-filterHierarchy=FALSE
+filterHierarchy=TRUE
 if(filterHierarchy){
-  h = h[sapply(hLeaves,function(X){tolower(X) %in% tolower(Ctopics)})]
+  h = h[sapply(hLeaves,function(X){tolower(X) %in% tolower(Ctopics)}),]
 }
 
 # Add topics not in hierarchy to "unclassified"
 unc = Ctopics[!Ctopics %in% hLeaves]
+unc = unc[!is.na(unc)]
+unc = unc[unc!="NA"]
 uncm = matrix("",nrow = length(unc),ncol=ncol(h))
 uncm[,1]="Unclassified"
 uncm[,2]=unc

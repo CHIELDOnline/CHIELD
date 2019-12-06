@@ -62,7 +62,6 @@ Humanities
 				Photography
 				Sculpture
 			Applied arts
-				Animation
 				Calligraphy
 				Decorative arts
 				Mixed media
@@ -128,9 +127,12 @@ Humanities
 			Humanism
 			Scholasticism
 			Modern philosophy
+<<<<<<< HEAD
+=======
 		Political history
 		Pre-Columbian era
 		Russian history
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 		History of culture
 		Scientific history
 		Technological history
@@ -154,7 +156,6 @@ Humanities
 			Lexicology
 			Linguistic typology
 			Morphology
-			Natural language processing
 			Philology
 			Phonetics
 			Phonology
@@ -278,11 +279,8 @@ Humanities
 			Eastern philosophy
 			Feminist philosophy
 			Platonism
-		Social philosophy and political philosophy
-			Anarchism
-			Feminist philosophy
-			Libertarianism
-			Marxism
+		Social philosophy
+		Political philosophy
 
 	Theology
 
@@ -308,8 +306,23 @@ Social sciences
 		Linguistic anthropology
 		Cultural anthropology
 		Social anthropology
+<<<<<<< HEAD
+		Comparative anthropology
+		Cultural evolution
+		Cultural diversity
 
 	Archaeology
+		Historical archaeology
+		Paleoarchaeology
+		Ethnoarchaeology
+		Experimental archaeology
+		Archaeometry
+		Cultural resources management
+
+=======
+
+	Archaeology
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 	Economics
 		Agricultural economics
 		Anarchist economics
@@ -322,7 +335,6 @@ Social sciences
 		Development economics
 		Ecological economics
 		Econometrics
-		Economic geography
 		Economic sociology
 		Economic systems
 		Education economics
@@ -357,7 +369,6 @@ Social sciences
 		Public finance
 		Real estate economics
 		Resource economics
-		Social choice theory
 		Socialist economics
 		Socioeconomics
 		Transport economics
@@ -413,6 +424,7 @@ Social sciences
 
 		Abnormal psychology
 		Applied psychology
+		Behavioural psychology
 		Biological psychology
 		Clinical neuropsychology
 		Clinical psychology
@@ -550,7 +562,7 @@ Social sciences
 		Interactionism
 		Interpretive sociology
 			Ethnomethodology
-			Phenomenology
+			Phenomenological sociology
 			Social constructionism
 			Symbolic interactionism
 		Jealousy sociology
@@ -590,6 +602,8 @@ Social sciences
 			Economic development
 			Social development
 		Sociobiology
+<<<<<<< HEAD
+=======
 		Sociocybernetics
 		Sociolinguistics
 		Sociology of aging
@@ -644,6 +658,7 @@ Social sciences
 		Sociology of the history of science
 		Sociology of the Internet
 		Sociology of work
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 		Sociomusicology
 		Structural sociology
 		Theoretical sociology
@@ -670,9 +685,7 @@ Natural Sciences
 		Anatomy
 			Comparative anatomy
 			Human anatomy
-		Biochemistry
 		Bioinformatics
-		Biophysics
 		Biotechnology
 		Botany
 			Ethnobotany
@@ -682,8 +695,6 @@ Natural Sciences
 		Computational biology
 		Cryobiology
 		Developmental biology
-			Embryology
-			Teratology
 		Ecology
 			Agroecology
 			Ethnoecology
@@ -782,9 +793,7 @@ Natural Sciences
 		Mathematical chemistry
 		Mechanochemistry
 		Medicinal chemistry
-		Molecular biology
 		Molecular mechanics
-		Nanotechnology
 		Natural product chemistry
 		Neurochemistry
 		Oenology
@@ -809,12 +818,8 @@ Natural Sciences
 
 	Earth science
 
-
-		Edaphology
-		Environmental chemistry
 		Environmental science
 		Gemology
-		Geochemistry
 		Geodesy
 		Physical geography
 			Atmospheric science
@@ -838,9 +843,7 @@ Natural Sciences
 			Geostatistics
 			Glaciology
 			Hydrology
-			Landscape ecology
 			Quaternary science
-		Geophysics
 		Paleontology
 			Paleobiology
 			Paleoecology
@@ -919,7 +922,6 @@ Formal Sciences
 			Multi-valued logic
 			Fuzzy logic
 			Programming language semantics
-			Type theory
 		Algorithms
 			Computational geometry
 			Distributed algorithms
@@ -942,7 +944,6 @@ Formal Sciences
 			Scientific visualization
 		Computer communications
 			Cloud computing
-			Information theory
 			Internet, World Wide Web
 			Ubiquitous computing
 			Wireless computing
@@ -951,20 +952,15 @@ Formal Sciences
 			Fault-tolerant computing
 		Computing in mathematics, natural sciences, engineering, and medicine
 			Algebraic computation
-			Computational biology
-			Computational chemistry
 			Computational mathematics
 			Computational neuroscience
 			Computational number theory
-			Computational physics
 			Computer-aided engineering
 			Computational fluid dynamics
 			Finite element analysis
-			Numerical analysis
 			Scientific computing
 		Computing in social sciences, arts, humanities, and professions
 			Community informatics
-			Computational economics
 			Computational finance
 			Computational sociology
 			Digital humanities
@@ -980,7 +976,6 @@ Formal Sciences
 			Information architecture
 			Information management
 			Information retrieval
-			Knowledge management
 			Multimedia, hypermedia
 			Sound and music computing
 		Distributed computing
@@ -995,13 +990,11 @@ Formal Sciences
 			Concurrent programming
 			Functional programming
 			Imperative programming
-			Logic programming
 			Object-oriented programming
 			Program semantics
 			Type theory
 		Quantum computing
 		Software engineering
-			Formal methods
 		Theory of computation
 			Automata theory
 			Computability theory
@@ -1054,7 +1047,6 @@ Mathematics
 		Probability theory
 			Ergodic theory
 			Measure theory
-			Integral geometry
 			Stochastic process
 		Geometry and Topology
 			Affine geometry
@@ -1082,10 +1074,7 @@ Mathematics
 		Approximation theory
 		Combinatorics
 			Coding theory
-		Cryptography
 		Dynamical systems
-			Chaos theory
-			Fractal geometry
 		Game theory
 		Graph theory
 		Information theory
@@ -1094,7 +1083,6 @@ Mathematics
 			Quantum gravity
 			String theory
 			Quantum mechanics
-			Statistical mechanics
 		Numerical analysis
 		Operations research
 			Assignment problem
@@ -1107,15 +1095,16 @@ Mathematics
 			Real options analysis
 			Scheduling
 			Stochastic processes
-			Systems analysis
 		Statistics
 			Actuarial science
+<<<<<<< HEAD
+=======
 			Demography
 			Econometrics
+>>>>>>> parent of 43b27f54... Topic hierarchy edits
 			Mathematical statistics
 			Data visualization
-		Theory of computation
-			Computational complexity theory
+
 
 	Statistics
 
@@ -1142,14 +1131,12 @@ Applied Sciences
 			Materials engineering
 			Molecular engineering
 			Nanotechnology
-			Polymer engineering
 			Process design
 				Petroleum engineering
 				Nuclear engineering
 				Food engineering
 			Process engineering
 			Reaction engineering
-			Thermodynamics
 			Transport phenomena
 
 		Civil Engineering
@@ -1179,7 +1166,6 @@ Applied Sciences
 
 		Electrical Engineering
 
-			Applied physics
 			Computer engineering
 			Computer science
 			Control systems engineering
@@ -1188,11 +1174,8 @@ Applied Sciences
 				Instrumentation engineering
 			Engineering physics
 				Photonics
-			Information theory
 			Mechatronics
 			Power engineering
-			Quantum computing
-			Robotics
 			Semiconductors
 			Telecommunications engineering
 
@@ -1202,11 +1185,10 @@ Applied Sciences
 			Ceramic engineering
 			Crystallography
 			Nanomaterials
-			Photonics
 			Physical Metallurgy
 			Polymer engineering
 			Polymer science
-			Semiconductors
+
 
 		Mechanical Engineering
 
@@ -1225,12 +1207,9 @@ Applied Sciences
 			Manufacturing engineering
 			Marine engineering
 			Mass transfer
-			Mechatronics
 			Nanoengineering
 			Ocean engineering
 			Optical engineering
-			Robotics
-			Thermodynamics
 			Vehicle engineering
 
 		Systems science
@@ -1269,7 +1248,6 @@ Applied Sciences
 				Enterprise systems engineering
 				Systems analysis
 			Systems psychology
-				Ergonomics
 				Family systems theory
 				Systemic therapy
 			Systems theory
@@ -1293,11 +1271,8 @@ Applied Sciences
 			Cytohematology
 			Cytology
 			Haemostasiology
-			Histology
 			Clinical immunology
 			Clinical microbiology
-			Molecular genetics
-			Parasitology
 		Clinical physiology
 		Dentistry
 			Dental hygiene and epidemiology
@@ -1320,7 +1295,6 @@ Applied Sciences
 		Internal medicine
 			Cardiology
 			Cardiac electrophysiology
-			Endocrinology
 			Gastroenterology
 			Hepatology
 			Nephrology
