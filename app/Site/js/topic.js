@@ -103,10 +103,10 @@ $(document).ready(function(){
         $("#TopicTitle").html("Topic: "+key);
         // Note we're adding the wildcard at this point
         preparePage("variables_table","");
-        requestRecord("php/getVariablesForTopic.php", "key="+"%"+key+"%",'var');
+        requestRecord("php/getVariablesForTopic.php", "key="+key,'var');
         
 
-        requestRecord("php/getLinksForTopic.php", "key="+"%"+key+"%",'links');
+        requestRecord("php/getLinksForTopic.php", "key="+key,'links');
         setupColumnSearching("links_table");
 
     }

@@ -60,7 +60,7 @@
 				},
 				{
 					"label" : "History",
-					"leaf" : true,
+					"leaf" : false,
 					"children" : [
 						{
 							"leaf" : "true",
@@ -416,7 +416,7 @@
 					"children" : [
 						{
 							"label" : "Community informatics",
-							"leaf" : true,
+							"leaf" : false,
 							"children" : [
 								{
 									"leaf" : "true",
@@ -497,10 +497,6 @@
 				{
 					"leaf" : "true",
 					"label" : "Learning"
-				},
-				{
-					"leaf" : "true",
-					"label" : ""
 				},
 				{
 					"leaf" : "true",

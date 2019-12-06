@@ -64,6 +64,8 @@ Ctopics = unique(Ctopics[!is.na(Ctopics)])
 #  paste(X,collapse="")
 #})
 Ctopics = Ctopics[!is.na(Ctopics)]
+Ctopics = Ctopics[Ctopics!="NA"]
+Ctopics = Ctopics[Ctopics!=""]
 # All leaves in hierarchy
 hLeaves = apply(h,1,function(X){
   X[depth(X[1:(length(X)-1)])]
@@ -98,7 +100,7 @@ makeList<-function(x){
     lapply(names(listSplit),function(y){
       list(
         label=y,
-        leaf = y %in% hLeaves,
+        leaf = y %in% Ctopics[!is.na(Ctopics)],
         children=makeList(listSplit[[y]]))
       })
   }else{

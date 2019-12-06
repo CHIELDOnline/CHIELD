@@ -1,6 +1,6 @@
 <?php
 
-$key = $_POST['key'];
+$key = "%".$_POST['key']."%";
 
 $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
