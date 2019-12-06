@@ -47,6 +47,10 @@
 										{
 											"leaf" : "true",
 											"label" : "Musicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Singing"
 										}
 									]
 								}
@@ -83,6 +87,10 @@
 								{
 									"leaf" : "true",
 									"label" : "Dialectology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Grammar"
 								},
 								{
 									"leaf" : "true",
@@ -157,6 +165,16 @@
 									"label" : "Language use"
 								}
 							]
+						}
+					]
+				},
+				{
+					"label" : "Philosophy",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Aesthetics"
 						}
 					]
 				}
@@ -463,10 +481,6 @@
 				{
 					"leaf" : "true",
 					"label" : "Theory of mind"
-				},
-				{
-					"leaf" : "true",
-					"label" : "Palaeoarchaeology"
 				},
 				{
 					"leaf" : "true",

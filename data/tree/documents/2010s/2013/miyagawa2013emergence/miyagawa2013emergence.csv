@@ -1,4 +1,4 @@
 "X","Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-1,"expressive system",">","syntax","pos","","preadaptation","hypothesis","none","exemplified by birdsongs","miyagawa2013emergence"
-2,"lexical system",">","syntax","pos","","preadaptation","hypothesis","none","exemplified by alarm calls","miyagawa2013emergence"
+1,"expressive system",">","syntax","pos","Syntax","preadaptation","hypothesis","none","exemplified by birdsongs","miyagawa2013emergence"
+2,"lexical system",">","syntax","pos","Syntax","preadaptation","hypothesis","none","exemplified by alarm calls","miyagawa2013emergence"
 3,"labelling",">","lexical system","n-m","","none","","none","","miyagawa2013emergence"
