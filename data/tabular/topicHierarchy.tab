@@ -97,28 +97,11 @@ Humanities
 		African history
 		American history
 		Ancient history
-			Ancient Egypt
-			Carthage
-			Ancient Greek history
-			Ancient Roman history
-			Biblical history
-			History of the Indus Valley Civilization
-			Preclassic Maya
-			History of Mesopotamia
-			History of the Yangtze civilization
-			History of the Yellow River civillization
-		Asian history
-			Chinese history
-			Indian history
-			Indonesian history
-			Iranian history
-		Australian history
 		Ecclesiastical history of the Catholic Church
 		Economic history
 		Environmental history
 		European history
 		Intellectual history
-		Latin American history
 		Modern history
 		History of philosophy
 			Ancient philosophy
@@ -127,12 +110,6 @@ Humanities
 			Humanism
 			Scholasticism
 			Modern philosophy
-<<<<<<< HEAD
-=======
-		Political history
-		Pre-Columbian era
-		Russian history
->>>>>>> parent of 43b27f54... Topic hierarchy edits
 		History of culture
 		Scientific history
 		Technological history
@@ -144,17 +121,25 @@ Humanities
 
 		Linguistics
 			Applied linguistics
+			Bilingualism
 			Composition studies
 			Computational linguistics
+			Deixis
 			Discourse analysis
+			Dialectology
 			English studies
 			Etymology
 			Grammar
 			Historical linguistics
 			History of linguistics
 			Interlinguistics
+			Language acquisition
+			Language change
+			Language contact
 			Lexicology
+			Interaction
 			Linguistic typology
+			Linguistic diversity
 			Morphology
 			Philology
 			Phonetics
@@ -162,11 +147,12 @@ Humanities
 			Pragmatics
 			Psycholinguistics
 			Rhetoric
+			Second language acquisition
 			Semantics
 			Semiotics
 			Sociolinguistics
 			Syntax
-			Usage
+			Language use
 			Word usage
 		Comparative literature
 		Creative writing
@@ -306,7 +292,6 @@ Social sciences
 		Linguistic anthropology
 		Cultural anthropology
 		Social anthropology
-<<<<<<< HEAD
 		Comparative anthropology
 		Cultural evolution
 		Cultural diversity
@@ -319,16 +304,13 @@ Social sciences
 		Archaeometry
 		Cultural resources management
 
-=======
-
-	Archaeology
->>>>>>> parent of 43b27f54... Topic hierarchy edits
 	Economics
 		Agricultural economics
 		Anarchist economics
 		Applied economics
 		Behavioural economics
 		Bioeconomics
+		Cooperation
 		Complexity economics
 		Computational economics
 		Consumer economics
@@ -398,8 +380,7 @@ Social sciences
 
 	Political science
 
-		American politics
-		Canadian politics
+
 		Civics
 		Comparative politics
 		European studies
@@ -411,7 +392,6 @@ Social sciences
 		Policy studies
 		Political behavior
 		Political culture
-		Political economy
 		Political history
 		Political philosophy
 		Public administration
@@ -427,7 +407,6 @@ Social sciences
 		Behavioural psychology
 		Biological psychology
 		Clinical neuropsychology
-		Clinical psychology
 		Cognitive psychology
 		Community psychology
 		Comparative psychology
@@ -436,8 +415,6 @@ Social sciences
 		Counseling psychology
 		Criminal psychology
 		Cultural psychology
-			Asian psychology
-			Black psychology
 		Developmental psychology
 		Differential psychology
 		Ecological psychology
@@ -456,7 +433,6 @@ Social sciences
 		Legal psychology
 		Mathematical psychology
 		Media psychology
-		Medical psychology
 		Military psychology
 		Moral psychology and Descriptive ethics
 		Music psychology
@@ -496,32 +472,6 @@ Social sciences
 			Public sociology
 			Social engineering
 		Architectural sociology
-		Area studies
-			African studies
-			American studies
-			Appalachian studies
-			Canadian studies
-			Latin American studies
-			Asian studies
-			Central Asian studies
-			East Asian studies
-			Indology
-			Iranian studies
-			Japanese studies
-			Korean studies
-			Pakistan studies
-			Sindhology
-			Sinology
-			Southeast Asian studies
-			Thai studies
-			Australian studies
-			European studies
-			Celtic studies
-			German studies
-			Sociology in Poland
-			Scandinavian studies
-			Slavic studies
-			Middle Eastern studies
 		Behavioral sociology
 		Collective behavior
 			Social movements
@@ -542,129 +492,21 @@ Social sciences
 			Utopian studies
 			Whiteness studies
 		Demography
-		Digital sociology
-		Dramaturgical sociology
-		Economic sociology
-		Educational sociology
-		Empirical sociology
-		Environmental sociology
-		Evolutionary sociology
-		Feminist sociology
-		Figurational sociology
 		Futures studies
 		Gender studies
-			Men's studies
-			Women's studies
-		Historical sociology
-		Human ecology
-		Humanistic sociology
-		Industrial sociology
-		Interactionism
 		Interpretive sociology
 			Ethnomethodology
 			Phenomenological sociology
 			Social constructionism
 			Symbolic interactionism
-		Jealousy sociology
-		Macrosociology
-		Marxist sociology
-		Mathematical sociology
-		Medical sociology
-		Mesosociology
-		Microsociology
-		Military sociology
-		Natural resource sociology
-		Organizational studies
-		Phenomenological sociology
-		Policy sociology
-		Psychoanalytic sociology
-		Science studies
 		Sexology
 			Heterosexism
 			Human sexual behavior
 			Human sexuality
 			Queer studies
 			Sex education
-		Social capital
-		Social change
-		Social conflict theory
-		Social control
-			Pure sociology
-		Social economy
-		Social philosophy
-		Social policy
-		Social psychology
-		Social stratification
-		Social theory
-		Social transformation
-			Computational sociology
-			Economic sociology
-			Economic development
-			Social development
 		Sociobiology
-<<<<<<< HEAD
-=======
-		Sociocybernetics
-		Sociolinguistics
-		Sociology of aging
-		Sociology of agriculture
-		Sociology of art
-		Sociology of autism
-		Sociology of childhood
-		Sociology of conflict
-		Sociology of culture
-		Sociology of cyberspace
-		Sociology of development
-		Sociology of deviance
-		Sociology of disaster
-		Sociology of education
-		Sociology of emotions
-		Sociology of fatherhood
-		Sociology of finance
-		Sociology of food
-		Sociology of gender
-		Sociology of generations
-		Sociology of globalization
-		Sociology of government
-		Sociology of health and illness
-		Sociology of human consciousness
-		Sociology of immigration
-		Sociology of knowledge
-		Sociology of language
-		Sociology of law
-		Sociology of leisure
-		Sociology of literature
-		Sociology of markets
-		Sociology of marriage
-		Sociology of motherhood
-		Sociology of music
-		Sociology of natural resources
-		Sociology of organizations
-		Sociology of peace, war, and social conflict
-		Sociology of punishment
-		Sociology of race and ethnic relations
-		Sociology of religion
-		Sociology of risk
-		Sociology of science
-		Sociology of scientific knowledge
-		Sociology of social change
-		Sociology of social movements
-		Sociology of space
-		Sociology of sport
-		Sociology of technology
-		Sociology of terrorism
-		Sociology of the body
-		Sociology of the family
-		Sociology of the history of science
-		Sociology of the Internet
-		Sociology of work
->>>>>>> parent of 43b27f54... Topic hierarchy edits
 		Sociomusicology
-		Structural sociology
-		Theoretical sociology
-		Urban studies or Urban sociology
-		Victimology
-		Visual sociology
 
 	Social Work
 
@@ -931,6 +773,7 @@ Formal Sciences
 			Cognitive science
 			Automated reasoning
 			Computer vision
+			Knowledge representation
 			Machine learning
 				Artificial neural network
 				Support vector machine
@@ -1097,11 +940,6 @@ Mathematics
 			Stochastic processes
 		Statistics
 			Actuarial science
-<<<<<<< HEAD
-=======
-			Demography
-			Econometrics
->>>>>>> parent of 43b27f54... Topic hierarchy edits
 			Mathematical statistics
 			Data visualization
 
@@ -1330,7 +1168,7 @@ Applied Sciences
 			General practice
 		Psychiatry
 			Forensic psychiatry
-		Psychology
+		Clinical Psychology
 		Public health
 		Radiology
 		Recreational therapy

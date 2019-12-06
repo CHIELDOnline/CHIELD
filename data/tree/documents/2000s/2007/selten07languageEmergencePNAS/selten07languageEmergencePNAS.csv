@@ -1,5 +1,5 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"13","","selten07languageEmergencePNAS","segment inventory",">","shared language","pos","","signalling","coevolution","simulation","communication game","","","yes","","","","",""
-"14","","selten07languageEmergencePNAS","production cost",">","shared language","neg","","signalling","coevolution","simulation","communication game","","","yes","","","","",""
-"15","","selten07languageEmergencePNAS","communication role asymmetry",">","shared language","pos","","signalling","coevolution","simulation","communication game","","","yes","","","","",""
-"16","","selten07languageEmergencePNAS","environmental stability",">","compositionality","neg","","signalling","coevolution","simulation","communication game","","","yes","","","","",""
+"X","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
+13,NA,"selten07languageEmergencePNAS","segment inventory",">","shared language","pos",NA,"Cooperation","coevolution","simulation","communication game",NA,NA,"yes",NA,NA,NA,NA,NA
+14,NA,"selten07languageEmergencePNAS","production cost",">","shared language","neg",NA,"Cooperation","coevolution","simulation","communication game",NA,NA,"yes",NA,NA,NA,NA,NA
+15,NA,"selten07languageEmergencePNAS","communication role asymmetry",">","shared language","pos",NA,"Cooperation","coevolution","simulation","communication game",NA,NA,"yes",NA,NA,NA,NA,NA
+16,NA,"selten07languageEmergencePNAS","environmental stability",">","compositionality","neg",NA,"Cooperation","coevolution","simulation","communication game",NA,NA,"yes",NA,NA,NA,NA,NA

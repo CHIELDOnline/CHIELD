@@ -1,4 +1,4 @@
-Var1,Relation,Var2,Cor,Topic,Stage,Type,Confirmed,Notes,bibref
-"social network: average degree",">","symmetry breaking","neg","signalling","cultural evolution","model","","","dipaolo99onThe"
-"symmetry breaking",">","shared language","pos","signalling","cultural evolution","model","","","dipaolo99onThe"
-"genetic selection: location of conspecific",">","turn taking","pos","signalling","cultural evolution","model","","","dipaolo99onThe"
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"social network: average degree",">","symmetry breaking","neg","Cooperation","cultural evolution","model",NA,NA,"dipaolo99onThe"
+"symmetry breaking",">","shared language","pos","Cooperation","cultural evolution","model",NA,NA,"dipaolo99onThe"
+"genetic selection: location of conspecific",">","turn taking","pos","Cooperation","cultural evolution","model",NA,NA,"dipaolo99onThe"

@@ -1,9 +1,9 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"31","","cangelosi01howNouns","food types",">","genetic selection: object recognition","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","recognise different food types (visually)",""
-"32","","cangelosi01howNouns","food risk",">","genetic selection: behaviour","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","approach or avoid food",""
-"33","","cangelosi01howNouns","genetic selection: object recognition",">","cognition: arguments","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","",""
-"34","","cangelosi01howNouns","genetic selection: behaviour",">","cognition: predicates","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","",""
-"35","","cangelosi01howNouns","cognition: arguments",">","nouns","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","",""
-"36","","cangelosi01howNouns","cognition: predicates",">","verbs","pos","","lexicon","preadaptation","simulation","neural network","","","yes","","","","",""
-"37","","cangelosi01howNouns","nouns",">","cognition: arguments","pos","","lexicon","coevolution","simulation","neural network","","","yes","","","","What about link to syntax?",""
-"38","","cangelosi01howNouns","verbs",">","cognition: predicates","pos","","lexicon","coevolution","simulation","neural network","","","yes","","","","",""
+"X","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
+31,NA,"cangelosi01howNouns","food types",">","genetic selection: object recognition","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"recognise different food types (visually)",NA
+32,NA,"cangelosi01howNouns","food risk",">","genetic selection: behaviour","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"approach or avoid food",NA
+33,NA,"cangelosi01howNouns","genetic selection: object recognition",">","cognition: arguments","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"",NA
+34,NA,"cangelosi01howNouns","genetic selection: behaviour",">","cognition: predicates","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"",NA
+35,NA,"cangelosi01howNouns","cognition: arguments",">","nouns","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"",NA
+36,NA,"cangelosi01howNouns","cognition: predicates",">","verbs","pos",NA,"Lexicology","preadaptation","simulation","neural network",NA,NA,"yes",NA,NA,NA,"",NA
+37,NA,"cangelosi01howNouns","nouns",">","cognition: arguments","pos",NA,"Lexicology","coevolution","simulation","neural network",NA,NA,"yes",NA,NA,NA,"What about link to syntax?",NA
+38,NA,"cangelosi01howNouns","verbs",">","cognition: predicates","pos",NA,"Lexicology","coevolution","simulation","neural network",NA,NA,"yes",NA,NA,NA,"",NA

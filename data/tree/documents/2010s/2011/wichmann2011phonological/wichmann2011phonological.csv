@@ -1,4 +1,4 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"population size","~","phoneme inventory size","pos","phonology","language change","statistical","yes","","wichmann2011phonological"
-"population size","~","word length","neg","lexicon","language change","statistical","yes","","wichmann2011phonological"
-"phoneme inventory size","~","word length","neg","","language change","statistical","yes","","wichmann2011phonological"
+"population size","~","phoneme inventory size","pos","Phonology","language change","statistical","yes",NA,"wichmann2011phonological"
+"population size","~","word length","neg","Lexicology","language change","statistical","yes",NA,"wichmann2011phonological"
+"phoneme inventory size","~","word length","neg","","language change","statistical","yes",NA,"wichmann2011phonological"

@@ -1,4 +1,4 @@
-Var1,Relation,Var2,Cor,Topic,Stage,Type,Confirmed,Notes,bibref
-"population size",">","shared language","neg","signalling","cultural evolution","simulation","null","","dallasta06languageGamesNetworks"
-"memory capacity",">","social network: average degree","pos","signalling","cultural evolution","simulation","null","","dallasta06languageGamesNetworks"
-"social network: average degree",">","shared language","pos","signalling","cultural evolution","simulation","none","","dallasta06languageGamesNetworks"
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"population size",">","shared language","neg","Cooperation","cultural evolution","simulation","null",NA,"dallasta06languageGamesNetworks"
+"memory capacity",">","social network: average degree","pos","Cooperation","cultural evolution","simulation","null",NA,"dallasta06languageGamesNetworks"
+"social network: average degree",">","shared language","pos","Cooperation","cultural evolution","simulation","none",NA,"dallasta06languageGamesNetworks"

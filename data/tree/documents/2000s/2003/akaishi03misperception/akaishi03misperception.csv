@@ -1,4 +1,4 @@
-"","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
-"2","","akaishi03misperception","misperception",">","behavioural diversity","pos","","signalling","coevolution","simulation","population","","","yes","","","","",""
-"3","","akaishi03misperception","behavioural diversity",">","fitness","pos","","signalling","coevolution","simulation","population","","","yes","","","","",""
-"4","","akaishi03misperception","accurate signalling",">","behavioural diversity","neg","","signalling","coevolution","simulation","population","","","yes","","","","",""
+"X","TODO","bibref","Var1","Relation","Var2","Cor","Process","Topic","Stage","Type","Subtype","Test","Stat","Confirmed","Languages","Species","Confidence","Notes","General.description"
+2,NA,"akaishi03misperception","misperception",">","behavioural diversity","pos",NA,"Cooperation","coevolution","simulation","population",NA,NA,"yes",NA,NA,NA,NA,NA
+3,NA,"akaishi03misperception","behavioural diversity",">","fitness","pos",NA,"Cooperation","coevolution","simulation","population",NA,NA,"yes",NA,NA,NA,NA,NA
+4,NA,"akaishi03misperception","accurate signalling",">","behavioural diversity","neg",NA,"Cooperation","coevolution","simulation","population",NA,NA,"yes",NA,NA,NA,NA,NA

@@ -1,6 +1,6 @@
 "Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
 "parent-child interaction",">","infant-directed speech","pos","","","","","","SenjuCsibra2008"
 "parent-child interaction",">","direct gaze","pos","","","","","","SenjuCsibra2008"
-"direct gaze",">","referential expectation","pos","social signals, developmental pragmatics","preadaptation","experiment","yes","""We found that 6-month-old infants followed the adult’s gaze […] toward an object only when such an act is preceded by ostensive cues such as direct gaze""","SenjuCsibra2008"
-"infant-directed speech",">","referential expectation","pos","social signals, developmental pragmatics","preadaptation","experiment","yes","""We found that 6-month-old infants followed the adult’s gaze […] toward an object only when such an act is preceded by ostensive cues such as […] infant-directed speech""","SenjuCsibra2008"
+"direct gaze",">","referential expectation","pos","Developmental psychology;Pragmatics","preadaptation","experiment","yes","""We found that 6-month-old infants followed the adult’s gaze […] toward an object only when such an act is preceded by ostensive cues such as direct gaze""","SenjuCsibra2008"
+"infant-directed speech",">","referential expectation","pos","Developmental psychology;Pragmatics","preadaptation","experiment","yes","""We found that 6-month-old infants followed the adult’s gaze […] toward an object only when such an act is preceded by ostensive cues such as […] infant-directed speech""","SenjuCsibra2008"
 "referential expectation",">","gaze following","pos","","preadaptation","hypothesis","","""gaze following […] in humans […] appears to reflect the expectation of a more active, communicative role from the information source.""","SenjuCsibra2008"

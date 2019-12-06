@@ -1,3 +1,3 @@
-"","Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"1","population size",">","lexicon:rate of cognate loss","neg","historical linguistics","language change","statistical","none",NA,"bromham2015rate"
-"2","population size",">","lexicon:rate of cognate gain","pos","historical linguistics","language change","statistical","none",NA,"bromham2015rate"
+"X","Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+1,"population size",">","lexicon:rate of cognate loss","neg","Historical linguistics","language change","statistical","none",NA,"bromham2015rate"
+2,"population size",">","lexicon:rate of cognate gain","pos","Historical linguistics","language change","statistical","none",NA,"bromham2015rate"
