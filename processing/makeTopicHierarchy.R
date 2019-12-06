@@ -49,20 +49,39 @@ for(i in 2:nrow(h)){
 h = h[h$leaf,]
 
 ## Filter hierarchy to only those included in CHIELD
+## (Alternative is to add rest to "unclassified")
+l = read.csv("../data/db/CausalLinks.csv",stringsAsFactors = F,encoding = "UTF-8",fileEncoding = "UTF-8")
+Ctopics = (l$Topic)
+Ctopics = unlist(strsplit(Ctopics,";"))
+Ctopics = gsub(" +$","",Ctopics)
+Ctopics = gsub("^ +","",Ctopics)
+Ctopics = unique(topics[!is.na(Ctopics)])
+# Capitalise first letter
+#Ctopics = tolower(Ctopics)
+#Ctopics = sapply(Ctopics,function(X){
+#  X = strsplit(X,"")[[1]]
+#  X[1] = toupper(X[1])
+#  paste(X,collapse="")
+#})
+Ctopics = Ctopics[!is.na(Ctopics)]
+# All leaves in hierarchy
+hLeaves = apply(h,1,function(X){
+  X[depth(X[1:(length(X)-1)])]
+})
+
 filterHierarchy=FALSE
 if(filterHierarchy){
-  l = read.csv("../data/db/CausalLinks.csv",stringsAsFactors = F,encoding = "UTF-8",fileEncoding = "UTF-8")
-  topics = (l$Topic)
-  topics = unlist(strsplit(topics,";"))
-  topics = gsub(" +$","",topics)
-  topics = gsub("^ +","",topics)
-  topics = unique(topics[!is.na(topics)])
-  keep = rep(F,nrow(h))
-  for(i in 1:nrow(h)){
-    keep[i] = h[i,depth(h[i,])] %in% topics
-  }
-  h = h[keep,]
+  h = h[sapply(hLeaves,function(X){tolower(X) %in% tolower(Ctopics)})]
 }
+
+# Add topics not in hierarchy to "unclassified"
+unc = Ctopics[!Ctopics %in% hLeaves]
+uncm = matrix("",nrow = length(unc),ncol=ncol(h))
+uncm[,1]="Unclassified"
+uncm[,2]=unc
+uncm[,ncol(uncm)] = TRUE
+colnames(uncm) = names(h)
+h = rbind(h,uncm)
 
 # Turn data frame into nested JSON:
 makeList<-function(x){
@@ -91,6 +110,7 @@ makeList<-function(x){
 
 
 h2 = makeList(h[,1:(ncol(h)-1)])
+
 
 jsonOut<-toJSON(list(label="Topics",
                      expanded="true",

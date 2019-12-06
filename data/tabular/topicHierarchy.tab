@@ -75,9 +75,9 @@ Humanities
 					Landscape planning
 				Architectural analytics
 				Historic preservation
-				Interior design (interior architecture)
+				Interior design
 				Technical drawing
-				Urban planning (urban design)
+				Urban planning
 				Outline of design
 				Fashion design
 				Textile design
@@ -89,7 +89,7 @@ Humanities
 					Graphic design
 					Typography
 						Type design
-				Industrial design (product design)
+				Industrial design
 					Ergonomics
 					Game design
 					Toy and amusement design
@@ -153,7 +153,7 @@ Humanities
 			Interlinguistics
 			Lexicology
 			Linguistic typology
-			Morphology (linguistics)
+			Morphology
 			Natural language processing
 			Philology
 			Phonetics
@@ -191,7 +191,7 @@ Humanities
 		Canon law
 		Civil law
 			Admiralty law
-			Animal law/Animal rights
+			Animal law
 			Civil procedure
 			Common law
 			Contract law
@@ -216,7 +216,7 @@ Humanities
 			Police science
 		Islamic law
 		Jewish law
-		Jurisprudence (Philosophy of Law)
+		Jurisprudence
 		Legal management
 			Commercial law
 			Corporate law
@@ -392,7 +392,7 @@ Social sciences
 		Civics
 		Comparative politics
 		European studies
-		Geopolitics (Political geography)
+		Geopolitics
 		International relations
 		International organizations
 		Nationalism studies
@@ -454,7 +454,7 @@ Social sciences
 		Organizational psychology
 		Parapsychology
 		Pediatric psychology
-		Pedology (children study)
+		Pedology
 		Personality psychology
 		Phenomenology
 		Political psychology
@@ -517,11 +517,11 @@ Social sciences
 			Social network analysis
 		Comparative sociology
 		Conflict theory
-		Criminology/Criminal justice
+		Criminology
 		Critical management studies
 		Critical sociology
 		Cultural sociology
-		Cultural studies/ethnic studies
+		Cultural studies
 			Africana studies
 			Cross-cultural studies
 			Culturology
@@ -529,7 +529,7 @@ Social sciences
 			Ethnology
 			Utopian studies
 			Whiteness studies
-		Demography/Population
+		Demography
 		Digital sociology
 		Dramaturgical sociology
 		Economic sociology
@@ -566,12 +566,12 @@ Social sciences
 		Phenomenological sociology
 		Policy sociology
 		Psychoanalytic sociology
-		Science studies/Science and technology studies
+		Science studies
 		Sexology
 			Heterosexism
 			Human sexual behavior
 			Human sexuality
-			Queer studies/Queer theory
+			Queer studies
 			Sex education
 		Social capital
 		Social change
@@ -586,7 +586,7 @@ Social sciences
 		Social theory
 		Social transformation
 			Computational sociology
-			Economic sociology/Socioeconomics
+			Economic sociology
 			Economic development
 			Social development
 		Sociobiology
@@ -647,7 +647,7 @@ Social sciences
 		Sociomusicology
 		Structural sociology
 		Theoretical sociology
-		Urban studies or Urban sociology/Rural sociology
+		Urban studies or Urban sociology
 		Victimology
 		Visual sociology
 
@@ -724,7 +724,7 @@ Natural Sciences
 			Human physiology
 			Exercise physiology
 		Structural Biology
-		Systematics (Taxonomy)
+		Systematics
 		Systems biology
 		Virology
 			Molecular virology
@@ -817,11 +817,15 @@ Natural Sciences
 		Geochemistry
 		Geodesy
 		Physical geography
-			Atmospheric science / Meteorology
-			Biogeography / Phytogeography
-			Climatology / Paleoclimatology / Palaeogeography
-			Coastal geography / Oceanography
-			Edaphology / Pedology or Soil science
+			Atmospheric science
+			Biogeography
+			Phytogeography
+			Climatology
+			Paleoclimatology
+			Palaeogeography
+			Coastal geography
+			Oceanography
+			Edaphology
 			Geobiology
 			Geology
 				Geomorphology
@@ -833,7 +837,7 @@ Natural Sciences
 				Volcanology
 			Geostatistics
 			Glaciology
-			Hydrology/ Limnology / Hydrogeology
+			Hydrology
 			Landscape ecology
 			Quaternary science
 		Geophysics
@@ -910,7 +914,7 @@ Formal Sciences
 
 	Computer Science
 		Logic in computer science
-			Formal methods (Formal verification)
+			Formal methods
 			Logic programming
 			Multi-valued logic
 			Fuzzy logic
@@ -928,7 +932,7 @@ Formal Sciences
 			Machine learning
 				Artificial neural network
 				Support vector machine
-			Natural language processing (Computational linguistics)
+			Natural language processing
 			Expert systems
 			Robotics
 		Data structures
@@ -936,18 +940,18 @@ Formal Sciences
 		Computer graphics
 			Image processing
 			Scientific visualization
-		Computer communications (networks)
+		Computer communications
 			Cloud computing
 			Information theory
 			Internet, World Wide Web
 			Ubiquitous computing
-			Wireless computing (Mobile computing)
+			Wireless computing
 		Computer security and reliability
 			Cryptography
 			Fault-tolerant computing
 		Computing in mathematics, natural sciences, engineering, and medicine
-			Algebraic (symbolic) computation
-			Computational biology (bioinformatics)
+			Algebraic computation
+			Computational biology
 			Computational chemistry
 			Computational mathematics
 			Computational neuroscience
@@ -957,13 +961,13 @@ Formal Sciences
 			Computational fluid dynamics
 			Finite element analysis
 			Numerical analysis
-			Scientific computing (Computational science)
+			Scientific computing
 		Computing in social sciences, arts, humanities, and professions
 			Community informatics
 			Computational economics
 			Computational finance
 			Computational sociology
-			Digital humanities (Humanities computing)
+			Digital humanities
 			History of computer hardware
 			History of computer science
 			Humanistic informatics
@@ -997,9 +1001,9 @@ Formal Sciences
 			Type theory
 		Quantum computing
 		Software engineering
-			Formal methods (Formal verification)
+			Formal methods
 		Theory of computation
-			Automata theory (Formal languages)
+			Automata theory
 			Computability theory
 			Computational complexity theory
 			Concurrency theory
@@ -1025,9 +1029,9 @@ Mathematics
 			Group representation
 			Homological algebra
 			K-theory
-			Lattice theory (Order theory)
+			Lattice theory
 			Lie algebra
-			Linear algebra (Vector space)
+			Linear algebra
 			Multilinear algebra
 			Non-associative algebra
 			Representation theory
@@ -1283,7 +1287,7 @@ Applied Sciences
 	Medicine and health
 	
 		Alternative medicine
-		Clinical laboratory sciences/Clinical pathology/Laboratory medicine
+		Clinical laboratory sciences
 			Clinical biochemistry
 			Cytogenetics
 			Cytohematology
@@ -1309,7 +1313,7 @@ Applied Sciences
 		Epidemiology
 		Geriatrics
 		Gynaecology
-		Health informatics/Clinical informatics
+		Health informatics
 		Hematology
 		Infectious disease
 		Intensive care medicine
@@ -1341,8 +1345,8 @@ Applied Sciences
 		Pharmaceutical sciences
 			Pharmacy
 		Physical fitness
-			Group Fitness / aerobics
-			Kinesiology / Exercise science / Human performance
+			Group Fitness
+			Kinesiology
 			Personal fitness training
 		Physical therapy
 		Physiotherapy

@@ -877,7 +877,7 @@
 							]
 						},
 						{
-							"label" : "Clinical laboratory sciences/Clinical pathology/Laboratory medicine",
+							"label" : "Clinical laboratory sciences",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -1013,7 +1013,7 @@
 							]
 						},
 						{
-							"label" : "Health informatics/Clinical informatics",
+							"label" : "Health informatics",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -1224,11 +1224,11 @@
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : "Group Fitness / aerobics"
+									"label" : "Group Fitness"
 								},
 								{
 									"leaf" : "true",
-									"label" : "Kinesiology / Exercise science / Human performance"
+									"label" : "Kinesiology"
 								},
 								{
 									"leaf" : "true",
@@ -1519,7 +1519,7 @@
 									]
 								},
 								{
-									"label" : "Natural language processing (Computational linguistics)",
+									"label" : "Natural language processing",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -1548,7 +1548,7 @@
 							]
 						},
 						{
-							"label" : "Computer communications (networks)",
+							"label" : "Computer communications",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -1568,7 +1568,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Wireless computing (Mobile computing)"
+									"label" : "Wireless computing"
 								}
 							]
 						},
@@ -1603,11 +1603,11 @@
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : "Algebraic (symbolic) computation"
+									"label" : "Algebraic computation"
 								},
 								{
 									"leaf" : "true",
-									"label" : "Computational biology (bioinformatics)"
+									"label" : "Computational biology"
 								},
 								{
 									"leaf" : "true",
@@ -1647,7 +1647,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Scientific computing (Computational science)"
+									"label" : "Scientific computing"
 								}
 							]
 						},
@@ -1672,7 +1672,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Digital humanities (Humanities computing)"
+									"label" : "Digital humanities"
 								},
 								{
 									"leaf" : "true",
@@ -1768,7 +1768,7 @@
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : "Formal methods (Formal verification)"
+									"label" : "Formal methods"
 								},
 								{
 									"leaf" : "true",
@@ -1865,7 +1865,7 @@
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : "Formal methods (Formal verification)"
+									"label" : "Formal methods"
 								}
 							]
 						},
@@ -1874,7 +1874,7 @@
 							"children" : [
 								{
 									"leaf" : "true",
-									"label" : "Automata theory (Formal languages)"
+									"label" : "Automata theory"
 								},
 								{
 									"leaf" : "true",
@@ -2189,7 +2189,7 @@
 											]
 										},
 										{
-											"label" : "Industrial design (product design)",
+											"label" : "Industrial design",
 											"children" : [
 												{
 													"leaf" : "true",
@@ -2215,7 +2215,7 @@
 											]
 										},
 										{
-											"label" : "Interior design (interior architecture)",
+											"label" : "Interior design",
 											"children" : [
 												{
 													"leaf" : "true",
@@ -2291,7 +2291,7 @@
 											]
 										},
 										{
-											"label" : "Urban planning (urban design)",
+											"label" : "Urban planning",
 											"children" : [
 												{
 													"leaf" : "true",
@@ -2726,7 +2726,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Morphology (linguistics)"
+									"label" : "Morphology"
 								},
 								{
 									"leaf" : "true",
@@ -2857,7 +2857,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Animal law/Animal rights"
+									"label" : "Animal law"
 								},
 								{
 									"leaf" : "true",
@@ -2984,7 +2984,7 @@
 							]
 						},
 						{
-							"label" : "Jurisprudence (Philosophy of Law)",
+							"label" : "Jurisprudence",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -3614,7 +3614,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Lattice theory (Order theory)"
+									"label" : "Lattice theory"
 								},
 								{
 									"leaf" : "true",
@@ -3622,7 +3622,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Linear algebra (Vector space)"
+									"label" : "Linear algebra"
 								},
 								{
 									"leaf" : "true",
@@ -4220,7 +4220,7 @@
 							]
 						},
 						{
-							"label" : "Systematics (Taxonomy)",
+							"label" : "Systematics",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -4642,7 +4642,7 @@
 							"label" : "Physical geography",
 							"children" : [
 								{
-									"label" : "Atmospheric science / Meteorology",
+									"label" : "Atmospheric science",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4651,7 +4651,7 @@
 									]
 								},
 								{
-									"label" : "Biogeography / Phytogeography",
+									"label" : "Biogeography",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4660,7 +4660,7 @@
 									]
 								},
 								{
-									"label" : "Climatology / Paleoclimatology / Palaeogeography",
+									"label" : "Climatology",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4669,7 +4669,7 @@
 									]
 								},
 								{
-									"label" : "Coastal geography / Oceanography",
+									"label" : "Coastal geography",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4678,7 +4678,7 @@
 									]
 								},
 								{
-									"label" : "Edaphology / Pedology or Soil science",
+									"label" : "Edaphology",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4747,7 +4747,7 @@
 									]
 								},
 								{
-									"label" : "Hydrology/ Limnology / Hydrogeology",
+									"label" : "Hydrology",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -4757,6 +4757,42 @@
 								},
 								{
 									"label" : "Landscape ecology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Oceanography",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Palaeogeography",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Paleoclimatology",
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : ""
+										}
+									]
+								},
+								{
+									"label" : "Phytogeography",
 									"children" : [
 										{
 											"leaf" : "true",
@@ -5389,7 +5425,7 @@
 						},
 						{
 							"leaf" : "true",
-							"label" : "Geopolitics (Political geography)"
+							"label" : "Geopolitics"
 						},
 						{
 							"leaf" : "true",
@@ -5826,7 +5862,7 @@
 							]
 						},
 						{
-							"label" : "Pedology (children study)",
+							"label" : "Pedology",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -6215,7 +6251,7 @@
 							]
 						},
 						{
-							"label" : "Criminology/Criminal justice",
+							"label" : "Criminology",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -6251,7 +6287,7 @@
 							]
 						},
 						{
-							"label" : "Cultural studies/ethnic studies",
+							"label" : "Cultural studies",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -6284,7 +6320,7 @@
 							]
 						},
 						{
-							"label" : "Demography/Population",
+							"label" : "Demography",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -6579,7 +6615,7 @@
 							]
 						},
 						{
-							"label" : "Science studies/Science and technology studies",
+							"label" : "Science studies",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -6604,7 +6640,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Queer studies/Queer theory"
+									"label" : "Queer studies"
 								},
 								{
 									"leaf" : "true",
@@ -6711,7 +6747,7 @@
 								},
 								{
 									"leaf" : "true",
-									"label" : "Economic sociology/Socioeconomics"
+									"label" : "Economic sociology"
 								},
 								{
 									"leaf" : "true",
@@ -7246,7 +7282,7 @@
 							]
 						},
 						{
-							"label" : "Urban studies or Urban sociology/Rural sociology",
+							"label" : "Urban studies or Urban sociology",
 							"children" : [
 								{
 									"leaf" : "true",
@@ -7273,6 +7309,283 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"label" : "Unclassified",
+			"children" : [
+				{
+					"leaf" : "true",
+					"label" : "technology, dialectology, linguistic diversity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "population dynamics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "phonetics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "knowledge representation"
+				},
+				{
+					"leaf" : "true",
+					"label" : "social motivations for language change"
+				},
+				{
+					"leaf" : "true",
+					"label" : "acquisition"
+				},
+				{
+					"leaf" : "true",
+					"label" : "spatial language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "early human language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "early language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "esoterogeny"
+				},
+				{
+					"leaf" : "true",
+					"label" : "exotericity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cognition"
+				},
+				{
+					"leaf" : "true",
+					"label" : "primate cognition"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphosyntax"
+				},
+				{
+					"leaf" : "true",
+					"label" : "linguistic relativity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "sociolinguistics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "social signals, developmental pragmatics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "linguistic relativity hypothesis"
+				},
+				{
+					"leaf" : "true",
+					"label" : "economic behaviour"
+				},
+				{
+					"leaf" : "true",
+					"label" : "structure of the lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "symbiosism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language area"
+				},
+				{
+					"leaf" : "true",
+					"label" : "political complexity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "bayesian models"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cultural diversty"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cultural diversity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "norm, lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "lexicon, global typology, typology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cultural evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "technology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "social structure"
+				},
+				{
+					"leaf" : "true",
+					"label" : "evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "nutritional demands"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cognitive evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "ecology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "diversity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "online communication"
+				},
+				{
+					"leaf" : "true",
+					"label" : "semantics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "bilingualism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "phonology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language contact"
+				},
+				{
+					"leaf" : "true",
+					"label" : "linguistic typology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cultural transmission"
+				},
+				{
+					"leaf" : "true",
+					"label" : "symbolic communication"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language and cognition"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language and behavior"
+				},
+				{
+					"leaf" : "true",
+					"label" : "bilingualism and ftr"
+				},
+				{
+					"leaf" : "true",
+					"label" : "symbolism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "perception"
+				},
+				{
+					"leaf" : "true",
+					"label" : "grammatical complexity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "experimental semiotics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "linguistic structure"
+				},
+				{
+					"leaf" : "true",
+					"label" : "processing"
+				},
+				{
+					"leaf" : "true",
+					"label" : "importance and selection of speech"
+				},
+				{
+					"leaf" : "true",
+					"label" : "honesty"
+				},
+				{
+					"leaf" : "true",
+					"label" : "early language evoluion"
+				},
+				{
+					"leaf" : "true",
+					"label" : "linguistics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "cognitive sociolinguistics"
+				},
+				{
+					"leaf" : "true",
+					"label" : "lanlanguage change"
+				},
+				{
+					"leaf" : "true",
+					"label" : "learning biases"
+				},
+				{
+					"leaf" : "true",
+					"label" : "social biases"
+				},
+				{
+					"leaf" : "true",
+					"label" : "iterated learning"
+				},
+				{
+					"leaf" : "true",
+					"label" : "artificial language learningguage change"
+				},
+				{
+					"leaf" : "true",
+					"label" : "artificial language learning"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language contatc"
 				}
 			]
 		}
