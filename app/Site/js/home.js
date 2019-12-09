@@ -62,11 +62,16 @@ function issueForm(){
 	</div>';
 
 	$("#issueSubmissionSection").append(form);
+	var offset = $("#issue2SubmitButton").offset();
+	$('html, body').animate({
+    	scrollTop: offset.top,
+    	scrollLeft: offset.left
+	});
 }
 
 function submitNewIssue(){
 		
-	var issueLabel = "";
+	var issueLabel = "bug";
 	var issueText = 
 		$("#IssueForm2Text").val() + 
 		"\n\nSent by: " +
