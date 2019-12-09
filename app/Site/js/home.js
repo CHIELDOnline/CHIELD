@@ -44,6 +44,76 @@ function loadRandomNetwork(){
 	}
 }
 
+// Submit an issue -------------
+
+function issueForm(){
+
+	var form = 
+	'<div id="IssueForm2" class="card" style="background:pink;padding:10px">\
+		<div class="form-group">\
+			<p>Issue title:</p>\
+			<input id="IssueForm2Title" value="Issue title" class="form-control">\
+			<p>Please describe your issue:</p>\
+			<textarea id="IssueForm2Text" class="form-control"></textarea>\
+			<p>Enter your name (optional):</p>\
+			<input id="IssueForm2Name" value="Anonymous" class="form-control">\
+		</div>\
+		<button id="issue2SubmitButton" onclick="submitNewIssue()" class="btn btn-danger" type="submit">Submit</button>\
+	</div>';
+
+	$("#issueSubmissionSection").append(form);
+}
+
+function submitNewIssue(){
+		
+	var issueLabel = "";
+	var issueText = 
+		$("#IssueForm2Text").val() + 
+		"\n\nSent by: " +
+		$("#IssueForm2Name").val();
+	var issueTitle = $("#IssueForm2Title").val();
+
+	if(issueText!=undefined){
+		$("#issue2SubmitButton").hide();
+		var jdata = {
+			text: issueText,
+			label: issueLabel,
+			title: issueTitle
+				};
+		console.log(jdata);
+
+		$.ajax({
+		    type: 'POST',
+		    url: 'php/sendNewIssue.php',
+		    data: {json: JSON.stringify(jdata)},
+		    dataType: 'json'
+		}). done(
+			function(data){
+				finishedSubmission(data);
+			}).fail(function(data){
+				finishedSubmission(data);
+			});
+	}
+}
+
+function finishedSubmission2(obj){
+	var link = obj.responseText;
+	if(link!==undefined && link.startsWith("https")){
+		$("#IssueForm2").html(
+			'Issue submitted. <a href="'+link+'" target="_blank">View the issue</a>.'
+			);
+
+	} else{
+		var url = "https://github.com/CHIELDOnline/CHIELD/issues/new";
+		$("#IssueForm2").html(
+			'<p>There may be an error with the submission. You can submit an issue via GitHub <a href="'+url+'">here</a>.'
+			);
+	}
+}
+
+// Submit a coding request -------------
+
+
 function requestCoding(){
 
 	var form = 
@@ -54,13 +124,13 @@ function requestCoding(){
 			<p>Enter your name (optional):</p>\
 			<input id="IssueFormName" value="Anonymous" class="form-control">\
 		</div>\
-		<button id="issueSubmitButton" onclick="submitNewIssue()" class="btn btn-danger" type="submit">Submit</button>\
+		<button id="issueSubmitButton" onclick="submitNewCodingRequest()" class="btn btn-danger" type="submit">Submit</button>\
 	</div>';
 
 	$("#requestCoding").append(form);
 }
 
-function submitNewIssue(){
+function submitNewCodingRequest(){
 		
 	var issueLabel = "codingRequest";
 	var issueText = 
@@ -107,6 +177,8 @@ function finishedSubmission(obj){
 			);
 	}
 }
+
+
 
 
 
