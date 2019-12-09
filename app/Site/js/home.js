@@ -54,7 +54,7 @@ function requestCoding(){
 			<p>Enter your name (optional):</p>\
 			<input id="IssueFormName" value="Anonymous" class="form-control">\
 		</div>\
-		<button onclick="submitNewIssue()" class="btn btn-danger" type="submit">Submit</button>\
+		<button id="issueSubmitButton" onclick="submitNewIssue()" class="btn btn-danger" type="submit">Submit</button>\
 	</div>';
 
 	$("#requestCoding").append(form);
@@ -70,7 +70,7 @@ function submitNewIssue(){
 	var issueTitle = "Coding Request";
 
 	if(issueText!=undefined){
-
+		$("#issueSubmitButton").hide();
 		var jdata = {
 			text: issueText,
 			label: issueLabel,
@@ -97,7 +97,7 @@ function finishedSubmission(obj){
 	var link = obj.responseText;
 	if(link!==undefined && link.startsWith("https")){
 		$("#IssueForm").html(
-			'Request submitted.  <a href="'+link+'" target="_blank">View the issue</a>.'
+			'Request submitted. <a href="'+link+'" target="_blank">View the issue</a>.'
 			);
 
 	} else{
