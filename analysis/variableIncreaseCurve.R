@@ -74,12 +74,19 @@ library(ggplot2)
 
 cuv  =data.frame(numDocuments=1:length(cumUniqueVariables.mean),
                  cumUniqueVariables.mean = cumUniqueVariables.mean)
-
+# Plot with predicted curve
 cumPlot = ggplot(newdata,aes(x=numDocuments,y=predictedCurve)) +
   geom_line(data=cuv,aes(x = numDocuments,y=cumUniqueVariables.mean),size=1.5) +
   geom_line(linetype="dotted") + 
   xlab("Number of documents") +
   ylab("Number of unique variables")
+# Plot without predicted curve
+cumPlot = ggplot(cuv,aes(x=numDocuments,y=cumUniqueVariables.mean)) +
+  xlab("Number of documents") +
+  ylab("Number of unique variables") +
+  geom_abline(intercept=0, slope=5, colour='gray',size=1) +
+  geom_line(size=1.5)
+
 pdf("../../Writeup/IntroPaper/visualisation/CumulativeVariablesPlot.pdf",width=4,height=3)
 cumPlot
 dev.off()

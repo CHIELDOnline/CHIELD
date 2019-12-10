@@ -94,9 +94,9 @@ function submitNewIssue(){
 		    dataType: 'json'
 		}). done(
 			function(data){
-				finishedSubmission(data);
+				finishedSubmission2(data);
 			}).fail(function(data){
-				finishedSubmission(data);
+				finishedSubmission2(data);
 			});
 	}
 }
