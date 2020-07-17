@@ -198,7 +198,7 @@ $(document).ready(function(){
 	initialiseNetwork();
 	requestRecord("php/getDocsForHome.php", "",'docs');
 	
-	//setInterval("loadRandomNetwork()",5000);
+	setInterval("loadRandomNetwork()",5000);
 
 	// -----------------------------------------------------
 	// Video poster
