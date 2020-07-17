@@ -73,6 +73,22 @@ function saveDataAsPhylopath(){
 	         '</div>');
 }
 
+function saveDataAsBRMS(){
+	var brms = makeBRMS();
+
+	$("body").append(
+	        '<div class="alert alert-success alert-dismissable" style="position:fixed;top:20%;left:10%">'+
+	            '<button type="button" class="close" ' + 
+	                    'data-dismiss="alert" aria-hidden="true">' + 
+	                '&times;' + 
+	            '</button>' + 
+	            '<p>Paste the following into your R script. (note that this only includes simple ">" causal connections)</p>' + 
+	            '<textarea cols="100" rows=12>' + 
+	            brms +
+	            "</textarea>" +
+	         '</div>');
+}
+
 function getExploreLink(){
 	return(
 		"https://chield.excd.org/explore.html?links=" + 

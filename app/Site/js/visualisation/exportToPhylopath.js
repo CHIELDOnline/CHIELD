@@ -61,12 +61,12 @@ makePhylopathLabels = function(label){
 	label = label.replace(/ /g, ".");
 	label = label.replace(/:/g, ".");
 	label = label.replace(/\.+/g, ".");
-	label = label.replace(/[-,&\(\)']/g, "");
+	label = label.replace(/[-,&\(\)'\/]/g, "");
 	return(label);
 }
 
 makePhylopathModelTitle = function(label){
-	return(label.replace(/[, &\(\)\.'-]/g, ""));
+	return(label.replace(/[, &\(\)\.'-\/]/g, ""));
 }
 
 makePhylopathModelFormula = function(cite,edges){
