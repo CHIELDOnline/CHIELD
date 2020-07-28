@@ -26,18 +26,24 @@ function saveDataAsCSV(){
  	document.body.removeChild(link);
 }
 
-function saveDataAsDOT(includePos = false,directed = true){
+function saveDataAsDOT(includePos = false,directed = true,online = false){
 	var dotData = visGraphToDot(network,network_nodes,network_edges,includePos,directed);
-	var encodedUri = "data:text/csv;charset=utf-8,"+encodeURIComponent(dotData);
-
-	var link = document.createElement('a');
-	link.style.display = 'none';
-	link.href = encodedUri;
-	link.download = "CausalLinks.dot"
-	document.body.appendChild(link);
-  	link.click();
- 	document.body.removeChild(link);
+	
+	if(online){
+		var urlx = "https://dreampuf.github.io/GraphvizOnline/#" + encodeURIComponent(dotData);
+		window.open(urlx,"_blank")
+	} else{
+		var encodedUri = "data:text/csv;charset=utf-8,"+encodeURIComponent(dotData);
+		var link = document.createElement('a');
+		link.style.display = 'none';
+		link.href = encodedUri;
+		link.download = "CausalLinks.dot"
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	}
 }
+
 
 
 function saveDataAsDagitty(){
