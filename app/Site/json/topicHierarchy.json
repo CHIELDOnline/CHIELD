@@ -452,11 +452,19 @@
 				},
 				{
 					"leaf" : "true",
-					"label" : "Creoles"
+					"label" : "origins of language"
 				},
 				{
 					"leaf" : "true",
-					"label" : "origins of language"
+					"label" : "origins of lanugage"
+				},
+				{
+					"leaf" : "true",
+					"label" : "syntax"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Creoles"
 				},
 				{
 					"leaf" : "true",
