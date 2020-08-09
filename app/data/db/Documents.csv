@@ -1290,6 +1290,16 @@ The number of different species found in a given area of the Earth increases fro
   eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.0030-1299.2008.16684.x},
   abstract = {Parasite–host coevolutionary races are spatially variable across species’ or human cultural ranges. Assortative sociality, biased toward local conspecifics, and limited dispersal (philopatry) in humans and other organisms can be adaptive through reduced contact with dangerous contagions harbored by distant/non‐local conspecifics. These factors can generate cultural or population divergence. Thus, parasites are like a wedge driving groups apart through their effective creation of anticontagion behaviors. If this proposition is correct, then biological diversity should positively correlate with parasite diversity. Here we show that the worldwide distribution of indigenous human language diversity, a form of biodiversity, is strongly, positively related to human parasite diversity indicative of a legacy of parasite‐mediated diversification. The significant pattern remains when potential confounds are removed. The pattern too is seen in each of the six world regions and is not confounded by regional differences in their history of colonization and conquest. We hypothesize that variation in limited dispersal and assortative sociality with conspecifics in response to the worldwide spatial variation in pathogen diversity provides a fundamental mechanism of population divergence explaining many important aspects of the geographic patterns of biodiversity. This hypothesis has broad implications for a diversity of research topics including language diversity, cultural evolution, speciation, phylogeny and biogeography.},
 }","Fincher & Thornhill (2008)"
+"knudsen2008national","Knud Knudsen; Kari Wærness","2008","National context and spouses’ housework in 34 countries","@Article{knudsen2008national,
+  title = {National context and spouses’ housework in 34 countries},
+  author = {Knud Knudsen and Kari Wærness},
+  journal = {European Sociological Review},
+  volume = {24},
+  number = {1},
+  pages = {97--113},
+  year = {2008},
+  publisher = {Oxford University Press},
+}","Knudsen & Wærness (2008)"
 "kousta2008investigating","Stavroula-Thaleia Kousta; David P Vinson; Gabriella Vigliocco","2008","Investigating linguistic relativity through bilingualism: The case of grammatical gender.","@Article{kousta2008investigating,
   title = {Investigating linguistic relativity through bilingualism: The case of grammatical gender.},
   author = {Stavroula-Thaleia Kousta and David P Vinson and Gabriella Vigliocco},
@@ -2952,6 +2962,16 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2016},
   publisher = {Elsevier},
 }","Hayakawa, Costa, Foucart & Keysar (2016)"
+"jansen2016perceived","Lisanne Jansen; Tijmen Weber; Gerbert Kraaykamp; Ellen Verbakel","2016","Perceived fairness of the division of household labor: A comparative study in 29 countries","@Article{jansen2016perceived,
+  title = {Perceived fairness of the division of household labor: A comparative study in 29 countries},
+  author = {Lisanne Jansen and Tijmen Weber and Gerbert Kraaykamp and Ellen Verbakel},
+  journal = {International Journal of Comparative Sociology},
+  volume = {57},
+  number = {1-2},
+  pages = {53--68},
+  year = {2016},
+  publisher = {SAGE Publications Sage UK: London, England},
+}","Jansen, Weber, Kraaykamp & Verbakel (2016)"
 "lewis2016length","Molly L Lewis; Michael C Frank","2016","The length of words reflects their conceptual complexity","@Article{lewis2016length,
   title = {The length of words reflects their conceptual complexity},
   author = {Molly L Lewis and Michael C Frank},
@@ -4116,3 +4136,11 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   editor = {A. Ravignani and C. Barbieri and M. Martins and M. Flaherty and Y. Jadoul and E. Lattenkamp and H. Little and K. Mudd and T. Verhoef},
   year = {2020},
 }","Frank & Smith (2020)"
+"hwang2020paid","Woosang Hwang; Eunjoo Jung; Andrea V Shaw; Renee Mestad; Sandra D Lane","2020","Paid Leave and Maternal Depressive Symptoms After Childbirth: The Moderating Role of Perceived Fairness of the Division of Household Labor","@Article{hwang2020paid,
+  title = {Paid Leave and Maternal Depressive Symptoms After Childbirth: The Moderating Role of Perceived Fairness of the Division of Household Labor},
+  author = {Woosang Hwang and Eunjoo Jung and Andrea V Shaw and Renee Mestad and Sandra D Lane},
+  journal = {Families in Society},
+  pages = {1044389420913124},
+  year = {2020},
+  publisher = {SAGE Publications Sage CA: Los Angeles, CA},
+}","Hwang, Jung, Shaw, Mestad et al. (2020)"
