@@ -1,0 +1,6 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"cohabitation",">","division of household labour","none","","none","","none","Varies a lot across countries. Only mildly significant effect and about two-fifths of this effect is accounted for by control variables","batalova2002premarital"
+"gender ideology",">","division of household labour","","","","","","","batalova2002premarital"
+"country cohabitation rate",">","division of household labour","","","","","","","batalova2002premarital"
+"gender empowerment measure (GEM)",">","division of household labour","none","","none","","none","GEM’s have a much stronger effect in bringing about equitable division of labour for couples who have cohabited before","batalova2002premarital"
+"age",">","division of household labour","neg","","none","","none","Younger couples tend to divide housework more equitably","batalova2002premarital"
