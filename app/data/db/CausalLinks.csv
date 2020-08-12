@@ -2034,6 +2034,9 @@
 "765460239","Cardillo2015","3714369798","/>","191368178","pos",NA,NA,"language change","statistical","","","""But when we correct for the non- independence between grid cells due to spatial autocorrelation using Dutilleul’s modified t-test, there are no significant corre- lations between language diversity and mammal species richness (r 1⁄4 0.24, p 1⁄4 0.22), or between number of threatened languages and threatened species (r 1⁄4 20.13, p 1⁄4 0.24)."""
 "1240779123","Cardillo2015","3439972045","/>","1318407075","pos",NA,NA,"language change","statistical","","","""But when we correct for the non- independence between grid cells due to spatial autocorrelation using Dutilleul’s modified t-test, there are no significant corre- lations between language diversity and mammal species richness (r 1⁄4 0.24, p 1⁄4 0.22), or between number of threatened languages and threatened species (r 1⁄4 20.13, p 1⁄4 0.24)."""
 "3095778014","Cardillo2015","1689565228",">","1318407075","neg",NA,NA,"language change","statistical","","","""The only significant correlate of number of threatened languages per grid cell is elevation"""
+"2254866380","chaudhary2015polygyny","3448792192",">","1033335544","pos",NA,NA,"none",NA,"","","Polygynous men have more living offsprings than other men their age"
+"717572895","chaudhary2015polygyny","2068247620","/>","3448792192","none",NA,NA,"none",NA,"","","Phenotypic quality measured by height and hand grip strength"
+"721700655","chaudhary2015polygyny","3905652898",">","3448792192","pos",NA,NA,"none",NA,"","","Social capital measuredby gift-giving game, where individuals allocate honey sticks to others and the one who receives most number of honey sticks is said to have most social capital"
 "1146607702","delancey15complexity","1879235790",">","634707713","neg",NA,"Morphology","language change","hypothesis","",NA,"This morphology has been lost in many languages, including the most familiar branches of the family such as Sinitic, Boro-Garo, Tibetic, and Lolo-Burmese, as a result of creolization under intense language contact."
 "764883138","Everett2015","1639326746",">","746919029","neg",NA,NA,"language change","statistical","","","""We predict that, given the relative imprecision of vocal fold vibration in desiccated versus humid contexts, arid and cold ecologies should be less amenable, when contrasted to warm and humid ecologies, to the development of languages with phonemic tone, especially complex tone. """
 "1050925871","Everett2015","3060838189",">","746919029","neg",NA,NA,"language change","statistical","","","""We predict as well that this tendency should be particularly apparent in frigid climates, given the extremely reduced water vapor capacity of cold air."""
@@ -3425,6 +3428,9 @@
 "3456736674","Dediu2019Aug","1742566378",">","643305771",NA,NA,"","","","","",NA
 "3605631148","Dediu2019Aug","1742566378",">","2576999303",NA,NA,"","","","","",NA
 "1888617462","Dediu2019Aug","1742566378",">","1739646661",NA,NA,"","","","","",NA
+"675384510","dyble2019engagement","1576195433",">","4125861470","pos",NA,NA,"none",NA,"","",""
+"4177945952","dyble2019engagement","1576195433",">","2623566522","neg",NA,NA,"none",NA,"","","Mainly for women"
+"1556494526","dyble2019engagement","1576195433","/>","1095854368","none",NA,NA,"none",NA,"","","Correlation was found for time spent in domestic chores, inspecific to gender. But since, women do significantly more domestic chores, it has been coded as ‘wife’s share’"
 "384355425","ferdinand2019cognitive","2707230683",">","251023881","pos",NA,NA,"language change","experiment","","yes",NA
 "2424290797","ferdinand2019cognitive","895062551",">","251023881","pos",NA,NA,"language change","experiment","","yes",NA
 "2173808573","ferdinand2019cognitive","1142660238",">","251023881","pos",NA,NA,"language change","experiment","","yes",NA
