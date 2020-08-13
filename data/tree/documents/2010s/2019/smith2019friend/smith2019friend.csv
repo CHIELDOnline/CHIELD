@@ -1,0 +1,8 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"relatedness",">","food sharing","pos","","none","","none","","smith2019friend"
+"reciprocity",">","food sharing","neg","","none","","none","","smith2019friend"
+"spatial proximity","/>","food sharing","none","","none","","none","","smith2019friend"
+"gender",">","food sharing","none","","none","experiment","none","Same-gender dyads much more likely to share food than opposite-sex dyads","smith2019friend"
+"age",">","food sharing","pos","","none","experiment","none","Adult and older individuals much more likely to receive food via sharing","smith2019friend"
+"reciprocity",">","need","neg","","none","hypothesis","none","Individuals who are in greater need of resources (high number of dependent offsprings; low food producing), will share less ","smith2019friend"
+"food sharing",">","need","pos","","none","experiment","none","Individuals share with those who are in need (need-based cooperation) and not to those who are more giving (reciprocity based sharing) ","smith2019friend"
