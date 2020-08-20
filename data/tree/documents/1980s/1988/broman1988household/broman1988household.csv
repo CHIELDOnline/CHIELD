@@ -1,0 +1,6 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"division of household labour",">","family life satisfaction","none","","none","","none","People have only slightly higher satisfaction when someone else does most of the work. But they have significantly less satisfaction when they feel like they are overburdened with the housework","broman1988household"
+"health status",">","family life satisfaction","pos","","none","","none","","broman1988household"
+"education attainment",">","family life satisfaction","neg","","none","","none","Higher education leads to lesser family life satisfaction","broman1988household"
+"age",">","family life satisfaction","pos","","none","","none","","broman1988household"
+"employment","/>","family life satisfaction","none","","none","","none","However, employed people who do most of the housework report lower family life satisfaction","broman1988household"
