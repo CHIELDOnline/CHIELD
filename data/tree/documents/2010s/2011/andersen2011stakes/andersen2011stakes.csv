@@ -1,0 +1,5 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"total divisible amount",">","bargain offer","neg","","none","","none","The proportion of total amount offered in bargain decreases as the total amount (stake increases). However the absolute offer amount increases.","andersen2011stakes"
+"wealth","~","bargain offer","none","","none","","none","As wealth earned previously increases, it has only small effect on offer","andersen2011stakes"
+"wealth",">","bargain offer rejection","none","","none","","none","Its a positive correlation but not statistically significant","andersen2011stakes"
+"total divisible amount",">","bargain offer rejection","neg","","none","","none","","andersen2011stakes"
