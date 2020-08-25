@@ -1,0 +1,3 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"stake",">","dictator game offer","neg","","none","","none","Offers go down as stake sizes increase. Significant but small effect","larney2019stake"
+"stake","/>","ultimatum game offer","none","","none","","none","","larney2019stake"
