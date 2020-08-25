@@ -1,0 +1,6 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"economic dependance",">","housework","pos","","none","","none","As one’s economic dependance increases (no earnings), the number of hours spent in housework also increases. A strong relationship for women and a weaker relationship for men","greenstein2000economic"
+"residence",">","housework","none","","none","","none","An effect of metropolitan residence on wive’s amount of housework","greenstein2000economic"
+"gender ideology",">","housework","none","","none","","none","More traditional wives perform more housework; more traditional husbands perform less housework","greenstein2000economic"
+"economic dependance",">","husband’s relative housework","none","","none","","none","Inverted U-shaped pattern. Husbands do more housework up until midway point of dependance (both husband and wife earning same). After that, despit increasing dependance, husbands do progressively less housework","greenstein2000economic"
+"economic dependance",">","wife’s relative housework","none","","none","","none","U-shaped pattern. As economic dependence decreases, wives do less housework till a midway point of dependance. After that, even though dependance decreases, the housework curve turns upward","greenstein2000economic"
