@@ -1,0 +1,7 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"responder expectation",">","unfair offer acceptance","neg","","none","experiment","none","Here bargain offer acceptance reflects The actual decision, and can be compared with a perception of fairness (thus, the acceptance) ","aina2020frustration"
+"hypothetical acceptance",">","unfair offer acceptance","pos","","none","experiment","none","Frequency of acceptance of greedy (unfair) offer is higher in actual scenarios","aina2020frustration"
+"actual acceptance",">","unfair offer acceptance","none","","none","experiment","none","","aina2020frustration"
+"payoff","/>","unfair offer acceptance","none","","none","experiment","none","Acceptance of greedy (unfair) offer is not significantly different across payment conditions","aina2020frustration"
+"proposer expectation",">","unfair offer","none","","none","experiment","none","If proposer initially expects responders to accept unfair offers, they are more likely to make an unfair offer","aina2020frustration"
+"payoff","/>","proposer expectation","none","","none","experiment","none","Proposer expectations of responder acceptance is not significantly different across payoff conditions","aina2020frustration"
