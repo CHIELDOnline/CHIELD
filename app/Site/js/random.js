@@ -18,15 +18,19 @@ function updateRecord(response,type){
 	console.log("updateRecord "+type);
 	if(type=="links"){
 		doc_causal_links = JSON.parse(response);
+		console.log("HERE")
+		console.log(doc_causal_links);
+		console.log(doc_causal_links[0]);
+		console.log(doc_causal_links[0].bibref);
 		network_nodes.remove(network_nodes.getIds());
 		network_edges.remove(network_edges.getIds());
 		redrawGUIfromObject(doc_causal_links); 
 		network.fit();
-		network.moveTo({scale:3})
-		docKey = doc_causal_links[0].pk;
+		network.moveTo({scale:3});
+		docKey = doc_causal_links[0].bibref;
 		
 		quote = '"' + doc_causal_links[0].Notes + '"' + '<a href="document.html?key='+
-						 + docKey + '"> ... see in context.</a>'
+						 docKey + '"> ... see in context.</a>'
 		
 		$("#quote").html(quote);
 	}

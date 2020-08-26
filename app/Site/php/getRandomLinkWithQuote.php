@@ -4,6 +4,7 @@ $pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
 
 $sql= <<<EOT
 SELECT l.pk,
+	   l.bibref,
        s.[name] variable1,
 	   Relation as relation,
        s2.[name] variable2,
