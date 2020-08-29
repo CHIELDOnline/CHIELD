@@ -1,0 +1,4 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"outside options",">","dictator offer","none","","none","experiment","none","When proposer and responder have equal outside options (in terms of partner choice and switching of roles), a 50/50 split (fair offer) evolves","debove2015partner"
+"runaway selfishness",">","dictator offer","neg","","none","experiment","none","When there is 1 proposer and 3 responders, responders have lesser outside options (in terms of partner choice) and offers lower than 50% will evolve","debove2015partner"
+"competitive altruism",">","dictator offer","pos","","none","experiment","none","When there are 3 proposers and 1 responder, responder has better outside options (in terms of partner choice) and offers higher than 50% will evolve","debove2015partner"
