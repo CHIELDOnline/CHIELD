@@ -1,8 +1,0 @@
-"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"reciprocity","~","food sharing","none","","none","","","Food-sharing seen in three camps, not seen in three","smith2016camp"
-"camp stability",">","reciprocity","pos","","none","","","","smith2016camp"
-"reciprocity",">","camp stability","pos","","none","","","","smith2016camp"
-"relatedness",">","reciprocity","none","","none","","none","","smith2016camp"
-"engagement in harvest",">","reciprocity","pos","","none","experiment","","","smith2016camp"
-"number of children",">","reciprocity","neg","","none","experiment","yes","","smith2016camp"
-"food storage",">","reciprocity","pos","","none","experiment","yes","","smith2016camp"
