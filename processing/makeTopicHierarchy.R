@@ -52,70 +52,75 @@ h = h[h$leaf,]
 ## (Alternative is to add rest to "unclassified")
 l = read.csv("../data/db/CausalLinks.csv",stringsAsFactors = F,encoding = "UTF-8",fileEncoding = "UTF-8")
 Ctopics = (l$Topic)
-Ctopics = unlist(strsplit(Ctopics,";"))
-Ctopics = gsub(" +$","",Ctopics)
-Ctopics = gsub("^ +","",Ctopics)
-Ctopics = unique(Ctopics[!is.na(Ctopics)])
-# Capitalise first letter
-#Ctopics = tolower(Ctopics)
-#Ctopics = sapply(Ctopics,function(X){
-#  X = strsplit(X,"")[[1]]
-#  X[1] = toupper(X[1])
-#  paste(X,collapse="")
-#})
-Ctopics = Ctopics[!is.na(Ctopics)]
-Ctopics = Ctopics[Ctopics!="NA"]
-Ctopics = Ctopics[Ctopics!=""]
-# All leaves in hierarchy
-hLeaves = apply(h,1,function(X){
-  X[depth(X[1:(length(X)-1)])]
-})
 
-filterHierarchy=TRUE
-if(filterHierarchy){
-  h = h[sapply(hLeaves,function(X){tolower(X) %in% tolower(Ctopics)}),]
-}
-
-# Add topics not in hierarchy to "unclassified"
-unc = Ctopics[!Ctopics %in% hLeaves]
-unc = unc[!is.na(unc)]
-unc = unc[unc!="NA"]
-uncm = matrix("",nrow = length(unc),ncol=ncol(h))
-uncm[,1]="Unclassified"
-uncm[,2]=unc
-uncm[,ncol(uncm)] = TRUE
-colnames(uncm) = names(h)
-h = rbind(h,uncm)
-
-# Turn data frame into nested JSON:
-makeList<-function(x){
-  isInternalNode = FALSE
-  if(ncol(x)>2){
-    if(sum(x[,2:ncol(x)]!="")>0){
-      isInternalNode = TRUE
+if(sum(!is.na(Ctopics))>0){
+  Ctopics = unlist(strsplit(Ctopics,";"))
+  Ctopics = gsub(" +$","",Ctopics)
+  Ctopics = gsub("^ +","",Ctopics)
+  Ctopics = unique(Ctopics[!is.na(Ctopics)])
+  # Capitalise first letter
+  #Ctopics = tolower(Ctopics)
+  #Ctopics = sapply(Ctopics,function(X){
+  #  X = strsplit(X,"")[[1]]
+  #  X[1] = toupper(X[1])
+  #  paste(X,collapse="")
+  #})
+  Ctopics = Ctopics[!is.na(Ctopics)]
+  Ctopics = Ctopics[Ctopics!="NA"]
+  Ctopics = Ctopics[Ctopics!=""]
+  # All leaves in hierarchy
+  hLeaves = apply(h,1,function(X){
+    X[depth(X[1:(length(X)-1)])]
+  })
+  
+  filterHierarchy=TRUE
+  if(filterHierarchy){
+    h = h[sapply(hLeaves,function(X){tolower(X) %in% tolower(Ctopics)}),]
+  }
+  
+  # Add topics not in hierarchy to "unclassified"
+  unc = Ctopics[!Ctopics %in% hLeaves]
+  unc = unc[!is.na(unc)]
+  unc = unc[unc!="NA"]
+  uncm = matrix("",nrow = length(unc),ncol=ncol(h))
+  uncm[,1]="Unclassified"
+  uncm[,2]=unc
+  uncm[,ncol(uncm)] = TRUE
+  colnames(uncm) = names(h)
+  h = rbind(h,uncm)
+  
+  # Turn data frame into nested JSON:
+  makeList<-function(x){
+    isInternalNode = FALSE
+    if(ncol(x)>2){
+      if(sum(x[,2:ncol(x)]!="")>0){
+        isInternalNode = TRUE
+      }
+    }
+    if(isInternalNode){
+      listSplit<-split(x[-1],x[1],drop=T)
+      lapply(names(listSplit),function(y){
+        list(
+          label=y,
+          leaf = y %in% Ctopics[!is.na(Ctopics)],
+          children=makeList(listSplit[[y]]))
+        })
+    }else{
+      lapply(seq(nrow(x[1])),function(y){
+        list(
+          leaf="true",
+          label=x[,1][y]
+          )
+        })
     }
   }
-  if(isInternalNode){
-    listSplit<-split(x[-1],x[1],drop=T)
-    lapply(names(listSplit),function(y){
-      list(
-        label=y,
-        leaf = y %in% Ctopics[!is.na(Ctopics)],
-        children=makeList(listSplit[[y]]))
-      })
-  }else{
-    lapply(seq(nrow(x[1])),function(y){
-      list(
-        leaf="true",
-        label=x[,1][y]
-        )
-      })
-  }
+  
+  
+  h2 = makeList(h[,1:(ncol(h)-1)])
+} else{
+  # No topics in database
+  h2 = list()
 }
-
-
-h2 = makeList(h[,1:(ncol(h)-1)])
-
 
 jsonOut<-toJSON(list(label="Topics",
                      expanded="true",
