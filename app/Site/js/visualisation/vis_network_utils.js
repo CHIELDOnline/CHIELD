@@ -471,7 +471,9 @@ function changeNetworkLayout(type){
 // ------------------
 
 function applyNetworkColorScheme(scheme){
-  edge_colour_scheme = scheme;
+  if(typeof scheme !== 'undefined'){
+	  edge_colour_scheme = scheme;
+  }
 
   if(scheme == "document"){
     calculateDocumentColours();
@@ -490,7 +492,39 @@ function applyNetworkColorScheme(scheme){
   try{hideLoader();} catch(err){}
 }
 
+function getCurrentColourProperty(){
+  var itemProperty = {
+    stage: "stage",
+    type: "studyType",
+    cor: "cor",
+    causal: "causal_relation",
+    "document": "citation"
+  }[edge_colour_scheme];
+
+  if(itemProperty===undefined){
+    return("causal_relation");
+  } else{
+  	return(itemProperty)
+  }
+}
+
 function getEdgeColor(edge){
+
+  // First, see if the checkbox in the legend is unticked
+  // if so, just draw as a grey line
+  var itemProperty = getCurrentColourProperty();
+  var edgeKeyValue = edge[itemProperty];
+  // iterate over check boxes in the legend
+  var checkBoxes = $("#legend input");
+  for(var i=0;i<checkBoxes.length;++i){
+  	// if the legend item corresponding to this edge key value is not checked
+  	if(!checkBoxes[i].checked && checkBoxes[i].value == edgeKeyValue){
+  		return('#c9c9c9');  // return grey
+  	}
+  }
+
+  // Otherwise, look up colour according to scheme
+  
   // Causal colour scheme
   if(edge_colour_scheme=="causal"){
     /*if(edge.causal_relation == ">>"){
@@ -549,21 +583,11 @@ function getEdgeColor(edge){
 function constructEdgeColourLegend(){
 
   // Iterate through edges, get all unique types
-  // Construct a colour legend
+  // Construct a colour legend, with checkboxes for turning "off" the colours
 
 
   // get the relevant edge property according to the colour scheme
-  var itemProperty = {
-    stage: "stage",
-    type: "studyType",
-    cor: "cor",
-    causal: "causal_relation",
-    "document": "citation"
-  }[edge_colour_scheme];
-
-  if(itemProperty===undefined){
-    itemProperty = "causal_relation";
-  }
+  var itemProperty = getCurrentColourProperty();
 
   // Get unique colours
   var items = [];
@@ -590,7 +614,9 @@ function constructEdgeColourLegend(){
   var legend = "";
   for(var i=0;i<items.length;++i){
     legend += 
-      '<span class="legendItem" style="color:'+colours[i]+'">'+items[i]+'</span>';
+      '<input type="checkbox" id="legendCheck'+ i + '" name="legendCheck'+i+'" value="'+items[i]+'" onclick="applyNetworkColorScheme()" checked>&nbsp;'+
+      '<span class="legendItem" style="color:'+colours[i]+'">'+items[i]+'</span>' +
+      '<br>';
   }
   return(legend);
 }
