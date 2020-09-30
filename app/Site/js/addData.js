@@ -206,6 +206,22 @@ function validateSubmission(){
 			$("#ReferenceKeyAlert2").show();
 			valid = false;
 		}
+		
+		// Check the bib has a journal title or book title
+		// (this can break other bits)
+		var bib_object = bibtex2JSON(document.getElementById("bibtexsource").value)[0];	
+		if(bib_object.type=="article"){
+			if(bib_object.properties.journal === undefined){
+				$("#NoJournalAlert").show();
+				valid = false;
+			}
+		}
+		if(bib_object.type=="book"){
+			if(bib_object.properties.title === undefined){
+				$("#NoJournalAlert").show();
+				valid = false;
+			}
+		}	
 
 	}
 	// Check causal links
