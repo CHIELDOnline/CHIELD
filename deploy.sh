@@ -75,6 +75,12 @@ then
 
 	# Zip the sqlite database and add to downloads
 	zip app/Site/downloads/CHIELD.zip data/db/CHIELD.sqlite
+else
+	# need to copy the zipped folders to server download folder
+	# so that is stays up to date on server
+	# (otherwise this is skipped on the server)
+	zip ${server_public_folder}downloads/CHIELD_csv.zip data/db/*.csv
+	zip ${server_public_folder}downloads/CHIELD.zip data/db/CHIELD.sqlite	
 fi
 
 
