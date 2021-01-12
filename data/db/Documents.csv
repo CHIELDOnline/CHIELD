@@ -655,6 +655,16 @@ The number of different species found in a given area of the Earth increases fro
   year = {2002},
   publisher = {Elsevier},
 }","Li & Gleitman (2002)"
+"abrams2003modelling","Daniel M Abrams; Steven H Strogatz","2003","Modelling the dynamics of language death","@Article{abrams2003modelling,
+  title = {Modelling the dynamics of language death},
+  author = {Daniel M Abrams and Steven H Strogatz},
+  journal = {Nature},
+  volume = {424},
+  number = {6951},
+  pages = {900--900},
+  year = {2003},
+  publisher = {Nature Publishing Group},
+}","Abrams & Strogatz (2003)"
 "akaishi03misperception","Jin Akaishi; Takaya Arita","2003","Misperception, Communication and Diversity","@InProceedings{akaishi03misperception,
   abstract = {It is commonly agreed upon that misperception is detrimental. However, misperception might have a beneficial effect from a collective viewpoint when individuals mispercept incoming information that promotes a specific kind of behavior, which leads to an increase in diversity. First, this paper proposes our hypothesis regarding adaptive property of misperception based on the argument of the relationship between misperception and behavioral diversity, and the effects of communication on diversity. Then, a simple computational model is constructed for a resource-searching problem by using the multi-agent modeling method. We investigate both direct misperception, that are caused when obtaining information directly from surrounding environment, and indirect misperception, that are caused when obtaining information indirectly through communication by conducting simulation experiments. The experimental results have shown that misperception could increase diversity in behavior of agents, thus could be adaptive, while accurate communication could decrease a diversity of agent behavior, which might decrease fitness. This paper also discusses a correlative relationship between direct misperception and indirect misperception. We believe that the study on adaptive property of misperception based on an innovative frame of reference and a powerful methodology in the field of complex system or artificial life would shed light on fundamental issues in cognitive science, memetics and engineering.},
   author = {Jin Akaishi and Takaya Arita},
