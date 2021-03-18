@@ -42,7 +42,7 @@
 							"children" : [
 								{
 									"label" : "Music",
-									"leaf" : false,
+									"leaf" : true,
 									"children" : [
 										{
 											"leaf" : "true",
@@ -509,6 +509,26 @@
 				{
 					"leaf" : "true",
 					"label" : "Learning"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Action"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Music"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Working memory"
 				},
 				{
 					"leaf" : "true",
