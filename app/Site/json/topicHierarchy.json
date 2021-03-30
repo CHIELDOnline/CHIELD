@@ -533,6 +533,10 @@
 				{
 					"leaf" : "true",
 					"label" : "Regularisation"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Concepts"
 				}
 			]
 		}
