@@ -1,0 +1,7 @@
+"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
+"social network density",">","phonology: rate of change","neg","phonology","language change","qualitative","none","if the density is low, the rate of phonological change is high. ""personal networks of even quite close neighbors might have relatively little overlap"" ->  atypical phonological features for family/region","grace_1992_aberrant"
+"social network density",">","lexicon:rate of cognate loss","neg","lexicon","language change","qualitative","none","if the density is low, the rate of cognate loss is high.","grace_1992_aberrant"
+"social network density",">","morphosyntax: rate of change","neg","morphosyntax","language change","qualitative","none","if the density is low, the rate of morphosyntactical change is high","grace_1992_aberrant"
+"social network density","~","linguistic norms: rigidity","none","","language change","qualitative","none","if the density is low, the language is not ""sharply focused""","grace_1992_aberrant"
+"social network density","~","language diversity: dialectal diversity","none","","language change","qualitative","none","the density of the network is correlated with how many dialects there are there, if there is low density then there are more dialects","grace_1992_aberrant"
+"social network density","~","language contact: borrowing","none","","none","","none","the density of the network is correlated with the amount of borrowing. If the network has a low density, there is more borrowing.","grace_1992_aberrant"
