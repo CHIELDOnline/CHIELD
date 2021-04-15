@@ -440,6 +440,26 @@
 			"children" : [
 				{
 					"leaf" : "true",
+					"label" : "phonology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "vocabulary"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphosyntax"
+				},
+				{
+					"leaf" : "true",
 					"label" : "Spatial language"
 				},
 				{
