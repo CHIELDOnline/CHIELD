@@ -1,7 +1,8 @@
 <?php
 
 $page = $_POST['page'];
-$pdo = new PDO('sqlite:../../data/db/counter.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $insert_sql = "INSERT OR IGNORE INTO counts VALUES (:page, 0)";
 $insert_statement=$pdo->prepare($insert_sql);

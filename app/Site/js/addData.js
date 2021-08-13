@@ -163,6 +163,7 @@ function hideAlerts(){
 	$("#ReferenceKeyAlert2").hide();
 	$("#CausalLinksAlert").hide();
 	$("#BlankVariableAlert").hide();
+	$("#NoJournalAlert").hide();
 }
 
 

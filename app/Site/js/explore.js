@@ -24,6 +24,7 @@ dtableConfig =  {
         //scrollCollapse: true,
         paging: true,
         pageLength: 20,
+        defaultContent: "", // needed if one of the data values is null
         columns: [
         		{ data: 0, visible:false},
         		{ data: 1},

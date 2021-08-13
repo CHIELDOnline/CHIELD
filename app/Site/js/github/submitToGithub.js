@@ -44,7 +44,7 @@ function submitToGitHub(){
 		}
 		var csvtext = JSONToCSVConvertor(data, true);
 	
-		var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source+"\n";
+		// var bibtex_data = bib_key+"\n"+bib_year+"\n"+bib_source+"\n";
 		
 		// Contributor data
 		var date = Date();
@@ -53,16 +53,19 @@ function submitToGitHub(){
 			contributor_data += "\tEDIT";
 		}
 
-		console.log([contributor_data,bibtex_data,csvtext]);
+		//console.log([contributor_data,bibtex_data,csvtext]);
 
-		var data = contributor_data + "\n" + bibtex_data + csvtext;
+		//var data = contributor_data + "\n" + bibtex_data + csvtext;
 	
-		var params = "data="+encodeURIComponent(data);
+		//var params = "data="+encodeURIComponent(data);
 
 		var jdata = {
-			contributor: contributor_data,
-			bibtex: bibtex_data,
-			csv: csvtext
+			file_key: bib_key,
+			file_year: bib_year,
+			contributorUsername: contributor,
+			CONContent: contributor_data,
+			BIBContent: bib_source,
+			CSVContent: csvtext
 				};
 
 		$.ajax({

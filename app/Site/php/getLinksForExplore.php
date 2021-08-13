@@ -2,7 +2,8 @@
 
 $keylist = $_POST['keylist'];
 
-$pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql= "
 SELECT l.pk,

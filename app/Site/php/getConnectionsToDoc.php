@@ -2,7 +2,8 @@
 
 $key = $_POST['key'];
 
-$pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql = <<<EOT
 select d.[citation] as Document, bibref, s.[name], s.[pk] as Variable from(

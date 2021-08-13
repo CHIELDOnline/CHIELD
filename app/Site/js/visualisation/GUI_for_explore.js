@@ -256,8 +256,8 @@ function findPaths(){
 		// ... then request the links between them.
 		var var1 = lastSelectedNodes[0];
 		var var2 = lastSelectedNodes[1];
-		showLoader();
-		requestRecord("php/getPaths.php","var1="+var1+"&var2="+var2,'links');
+		// See util/findPaths.js
+		requestGetPaths(var1, var2)	
 	}
 
 }

@@ -1,6 +1,7 @@
 <?php
 
-$pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql= <<<EOT
 SELECT

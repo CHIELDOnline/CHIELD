@@ -1,12 +1,9 @@
 <?php
 
-$var1 = $_POST['var1'];
-$var2 = $_POST['var2'];
+$uniqueNodes = $_POST['uniqueNodes'];
 
-$command = escapeshellcmd('python ../../data/getPaths.py '.escapeshellarg($var1)." ".escapeshellarg($var2));
-$output = exec($command);
-
-$pdo = new PDO('sqlite:../../data/db/CHIELD.sqlite');
+include_once('setDBLocation.php');
+$pdo = new PDO('sqlite:'.$dblocation);
 
 $sql= "
 SELECT l.pk,
@@ -23,7 +20,7 @@ SELECT l.pk,
   LEFT JOIN variables s ON l.Var1 = s.pk 
   LEFT JOIN variables s2 ON l.Var2 = s2.pk
   LEFT JOIN documents d ON l.bibref = d.pk
-  WHERE s.[pk] IN (".$output.") AND s2.[pk] IN (".$output.")";
+  WHERE s.[pk] IN (".$uniqueNodes.") AND s2.[pk] IN (".$uniqueNodes.")";
 
 $statement=$pdo->prepare($sql);
 #$statement->bindParam(':keylist', $keylist, PDO::PARAM_STR);
