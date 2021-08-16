@@ -1,6 +1,10 @@
 <?php
 
-$uniqueNodes = $_POST['uniqueNodes'];
+$uniqueNodes = $_POST['json'];
+$uniqueNodes = json_decode($uniqueNodes,true);
+$output = implode(',', $uniqueNodes["uniqueNodes"]);
+
+
 
 include_once('setDBLocation.php');
 $pdo = new PDO('sqlite:'.$dblocation);
@@ -20,10 +24,12 @@ SELECT l.pk,
   LEFT JOIN variables s ON l.Var1 = s.pk 
   LEFT JOIN variables s2 ON l.Var2 = s2.pk
   LEFT JOIN documents d ON l.bibref = d.pk
-  WHERE s.[pk] IN (".$uniqueNodes.") AND s2.[pk] IN (".$uniqueNodes.")";
+  WHERE s.[pk] IN (".$output.") AND s2.[pk] IN (".$output.")";
+  
 
 $statement=$pdo->prepare($sql);
-#$statement->bindParam(':keylist', $keylist, PDO::PARAM_STR);
+//$statement->bindParam(':k1', $uniqueNodes, PDO::PARAM_STR);
+//$statement->bindParam(':k2', $uniqueNodes, PDO::PARAM_STR);
 $statement->execute();
 $results=$statement->fetchAll(PDO::FETCH_ASSOC);
 $json=json_encode($results);

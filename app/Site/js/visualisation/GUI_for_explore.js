@@ -47,10 +47,13 @@ function network_on_click (params) {
 function updateRecord(response,type){
 	// NEW VERSION THAT USES NETWORK AS CANONICAL DATA SOURCE
 	if(type=='links'){
-		var obj = JSON.parse(response);
-		// TODO: test if obj is correctly parsed.
 		console.log("LINKS OBJECT");
-		console.log(obj);
+		console.log(response);
+		var obj = response;
+		if(typeof(response)!="object"){
+			obj = JSON.parse(response);
+		}	
+		// TODO: test if obj is correctly parsed.
 		redrawGUIfromObject(obj);
 		changeEdgeColourScheme(edge_colour_scheme);
 		updateGridFromNetwork();

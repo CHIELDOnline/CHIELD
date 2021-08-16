@@ -19,6 +19,7 @@ var pathData = null;
 var pathStartNode = null;
 var pathEndNode = null;
 var pathVisitedEdges = null;
+var pathVisitedNodes = [];
 
 function loadPathData(){
 	if(pathData == null){
@@ -45,17 +46,17 @@ function requestGetPaths(v1, v2){
 function launchGetPaths(){
 	showLoader();
 	console.log("GET PATHS " + pathStartNode + ", " + pathEndNode);
-	var paths = getPaths(pathStartNode,pathEndNode);
-	console.log(paths);
-	uniqueNodes = [];
-	for(var i=0;i<paths.length;++i){
-		subpath = paths[i];
-		for(var j=0;j<subpath.length;++j){
-			if(!uniqueNodes.includes(subpath[j])){
-				uniqueNodes.push(subpath[j])
-			}
-		}
-	}
+	var uniqueNodes = getPaths(pathStartNode,pathEndNode);
+	// console.log(paths);
+// 	uniqueNodes = [];
+// 	for(var i=0;i<paths.length;++i){
+// 		subpath = paths[i];
+// 		for(var j=0;j<subpath.length;++j){
+// 			if(!uniqueNodes.includes(subpath[j])){
+// 				uniqueNodes.push(subpath[j])
+// 			}
+// 		}
+// 	}
 	// Request extra nodes from the server
 	if(uniqueNodes.length >0){
 		$.ajax({
@@ -65,8 +66,7 @@ function launchGetPaths(){
 			dataType: 'json'
 			}). done(
 				function(data){
-					console.log(data);
-					updateRecord(data.responseText, "links");
+					updateRecord(data, "links");
 					hideLoader();
 				}).fail(function(data){
 					// TODO
@@ -96,7 +96,38 @@ function inVisitedEdges(x){
 	return(false);
 }
 
-function getPaths(start,end,path=[]){
+function walkPath(start, end, type){
+	pathVisitedNodes.push(start);
+	if(start==end){
+		return(null)
+	}
+	if(! (start in pathData[type])){
+		return(null)
+	}
+	var nextNodes = pathData[type][start];
+	for(var i=0;i<nextNodes.length;++i){
+		if(!(pathVisitedNodes.includes(nextNodes[i]))){		
+			walkPath(nextNodes[i],end,type);
+		}
+	}
+}
+
+function getPaths(start,end){
+	pathVisitedNodes = [];
+	walkPath(start,end, "forwards");
+	var forwards = pathVisitedNodes.slice();
+	console.log("FORWARDS")
+	console.log(forwards);
+	pathVisitedNodes = [];
+	walkPath(end,start,"backwards");
+	console.log("BACKWARDS")
+	console.log(pathVisitedNodes);
+	var intersection = forwards.filter(x => pathVisitedNodes.includes(x));
+	console.log(intersection);
+	return(intersection)
+}
+
+function getPathsAStar(start,end,path=[]){
 	path.push(start);
 	if(start==end){
 		// TODO: include end?
