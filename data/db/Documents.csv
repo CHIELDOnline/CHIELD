@@ -123,6 +123,12 @@
   volume = {Language development: Language, thought and Culture},
   year = {1982},
 }","Gentner (1982)"
+"losev1982znak","Alexei Fiodorovich Losev","1982","Znak. Simvol. Mif.","@Book{losev1982znak,
+  title = {Znak. Simvol. Mif.},
+  author = {Alexei Fiodorovich Losev},
+  year = {1982},
+  publisher = {Moskva},
+}","Losev (1982)"
 "Brown1983","Cecil H. Brown","1983","Where do cardinal direction terms come from?","@Article{Brown1983,
   author = {Cecil H. Brown},
   date-added = {2019-09-16 7:41:39 PM +0000},
@@ -1023,6 +1029,12 @@ The number of different species found in a given area of the Earth increases fro
   year = {2006},
   bdsk-url-1 = {http://www.isrl.uiuc.edu/~amag/langev/paper/nettle06costsAndBenefits.html},
 }","Nettle (2006)"
+"porshnev2006on","Boris Porshnev","2006","On the beginning of human language","@Book{porshnev2006on,
+  title = {On the beginning of human language},
+  author = {Boris Porshnev},
+  year = {2006},
+  publisher = {Moskva},
+}","Porshnev (2006)"
 "Skoyles_2006","John R. Skoyles","2006","Human balance, the evolution of bipedalism and dysequilibrium syndrome","@Article{Skoyles_2006,
   author = {John R. Skoyles},
   date-added = {2017-08-16 09:19:06 +0000},
@@ -4166,3 +4178,22 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   year = {2020},
   publisher = {John Benjamins},
 }","Fujita (2020)"
+"haynie2021pathways","Hannah J Haynie; Patrick H Kavanagh; Fiona M Jordan; Carol R Ember; Russell D Gray; Simon J Greenhill; Kathryn R Kirby; Geoff Kushnick; Bobbi S Low; Ty Tuff; others","2021","Pathways to social inequality","@Article{haynie2021pathways,
+  title = {Pathways to social inequality},
+  author = {Hannah J Haynie and Patrick H Kavanagh and Fiona M Jordan and Carol R Ember and Russell D Gray and Simon J Greenhill and Kathryn R Kirby and Geoff Kushnick and Bobbi S Low and Ty Tuff and others},
+  journal = {Evolutionary Human Sciences},
+  volume = {3},
+  pages = {e35},
+  year = {2021},
+  publisher = {Cambridge University Press},
+}","Haynie, Kavanagh, Jordan, Ember et al. (2021)"
+"bromham2022global","Lindell Bromham; Russell Dinnage; Hedvig Skirgard; Andrew Ritchie; Marcel Cardillo; Felicity Meakins; Simon Greenhill; Xia Hua","2022","Global predictors of language endangerment and the future of linguistic diversity","@Article{bromham2022global,
+  title = {Global predictors of language endangerment and the future of linguistic diversity},
+  author = {Lindell Bromham and Russell Dinnage and Hedvig Skirgard and Andrew Ritchie and Marcel Cardillo and Felicity Meakins and Simon Greenhill and Xia Hua},
+  journal = {Nature ecology \& evolution},
+  volume = {6},
+  number = {2},
+  pages = {163--173},
+  year = {2022},
+  publisher = {Nature Publishing Group},
+}","Bromham, Dinnage, Skirgard, Ritchie et al. (2022)"

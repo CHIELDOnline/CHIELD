@@ -444,6 +444,58 @@
 				},
 				{
 					"leaf" : "true",
+					"label" : "Grammatical types of languages"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Logical fallacies"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Perception of subjectivity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Pronouns"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Society"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Fetishism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Animism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Grammatical types"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Patriarchy"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Heroic epos"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Mythology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Totemism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Subject"
+				},
+				{
+					"leaf" : "true",
 					"label" : "vocabulary"
 				},
 				{
@@ -496,6 +548,62 @@
 				},
 				{
 					"leaf" : "true",
+					"label" : "Suggestion"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Predicate evolvement"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Protosymbols"
+				},
+				{
+					"leaf" : "true",
+					"label" : "1st milestone in language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Fire"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Brain"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Socialization"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Taboo"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Vocal suggestion"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Vocal influence"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Tools"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Thinking"
+				},
+				{
+					"leaf" : "true",
+					"label" : "2nd signalling system"
+				},
+				{
+					"leaf" : "true",
 					"label" : "Esoterogeny"
 				},
 				{
@@ -513,10 +621,6 @@
 				{
 					"leaf" : "true",
 					"label" : "Theory of mind"
-				},
-				{
-					"leaf" : "true",
-					"label" : "Fire"
 				},
 				{
 					"leaf" : "true",
@@ -541,10 +645,6 @@
 				{
 					"leaf" : "true",
 					"label" : "Music"
-				},
-				{
-					"leaf" : "true",
-					"label" : "Language"
 				},
 				{
 					"leaf" : "true",

@@ -9,7 +9,7 @@ suppressWarnings(suppressMessages(library(bibtex)))
 suppressWarnings(suppressMessages(library(readr)))
 suppressWarnings(suppressMessages(library(crayon)))
 
-try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
+try(setwd("~/OneDrive - Cardiff University/Research/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 source("detexify.R")
 

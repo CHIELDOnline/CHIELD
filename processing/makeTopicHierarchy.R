@@ -3,7 +3,7 @@
 
 library(RJSONIO)
 
-try(setwd("~/Documents/Bristol/CHIELD/CHIELD_Online/processing/"))
+try(setwd("~/OneDrive - Cardiff University/Research/Bristol/CHIELD/CHIELD_Online/processing/"))
 
 # use readLines to work out max depth
 # (because read.delim will misalign columns without this info)
