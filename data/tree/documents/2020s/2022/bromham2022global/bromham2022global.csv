@@ -1,6 +1,6 @@
-"Var1","Relation","Var2","Cor","Topic","Stage","Type","Confirmed","Notes","bibref"
-"speaker population: L1",">","language endangerment","neg","","language change","statistical","yes","","bromham2022global"
-"neighbouring linguistic richness",">","language endangerment","neg","","language change","statistical","yes","","bromham2022global"
-"road density",">","language endangerment","pos","","language change","statistical","yes","","bromham2022global"
-"number of years schooling",">","language endangerment","pos","","language change","statistical","yes","","bromham2022global"
-"neighbouring threatened langauges",">","language endangerment","pos","","language change","statistical","yes","","bromham2022global"
+Var1,Relation,Var2,Cor,Topic,Stage,Type,Confirmed,Notes,bibref
+speaker population: L1,>,language endangerment,neg,Inequality,language change,statistical,yes,,bromham2022global
+neighbouring linguistic richness,>,language endangerment,neg,Inequality,language change,statistical,yes,,bromham2022global
+road density,>,language endangerment,pos,Inequality,language change,statistical,yes,,bromham2022global
+number of years schooling,>,language endangerment,pos,Inequality,language change,statistical,yes,,bromham2022global
+neighbouring threatened langauges,>,language endangerment,pos,Inequality,language change,statistical,yes,,bromham2022global

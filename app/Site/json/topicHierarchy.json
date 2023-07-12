@@ -512,6 +512,10 @@
 				},
 				{
 					"leaf" : "true",
+					"label" : "Inequality"
+				},
+				{
+					"leaf" : "true",
 					"label" : "Spatial language"
 				},
 				{

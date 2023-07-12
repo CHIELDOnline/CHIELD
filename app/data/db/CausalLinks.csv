@@ -201,6 +201,9 @@
 "3315086744","grace_1992_aberrant","3672726309","~","3808167241","none",NA,"","language change","qualitative","","","the density of the network is correlated with how many dialects there are there, if there is low density then there are more dialects"
 "2448688158","grace_1992_aberrant","3672726309","~","994943786","none",NA,"","none","","","","the density of the network is correlated with the amount of borrowing. If the network has a low density, there is more borrowing."
 "3437731644","perkins1992deixis","3002333941",">","870800986","neg",NA,NA,NA,"statistical","",NA,"Based on the results the complexity of deictic systems (including person, inclusive/exclusive, tense, etc) tend to correlate negatively with cultural complexity of the speech community."
+"850465008","boehm1993egalitarian","250395117",">","3195431234","neg",NA,"Inequality","none","other","","yes","Granting the serious limitations of reliable data, simple foragers, complex hunter-gatherer, people living in tribal segmentary systems, and people living in what I have called incipient chiefdoms would appear to exhibit a strong set of egalitarian values that express an active distaste for too much hierarchy and actively take steps to avoid being seriously dominated. p. 239"
+"2838704084","boehm1993egalitarian","250395117",">","1602716332","neg",NA,"Inequality","none","other","","yes","I have suggested that smallness of scale may be a predictable side effect of egalitarian behavior because such behavior keeps groups subdividing, while small, intensively cooperative groups remain able to unite effectively and control their leader. p. 240"
+"2824697395","boehm1993egalitarian","1602716332",">","3195431234","neg",NA,"Inequality","none","other","","","small, intensively cooperative groups remain able to unite effectively and control their leader. p. 240"
 "2683853680","brown1993uphill","2287359411",">","313563106","",NA,"Spatial language;Deixis","cultural evolution","qualitative","","yes",NA
 "238006855","brown1993uphill","2287359411","~","2497702421","",NA,"Spatial language;Deixis","cultural evolution","qualitative","","yes",NA
 "531146786","brown1993uphill","2497702421",">","2435678024","neg",NA,"Spatial language;Deixis","cultural evolution","qualitative","","yes",NA
@@ -3613,8 +3616,8 @@
 "3635574052","haynie2021pathways","2514983421",">","3195431234","pos",NA,NA,"none","statistical","","yes","Intensive agriculture directly links to social class (standardised path coefficient = 1.032, P < 0.001). p.9"
 "2231173505","haynie2021pathways","2514983421",">","2286323441","pos",NA,NA,"none","statistical","","yes","Intensive agriculture directly links (standar- dised path coefficient = 1.135, P < 0.001) with large domesticated animals. p.9"
 "2776511748","haynie2021pathways","1746840506",">","3195431234","pos",NA,NA,"none","statistical","","yes","larger populations (standardised path coefficient = 1.495, P < 0.05) are directly associated with a higher probability of the presence of heritable social class. p.9"
-"3127733944","bromham2022global","3760519607",">","1318407075","neg",NA,NA,"language change","statistical","","yes",NA
-"102799270","bromham2022global","3147259906",">","1318407075","neg",NA,NA,"language change","statistical","","yes",NA
-"1148484003","bromham2022global","4210310285",">","1318407075","pos",NA,NA,"language change","statistical","","yes",NA
-"3628036730","bromham2022global","2155316174",">","1318407075","pos",NA,NA,"language change","statistical","","yes",NA
-"2069767832","bromham2022global","462343680",">","1318407075","pos",NA,NA,"language change","statistical","","yes",NA
+"3127733944","bromham2022global","3760519607",">","1318407075","neg",NA,"Inequality","language change","statistical","","yes",NA
+"102799270","bromham2022global","3147259906",">","1318407075","neg",NA,"Inequality","language change","statistical","","yes",NA
+"1148484003","bromham2022global","4210310285",">","1318407075","pos",NA,"Inequality","language change","statistical","","yes",NA
+"3628036730","bromham2022global","2155316174",">","1318407075","pos",NA,"Inequality","language change","statistical","","yes",NA
+"2069767832","bromham2022global","462343680",">","1318407075","pos",NA,"Inequality","language change","statistical","","yes",NA
