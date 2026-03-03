@@ -2,6 +2,8 @@
 
 CHIELD is a searchable database of causal hypotheses in evolutionary linguistics.  You can visit the live website here: [http://chield.excd.org/](http://chield.excd.org/).
 
+It was developed using funding from a Leverhulme early career fellowship (ECF-2016435) and an Arts and Humanities Research Council grant (AH/T006927/1).
+
 Help using CHIELD can be found [here](https://chield.excd.org/help.html).
 
 ## Data structure

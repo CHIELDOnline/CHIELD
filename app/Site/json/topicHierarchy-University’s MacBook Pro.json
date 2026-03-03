@@ -1,0 +1,672 @@
+{
+	"label" : "Topics",
+	"expanded" : "true",
+	"children" : [
+		{
+			"label" : "Formal Sciences",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Computer Science",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Artificial intelligence",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Cognitive science"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Knowledge representation"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Humanities",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Arts",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Performing arts",
+							"leaf" : false,
+							"children" : [
+								{
+									"label" : "Music",
+									"leaf" : true,
+									"children" : [
+										{
+											"leaf" : "true",
+											"label" : "Musicology"
+										},
+										{
+											"leaf" : "true",
+											"label" : "Singing"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "History",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Technological history"
+						}
+					]
+				},
+				{
+					"label" : "Languages and literature",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Linguistics",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Bilingualism"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Deixis"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Dialectology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Historical linguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Language acquisition"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Language change"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Language contact"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Lexicology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Interaction"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Linguistic typology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Linguistic diversity"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Morphology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phonetics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Phonology"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Pragmatics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Psycholinguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Semantics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Semiotics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Sociolinguistics"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Syntax"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Language use"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Philosophy",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Aesthetics"
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Natural Sciences",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Biology",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Anatomy",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Human anatomy"
+								}
+							]
+						},
+						{
+							"label" : "Developmental biology",
+							"leaf" : true,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Ecology",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Human ecology"
+								}
+							]
+						},
+						{
+							"label" : "Evolutionary biology",
+							"leaf" : true,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Genetics",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Molecular genetics"
+								}
+							]
+						},
+						{
+							"label" : "Human biology",
+							"leaf" : true,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Neuroscience",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Behavioral neuroscience"
+								}
+							]
+						},
+						{
+							"label" : "Nutrition",
+							"leaf" : true,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						},
+						{
+							"label" : "Zoology",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Animal communications"
+								},
+								{
+									"leaf" : "true",
+									"label" : "Primatology"
+								}
+							]
+						}
+					]
+				},
+				{
+					"label" : "Earth science",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Physical geography",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Climatology"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Social sciences",
+			"leaf" : false,
+			"children" : [
+				{
+					"label" : "Anthropology",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Cultural anthropology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Comparative anthropology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cultural evolution"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cultural diversity"
+						}
+					]
+				},
+				{
+					"label" : "Archaeology",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Paleoarchaeology"
+						}
+					]
+				},
+				{
+					"label" : "Economics",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Behavioural economics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cooperation"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Macroeconomics"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Socioeconomics"
+						}
+					]
+				},
+				{
+					"label" : "Human geography",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Population geography"
+						}
+					]
+				},
+				{
+					"label" : "Political science",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Comparative politics"
+						}
+					]
+				},
+				{
+					"label" : "Psychology",
+					"leaf" : false,
+					"children" : [
+						{
+							"leaf" : "true",
+							"label" : "Behavioural psychology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cognitive psychology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Cultural psychology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Developmental psychology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Evolutionary psychology"
+						},
+						{
+							"leaf" : "true",
+							"label" : "Social psychology"
+						}
+					]
+				},
+				{
+					"label" : "Sociology",
+					"leaf" : false,
+					"children" : [
+						{
+							"label" : "Community informatics",
+							"leaf" : false,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : "Social network analysis"
+								}
+							]
+						},
+						{
+							"label" : "Demography",
+							"leaf" : true,
+							"children" : [
+								{
+									"leaf" : "true",
+									"label" : ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"label" : "Unclassified",
+			"leaf" : false,
+			"children" : [
+				{
+					"leaf" : "true",
+					"label" : "phonology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Grammatical types of languages"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Logical fallacies"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Perception of subjectivity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Pronouns"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Society"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Fetishism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Animism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Grammatical types"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Patriarchy"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Heroic epos"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Mythology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Totemism"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Subject"
+				},
+				{
+					"leaf" : "true",
+					"label" : "vocabulary"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphology"
+				},
+				{
+					"leaf" : "true",
+					"label" : "lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "morphosyntax"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Inequality"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Spatial language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Complexity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Subsistence"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "origins of language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "origins of lanugage"
+				},
+				{
+					"leaf" : "true",
+					"label" : "syntax"
+				},
+				{
+					"leaf" : "true",
+					"label" : "language shift"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Creoles"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Suggestion"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Predicate evolvement"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Protosymbols"
+				},
+				{
+					"leaf" : "true",
+					"label" : "1st milestone in language evolution"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Fire"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Brain"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Language"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Socialization"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Taboo"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Vocal suggestion"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Vocal influence"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Tools"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Thinking"
+				},
+				{
+					"leaf" : "true",
+					"label" : "2nd signalling system"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Esoterogeny"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Exotericity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Linguistic relativity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Political complexity"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Theory of mind"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Population size"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Numbers"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Learning"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Lexicon"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Action"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Music"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Working memory"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Regularisation"
+				},
+				{
+					"leaf" : "true",
+					"label" : "Concepts"
+				},
+				{
+					"leaf" : "true",
+					"label" : "phonosemantics"
+				}
+			]
+		}
+	]
+}
