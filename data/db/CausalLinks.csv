@@ -3657,3 +3657,12 @@
 "3912535493","akitaIconicityMediatesSemantic2024","1117651683","~","2187091289","pos",NA,"phonosemantics","none","experiment","","","Korean"
 "764218919","akitaIconicityMediatesSemantic2024","3342068978","~","2187091289","pos",NA,"phonosemantics","none","experiment","","","Japanese"
 "674669028","akitaIconicityMediatesSemantic2024","3342068978","~","3323675167","pos",NA,"phonosemantics","none","experiment","","","Japanese"
+"1827295130","","452212088",">","1392434201","pos",NA,NA,"cultural evolution","","",NA,NA
+"2294499185","","866976185",">","3028926157","pos",NA,NA,"cultural evolution","experiment","",NA,NA
+"498641465","","3453021296",">","3028926157","pos",NA,NA,"cultural evolution","experiment","",NA,NA
+"3454051542","","3028926157",">","1759706804","pos",NA,NA,"cultural evolution","experiment","",NA,NA
+"2411504","","3028926157",">","1392434201","pos",NA,NA,"cultural evolution","experiment","",NA,NA
+"941917681","","1392434201",">","1917999673","pos",NA,NA,"cultural evolution","experiment","",NA,NA
+"2407664939","","1392434201",">","1759706804","neg",NA,NA,"cultural evolution","experiment","",NA,NA
+"1554501628","","1917999673",">","1759706804","neg",NA,NA,"cultural evolution","experiment","",NA,NA
+"2703441928","","637143716",">","1392434201","neg",NA,NA,"cultural evolution","experiment","",NA,NA
