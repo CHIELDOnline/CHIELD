@@ -321,8 +321,8 @@
   year = {1993},
   publisher = {University of Chicago Press},
 }","Boehm, Barclay, Dentan, Dupre et al. (1993)"
-"brown1993uphill","Penelope Brown; Stephen C Levinson","1993"," Uphill"" and"" downhill"" in Tzeltal","@Article{brown1993uphill,
-  title = { Uphill"" and"" downhill"" in Tzeltal},
+"brown1993uphill","Penelope Brown; Stephen C Levinson","1993","Uphill"" and"" downhill"" in Tzeltal","@Article{brown1993uphill,
+  title = {Uphill"" and"" downhill"" in Tzeltal},
   author = {Penelope Brown and Stephen C Levinson},
   journal = {Journal of Linguistic Anthropology},
   volume = {3},
@@ -428,9 +428,7 @@
   url = {http://rspb.royalsocietypublishing.org/cgi/doi/10.1098/rspb.1995.0125},
   volume = {261},
   year = {1995},
-  abstract = {
-The number of different species found in a given area of the Earth increases from the poles towards the equator for a wide range of terrestrial and marine organisms. A similar but opposite latitudinal gradient is also generally found in the size of the geographic range over which a species is found: range sizes are larger in more northern latitudes becoming smaller in the south, a phenomenon known as Rapaport’s rule. Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals. Six times, or more, different languages were spoken in a given area in southern latitudes, compared to the density of language groups nearer to the poles. In addition, the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule. Finally, based upon a categorization of North America into 23 distinct major habitat types, we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude. ‘Linguistic ecology’, or the examination of ecological factors associated with diversity in the number of linguistic groups, may shed new light on some features of cultural and linguistic evolution.
-},
+  abstract = {The number of different species found in a given area of the Earth increases from the poles towards the equator for a wide range of terrestrial and marine organisms. A similar but opposite latitudinal gradient is also generally found in the size of the geographic range over which a species is found: range sizes are larger in more northern latitudes becoming smaller in the south, a phenomenon known as Rapaport’s rule. Here we show that the density of human language-cultural groups in North America, at the time of contact by colonizing Europeans, also followed a strong latitudinal gradient qualitatively similar to that found in North American mammals. Six times, or more, different languages were spoken in a given area in southern latitudes, compared to the density of language groups nearer to the poles. In addition, the amount of territory over which the speakers of a given language were found increases with latitude: linguistic-cultural groups conform to Rapaport’s rule. Finally, based upon a categorization of North America into 23 distinct major habitat types, we find greater linguistic diversity in areas of greater habitat diversity, independently of latitude. ‘Linguistic ecology’, or the examination of ecological factors associated with diversity in the number of linguistic groups, may shed new light on some features of cultural and linguistic evolution.},
 }","Mace & Pagel (1995)"
 "Nettle1995","Daniel Nettle","1995","Segmental inventory size, word length, and communicative efficiency","@Article{Nettle1995,
   author = {Daniel Nettle},
@@ -1359,9 +1357,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2008},
   publisher = {American Psychological Association},
 }","Kousta, Vinson & Vigliocco (2008)"
-"kusters2008","Wouter Kusters","2008","Complexity in linguistic theory, language learning and language change ","@InCollection{kusters2008,
+"kusters2008","Wouter Kusters","2008","Complexity in linguistic theory, language learning and language change","@InCollection{kusters2008,
   author = {Wouter Kusters},
-  title = {Complexity in linguistic theory, language learning and language change },
+  title = {Complexity in linguistic theory, language learning and language change},
   editor = {Matti Miestamo and Kaius Sinnemäki and Fred Karlsson},
   booktitle = {Language Complexity: Typology, contact, change},
   publisher = {John Benjamins Publishing Company},
@@ -1578,15 +1576,9 @@ The number of different species found in a given area of the Earth increases fro
   year = {2009},
   doi = {10.1080/17470210802618900},
   note = {PMID: 19142830},
-  url = { 
-        https://doi.org/10.1080/17470210802618900
-    
-},
-  eprint = { 
-        https://doi.org/10.1080/17470210802618900
-    
-},
-  abstract = { A largely unexplored aspect of lexical access in visual word recognition is “semantic size”—namely, the real-world size of an object to which a word refers. A total of 42 participants performed a lexical decision task on concrete nouns denoting either big or small objects (e.g., bookcase or teaspoon). Items were matched pairwise on relevant lexical dimensions. Participants’ reaction times were reliably faster to semantically “big” versus “small” words. The results are discussed in terms of possible mechanisms, including more active representations for “big” words, due to the ecological importance attributed to large objects in the environment and the relative speed of neural responses to large objects. },
+  url = {https://doi.org/10.1080/17470210802618900},
+  eprint = {https://doi.org/10.1080/17470210802618900},
+  abstract = {A largely unexplored aspect of lexical access in visual word recognition is “semantic size”—namely, the real-world size of an object to which a word refers. A total of 42 participants performed a lexical decision task on concrete nouns denoting either big or small objects (e.g., bookcase or teaspoon). Items were matched pairwise on relevant lexical dimensions. Participants’ reaction times were reliably faster to semantically “big” versus “small” words. The results are discussed in terms of possible mechanisms, including more active representations for “big” words, due to the ecological importance attributed to large objects in the environment and the relative speed of neural responses to large objects.},
 }","Sereno, O'Donnell & Sereno (2009)"
 "sinnemaki_2009","Kaius Sinnemäki","2009","Complexity in core argument marking and population size","@InCollection{sinnemaki_2009,
   author = {Kaius Sinnemäki},
@@ -1607,11 +1599,9 @@ The number of different species found in a given area of the Earth increases fro
   editor = {Geoffrey Sampson and David Gil and Peter Trudgill},
   pages = {64--79},
 }","Szmrecsanyi & Kortmann (2009)"
-"wichmann_holman_2009","Søren Wichmann; Eric W. Holman","2009","Population Size and Rates of Language Change 
-","@Article{wichmann_holman_2009,
+"wichmann_holman_2009","Søren Wichmann; Eric W. Holman","2009","Population Size and Rates of Language Change","@Article{wichmann_holman_2009,
   author = {Søren Wichmann and Eric W. Holman},
-  title = {Population Size and Rates of Language Change 
-},
+  title = {Population Size and Rates of Language Change},
   year = {2009},
   journal = {Human Biology},
   volume = {8},
@@ -2903,8 +2893,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {Word Order Universals Reflect Cognitive Biases: Evidence From Silent Gesture},
   year = {2016},
 }","Culbertson, Kirby & Schouwstra (2016)"
-"evolang11_41","Cedric Boeckx; Constantina Theofanopoulou; Antonio Benítez-Burraco","2016","How The Brain Got Grammaticalized: Globularization And (self-)domestication","@InProceedings{evolang11_41,
-  author = {Cedric Boeckx and Constantina Theofanopoulou and Antonio Ben\'{i}tez-Burraco},
+"evolang11_41","Cedric Boeckx; Constantina Theofanopoulou; Antonio Benítez-Burraco","2016","How The Brain Got Grammaticalized: Globularization And (self-)domestication","@InProceedings{evolang11_41,
+  author = {Cedric Boeckx and Constantina Theofanopoulou and Antonio Benítez-Burraco},
   booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANGX11)},
   date-added = {2017-12-18 16:18:12 +0000},
   date-modified = {2017-12-18 16:18:12 +0000},
@@ -2912,7 +2902,7 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   publisher = {Online at \url{http://evolang.org/neworleans/papers/41.html}},
   title = {How The Brain Got Grammaticalized: Globularization And (self-)domestication},
   year = {2016},
-}","Boeckx, Theofanopoulou & Benítez-Burraco (2016)"
+}","Boeckx, Theofanopoulou & Benítez-Burraco (2016)"
 "evolang11_48","Mark Atkinson; Kenny Smith; Simon Kirby","2016","Adult Language Learning And The Evolution Of Linguistic Complexity","@InProceedings{evolang11_48,
   author = {Mark Atkinson and Kenny Smith and Simon Kirby},
   booktitle = {The Evolution of Language: Proceedings of the 11th International Conference (EVOLANGX11)},
@@ -3311,7 +3301,7 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   author = {A. Müller and R. Weymuth},
   date-added = {2019-09-03 12:17:49 PM +0000},
   date-modified = {2019-09-03 12:20:36 PM +0000},
-  journal = {Asiatische {S}tudien - {{\'E}}tudes {A}siatiques },
+  journal = {Asiatische {S}tudien - {{\'E}}tudes {A}siatiques},
   number = {1},
   pages = {409--432},
   title = {How {S}ociety {S}hapes {L}anguage: {P}ersonal {P}ronouns in the {G}reater {B}urma {Z}one},
@@ -3853,8 +3843,8 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   pages = {177--198},
   year = {2018},
 }","Moro (2018)"
-"murphy2018paleo","Elliot Murphy; Antonio Benítez-Burraco","2018","Paleo-oscillomics: inferring aspects of Neanderthal language abilities from gene regulation of neural oscillations","@Article{murphy2018paleo,
-  author = {Elliot Murphy and Antonio Ben\'{i}tez-Burraco},
+"murphy2018paleo","Elliot Murphy; Antonio Benítez-Burraco","2018","Paleo-oscillomics: inferring aspects of Neanderthal language abilities from gene regulation of neural oscillations","@Article{murphy2018paleo,
+  author = {Elliot Murphy and Antonio Benítez-Burraco},
   date-added = {2019-09-24 10:31:03 +0000},
   date-modified = {2019-09-24 10:32:11 +0000},
   journal = {Journal of Anthropological Sciences},
@@ -3862,7 +3852,7 @@ in grammaticised meanings are more variable than meanings in open class lexical 
   title = {Paleo-oscillomics: inferring aspects of Neanderthal language abilities from gene regulation of neural oscillations},
   volume = {96},
   year = {2018},
-}","Murphy & Benítez-Burraco (2018)"
+}","Murphy & Benítez-Burraco (2018)"
 "nichols2018morphological","Johanna Nichols; Christian Bentz","2018","Morphological complexity of languages reflects the settlement history of the Americas","@Article{nichols2018morphological,
   title = {Morphological complexity of languages reflects the settlement history of the Americas},
   author = {Johanna Nichols and Christian Bentz},
