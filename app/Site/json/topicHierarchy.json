@@ -661,6 +661,10 @@
 				{
 					"leaf" : "true",
 					"label" : "Concepts"
+				},
+				{
+					"leaf" : "true",
+					"label" : "phonosemantics"
 				}
 			]
 		}
